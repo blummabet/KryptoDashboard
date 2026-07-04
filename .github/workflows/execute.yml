@@ -1,25 +1,30 @@
-name: CryptoEdge Execute (dry-run · self-hosted)
+name: CryptoEdge Execute (dry-run)
 
-# Phase 3: führt die beabsichtigten Orders (data/intents.json) über die Gates aus — HART DRY-RUN.
-# Läuft auf dem geteilten Mac (Wohn-IP; Datacenter ist bei Polymarket geoblockt). Versetzt zu den
-# Fußball-Läufen (:00/:30) getaktet auf :15/:45 + kurzes Timeout, damit manage-wm-poly nie wartet.
+# Phase 3 (DRY-RUN): führt die beabsichtigten Orders (data/intents.json) über die Gates aus und
+# loggt nur, was platziert WÜRDE — kein echtes Geld, kein Wallet, kein Order-Placement.
+# → läuft deshalb auf der CLOUD (ubuntu-latest); der self-hosted Mac ist hier NICHT nötig.
+#
+# 🔁 FÜR LIVE (später, bewusst): runs-on auf [self-hosted, macOS] umstellen (Order-Placement geht
+#    NUR von der Wohn-IP — Datacenter ist bei Polymarket geoblockt), DRY_RUN auf "0", Org-Runner +
+#    Org-Secrets einrichten, und zur Sicherheit :15/:45 + timeout-minutes ergänzen, damit der
+#    Betting-Runner (:00/:30) nie wartet.
 
 on:
   schedule:
-    - cron: "15,45 * * * *"     # versetzt zum Betting-Bot (:00/:30)
+    - cron: "15,45 * * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: crypto-execute        # eigene Gruppe; die Cross-Repo-Serialisierung kommt vom einen Runner
+  group: crypto-execute
   cancel-in-progress: false
 
 jobs:
   execute:
-    runs-on: [self-hosted, macOS]   # NUR der Mac — nicht Cloud/VPS (geoblockt)
-    timeout-minutes: 8               # Runner nicht blockieren
+    runs-on: ubuntu-latest          # Dry-Run: Cloud reicht. Für LIVE → [self-hosted, macOS].
+    timeout-minutes: 8
     env:
       DRY_RUN: "1"                   # ⛔ HART auf Dry-Run — kein echtes Geld. Für live BEWUSST auf "0".
       CRYPTO_DAILY_USDC_CAP: "12"    # ≈ €11/Tag (dein Minimum €10). Order-Größe $5 (Poly-Minimum).
