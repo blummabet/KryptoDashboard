@@ -74,8 +74,8 @@ def build():
 
     for slug in SERIES:
         for ev in poly_core.gamma_events(slug):
-            if poly_core.has_hide_tag(ev):
-                continue
+            # Hinweis: 'hide-from-new' NICHT als Ausschluss nutzen — Polymarket taggt damit ALLE
+            # wiederkehrenden Märkte (auch unsere Tages-Schwellen). Die Serien-Filterung reicht.
             for m in ev.get("markets", []):
                 if poly_core.is_derived_market(m.get("slug", "")):
                     continue
