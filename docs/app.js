@@ -88,9 +88,11 @@
         const gross = m.edgeGrossPP;
         const grossTxt = (gross != null && e != null) ? `<div class="grosslbl">brutto ${(gross > 0 ? "+" : "") + gross.toFixed(1)}</div>` : "";
         const spk = sparkline(trends[m.conditionId]);
+        const famLabel = { above: "Schwelle", touch: "Touch" }[m.family] || "";
+        const famChip = famLabel ? `<span class="fam fam-${m.family}">${famLabel}</span>` : "";
         return `<tr>
           <td><span class="asset"><span class="coin" style="background:${col}">${a[0]}</span>${a}</span>
-              <div class="mkt-sub">${esc(m.market)}</div></td>
+              <div class="mkt-sub">${famChip}${esc(m.market)}</div></td>
           <td class="r num">${pct(m.polyPrice)}</td>
           <td class="r num">${pct(m.fairProb)}</td>
           <td class="r num">${m.ivPct != null ? m.ivPct.toFixed(0) + "%" : "—"}</td>

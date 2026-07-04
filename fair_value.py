@@ -34,6 +34,25 @@ def digital_below(spot, strike, sigma, t_years, r=0.0):
     return None if p is None else 1.0 - p
 
 
+def one_touch(spot, barrier, sigma, t_years, r=0.0):
+    """Risk-neutrale Wkt., dass der Kurs die Barriere in [0,T] MINDESTENS EINMAL berührt
+    (One-Touch, kontinuierlich ≈ 1m-Candles). Für Familie D/E (hit/dip/ATH) — NICHT als Digital.
+    Auto-Richtung: barrier > spot = up-Touch, barrier < spot = down-Touch. Bei OFFENEN Märkten ist
+    der Kurs noch auf der nicht-berührten Seite, daher folgt die Richtung sauber aus barrier vs spot.
+    First-Passage-Formel für arithmetische BM (ν = r − σ²/2)."""
+    if not spot or not barrier or not sigma or not t_years or sigma <= 0 or t_years <= 0:
+        return None
+    nu = r - 0.5 * sigma * sigma
+    s = sigma * math.sqrt(t_years)
+    a = math.log(barrier / spot)
+    factor = math.exp(2 * nu * a / (sigma * sigma))   # = spot/barrier bei r=0
+    if a >= 0:                                          # up-Barriere
+        p = _norm_cdf((-a + nu * t_years) / s) + factor * _norm_cdf((-a - nu * t_years) / s)
+    else:                                              # down-Barriere
+        p = _norm_cdf((a - nu * t_years) / s) + factor * _norm_cdf((a + nu * t_years) / s)
+    return max(0.0, min(1.0, p))
+
+
 # Taker-Fee der Krypto-Märkte: feeType crypto_fees_v2, rate 0.07, taker-only (im Markt-Objekt
 # verifiziert). Exakte Formel noch nicht am echten Fill bestätigt → wir nutzen ein KONSERVATIVES
 # Modell fee = rate·min(p, 1−p): am Geld am teuersten, an den Rändern günstiger. Konservativ =

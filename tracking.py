@@ -14,7 +14,7 @@ import pathlib
 HIST = pathlib.Path(__file__).parent / "data" / "edge_history.jsonl"
 
 # Felder pro Snapshot — genau die, die wir für Edge-Verlauf + CLV brauchen.
-FIELDS = ("conditionId", "slug", "asset", "market", "strike", "direction", "endDate",
+FIELDS = ("conditionId", "slug", "asset", "family", "market", "strike", "direction", "endDate",
           "polyPrice", "fairProb", "edgePP", "edgeGrossPP", "ivPct", "liquidityUSD")
 
 

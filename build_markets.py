@@ -23,16 +23,25 @@ from signals.context_signals import FearGreedSignal
 from signals.registry import SignalRegistry
 
 OUT = pathlib.Path(__file__).parent / "docs" / "markets.json"
-SERIES = ["btc-multi-strikes-weekly"]   # später: eth-/sol-Pendants ergänzen
+
+# Familien (BTC, read-only). 'above' = europ. Digital (Preis am Stichtag), 'touch' = One-Touch-Barriere.
+SERIES = [
+    {"slug": "btc-multi-strikes-weekly", "family": "above"},   # Tages-Schwelle "über $X am Stichtag"
+    {"slug": "bitcoin-hit-price-monthly", "family": "touch"},  # One-Touch "hit $X" / "dip $X" bis Datum
+]
 _YEAR_SECS = 365.0 * 24 * 3600
+_MONTH_WORDS = ("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec")
 
 
 def parse_strike(m: dict):
-    """Strike + Richtung aus groupItemTitle ('70,000', '↑ 6,000', '↓ 40')."""
+    """Strike + Richtung aus groupItemTitle ('70,000', '↑ 65,000', '↓ 45,000').
+    Datum-Titel (z.B. ATH 'December 31, 2026') → kein Preis-Strike → None (übersprungen)."""
     t = (m.get("groupItemTitle") or m.get("question") or "")
+    low = t.lower()
+    if any(w in low for w in _MONTH_WORDS):
+        return None, "above"
     digits = re.sub(r"[^\d]", "", t)
     strike = int(digits) if digits else None
-    low = t.lower()
     down = ("↓" in t) or ("dip" in low) or ("below" in low)
     return strike, ("below" if down else "above")
 
@@ -72,10 +81,11 @@ def build():
     atm_iv = None  # repräsentative IV für die Referenz-Zeile (Strike am nächsten zum Spot)
     atm_dist = None
 
-    for slug in SERIES:
+    for cfg in SERIES:
+        slug, family = cfg["slug"], cfg["family"]
         for ev in poly_core.gamma_events(slug):
             # Hinweis: 'hide-from-new' NICHT als Ausschluss nutzen — Polymarket taggt damit ALLE
-            # wiederkehrenden Märkte (auch unsere Tages-Schwellen). Die Serien-Filterung reicht.
+            # wiederkehrenden Märkte (auch unsere Schwellen). Die Serien-Filterung reicht.
             for m in ev.get("markets", []):
                 if poly_core.is_derived_market(m.get("slug", "")):
                     continue
@@ -91,20 +101,31 @@ def build():
                     fi = data_sources.deribit_fair_inputs(strike, end_dt.date(), "BTC")
                     if fi:
                         iv = fi["iv"]
-                        fair = (fair_value.digital_above(fi["forward"], strike, iv, T)
-                                if direction == "above"
-                                else fair_value.digital_below(fi["forward"], strike, iv, T))
-                        if spot:  # repräsentative ATM-IV merken
+                        if family == "touch":
+                            # One-Touch-Barriere auf dem realen Kurspfad → Spot als S0 (nicht Forward).
+                            fair = fair_value.one_touch(spot or fi["forward"], strike, iv, T)
+                        else:  # 'above' — europ. Digital am Stichtag (Forward-konsistent)
+                            fair = (fair_value.digital_above(fi["forward"], strike, iv, T)
+                                    if direction == "above"
+                                    else fair_value.digital_below(fi["forward"], strike, iv, T))
+                        if spot and family == "above":  # repräsentative ATM-IV nur aus Digitals
                             d = abs(strike - spot)
                             if atm_dist is None or d < atm_dist:
                                 atm_dist, atm_iv = d, iv
 
+                if family == "touch":
+                    verb = "dip" if direction == "below" else "erreicht"
+                    label = f"{verb} ${strike:,} bis {m.get('endDateIso') or ''}"
+                else:
+                    label = f"über ${strike:,} · {m.get('endDateIso') or ''}"
+
                 rows.append({
                     "asset": "BTC",
+                    "family": family,
                     "conditionId": m.get("conditionId"),
                     "slug": m.get("slug"),
                     "endDate": m.get("endDate") or ev.get("endDate"),
-                    "market": f"{'über' if direction == 'above' else 'unter'} ${strike:,} · {m.get('endDateIso') or ''}",
+                    "market": label,
                     "strike": strike,
                     "direction": direction,
                     "spot": round(spot) if spot else None,
@@ -138,7 +159,7 @@ def build():
         "generatedAt": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "reference": {"spot": round(spot) if spot else None, "spotSource": spot_src,
                       "iv": round(atm_iv, 4) if atm_iv is not None else None},
-        "note": ("read-only · fair = europ. Digital auf Deribit-Forward + Smile-IV · "
+        "note": ("read-only · Schwelle = europ. Digital, Touch = One-Touch-Barriere (Deribit-Smile-IV) · "
                  "edge = NETTO (nach geschätzter Taker-Fee) · edgeGrossPP = brutto"),
         "context": context,
         "contextSignals": context_signals,
