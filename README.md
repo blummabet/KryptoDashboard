@@ -17,12 +17,12 @@ clv.py                       Nordstern: Movement-CLV + Hit-Rate/PnL/Brier + Tren
 guards.py                    Guard-Batterie: deckt stille Fehler auf (Prob-/Row-/Referenz-Checks)
 signals/base.py|registry.py  Signal-Interface + Anti-Korrelations-Combiner + Conviction
 signals/context_signals.py   Konkrete Kontext-Signale (Fear&Greed) — Display, NICHT Trade-Edge
-site/index.html + app.js     Modernes Dashboard: Trade-Edge-Tabelle + Kontext-Rail + Nordstern-KPIs
-site/markets.json            Beispiel-Daten (Cron überschreibt)
+docs/index.html + app.js     Modernes Dashboard (Web-Root für GitHub Pages, Branch /docs)
+docs/markets.json|clv.json   Von der Pipeline erzeugt + zurück-committet (Pages serviert docs/ direkt)
 tests/                       pytest-Suite (Fair Value, CLV, Guards, Signale, Parser)
-.github/workflows/deploy-pages.yml   Cron-Build + Pages-Deploy + data/-Commit ([skip ci])
+.github/workflows/deploy-pages.yml   Cron-Pipeline: baut Daten + committet docs/ (kein Deploy-Action)
 .github/workflows/tests.yml          CI: pytest bei jedem Push/PR
-docs/gamma_krypto_katalog.md Live-Katalog der Poly-Krypto-Märkte (Tags, Serien, Markt-Typen, Fees)
+research/gamma_krypto_katalog.md  Live-Katalog der Poly-Krypto-Märkte (Tags, Serien, Markt-Typen, Fees)
 ```
 
 Tests lokal: `pip install -r requirements-dev.txt && pytest -q` (Pipeline selbst nutzt nur die Stdlib).

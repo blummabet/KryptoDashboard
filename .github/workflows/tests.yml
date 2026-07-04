@@ -5,6 +5,7 @@ on:
   push:
     paths-ignore:
       - "data/**"
+      - "docs/**"        # Bot-Commits (nur Daten/Dashboard) sollen die Tests nicht auslösen
   pull_request:
   workflow_dispatch:
 

@@ -22,7 +22,7 @@ import pathlib
 import resolutions
 import tracking
 
-OUT = pathlib.Path(__file__).parent / "site" / "clv.json"
+OUT = pathlib.Path(__file__).parent / "docs" / "clv.json"
 EDGE_MIN = 2.0  # pp — ab hier gilt ein Markt als "Pick" fürs CLV-Tracking
 
 

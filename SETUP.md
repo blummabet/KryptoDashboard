@@ -23,8 +23,11 @@ Der Projektordner ist bereits ein sauberes Repo-Verzeichnis:
 3. Commit alles (Summary z.B. „initial: cryptoedge read-only") → **Publish repository** und das eben
    erstellte `crypto-edge` als Remote wählen (Häkchen „privat" **entfernen**).
 
-## 4. [DU] GitHub Pages auf Actions stellen
-Repo → **Settings → Pages** → unter **Build and deployment** → **Source: GitHub Actions**.
+## 4. [DU] GitHub Pages auf Branch /docs stellen
+Repo → **Settings → Pages** → **Build and deployment** → **Source: „Deploy from a branch"** →
+**Branch: `main`**, **Folder: `/docs`** → **Save**.
+(Wir nutzen bewusst NICHT „GitHub Actions" — die `deploy-pages`-Action scheitert beim Cron-Andrang
+mit „Deployment failed, try again later". Branch-Pages serviert `docs/` stabil, ohne Deploy-Action.)
 
 ## 5. [DU] Workflow-Rechte freigeben (WICHTIG)
 Damit der Cron die Edge-Historie zurück-committen darf:
@@ -33,15 +36,16 @@ Repo → **Settings → Actions → General** → ganz unten **Workflow permissi
 (Ohne das schlägt der `data/`-Commit-Schritt fehl.)
 
 ## 6. [DU] Ersten Lauf starten
-Repo → **Actions** → Workflow **„Build & Deploy CryptoEdge (read-only)"** → **Run workflow**.
-- Parallel läuft **„Tests"** automatisch (pytest) — sollte grün sein.
-- Nach dem Lauf zeigt **Settings → Pages** die Live-URL. Dort erscheint das Dashboard; die
-  Edge-Tabelle füllt sich aus `site/markets.json`.
+Repo → **Actions** → Workflow **„CryptoEdge Pipeline (read-only)"** → **Run workflow**.
+- Die Pipeline schreibt `docs/markets.json` + `docs/clv.json` und committet sie zurück.
+- GitHub Pages serviert `docs/` automatisch — **kein Deploy-Schritt mehr, der fehlschlagen kann.**
+- Die Live-URL steht unter **Settings → Pages**. Das Dashboard füllt sich aus `docs/markets.json`.
 
-## 7. Danach automatisch
+## 7. Danach automatisch — kein Re-run nötig
 Der Cron läuft alle 30 min: zieht die Poly-Tages-Schwellen, rechnet Fair Value (Deribit-IV),
-schreibt einen Snapshot in `data/edge_history.jsonl`, zieht Auflösungen nach und aktualisiert die
-CLV-/Kalibrierungs-Zahlen. Historie und CLV bauen sich über die Tage von selbst auf.
+schreibt einen Snapshot in `data/edge_history.jsonl`, zieht Auflösungen nach, aktualisiert die
+CLV-Zahlen und committet `docs/`. Pages übernimmt den neuen Stand von selbst. Historie und CLV
+bauen sich über die Tage auf.
 
 ---
 

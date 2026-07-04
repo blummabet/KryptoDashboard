@@ -22,7 +22,7 @@ import tracking
 from signals.context_signals import FearGreedSignal
 from signals.registry import SignalRegistry
 
-OUT = pathlib.Path(__file__).parent / "site" / "markets.json"
+OUT = pathlib.Path(__file__).parent / "docs" / "markets.json"
 SERIES = ["btc-multi-strikes-weekly"]   # später: eth-/sol-Pendants ergänzen
 _YEAR_SECS = 365.0 * 24 * 3600
 

@@ -1,29 +1,25 @@
-name: Build & Deploy CryptoEdge (read-only)
+name: CryptoEdge Pipeline (read-only)
 
-# Phase 1: kein Trading. Der Cron zieht die Poly-Tages-Schwellenmärkte, baut site/markets.json,
-# schreibt die Edge-Historie fort (data/), rechnet CLV (site/clv.json) und deployt NUR den
-# schlanken site/-Ordner auf GitHub Pages (Deploy-Lehren aus dem Fußball-Repo).
+# Phase 1: kein Trading. Der Cron zieht die Poly-Tages-Schwellen, rechnet Fair Value (Deribit-IV),
+# schreibt die Edge-Historie fort, rechnet CLV und committet die aktualisierten Daten nach docs/.
+# GitHub Pages ist auf "Deploy from a branch → main → /docs" gestellt und serviert docs/ direkt —
+# KEINE deploy-pages-Action (die verträgt den Cron-Andrang nicht → "Deployment failed, try again").
 
 on:
   schedule:
     - cron: "*/30 * * * *"     # alle 30 min — Tages-Schwellen brauchen keinen Sekundentakt
   workflow_dispatch:
-  push:
-    branches: [ main ]
-    paths-ignore:
-      - "data/**"              # eigene Snapshot-Commits NICHT wieder triggern (kein Loop)
+  # bewusst KEIN push-Trigger: der Bot-Commit unten würde sich sonst selbst neu auslösen (Loop).
 
 permissions:
-  contents: write             # data/ zurück-committen (Historie muss persistieren)
-  pages: write
-  id-token: write
+  contents: write             # data/ + docs/ zurück-committen
 
 concurrency:
-  group: pages
-  cancel-in-progress: false    # Lehre: laufende Deploys NICHT abbrechen
+  group: cryptoedge-pipeline
+  cancel-in-progress: false
 
 jobs:
-  build:
+  run:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -31,38 +27,23 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Pipeline — Poly + Fair Value → site/markets.json, Snapshot → data/
+      - name: Pipeline — Poly + Fair Value → docs/markets.json, Snapshot → data/
         run: python build_markets.py
 
       - name: Auflösungen nachziehen → data/resolutions.json
         run: python resolutions.py
 
-      - name: CLV + Kalibrierung auswerten → site/clv.json
+      - name: CLV + Kalibrierung → docs/clv.json
         run: python clv.py
 
-      - name: Historie + Auflösungen zurück-committen ([skip ci], kein Loop)
+      - name: Daten + Dashboard-Daten zurück-committen (Pages serviert docs/ automatisch)
         run: |
           git config user.name "cryptoedge-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/edge_history.jsonl data/resolutions.json
+          git add data/ docs/markets.json docs/clv.json
           if git diff --cached --quiet; then
-            echo "keine neuen Daten"
+            echo "keine Änderungen"
           else
-            git commit -m "chore(data): edge snapshot + resolutions [skip ci]"
+            git commit -m "chore: data + dashboard update"
             git push
           fi
-
-      - name: Nur das schlanke Site-Artefakt hochladen
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: site          # NUR der Static-Ordner — kein Generator-Code (Deploy-Lehre)
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
