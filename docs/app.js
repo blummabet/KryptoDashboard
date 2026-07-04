@@ -158,15 +158,18 @@
 
   // ---- Maker-Board ------------------------------------------------------------------------
   function renderMaker(mk) {
-    const b = (mk && mk.board) || [];
-    $("makerHint").textContent = ((mk && mk.count) || 0) + " Märkte · " + ((mk && mk.rewardEligible) || 0) + " reward-berechtigt";
+    const b = (mk && mk.board) || [], sim = (mk && mk.sim) || {};
+    const cum = sim.cumRewardEst == null ? "—" : "$" + sim.cumRewardEst.toFixed(2);
+    const day = sim.estRewardDayTotal == null ? "—" : "$" + sim.estRewardDayTotal.toFixed(2);
+    $("makerHint").innerHTML = ((mk && mk.count) || 0) + " Märkte · " + ((mk && mk.rewardEligible) || 0)
+      + " reward-berechtigt · <b style='color:var(--accent)'>~" + day + "/Tag</b> geschätzt · kumuliert <b style='color:var(--accent)'>" + cum + "</b>";
     $("makerRows").innerHTML = b.length ? b.map(x => `<tr>
       <td><div class="mkt-sub">${famChip(x.family)}${x.isNew ? '<span class="fam" style="background:rgba(76,141,255,.16);color:var(--accent2)">NEU</span>' : ""}${esc(x.market)}</div></td>
       <td class="r num">${pct(x.fair)}</td>
       <td class="r num">${x.bid != null ? cents(x.bid) + "/" + cents(x.ask) : "—"}</td>
       <td class="r num">${cents(x.quoteBid)}/${cents(x.quoteAsk)}</td>
       <td class="r pnl pos">+${x.edgeIfFilledPP.toFixed(1)}pp</td>
-      <td class="r">${x.rewardEligible ? '<span class="side side-YES">✓</span>' : '<span class="mkt-sub">—</span>'}</td></tr>`).join("")
+      <td class="r num">${x.rewardEligible ? "$" + (x.estRewardDay || 0).toFixed(3) + "/T" : "<span class='mkt-sub'>—</span>"}</td></tr>`).join("")
       : '<tr><td colspan="6" class="empty">Kein Maker-Board — noch keine Märkte mit Fair.</td></tr>';
   }
 
@@ -181,7 +184,7 @@
     $("strat").innerHTML = [
       tile("portfolio", "Paper-Trading", s.totalPnl == null ? "—" : money(s.totalPnl), cls(s.totalPnl), (s.openCount ?? 0) + " offen · Konvergenz"),
       tile("arb", "Konsistenz-Arb", ap.totalPnl == null ? "—" : money(ap.totalPnl), cls(ap.totalPnl), (ap.openCount ?? 0) + " offen · gesperrt"),
-      tile("maker", "Maker-Board", (mk && mk.rewardEligible) ?? 0, "acc", "reward-berechtigt"),
+      tile("maker", "Maker-Board (Sim)", ((mk && mk.sim && mk.sim.cumRewardEst) == null) ? "—" : money(mk.sim.cumRewardEst), "acc", ((mk && mk.rewardEligible) ?? 0) + " berechtigt · Rewards gesch."),
       tile("radar", "Neu-Markt-Lag", nm == null ? money(0) : money(nm), cls(nm), (s.newMarketCount ?? 0) + " Trades · frisch"),
     ].join("");
     document.querySelectorAll(".stile").forEach(t => t.addEventListener("click", () => switchTab(t.dataset.goto)));

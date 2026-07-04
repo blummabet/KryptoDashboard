@@ -69,6 +69,14 @@ def run():
         else:
             placed += 1
             print(f"  · {st}: {order.side} {order.label}")
+
+    # Jeder Lauf hinterlässt eine sichtbare Zusammenfassung (auch bei 0 Intents) — inkl. Kill-Switch.
+    execution._log({
+        "ts": execution.datetime.datetime.now(execution.datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "type": "run", "mode": mode, "intents": len(intents),
+        "placed": placed, "skipped": skipped, "rejected": rejected,
+        "killSwitch": execution.kill_switch_active(),
+    })
     print(f"  → {placed} verarbeitet, {skipped} übersprungen, {rejected} abgelehnt")
 
 
