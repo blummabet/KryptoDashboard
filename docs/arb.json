@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-04T16:33:44Z",
-  "count": 5,
-  "tradableCount": 1,
+  "generatedAt": "2026-07-04T18:06:11Z",
+  "count": 2,
+  "tradableCount": 0,
   "note": "Monotonie-Verletzungen in Polys eigener Strike-Leiter (modell-frei) — auf Papier gehandelt.",
   "paper": {
     "summary": {
@@ -24,57 +24,22 @@
       }
     ],
     "closed": [],
-    "activity": [
-      {
-        "ts": "2026-07-04T16:33:44Z",
-        "type": "open",
-        "market": "über $52,000 · 2026-07-11 (50%) ↔ über $54,000 · 2026-07-11 (98%) verletzt Monotonie",
-        "gap": 48.0
-      }
-    ]
+    "activity": []
   },
   "findings": [
-    {
-      "family": "above",
-      "date": "2026-07-11",
-      "direction": "above",
-      "lowStrike": 52000,
-      "highStrike": 54000,
-      "lowP": 0.5,
-      "highP": 0.98,
-      "lowCid": "0x3a109c95bb68aa103afe2463868224610d5ddbafce958fed69b08ef7e7c8d191",
-      "highCid": "0x3ca156f9b82336c8bdb3fa3065746738a0c14d12d2bcfbf9919182685d10cf85",
-      "gapPP": 48.0,
-      "tradable": true,
-      "note": "über $52,000 · 2026-07-11 (50%) ↔ über $54,000 · 2026-07-11 (98%) verletzt Monotonie"
-    },
-    {
-      "family": "above",
-      "date": "2026-07-11",
-      "direction": "above",
-      "lowStrike": 62000,
-      "highStrike": 64000,
-      "lowP": 0.605,
-      "highP": 0.65,
-      "lowCid": "0x1578c0c4a0a5c3c8f5844b16a0f284cdb774e5b737155b834765d6730764e768",
-      "highCid": "0xb2b222cf79fcf899e479bbf711e02198af67817a2740286f71b950830717e3e2",
-      "gapPP": 4.5,
-      "tradable": false,
-      "note": "über $62,000 · 2026-07-11 (60%) ↔ über $64,000 · 2026-07-11 (65%) verletzt Monotonie"
-    },
     {
       "family": "above",
       "date": "2026-07-07",
       "direction": "above",
       "lowStrike": 54000,
       "highStrike": 56000,
-      "lowP": 0.9935,
-      "highP": 0.996,
+      "lowP": 0.9915,
+      "highP": 0.9925,
       "lowCid": "0x934bad58eaaae3898bf6fd42f86d9539c2c8d5530cb43882d592a6e1a1953ed0",
       "highCid": "0x19047cae64d6403a7f3351c416d73c4d7234209100991aee388eb961577a37c9",
-      "gapPP": 0.25,
+      "gapPP": 0.1,
       "tradable": false,
-      "note": "über $54,000 · 2026-07-07 (99%) ↔ über $56,000 · 2026-07-07 (100%) verletzt Monotonie"
+      "note": "über $54,000 · 2026-07-07 (99%) ↔ über $56,000 · 2026-07-07 (99%) verletzt Monotonie"
     },
     {
       "family": "above",
@@ -82,27 +47,13 @@
       "direction": "above",
       "lowStrike": 50000,
       "highStrike": 52000,
-      "lowP": 0.996,
+      "lowP": 0.997,
       "highP": 0.998,
       "lowCid": "0x9fa56bb52a7437ae6cefd81a8515991e880f3719cee79e29bb0e7852d52c09e0",
       "highCid": "0xc642554258f8f5f5fc02191e579dd079e33d08a00765752472a2e9f3b51a4278",
-      "gapPP": 0.2,
+      "gapPP": 0.1,
       "tradable": false,
       "note": "über $50,000 · 2026-07-08 (100%) ↔ über $52,000 · 2026-07-08 (100%) verletzt Monotonie"
-    },
-    {
-      "family": "above",
-      "date": "2026-07-07",
-      "direction": "above",
-      "lowStrike": 52000,
-      "highStrike": 54000,
-      "lowP": 0.993,
-      "highP": 0.9935,
-      "lowCid": "0x1dca018055095d6e547e2ea00863b6665c91a1d30a71e1f7e2653ba2e2410c88",
-      "highCid": "0x934bad58eaaae3898bf6fd42f86d9539c2c8d5530cb43882d592a6e1a1953ed0",
-      "gapPP": 0.05,
-      "tradable": false,
-      "note": "über $52,000 · 2026-07-07 (99%) ↔ über $54,000 · 2026-07-07 (99%) verletzt Monotonie"
     }
   ]
 }
