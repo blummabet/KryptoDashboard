@@ -126,24 +126,53 @@
     $("refline").innerHTML = `Spot <b class="num">${ref.spot ? "$" + ref.spot.toLocaleString("de-DE") : "—"}</b> · Quelle <b>${esc(ref.spotSource || "—")}</b> · ATM-IV <b class="num">${ref.iv != null ? (ref.iv * 100).toFixed(0) + "%" : "—"}</b>`;
   }
 
+  // ---- Konsistenz-Arb ---------------------------------------------------------------------
+  function renderArb(a) {
+    const f = (a && a.findings) || [];
+    $("arbHint").textContent = ((a && a.count) || 0) + " Widersprüche · " + ((a && a.tradableCount) || 0) + " handelbar";
+    $("arbRows").innerHTML = f.length ? f.map(x => `<tr>
+      <td><div class="mkt-sub">${esc(x.note)}</div></td>
+      <td class="r num">${pct(x.lowP)}</td><td class="r num">${pct(x.highP)}</td>
+      <td class="r pnl ${x.tradable ? "pos" : ""}">${x.gapPP.toFixed(1)}pp</td>
+      <td class="r">${x.tradable ? '<span class="side side-YES">JA</span>' : '<span class="mkt-sub">—</span>'}</td></tr>`).join("")
+      : '<tr><td colspan="5" class="empty">Aktuell keine Widersprüche — Polys Strike-Leiter ist konsistent.</td></tr>';
+  }
+
+  // ---- Maker-Board ------------------------------------------------------------------------
+  function renderMaker(mk) {
+    const b = (mk && mk.board) || [];
+    $("makerHint").textContent = ((mk && mk.count) || 0) + " Märkte · " + ((mk && mk.rewardEligible) || 0) + " reward-berechtigt";
+    $("makerRows").innerHTML = b.length ? b.map(x => `<tr>
+      <td><div class="mkt-sub">${famChip(x.family)}${x.isNew ? '<span class="fam" style="background:rgba(76,141,255,.16);color:var(--accent2)">NEU</span>' : ""}${esc(x.market)}</div></td>
+      <td class="r num">${pct(x.fair)}</td>
+      <td class="r num">${x.bid != null ? cents(x.bid) + "/" + cents(x.ask) : "—"}</td>
+      <td class="r num">${cents(x.quoteBid)}/${cents(x.quoteAsk)}</td>
+      <td class="r pnl pos">+${x.edgeIfFilledPP.toFixed(1)}pp</td>
+      <td class="r">${x.rewardEligible ? '<span class="side side-YES">✓</span>' : '<span class="mkt-sub">—</span>'}</td></tr>`).join("")
+      : '<tr><td colspan="6" class="empty">Kein Maker-Board — noch keine Märkte mit Fair.</td></tr>';
+  }
+
   // ---- Tabs -------------------------------------------------------------------------------
+  const VIEWS = ["portfolio", "radar", "arb", "maker"];
   document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => {
     document.querySelectorAll(".tab").forEach(x => x.classList.remove("on"));
     t.classList.add("on");
-    $("view-portfolio").classList.toggle("hidden", t.dataset.view !== "portfolio");
-    $("view-radar").classList.toggle("hidden", t.dataset.view !== "radar");
+    VIEWS.forEach(v => $("view-" + v).classList.toggle("hidden", t.dataset.view !== v));
   }));
 
   // ---- Load -------------------------------------------------------------------------------
   const j = (u) => fetch(u + "?_=" + Date.now()).then(r => r.ok ? r.json() : Promise.reject(r.status));
-  Promise.allSettled([j("paper.json"), j("clv.json"), j("markets.json")]).then(([pp, cl, mk]) => {
-    const paper = pp.status === "fulfilled" ? pp.value : {};
-    const clv = cl.status === "fulfilled" ? cl.value : {};
-    renderHero(paper, clv);
-    renderPortfolio(paper);
-    if (mk.status === "fulfilled") {
-      renderRadar(mk.value, clv.trends || {});
-      if (mk.value.generatedAt) $("updated").textContent = "Stand: " + mk.value.generatedAt;
-    }
-  });
+  Promise.allSettled([j("paper.json"), j("clv.json"), j("markets.json"), j("arb.json"), j("maker.json")])
+    .then(([pp, cl, mk, ar, ma]) => {
+      const paper = pp.status === "fulfilled" ? pp.value : {};
+      const clv = cl.status === "fulfilled" ? cl.value : {};
+      renderHero(paper, clv);
+      renderPortfolio(paper);
+      if (mk.status === "fulfilled") {
+        renderRadar(mk.value, clv.trends || {});
+        if (mk.value.generatedAt) $("updated").textContent = "Stand: " + mk.value.generatedAt;
+      }
+      renderArb(ar.status === "fulfilled" ? ar.value : {});
+      renderMaker(ma.status === "fulfilled" ? ma.value : {});
+    });
 })();

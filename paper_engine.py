@@ -144,11 +144,12 @@ def run():
 
     # 2) Neue Positionen öffnen (stärkster Edge zuerst, Cap beachten)
     n_open = len(open_cids)
+    # Neu-Markt-Lag: frische Märkte zuerst (Poly noch nicht zur Referenz konvergiert), dann nach Edge.
     cands = sorted(
         (m for m in mkts.values()
          if m.get("edgePP") is not None and m.get("fairProb") is not None
          and abs(m["edgePP"]) >= EDGE_FLOOR_PP and (m.get("liquidityUSD") or 0) >= LIQ_FLOOR_USD),
-        key=lambda m: -abs(m["edgePP"]))
+        key=lambda m: (not m.get("isNew", False), -abs(m["edgePP"])))
     for m in cands:
         if n_open >= MAX_OPEN:
             break

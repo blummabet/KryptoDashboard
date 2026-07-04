@@ -33,6 +33,12 @@ jobs:
       - name: Auflösungen nachziehen → data/resolutions.json
         run: python resolutions.py
 
+      - name: Konsistenz-Scanner (Cross-Market-Arb) → docs/arb.json
+        run: python consistency.py
+
+      - name: Maker-Board → docs/maker.json
+        run: python maker.py
+
       - name: Paper-Trading (dry-run) → docs/paper.json
         run: python paper_engine.py
 
@@ -43,7 +49,7 @@ jobs:
         run: |
           git config user.name "cryptoedge-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ docs/markets.json docs/clv.json docs/paper.json
+          git add data/ docs/markets.json docs/clv.json docs/paper.json docs/arb.json docs/maker.json
           if git diff --cached --quiet; then
             echo "keine Änderungen"
           else

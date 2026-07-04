@@ -53,6 +53,9 @@ def yes_price(m: dict):
         return None
 
 
+NEW_HOURS = 48   # jünger = "neu" → Neu-Markt-Lag (Poly noch nicht konvergiert)
+
+
 def _end_dt(end_iso: str | None):
     if not end_iso:
         return None
@@ -60,6 +63,13 @@ def _end_dt(end_iso: str | None):
         return datetime.datetime.fromisoformat(end_iso.replace("Z", "+00:00"))
     except Exception:
         return None
+
+
+def _age_h(start_iso: str | None):
+    dt = _end_dt(start_iso)
+    if not dt:
+        return None
+    return round((datetime.datetime.now(datetime.timezone.utc) - dt).total_seconds() / 3600, 1)
 
 
 def t_years(end_dt):
@@ -135,6 +145,13 @@ def build():
                     "edgePP": fair_value.net_edge_pp(fair, poly),       # netto (nach geschätzter Fee)
                     "edgeGrossPP": fair_value.gross_edge_pp(fair, poly),
                     "liquidityUSD": round(m.get("liquidityNum") or 0),
+                    # Maker-/Freshness-Felder:
+                    "bestBid": m.get("bestBid"),
+                    "bestAsk": m.get("bestAsk"),
+                    "rewardsMinSize": m.get("rewardsMinSize"),
+                    "rewardsMaxSpread": m.get("rewardsMaxSpread"),
+                    "ageH": _age_h(m.get("startDate")),
+                    "isNew": (_age_h(m.get("startDate")) or 1e9) < NEW_HOURS,
                 })
 
     rows.sort(key=lambda r: (r["edgePP"] is None, -(r["edgePP"] or 0)))
