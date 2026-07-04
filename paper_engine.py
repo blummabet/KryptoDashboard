@@ -89,7 +89,7 @@ def _open(m, now):
         "family": m.get("family"), "side": side, "status": "OPEN",
         "entryTs": now, "entryPoly": round(p, 4), "entryFair": m.get("fairProb"),
         "entryEdgePP": edge, "shares": round(STAKE_USD / cost_price, 2), "stakeUSD": STAKE_USD,
-        "feePaid": round(_fee_usd(cost_price), 2),
+        "feePaid": round(_fee_usd(cost_price), 2), "wasNew": bool(m.get("isNew")),
     }
 
 
@@ -175,11 +175,17 @@ def _write_view(positions, now, activity):
     closed = [p for p in positions if p["status"] == "CLOSED"]
 
     unreal = 0.0
+    new_pnl = est_pnl = 0.0
+    new_ct = 0
     open_rows = []
     for p in open_pos:
         mark = p.get("markPoly", p["entryPoly"])
         u = _mark_pnl(p, mark) - p["feePaid"]
         unreal += u
+        if p.get("wasNew"):
+            new_pnl += u; new_ct += 1
+        else:
+            est_pnl += u
         open_rows.append({
             "market": p["market"], "family": p.get("family"), "side": p["side"],
             "entryPoly": p["entryPoly"], "markPoly": mark, "curEdgePP": p.get("curEdgePP"),
@@ -189,6 +195,11 @@ def _write_view(positions, now, activity):
 
     realized = sum(p.get("realizedPnl", 0.0) for p in closed)
     wins = sum(1 for p in closed if p.get("realizedPnl", 0.0) > 0)
+    for p in closed:
+        if p.get("wasNew"):
+            new_pnl += p.get("realizedPnl", 0.0); new_ct += 1
+        else:
+            est_pnl += p.get("realizedPnl", 0.0)
     summary = {
         "mode": "PAPER / DRY-RUN — kein echtes Geld",
         "totalPnl": round(realized + unreal, 2),
@@ -200,6 +211,8 @@ def _write_view(positions, now, activity):
         "roiPct": round(realized / (STAKE_USD * len(closed)) * 100, 1) if closed else None,
         "stakedOpenUSD": round(STAKE_USD * len(open_pos)),
         "stakeUSD": STAKE_USD, "edgeFloorPP": EDGE_FLOOR_PP,
+        # Neu-Markt-Lag-Test: P&L frischer vs. etablierter Märkte
+        "newMarketPnl": round(new_pnl, 2), "establishedPnl": round(est_pnl, 2), "newMarketCount": new_ct,
     }
     view = {
         "generatedAt": now, "summary": summary,

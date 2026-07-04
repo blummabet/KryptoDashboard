@@ -127,9 +127,26 @@
     $("refline").innerHTML = `Spot <b class="num">${ref.spot ? "$" + ref.spot.toLocaleString("de-DE") : "—"}</b> · Quelle <b>${esc(ref.spotSource || "—")}</b> · ATM-IV <b class="num">${ref.iv != null ? (ref.iv * 100).toFixed(0) + "%" : "—"}</b>`;
   }
 
-  // ---- Konsistenz-Arb ---------------------------------------------------------------------
+  // ---- Konsistenz-Arb (Paper-Buch + gefundene Widersprüche) -------------------------------
   function renderArb(a) {
     const f = (a && a.findings) || [];
+    const pb = (a && a.paper) || {}, s = pb.summary || {}, op = pb.open || [];
+    const kpi = (k, v, cc) => `<div class="kpi"><div class="k">${k}</div><div class="v ${cc || ""}">${v}</div></div>`;
+    $("arbKpis").innerHTML = [
+      kpi("Arb P&L", s.totalPnl == null ? "—" : money(s.totalPnl), cls(s.totalPnl)),
+      kpi("gesperrt (offen)", s.lockedOpen == null ? "—" : money(s.lockedOpen), cls(s.lockedOpen)),
+      kpi("realisiert", s.realizedPnl == null ? "—" : money(s.realizedPnl), cls(s.realizedPnl)),
+      kpi("Offen / Settled", (s.openCount ?? 0) + " / " + (s.closedCount ?? 0), ""),
+    ].join("");
+
+    $("arbOpenHint").textContent = op.length + " offen";
+    $("arbOpenRows").innerHTML = op.length ? op.map(o => `<tr>
+      <td><div class="mkt-sub">${esc(o.label)}</div></td>
+      <td class="r pnl pos">${o.gapPP.toFixed(1)}pp</td>
+      <td class="r num">${cents(o.cost)}</td>
+      <td class="r pnl ${cls(o.lockedMin)}">${money(o.lockedMin)}</td></tr>`).join("")
+      : '<tr><td colspan="4" class="empty">Noch keine offenen Arbitragen — sobald ein Gap ≥ ~7pp auftaucht, wird gehandelt.</td></tr>';
+
     $("arbHint").textContent = ((a && a.count) || 0) + " Widersprüche · " + ((a && a.tradableCount) || 0) + " handelbar";
     $("arbRows").innerHTML = f.length ? f.map(x => `<tr>
       <td><div class="mkt-sub">${esc(x.note)}</div></td>
@@ -159,11 +176,13 @@
     const newCount = ((markets && markets.markets) || []).filter(m => m.isNew).length;
     const tile = (goto, title, val, vc, sub) =>
       `<div class="stile" data-goto="${goto}"><div class="st">${title}</div><div class="sv ${vc || ""}">${val}</div><div class="ss">${sub}</div></div>`;
+    const ap = (arb && arb.paper && arb.paper.summary) || {};
+    const nm = s.newMarketPnl;
     $("strat").innerHTML = [
       tile("portfolio", "Paper-Trading", s.totalPnl == null ? "—" : money(s.totalPnl), cls(s.totalPnl), (s.openCount ?? 0) + " offen · Konvergenz"),
-      tile("arb", "Konsistenz-Arb", (arb && arb.tradableCount) ?? 0, (arb && arb.tradableCount) ? "pos" : "", ((arb && arb.count) ?? 0) + " Widersprüche"),
+      tile("arb", "Konsistenz-Arb", ap.totalPnl == null ? "—" : money(ap.totalPnl), cls(ap.totalPnl), (ap.openCount ?? 0) + " offen · gesperrt"),
       tile("maker", "Maker-Board", (mk && mk.rewardEligible) ?? 0, "acc", "reward-berechtigt"),
-      tile("radar", "Neu-Markt-Lag", newCount, newCount ? "acc" : "", "frische Märkte"),
+      tile("radar", "Neu-Markt-Lag", nm == null ? money(0) : money(nm), cls(nm), (s.newMarketCount ?? 0) + " Trades · frisch"),
     ].join("");
     document.querySelectorAll(".stile").forEach(t => t.addEventListener("click", () => switchTab(t.dataset.goto)));
   }

@@ -231,9 +231,16 @@
 
     <!-- KONSISTENZ-ARB -->
     <div id="view-arb" class="hidden">
-      <div class="explain">Polys eigene Märkte müssen zueinander passen — „über $60k" kann nicht billiger sein als „über $64k". Dieser Scanner findet solche <b>Selbstwidersprüche ganz ohne unser Modell</b>; jede Zeile ist eine potenzielle risikoarme Arbitrage. Ab ~7pp Gap (2× Fee) wäre sie handelbar — braucht aber beide Beine gleichzeitig + den Runner.</div>
+      <div class="explain">Polys eigene Märkte müssen zueinander passen — „über $60k" kann nicht billiger sein als „über $64k". Dieser Scanner findet solche <b>Selbstwidersprüche ganz ohne unser Modell</b> und handelt sie <b>auf Papier</b> als risikoarme Arb (billige Seite kaufen, teure verkaufen — Auszahlung garantiert ≥ 1). Der Mindestgewinn = Gap minus 2 Fees ist gesperrt; settlet bei Auflösung.</div>
+      <div class="kpis" id="arbKpis"></div>
+      <div class="card" style="margin-bottom:16px">
+        <div class="card-h"><span class="t">Offene Arbitragen (Papier)</span><span class="hint" id="arbOpenHint"></span></div>
+        <table><thead><tr>
+          <th>Widerspruch</th><th class="r">Gap</th><th class="r">Einstand</th><th class="r">min. Gewinn</th>
+        </tr></thead><tbody id="arbOpenRows"><tr><td colspan="4" class="empty">Noch keine offenen Arbitragen.</td></tr></tbody></table>
+      </div>
       <div class="card">
-        <div class="card-h"><span class="t">Konsistenz-Arbitrage</span><span class="badge b-edge">modell-frei</span>
+        <div class="card-h"><span class="t">Gefundene Widersprüche</span><span class="badge b-edge">modell-frei</span>
           <span class="hint" id="arbHint"></span></div>
         <table><thead><tr>
           <th>Widerspruch (gleiches Datum/Typ)</th><th class="r">billig</th><th class="r">teuer</th>

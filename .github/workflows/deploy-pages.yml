@@ -33,8 +33,8 @@ jobs:
       - name: Auflösungen nachziehen → data/resolutions.json
         run: python resolutions.py
 
-      - name: Konsistenz-Scanner (Cross-Market-Arb) → docs/arb.json
-        run: python consistency.py
+      - name: Konsistenz-Arb Paper-Buch → docs/arb.json
+        run: python arb_engine.py
 
       - name: Maker-Board → docs/maker.json
         run: python maker.py

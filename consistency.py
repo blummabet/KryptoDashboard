@@ -49,7 +49,8 @@ def scan(markets=None):
                 findings.append({
                     "family": family, "date": date, "direction": direction,
                     "lowStrike": a["strike"], "highStrike": b["strike"],
-                    "lowP": pa, "highP": pb, "gapPP": gap, "tradable": gap >= FEE_2X_PP,
+                    "lowP": pa, "highP": pb, "lowCid": a.get("conditionId"), "highCid": b.get("conditionId"),
+                    "gapPP": gap, "tradable": gap >= FEE_2X_PP,
                     "note": f"{a['market']} ({pa:.0%}) ↔ {b['market']} ({pb:.0%}) verletzt Monotonie",
                 })
     findings.sort(key=lambda f: -f["gapPP"])
