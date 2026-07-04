@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CryptoEdge — Polymarket Mispricing Radar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#060a12; --bg2:#0a1120; --panel:#0e1626; --panel2:#0b1220;
+    --line:rgba(255,255,255,.07); --line2:rgba(255,255,255,.12);
+    --text:#eaf0fb; --muted:#8892a6; --dim:#5b6577;
+    --accent:#00e6b0; --accent2:#4c8dff;
+    --pos:#2fd08a; --neg:#ff5d6c; --warn:#f5b74a;
+    --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{-webkit-font-smoothing:antialiased;}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:'Space Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    min-height:100vh; line-height:1.45;
+    background-image:
+      radial-gradient(1100px 600px at 78% -8%, rgba(0,230,176,.10), transparent 60%),
+      radial-gradient(900px 500px at 12% 0%, rgba(76,141,255,.10), transparent 55%);
+    background-attachment:fixed;
+  }
+  .num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+  .wrap{max-width:1240px; margin:0 auto; padding:0 22px;}
+
+  /* HEADER */
+  header{position:sticky; top:0; z-index:20; backdrop-filter:blur(12px);
+    background:linear-gradient(180deg,rgba(6,10,18,.92),rgba(6,10,18,.62));
+    border-bottom:1px solid var(--line);}
+  .hbar{display:flex; align-items:center; gap:14px; padding:16px 0;}
+  .logo{display:flex; align-items:center; gap:10px;}
+  .logo .mark{width:30px;height:30px;border-radius:9px;
+    background:conic-gradient(from 210deg,var(--accent),var(--accent2),var(--accent));
+    box-shadow:0 0 22px rgba(0,230,176,.35); position:relative;}
+  .logo .mark::after{content:"";position:absolute;inset:6px;border-radius:5px;background:var(--bg);}
+  .logo h1{font-size:18px;font-weight:700;letter-spacing:.3px;}
+  .logo .tag{font-size:10px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;}
+  .status{margin-left:auto; display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
+  .pill{font-size:11px;font-weight:600;color:var(--muted);border:1px solid var(--line2);
+    border-radius:999px;padding:5px 11px;display:inline-flex;align-items:center;gap:7px;}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 rgba(0,230,176,.6);
+    animation:pulse 2.2s infinite;}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(0,230,176,.5);}70%{box-shadow:0 0 0 7px rgba(0,230,176,0);}100%{box-shadow:0 0 0 0 rgba(0,230,176,0);}}
+  .pill.ro{color:var(--warn);border-color:rgba(245,183,74,.4);}
+  #updated{font-size:11px;color:var(--dim);}
+
+  /* NORDSTERN KPI STRIP */
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:20px 0 8px;}
+  .kpi{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);
+    border-radius:14px;padding:13px 15px;position:relative;overflow:hidden;}
+  .kpi .k{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.7px;margin-bottom:6px;}
+  .kpi .v{font-size:22px;font-weight:700;}
+  .kpi .v.pos{color:var(--pos);} .kpi .v.neg{color:var(--neg);} .kpi .v.acc{color:var(--accent);}
+  .kpi .sub{font-size:10px;color:var(--dim);margin-top:3px;}
+  .kpi.star{border-color:rgba(0,230,176,.28);}
+  .kpi.star::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent);}
+
+  .refline{color:var(--muted);font-size:12.5px;margin:6px 2px 0;display:flex;gap:14px;flex-wrap:wrap;}
+  .refline b{color:var(--text);}
+
+  /* TABS */
+  .tabs{display:flex;gap:8px;margin:20px 0 14px;flex-wrap:wrap;}
+  .tab{font-size:13px;font-weight:600;color:var(--muted);background:var(--panel);
+    border:1px solid var(--line);border-radius:10px;padding:8px 15px;cursor:default;}
+  .tab.on{color:#04140f;background:linear-gradient(180deg,var(--accent),#00c99b);border-color:transparent;}
+  .tab.off{opacity:.5;}
+
+  /* GRID */
+  .grid{display:grid;grid-template-columns:1fr 320px;gap:16px;padding-bottom:60px;}
+  @media(max-width:920px){.grid{grid-template-columns:1fr;}}
+  .card{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);
+    border-radius:16px;overflow:hidden;}
+  .card-h{display:flex;align-items:center;gap:9px;padding:14px 16px;border-bottom:1px solid var(--line);}
+  .card-h .t{font-size:12px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;}
+  .card-h .badge{font-size:9px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;padding:2px 7px;border-radius:5px;}
+  .b-edge{background:rgba(0,230,176,.16);color:var(--accent);}
+  .b-ctx{background:rgba(245,183,74,.16);color:var(--warn);}
+  .card-h .hint{margin-left:auto;font-size:10.5px;color:var(--dim);}
+
+  /* TABLE */
+  table{width:100%;border-collapse:collapse;font-size:13.5px;}
+  th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap;}
+  th{color:var(--muted);font-weight:600;font-size:10px;text-transform:uppercase;letter-spacing:.5px;}
+  tbody tr{transition:background .12s;}
+  tbody tr:hover{background:rgba(255,255,255,.025);}
+  tbody tr:last-child td{border-bottom:0;}
+  td.r{text-align:right;}
+  .asset{font-weight:700;display:inline-flex;align-items:center;gap:7px;}
+  .coin{width:18px;height:18px;border-radius:50%;background:#f7931a;color:#111;font-size:10px;font-weight:800;
+    display:inline-flex;align-items:center;justify-content:center;}
+  .mkt-sub{color:var(--dim);font-size:11px;}
+  .edge-cell{display:flex;align-items:center;justify-content:flex-end;gap:10px;}
+  .edgebar{width:76px;height:6px;border-radius:3px;background:rgba(255,255,255,.06);position:relative;}
+  .edgebar i{position:absolute;top:0;bottom:0;border-radius:3px;}
+  .edgeval{min-width:58px;text-align:right;font-weight:700;}
+  .edgeval.pos{color:var(--pos);} .edgeval.neg{color:var(--neg);} .edgeval.dim{color:var(--dim);}
+  .grosslbl{font-size:10px;color:var(--dim);}
+  .spark{display:block;}
+  .empty{color:var(--muted);padding:40px;text-align:center;}
+
+  /* CONTEXT RAIL */
+  .rail{display:flex;flex-direction:column;gap:16px;}
+  .gauge-wrap{display:flex;flex-direction:column;align-items:center;padding:16px;}
+  .gauge-val{font-size:30px;font-weight:700;font-family:var(--mono);margin-top:-8px;}
+  .gauge-cls{font-size:12px;color:var(--muted);letter-spacing:.5px;}
+  .csig{padding:11px 16px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px;font-size:12.5px;}
+  .csig:last-child{border-bottom:0;}
+  .csig .nm{font-weight:600;}
+  .csig .ev{color:var(--muted);font-size:11px;}
+  .csig .adj{margin-left:auto;font-family:var(--mono);font-weight:700;font-size:12px;}
+  .csig .adj.pos{color:var(--pos);} .csig .adj.neg{color:var(--neg);} .csig .adj.dim{color:var(--dim);}
+  .ctx-note{padding:12px 16px;color:var(--dim);font-size:11px;line-height:1.5;}
+  .disc{max-width:1240px;margin:0 auto;padding:8px 22px 40px;color:var(--dim);font-size:11.5px;text-align:center;letter-spacing:.3px;}
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap hbar">
+      <div class="logo">
+        <span class="mark"></span>
+        <div>
+          <h1>CryptoEdge</h1>
+          <div class="tag">Polymarket Mispricing Radar</div>
+        </div>
+      </div>
+      <div class="status">
+        <span class="pill"><span class="dot"></span>Live</span>
+        <span class="pill ro">read-only · kein Trading</span>
+        <span id="updated">—</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="kpis" id="kpis"></div>
+    <div class="refline" id="refline">Referenz: —</div>
+
+    <div class="tabs">
+      <span class="tab on">Täglich · Schwellen</span>
+      <span class="tab off">Stündlich</span>
+      <span class="tab off">5&nbsp;min</span>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="card-h">
+          <span class="t">Trade-Edge</span><span class="badge b-edge">Sharp-Anker</span>
+          <span class="hint">Poly vs Fair (Deribit-IV + Spot) · Edge netto</span>
+        </div>
+        <table>
+          <thead><tr>
+            <th>Markt</th><th class="r">Poly</th><th class="r">Fair</th>
+            <th class="r">IV</th><th>Verlauf</th><th class="r">Edge</th><th class="r">Liq.</th>
+          </tr></thead>
+          <tbody id="rows"><tr><td colspan="7" class="empty">Lade Märkte…</td></tr></tbody>
+        </table>
+      </div>
+
+      <div class="rail">
+        <div class="card">
+          <div class="card-h"><span class="t">Kontext</span><span class="badge b-ctx">gedämpft</span>
+            <span class="hint">kein Trigger</span></div>
+          <div class="gauge-wrap" id="gauge"></div>
+          <div id="csignals"></div>
+          <div class="ctx-note">Kontext-Signale sind Regime/Anzeige — sie fließen bewusst <b>nicht</b> in den Trade-Edge (zwei Flächen).</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="disc" id="disc">cryptoedge · read-only · edge = poly vs faire wahrscheinlichkeit · noch kein trading</div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+name: Build & Deploy CryptoEdge (read-only)
+
+# Phase 1: kein Trading. Der Cron zieht die Poly-Tages-Schwellenmärkte, baut site/markets.json,
+# schreibt die Edge-Historie fort (data/), rechnet CLV (site/clv.json) und deployt NUR den
+# schlanken site/-Ordner auf GitHub Pages (Deploy-Lehren aus dem Fußball-Repo).
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"     # alle 30 min — Tages-Schwellen brauchen keinen Sekundentakt
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - "data/**"              # eigene Snapshot-Commits NICHT wieder triggern (kein Loop)
+
+permissions:
+  contents: write             # data/ zurück-committen (Historie muss persistieren)
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false    # Lehre: laufende Deploys NICHT abbrechen
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pipeline — Poly + Fair Value → site/markets.json, Snapshot → data/
+        run: python build_markets.py
+
+      - name: Auflösungen nachziehen → data/resolutions.json
+        run: python resolutions.py
+
+      - name: CLV + Kalibrierung auswerten → site/clv.json
+        run: python clv.py
+
+      - name: Historie + Auflösungen zurück-committen ([skip ci], kein Loop)
+        run: |
+          git config user.name "cryptoedge-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/edge_history.jsonl data/resolutions.json
+          if git diff --cached --quiet; then
+            echo "keine neuen Daten"
+          else
+            git commit -m "chore(data): edge snapshot + resolutions [skip ci]"
+            git push
+          fi
+
+      - name: Nur das schlanke Site-Artefakt hochladen
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site          # NUR der Static-Ordner — kein Generator-Code (Deploy-Lehre)
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
