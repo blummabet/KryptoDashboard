@@ -84,42 +84,90 @@ def nearest_expiry(target_date: datetime.date, currency="BTC"):
     return min(pool, key=lambda x: abs((x[1] - target_date).days))[0]
 
 
+_TICKER_CACHE: dict[str, dict | None] = {}  # pro Lauf dedupen (viele Märkte teilen Strike/Verfall)
+
+
 def _option_iv(strike: int, expiry_code: str, currency="BTC"):
     name = f"{currency.upper()}-{expiry_code}-{int(round(strike))}-C"
-    d = _get(f"{_DERIBIT}/ticker?instrument_name={name}")
-    r = d.get("result") or {}
-    iv = r.get("mark_iv")
-    if iv is None:
-        return None
-    fwd = r.get("underlying_price") or r.get("index_price")
-    return {"iv": iv / 100.0, "forward": float(fwd), "strike": int(round(strike)), "expiry": expiry_code}
+    if name not in _TICKER_CACHE:
+        try:
+            d = _get(f"{_DERIBIT}/ticker?instrument_name={name}")
+            r = d.get("result") or {}
+            iv = r.get("mark_iv")
+            if iv is None:
+                _TICKER_CACHE[name] = None
+            else:
+                fwd = r.get("underlying_price") or r.get("index_price")
+                _TICKER_CACHE[name] = {"iv": iv / 100.0, "forward": float(fwd),
+                                       "strike": int(round(strike)), "expiry": expiry_code}
+        except Exception:
+            _TICKER_CACHE[name] = None  # Instrument existiert nicht / Fehler
+    return _TICKER_CACHE[name]
 
 
-def deribit_fair_inputs(strike, target_date: datetime.date, currency="BTC"):
-    """IV (dez.) + Forward für Strike/Zieldatum. Snappt auf die nächste gelistete Strike-Stufe,
-    falls der exakte Strike fehlt. None wenn nichts gefunden (→ fairProb bleibt leer, kein Fake)."""
-    try:
-        exp = nearest_expiry(target_date, currency)
-    except Exception as e:
-        print(f"  ⚠️ deribit expirations: {e}")
-        return None
-    if not exp:
-        return None
-    tries, seen = [], set()
-    tries.append(int(strike))
-    for step in (1000, 2000, 5000, 10000):
-        tries.append(int(round(strike / step) * step))
-    for k in tries:
+def _iv_at_strike(strike, expiry_code, currency="BTC"):
+    """IV+Forward am Strike für einen Verfall; snappt auf die nächste gelistete Strike-Stufe."""
+    seen = set()
+    for k in [int(strike)] + [int(round(strike / s) * s) for s in (1000, 2000, 5000, 10000)]:
         if k <= 0 or k in seen:
             continue
         seen.add(k)
-        try:
-            got = _option_iv(k, exp, currency)
-            if got:
-                return got
-        except Exception:
-            continue  # Instrument (Strike) existiert nicht → nächste Stufe
+        got = _option_iv(k, expiry_code, currency)
+        if got:
+            return got
     return None
+
+
+def _years_to(d: datetime.date):
+    """Jahre von jetzt bis 08:00 UTC am Datum d (Deribit-Verfallszeit)."""
+    now = datetime.datetime.now(datetime.timezone.utc)
+    tgt = datetime.datetime(d.year, d.month, d.day, 8, 0, tzinfo=datetime.timezone.utc)
+    return max((tgt - now).total_seconds(), 0.0) / (365.0 * 24 * 3600)
+
+
+def deribit_fair_inputs(strike, target_date: datetime.date, currency="BTC"):
+    """IV (dez.) + Forward für Strike/Zieldatum. Interpoliert zwischen den beiden Deribit-Verfällen,
+    die das Zieldatum einrahmen (Varianz-linear in der Zeit → korrekte Term-Struktur; Forward linear).
+    Snappt Strikes auf gelistete Stufen. None wenn nichts Brauchbares (→ fairProb bleibt leer)."""
+    try:
+        dated = sorted([(c, _exp_to_date(c)) for c in deribit_expirations(currency) if _exp_to_date(c)],
+                       key=lambda x: x[1])
+    except Exception as e:
+        print(f"  ⚠️ deribit expirations: {e}")
+        return None
+    if not dated:
+        return None
+
+    lower = [x for x in dated if x[1] <= target_date]
+    upper = [x for x in dated if x[1] >= target_date]
+    lo = lower[-1] if lower else None
+    up = upper[0] if upper else None
+
+    # Exakter Treffer oder nur eine Seite verfügbar → ein Verfall (nächster).
+    if lo and up and lo[0] == up[0]:
+        got = _iv_at_strike(strike, lo[0], currency)
+        return {**got, "expiry": lo[0]} if got else None
+    if not lo or not up:
+        e = up or lo
+        got = _iv_at_strike(strike, e[0], currency)
+        return {**got, "expiry": e[0]} if got else None
+
+    # Beidseitig → in Varianz interpolieren.
+    g_lo = _iv_at_strike(strike, lo[0], currency)
+    g_up = _iv_at_strike(strike, up[0], currency)
+    if not g_lo or not g_up:
+        g = g_lo or g_up
+        return {**g, "expiry": (lo[0] if g_lo else up[0])} if g else None
+
+    t_lo, t_up, t_t = _years_to(lo[1]), _years_to(up[1]), _years_to(target_date)
+    if not (0 < t_lo < t_up) or t_t <= 0:
+        return {**g_up, "expiry": up[0]}
+    w = (t_t - t_lo) / (t_up - t_lo)
+    var_lo, var_up = g_lo["iv"] ** 2 * t_lo, g_up["iv"] ** 2 * t_up
+    var_t = var_lo + (var_up - var_lo) * w
+    iv_t = (var_t / t_t) ** 0.5 if var_t > 0 else g_up["iv"]
+    fwd_t = g_lo["forward"] + (g_up["forward"] - g_lo["forward"]) * w
+    return {"iv": iv_t, "forward": fwd_t, "strike": g_up["strike"], "expiry": f"{lo[0]}→{up[0]}"}
 
 
 # ── Kontext-Seams: erst live prüfen, dann verdrahten (Lucas hat die Zugänge) ───────────────────

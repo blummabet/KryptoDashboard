@@ -26,6 +26,14 @@ OUT = pathlib.Path(__file__).parent / "site" / "clv.json"
 EDGE_MIN = 2.0  # pp — ab hier gilt ein Markt als "Pick" fürs CLV-Tracking
 
 
+def _sig_edge(s):
+    """Signal-Edge fürs CLV/Pick = BRUTTO (reiner Modell-Edge fair−poly), nicht der fee-verzerrte
+    Netto-Edge. CLV testet die Fair-vs-Poly-These; die (unkalibrierte) Fee gehört da nicht rein.
+    Fallback auf edgePP für alte Snapshots ohne edgeGrossPP."""
+    e = s.get("edgeGrossPP")
+    return e if e is not None else s.get("edgePP")
+
+
 def _by_market(hist):
     g = {}
     for r in hist:
@@ -41,19 +49,19 @@ def _movement_clv(groups):
     picks = []
     for cid, snaps in groups.items():
         entry = next((s for s in snaps
-                      if s.get("fairProb") is not None and s.get("edgePP") is not None
-                      and abs(s["edgePP"]) >= EDGE_MIN), None)
+                      if s.get("fairProb") is not None and _sig_edge(s) is not None
+                      and abs(_sig_edge(s)) >= EDGE_MIN), None)
         if not entry:
             continue
         last = snaps[-1]
         if last.get("polyPrice") is None or entry.get("polyPrice") is None:
             continue
-        sign = 1.0 if entry["edgePP"] > 0 else -1.0   # edge>0 = Yes unterbepreist → Yes kaufen
+        sign = 1.0 if _sig_edge(entry) > 0 else -1.0   # edge>0 = Yes unterbepreist → Yes kaufen
         clv_pp = round((last["polyPrice"] - entry["polyPrice"]) * 100.0 * sign, 2)
         picks.append({
             "conditionId": cid,
             "market": entry.get("market") or entry.get("slug"),
-            "entryEdgePP": entry["edgePP"],
+            "entryEdgePP": _sig_edge(entry),
             "entryPoly": entry["polyPrice"],
             "lastPoly": last["polyPrice"],
             "clvPP": clv_pp,
@@ -64,8 +72,8 @@ def _movement_clv(groups):
 
 def _first_pick(snaps):
     return next((s for s in snaps
-                 if s.get("fairProb") is not None and s.get("edgePP") is not None
-                 and abs(s["edgePP"]) >= EDGE_MIN), None)
+                 if s.get("fairProb") is not None and _sig_edge(s) is not None
+                 and abs(_sig_edge(s)) >= EDGE_MIN), None)
 
 
 def _calibration(groups, res):
@@ -84,7 +92,7 @@ def _calibration(groups, res):
         pick = _first_pick(snaps)
         if pick:
             resolved_picks += 1
-            sign = 1.0 if pick["edgePP"] > 0 else -1.0        # edge>0 = Yes kaufen, sonst No
+            sign = 1.0 if _sig_edge(pick) > 0 else -1.0       # edge>0 = Yes kaufen, sonst No
             won = (outcome == 1) if sign > 0 else (outcome == 0)
             wins += 1 if won else 0
             pnls.append(sign * (outcome - pick["polyPrice"]))  # Brutto-PnL je $1 Einsatz
