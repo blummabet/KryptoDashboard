@@ -3,181 +3,199 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CryptoEdge — Polymarket Mispricing Radar</title>
+<title>CryptoEdge — Paper Trading</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#060a12; --bg2:#0a1120; --panel:#0e1626; --panel2:#0b1220;
-    --line:rgba(255,255,255,.07); --line2:rgba(255,255,255,.12);
-    --text:#eaf0fb; --muted:#8892a6; --dim:#5b6577;
-    --accent:#00e6b0; --accent2:#4c8dff;
-    --pos:#2fd08a; --neg:#ff5d6c; --warn:#f5b74a;
-    --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+    --bg:#060a12; --panel:#0e1626; --panel2:#0b1220; --line:rgba(255,255,255,.07); --line2:rgba(255,255,255,.12);
+    --text:#eaf0fb; --muted:#8892a6; --dim:#5b6577; --accent:#00e6b0; --accent2:#4c8dff;
+    --pos:#2fd08a; --neg:#ff5d6c; --warn:#f5b74a; --mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
   }
   *{margin:0;padding:0;box-sizing:border-box;}
-  html{-webkit-font-smoothing:antialiased;}
-  body{
-    background:var(--bg); color:var(--text);
-    font-family:'Space Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-    min-height:100vh; line-height:1.45;
-    background-image:
-      radial-gradient(1100px 600px at 78% -8%, rgba(0,230,176,.10), transparent 60%),
-      radial-gradient(900px 500px at 12% 0%, rgba(76,141,255,.10), transparent 55%);
-    background-attachment:fixed;
-  }
-  .num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
-  .wrap{max-width:1240px; margin:0 auto; padding:0 22px;}
+  body{background:var(--bg);color:var(--text);font-family:'Space Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    min-height:100vh;line-height:1.45;
+    background-image:radial-gradient(1100px 600px at 80% -10%,rgba(0,230,176,.10),transparent 60%),radial-gradient(900px 500px at 10% 0%,rgba(76,141,255,.10),transparent 55%);
+    background-attachment:fixed;}
+  .num{font-family:var(--mono);font-variant-numeric:tabular-nums;}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 22px;}
+  .pos{color:var(--pos);} .neg{color:var(--neg);} .acc{color:var(--accent);}
 
-  /* HEADER */
-  header{position:sticky; top:0; z-index:20; backdrop-filter:blur(12px);
-    background:linear-gradient(180deg,rgba(6,10,18,.92),rgba(6,10,18,.62));
-    border-bottom:1px solid var(--line);}
-  .hbar{display:flex; align-items:center; gap:14px; padding:16px 0;}
-  .logo{display:flex; align-items:center; gap:10px;}
-  .logo .mark{width:30px;height:30px;border-radius:9px;
-    background:conic-gradient(from 210deg,var(--accent),var(--accent2),var(--accent));
-    box-shadow:0 0 22px rgba(0,230,176,.35); position:relative;}
-  .logo .mark::after{content:"";position:absolute;inset:6px;border-radius:5px;background:var(--bg);}
-  .logo h1{font-size:18px;font-weight:700;letter-spacing:.3px;}
+  header{position:sticky;top:0;z-index:20;backdrop-filter:blur(12px);
+    background:linear-gradient(180deg,rgba(6,10,18,.92),rgba(6,10,18,.6));border-bottom:1px solid var(--line);}
+  .hbar{display:flex;align-items:center;gap:14px;padding:15px 0;}
+  .logo{display:flex;align-items:center;gap:10px;}
+  .mark{width:30px;height:30px;border-radius:9px;background:conic-gradient(from 210deg,var(--accent),var(--accent2),var(--accent));
+    box-shadow:0 0 22px rgba(0,230,176,.35);position:relative;}
+  .mark::after{content:"";position:absolute;inset:6px;border-radius:5px;background:var(--bg);}
+  .logo h1{font-size:18px;font-weight:700;}
   .logo .tag{font-size:10px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;}
-  .status{margin-left:auto; display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
-  .pill{font-size:11px;font-weight:600;color:var(--muted);border:1px solid var(--line2);
-    border-radius:999px;padding:5px 11px;display:inline-flex;align-items:center;gap:7px;}
-  .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 rgba(0,230,176,.6);
-    animation:pulse 2.2s infinite;}
-  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(0,230,176,.5);}70%{box-shadow:0 0 0 7px rgba(0,230,176,0);}100%{box-shadow:0 0 0 0 rgba(0,230,176,0);}}
-  .pill.ro{color:var(--warn);border-color:rgba(245,183,74,.4);}
+  .status{margin-left:auto;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  .pill{font-size:11px;font-weight:700;color:var(--warn);border:1px solid rgba(245,183,74,.4);border-radius:999px;
+    padding:5px 11px;display:inline-flex;align-items:center;gap:7px;letter-spacing:.4px;}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--warn);}
   #updated{font-size:11px;color:var(--dim);}
 
-  /* NORDSTERN KPI STRIP */
-  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:20px 0 8px;}
-  .kpi{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);
-    border-radius:14px;padding:13px 15px;position:relative;overflow:hidden;}
-  .kpi .k{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.7px;margin-bottom:6px;}
-  .kpi .v{font-size:22px;font-weight:700;}
-  .kpi .v.pos{color:var(--pos);} .kpi .v.neg{color:var(--neg);} .kpi .v.acc{color:var(--accent);}
-  .kpi .sub{font-size:10px;color:var(--dim);margin-top:3px;}
+  /* HERO */
+  .hero{display:flex;align-items:flex-end;gap:26px;flex-wrap:wrap;margin:22px 0 6px;
+    background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:18px;padding:20px 24px;}
+  .hero .lbl{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.8px;margin-bottom:4px;}
+  .hero .big{font-size:44px;font-weight:700;line-height:1;font-family:var(--mono);}
+  .hero .split{display:flex;gap:20px;}
+  .hero .split div .v{font-size:18px;font-weight:700;font-family:var(--mono);}
+  .hero .modechip{margin-left:auto;align-self:flex-start;font-size:10px;color:var(--warn);
+    border:1px solid rgba(245,183,74,.4);border-radius:8px;padding:5px 10px;letter-spacing:.4px;}
+
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:12px 0 8px;}
+  .kpi{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:14px;padding:12px 15px;position:relative;overflow:hidden;}
+  .kpi .k{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.7px;margin-bottom:5px;}
+  .kpi .v{font-size:20px;font-weight:700;font-family:var(--mono);}
   .kpi.star{border-color:rgba(0,230,176,.28);}
   .kpi.star::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent);}
 
-  .refline{color:var(--muted);font-size:12.5px;margin:6px 2px 0;display:flex;gap:14px;flex-wrap:wrap;}
-  .refline b{color:var(--text);}
-
-  /* TABS */
-  .tabs{display:flex;gap:8px;margin:20px 0 14px;flex-wrap:wrap;}
-  .tab{font-size:13px;font-weight:600;color:var(--muted);background:var(--panel);
-    border:1px solid var(--line);border-radius:10px;padding:8px 15px;cursor:default;}
+  .tabs{display:flex;gap:8px;margin:18px 0 14px;flex-wrap:wrap;}
+  .tab{font-size:13px;font-weight:600;color:var(--muted);background:var(--panel);border:1px solid var(--line);
+    border-radius:10px;padding:8px 15px;cursor:pointer;user-select:none;}
   .tab.on{color:#04140f;background:linear-gradient(180deg,var(--accent),#00c99b);border-color:transparent;}
-  .tab.off{opacity:.5;}
 
-  /* GRID */
-  .grid{display:grid;grid-template-columns:1fr 320px;gap:16px;padding-bottom:60px;}
-  @media(max-width:920px){.grid{grid-template-columns:1fr;}}
-  .card{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);
-    border-radius:16px;overflow:hidden;}
-  .card-h{display:flex;align-items:center;gap:9px;padding:14px 16px;border-bottom:1px solid var(--line);}
+  .grid2{display:grid;grid-template-columns:1fr 340px;gap:16px;padding-bottom:50px;}
+  @media(max-width:920px){.grid2{grid-template-columns:1fr;}}
+  .stack{display:flex;flex-direction:column;gap:16px;}
+  .card{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:16px;overflow:hidden;}
+  .card-h{display:flex;align-items:center;gap:9px;padding:13px 16px;border-bottom:1px solid var(--line);}
   .card-h .t{font-size:12px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;}
-  .card-h .badge{font-size:9px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;padding:2px 7px;border-radius:5px;}
-  .b-edge{background:rgba(0,230,176,.16);color:var(--accent);}
-  .b-ctx{background:rgba(245,183,74,.16);color:var(--warn);}
   .card-h .hint{margin-left:auto;font-size:10.5px;color:var(--dim);}
+  .badge{font-size:9px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;padding:2px 7px;border-radius:5px;}
+  .b-edge{background:rgba(0,230,176,.16);color:var(--accent);} .b-ctx{background:rgba(245,183,74,.16);color:var(--warn);}
 
-  /* TABLE */
-  table{width:100%;border-collapse:collapse;font-size:13.5px;}
-  th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap;}
+  table{width:100%;border-collapse:collapse;font-size:13px;}
+  th,td{padding:10px 13px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap;}
   th{color:var(--muted);font-weight:600;font-size:10px;text-transform:uppercase;letter-spacing:.5px;}
-  tbody tr{transition:background .12s;}
   tbody tr:hover{background:rgba(255,255,255,.025);}
   tbody tr:last-child td{border-bottom:0;}
   td.r{text-align:right;}
   .asset{font-weight:700;display:inline-flex;align-items:center;gap:7px;}
-  .coin{width:18px;height:18px;border-radius:50%;background:#f7931a;color:#111;font-size:10px;font-weight:800;
-    display:inline-flex;align-items:center;justify-content:center;}
+  .coin{width:18px;height:18px;border-radius:50%;background:#f7931a;color:#111;font-size:10px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;}
   .mkt-sub{color:var(--dim);font-size:11px;}
   .fam{font-size:9px;font-weight:700;letter-spacing:.3px;text-transform:uppercase;padding:1px 6px;border-radius:5px;margin-right:6px;}
-  .fam-above{background:rgba(0,230,176,.14);color:var(--accent);}
-  .fam-touch{background:rgba(76,141,255,.16);color:var(--accent2);}
-  .edge-cell{display:flex;align-items:center;justify-content:flex-end;gap:10px;}
-  .edgebar{width:76px;height:6px;border-radius:3px;background:rgba(255,255,255,.06);position:relative;}
-  .edgebar i{position:absolute;top:0;bottom:0;border-radius:3px;}
-  .edgeval{min-width:58px;text-align:right;font-weight:700;}
-  .edgeval.pos{color:var(--pos);} .edgeval.neg{color:var(--neg);} .edgeval.dim{color:var(--dim);}
-  .grosslbl{font-size:10px;color:var(--dim);}
-  .spark{display:block;}
-  .empty{color:var(--muted);padding:40px;text-align:center;}
+  .fam-above{background:rgba(0,230,176,.14);color:var(--accent);} .fam-touch{background:rgba(76,141,255,.16);color:var(--accent2);}
+  .side{font-size:10px;font-weight:800;padding:2px 8px;border-radius:6px;}
+  .side-YES{background:rgba(47,208,138,.16);color:var(--pos);} .side-NO{background:rgba(255,93,108,.16);color:var(--neg);}
+  .rsn{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.3px;padding:2px 7px;border-radius:5px;}
+  .rsn-converged{background:rgba(47,208,138,.16);color:var(--pos);}
+  .rsn-resolved_win{background:rgba(47,208,138,.16);color:var(--pos);}
+  .rsn-resolved_loss{background:rgba(255,93,108,.16);color:var(--neg);}
+  .rsn-thesis_break{background:rgba(245,183,74,.16);color:var(--warn);}
+  .pnl{font-family:var(--mono);font-weight:700;}
+  .empty{color:var(--muted);padding:34px;text-align:center;}
 
-  /* CONTEXT RAIL */
-  .rail{display:flex;flex-direction:column;gap:16px;}
-  .gauge-wrap{display:flex;flex-direction:column;align-items:center;padding:16px;}
-  .gauge-val{font-size:30px;font-weight:700;font-family:var(--mono);margin-top:-8px;}
-  .gauge-cls{font-size:12px;color:var(--muted);letter-spacing:.5px;}
+  /* Activity feed */
+  .feed{padding:6px 0;max-height:560px;overflow:auto;}
+  .fitem{display:flex;align-items:center;gap:10px;padding:9px 16px;border-bottom:1px solid var(--line);font-size:12.5px;}
+  .fitem:last-child{border-bottom:0;}
+  .fico{width:22px;height:22px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;}
+  .fi-open{background:rgba(76,141,255,.16);color:var(--accent2);}
+  .fi-close{background:rgba(47,208,138,.14);color:var(--pos);}
+  .fi-settle{background:rgba(245,183,74,.16);color:var(--warn);}
+  .fitem .ftxt{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;}
+  .fitem .fpnl{font-family:var(--mono);font-weight:700;}
+
+  /* radar bits */
+  .edge-cell{display:flex;align-items:center;justify-content:flex-end;gap:10px;}
+  .edgebar{width:70px;height:6px;border-radius:3px;background:rgba(255,255,255,.06);position:relative;}
+  .edgebar i{position:absolute;top:0;bottom:0;border-radius:3px;}
+  .edgeval{min-width:54px;text-align:right;font-weight:700;font-family:var(--mono);}
+  .grosslbl{font-size:10px;color:var(--dim);text-align:right;}
+  .gauge-wrap{display:flex;flex-direction:column;align-items:center;padding:14px 16px 6px;}
+  .gauge-val{font-size:30px;font-weight:700;font-family:var(--mono);margin-top:-10px;}
+  .gauge-cls{font-size:12px;color:var(--muted);}
   .csig{padding:11px 16px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px;font-size:12.5px;}
-  .csig:last-child{border-bottom:0;}
-  .csig .nm{font-weight:600;}
-  .csig .ev{color:var(--muted);font-size:11px;}
+  .csig:last-child{border-bottom:0;} .csig .nm{font-weight:600;} .csig .ev{color:var(--muted);font-size:11px;}
   .csig .adj{margin-left:auto;font-family:var(--mono);font-weight:700;font-size:12px;}
-  .csig .adj.pos{color:var(--pos);} .csig .adj.neg{color:var(--neg);} .csig .adj.dim{color:var(--dim);}
   .ctx-note{padding:12px 16px;color:var(--dim);font-size:11px;line-height:1.5;}
-  .disc{max-width:1240px;margin:0 auto;padding:8px 22px 40px;color:var(--dim);font-size:11.5px;text-align:center;letter-spacing:.3px;}
+  .disc{max-width:1240px;margin:0 auto;padding:10px 22px 40px;color:var(--dim);font-size:11.5px;text-align:center;}
+  .hidden{display:none;}
 </style>
 </head>
 <body>
-  <header>
-    <div class="wrap hbar">
-      <div class="logo">
-        <span class="mark"></span>
-        <div>
-          <h1>CryptoEdge</h1>
-          <div class="tag">Polymarket Mispricing Radar</div>
-        </div>
-      </div>
-      <div class="status">
-        <span class="pill"><span class="dot"></span>Live</span>
-        <span class="pill ro">read-only · kein Trading</span>
-        <span id="updated">—</span>
-      </div>
-    </div>
-  </header>
+  <header><div class="wrap hbar">
+    <div class="logo"><span class="mark"></span><div><h1>CryptoEdge</h1><div class="tag">Polymarket Paper-Trading</div></div></div>
+    <div class="status"><span class="pill"><span class="dot"></span>PAPER · DRY-RUN</span><span id="updated">—</span></div>
+  </div></header>
 
   <div class="wrap">
-    <div class="kpis" id="kpis"></div>
-    <div class="refline" id="refline">Referenz: —</div>
-
-    <div class="tabs">
-      <span class="tab on">Täglich · Schwellen</span>
-      <span class="tab off">Stündlich</span>
-      <span class="tab off">5&nbsp;min</span>
+    <div class="hero">
+      <div>
+        <div class="lbl">Gesamt P&amp;L (Papier)</div>
+        <div class="big" id="totalPnl">—</div>
+      </div>
+      <div class="split">
+        <div><div class="lbl">Realisiert</div><div class="v" id="realPnl">—</div></div>
+        <div><div class="lbl">Unrealisiert</div><div class="v" id="unrealPnl">—</div></div>
+      </div>
+      <div class="modechip" id="modechip">kein echtes Geld · alle Schalter aus</div>
     </div>
 
-    <div class="grid">
-      <div class="card">
-        <div class="card-h">
-          <span class="t">Trade-Edge</span><span class="badge b-edge">Sharp-Anker</span>
-          <span class="hint">Poly vs Fair (Deribit-IV + Spot) · Edge netto</span>
-        </div>
-        <table>
-          <thead><tr>
-            <th>Markt</th><th class="r">Poly</th><th class="r">Fair</th>
-            <th class="r">IV</th><th>Verlauf</th><th class="r">Edge</th><th class="r">Liq.</th>
-          </tr></thead>
-          <tbody id="rows"><tr><td colspan="7" class="empty">Lade Märkte…</td></tr></tbody>
-        </table>
-      </div>
+    <div class="kpis" id="kpis"></div>
 
-      <div class="rail">
+    <div class="tabs">
+      <span class="tab on" data-view="portfolio">Paper-Portfolio</span>
+      <span class="tab" data-view="radar">Edge-Radar</span>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div id="view-portfolio">
+      <div class="grid2">
+        <div class="stack">
+          <div class="card">
+            <div class="card-h"><span class="t">Offene Positionen</span><span class="badge b-edge">live</span>
+              <span class="hint" id="openHint"></span></div>
+            <table><thead><tr>
+              <th>Markt</th><th>Seite</th><th class="r">Entry</th><th class="r">Jetzt</th>
+              <th class="r">Edge übrig</th><th class="r">Alter</th><th class="r">P&amp;L</th>
+            </tr></thead><tbody id="openRows"><tr><td colspan="7" class="empty">Lade…</td></tr></tbody></table>
+          </div>
+          <div class="card">
+            <div class="card-h"><span class="t">Abgeschlossen</span><span class="hint" id="closedHint"></span></div>
+            <table><thead><tr>
+              <th>Markt</th><th>Seite</th><th class="r">Entry</th><th class="r">Exit</th><th>Grund</th><th class="r">P&amp;L</th>
+            </tr></thead><tbody id="closedRows"><tr><td colspan="6" class="empty">Noch keine geschlossenen Positionen.</td></tr></tbody></table>
+          </div>
+        </div>
         <div class="card">
-          <div class="card-h"><span class="t">Kontext</span><span class="badge b-ctx">gedämpft</span>
-            <span class="hint">kein Trigger</span></div>
-          <div class="gauge-wrap" id="gauge"></div>
-          <div id="csignals"></div>
-          <div class="ctx-note">Kontext-Signale sind Regime/Anzeige — sie fließen bewusst <b>nicht</b> in den Trade-Edge (zwei Flächen).</div>
+          <div class="card-h"><span class="t">Aktivität</span><span class="hint">was die Engine tut</span></div>
+          <div class="feed" id="feed"><div class="empty">Noch keine Aktivität.</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RADAR -->
+    <div id="view-radar" class="hidden">
+      <div class="grid2">
+        <div class="card">
+          <div class="card-h"><span class="t">Edge-Radar</span><span class="badge b-edge">Sharp-Anker</span>
+            <span class="hint">Poly vs Fair (Deribit-IV + Spot) · netto</span></div>
+          <table><thead><tr>
+            <th>Markt</th><th class="r">Poly</th><th class="r">Fair</th><th class="r">IV</th>
+            <th>Verlauf</th><th class="r">Edge</th><th class="r">Liq.</th>
+          </tr></thead><tbody id="radarRows"><tr><td colspan="7" class="empty">Lade…</td></tr></tbody></table>
+        </div>
+        <div class="stack">
+          <div class="card">
+            <div class="card-h"><span class="t">Kontext</span><span class="badge b-ctx">gedämpft</span><span class="hint">kein Trigger</span></div>
+            <div class="gauge-wrap" id="gauge"></div><div id="csignals"></div>
+            <div class="ctx-note">Kontext-Signale sind Regime/Anzeige — sie fließen <b>nicht</b> in den Trade-Edge (zwei Flächen).</div>
+          </div>
+          <div class="card">
+            <div class="card-h"><span class="t">Referenz</span></div>
+            <div class="ctx-note" id="refline">—</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="disc" id="disc">cryptoedge · read-only · edge = poly vs faire wahrscheinlichkeit · noch kein trading</div>
+  <div class="disc" id="disc">cryptoedge · paper-trading (dry-run) · konvergenz gegen deribit-fair · kein echtes geld</div>
   <script src="app.js"></script>
 </body>
 </html>
