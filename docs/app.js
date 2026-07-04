@@ -2,6 +2,7 @@
 // und paper.json (von der Python-Pipeline erzeugt) und rendert Portfolio + Edge-Radar. Kein Trading.
 (function () {
   "use strict";
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
   const pct = (x) => (x == null ? "—" : (x * 100).toFixed(1) + "%");

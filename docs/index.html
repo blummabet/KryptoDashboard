@@ -2,8 +2,18 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>CryptoEdge — Paper Trading</title>
+<!-- PWA / iPhone-Homescreen -->
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#060a12">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="CryptoEdge">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icon-192.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <style>
@@ -115,6 +125,17 @@
   .ctx-note{padding:12px 16px;color:var(--dim);font-size:11px;line-height:1.5;}
   .disc{max-width:1240px;margin:0 auto;padding:10px 22px 40px;color:var(--dim);font-size:11.5px;text-align:center;}
   .hidden{display:none;}
+  /* iPhone / PWA */
+  @supports(padding:max(0px)){ header .hbar{padding-left:max(0px,env(safe-area-inset-left));padding-right:max(0px,env(safe-area-inset-right));} body{padding-top:env(safe-area-inset-top);} }
+  @media(max-width:600px){
+    .wrap{padding:0 12px;}
+    .hero{padding:16px;gap:14px;} .hero .big{font-size:34px;} .hero .split{gap:14px;}
+    .kpis{grid-template-columns:repeat(2,1fr);} .kpi .v{font-size:18px;}
+    .tabs{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;} .tab{flex:0 0 auto;}
+    .card{overflow-x:auto;}                 /* breite Tabellen horizontal scrollen */
+    th,td{padding:9px 10px;font-size:12px;}
+    .feed{max-height:none;}
+  }
 </style>
 </head>
 <body>
