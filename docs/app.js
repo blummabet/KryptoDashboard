@@ -153,13 +153,29 @@
       : '<tr><td colspan="6" class="empty">Kein Maker-Board — noch keine Märkte mit Fair.</td></tr>';
   }
 
+  // ---- Strategie-Übersicht (oben, je Strategie eine Kachel) -------------------------------
+  function renderStrat(paper, arb, mk, markets) {
+    const s = (paper && paper.summary) || {};
+    const newCount = ((markets && markets.markets) || []).filter(m => m.isNew).length;
+    const tile = (goto, title, val, vc, sub) =>
+      `<div class="stile" data-goto="${goto}"><div class="st">${title}</div><div class="sv ${vc || ""}">${val}</div><div class="ss">${sub}</div></div>`;
+    $("strat").innerHTML = [
+      tile("portfolio", "Paper-Trading", s.totalPnl == null ? "—" : money(s.totalPnl), cls(s.totalPnl), (s.openCount ?? 0) + " offen · Konvergenz"),
+      tile("arb", "Konsistenz-Arb", (arb && arb.tradableCount) ?? 0, (arb && arb.tradableCount) ? "pos" : "", ((arb && arb.count) ?? 0) + " Widersprüche"),
+      tile("maker", "Maker-Board", (mk && mk.rewardEligible) ?? 0, "acc", "reward-berechtigt"),
+      tile("radar", "Neu-Markt-Lag", newCount, newCount ? "acc" : "", "frische Märkte"),
+    ].join("");
+    document.querySelectorAll(".stile").forEach(t => t.addEventListener("click", () => switchTab(t.dataset.goto)));
+  }
+
   // ---- Tabs -------------------------------------------------------------------------------
   const VIEWS = ["portfolio", "radar", "arb", "maker"];
-  document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => {
-    document.querySelectorAll(".tab").forEach(x => x.classList.remove("on"));
-    t.classList.add("on");
-    VIEWS.forEach(v => $("view-" + v).classList.toggle("hidden", t.dataset.view !== v));
-  }));
+  function switchTab(view) {
+    document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x.dataset.view === view));
+    VIEWS.forEach(v => $("view-" + v).classList.toggle("hidden", v !== view));
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+  document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => switchTab(t.dataset.view)));
 
   // ---- Load -------------------------------------------------------------------------------
   const j = (u) => fetch(u + "?_=" + Date.now()).then(r => r.ok ? r.json() : Promise.reject(r.status));
@@ -167,13 +183,15 @@
     .then(([pp, cl, mk, ar, ma]) => {
       const paper = pp.status === "fulfilled" ? pp.value : {};
       const clv = cl.status === "fulfilled" ? cl.value : {};
+      const markets = mk.status === "fulfilled" ? mk.value : {};
+      const arb = ar.status === "fulfilled" ? ar.value : {};
+      const maker = ma.status === "fulfilled" ? ma.value : {};
       renderHero(paper, clv);
+      renderStrat(paper, arb, maker, markets);
       renderPortfolio(paper);
-      if (mk.status === "fulfilled") {
-        renderRadar(mk.value, clv.trends || {});
-        if (mk.value.generatedAt) $("updated").textContent = "Stand: " + mk.value.generatedAt;
-      }
-      renderArb(ar.status === "fulfilled" ? ar.value : {});
-      renderMaker(ma.status === "fulfilled" ? ma.value : {});
+      renderRadar(markets, clv.trends || {});
+      if (markets.generatedAt) $("updated").textContent = "Stand: " + markets.generatedAt;
+      renderArb(arb);
+      renderMaker(maker);
     });
 })();
