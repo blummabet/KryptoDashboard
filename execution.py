@@ -37,7 +37,7 @@ def dry_run() -> bool:
 
 
 def daily_cap() -> float:
-    return float(_env("CRYPTO_DAILY_USDC_CAP", "5"))     # winzig starten (Edge unbewiesen)
+    return float(_env("CRYPTO_DAILY_USDC_CAP", "12"))    # klein starten (~€11/Tag; Edge unbewiesen)
 
 
 def reserve_floor() -> float:

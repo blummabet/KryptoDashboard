@@ -1,0 +1,40 @@
+name: Crypto Kill-Switch
+
+# Not-Aus NUR für den Krypto-Bot (unabhängig vom Betting-Kill-Switch). Setzt/entfernt die Datei
+# data/crypto_kill_switch; execution.py blockt dann jede Order. Wirkt beim nächsten Execute-Lauf
+# (der checkt die Datei frisch aus). Für sofortigen Stopp zusätzlich execute.yml deaktivieren.
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "an = Krypto-Trading stoppen · aus = wieder erlauben"
+        type: choice
+        options: [an, aus]
+        default: an
+
+permissions:
+  contents: write
+
+jobs:
+  toggle:
+    runs-on: ubuntu-latest        # nur Datei + Commit, kein Order-Placement → Cloud genügt
+    steps:
+      - uses: actions/checkout@v4
+      - name: Kill-Switch setzen/entfernen
+        run: |
+          mkdir -p data
+          if [ "${{ inputs.action }}" = "an" ]; then
+            echo "gesetzt $(date -u)" > data/crypto_kill_switch
+            echo "🛑 crypto_kill_switch AKTIV — Krypto-Trading gestoppt"
+          else
+            rm -f data/crypto_kill_switch
+            echo "✅ crypto_kill_switch AUS — Krypto-Trading wieder erlaubt"
+          fi
+      - name: Commit
+        run: |
+          git config user.name "cryptoedge-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data/crypto_kill_switch || true
+          git commit -m "chore: crypto_kill_switch ${{ inputs.action }} [skip ci]" || echo "keine Änderung"
+          git push || true

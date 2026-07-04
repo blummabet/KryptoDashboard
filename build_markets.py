@@ -53,6 +53,15 @@ def yes_price(m: dict):
         return None
 
 
+def clob_ids(m: dict):
+    """CLOB-Token-IDs [Yes, No] (für die spätere Ausführung). None wenn nicht vorhanden."""
+    try:
+        v = json.loads(m.get("clobTokenIds") or "[]")
+        return v if isinstance(v, list) and len(v) >= 2 else None
+    except Exception:
+        return None
+
+
 NEW_HOURS = 48   # jünger = "neu" → Neu-Markt-Lag (Poly noch nicht konvergiert)
 
 
@@ -150,6 +159,7 @@ def build():
                     "bestAsk": m.get("bestAsk"),
                     "rewardsMinSize": m.get("rewardsMinSize"),
                     "rewardsMaxSpread": m.get("rewardsMaxSpread"),
+                    "clobTokenIds": clob_ids(m),
                     "ageH": _age_h(m.get("startDate")),
                     "isNew": (_age_h(m.get("startDate")) or 1e9) < NEW_HOURS,
                 })

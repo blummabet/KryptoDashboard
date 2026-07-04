@@ -21,6 +21,8 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
+    env:
+      REAL_STAKE_USD: "5"          # echte Order-Größe in den Intents = Poly-Minimum ($5)
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

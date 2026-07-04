@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import datetime
 import json
+import os
 import pathlib
 
 import fair_value
@@ -28,9 +29,11 @@ import resolutions
 MARKETS = pathlib.Path(__file__).parent / "docs" / "markets.json"
 POSITIONS = pathlib.Path(__file__).parent / "data" / "paper_positions.json"
 OUT = pathlib.Path(__file__).parent / "docs" / "paper.json"
+INTENTS = pathlib.Path(__file__).parent / "data" / "intents.json"   # beabsichtigte Orders → Runner
 
 # ── Konfiguration — klein & gedeckelt (das sind die "Schalter", alle konservativ) ──────────────
-STAKE_USD       = 100.0   # Papier-Einsatz je Position
+STAKE_USD       = 100.0   # Papier-Einsatz je Position (aussagekräftiges P&L)
+REAL_STAKE_USD  = float(os.environ.get("REAL_STAKE_USD", "5"))   # ECHTE Order-Größe = Poly-Minimum ($5)
 EDGE_FLOOR_PP   = 2.5     # ab hier öffnen (Netto-Edge nach geschätzter Fee)
 LIQ_FLOOR_USD   = 5000.0  # dünne Märkte überspringen
 MAX_OPEN        = 40      # gedeckelte Anzahl gleichzeitig offener Positionen
@@ -84,11 +87,14 @@ def _open(m, now):
     cost_price = p if side == "YES" else 1.0 - p
     if not (0.02 <= cost_price <= 0.98):      # zu extrem → kein sinnvoller Einstieg
         return None
+    cids = m.get("clobTokenIds")
+    token_id = (cids[0] if side == "YES" else cids[1]) if (cids and len(cids) >= 2) else None
     return {
         "conditionId": m["conditionId"], "slug": m.get("slug"), "market": m.get("market"),
-        "family": m.get("family"), "side": side, "status": "OPEN",
+        "family": m.get("family"), "side": side, "status": "OPEN", "tokenId": token_id,
         "entryTs": now, "entryPoly": round(p, 4), "entryFair": m.get("fairProb"),
         "entryEdgePP": edge, "shares": round(STAKE_USD / cost_price, 2), "stakeUSD": STAKE_USD,
+        "realShares": round(REAL_STAKE_USD / cost_price, 4),   # echte Order-Größe (für Runner)
         "feePaid": round(_fee_usd(cost_price), 2), "wasNew": bool(m.get("isNew")),
     }
 
@@ -104,12 +110,20 @@ def _close(pos, mark, reason, now, exit_fee=0.0):
     pos["roiPct"] = round(pnl / pos["stakeUSD"] * 100, 1)
 
 
+def _intent(side, pos, now, price_hint, usdc=None, size=None):
+    return {"id": f"{side}:{pos['conditionId']}:{now}", "side": side,
+            "conditionId": pos["conditionId"], "tokenId": pos.get("tokenId"),
+            "usdc": usdc, "size": size, "label": pos.get("market"), "source": "convergence",
+            "priceHint": round(price_hint, 4) if price_hint is not None else None}
+
+
 def run():
     now = _now()
     positions = _load_positions()
     mkts = {m["conditionId"]: m for m in _load_markets() if m.get("conditionId")}
     res = resolutions.load_resolutions()
     activity = []
+    intents = []          # beabsichtigte ECHTE Orders dieses Laufs (Runner führt sie dry-run aus)
 
     # 1) Offene Positionen aktualisieren / schließen
     for pos in positions:
@@ -125,10 +139,12 @@ def run():
                 _close(pos, poly, "thesis_break", now, _fee_usd(exit_price))
                 activity.append({"ts": now, "type": "close", "reason": "thesis_break",
                                  "market": pos["market"], "pnl": pos["realizedPnl"]})
+                intents.append(_intent("SELL", pos, now, exit_price, size=pos.get("realShares", 0)))
             elif remaining <= CONVERGE_AT_PP:
                 _close(pos, poly, "converged", now, _fee_usd(exit_price))
                 activity.append({"ts": now, "type": "close", "reason": "converged",
                                  "market": pos["market"], "pnl": pos["realizedPnl"]})
+                intents.append(_intent("SELL", pos, now, exit_price, size=pos.get("realShares", 0)))
             else:
                 pos["markPoly"] = round(poly, 4)   # weiter halten, für Unrealized markieren
                 pos["curEdgePP"] = edge
@@ -163,9 +179,12 @@ def run():
             activity.append({"ts": now, "type": "open", "side": pos["side"],
                              "market": pos["market"], "entry": pos["entryPoly"],
                              "edge": pos["entryEdgePP"]})
+            cost_price = pos["entryPoly"] if pos["side"] == "YES" else 1.0 - pos["entryPoly"]
+            intents.append(_intent("BUY", pos, now, cost_price, usdc=REAL_STAKE_USD))
 
     POSITIONS.parent.mkdir(parents=True, exist_ok=True)
     POSITIONS.write_text(json.dumps(positions, indent=2, ensure_ascii=False))
+    INTENTS.write_text(json.dumps({"generatedAt": now, "intents": intents}, indent=2, ensure_ascii=False))
     _write_view(positions, now, activity)
     print(f"  Paper: {n_open} offen, {sum(1 for p in positions if p['status']=='CLOSED')} geschlossen")
 

@@ -1,0 +1,50 @@
+name: CryptoEdge Execute (dry-run · self-hosted)
+
+# Phase 3: führt die beabsichtigten Orders (data/intents.json) über die Gates aus — HART DRY-RUN.
+# Läuft auf dem geteilten Mac (Wohn-IP; Datacenter ist bei Polymarket geoblockt). Versetzt zu den
+# Fußball-Läufen (:00/:30) getaktet auf :15/:45 + kurzes Timeout, damit manage-wm-poly nie wartet.
+
+on:
+  schedule:
+    - cron: "15,45 * * * *"     # versetzt zum Betting-Bot (:00/:30)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: crypto-execute        # eigene Gruppe; die Cross-Repo-Serialisierung kommt vom einen Runner
+  cancel-in-progress: false
+
+jobs:
+  execute:
+    runs-on: [self-hosted, macOS]   # NUR der Mac — nicht Cloud/VPS (geoblockt)
+    timeout-minutes: 8               # Runner nicht blockieren
+    env:
+      DRY_RUN: "1"                   # ⛔ HART auf Dry-Run — kein echtes Geld. Für live BEWUSST auf "0".
+      CRYPTO_DAILY_USDC_CAP: "12"    # ≈ €11/Tag (dein Minimum €10). Order-Größe $5 (Poly-Minimum).
+      RESERVE_FLOOR_USDC: "999999"   # hoch = blockiert live, bis bewusst gesenkt
+      # Wallet/API aus ORG-Secrets (im Dry-Run ungenutzt; macht das Live-Gehen zu einem Flag-Flip):
+      POLY_PRIVATE_KEY:    ${{ secrets.POLY_PRIVATE_KEY }}
+      POLY_API_KEY:        ${{ secrets.POLY_API_KEY }}
+      POLY_API_SECRET:     ${{ secrets.POLY_API_SECRET }}
+      POLY_API_PASSPHRASE: ${{ secrets.POLY_API_PASSPHRASE }}
+      POLY_FUNDER_ADDRESS: ${{ secrets.POLY_FUNDER_ADDRESS }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Execute — beabsichtigte Orders durch die Gates (dry-run)
+        run: python execute.py
+      - name: Exec-Log + Spend zurück-committen
+        run: |
+          git config user.name "cryptoedge-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/exec_log.jsonl data/crypto_spend.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "keine Änderung"
+          else
+            git commit -m "chore(exec): dry-run log [skip ci]"
+            git push
+          fi
