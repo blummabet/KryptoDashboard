@@ -7,7 +7,8 @@ name: CryptoEdge Pipeline (read-only)
 
 on:
   schedule:
-    - cron: "*/30 * * * *"     # alle 30 min — Tages-Schwellen brauchen keinen Sekundentakt
+    - cron: "5 * * * *"        # stündlich (Tages-Schwellen brauchen keinen 30-Min-Takt);
+                                # weniger Commits = weniger Pages-Deploy-Druck
   workflow_dispatch:
   # bewusst KEIN push-Trigger: der Bot-Commit unten würde sich sonst selbst neu auslösen (Loop).
 

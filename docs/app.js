@@ -200,7 +200,15 @@
   document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => switchTab(t.dataset.view)));
 
   // ---- Load -------------------------------------------------------------------------------
-  const j = (u) => fetch(u + "?_=" + Date.now()).then(r => r.ok ? r.json() : Promise.reject(r.status));
+  // Daten direkt aus dem Repo (raw) laden → immer frisch, unabhängig vom (oft zickigen) Pages-Deploy.
+  // Fallback: gleicher Origin (docs/), falls raw mal nicht erreichbar ist.
+  const RAW = "https://raw.githubusercontent.com/blummabet/KryptoDashboard/main/docs/";
+  const j = (name) => {
+    const bust = "?_=" + Date.now();
+    return fetch(RAW + name + bust, { cache: "no-store" })
+      .then(r => r.ok ? r.json() : Promise.reject(r.status))
+      .catch(() => fetch(name + bust).then(r => r.ok ? r.json() : Promise.reject(r.status)));
+  };
   Promise.allSettled([j("paper.json"), j("clv.json"), j("markets.json"), j("arb.json"), j("maker.json")])
     .then(([pp, cl, mk, ar, ma]) => {
       const paper = pp.status === "fulfilled" ? pp.value : {};

@@ -11,7 +11,7 @@ name: CryptoEdge Execute (dry-run)
 
 on:
   schedule:
-    - cron: "15,45 * * * *"
+    - cron: "35 * * * *"       # stündlich, versetzt zur Daten-Pipeline (:05) — weniger Deploy-Druck
   workflow_dispatch:
 
 permissions:
