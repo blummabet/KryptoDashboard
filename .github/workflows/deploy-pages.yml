@@ -24,6 +24,10 @@ jobs:
     runs-on: ubuntu-latest
     env:
       REAL_STAKE_USD: "5"          # echte Order-Größe in den Intents = Poly-Minimum ($5)
+      # Whale-/Smart-Money-Kontext (read-only). Key als Repo-Secret hinterlegen (NIE im Code):
+      # Settings → Secrets and variables → Actions → New repository secret → POLYMARKETSCAN_API_KEY
+      POLYMARKETSCAN_API_KEY: ${{ secrets.POLYMARKETSCAN_API_KEY }}
+      WHALE_TOP_N: "15"            # Rate-Limit-schonend (30 Req/Min) — Top-N Märkte pro Lauf
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

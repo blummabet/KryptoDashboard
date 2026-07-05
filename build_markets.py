@@ -11,16 +11,22 @@ from __future__ import annotations
 
 import datetime
 import json
+import os
 import pathlib
 import re
+import time
 
 import data_sources
 import fair_value
 import guards
+import pmscan
 import poly_core
 import tracking
 from signals.context_signals import FearGreedSignal
 from signals.registry import SignalRegistry
+from signals.whale_signal import WhaleFlowSignal
+
+WHALE_TOP_N = int(os.environ.get("WHALE_TOP_N", "15"))   # Rate-Limit: 30 Req/Min → Top-N Märkte
 
 OUT = pathlib.Path(__file__).parent / "docs" / "markets.json"
 
@@ -198,6 +204,25 @@ def build():
                     "ageH": _age_h(m.get("startDate")),
                     "isNew": (_age_h(m.get("startDate")) or 1e9) < NEW_HOURS,
                 })
+
+    # Whale-/Smart-Money-Kontext (read-only, WEICHE Quelle → nur Anzeige-Fläche, nie Trade-Edge).
+    # Nur wenn ein PolymarketScan-Key gesetzt ist; Top-N nach Liquidität, Rate-Limit-schonend.
+    if pmscan.api_key():
+        whale_sig = WhaleFlowSignal()
+        ranked = sorted([r for r in rows if r.get("slug")],
+                        key=lambda r: r.get("liquidityUSD") or 0, reverse=True)[:WHALE_TOP_N]
+        got = 0
+        for r in ranked:
+            summ = pmscan.market_whale_summary(slug=r["slug"])
+            if summ:
+                r["whale"] = summ
+                res = whale_sig.evaluate({"whale": summ})
+                if not res.silent:
+                    r["whaleSignal"] = {"adjPP": res.adj_pp, "confidence": res.confidence,
+                                        "evidence": res.evidence}
+                got += 1
+            time.sleep(2.1)   # 30 Req/Min einhalten
+        print(f"  Whale-Kontext: {got}/{len(ranked)} Top-Märkte angereichert")
 
     rows.sort(key=lambda r: (r["edgePP"] is None, -(r["edgePP"] or 0)))
 

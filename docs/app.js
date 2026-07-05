@@ -110,9 +110,17 @@
       const a = m.asset || "?", e = m.edgePP;
       const eTxt = e == null ? "—" : (e > 0 ? "+" : "") + e.toFixed(1) + "pp";
       const gross = (m.edgeGrossPP != null && e != null) ? `<div class="grosslbl">brutto ${(m.edgeGrossPP > 0 ? "+" : "") + m.edgeGrossPP.toFixed(1)}</div>` : "";
+      let wc = "";
+      if (m.whale) {
+        const w = m.whale, net = w.yesNetUSD != null ? w.yesNetUSD : (w.netFlowUSD || 0);
+        const col = net > 0 ? "var(--pos)" : (net < 0 ? "var(--neg)" : "var(--muted)");
+        const nn = Math.abs(net) >= 1000 ? "$" + Math.round(net / 1000) + "k" : "$" + Math.round(net);
+        const sig = m.whaleSignal ? " · " + (m.whaleSignal.adjPP > 0 ? "+" : "") + m.whaleSignal.adjPP + "pp" : "";
+        wc = `<span class="fam" style="background:rgba(76,141,255,.16);color:var(--accent2)" title="${esc(w.evidence || "")}">🐋 ${w.uniqueWallets}w · <span style="color:${col}">${net > 0 ? "+" : ""}${nn}</span>${sig}</span>`;
+      }
       return `<tr>
         <td><span class="asset"><span class="coin" style="background:${coinColors[a] || "#888"}">${a[0]}</span>${a}</span>
-            <div class="mkt-sub">${famChip(m.family)}${esc(m.market)}</div></td>
+            <div class="mkt-sub">${famChip(m.family)}${esc(m.market)}${wc}</div></td>
         <td class="r num">${pct(m.polyPrice)}</td><td class="r num">${pct(m.fairProb)}</td>
         <td class="r num">${m.ivPct != null ? m.ivPct.toFixed(0) + "%" : "—"}</td>
         <td>${sparkline(trends[m.conditionId])}</td>
