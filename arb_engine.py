@@ -50,6 +50,7 @@ def run():
     now = _now()
     markets = _load_markets()
     findings = consistency.scan(markets)
+    baskets = consistency.scan_negrisk(markets)   # NegRisk-Basket-Arb (still, bis Poly Buckets listet)
     positions = _load_positions()
     res = resolutions.load_resolutions()
     open_keys = {p["key"] for p in positions if p["status"] == "OPEN"}
@@ -104,12 +105,13 @@ def run():
 
     POSITIONS.parent.mkdir(parents=True, exist_ok=True)
     POSITIONS.write_text(json.dumps(positions, indent=2, ensure_ascii=False))
-    _write(findings, positions, now, activity)
+    _write(findings, positions, now, activity, baskets)
     print(f"  Arb-Buch: {sum(1 for p in positions if p['status']=='OPEN')} offen, "
           f"{sum(1 for p in positions if p['status']=='CLOSED')} settled")
 
 
-def _write(findings, positions, now, activity):
+def _write(findings, positions, now, activity, baskets=None):
+    baskets = baskets or []
     open_pos = [p for p in positions if p["status"] == "OPEN"]
     closed = [p for p in positions if p["status"] == "CLOSED"]
     realized = sum(p.get("realizedPnl", 0.0) for p in closed)
@@ -125,6 +127,9 @@ def _write(findings, positions, now, activity):
     OUT.write_text(json.dumps({
         "generatedAt": now, "count": len(findings),
         "tradableCount": sum(1 for f in findings if f["tradable"]),
+        "basketFindings": baskets[:40],
+        "basketCount": len(baskets),
+        "basketTradable": sum(1 for f in baskets if f.get("tradable")),
         "note": "Monotonie-Verletzungen in Polys eigener Strike-Leiter (modell-frei) — auf Papier gehandelt.",
         "paper": {
             "summary": summary,

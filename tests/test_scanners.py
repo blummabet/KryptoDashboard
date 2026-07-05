@@ -39,3 +39,37 @@ def test_maker_reward_share_weighted():
     thin = maker.board([_m("T", 60000, 0.50, fair=0.53, bid=0.49, ask=0.51, liq=2000)])[0]
     thick = maker.board([_m("K", 60000, 0.50, fair=0.53, bid=0.49, ask=0.51, liq=80000)])[0]
     assert thin["estRewardDay"] > thick["estRewardDay"]   # dünn = höherer Anteil = mehr Reward
+
+
+def _nr(cid, poly, bid, ask, eid="EV1", title="Bucket-Event"):
+    """Ein NegRisk-Bucket (exklusives Outcome eines Events)."""
+    return {"conditionId": cid, "market": f"M{cid}", "polyPrice": poly, "eventId": eid,
+            "eventTitle": title, "negRisk": True, "bestBid": bid, "bestAsk": ask,
+            "clobTokenIds": [f"y{cid}", f"n{cid}"]}
+
+
+def test_negrisk_buy_basket_underpriced():
+    # Σ Yes-Ask = 0.30+0.30+0.30 = 0.90 < 1 → Basket kaufen, 10pp risikofrei
+    f = consistency.scan_negrisk([_nr("A", 0.29, 0.28, 0.30), _nr("B", 0.29, 0.28, 0.30),
+                                  _nr("C", 0.29, 0.28, 0.30)])
+    assert len(f) == 1 and f[0]["side"] == "buy"
+    assert f[0]["gapPP"] == 10.0 and f[0]["tradable"] is True and f[0]["n"] == 3
+
+
+def test_negrisk_sell_basket_overpriced():
+    # Σ Yes-Bid = 0.40+0.40+0.40 = 1.20 > 1 → Basket verkaufen, 20pp risikofrei
+    f = consistency.scan_negrisk([_nr("A", 0.41, 0.40, 0.42), _nr("B", 0.41, 0.40, 0.42),
+                                  _nr("C", 0.41, 0.40, 0.42)])
+    assert len(f) == 1 and f[0]["side"] == "sell" and f[0]["gapPP"] == 20.0
+
+
+def test_negrisk_fair_basket_no_arb():
+    # Σ Yes-Ask = 1.02 (nicht < 1), Σ Yes-Bid = 0.99 (nicht > 1) → kein Arb
+    assert consistency.scan_negrisk([_nr("A", 0.34, 0.33, 0.34), _nr("B", 0.34, 0.33, 0.34),
+                                     _nr("C", 0.34, 0.33, 0.34)]) == []
+
+
+def test_negrisk_ignores_nested_ladders():
+    # negRisk=false (verschachtelte Leiter, der reale Krypto-Fall) → nie ein Basket-Fund
+    ladder = [_m("A", 60000, 0.30), _m("B", 64000, 0.45)]  # kein negRisk/eventId
+    assert consistency.scan_negrisk(ladder) == []

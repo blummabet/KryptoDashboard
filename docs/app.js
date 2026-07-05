@@ -194,6 +194,11 @@
         art: badge("Sim", "break"), note: "DIE entscheidende Zahl: negativ = Adverse Selection frisst die Rewards" },
       { name: "Neu-Markt-Lag", val: money(ps.newMarketPnl), c: cls(ps.newMarketPnl),
         art: badge("Papier", "converged"), note: (ps.newMarketCount || 0) + " frische Trades · vs. etabliert " + money(ps.establishedPnl) },
+      { name: "NegRisk-Basket-Arb",
+        val: (arb && arb.basketTradable) ? arb.basketTradable + " handelbar" : ((arb && arb.basketCount) ? arb.basketCount + " erkannt" : "—"),
+        c: (arb && arb.basketTradable) ? "pos" : "",
+        art: badge("modellfrei", "win"),
+        note: (arb && arb.basketCount) ? "exklusive Buckets: Σ Yes ≠ 1" : "still — Poly listet Krypto nur als verschachtelte Leitern (kein Bucket-Markt)" },
     ];
     $("incomeRows").innerHTML = rows.map(r => `<tr>
       <td><b>${r.name}</b></td>

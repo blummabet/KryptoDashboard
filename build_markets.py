@@ -159,10 +159,19 @@ def build():
                 edge_per_day = (round(te / days_left, 3)
                                 if (te is not None and days_left and days_left > 0.05) else None)
 
+                # NegRisk = mutually-exclusive, exhaustive Outcomes eines Events (Yes-Summe = 1).
+                # Aktuell tragen Polys Krypto-Preisleitern negRisk=false (verschachtelte Schwellen,
+                # KEINE exklusiven Buckets) → der Basket-Scanner bleibt still, bis Poly Range-Buckets
+                # listet. Feld trotzdem mitschreiben, damit die Erkennung dann automatisch anspringt.
+                neg_risk = bool(m.get("negRisk") or ev.get("negRisk") or ev.get("enableNegRisk"))
+
                 rows.append({
                     "asset": "BTC",
                     "family": family,
                     "conditionId": m.get("conditionId"),
+                    "eventId": ev.get("id"),
+                    "eventTitle": ev.get("title"),
+                    "negRisk": neg_risk,
                     "slug": m.get("slug"),
                     "endDate": m.get("endDate") or ev.get("endDate"),
                     "market": label,
