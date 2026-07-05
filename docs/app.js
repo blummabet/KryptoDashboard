@@ -12,6 +12,20 @@
   const cls = (x) => (x == null ? "" : x > 0 ? "pos" : x < 0 ? "neg" : "");
   const coinColors = { BTC: "#f7931a", ETH: "#627eea", SOL: "#14f195" };
 
+  // ---- Bewertungs-System: Farbe/Chip sagen GUT/SCHLECHT, nicht nur +/− der Zahl ----------
+  const VERD = {
+    good:  ["🟢", "trägt", "var(--pos)", "rgba(47,208,138,.16)"],
+    early: ["⏳", "zu früh", "var(--warn)", "rgba(240,180,60,.18)"],
+    watch: ["👁", "beobachten", "var(--accent2)", "rgba(76,141,255,.16)"],
+    bad:   ["🔴", "kostet", "var(--neg)", "rgba(255,93,108,.16)"],
+  };
+  const vchip = (state, label) => {
+    const v = VERD[state] || VERD.watch;
+    return `<span style="display:inline-block;padding:2px 9px;border-radius:6px;font-size:12px;font-weight:600;white-space:nowrap;background:${v[3]};color:${v[2]}">${v[0]} ${label || v[1]}</span>`;
+  };
+  const vcolor = (state) => state === "good" ? "pos" : state === "bad" ? "neg" : "";
+  const goodBad = (v, goodIf) => (v == null ? "" : goodIf(v) ? "pos" : "neg");
+
   // ---- SVG helpers (Radar) ----------------------------------------------------------------
   function sparkline(vals) {
     if (!vals || vals.length < 2) return '<span class="mkt-sub">—</span>';
@@ -51,16 +65,24 @@
     $("unrealPnl").innerHTML = `<span class="${cls(s.unrealizedPnl)}">${money(s.unrealizedPnl)}</span>`;
     if (s.mode) $("modechip").textContent = s.mode.replace("PAPER / DRY-RUN — ", "") + " · $" + (s.stakeUSD || 100) + "/Trade";
 
-    const kpi = (k, v, cc, star) => `<div class="kpi ${star ? "star" : ""}"><div class="k">${k}</div><div class="v ${cc || ""}">${v}</div></div>`;
+    const kpi = (k, v, cc, sub, star) => `<div class="kpi ${star ? "star" : ""}"><div class="k">${k}</div><div class="v ${cc || ""}">${v}</div>${sub ? `<div style="margin-top:5px;font-size:11px;color:var(--muted);line-height:1.35">${sub}</div>` : ""}</div>`;
     const cells = [
-      kpi("ROI (realisiert)", s.roiPct == null ? "—" : (s.roiPct > 0 ? "+" : "") + s.roiPct + "%", cls(s.roiPct), true),
-      kpi("Offen", s.openCount ?? "0", ""),
-      kpi("Trefferquote", s.winRate == null ? "—" : Math.round(s.winRate * 100) + "%", ""),
-      kpi("Geschlossen", s.closedCount ?? "0", ""),
-      kpi("Ø CLV", c.avgClvPP == null ? "—" : (c.avgClvPP > 0 ? "+" : "") + c.avgClvPP + "pp", cls(c.avgClvPP)),
-      kpi("Brier vs Poly", cal.betterThanPoly == null ? "—" : (cal.betterThanPoly > 0 ? "+" : "") + cal.betterThanPoly, cls(cal.betterThanPoly)),
+      kpi("ROI (realisiert)", s.roiPct == null ? "—" : (s.roiPct > 0 ? "+" : "") + s.roiPct + "%",
+        goodBad(s.roiPct, v => v > 0), "nur geschlossene Trades · <b>Ziel: > 0</b>", true),
+      kpi("Offen", s.openCount ?? "0", "", "laufen noch · von max 40 · nur Info"),
+      kpi("Trefferquote", s.winRate == null ? "—" : Math.round(s.winRate * 100) + "%",
+        goodBad(s.winRate, v => v > 0.5), "Anteil Gewinner · <b>Ziel: > 50 %</b>"),
+      kpi("Geschlossen", s.closedCount ?? "0", "", "fertig abgerechnet · nur Info"),
+      kpi("Ø CLV", c.avgClvPP == null ? "—" : (c.avgClvPP > 0 ? "+" : "") + c.avgClvPP + "pp",
+        goodBad(c.avgClvPP, v => v > 0), "schlägt Schlusslinie? · <b>Ziel: > 0</b> (Nordstern)"),
+      kpi("Brier vs Poly", cal.betterThanPoly == null ? "—" : (cal.betterThanPoly > 0 ? "+" : "") + cal.betterThanPoly,
+        goodBad(cal.betterThanPoly, v => v > 0), "besser kalibriert als der Markt? · n/a bis genug Auflösungen"),
     ];
     $("kpis").innerHTML = cells.join("");
+
+    const hv = $("heroVerdict");
+    if (hv) hv.innerHTML = vchip("early", "Papier · noch zu früh")
+      + ` &nbsp;<b style="color:var(--fg)">Eine grüne Zahl heißt hier noch nicht „gut".</b> Das ist Papier-Geld, das meiste davon unrealisiert. Der ehrliche Beweis kommt erst über Wochen: <b style="color:var(--fg)">Ø CLV dauerhaft über 0</b> (wir schlagen die Schlusslinie) und <b style="color:var(--fg)">realisierter Gewinn nach Fee</b>. Bis dahin: beobachten und lernen, nicht feiern.`;
   }
 
   // ---- Portfolio --------------------------------------------------------------------------
@@ -128,6 +150,12 @@
         <td class="r num">${m.edgePerDay != null ? (m.edgePerDay > 0 ? "+" : "") + m.edgePerDay.toFixed(2) + "pp" : "—"}${m.daysLeft != null ? `<div class="grosslbl">${m.daysLeft}d</div>` : ""}</td>
         <td class="r num">${usd(m.liquidityUSD)}</td></tr>`;
     }).join("") : '<tr><td colspan="8" class="empty">markets.json noch nicht vorhanden.</td></tr>';
+
+    const wl = (data.markets || []).filter(m => m.whale);
+    const wsig = wl.filter(m => m.whaleSignal).length;
+    if ($("whaleHint")) $("whaleHint").innerHTML = wl.length
+      ? `· 🐋 ${wl.length} mit Whale-Daten, ${wsig} mit Cluster-Signal`
+      : "· 🐋 Whale-Daten ab 1. Lauf mit API-Key";
 
     const fg = (data.context || {}).fearGreed;
     $("gauge").innerHTML = fg ? fgGauge(fg.value) + `<div class="gauge-val" style="color:${fg.value != null && fg.value < 45 ? "var(--warn)" : "var(--pos)"}">${fg.value ?? "—"}</div><div class="gauge-cls">Fear &amp; Greed · ${esc(fg.classification || "—")}</div>` : '<div class="mkt-sub">Fear &amp; Greed n/a</div>';
@@ -227,28 +255,28 @@
   function renderIncome(paper, arb, maker, clv, baskets) {
     const ps = (paper && paper.summary) || {}, as = (arb && arb.paper && arb.paper.summary) || {};
     const ms = (maker && maker.sim) || {}, mo = (maker && maker.markout) || {};
-    const badge = (t, c) => `<span class="rsn rsn-${c}">${t}</span>`;
+    const mkNet = mo.avgMarkoutPP;
     const rows = [
-      { name: "Konvergenz (Taker)", val: money(ps.totalPnl), c: cls(ps.totalPnl),
-        art: badge("Papier", "converged"), note: "nach Fee meist dünn — der Ehrlichkeitstest" },
-      { name: "Konsistenz-Arb", val: money(as.totalPnl), c: cls(as.totalPnl),
-        art: badge("gesperrt", "win"), note: (as.openCount || 0) + " offen · nur echte Gaps nach der Spanne" },
-      { name: "Maker-Rewards", val: ms.estRewardDayTotal != null ? "$" + ms.estRewardDayTotal.toFixed(2) + "/Tag" : "—", c: "pos",
-        art: badge("Schätzung", "break"), note: "kumuliert " + (ms.cumRewardEst != null ? "$" + ms.cumRewardEst.toFixed(2) : "—") + " · unkalibriert, echt erst live" },
-      { name: "Maker netto (Markout)", val: mo.avgMarkoutPP != null ? (mo.avgMarkoutPP > 0 ? "+" : "") + mo.avgMarkoutPP + "pp" : "—", c: cls(mo.avgMarkoutPP),
-        art: badge("Sim", "break"), note: "DIE entscheidende Zahl: negativ = Adverse Selection frisst die Rewards" },
-      { name: "Neu-Markt-Lag", val: money(ps.newMarketPnl), c: cls(ps.newMarketPnl),
-        art: badge("Papier", "converged"), note: (ps.newMarketCount || 0) + " frische Trades · vs. etabliert " + money(ps.establishedPnl) },
+      { name: "Konvergenz (Taker)", val: money(ps.totalPnl), state: "early",
+        note: "Poly gegen unsere Deribit-Fair handeln. Grün täuscht — das meiste ist unrealisiert. Echter Beweis: Ø CLV > 0 nach Fee über Wochen." },
+      { name: "Konsistenz-Arb", val: money(as.totalPnl), state: (as.openCount || 0) > 0 ? "good" : "watch",
+        note: "Polys eigene Preisleiter widerspricht sich → risikoarm. Sauberste Kante, aber selten; Ausführen braucht den Runner. (" + (as.openCount || 0) + " offen)" },
+      { name: "Maker-Rewards", val: ms.estRewardDayTotal != null ? "~$" + ms.estRewardDayTotal.toFixed(2) + "/Tag" : "—", state: "watch",
+        note: "Geschätzte Belohnung fürs Quoten (Poly zahlt Maker). Nur Schätzung — echt erst mit Runner. Richtung stimmt, Höhe unsicher." },
+      { name: "Maker netto (Markout)", val: mkNet != null ? (mkNet > 0 ? "+" : "") + mkNet + "pp" : "—",
+        state: mkNet == null ? "watch" : (mkNet >= 0 ? "good" : "bad"),
+        note: "DIE Schlüsselzahl fürs Maken: negativ = wir werden abgeräumt (Adverse Selection frisst die Rewards). Wartet auf genug Fills." },
+      { name: "Neu-Markt-Lag", val: money(ps.newMarketPnl), state: "early",
+        note: "Frische Märkte starten träge bei ~50¢. Sieht ertragreich aus, ist aber evtl. nur Illiquidität — erst über Auflösungen beweisen. (" + (ps.newMarketCount || 0) + " Trades)" },
       { name: "Multi-Outcome Basket-Arb",
         val: (baskets && baskets.tradableCount) ? baskets.tradableCount + " handelbar" : ((baskets && baskets.count) ? baskets.count + " Funde" : "—"),
-        c: (baskets && baskets.tradableCount) ? "pos" : "",
-        art: badge("modellfrei", "win"),
-        note: (baskets && baskets.count) ? "Σ Ja ≠ 100 % über alle Kategorien (WM, Wahlen …)" : "still — liquide Multi-Outcome-Märkte sind fair (Overround); Kante nur in dünnen Märkten" },
+        state: (baskets && baskets.tradableCount) ? "good" : "watch",
+        note: "Mehrere exklusive Antworten (WM, Wahlen): Summe aller Ja ≠ 100 % = risikofrei. Funde = erkannt (meist zu klein oder wegarbitriert); handelbar = echt lohnend." },
     ];
     $("incomeRows").innerHTML = rows.map(r => `<tr>
       <td><b>${r.name}</b></td>
-      <td class="r pnl ${r.c}">${r.val}</td>
-      <td>${r.art}</td>
+      <td class="r pnl ${vcolor(r.state)}">${r.val}</td>
+      <td>${vchip(r.state)}</td>
       <td class="mkt-sub">${r.note}</td></tr>`).join("");
   }
 

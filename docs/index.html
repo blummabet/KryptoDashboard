@@ -164,13 +164,15 @@
         <div><div class="lbl">Unrealisiert</div><div class="v" id="unrealPnl">—</div></div>
       </div>
       <div class="modechip" id="modechip">kein echtes Geld · alle Schalter aus</div>
+      <div id="heroVerdict" style="grid-column:1/-1;margin-top:10px;font-size:13px;line-height:1.5;color:var(--muted)"></div>
     </div>
 
     <div class="card" id="incomeCard" style="margin:14px 0 4px">
       <div class="card-h"><span class="t">💰 Einnahmen-Übersicht</span><span class="badge b-edge">alle Varianten</span>
         <span class="hint">read-only · Papier / Schätzung / Simulation</span></div>
+      <div class="ctx-note" style="margin:0 0 10px">So liest du die <b>Bewertung</b>: <span style="color:var(--pos)">🟢 trägt</span> = echte, belastbare Kante · <span style="color:var(--warn)">⏳ zu früh</span> = noch unbewiesen, Zahl kann täuschen · <span style="color:var(--accent2)">👁 beobachten</span> = nur Schätzung/Signal, kein Beweis · <span style="color:var(--neg)">🔴 trägt nicht</span> = negativ/kostet. <b>Wichtig: eine grüne Zahl heißt noch nicht „gut" — es zählt die Bewertung.</b></div>
       <table><thead><tr>
-        <th>Variante</th><th class="r">Aktuell</th><th>Art</th><th>Ehrliche Einordnung</th>
+        <th>Variante</th><th class="r">Aktuell</th><th>Bewertung</th><th>Was das heißt</th>
       </tr></thead><tbody id="incomeRows"><tr><td colspan="4" class="empty">Lade…</td></tr></tbody></table>
     </div>
 
@@ -181,7 +183,7 @@
         <th>Tag</th><th class="r">Konvergenz P&L</th><th class="r">Arb gesperrt</th>
         <th class="r">Maker kum.</th><th class="r">CLV</th><th class="r">Basket handelbar</th>
       </tr></thead><tbody id="trendRows"><tr><td colspan="6" class="empty">Lade…</td></tr></tbody></table></div>
-      <div class="ctx-note">Der Verlauf füllt sich pro Tag um eine Zeile. So siehst du, welcher Strang wirklich trägt — nicht nur die Momentaufnahme. Alles read-only / Papier.</div>
+      <div class="ctx-note">Der Verlauf füllt sich pro Tag um eine Zeile. So siehst du, welcher Strang wirklich trägt — nicht nur die Momentaufnahme. Bei allen Spalten gilt: <b>höher = besser</b>. Der ehrlichste Kompass ist <b>CLV</b> (Ziel dauerhaft &gt; 0). Alles read-only / Papier.</div>
     </div>
 
     <div class="strat" id="strat"></div>
@@ -207,6 +209,7 @@
               <th>Markt</th><th>Seite</th><th class="r">Entry</th><th class="r">Jetzt</th>
               <th class="r">Edge übrig</th><th class="r">Alter</th><th class="r">P&amp;L</th>
             </tr></thead><tbody id="openRows"><tr><td colspan="7" class="empty">Lade…</td></tr></tbody></table>
+            <div class="ctx-note"><b>Seite</b> = worauf wir setzen (Ja/Nein) · <b>Entry</b> = Poly-Preis beim Kauf, <b>Jetzt</b> = aktuell · <b>Edge übrig</b> = noch offene Fehlbepreisung, die zu uns laufen soll (mehr grün = besser) · <b>P&amp;L</b> = Papier-Gewinn dieser Position (grün = im Plus).</div>
           </div>
           <div class="card">
             <div class="card-h"><span class="t">Abgeschlossen</span><span class="hint" id="closedHint"></span></div>
@@ -224,11 +227,11 @@
 
     <!-- RADAR -->
     <div id="view-radar" class="hidden">
-      <div class="explain">Der Radar zeigt <b>alle beobachteten BTC-Märkte</b> mit unserer fairen Wahrscheinlichkeit (aus Deribit-Optionen + Spot) und dem Edge = Poly-Preis − Fair. Das ist die Rohquelle, aus der die Paper-Engine ihre Trades wählt. Rechts laufen Kontext-Signale (Fear&amp;Greed) mit — die fließen bewusst <b>nicht</b> in den Edge (zwei Flächen).</div>
+      <div class="explain">Der Radar zeigt <b>alle beobachteten BTC-Märkte</b> mit unserer fairen Wahrscheinlichkeit (aus Deribit-Optionen + Spot) und dem Edge = Poly-Preis − Fair. Das ist die Rohquelle, aus der die Paper-Engine ihre Trades wählt. Rechts laufen Kontext-Signale (Fear&amp;Greed) mit — die fließen bewusst <b>nicht</b> in den Edge (zwei Flächen).<br><span style="color:var(--accent2)">🐋 Neu:</span> Der Whale-Chip an einem Markt zeigt <b>Smart-Money-Flow</b> (PolymarketScan): „Xw" = so viele einzelne Whale-Wallets, „+/−$Yk" = Netto Richtung Yes, „±pp" = das gedämpfte Kontext-Signal. <b>Grün = Smart Money kauft Yes, Rot = kauft No.</b> Auch das ist reine Anzeige (weiche Quelle) — noch <b>unkalibriert</b>, wir messen erst über die Tage per CLV, ob es wirklich trägt.</div>
       <div class="grid2">
         <div class="card">
           <div class="card-h"><span class="t">Edge-Radar</span><span class="badge b-edge">Sharp-Anker</span>
-            <span class="hint">Poly vs Fair (Deribit-IV + Spot) · netto</span></div>
+            <span class="hint">Poly vs Fair (Deribit-IV + Spot) · netto</span><span class="hint" id="whaleHint"></span></div>
           <table><thead><tr>
             <th>Markt</th><th class="r">Poly</th><th class="r">Fair</th><th class="r">IV</th>
             <th>Verlauf</th><th class="r">Edge</th><th class="r">Edge/Tag</th><th class="r">Liq.</th>
