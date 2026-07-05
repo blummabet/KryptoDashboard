@@ -2,8 +2,8 @@
   "summary": {
     "trackedMarkets": 150,
     "picks": 72,
-    "avgClvPP": 2.34,
-    "positiveClvShare": 0.28,
+    "avgClvPP": 1.56,
+    "positiveClvShare": 0.26,
     "edgeMinPP": 2.0,
     "note": "Movement-CLV: bewegt sich Poly zum Fair? Positiv = Schluss-Linie geschlagen."
   },
@@ -16,6 +16,13 @@
     "brierPoly": null,
     "betterThanPoly": null,
     "note": "PnL brutto (vor Fee). betterThanPoly>0 = unser Fair besser kalibriert als der Poly-Preis."
+  },
+  "cohorts": {
+    "unbek.": {
+      "picks": 72,
+      "avgClvPP": 1.56,
+      "positiveShare": 0.26
+    }
   },
   "trends": {
     "0x357ef67b1d8665d64339f06f3b5c250aeb6294caf708f90cfc60a51f473c8f48": [
@@ -35,7 +42,8 @@
       -1.29,
       -3.0,
       -2.01,
-      2.39
+      2.39,
+      0.43
     ],
     "0x1edb64b2afcf60302551ecbe19d8025852214370cf1cdc5dc37cd7bf2749de33": [
       2.01,
@@ -66,7 +74,8 @@
       0.32,
       0.27,
       0.27,
-      0.27
+      0.27,
+      0.22
     ],
     "0x262da463a795dfa9182d71361ea8d03e839fcef844b08efdf485f53233e48f52": [
       0.67,
@@ -85,7 +94,8 @@
       0.34,
       0.34,
       0.34,
-      0.32
+      0.32,
+      0.05
     ],
     "0x578327f87338039e1545315a124e3ace202fb8fa6bfbab58dba26616bdc1d47f": [
       0.52,
@@ -104,7 +114,8 @@
       0.78,
       0.79,
       0.77,
-      -0.69
+      -0.69,
+      -1.28
     ],
     "0x934bad58eaaae3898bf6fd42f86d9539c2c8d5530cb43882d592a6e1a1953ed0": [
       0.37,
@@ -123,7 +134,8 @@
       0.45,
       0.44,
       0.44,
-      0.3
+      0.3,
+      0.14
     ],
     "0xe536bdfc3d420e82ea10b30d6234e50e1981fe2809e34c5519ce26535d26d38a": [
       0.34,
@@ -142,7 +154,8 @@
       0.1,
       0.2,
       0.31,
-      0.22
+      0.22,
+      0.32
     ],
     "0xdbb63132d1426f66cc095d81fa722b8499d309fb5478573da3b2fa028d051ee4": [
       0.31,
@@ -161,7 +174,8 @@
       0.28,
       0.22,
       0.15,
-      0.06
+      0.06,
+      0.37
     ],
     "0xa46a51e58dd4477e7cdd8645aa956a1a5bfe59817058ee0cabaf415a4e337b5f": [
       0.31,
@@ -179,6 +193,7 @@
       0.14,
       0.14,
       0.14,
+      0.05,
       0.05,
       0.05
     ],
@@ -199,7 +214,8 @@
       -1.13,
       -1.07,
       -0.89,
-      -0.56
+      -0.56,
+      -0.57
     ],
     "0xd9b82ed85d448e593c67c17842341a812b76dd71fd1b73443fa8c7342f11108f": [
       0.22,
@@ -218,7 +234,8 @@
       -0.64,
       -0.75,
       -0.64,
-      -0.93
+      -0.93,
+      -1.24
     ],
     "0xd730f1f6ec599ad0af00249fe44331be0a7275e2af1977afdc1a2e5c664cf0a3": [
       0.21,
@@ -237,7 +254,8 @@
       0.2,
       0.19,
       0.14,
-      0.19
+      0.19,
+      -0.12
     ],
     "0xb6cc043c2ea6a2ccae30010529d4ff673e9e2317ab54630ba1bd25016c41ba17": [
       0.18,
@@ -256,7 +274,8 @@
       0.75,
       0.71,
       0.67,
-      0.48
+      0.48,
+      -0.21
     ],
     "0xb3de7ea12cf0f5d039de9b401e357f1e53a1051f564a58eee6c2041d50ccac12": [
       0.18,
@@ -275,6 +294,7 @@
       -0.03,
       0.03,
       -0.11,
+      -0.05,
       -0.05
     ],
     "0x4cef08aa0c5a0ab6514574582937bda9c8db68d07a6586ebc796a5a79173e177": [
@@ -294,7 +314,8 @@
       0.88,
       0.88,
       0.78,
-      1.05
+      1.05,
+      1.19
     ],
     "0x73c499954144e3566041b4355d9c1f19e4939973860b08761a56082b27f251ed": [
       0.14,
@@ -325,6 +346,7 @@
       0.05,
       0.05,
       0.05,
+      0.05,
       0.05
     ],
     "0xa6eeaa3d65658572ed94ca4f94d35f9e678b6b13f6de745d6495a5128562d8c1": [
@@ -347,6 +369,7 @@
       0.05
     ],
     "0xc2691d82da02e87ba68e94872f5ee83790108b52ba0805c384ea0864f3a3097b": [
+      0.05,
       0.05,
       0.05,
       0.05,
@@ -430,6 +453,7 @@
       0.08,
       0.09,
       0.09,
+      0.05,
       0.05
     ],
     "0x9a485f371385978c77ed6c78a80e0b3d13bafac2a4020bb1beef07ccd7a93bd4": [
@@ -449,7 +473,8 @@
       0.24,
       -0.2,
       -0.3,
-      -0.13
+      -0.13,
+      -0.16
     ],
     "0x3c0002567db4c3f270ba5a5d81817651d272913061cceb0c4c79f416fef36b26": [
       -0.04,
@@ -468,7 +493,8 @@
       0.11,
       0.13,
       0.11,
-      0.01
+      0.01,
+      0.18
     ],
     "0xf252ee62e940c120f523c5d763288244253c520598c32a91da684b66e27fcf38": [
       -0.04,
@@ -487,7 +513,8 @@
       -0.26,
       -0.25,
       -0.38,
-      -0.48
+      -0.48,
+      -0.25
     ],
     "0x44dcd7c08485eb5efaeafe28296979ef25c47c02f15a09c5022c60869afc6a0b": [
       -0.05,
@@ -549,7 +576,8 @@
       -0.63,
       -0.78,
       -0.59,
-      -0.35
+      -0.35,
+      0.34
     ],
     "0x2b09b849085baecee20bf05ef1b679cbdc635314ba4234c11dd0d56aed63bc38": [
       -0.32,
@@ -568,7 +596,8 @@
       0.29,
       -0.18,
       0.04,
-      -0.88
+      -0.88,
+      -0.52
     ],
     "0x5179f59617e32ce893c4ecc0ee1e4916c65f7a85eb3774c87cdc3430cb1d0d73": [
       -0.36,
@@ -618,7 +647,8 @@
       0.96,
       0.97,
       0.98,
-      0.95
+      0.95,
+      1.62
     ],
     "0x94175de17a6a2f25ddbd7bb219119da0c2e5afe08e7eb28ec3187ba2a2031f4d": [
       -0.47,
@@ -637,7 +667,8 @@
       -0.1,
       -0.37,
       -0.25,
-      0.18
+      0.18,
+      0.97
     ],
     "0x19047cae64d6403a7f3351c416d73c4d7234209100991aee388eb961577a37c9": [
       -0.5,
@@ -656,7 +687,8 @@
       0.35,
       -0.04,
       0.0,
-      -0.38
+      -0.38,
+      -1.0
     ],
     "0xf43c98fc3069d7cd2ec2f1825c4e1285c6870d0cdf4989061930d8cc4555a03a": [
       -0.62,
@@ -675,7 +707,8 @@
       -4.68,
       -4.41,
       -3.97,
-      -4.04
+      -4.04,
+      -1.13
     ],
     "0x93e458b984617260fce2434400fe4f347652c028b9aacd42e85bd2d6129d5bc2": [
       -0.66,
@@ -694,7 +727,8 @@
       -1.32,
       -1.35,
       -1.31,
-      -1.68
+      -1.68,
+      -1.79
     ],
     "0x0d8fad0f76af4c128600190e0fc739f353ac4adeddda9e2c96731b0c5355e3ca": [
       -0.83,
@@ -713,7 +747,8 @@
       -0.07,
       -0.87,
       -0.72,
-      -1.32
+      -1.32,
+      -1.79
     ],
     "0x3f658535c621a06789f0e4a9d3ba15ff13da3a542aba9e8d283c01a6fe8b277f": [
       -1.01,
@@ -732,7 +767,8 @@
       -0.56,
       -0.63,
       -0.33,
-      -0.45
+      -0.45,
+      -0.34
     ],
     "0x6dd32881c138dff66dd5761743d76a4a4d9db596e44d8bb7323df9613b649f28": [
       -1.08,
@@ -751,7 +787,8 @@
       -0.83,
       0.08,
       0.08,
-      -0.22
+      -0.22,
+      -0.76
     ],
     "0x6e7647e8f1e27cca3e0154146dfe503d2c4b4facb4439e25d4c30c3db5d0da1d": [
       -1.33,
@@ -770,7 +807,8 @@
       -3.62,
       -3.72,
       -3.13,
-      -2.74
+      -2.74,
+      -2.12
     ],
     "0xc20734c4dad71e2bbe1f4398d532379e97030feac8c5c57643133d9f27fb60d7": [
       -1.67,
@@ -789,7 +827,8 @@
       -1.12,
       -1.17,
       -1.19,
-      -1.79
+      -1.79,
+      -1.93
     ],
     "0x9963ed8f0f3a5d6677c7dc2e4179cded497227958facac11653111334ca82ab1": [
       -1.69,
@@ -808,7 +847,8 @@
       -2.57,
       -2.75,
       -2.74,
-      -1.41
+      -1.41,
+      -0.91
     ],
     "0xdf21c1e4e9458a3631362b5d49accf43f756f116f0e5e041161bbab9ca915ba7": [
       -1.81,
@@ -827,7 +867,8 @@
       -1.75,
       -1.73,
       -1.77,
-      -2.33
+      -2.33,
+      -2.49
     ],
     "0x2771c61f82c2dacf5996c4242860d3331b5f644541325b6de3a92549912b6ad7": [
       -1.84,
@@ -846,7 +887,8 @@
       -1.36,
       -1.67,
       -2.01,
-      -0.97
+      -0.97,
+      0.94
     ],
     "0x28f59e8824137912266b5c8c6960ca458af9b963a5468ac6bc2d6ff05483bb91": [
       -1.94,
@@ -865,7 +907,8 @@
       -0.92,
       -1.77,
       -0.41,
-      -0.63
+      -0.63,
+      -0.93
     ],
     "0xab9e785fc040b56105ead77d63173f1a073469ddd857c3694e57acb0d25ac8da": [
       -1.95,
@@ -884,7 +927,8 @@
       -1.97,
       -1.99,
       -2.11,
-      -2.82
+      -2.82,
+      -2.78
     ],
     "0x2b2aa6c11544142c0d784aa50309722ad4002166973bf6e4122a4a8e84743034": [
       -2.21,
@@ -903,7 +947,8 @@
       -1.4,
       -2.06,
       -1.46,
-      -0.82
+      -0.82,
+      0.02
     ],
     "0x005c612e25e7e23377f9dd3c19474fe3c186c9fa8ee93fa5bd47072c8ad95792": [
       -2.76,
@@ -922,7 +967,8 @@
       -4.62,
       -5.02,
       -4.95,
-      -4.71
+      -4.71,
+      -3.68
     ],
     "0xd5a422e44c9b421ca08dcfd3d3cb6275648b4cbc69eb8f8ad7e2c70e6edd7c70": [
       -3.26,
@@ -941,7 +987,8 @@
       -2.47,
       -2.83,
       -2.89,
-      -3.35
+      -3.35,
+      -5.57
     ],
     "0x293a934d1f8d6fd347d26584738567ebc98edf6ebc82390572c677f2b07694cc": [
       -3.29,
@@ -960,7 +1007,8 @@
       -3.22,
       -3.36,
       -3.22,
-      -4.37
+      -4.37,
+      -3.46
     ],
     "0x7d427ddb413ca92722f24cc28ed53a3eb6100e3c309405cd4e44165bb0acfe00": [
       -3.38,
@@ -979,7 +1027,8 @@
       -4.98,
       -5.3,
       -4.65,
-      -4.12
+      -4.12,
+      -3.0
     ],
     "0xa4fc5376f2975730fc560c9c3008f434112f2c2918c79b3712287b4f3fe2cd06": [
       -3.5,
@@ -998,7 +1047,8 @@
       -3.56,
       -4.35,
       -4.17,
-      -4.12
+      -4.12,
+      -2.95
     ],
     "0xcfc8e92294639f501184506ed3872081299ff9fd615754cd1ce39734d2d06351": [
       -3.6,
@@ -1017,7 +1067,8 @@
       -4.15,
       -3.5,
       -3.87,
-      -3.86
+      -3.86,
+      -4.71
     ],
     "0xcf90979c656e437059e2651187f9eaceabb821d4519429b72a69a068090a8bf5": [
       -4.09,
@@ -1036,7 +1087,8 @@
       -4.32,
       -4.83,
       -4.8,
-      -3.81
+      -3.81,
+      -4.46
     ],
     "0x43f1404d5230f1b925f3a7a5bd779c11ecccf9105aff9b22c337b83630c33417": [
       -4.17,
@@ -1055,7 +1107,8 @@
       -3.85,
       -5.02,
       -4.05,
-      -5.19
+      -5.19,
+      -5.1
     ],
     "0x1dd418657a0dda226b252951f04324ed121c9537e89ab8ea1a0eb502ea424369": [
       -4.65,
@@ -1074,7 +1127,8 @@
       -5.47,
       -5.02,
       -4.57,
-      -4.68
+      -4.68,
+      -6.11
     ],
     "0x0c27b49f0c9ce6d1c48bf2c38af75e06bd9bf1575e573094df739d8c668a329f": [
       -4.79,
@@ -1093,7 +1147,8 @@
       -4.67,
       -5.08,
       -4.58,
-      -4.87
+      -4.87,
+      -5.04
     ],
     "0x2310ab1f44e67168b38e108de221ce7c2e2a2d93a8ab269add0382f9ceb3a037": [
       -4.83,
@@ -1112,7 +1167,8 @@
       -4.39,
       -4.47,
       -4.54,
-      -5.25
+      -5.25,
+      -6.06
     ],
     "0x1f2bc9a363013dcf06f383b73aa8c78e05e477281d8baf9c189f0e7ba8e1ccda": [
       -5.33,
@@ -1131,7 +1187,8 @@
       -5.22,
       -5.69,
       -5.21,
-      -5.6
+      -5.6,
+      -5.92
     ],
     "0x2f30cdd3b4965f7ad0fea665384008615ec5b4ff042fe88d9bdd1ce1eb53961b": [
       -5.34,
@@ -1150,7 +1207,8 @@
       -3.64,
       -3.86,
       -4.02,
-      -5.07
+      -5.07,
+      -4.69
     ],
     "0x6811c0d6494cbe7a45cf1bde494add4e82a12e222715b71caef01c112865f120": [
       -5.55,
@@ -1169,7 +1227,8 @@
       -3.15,
       -5.07,
       -5.99,
-      -3.74
+      -3.74,
+      0.24
     ],
     "0x10492aaf796455be720f0fb12576f029909d3c2aad61c38811f73b15b7690fe6": [
       -6.58,
@@ -1188,7 +1247,8 @@
       -5.69,
       -6.08,
       -5.54,
-      -6.36
+      -6.36,
+      -5.66
     ],
     "0x2745c38ff0617cb345c1d2df19b4f74ea777508e07411e88eeb6ab3affcda2a2": [
       9.72,
@@ -1201,7 +1261,8 @@
       9.01,
       9.02,
       9.02,
-      9.55
+      9.55,
+      9.18
     ],
     "0x1e5564c1a2a6839cc2780a889437c63786a2c2ec5e95569b710ee659a3e8baa2": [
       7.02,
@@ -1214,7 +1275,8 @@
       4.59,
       4.66,
       4.73,
-      5.8
+      5.8,
+      5.69
     ],
     "0x903a1387e6414be5529efc8f7757e30371e6698de9d68fa4ce33252009db69ef": [
       6.52,
@@ -1227,7 +1289,8 @@
       6.76,
       6.64,
       6.97,
-      7.41
+      7.41,
+      6.89
     ],
     "0x2be031440c5a571cd4fc3e05e2478d98aee41c7a44d10d3c5e6a24e38b30fabb": [
       5.87,
@@ -1240,7 +1303,8 @@
       4.6,
       5.25,
       4.43,
-      3.98
+      3.98,
+      2.54
     ],
     "0xe498447cc887be42044835ac88ece14c34a158a3e6f5e1be07a89629d7100b61": [
       5.33,
@@ -1253,7 +1317,8 @@
       5.38,
       5.93,
       4.82,
-      3.8
+      3.8,
+      5.21
     ],
     "0x5e2aecc3ca41986f8e5f1a67c4d8f5bed56c10191dd5ea0c4980e66a3d61d680": [
       4.78,
@@ -1266,7 +1331,8 @@
       3.48,
       3.98,
       3.78,
-      4.71
+      4.71,
+      4.74
     ],
     "0xbfefe500c3fea4d8067f39246e4d9404a6fe0ea3040e1366d4ac02367d751c46": [
       3.88,
@@ -1279,7 +1345,8 @@
       3.02,
       3.7,
       3.68,
-      5.37
+      5.37,
+      3.74
     ],
     "0xdfbe36a1200c4ec361aa20733ede4d33085eef400c11d28a00079a2ba46d3d05": [
       2.6,
@@ -1292,7 +1359,8 @@
       2.0,
       2.38,
       2.18,
-      2.73
+      2.73,
+      2.83
     ],
     "0xec540d631a88397ca01a17e48193019b4d680fde10087a38d5c8467bfaae18c0": [
       1.99,
@@ -1305,7 +1373,8 @@
       1.74,
       1.9,
       1.86,
-      2.11
+      2.11,
+      2.29
     ],
     "0x024b68f77bfc019341ee3db8f57c103334e4b9430bba4746d8c94aafd8b36fee": [
       1.81,
@@ -1318,7 +1387,8 @@
       0.57,
       1.21,
       1.94,
-      2.09
+      2.09,
+      3.22
     ],
     "0x320256897a0946fb9190ab091bb4ef6349f095541c724c8153c4ca328db0cb02": [
       1.69,
@@ -1331,7 +1401,8 @@
       1.5,
       1.5,
       1.48,
-      1.57
+      1.57,
+      1.48
     ],
     "0x1239389645c8a73b170b78ef3a83d69b6cf1d2711d412829ea8836660b08fc93": [
       0.91,
@@ -1344,7 +1415,8 @@
       2.21,
       2.18,
       1.97,
-      1.22
+      1.22,
+      1.64
     ],
     "0x13dae092813125bf5e892a59dac2154e0fdb6aff600a3996ed0ab3b07d68e683": [
       0.62,
@@ -1357,7 +1429,8 @@
       1.23,
       1.31,
       1.26,
-      1.31
+      1.31,
+      1.52
     ],
     "0xc564e47b7a853f3e52ea7b8e28d69ed99fcb284929364fd0f8024c2bca03ea96": [
       0.38,
@@ -1370,7 +1443,8 @@
       2.2,
       2.14,
       1.96,
-      3.09
+      3.09,
+      2.6
     ],
     "0x7c11c14664000e9a338d1b2a112d9aba06bc37c900daf52b0df4372ab32367de": [
       0.35,
@@ -1383,7 +1457,8 @@
       0.78,
       0.77,
       1.09,
-      1.08
+      1.08,
+      1.29
     ],
     "0x7d64a1533a7d69055205382f1f37d5e0057b5fc40c75ee36df30438b1b0992e2": [
       0.28,
@@ -1396,7 +1471,8 @@
       0.51,
       0.51,
       0.74,
-      0.74
+      0.74,
+      0.8
     ],
     "0xd7160ebe07fad2e198bcf26b2b29ca42afc751633686b9a34cc59044afdd81b1": [
       0.28,
@@ -1409,7 +1485,8 @@
       0.05,
       0.1,
       0.14,
-      0.17
+      0.17,
+      0.2
     ],
     "0x66c52ad2bc67c4a32cf4e4c0a8693dc41b4eeae7c7f7c5ba30075f09d9c08d88": [
       0.1,
@@ -1422,7 +1499,8 @@
       0.05,
       0.05,
       0.05,
-      0.12
+      0.12,
+      0.05
     ],
     "0xc84688e9a008a57f44b4c032f3c5f633fe27cd6478c1c6d7d4a1c9f49067b092": [
       0.07,
@@ -1435,7 +1513,8 @@
       0.1,
       0.1,
       0.09,
-      -0.06
+      -0.06,
+      0.06
     ],
     "0xce3c54c3e773e8b3bf73e4c12af93205b21195d03b9c386e22f274b9acfc2c56": [
       -0.38,
@@ -1448,7 +1527,8 @@
       0.86,
       0.51,
       0.71,
-      1.62
+      1.62,
+      0.99
     ],
     "0xacec7e5b90ccb1ac4c950e3aff18156d6ce1bb7b0c87c001a281279412dca784": [
       -0.91,
@@ -1461,7 +1541,8 @@
       -0.23,
       -0.26,
       -0.38,
-      -0.62
+      -0.62,
+      -0.47
     ],
     "0x752fa61c93f16c4b15e85b0bd438d9c684176b0ea7b319a84c8aca34616e8a8c": [
       -0.97,
@@ -1474,7 +1555,8 @@
       0.07,
       0.15,
       0.37,
-      1.49
+      1.49,
+      0.62
     ],
     "0x6fefc0438c7598b23531457c8c60541990d0786bd4bd9dfc3eabc8d95c291092": [
       -1.29,
@@ -1487,7 +1569,8 @@
       -1.3,
       -1.29,
       -1.29,
-      -1.28
+      -1.28,
+      -1.29
     ],
     "0x5523e3b9895124788b2bed38f4b6be72c3f41cd2d2ee4354d93b26a3f533eaf6": [
       -1.31,
@@ -1500,7 +1583,8 @@
       -0.58,
       -0.64,
       -0.46,
-      -0.14
+      -0.14,
+      0.06
     ],
     "0x7b9072e6a9cdcf022c4f098564e8ee612d544e179e4a33dcc2790fbaa778daa8": [
       -1.38,
@@ -1513,7 +1597,8 @@
       -0.1,
       -0.21,
       -0.53,
-      -2.06
+      -2.06,
+      -3.43
     ],
     "0xda77b0cbaae44916e756e4e9c216d082e5c1ca12d92294a2fa9ee963be3303c8": [
       -1.4,
@@ -1526,7 +1611,8 @@
       -0.41,
       -0.08,
       -0.38,
-      -1.18
+      -1.18,
+      -0.98
     ],
     "0xac32e73aa9e0dae801d88d4f81efd2ef3fa0f04b815f3a0e74426f0762e668cd": [
       -1.41,
@@ -1539,7 +1625,8 @@
       -1.4,
       -1.41,
       -1.41,
-      -1.39
+      -1.39,
+      -1.4
     ],
     "0x799c35de1e5f3ebd75053643e020e6df9e9a3f477e3d6066eb0a8565f65d547f": [
       -1.74,
@@ -1549,6 +1636,7 @@
       -1.74,
       -1.69,
       -1.72,
+      -1.73,
       -1.73,
       -1.73,
       -1.73,
@@ -1565,6 +1653,7 @@
       -1.69,
       -1.7,
       -1.7,
+      -1.68,
       -1.68
     ],
     "0x6e23102d299cc0c42ebe171b28a5f8bbcc61c78b1f3ed005e0ef37448c4a9e90": [
@@ -1578,7 +1667,8 @@
       -8.4,
       -8.03,
       -7.34,
-      -3.38
+      -3.38,
+      -6.4
     ],
     "0x84fdc3f917e34acca874f93d978e84ed0c08969903ddf40a5d65274b3a5b4fdf": [
       -1.9,
@@ -1591,7 +1681,8 @@
       0.44,
       0.37,
       0.09,
-      -1.18
+      -1.18,
+      -0.45
     ],
     "0x9affeb38bce1e9a6de30e9ecada1ecfaf636574d3961cf3b9177299786214234": [
       -1.97,
@@ -1604,7 +1695,8 @@
       -1.95,
       -1.96,
       -1.96,
-      -2.07
+      -2.07,
+      -2.06
     ],
     "0xdaa4866bae18be58c5a79d2aeeffd035ec78f1bb49dbd88f72993997778a990f": [
       -2.12,
@@ -1617,7 +1709,8 @@
       -1.84,
       -1.85,
       -1.83,
-      -2.0
+      -2.0,
+      -1.86
     ],
     "0x472c9035786b390c08e674fc60bddda488957e1b8aecad3f5480cc531a0754b0": [
       -2.18,
@@ -1630,7 +1723,8 @@
       -2.04,
       -2.06,
       -2.06,
-      -2.07
+      -2.07,
+      -2.06
     ],
     "0xbb379a14cd03f68c35c279ddbd928a6326f4fd2e21827f8cdaaf59715d6df50e": [
       -2.21,
@@ -1643,7 +1737,8 @@
       -3.33,
       -3.36,
       -3.52,
-      -4.03
+      -4.03,
+      -3.79
     ],
     "0xa7b594ae07d5c1590fa86028fcc2f8705990437237416556c05837a08b2e1cda": [
       -2.6,
@@ -1656,7 +1751,8 @@
       -2.47,
       -2.46,
       -2.45,
-      -2.49
+      -2.49,
+      -2.5
     ],
     "0xf0a4c0bc8a8162f0ac95b5a5af7fa665d20a19ca0db03b9117514dafc695f15e": [
       -2.74,
@@ -1669,7 +1765,8 @@
       -3.02,
       -3.02,
       -3.07,
-      -2.97
+      -2.97,
+      -2.99
     ],
     "0x885a6abefad122348b4fbd503473d7fd1f9035d0438cf988a7591620f316a859": [
       -3.42,
@@ -1682,7 +1779,8 @@
       -3.4,
       -3.4,
       -3.42,
-      -3.4
+      -3.4,
+      -2.89
     ],
     "0x38903ef70b7d9ee41ea22ef2aec6287e4e6c77ec8702ca741e37d5c5df090a4d": [
       -3.44,
@@ -1695,7 +1793,8 @@
       -4.07,
       -4.17,
       -3.11,
-      -3.54
+      -3.54,
+      -2.67
     ],
     "0xf9b6b5c3c6e07afe4aad6ed9ce4fa7545f9c2baa9f1dc632cd81a085c99acfe4": [
       -3.67,
@@ -1708,7 +1807,8 @@
       -3.62,
       -3.63,
       -3.62,
-      -3.68
+      -3.68,
+      -3.67
     ],
     "0x63eaf41ce1f475323e2202d7dfa3b1def8b82cd166f7007c50bfbf47615c7b01": [
       -4.0,
@@ -1721,7 +1821,8 @@
       -3.78,
       -3.8,
       -3.84,
-      -3.9
+      -3.9,
+      -3.8
     ],
     "0xe284a52d608552290b056def0a62e1914b3ebe316407504f56f6361fafc68358": [
       -5.04,
@@ -1734,7 +1835,8 @@
       -3.96,
       -4.16,
       -4.27,
-      -3.75
+      -3.75,
+      -4.83
     ],
     "0xbe20fcfd54937c2a48a7b8521ca349e6a2c4373566328ebb950a8c35ab1be3d9": [
       -5.47,
@@ -1747,7 +1849,8 @@
       -5.78,
       -6.61,
       -6.42,
-      -5.4
+      -5.4,
+      -6.78
     ],
     "0xc9c9790c8f26dd9c8cabae9dd76be37aa86a6ded7de660e1da9d19324cf618d4": [
       -5.56,
@@ -1760,7 +1863,8 @@
       -2.85,
       -3.14,
       -2.97,
-      -1.49
+      -1.49,
+      -2.12
     ],
     "0xa157e53c8320fcd217eaa4ae32e1af69baa8a4268e8143b61961238f21a747d6": [
       -9.5,
@@ -1773,7 +1877,8 @@
       -11.48,
       -11.37,
       -11.15,
-      -9.95
+      -9.95,
+      -10.92
     ],
     "0x64838f7153f3621825a3d64589a21e3f4f70c786f1edfdc0cd7f92252f22ee4f": [
       -9.5,
@@ -1786,7 +1891,8 @@
       -11.48,
       -11.37,
       -11.15,
-      -9.95
+      -9.95,
+      -10.92
     ],
     "0x1346f7b7f93fd48364f2e39329e7e8ada6afc4d2a54e34a0885c95dbdd59a6b6": [
       -11.63,
@@ -1799,7 +1905,8 @@
       -8.78,
       -8.92,
       -9.22,
-      -10.94
+      -10.94,
+      -9.82
     ],
     "0xc72ad4bb4de75c1b745c3135c52d6451f910c1161d7be60a37e9db0e96ffc533": [
       -11.63,
@@ -1812,7 +1919,8 @@
       -8.78,
       -8.92,
       -9.22,
-      -10.94
+      -10.94,
+      -9.82
     ],
     "0x94ffe3d2cb1d82da14d0131547415c2fd5d3573eb82cff842738c915d7201b44": [
       -29.65,
@@ -1825,7 +1933,8 @@
       -35.44,
       -34.91,
       -34.4,
-      -30.85
+      -30.85,
+      -33.25
     ],
     "0x954c7b5e4daa80eb941fe5dffa20d328215c52ddc24940bd1384d9c2b9ff4300": [
       -33.93,
@@ -1838,7 +1947,8 @@
       -31.26,
       -31.37,
       -31.69,
-      -33.22
+      -33.22,
+      -32.26
     ],
     "0xf2591ada43eda11c5923f0190307d2cc5f5d994695a654779c3dd328ff820d55": [
       -52.14,
@@ -1851,7 +1961,8 @@
       -49.8,
       -49.87,
       -50.15,
-      -51.42
+      -51.42,
+      -50.69
     ],
     "0x5e27b3f969ef1c59aaf32ec22bd88f3f895aeefb62dbeff0d3a5332e68538e41": [
       -52.14,
@@ -1864,7 +1975,8 @@
       -49.8,
       -49.87,
       -50.15,
-      -51.42
+      -51.42,
+      -50.69
     ],
     "0x6e1fbd722b0aca8a4e05c7c2f4ff1428d4c97f2ee02056712463d00c1c705a55": [
       -65.91,
@@ -1877,7 +1989,8 @@
       -64.09,
       -64.15,
       -64.33,
-      -65.34
+      -65.34,
+      -64.77
     ],
     "0xb3107910941bedc37b5e559be93e24285aabb8af59f0d2bd92c76e0bc3e9e8cd": [
       -76.09,
@@ -1890,7 +2003,8 @@
       -74.78,
       -74.81,
       -75.02,
-      -75.77
+      -75.77,
+      -75.36
     ],
     "0xeea323848af312ec374930197cdb33b28d1e66a420faacfed5c53af46b0be51c": [
       -83.49,
@@ -1903,7 +2017,8 @@
       -82.47,
       -82.49,
       -82.65,
-      -83.16
+      -83.16,
+      -82.92
     ],
     "0x3a109c95bb68aa103afe2463868224610d5ddbafce958fed69b08ef7e7c8d191": [
       45.18,
@@ -1912,7 +2027,8 @@
       0.51,
       0.45,
       0.35,
-      0.05
+      0.05,
+      -0.53
     ],
     "0x81c503dae0753a0eef7e9827c4ae57cc83aacae8de4f750566701bc8cae64de9": [
       0.11,
@@ -1921,7 +2037,8 @@
       -0.91,
       -0.42,
       -0.57,
-      -0.5
+      -0.5,
+      -0.08
     ],
     "0x3ca156f9b82336c8bdb3fa3065746738a0c14d12d2bcfbf9919182685d10cf85": [
       -0.35,
@@ -1930,7 +2047,8 @@
       -0.71,
       -0.7,
       -0.68,
-      -1.06
+      -1.06,
+      -1.43
     ],
     "0x8b8b455a4b3c5ae8f1010b7c3e3400801fb5976d3e42da56ad47e35ccd8a98b1": [
       -0.75,
@@ -1939,7 +2057,8 @@
       -48.84,
       -0.65,
       -0.19,
-      -0.12
+      -0.12,
+      0.4
     ],
     "0x5a666d393c3aac7688f8a50c9eddf0c6136eeec2ddd3ec770974a3dcba840e31": [
       -1.39,
@@ -1948,7 +2067,8 @@
       -50.05,
       -1.04,
       -0.88,
-      -0.56
+      -0.56,
+      0.73
     ],
     "0x17d9a7e32366174567d576fe90724b8710047bd697812a40a4eb924988f7c519": [
       -2.15,
@@ -1957,7 +2077,8 @@
       1.59,
       -2.24,
       -2.26,
-      -2.81
+      -2.81,
+      -2.04
     ],
     "0x78ee4a0e592bd1e6d9d66ac29ead0fededea6648d604d51cb2fcbf9f5ee616b2": [
       -2.22,
@@ -1966,7 +2087,8 @@
       -2.42,
       -2.03,
       -1.98,
-      -2.12
+      -2.12,
+      -2.67
     ],
     "0x1578c0c4a0a5c3c8f5844b16a0f284cdb774e5b737155b834765d6730764e768": [
       -3.65,
@@ -1975,7 +2097,8 @@
       -5.37,
       -4.83,
       -5.61,
-      -5.19
+      -5.19,
+      -6.59
     ],
     "0x859ebed183e0e4d01e16ef7c5da8b4655e052de53e03e2895785a7370bdb2d83": [
       -5.2,
@@ -1984,7 +2107,8 @@
       -4.83,
       -5.26,
       -5.71,
-      -5.3
+      -5.3,
+      -6.64
     ],
     "0x14a8ace91c53e7212803d2a3161363562638067746a3850b69389336c44816b0": [
       -5.71,
@@ -1993,7 +2117,8 @@
       -2.93,
       -3.76,
       -4.18,
-      -4.91
+      -4.91,
+      -3.64
     ],
     "0xb2b222cf79fcf899e479bbf711e02198af67817a2740286f71b950830717e3e2": [
       -32.54,
@@ -2002,7 +2127,8 @@
       -3.65,
       -3.42,
       -4.29,
-      -3.96
+      -3.96,
+      -5.35
     ]
   },
   "picks": [
@@ -2011,72 +2137,80 @@
       "market": "über $52,000 · 2026-07-11",
       "entryEdgePP": 48.68,
       "entryPoly": 0.5,
-      "lastPoly": 0.984,
-      "clvPP": 48.4,
-      "snapshots": 7
+      "lastPoly": 0.987,
+      "clvPP": 48.7,
+      "entryAgeH": null,
+      "snapshots": 8
     },
     {
       "conditionId": "0x5a666d393c3aac7688f8a50c9eddf0c6136eeec2ddd3ec770974a3dcba840e31",
       "market": "über $72,000 · 2026-07-11",
       "entryEdgePP": -46.69,
       "entryPoly": 0.48,
-      "lastPoly": 0.018,
-      "clvPP": 46.2,
-      "snapshots": 7
+      "lastPoly": 0.0075,
+      "clvPP": 47.25,
+      "entryAgeH": null,
+      "snapshots": 8
     },
     {
       "conditionId": "0x8b8b455a4b3c5ae8f1010b7c3e3400801fb5976d3e42da56ad47e35ccd8a98b1",
       "market": "über $70,000 · 2026-07-11",
       "entryEdgePP": -45.48,
       "entryPoly": 0.48,
-      "lastPoly": 0.023,
-      "clvPP": 45.7,
-      "snapshots": 7
+      "lastPoly": 0.022,
+      "clvPP": 45.8,
+      "entryAgeH": null,
+      "snapshots": 8
     },
     {
       "conditionId": "0xb2b222cf79fcf899e479bbf711e02198af67817a2740286f71b950830717e3e2",
       "market": "über $64,000 · 2026-07-11",
       "entryEdgePP": -30.09,
       "entryPoly": 0.65,
-      "lastPoly": 0.345,
-      "clvPP": 30.5,
-      "snapshots": 7
+      "lastPoly": 0.395,
+      "clvPP": 25.5,
+      "entryAgeH": null,
+      "snapshots": 8
     },
     {
       "conditionId": "0xf43c98fc3069d7cd2ec2f1825c4e1285c6870d0cdf4989061930d8cc4555a03a",
       "market": "über $62,000 · 2026-07-05",
       "entryEdgePP": 4.97,
       "entryPoly": 0.835,
-      "lastPoly": 0.9165,
-      "clvPP": 8.15,
-      "snapshots": 17
+      "lastPoly": 0.9575,
+      "clvPP": 12.25,
+      "entryAgeH": null,
+      "snapshots": 18
     },
     {
-      "conditionId": "0x1578c0c4a0a5c3c8f5844b16a0f284cdb774e5b737155b834765d6730764e768",
-      "market": "über $62,000 · 2026-07-11",
-      "entryEdgePP": -2.28,
-      "entryPoly": 0.66,
-      "lastPoly": 0.605,
-      "clvPP": 5.5,
-      "snapshots": 7
+      "conditionId": "0x28f59e8824137912266b5c8c6960ca458af9b963a5468ac6bc2d6ff05483bb91",
+      "market": "über $62,000 · 2026-07-06",
+      "entryEdgePP": 6.32,
+      "entryPoly": 0.685,
+      "lastPoly": 0.785,
+      "clvPP": 10.0,
+      "entryAgeH": null,
+      "snapshots": 18
     },
     {
-      "conditionId": "0x9963ed8f0f3a5d6677c7dc2e4179cded497227958facac11653111334ca82ab1",
-      "market": "über $66,000 · 2026-07-09",
-      "entryEdgePP": -2.01,
-      "entryPoly": 0.145,
-      "lastPoly": 0.105,
+      "conditionId": "0x7b9072e6a9cdcf022c4f098564e8ee612d544e179e4a33dcc2790fbaa778daa8",
+      "market": "erreicht $70,000 bis 2027-01-01",
+      "entryEdgePP": 2.02,
+      "entryPoly": 0.65,
+      "lastPoly": 0.69,
       "clvPP": 4.0,
-      "snapshots": 17
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
-      "conditionId": "0x17d9a7e32366174567d576fe90724b8710047bd697812a40a4eb924988f7c519",
-      "market": "über $56,000 · 2026-07-11",
-      "entryEdgePP": 2.04,
-      "entryPoly": 0.9355,
-      "lastPoly": 0.9705,
-      "clvPP": 3.5,
-      "snapshots": 7
+      "conditionId": "0x578327f87338039e1545315a124e3ace202fb8fa6bfbab58dba26616bdc1d47f",
+      "market": "über $60,000 · 2026-07-06",
+      "entryEdgePP": 2.36,
+      "entryPoly": 0.945,
+      "lastPoly": 0.9785,
+      "clvPP": 3.35,
+      "entryAgeH": null,
+      "snapshots": 18
     },
     {
       "conditionId": "0x1edb64b2afcf60302551ecbe19d8025852214370cf1cdc5dc37cd7bf2749de33",
@@ -2085,52 +2219,48 @@
       "entryPoly": 0.9665,
       "lastPoly": 0.9985,
       "clvPP": 3.2,
+      "entryAgeH": null,
       "snapshots": 10
-    },
-    {
-      "conditionId": "0x28f59e8824137912266b5c8c6960ca458af9b963a5468ac6bc2d6ff05483bb91",
-      "market": "über $62,000 · 2026-07-06",
-      "entryEdgePP": 6.32,
-      "entryPoly": 0.685,
-      "lastPoly": 0.715,
-      "clvPP": 3.0,
-      "snapshots": 17
-    },
-    {
-      "conditionId": "0xc9c9790c8f26dd9c8cabae9dd76be37aa86a6ded7de660e1da9d19324cf618d4",
-      "market": "erreicht $65,000 bis 2026-08-01",
-      "entryEdgePP": -3.67,
-      "entryPoly": 0.73,
-      "lastPoly": 0.705,
-      "clvPP": 2.5,
-      "snapshots": 11
-    },
-    {
-      "conditionId": "0x578327f87338039e1545315a124e3ace202fb8fa6bfbab58dba26616bdc1d47f",
-      "market": "über $60,000 · 2026-07-06",
-      "entryEdgePP": 2.36,
-      "entryPoly": 0.945,
-      "lastPoly": 0.9675,
-      "clvPP": 2.25,
-      "snapshots": 17
     },
     {
       "conditionId": "0x14a8ace91c53e7212803d2a3161363562638067746a3850b69389336c44816b0",
       "market": "über $58,000 · 2026-07-11",
       "entryEdgePP": -5.36,
       "entryPoly": 0.95,
-      "lastPoly": 0.9295,
-      "clvPP": 2.05,
-      "snapshots": 7
+      "lastPoly": 0.921,
+      "clvPP": 2.9,
+      "entryAgeH": null,
+      "snapshots": 8
     },
     {
-      "conditionId": "0x7b9072e6a9cdcf022c4f098564e8ee612d544e179e4a33dcc2790fbaa778daa8",
-      "market": "erreicht $70,000 bis 2027-01-01",
-      "entryEdgePP": 2.02,
-      "entryPoly": 0.65,
-      "lastPoly": 0.665,
+      "conditionId": "0x17d9a7e32366174567d576fe90724b8710047bd697812a40a4eb924988f7c519",
+      "market": "über $56,000 · 2026-07-11",
+      "entryEdgePP": 2.04,
+      "entryPoly": 0.9355,
+      "lastPoly": 0.961,
+      "clvPP": 2.55,
+      "entryAgeH": null,
+      "snapshots": 8
+    },
+    {
+      "conditionId": "0x9963ed8f0f3a5d6677c7dc2e4179cded497227958facac11653111334ca82ab1",
+      "market": "über $66,000 · 2026-07-09",
+      "entryEdgePP": -2.01,
+      "entryPoly": 0.145,
+      "lastPoly": 0.125,
+      "clvPP": 2.0,
+      "entryAgeH": null,
+      "snapshots": 18
+    },
+    {
+      "conditionId": "0x357ef67b1d8665d64339f06f3b5c250aeb6294caf708f90cfc60a51f473c8f48",
+      "market": "über $64,000 · 2026-07-05",
+      "entryEdgePP": 3.61,
+      "entryPoly": 0.0475,
+      "lastPoly": 0.0625,
       "clvPP": 1.5,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 18
     },
     {
       "conditionId": "0x2be031440c5a571cd4fc3e05e2478d98aee41c7a44d10d3c5e6a24e38b30fabb",
@@ -2139,25 +2269,8 @@
       "entryPoly": 0.385,
       "lastPoly": 0.395,
       "clvPP": 1.0,
-      "snapshots": 11
-    },
-    {
-      "conditionId": "0xe498447cc887be42044835ac88ece14c34a158a3e6f5e1be07a89629d7100b61",
-      "market": "dip $52,500 bis 2026-08-01",
-      "entryEdgePP": 6.35,
-      "entryPoly": 0.145,
-      "lastPoly": 0.155,
-      "clvPP": 1.0,
-      "snapshots": 11
-    },
-    {
-      "conditionId": "0x859ebed183e0e4d01e16ef7c5da8b4655e052de53e03e2895785a7370bdb2d83",
-      "market": "über $60,000 · 2026-07-11",
-      "entryEdgePP": -3.97,
-      "entryPoly": 0.825,
-      "lastPoly": 0.815,
-      "clvPP": 1.0,
-      "snapshots": 7
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0x1e5564c1a2a6839cc2780a889437c63786a2c2ec5e95569b710ee659a3e8baa2",
@@ -2166,7 +2279,28 @@
       "entryPoly": 0.23,
       "lastPoly": 0.235,
       "clvPP": 0.5,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
+    },
+    {
+      "conditionId": "0x885a6abefad122348b4fbd503473d7fd1f9035d0438cf988a7591620f316a859",
+      "market": "erreicht $130,000 bis 2027-01-01",
+      "entryEdgePP": -3.11,
+      "entryPoly": 0.045,
+      "lastPoly": 0.04,
+      "clvPP": 0.5,
+      "entryAgeH": null,
+      "snapshots": 12
+    },
+    {
+      "conditionId": "0x1578c0c4a0a5c3c8f5844b16a0f284cdb774e5b737155b834765d6730764e768",
+      "market": "über $62,000 · 2026-07-11",
+      "entryEdgePP": -2.28,
+      "entryPoly": 0.66,
+      "lastPoly": 0.655,
+      "clvPP": 0.5,
+      "entryAgeH": null,
+      "snapshots": 8
     },
     {
       "conditionId": "0xa7b594ae07d5c1590fa86028fcc2f8705990437237416556c05837a08b2e1cda",
@@ -2175,7 +2309,8 @@
       "entryPoly": 0.032,
       "lastPoly": 0.0305,
       "clvPP": 0.15,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0x472c9035786b390c08e674fc60bddda488957e1b8aecad3f5480cc531a0754b0",
@@ -2184,16 +2319,8 @@
       "entryPoly": 0.026,
       "lastPoly": 0.025,
       "clvPP": 0.1,
-      "snapshots": 11
-    },
-    {
-      "conditionId": "0xdf21c1e4e9458a3631362b5d49accf43f756f116f0e5e041161bbab9ca915ba7",
-      "market": "über $58,000 · 2026-07-08",
-      "entryEdgePP": -2.1,
-      "entryPoly": 0.967,
-      "lastPoly": 0.967,
-      "clvPP": -0.0,
-      "snapshots": 17
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0x2f30cdd3b4965f7ad0fea665384008615ec5b4ff042fe88d9bdd1ce1eb53961b",
@@ -2202,7 +2329,8 @@
       "entryPoly": 0.945,
       "lastPoly": 0.945,
       "clvPP": -0.0,
-      "snapshots": 17
+      "entryAgeH": null,
+      "snapshots": 18
     },
     {
       "conditionId": "0x2745c38ff0617cb345c1d2df19b4f74ea777508e07411e88eeb6ab3affcda2a2",
@@ -2211,7 +2339,18 @@
       "entryPoly": 0.125,
       "lastPoly": 0.125,
       "clvPP": 0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
+    },
+    {
+      "conditionId": "0xe498447cc887be42044835ac88ece14c34a158a3e6f5e1be07a89629d7100b61",
+      "market": "dip $52,500 bis 2026-08-01",
+      "entryEdgePP": 6.35,
+      "entryPoly": 0.145,
+      "lastPoly": 0.145,
+      "clvPP": 0.0,
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0x5e2aecc3ca41986f8e5f1a67c4d8f5bed56c10191dd5ea0c4980e66a3d61d680",
@@ -2220,7 +2359,8 @@
       "entryPoly": 0.075,
       "lastPoly": 0.075,
       "clvPP": 0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0xdfbe36a1200c4ec361aa20733ede4d33085eef400c11d28a00079a2ba46d3d05",
@@ -2229,7 +2369,8 @@
       "entryPoly": 0.045,
       "lastPoly": 0.045,
       "clvPP": 0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0xec540d631a88397ca01a17e48193019b4d680fde10087a38d5c8467bfaae18c0",
@@ -2238,7 +2379,8 @@
       "entryPoly": 0.0285,
       "lastPoly": 0.0285,
       "clvPP": 0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0x1239389645c8a73b170b78ef3a83d69b6cf1d2711d412829ea8836660b08fc93",
@@ -2247,7 +2389,8 @@
       "entryPoly": 0.215,
       "lastPoly": 0.215,
       "clvPP": 0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0x752fa61c93f16c4b15e85b0bd438d9c684176b0ea7b319a84c8aca34616e8a8c",
@@ -2256,7 +2399,8 @@
       "entryPoly": 0.685,
       "lastPoly": 0.685,
       "clvPP": 0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0x6e23102d299cc0c42ebe171b28a5f8bbcc61c78b1f3ed005e0ef37448c4a9e90",
@@ -2265,7 +2409,8 @@
       "entryPoly": 1.0,
       "lastPoly": 1.0,
       "clvPP": -0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0x84fdc3f917e34acca874f93d978e84ed0c08969903ddf40a5d65274b3a5b4fdf",
@@ -2274,7 +2419,8 @@
       "entryPoly": 0.465,
       "lastPoly": 0.465,
       "clvPP": 0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0xbb379a14cd03f68c35c279ddbd928a6326f4fd2e21827f8cdaaf59715d6df50e",
@@ -2283,16 +2429,8 @@
       "entryPoly": 0.195,
       "lastPoly": 0.195,
       "clvPP": -0.0,
-      "snapshots": 11
-    },
-    {
-      "conditionId": "0x885a6abefad122348b4fbd503473d7fd1f9035d0438cf988a7591620f316a859",
-      "market": "erreicht $130,000 bis 2027-01-01",
-      "entryEdgePP": -3.11,
-      "entryPoly": 0.045,
-      "lastPoly": 0.045,
-      "clvPP": -0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0xf9b6b5c3c6e07afe4aad6ed9ce4fa7545f9c2baa9f1dc632cd81a085c99acfe4",
@@ -2301,7 +2439,8 @@
       "entryPoly": 0.055,
       "lastPoly": 0.055,
       "clvPP": -0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0x63eaf41ce1f475323e2202d7dfa3b1def8b82cd166f7007c50bfbf47615c7b01",
@@ -2310,16 +2449,8 @@
       "entryPoly": 0.075,
       "lastPoly": 0.075,
       "clvPP": -0.0,
-      "snapshots": 11
-    },
-    {
-      "conditionId": "0xe284a52d608552290b056def0a62e1914b3ebe316407504f56f6361fafc68358",
-      "market": "erreicht $70,000 bis 2026-08-01",
-      "entryEdgePP": -3.25,
-      "entryPoly": 0.255,
-      "lastPoly": 0.255,
-      "clvPP": -0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0xa157e53c8320fcd217eaa4ae32e1af69baa8a4268e8143b61961238f21a747d6",
@@ -2328,7 +2459,8 @@
       "entryPoly": 1.0,
       "lastPoly": 1.0,
       "clvPP": -0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0x64838f7153f3621825a3d64589a21e3f4f70c786f1edfdc0cd7f92252f22ee4f",
@@ -2337,7 +2469,8 @@
       "entryPoly": 1.0,
       "lastPoly": 1.0,
       "clvPP": -0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0x1346f7b7f93fd48364f2e39329e7e8ada6afc4d2a54e34a0885c95dbdd59a6b6",
@@ -2346,7 +2479,8 @@
       "entryPoly": 1.0,
       "lastPoly": 1.0,
       "clvPP": -0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0xc72ad4bb4de75c1b745c3135c52d6451f910c1161d7be60a37e9db0e96ffc533",
@@ -2355,7 +2489,8 @@
       "entryPoly": 1.0,
       "lastPoly": 1.0,
       "clvPP": -0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0x94ffe3d2cb1d82da14d0131547415c2fd5d3573eb82cff842738c915d7201b44",
@@ -2364,7 +2499,8 @@
       "entryPoly": 1.0,
       "lastPoly": 1.0,
       "clvPP": -0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0x954c7b5e4daa80eb941fe5dffa20d328215c52ddc24940bd1384d9c2b9ff4300",
@@ -2373,7 +2509,8 @@
       "entryPoly": 1.0,
       "lastPoly": 1.0,
       "clvPP": -0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0xf2591ada43eda11c5923f0190307d2cc5f5d994695a654779c3dd328ff820d55",
@@ -2382,7 +2519,8 @@
       "entryPoly": 1.0,
       "lastPoly": 1.0,
       "clvPP": -0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0x5e27b3f969ef1c59aaf32ec22bd88f3f895aeefb62dbeff0d3a5332e68538e41",
@@ -2391,7 +2529,8 @@
       "entryPoly": 1.0,
       "lastPoly": 1.0,
       "clvPP": -0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0x6e1fbd722b0aca8a4e05c7c2f4ff1428d4c97f2ee02056712463d00c1c705a55",
@@ -2400,7 +2539,8 @@
       "entryPoly": 1.0,
       "lastPoly": 1.0,
       "clvPP": -0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0xb3107910941bedc37b5e559be93e24285aabb8af59f0d2bd92c76e0bc3e9e8cd",
@@ -2409,7 +2549,8 @@
       "entryPoly": 1.0,
       "lastPoly": 1.0,
       "clvPP": -0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0xeea323848af312ec374930197cdb33b28d1e66a420faacfed5c53af46b0be51c",
@@ -2418,7 +2559,8 @@
       "entryPoly": 1.0,
       "lastPoly": 1.0,
       "clvPP": -0.0,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
       "conditionId": "0xf0a4c0bc8a8162f0ac95b5a5af7fa665d20a19ca0db03b9117514dafc695f15e",
@@ -2427,34 +2569,68 @@
       "entryPoly": 0.035,
       "lastPoly": 0.0375,
       "clvPP": -0.25,
-      "snapshots": 11
+      "entryAgeH": null,
+      "snapshots": 12
     },
     {
-      "conditionId": "0x2b2aa6c11544142c0d784aa50309722ad4002166973bf6e4122a4a8e84743034",
-      "market": "über $66,000 · 2026-07-07",
-      "entryEdgePP": -2.01,
-      "entryPoly": 0.0485,
-      "lastPoly": 0.0515,
+      "conditionId": "0xab9e785fc040b56105ead77d63173f1a073469ddd857c3694e57acb0d25ac8da",
+      "market": "über $56,000 · 2026-07-10",
+      "entryEdgePP": -2.27,
+      "entryPoly": 0.975,
+      "lastPoly": 0.978,
       "clvPP": -0.3,
-      "snapshots": 17
+      "entryAgeH": null,
+      "snapshots": 18
     },
     {
-      "conditionId": "0x6e7647e8f1e27cca3e0154146dfe503d2c4b4facb4439e25d4c30c3db5d0da1d",
-      "market": "über $66,000 · 2026-07-10",
-      "entryEdgePP": -2.18,
-      "entryPoly": 0.13,
-      "lastPoly": 0.135,
-      "clvPP": -0.5,
-      "snapshots": 17
+      "conditionId": "0xdf21c1e4e9458a3631362b5d49accf43f756f116f0e5e041161bbab9ca915ba7",
+      "market": "über $58,000 · 2026-07-08",
+      "entryEdgePP": -2.1,
+      "entryPoly": 0.967,
+      "lastPoly": 0.9715,
+      "clvPP": -0.45,
+      "entryAgeH": null,
+      "snapshots": 18
     },
     {
-      "conditionId": "0xd5a422e44c9b421ca08dcfd3d3cb6275648b4cbc69eb8f8ad7e2c70e6edd7c70",
-      "market": "über $60,000 · 2026-07-07",
-      "entryEdgePP": -2.56,
-      "entryPoly": 0.9,
-      "lastPoly": 0.905,
+      "conditionId": "0x903a1387e6414be5529efc8f7757e30371e6698de9d68fa4ce33252009db69ef",
+      "market": "dip $30,000 bis 2027-01-01",
+      "entryEdgePP": 7.22,
+      "entryPoly": 0.1,
+      "lastPoly": 0.095,
       "clvPP": -0.5,
-      "snapshots": 17
+      "entryAgeH": null,
+      "snapshots": 12
+    },
+    {
+      "conditionId": "0xbfefe500c3fea4d8067f39246e4d9404a6fe0ea3040e1366d4ac02367d751c46",
+      "market": "dip $55,000 bis 2026-08-01",
+      "entryEdgePP": 5.66,
+      "entryPoly": 0.255,
+      "lastPoly": 0.245,
+      "clvPP": -1.0,
+      "entryAgeH": null,
+      "snapshots": 12
+    },
+    {
+      "conditionId": "0xc564e47b7a853f3e52ea7b8e28d69ed99fcb284929364fd0f8024c2bca03ea96",
+      "market": "erreicht $80,000 bis 2027-01-01",
+      "entryEdgePP": 2.59,
+      "entryPoly": 0.315,
+      "lastPoly": 0.305,
+      "clvPP": -1.0,
+      "entryAgeH": null,
+      "snapshots": 12
+    },
+    {
+      "conditionId": "0x38903ef70b7d9ee41ea22ef2aec6287e4e6c77ec8702ca741e37d5c5df090a4d",
+      "market": "erreicht $72,500 bis 2026-08-01",
+      "entryEdgePP": -2.49,
+      "entryPoly": 0.135,
+      "lastPoly": 0.145,
+      "clvPP": -1.0,
+      "entryAgeH": null,
+      "snapshots": 12
     }
   ]
 }
