@@ -178,6 +178,23 @@
       : '<tr><td colspan="6" class="empty">Kein Maker-Board — noch keine Märkte mit Fair.</td></tr>';
   }
 
+  // ---- Verlauf Tag für Tag ----------------------------------------------------------------
+  function renderTrend(sb) {
+    const days = (sb && sb.days) || [];
+    $("trendDay").textContent = "Tag " + ((sb && sb.dayNo) || days.length || 0)
+      + (sb && sb.startDate ? " · seit " + sb.startDate : "");
+    const money = (v) => v == null ? "—" : (v >= 0 ? "+$" : "-$") + Math.abs(v).toFixed(0);
+    const rows = days.slice(-14).reverse();   // neueste oben, max. 14 Tage
+    $("trendRows").innerHTML = rows.length ? rows.map(d => `<tr>
+      <td class="mkt-sub">${d.date}</td>
+      <td class="r pnl ${cls(d.convergePnl)}">${money(d.convergePnl)}</td>
+      <td class="r pnl ${cls(d.arbLocked)}">${money(d.arbLocked)}</td>
+      <td class="r num">${d.makerCumReward != null ? "$" + d.makerCumReward.toFixed(2) : "—"}</td>
+      <td class="r pnl ${cls(d.clvPP)}">${d.clvPP != null ? (d.clvPP > 0 ? "+" : "") + d.clvPP + "pp" : "—"}</td>
+      <td class="r num">${d.basketTradable != null ? d.basketTradable : "—"}</td></tr>`).join("")
+      : '<tr><td colspan="6" class="empty">Noch kein Verlauf — ab dem ersten Cron-Lauf kommt täglich eine Zeile dazu.</td></tr>';
+  }
+
   // ---- Multi-Outcome Basket-Arb (alle Kategorien) ----------------------------------------
   function renderBaskets(b) {
     const f = (b && b.findings) || [];
@@ -263,16 +280,18 @@
       .then(r => r.ok ? r.json() : Promise.reject(r.status))
       .catch(() => fetch(name + bust).then(r => r.ok ? r.json() : Promise.reject(r.status)));
   };
-  Promise.allSettled([j("paper.json"), j("clv.json"), j("markets.json"), j("arb.json"), j("maker.json"), j("baskets.json")])
-    .then(([pp, cl, mk, ar, ma, bk]) => {
+  Promise.allSettled([j("paper.json"), j("clv.json"), j("markets.json"), j("arb.json"), j("maker.json"), j("baskets.json"), j("scoreboard.json")])
+    .then(([pp, cl, mk, ar, ma, bk, sb]) => {
       const paper = pp.status === "fulfilled" ? pp.value : {};
       const clv = cl.status === "fulfilled" ? cl.value : {};
       const markets = mk.status === "fulfilled" ? mk.value : {};
       const arb = ar.status === "fulfilled" ? ar.value : {};
       const maker = ma.status === "fulfilled" ? ma.value : {};
       const baskets = bk.status === "fulfilled" ? bk.value : {};
+      const scoreboard = sb.status === "fulfilled" ? sb.value : {};
       renderHero(paper, clv);
       renderIncome(paper, arb, maker, clv, baskets);
+      renderTrend(scoreboard);
       renderStrat(paper, arb, maker, markets);
       renderPortfolio(paper);
       renderRadar(markets, clv.trends || {});
