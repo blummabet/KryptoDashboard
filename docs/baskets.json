@@ -1,8 +1,478 @@
 {
-  "generatedAt": "2026-07-05 09:17 UTC",
-  "scanned": 0,
-  "count": 0,
+  "generatedAt": "2026-07-05 11:10 UTC",
+  "scanned": 600,
+  "count": 11,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
-  "findings": []
+  "findings": [
+    {
+      "side": "buy",
+      "sumProb": 0.013,
+      "grossPP": 98.7,
+      "feePP": 0.04,
+      "netPP": 98.66,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xafa4232ba6045534f8b8bf7595dc8ace16d12f8741971c587b5653a43de78c00",
+      "event": "F1 Constructors' Champion",
+      "slug": "f1-constructors-champion",
+      "endDate": "2026-12-06T00:00:00Z",
+      "n": 4,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Williams",
+          "bid": 0.003,
+          "ask": 0.004
+        },
+        {
+          "name": "Haas",
+          "bid": 0.002,
+          "ask": 0.003
+        },
+        {
+          "name": "Aston Martin",
+          "bid": 0.002,
+          "ask": 0.003
+        },
+        {
+          "name": "Audi",
+          "bid": 0.002,
+          "ask": 0.003
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.014,
+      "grossPP": 98.6,
+      "feePP": 0.1,
+      "netPP": 98.5,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xacaa6b6f21db48238329d32a14780206dc4a14beb9500f1100357260aad23600",
+      "event": "Next leader out of power before 2027? (No Orban)",
+      "slug": "next-leader-out-of-power-before-2027-no-orban",
+      "endDate": "2026-12-31T00:00:00Z",
+      "n": 7,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Putin - Russia President",
+          "bid": 0.003,
+          "ask": 0.004
+        },
+        {
+          "name": "Zelenskyy - Ukraine President",
+          "bid": 0.001,
+          "ask": 0.003
+        },
+        {
+          "name": "None before 2027",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "Lula da Silva - Brazil President",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "Milei - Argentina President",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "Sheinbaum - Mexico President",
+          "bid": null,
+          "ask": 0.001
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.05,
+      "grossPP": 95.0,
+      "feePP": 0.15,
+      "netPP": 94.85,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xd4aac4d58124e877db539e6b87cdf2433db4fb0e340e6f1016c99a0320792700",
+      "event": "MLB: Triples Leader",
+      "slug": "mlb-triples-leader",
+      "endDate": "2026-09-28T00:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Byron Buxton",
+          "bid": 0.012,
+          "ask": 0.02
+        },
+        {
+          "name": "Kevin McGonigle",
+          "bid": 0.01,
+          "ask": 0.018
+        },
+        {
+          "name": "Otto Lopez",
+          "bid": 0.01,
+          "ask": 0.012
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.287,
+      "grossPP": 71.3,
+      "feePP": 1.44,
+      "netPP": 69.86,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xdae65a39949320f9d37590bbf387e3ef04955e0848e67c9bbb99cf64433ac000",
+      "event": "Elon Musk # tweets July 3 - July 10, 2026?",
+      "slug": "elon-musk-of-tweets-july-3-july-10",
+      "endDate": "2026-07-10T16:00:00Z",
+      "n": 12,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "140-159",
+          "bid": 0.165,
+          "ask": 0.166
+        },
+        {
+          "name": "80-99",
+          "bid": 0.063,
+          "ask": 0.07
+        },
+        {
+          "name": "60-79",
+          "bid": 0.016,
+          "ask": 0.019
+        },
+        {
+          "name": "260-279",
+          "bid": 0.007,
+          "ask": 0.01
+        },
+        {
+          "name": "40-59",
+          "bid": 0.004,
+          "ask": 0.007
+        },
+        {
+          "name": "280-299",
+          "bid": 0.004,
+          "ask": 0.005
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.291,
+      "grossPP": 70.9,
+      "feePP": 1.16,
+      "netPP": 69.74,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
+      "event": "Democratic Presidential Nominee 2028",
+      "slug": "democratic-presidential-nominee-2028",
+      "endDate": "2028-11-07T00:00:00Z",
+      "n": 22,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Alexandria Ocasio-Cortez",
+          "bid": 0.119,
+          "ask": 0.12
+        },
+        {
+          "name": "J.B. Pritzker",
+          "bid": 0.009,
+          "ask": 0.011
+        },
+        {
+          "name": "Mark Cuban",
+          "bid": 0.009,
+          "ask": 0.01
+        },
+        {
+          "name": "Roy Cooper",
+          "bid": 0.009,
+          "ask": 0.01
+        },
+        {
+          "name": "Chelsea Clinton",
+          "bid": 0.008,
+          "ask": 0.009
+        },
+        {
+          "name": "Gretchen Whitmer",
+          "bid": 0.008,
+          "ask": 0.009
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.369,
+      "grossPP": 63.1,
+      "feePP": 2.58,
+      "netPP": 60.52,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x03c9c6d9f7b20aaa1f33f99bd24bd16e4e0e00cfa892dde097b800655490b200",
+      "event": "Who will be the next Prime Minister of Israel after the next election?",
+      "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
+      "endDate": "2026-12-31T00:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Benjamin Netanyahu",
+          "bid": 0.35,
+          "ask": 0.36
+        },
+        {
+          "name": "Gideon Sa’ar",
+          "bid": 0.006,
+          "ask": 0.007
+        },
+        {
+          "name": "Ayelet Shaked",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.408,
+      "grossPP": 59.2,
+      "feePP": 1.63,
+      "netPP": 57.57,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
+      "event": "Presidential Election Winner 2028",
+      "slug": "presidential-election-winner-2028",
+      "endDate": "2028-11-07T00:00:00Z",
+      "n": 15,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "JD Vance",
+          "bid": 0.2,
+          "ask": 0.202
+        },
+        {
+          "name": "Alexandria Ocasio-Cortez",
+          "bid": 0.071,
+          "ask": 0.072
+        },
+        {
+          "name": "Kamala Harris",
+          "bid": 0.043,
+          "ask": 0.044
+        },
+        {
+          "name": "Ro Khanna",
+          "bid": 0.009,
+          "ask": 0.01
+        },
+        {
+          "name": "Greg Abbott",
+          "bid": 0.008,
+          "ask": 0.009
+        },
+        {
+          "name": "Stephen Smith",
+          "bid": 0.007,
+          "ask": 0.008
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.455,
+      "grossPP": 54.5,
+      "feePP": 1.82,
+      "netPP": 52.68,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
+      "event": "Republican Presidential Nominee 2028",
+      "slug": "republican-presidential-nominee-2028",
+      "endDate": "2028-11-07T00:00:00Z",
+      "n": 5,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "J.D. Vance",
+          "bid": 0.401,
+          "ask": 0.412
+        },
+        {
+          "name": "Donald Trump",
+          "bid": 0.012,
+          "ask": 0.013
+        },
+        {
+          "name": "Donald Trump Jr.",
+          "bid": 0.01,
+          "ask": 0.011
+        },
+        {
+          "name": "Ivanka Trump",
+          "bid": 0.01,
+          "ask": 0.011
+        },
+        {
+          "name": "Eric Trump",
+          "bid": 0.007,
+          "ask": 0.008
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.699,
+      "grossPP": 30.1,
+      "feePP": 2.1,
+      "netPP": 28.0,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x7da451e05b7fd74fbd4cea4d5a49879eef92ee5d3a46c508db3b8e5dc7676d00",
+      "event": "2026 Women's Wimbledon Winner",
+      "slug": "2026-womens-wimbledon-winner",
+      "endDate": "2026-07-12T00:00:00Z",
+      "n": 9,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Aryna Sabalenka",
+          "bid": 0.31,
+          "ask": 0.32
+        },
+        {
+          "name": "Jessica Pegula",
+          "bid": 0.091,
+          "ask": 0.093
+        },
+        {
+          "name": "Marta Kostyuk",
+          "bid": 0.07,
+          "ask": 0.072
+        },
+        {
+          "name": "Alexandra Eala",
+          "bid": 0.053,
+          "ask": 0.056
+        },
+        {
+          "name": "Karolína Muchová",
+          "bid": 0.051,
+          "ask": 0.054
+        },
+        {
+          "name": "Linda Nosková",
+          "bid": 0.05,
+          "ask": 0.053
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.736,
+      "grossPP": 26.4,
+      "feePP": 0.91,
+      "netPP": 25.49,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x2e8ee0b78c06349677514c81455c1256e07e0b2cf4c9cde23fd23f65eda05200",
+      "event": "F1 Drivers' Champion",
+      "slug": "2026-f1-drivers-champion",
+      "endDate": "2026-12-06T00:00:00Z",
+      "n": 4,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Kimi Antonelli",
+          "bid": 0.716,
+          "ask": 0.717
+        },
+        {
+          "name": "Charles Leclerc",
+          "bid": 0.011,
+          "ask": 0.012
+        },
+        {
+          "name": "Oscar Piastri",
+          "bid": 0.004,
+          "ask": 0.005
+        },
+        {
+          "name": "Pierre Gasly",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.782,
+      "grossPP": 21.8,
+      "feePP": 1.17,
+      "netPP": 20.63,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xdcd7daabcacdc4ecf4f9a48d0a2708b52f356dd086c8070992136da62eb72b00",
+      "event": "How many Fed rate cuts in 2026?",
+      "slug": "how-many-fed-rate-cuts-in-2026",
+      "endDate": "2026-12-31T00:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "0 (0 bps)",
+          "bid": 0.773,
+          "ask": 0.774
+        },
+        {
+          "name": "4 (100 bps)",
+          "bid": 0.003,
+          "ask": 0.005
+        },
+        {
+          "name": "6 (150 bps)",
+          "bid": 0.002,
+          "ask": 0.003
+        }
+      ]
+    }
+  ]
 }
