@@ -53,6 +53,13 @@ def test_touch_ge_finish_above():
     assert fv.one_touch(s, k, iv, t) >= fv.digital_above(s, k, iv, t) - 1e-9
 
 
+def test_digital_skew_shifts_and_bounded():
+    base = fv.digital_above(60000, 65000, 0.6, 30 / 365, skew=0.0)
+    put_skew = fv.digital_above(60000, 65000, 0.6, 30 / 365, skew=-1e-6)  # Vol fällt mit Strike
+    assert put_skew != base and 0.0 <= put_skew <= 1.0
+    assert fv.digital_below(60000, 65000, 0.6, 30 / 365, skew=-1e-6) is not None
+
+
 def test_one_touch_down_side():
     # Dip-Barriere unter Spot: näher = wahrscheinlicher.
     near = fv.one_touch(60000, 58000, 0.6, 30 / 365)

@@ -117,8 +117,9 @@
         <td class="r num">${m.ivPct != null ? m.ivPct.toFixed(0) + "%" : "—"}</td>
         <td>${sparkline(trends[m.conditionId])}</td>
         <td class="r"><div class="edge-cell">${edgeBar(e)}<span><span class="edgeval ${cls(e)}">${eTxt}</span>${gross}</span></div></td>
+        <td class="r num">${m.edgePerDay != null ? (m.edgePerDay > 0 ? "+" : "") + m.edgePerDay.toFixed(2) + "pp" : "—"}${m.daysLeft != null ? `<div class="grosslbl">${m.daysLeft}d</div>` : ""}</td>
         <td class="r num">${usd(m.liquidityUSD)}</td></tr>`;
-    }).join("") : '<tr><td colspan="7" class="empty">markets.json noch nicht vorhanden.</td></tr>';
+    }).join("") : '<tr><td colspan="8" class="empty">markets.json noch nicht vorhanden.</td></tr>';
 
     const fg = (data.context || {}).fearGreed;
     $("gauge").innerHTML = fg ? fgGauge(fg.value) + `<div class="gauge-val" style="color:${fg.value != null && fg.value < 45 ? "var(--warn)" : "var(--pos)"}">${fg.value ?? "—"}</div><div class="gauge-cls">Fear &amp; Greed · ${esc(fg.classification || "—")}</div>` : '<div class="mkt-sub">Fear &amp; Greed n/a</div>';
@@ -161,8 +162,12 @@
     const b = (mk && mk.board) || [], sim = (mk && mk.sim) || {};
     const cum = sim.cumRewardEst == null ? "—" : "$" + sim.cumRewardEst.toFixed(2);
     const day = sim.estRewardDayTotal == null ? "—" : "$" + sim.estRewardDayTotal.toFixed(2);
+    const mo = (mk && mk.markout) || {};
+    const moTxt = mo.avgMarkoutPP == null ? "—" : (mo.avgMarkoutPP > 0 ? "+" : "") + mo.avgMarkoutPP + "pp";
+    const moCol = mo.avgMarkoutPP == null ? "var(--muted)" : (mo.avgMarkoutPP >= 0 ? "var(--pos)" : "var(--neg)");
     $("makerHint").innerHTML = ((mk && mk.count) || 0) + " Märkte · " + ((mk && mk.rewardEligible) || 0)
-      + " reward-berechtigt · <b style='color:var(--accent)'>~" + day + "/Tag</b> geschätzt · kumuliert <b style='color:var(--accent)'>" + cum + "</b>";
+      + " reward-berechtigt · <b style='color:var(--accent)'>~" + day + "/Tag</b> Rewards · kumuliert <b style='color:var(--accent)'>" + cum + "</b>"
+      + " · Markout <b style='color:" + moCol + "'>" + moTxt + "</b> (" + (mo.fills || 0) + " Fills)";
     $("makerRows").innerHTML = b.length ? b.map(x => `<tr>
       <td><div class="mkt-sub">${famChip(x.family)}${x.isNew ? '<span class="fam" style="background:rgba(76,141,255,.16);color:var(--accent2)">NEU</span>' : ""}${esc(x.market)}</div></td>
       <td class="r num">${pct(x.fair)}</td>
@@ -184,7 +189,7 @@
     $("strat").innerHTML = [
       tile("portfolio", "Paper-Trading", s.totalPnl == null ? "—" : money(s.totalPnl), cls(s.totalPnl), (s.openCount ?? 0) + " offen · Konvergenz"),
       tile("arb", "Konsistenz-Arb", ap.totalPnl == null ? "—" : money(ap.totalPnl), cls(ap.totalPnl), (ap.openCount ?? 0) + " offen · gesperrt"),
-      tile("maker", "Maker-Board (Sim)", ((mk && mk.sim && mk.sim.cumRewardEst) == null) ? "—" : money(mk.sim.cumRewardEst), "acc", ((mk && mk.rewardEligible) ?? 0) + " berechtigt · Rewards gesch."),
+      tile("maker", "Maker · Markout", ((mk && mk.markout && mk.markout.avgMarkoutPP) == null) ? "—" : (mk.markout.avgMarkoutPP > 0 ? "+" : "") + mk.markout.avgMarkoutPP + "pp", cls(mk && mk.markout && mk.markout.avgMarkoutPP), ((mk && mk.rewardEligible) ?? 0) + " berechtigt · Reward $" + (((mk && mk.sim && mk.sim.cumRewardEst)) || 0)),
       tile("radar", "Neu-Markt-Lag", nm == null ? money(0) : money(nm), cls(nm), (s.newMarketCount ?? 0) + " Trades · frisch"),
     ].join("");
     document.querySelectorAll(".stile").forEach(t => t.addEventListener("click", () => switchTab(t.dataset.goto)));

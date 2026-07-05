@@ -170,6 +170,19 @@ def deribit_fair_inputs(strike, target_date: datetime.date, currency="BTC"):
     return {"iv": iv_t, "forward": fwd_t, "strike": g_up["strike"], "expiry": f"{lo[0]}→{up[0]}"}
 
 
+def deribit_skew(strike, expiry_code, base_iv, currency="BTC"):
+    """∂σ/∂K numerisch aus einem Nachbar-Strike (Vol pro $ Strike). 0 wenn nicht ermittelbar.
+    Bei interpolierten Verfällen ('lo→up') den oberen Verfall verwenden."""
+    exp = expiry_code.split("→")[-1] if expiry_code else None
+    if not exp or base_iv is None:
+        return 0.0
+    step = max(1000, int(round(strike * 0.03)))
+    got = _iv_at_strike(strike + step, exp, currency)
+    if not got:
+        return 0.0
+    return (got["iv"] - base_iv) / step
+
+
 # ── Kontext-Seams: erst live prüfen, dann verdrahten (Lucas hat die Zugänge) ───────────────────
 def etf_net_flow(asset="BTC"):
     """TODO: ETF-Netto-Flow (Farside/SoSoValue). EOD-verzögert → NUR Kontext/Regime, nie Trigger."""

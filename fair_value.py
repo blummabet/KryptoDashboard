@@ -20,17 +20,29 @@ def _norm_cdf(x: float) -> float:
     return 0.5 * (1.0 + math.erf(x / _SQRT2))
 
 
-def digital_above(spot, strike, sigma, t_years, r=0.0):
+def _norm_pdf(x):
+    return math.exp(-0.5 * x * x) / math.sqrt(2.0 * math.pi)
+
+
+def digital_above(spot, strike, sigma, t_years, r=0.0, skew=0.0):
     """Risk-neutrale Wkt. S_T ≥ strike (lognormal, europäisch).
-    sigma = annualisierte IV (dez.), t_years = Restlaufzeit in Jahren. None wenn Inputs unbrauchbar."""
+    Mit SKEW-Korrektur: der korrekte Binary-Preis ist N(d2) − Vega·(∂σ/∂K) — bei BTCs steilem Smile
+    an den Tails mehrere pp. skew = ∂σ/∂K (Vol pro $ Strike; 0 = keine Korrektur, wie vorher).
+    None wenn Inputs unbrauchbar."""
     if not spot or not strike or not sigma or not t_years or sigma <= 0 or t_years <= 0:
         return None
-    d2 = (math.log(spot / strike) + (r - 0.5 * sigma * sigma) * t_years) / (sigma * math.sqrt(t_years))
-    return _norm_cdf(d2)
+    st = sigma * math.sqrt(t_years)
+    d2 = (math.log(spot / strike) + (r - 0.5 * sigma * sigma) * t_years) / st
+    p = _norm_cdf(d2)
+    if skew:
+        d1 = d2 + st
+        vega = spot * math.sqrt(t_years) * _norm_pdf(d1)   # ∂Call/∂σ (r=0)
+        p -= vega * skew
+    return max(0.0, min(1.0, p))
 
 
-def digital_below(spot, strike, sigma, t_years, r=0.0):
-    p = digital_above(spot, strike, sigma, t_years, r)
+def digital_below(spot, strike, sigma, t_years, r=0.0, skew=0.0):
+    p = digital_above(spot, strike, sigma, t_years, r, skew)
     return None if p is None else 1.0 - p
 
 

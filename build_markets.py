@@ -137,10 +137,11 @@ def build():
                         S0 = spot or fi["forward"]
                         if family == "touch":
                             fair = fair_value.one_touch(S0, strike, iv, T)
-                        else:  # 'above' — europ. Digital am Stichtag (auf Binance-Spot)
-                            fair = (fair_value.digital_above(S0, strike, iv, T)
+                        else:  # 'above' — europ. Digital am Stichtag (Binance-Spot) + Skew-Korrektur
+                            sk = data_sources.deribit_skew(strike, fi.get("expiry"), iv)
+                            fair = (fair_value.digital_above(S0, strike, iv, T, skew=sk)
                                     if direction == "above"
-                                    else fair_value.digital_below(S0, strike, iv, T))
+                                    else fair_value.digital_below(S0, strike, iv, T, skew=sk))
                         if spot and family == "above":  # repräsentative ATM-IV nur aus Digitals
                             d = abs(strike - spot)
                             if atm_dist is None or d < atm_dist:
@@ -151,6 +152,12 @@ def build():
                     label = f"{verb} ${strike:,} bis {m.get('endDateIso') or ''}"
                 else:
                     label = f"über ${strike:,} · {m.get('endDateIso') or ''}"
+
+                # Handelbarer Edge + Kapitaleffizienz (Edge pro Tag Kapital-Bindung bis Auflösung).
+                te = trade_edge_pp(fair, poly, m.get("bestBid"), m.get("bestAsk"))
+                days_left = round(T * 365, 1) if T else None
+                edge_per_day = (round(te / days_left, 3)
+                                if (te is not None and days_left and days_left > 0.05) else None)
 
                 rows.append({
                     "asset": "BTC",
@@ -167,7 +174,9 @@ def build():
                     "fairProb": round(fair, 4) if fair is not None else None,
                     "edgePP": fair_value.net_edge_pp(fair, poly),       # netto (nach geschätzter Fee)
                     "edgeGrossPP": fair_value.gross_edge_pp(fair, poly),
-                    "tradeEdgePP": trade_edge_pp(fair, poly, m.get("bestBid"), m.get("bestAsk")),
+                    "tradeEdgePP": te,
+                    "daysLeft": days_left,
+                    "edgePerDay": edge_per_day,
                     "liquidityUSD": round(m.get("liquidityNum") or 0),
                     # Maker-/Freshness-Felder:
                     "bestBid": m.get("bestBid"),

@@ -29,6 +29,7 @@ ASSUMED_SIZE_USD = 50.0    # angenommene Quote-Größe je Seite (≥ typische re
 REWARD_DAILY_YIELD = 0.003  # Basis-Yield/Tag auf unsere Größe bei GERINGER Konkurrenz
 REF_COMPETITION = 5000.0   # Liq-Skala für den Anteils-Proxy: viel Liq = kleiner Anteil = weniger Reward
 RUNS_PER_DAY = 24          # stündliche Kadenz
+MAKER_HALF_SPREAD = 0.02   # angenommene Quote-Distanz zur Mitte (±2¢) für die Fill-Simulation
 
 
 def _load():
@@ -93,6 +94,34 @@ def write():
     sim["cumRewardEst"] = round(sim.get("cumRewardEst", 0.0) + est_reward_day_total / RUNS_PER_DAY, 4)
     sim["runs"] = sim.get("runs", 0) + 1
     sim["updatedAt"] = now
+
+    # ── Markout-Sim: pessimistische Fills (Preis handelt DURCH die Quote) ────────────────────
+    # Wir hätten letzten Lauf um die MITTE quotiert (bid=prevMid−H, ask=prevMid+H). Ist der Preis
+    # seither DURCH eine Quote gehandelt, gilt sie als gefüllt — und zwar genau dann, wenn sich der
+    # Markt bewegt hat (= die toxische Richtung). Markout = Fill-Preis vs. der FAIR direkt danach:
+    # negativ = Adverse Selection frisst Spread + Rewards. DIE Zahl, die über Phase 4 entscheidet.
+    prev = sim.get("prevMids", {})
+    new_prev, fills_this, mk_sum_this = {}, 0, 0.0
+    for x in b:
+        cid = x.get("conditionId")
+        mid, fair = x.get("mid"), x.get("fair")
+        if cid and mid is not None:
+            new_prev[cid] = mid
+        if not x["rewardEligible"] or mid is None or fair is None or cid not in prev:
+            continue
+        pm = prev[cid]
+        pb, pa = pm - MAKER_HALF_SPREAD, pm + MAKER_HALF_SPREAD
+        if mid <= pb:                    # Preis fiel durch unseren Bid → BUY @ pb
+            mk = (fair - pb) * 100.0     # jetzt fair wert, gekauft für pb
+            fills_this += 1; mk_sum_this += mk
+        elif mid >= pa:                  # Preis stieg durch unseren Ask → SELL @ pa
+            mk = (pa - fair) * 100.0
+            fills_this += 1; mk_sum_this += mk
+    sim["prevMids"] = new_prev
+    sim["fills"] = sim.get("fills", 0) + fills_this
+    sim["sumMarkoutPP"] = round(sim.get("sumMarkoutPP", 0.0) + mk_sum_this, 3)
+    avg_markout = round(sim["sumMarkoutPP"] / sim["fills"], 2) if sim["fills"] else None
+
     SIM.parent.mkdir(parents=True, exist_ok=True)
     SIM.write_text(json.dumps(sim, indent=2, ensure_ascii=False))
 
@@ -106,6 +135,13 @@ def write():
             "note": "Reward-Schätzung: anteils-gewichtet (Konkurrenz-Liq), Eligibility = Spread≤maxSpread "
                     "& Größe≥minSize, Quotes um die MITTE. Absolute Zahl unkalibriert (RICHTUNG stimmt: "
                     "dünn/neu = mehr). Spread-Ertrag NICHT enthalten — echte Fills+Rewards erst mit Runner.",
+        },
+        "markout": {
+            "fills": sim["fills"], "avgMarkoutPP": avg_markout,
+            "note": "DIE entscheidende Zahl: pessimistische Fills (Preis handelt DURCH die Quote), "
+                    "Markout = Fill vs. Fair direkt nach dem Move. Negativ = Adverse Selection frisst "
+                    "Spread + Rewards → dann braucht's Delta-Hedge. Grobe Stundenauflösung (echte 1/10-Min "
+                    "erst mit Runner).",
         },
         "note": "Als Maker keine Fee → schon kleiner Puffer +EV; als Taker erst > ~3,5pp. "
                 "Reward-berechtigt = Spread ≤ maxSpread & Liq ≥ minSize.",
