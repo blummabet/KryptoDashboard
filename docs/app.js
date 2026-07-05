@@ -178,6 +178,30 @@
       : '<tr><td colspan="6" class="empty">Kein Maker-Board — noch keine Märkte mit Fair.</td></tr>';
   }
 
+  // ---- Einnahmen-Übersicht (alle Varianten auf einen Blick) ------------------------------
+  function renderIncome(paper, arb, maker, clv) {
+    const ps = (paper && paper.summary) || {}, as = (arb && arb.paper && arb.paper.summary) || {};
+    const ms = (maker && maker.sim) || {}, mo = (maker && maker.markout) || {};
+    const badge = (t, c) => `<span class="rsn rsn-${c}">${t}</span>`;
+    const rows = [
+      { name: "Konvergenz (Taker)", val: money(ps.totalPnl), c: cls(ps.totalPnl),
+        art: badge("Papier", "converged"), note: "nach Fee meist dünn — der Ehrlichkeitstest" },
+      { name: "Konsistenz-Arb", val: money(as.totalPnl), c: cls(as.totalPnl),
+        art: badge("gesperrt", "win"), note: (as.openCount || 0) + " offen · nur echte Gaps nach der Spanne" },
+      { name: "Maker-Rewards", val: ms.estRewardDayTotal != null ? "$" + ms.estRewardDayTotal.toFixed(2) + "/Tag" : "—", c: "pos",
+        art: badge("Schätzung", "break"), note: "kumuliert " + (ms.cumRewardEst != null ? "$" + ms.cumRewardEst.toFixed(2) : "—") + " · unkalibriert, echt erst live" },
+      { name: "Maker netto (Markout)", val: mo.avgMarkoutPP != null ? (mo.avgMarkoutPP > 0 ? "+" : "") + mo.avgMarkoutPP + "pp" : "—", c: cls(mo.avgMarkoutPP),
+        art: badge("Sim", "break"), note: "DIE entscheidende Zahl: negativ = Adverse Selection frisst die Rewards" },
+      { name: "Neu-Markt-Lag", val: money(ps.newMarketPnl), c: cls(ps.newMarketPnl),
+        art: badge("Papier", "converged"), note: (ps.newMarketCount || 0) + " frische Trades · vs. etabliert " + money(ps.establishedPnl) },
+    ];
+    $("incomeRows").innerHTML = rows.map(r => `<tr>
+      <td><b>${r.name}</b></td>
+      <td class="r pnl ${r.c}">${r.val}</td>
+      <td>${r.art}</td>
+      <td class="mkt-sub">${r.note}</td></tr>`).join("");
+  }
+
   // ---- Strategie-Übersicht (oben, je Strategie eine Kachel) -------------------------------
   function renderStrat(paper, arb, mk, markets) {
     const s = (paper && paper.summary) || {};
@@ -222,6 +246,7 @@
       const arb = ar.status === "fulfilled" ? ar.value : {};
       const maker = ma.status === "fulfilled" ? ma.value : {};
       renderHero(paper, clv);
+      renderIncome(paper, arb, maker, clv);
       renderStrat(paper, arb, maker, markets);
       renderPortfolio(paper);
       renderRadar(markets, clv.trends || {});
