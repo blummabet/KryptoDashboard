@@ -72,6 +72,13 @@ def _fee_usd(price):
     return STAKE_USD * (fair_value.estimated_fee_pp(price) / 100.0)
 
 
+def _trade_signal(m):
+    """Handelbarer Edge in unsere Richtung (bevorzugt tradeEdgePP über die Spanne;
+    Fallback: |Netto-Mitte-Edge|, falls kein Bid/Ask vorliegt)."""
+    te = m.get("tradeEdgePP")
+    return te if te is not None else abs(m.get("edgePP") or 0)
+
+
 def _age_hours(ts, now):
     try:
         a = datetime.datetime.fromisoformat(ts.replace("Z", "+00:00"))
@@ -164,8 +171,8 @@ def run():
     cands = sorted(
         (m for m in mkts.values()
          if m.get("edgePP") is not None and m.get("fairProb") is not None
-         and abs(m["edgePP"]) >= EDGE_FLOOR_PP and (m.get("liquidityUSD") or 0) >= LIQ_FLOOR_USD),
-        key=lambda m: (not m.get("isNew", False), -abs(m["edgePP"])))
+         and _trade_signal(m) >= EDGE_FLOOR_PP and (m.get("liquidityUSD") or 0) >= LIQ_FLOOR_USD),
+        key=lambda m: (not m.get("isNew", False), -_trade_signal(m)))
     for m in cands:
         if n_open >= MAX_OPEN:
             break

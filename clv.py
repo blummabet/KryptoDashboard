@@ -65,6 +65,7 @@ def _movement_clv(groups):
             "entryPoly": entry["polyPrice"],
             "lastPoly": last["polyPrice"],
             "clvPP": clv_pp,
+            "entryAgeH": entry.get("ageH"),
             "snapshots": len(snaps),
         })
     return picks
@@ -110,6 +111,31 @@ def _calibration(groups, res):
     }
 
 
+_AGE_BUCKETS = [(6, "0-6h"), (24, "6-24h"), (72, "1-3d")]
+
+
+def _age_bucket(h):
+    if h is None:
+        return "unbek."
+    for lim, name in _AGE_BUCKETS:
+        if h < lim:
+            return name
+    return ">3d"
+
+
+def _cohorts(picks):
+    """Movement-CLV nach Markt-Alter beim Einstieg — testet die Neu-Markt-Lag-These:
+    ist der CLV bei jungen Märkten (0-6h) höher als bei etablierten?"""
+    buckets = {}
+    for p in picks:
+        buckets.setdefault(_age_bucket(p.get("entryAgeH")), []).append(p["clvPP"])
+    out = {}
+    for b, vals in buckets.items():
+        out[b] = {"picks": len(vals), "avgClvPP": round(sum(vals) / len(vals), 2),
+                  "positiveShare": round(sum(1 for v in vals if v > 0) / len(vals), 2)}
+    return out
+
+
 def _trends(groups, n=24):
     """Letzte n Netto-Edge-Punkte je Markt (für Mini-Sparklines im Dashboard)."""
     out = {}
@@ -137,6 +163,7 @@ def compute(hist=None):
     return {
         "summary": summary,
         "calibration": _calibration(groups, res),
+        "cohorts": _cohorts(picks),
         "trends": _trends(groups),
         "picks": sorted(picks, key=lambda p: p["clvPP"], reverse=True)[:50],
     }

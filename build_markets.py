@@ -62,6 +62,18 @@ def clob_ids(m: dict):
         return None
 
 
+def trade_edge_pp(fair, poly, best_bid, best_ask):
+    """HANDELBARER Edge über die Spanne (zwei Flächen), in Prozentpunkten, in unsere Richtung:
+      fair > poly → Yes am bestAsk kaufen → fair − bestAsk
+      fair < poly → No kaufen (= Yes am bestBid verkaufen) → bestBid − fair
+    Kann negativ sein (Spanne frisst den Edge). None wenn Bid/Ask oder Fair fehlen."""
+    if fair is None or poly is None or best_bid is None or best_ask is None:
+        return None
+    if fair >= poly:
+        return round((fair - best_ask) * 100.0, 2)
+    return round((best_bid - fair) * 100.0, 2)
+
+
 NEW_HOURS = 48   # jünger = "neu" → Neu-Markt-Lag (Poly noch nicht konvergiert)
 
 
@@ -120,13 +132,15 @@ def build():
                     fi = data_sources.deribit_fair_inputs(strike, end_dt.date(), "BTC")
                     if fi:
                         iv = fi["iv"]
+                        # S0 = Binance-Spot (= Auflösungsquelle!) statt Deribit-Forward → keine
+                        # Futures-Basis-Drift. Nur wenn Binance ausfällt, Forward als Notnagel.
+                        S0 = spot or fi["forward"]
                         if family == "touch":
-                            # One-Touch-Barriere auf dem realen Kurspfad → Spot als S0 (nicht Forward).
-                            fair = fair_value.one_touch(spot or fi["forward"], strike, iv, T)
-                        else:  # 'above' — europ. Digital am Stichtag (Forward-konsistent)
-                            fair = (fair_value.digital_above(fi["forward"], strike, iv, T)
+                            fair = fair_value.one_touch(S0, strike, iv, T)
+                        else:  # 'above' — europ. Digital am Stichtag (auf Binance-Spot)
+                            fair = (fair_value.digital_above(S0, strike, iv, T)
                                     if direction == "above"
-                                    else fair_value.digital_below(fi["forward"], strike, iv, T))
+                                    else fair_value.digital_below(S0, strike, iv, T))
                         if spot and family == "above":  # repräsentative ATM-IV nur aus Digitals
                             d = abs(strike - spot)
                             if atm_dist is None or d < atm_dist:
@@ -153,12 +167,15 @@ def build():
                     "fairProb": round(fair, 4) if fair is not None else None,
                     "edgePP": fair_value.net_edge_pp(fair, poly),       # netto (nach geschätzter Fee)
                     "edgeGrossPP": fair_value.gross_edge_pp(fair, poly),
+                    "tradeEdgePP": trade_edge_pp(fair, poly, m.get("bestBid"), m.get("bestAsk")),
                     "liquidityUSD": round(m.get("liquidityNum") or 0),
                     # Maker-/Freshness-Felder:
                     "bestBid": m.get("bestBid"),
                     "bestAsk": m.get("bestAsk"),
                     "rewardsMinSize": m.get("rewardsMinSize"),
                     "rewardsMaxSpread": m.get("rewardsMaxSpread"),
+                    "rewardsDailyRate": (m.get("rewardsDailyRate")
+                                         or ((m.get("clobRewards") or [{}])[0] or {}).get("rewardsDailyRate")),
                     "clobTokenIds": clob_ids(m),
                     "ageH": _age_h(m.get("startDate")),
                     "isNew": (_age_h(m.get("startDate")) or 1e9) < NEW_HOURS,

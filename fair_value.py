@@ -34,14 +34,22 @@ def digital_below(spot, strike, sigma, t_years, r=0.0):
     return None if p is None else 1.0 - p
 
 
-def one_touch(spot, barrier, sigma, t_years, r=0.0):
-    """Risk-neutrale Wkt., dass der Kurs die Barriere in [0,T] MINDESTENS EINMAL berührt
-    (One-Touch, kontinuierlich ≈ 1m-Candles). Für Familie D/E (hit/dip/ATH) — NICHT als Digital.
-    Auto-Richtung: barrier > spot = up-Touch, barrier < spot = down-Touch. Bei OFFENEN Märkten ist
-    der Kurs noch auf der nicht-berührten Seite, daher folgt die Richtung sauber aus barrier vs spot.
-    First-Passage-Formel für arithmetische BM (ν = r − σ²/2)."""
+_BGK = 0.5826   # −ζ(1/2)/√(2π) — Broadie-Glasserman-Kou-Konstante (diskrete Barriere-Überwachung)
+
+
+def one_touch(spot, barrier, sigma, t_years, r=0.0, monitor_min=1.0):
+    """Risk-neutrale Wkt., dass der Kurs die Barriere in [0,T] MINDESTENS EINMAL berührt (One-Touch).
+    Für Familie D/E (hit/dip/ATH) — NICHT als Digital. Auto-Richtung: barrier>spot = up, <spot = down.
+
+    Diskretur-Korrektur (BGK): Poly löst auf 1-Min-Candles auf, nicht kontinuierlich → weniger
+    Berührungen. Die Barriere wird um exp(±0.5826·σ·√Δt) nach AUSSEN verschoben, sonst wird die
+    Touch-Wkt. systematisch überschätzt (→ Phantom-Edge). monitor_min = Überwachungsintervall in Min."""
     if not spot or not barrier or not sigma or not t_years or sigma <= 0 or t_years <= 0:
         return None
+    if monitor_min and monitor_min > 0:
+        dt = monitor_min / (365.0 * 24 * 60)
+        shift = math.exp(_BGK * sigma * math.sqrt(dt))
+        barrier = barrier * shift if barrier >= spot else barrier / shift
     nu = r - 0.5 * sigma * sigma
     s = sigma * math.sqrt(t_years)
     a = math.log(barrier / spot)

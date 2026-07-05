@@ -77,21 +77,27 @@ def run():
         k = _key(f)
         if k in open_keys:
             continue
-        # billigere Seite = Superset (Yes kaufen), teurere = Subset (No kaufen)
+        # billigere Seite = Superset (Yes am ASK kaufen), teurere = Subset (No = 1 − Bid des Subset)
         if f["lowP"] <= f["highP"]:
-            sup_cid, sup_p, sub_cid, sub_p = f["lowCid"], f["lowP"], f["highCid"], f["highP"]
+            sup_cid, sub_cid = f["lowCid"], f["highCid"]
+            sup_ask, sub_bid = f.get("lowAsk"), f.get("highBid")
         else:
-            sup_cid, sup_p, sub_cid, sub_p = f["highCid"], f["highP"], f["lowCid"], f["lowP"]
-        cost = sup_p + (1.0 - sub_p)
-        if not (0 < cost < 1):
+            sup_cid, sub_cid = f["highCid"], f["lowCid"]
+            sup_ask, sub_bid = f.get("highAsk"), f.get("lowBid")
+        # HANDELBARE Kosten — ohne echte Bid/Ask kein Trade (kein Phantom-Arb auf Mittelpreisen).
+        if sup_ask is None or sub_bid is None:
             continue
+        cost = sup_ask + (1.0 - sub_bid)
+        if not (0 < cost < 1):
+            continue                         # nach der Spanne kein echter Arb mehr
+        gap_exec = round((1.0 - cost) * 100.0, 2)
         shares = round(STAKE_USD / cost, 2)
-        fee = STAKE_USD * (fair_value.estimated_fee_pp(sup_p) + fair_value.estimated_fee_pp(1 - sub_p)) / 100.0
+        fee = STAKE_USD * (fair_value.estimated_fee_pp(sup_ask) + fair_value.estimated_fee_pp(1 - sub_bid)) / 100.0
         positions.append({
             "key": k, "status": "OPEN", "entryTs": now, "label": f["note"],
-            "supersetCid": sup_cid, "subsetCid": sub_cid, "supP": sup_p, "subP": sub_p,
-            "cost": round(cost, 4), "gapPP": f["gapPP"], "shares": shares, "feePaid": round(fee, 2),
-            "lockedMin": round(shares * (f["gapPP"] / 100.0) - fee, 2),
+            "supersetCid": sup_cid, "subsetCid": sub_cid, "supP": sup_ask, "subP": sub_bid,
+            "cost": round(cost, 4), "gapPP": gap_exec, "shares": shares, "feePaid": round(fee, 2),
+            "lockedMin": round(shares * (gap_exec / 100.0) - fee, 2),
         })
         open_keys.add(k)
         activity.append({"ts": now, "type": "open", "market": f["note"], "gap": f["gapPP"]})

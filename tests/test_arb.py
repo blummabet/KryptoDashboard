@@ -3,10 +3,11 @@ import json
 import arb_engine as ae
 
 
-def _m(cid, strike, poly):
+def _m(cid, strike, poly, spread=0.02):
     return {"conditionId": cid, "market": f"über ${strike} · 2026-07-31", "strike": strike,
             "polyPrice": poly, "family": "above", "direction": "above",
-            "endDate": "2026-07-31T16:00:00Z"}
+            "endDate": "2026-07-31T16:00:00Z",
+            "bestBid": round(poly - spread / 2, 4), "bestAsk": round(poly + spread / 2, 4)}
 
 
 def _wire(tmp_path, monkeypatch, markets, res=None):
@@ -23,7 +24,8 @@ def test_arb_opens_on_inversion(tmp_path, monkeypatch):
     pos = json.loads((tmp_path / "arb.json").read_text())
     assert len(pos) == 1 and pos[0]["status"] == "OPEN"
     assert pos[0]["supersetCid"] == "L" and pos[0]["subsetCid"] == "H"   # billige Seite = Superset
-    assert pos[0]["gapPP"] == 15.0 and pos[0]["lockedMin"] > 0
+    # Gap auf HANDELBAREN Preisen (Ask/Bid), also kleiner als der 15pp-Mitte-Gap:
+    assert 0 < pos[0]["gapPP"] < 15.0 and pos[0]["lockedMin"] > 0
 
 
 def test_arb_settles_positive_mid(tmp_path, monkeypatch):

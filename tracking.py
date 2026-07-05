@@ -15,7 +15,7 @@ HIST = pathlib.Path(__file__).parent / "data" / "edge_history.jsonl"
 
 # Felder pro Snapshot — genau die, die wir für Edge-Verlauf + CLV brauchen.
 FIELDS = ("conditionId", "slug", "asset", "family", "market", "strike", "direction", "endDate",
-          "polyPrice", "fairProb", "edgePP", "edgeGrossPP", "ivPct", "liquidityUSD")
+          "polyPrice", "fairProb", "edgePP", "edgeGrossPP", "tradeEdgePP", "ivPct", "liquidityUSD", "ageH")
 
 
 def append_snapshots(rows, ts=None):

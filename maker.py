@@ -23,10 +23,12 @@ OUT = pathlib.Path(__file__).parent / "docs" / "maker.json"
 SIM = pathlib.Path(__file__).parent / "data" / "maker_sim.json"   # kumulierte Reward-Schätzung
 TAKER_BREAKEVEN_PP = 3.5   # was ein Taker am Geld nur für die Fee bräuchte (Referenz fürs Framing)
 
-# Reward-Schätzung (TRANSPARENTE ANNAHMEN — echte Zahlen erst mit dem Runner):
-ASSUMED_SIZE_USD = 20.0    # angenommene Quote-Größe je Seite pro reward-berechtigtem Markt
-REWARD_DAILY_YIELD = 0.003  # angenommene Reward-Rendite/Tag auf die Quote-Größe (0,3 % — Platzhalter)
-RUNS_PER_DAY = 48          # 30-Min-Kadenz
+# Reward-Schätzung (TRANSPARENTE ANNAHMEN — absolute Zahl erst am echten Payout kalibrierbar;
+# die RICHTUNG stimmt aber: reward-berechtigt + anteils-gewichtet nach Konkurrenz):
+ASSUMED_SIZE_USD = 50.0    # angenommene Quote-Größe je Seite (≥ typische rewardsMinSize=50)
+REWARD_DAILY_YIELD = 0.003  # Basis-Yield/Tag auf unsere Größe bei GERINGER Konkurrenz
+REF_COMPETITION = 5000.0   # Liq-Skala für den Anteils-Proxy: viel Liq = kleiner Anteil = weniger Reward
+RUNS_PER_DAY = 24          # stündliche Kadenz
 
 
 def _load():
@@ -47,20 +49,28 @@ def board(markets=None):
         spread_pp = round((ask - bid) * 100, 1) if (bid is not None and ask is not None) else None
         mid = (bid + ask) / 2 if (bid is not None and ask is not None) else poly
         max_spread = m.get("rewardsMaxSpread")
+        min_size = m.get("rewardsMinSize") or 0
         liq = m.get("liquidityUSD") or 0
+        # Eligibility KORREKT: Spread ≤ maxSpread UND unsere Quote-Größe ≥ rewardsMinSize
+        # (rewardsMinSize ist die MIN-ORDER-Größe, NICHT die Markt-Liquidität — alter Bug).
         reward_elig = bool(spread_pp is not None and max_spread and spread_pp <= max_spread
-                           and liq >= (m.get("rewardsMinSize") or 0))
-        # Vorschlags-Quotes um die Fair (halbe Spanne, gedeckelt).
+                           and ASSUMED_SIZE_USD >= min_size)
+        # Quotes um die MITTE zentrieren (dort maximiert das LRP den Score), Größe nach Fair schieben.
         h = min((spread_pp or 4.0) / 200.0, 0.03)
-        q_bid, q_ask = round(max(0.01, fair - h), 3), round(min(0.99, fair + h), 3)
-        edge_if_filled_pp = round(h * 100, 1)
-        est_reward_day = round(ASSUMED_SIZE_USD * REWARD_DAILY_YIELD, 3) if reward_elig else 0.0
-        score = round(edge_if_filled_pp + (2.0 if reward_elig else 0.0), 1)
+        q_bid, q_ask = round(max(0.01, mid - h), 3), round(min(0.99, mid + h), 3)
+        skew = "bid" if fair > mid + 0.005 else ("ask" if fair < mid - 0.005 else "flat")
+        # Vorteil je Fill an der günstigen Seite (vs. Fair).
+        edge_if_filled_pp = round(max(fair - q_bid, q_ask - fair) * 100, 1)
+        # Reward-Schätzung: anteils-gewichtet — viel Konkurrenz-Liq = kleiner Anteil = weniger Reward.
+        share_mult = REF_COMPETITION / (REF_COMPETITION + liq) if liq else 1.0
+        est_reward_day = round(ASSUMED_SIZE_USD * REWARD_DAILY_YIELD * share_mult, 4) if reward_elig else 0.0
+        score = round(edge_if_filled_pp + est_reward_day * 100, 1)   # Reward-Anteil mit-gewichtet
         out.append({
             "market": m.get("market"), "family": m.get("family"), "conditionId": m.get("conditionId"),
             "fair": fair, "mid": round(mid, 3), "bid": bid, "ask": ask, "spreadPP": spread_pp,
-            "quoteBid": q_bid, "quoteAsk": q_ask, "edgeIfFilledPP": edge_if_filled_pp,
+            "quoteBid": q_bid, "quoteAsk": q_ask, "skew": skew, "edgeIfFilledPP": edge_if_filled_pp,
             "rewardEligible": reward_elig, "estRewardDay": est_reward_day,
+            "rewardsDailyRate": m.get("rewardsDailyRate"), "shareMult": round(share_mult, 3),
             "liquidityUSD": liq, "isNew": m.get("isNew"), "score": score,
         })
     out.sort(key=lambda b: -b["score"])
@@ -93,8 +103,9 @@ def write():
         "sim": {
             "estRewardDayTotal": est_reward_day_total, "cumRewardEst": sim["cumRewardEst"],
             "runs": sim["runs"], "assumedSizeUSD": ASSUMED_SIZE_USD, "dailyYield": REWARD_DAILY_YIELD,
-            "note": "Reward-Schätzung (zeitbasiert, GESCHÄTZT mit Annahme). Spread-Ertrag NICHT enthalten "
-                    "— echte Fills + echte Rewards erst über den self-hosted Runner.",
+            "note": "Reward-Schätzung: anteils-gewichtet (Konkurrenz-Liq), Eligibility = Spread≤maxSpread "
+                    "& Größe≥minSize, Quotes um die MITTE. Absolute Zahl unkalibriert (RICHTUNG stimmt: "
+                    "dünn/neu = mehr). Spread-Ertrag NICHT enthalten — echte Fills+Rewards erst mit Runner.",
         },
         "note": "Als Maker keine Fee → schon kleiner Puffer +EV; als Taker erst > ~3,5pp. "
                 "Reward-berechtigt = Spread ≤ maxSpread & Liq ≥ minSize.",

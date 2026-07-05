@@ -50,6 +50,8 @@ def scan(markets=None):
                     "family": family, "date": date, "direction": direction,
                     "lowStrike": a["strike"], "highStrike": b["strike"],
                     "lowP": pa, "highP": pb, "lowCid": a.get("conditionId"), "highCid": b.get("conditionId"),
+                    "lowBid": a.get("bestBid"), "lowAsk": a.get("bestAsk"),
+                    "highBid": b.get("bestBid"), "highAsk": b.get("bestAsk"),
                     "gapPP": gap, "tradable": gap >= FEE_2X_PP,
                     "note": f"{a['market']} ({pa:.0%}) ↔ {b['market']} ({pb:.0%}) verletzt Monotonie",
                 })

@@ -28,7 +28,14 @@ def test_consistency_dip_direction():
     assert len(f) == 1
 
 
-def test_maker_board_quotes_around_fair():
+def test_maker_board_quotes_around_mid_skew_by_fair():
     r = maker.board([_m("A", 60000, 0.50, fair=0.52, bid=0.49, ask=0.51)])[0]
-    assert r["quoteBid"] < r["fair"] < r["quoteAsk"]
+    assert r["quoteBid"] < r["mid"] < r["quoteAsk"]   # um die MITTE (LRP scored Nähe zur Mitte)
+    assert r["skew"] == "bid"                          # fair > mid → mehr Größe auf den Bid
     assert r["edgeIfFilledPP"] > 0 and r["rewardEligible"] is True
+
+
+def test_maker_reward_share_weighted():
+    thin = maker.board([_m("T", 60000, 0.50, fair=0.53, bid=0.49, ask=0.51, liq=2000)])[0]
+    thick = maker.board([_m("K", 60000, 0.50, fair=0.53, bid=0.49, ask=0.51, liq=80000)])[0]
+    assert thin["estRewardDay"] > thick["estRewardDay"]   # dünn = höherer Anteil = mehr Reward
