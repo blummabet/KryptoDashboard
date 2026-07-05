@@ -60,6 +60,26 @@ def gamma_events(series_slug: str, limit: int = 300, closed: bool = False) -> li
     return events
 
 
+def gamma_markets_negrisk(max_markets: int = 600, page: int = 100) -> list:
+    """Alle offenen negRisk-(Multi-Outcome-)Märkte flach holen, nach 24h-Volumen absteigend,
+    paginiert. Jeder Eintrag = EIN Kandidat (z.B. 'Will Morocco win the World Cup?') mit
+    negRiskMarketID (= Korb-Schlüssel), groupItemTitle, bestBid/bestAsk, clobTokenIds, feeSchedule.
+    Read-only. Verifiziert 2026-07-05 (World-Cup-Winner-Event teilt negRiskMarketID …fab87400)."""
+    out, offset = [], 0
+    while len(out) < max_markets:
+        url = (f"{GAMMA_MARKETS}?closed=false&active=true&archived=false&negRisk=true"
+               f"&order=volume24hr&ascending=false&limit={page}&offset={offset}")
+        batch = _get_json(url)
+        if not batch:
+            break
+        out.extend(batch)
+        if len(batch) < page:
+            break
+        offset += page
+    print(f"  {len(out)} negRisk-Kandidatenmärkte (flach) geholt")
+    return out[:max_markets]
+
+
 def fetch_market(slug: str) -> dict | None:
     """Einen einzelnen Markt per Slug holen (u.a. für Auflösungs-Check). None bei Fehler/leer."""
     if not slug:

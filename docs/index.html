@@ -180,6 +180,7 @@
       <span class="tab on" data-view="portfolio">Paper-Portfolio</span>
       <span class="tab" data-view="radar">Edge-Radar</span>
       <span class="tab" data-view="arb">Konsistenz-Arb</span>
+      <span class="tab" data-view="baskets">Multi-Outcome</span>
       <span class="tab" data-view="maker">Maker-Board</span>
     </div>
 
@@ -254,6 +255,20 @@
           <th class="r">Gap</th><th class="r">handelbar</th>
         </tr></thead><tbody id="arbRows"><tr><td colspan="5" class="empty">Lade…</td></tr></tbody></table>
         <div class="ctx-note">Polys eigene Strike-Leiter darf sich nicht widersprechen. Gap ≥ ~7pp (2× Fee) = potenziell handelbar. Braucht zum Ausführen beide Beine + Runner.</div>
+      </div>
+    </div>
+
+    <!-- MULTI-OUTCOME BASKET-ARB (alle Kategorien) -->
+    <div id="view-baskets" class="hidden">
+      <div class="explain">Märkte mit vielen exklusiven Antworten („Wer wird Weltmeister?", „Wer gewinnt die Wahl?") — <b>über alle Kategorien</b>, nicht nur Krypto. Am Ende zahlt genau <b>ein</b> Kandidat $1, also muss die Summe aller Ja-Preise = 100 % sein. Weicht sie ab, ist das eine <b>risikofreie Kante ganz ohne Referenzmodell</b>. <b>Verkauf-Korb</b> (Σ Ja > 100 %) ist robust — greift sogar wenn es einen „Other"-Ausgang gibt. <b>Kauf-Korb</b> (Σ Ja < 100 %) nur wenn die Kandidaten erschöpfend sind. Ehrlich: „einsteigen & bei Profit raus" ist für sich <b>keine</b> Kante — nur diese Σ≠100 %-Arb ist eine.</div>
+      <div class="card">
+        <div class="card-h"><span class="t">Σ≠100 %-Körbe</span><span class="badge b-edge">modell-frei · alle Kategorien</span>
+          <span class="hint" id="basketHint"></span></div>
+        <table><thead><tr>
+          <th>Event</th><th class="r">Kandidaten</th><th class="r">Σ Ja</th><th class="r">Seite</th>
+          <th class="r">Netto-Gap</th><th class="r">handelbar</th>
+        </tr></thead><tbody id="basketRows"><tr><td colspan="6" class="empty">Lade…</td></tr></tbody></table>
+        <div class="ctx-note">Auf liquiden Märkten (WM, Wahlen) ist die Kante durch den Overround meist wegarbitriert; sie taucht in <b>dünnen/frischen</b> Multi-Outcome-Märkten auf. Ausführung braucht ALLE Beine gleichzeitig + Runner. Read-only, kein echtes Geld.</div>
       </div>
     </div>
 

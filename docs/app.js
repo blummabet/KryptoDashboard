@@ -178,8 +178,28 @@
       : '<tr><td colspan="6" class="empty">Kein Maker-Board — noch keine Märkte mit Fair.</td></tr>';
   }
 
+  // ---- Multi-Outcome Basket-Arb (alle Kategorien) ----------------------------------------
+  function renderBaskets(b) {
+    const f = (b && b.findings) || [];
+    $("basketHint").innerHTML = ((b && b.scanned) || 0) + " Kandidaten gescannt · "
+      + ((b && b.count) || 0) + " Σ≠100 %-Funde · <b>" + ((b && b.tradableCount) || 0) + " robust handelbar</b>";
+    $("basketRows").innerHTML = f.length ? f.map(x => {
+      const sideTxt = x.side === "sell" ? "Verkauf-Korb" : "Kauf-Korb";
+      const sideCls = x.side === "sell" ? "side-YES" : "side-NO";
+      const cav = x.exhaustiveNeeded ? " ⚠️" : "";
+      return `<tr>
+        <td><div class="mkt-sub">${esc(x.event)}</div></td>
+        <td class="r num">${x.n}</td>
+        <td class="r num">${pct(x.sumProb)}</td>
+        <td class="r"><span class="side ${sideCls}">${sideTxt}${cav}</span></td>
+        <td class="r pnl ${x.netPP > 0 ? "pos" : ""}">${x.netPP.toFixed(1)}pp</td>
+        <td class="r">${x.tradable ? '<span class="side side-YES">JA</span>' : '<span class="mkt-sub">—</span>'}</td></tr>`;
+    }).join("")
+      : '<tr><td colspan="6" class="empty">Aktuell keine Σ≠100 %-Körbe — die liquiden Multi-Outcome-Märkte sind fair bepreist (Overround). Kante taucht in dünnen/frischen Märkten auf.</td></tr>';
+  }
+
   // ---- Einnahmen-Übersicht (alle Varianten auf einen Blick) ------------------------------
-  function renderIncome(paper, arb, maker, clv) {
+  function renderIncome(paper, arb, maker, clv, baskets) {
     const ps = (paper && paper.summary) || {}, as = (arb && arb.paper && arb.paper.summary) || {};
     const ms = (maker && maker.sim) || {}, mo = (maker && maker.markout) || {};
     const badge = (t, c) => `<span class="rsn rsn-${c}">${t}</span>`;
@@ -194,11 +214,11 @@
         art: badge("Sim", "break"), note: "DIE entscheidende Zahl: negativ = Adverse Selection frisst die Rewards" },
       { name: "Neu-Markt-Lag", val: money(ps.newMarketPnl), c: cls(ps.newMarketPnl),
         art: badge("Papier", "converged"), note: (ps.newMarketCount || 0) + " frische Trades · vs. etabliert " + money(ps.establishedPnl) },
-      { name: "NegRisk-Basket-Arb",
-        val: (arb && arb.basketTradable) ? arb.basketTradable + " handelbar" : ((arb && arb.basketCount) ? arb.basketCount + " erkannt" : "—"),
-        c: (arb && arb.basketTradable) ? "pos" : "",
+      { name: "Multi-Outcome Basket-Arb",
+        val: (baskets && baskets.tradableCount) ? baskets.tradableCount + " handelbar" : ((baskets && baskets.count) ? baskets.count + " Funde" : "—"),
+        c: (baskets && baskets.tradableCount) ? "pos" : "",
         art: badge("modellfrei", "win"),
-        note: (arb && arb.basketCount) ? "exklusive Buckets: Σ Yes ≠ 1" : "still — Poly listet Krypto nur als verschachtelte Leitern (kein Bucket-Markt)" },
+        note: (baskets && baskets.count) ? "Σ Ja ≠ 100 % über alle Kategorien (WM, Wahlen …)" : "still — liquide Multi-Outcome-Märkte sind fair (Overround); Kante nur in dünnen Märkten" },
     ];
     $("incomeRows").innerHTML = rows.map(r => `<tr>
       <td><b>${r.name}</b></td>
@@ -225,7 +245,7 @@
   }
 
   // ---- Tabs -------------------------------------------------------------------------------
-  const VIEWS = ["portfolio", "radar", "arb", "maker"];
+  const VIEWS = ["portfolio", "radar", "arb", "baskets", "maker"];
   function switchTab(view) {
     document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x.dataset.view === view));
     VIEWS.forEach(v => $("view-" + v).classList.toggle("hidden", v !== view));
@@ -243,20 +263,22 @@
       .then(r => r.ok ? r.json() : Promise.reject(r.status))
       .catch(() => fetch(name + bust).then(r => r.ok ? r.json() : Promise.reject(r.status)));
   };
-  Promise.allSettled([j("paper.json"), j("clv.json"), j("markets.json"), j("arb.json"), j("maker.json")])
-    .then(([pp, cl, mk, ar, ma]) => {
+  Promise.allSettled([j("paper.json"), j("clv.json"), j("markets.json"), j("arb.json"), j("maker.json"), j("baskets.json")])
+    .then(([pp, cl, mk, ar, ma, bk]) => {
       const paper = pp.status === "fulfilled" ? pp.value : {};
       const clv = cl.status === "fulfilled" ? cl.value : {};
       const markets = mk.status === "fulfilled" ? mk.value : {};
       const arb = ar.status === "fulfilled" ? ar.value : {};
       const maker = ma.status === "fulfilled" ? ma.value : {};
+      const baskets = bk.status === "fulfilled" ? bk.value : {};
       renderHero(paper, clv);
-      renderIncome(paper, arb, maker, clv);
+      renderIncome(paper, arb, maker, clv, baskets);
       renderStrat(paper, arb, maker, markets);
       renderPortfolio(paper);
       renderRadar(markets, clv.trends || {});
       if (markets.generatedAt) $("updated").textContent = "Stand: " + markets.generatedAt;
       renderArb(arb);
+      renderBaskets(baskets);
       renderMaker(maker);
     });
 })();
