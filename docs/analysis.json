@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-07-08 12:49 UTC",
+  "generatedAt": "2026-07-08 15:31 UTC",
   "attribution": {
-    "nClosed": 91,
-    "realizedTotal": -68.41,
-    "feesTotal": 352.11,
-    "grossBeforeFees": 283.7,
-    "feeDragPct": 124.11,
-    "winRate": 0.462,
-    "nWin": 42,
+    "nClosed": 92,
+    "realizedTotal": -32.48,
+    "feesTotal": 354.04,
+    "grossBeforeFees": 321.56,
+    "feeDragPct": 110.1,
+    "winRate": 0.467,
+    "nWin": 43,
     "nLoss": 49,
-    "avgWin": 16.03,
+    "avgWin": 16.5,
     "avgLoss": -15.14,
-    "payoffRatio": 1.06,
-    "avgFeePP": 3.87,
-    "avgEntryEdgePP": 2.52,
+    "payoffRatio": 1.09,
+    "avgFeePP": 3.85,
+    "avgEntryEdgePP": 2.53,
     "feeEatsEdge": true,
     "worstFiveSum": -293.63,
     "tailLossShare": 0.396,
@@ -63,6 +63,12 @@
         "reason": "converged"
       },
       {
+        "market": "über $64,000 · 2026-07-08",
+        "side": "NO",
+        "pnl": 35.93,
+        "reason": "converged"
+      },
+      {
         "market": "über $58,000 · 2026-07-11",
         "side": "NO",
         "pnl": 35.17,
@@ -73,18 +79,12 @@
         "side": "YES",
         "pnl": 24.66,
         "reason": "converged"
-      },
-      {
-        "market": "dip $60,000 bis 2026-08-01",
-        "side": "YES",
-        "pnl": 22.26,
-        "reason": "converged"
       }
     ],
     "byReason": {
       "converged": {
-        "n": 87,
-        "pnl": -12.13
+        "n": 88,
+        "pnl": 23.8
       },
       "thesis_break": {
         "n": 4,
@@ -93,14 +93,14 @@
     }
   },
   "btcExposure": {
-    "n": 32,
-    "nLong": 2,
-    "nShort": 30,
-    "longStakeUSD": 200.0,
-    "shortStakeUSD": 3000.0,
-    "netWeighted": -1512.77,
-    "grossWeighted": 1761.4,
-    "netPct": -85.9,
+    "n": 35,
+    "nLong": 3,
+    "nShort": 32,
+    "longStakeUSD": 300.0,
+    "shortStakeUSD": 3200.0,
+    "netWeighted": -1559.46,
+    "grossWeighted": 2026.96,
+    "netPct": -76.9,
     "direction": "SHORT (fällt BTC → Buch gewinnt)",
     "concentrated": true
   }
