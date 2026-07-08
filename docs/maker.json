@@ -1,20 +1,23 @@
 {
-  "generatedAt": "2026-07-08T07:39:49Z",
+  "generatedAt": "2026-07-08T10:57:47Z",
   "count": 127,
   "rewardEligible": 98,
   "takerBreakevenPP": 3.5,
   "sim": {
     "estRewardDayTotal": 3.21,
-    "cumRewardEst": 4.0047,
-    "runs": 30,
+    "cumRewardEst": 4.4059,
+    "runs": 33,
     "assumedSizeUSD": 50.0,
     "dailyYield": 0.003,
     "note": "Reward-Schätzung: anteils-gewichtet (Konkurrenz-Liq), Eligibility = Spread≤maxSpread & Größe≥minSize, Quotes um die MITTE. Absolute Zahl unkalibriert (RICHTUNG stimmt: dünn/neu = mehr). Spread-Ertrag NICHT enthalten — echte Fills+Rewards erst mit Runner."
   },
   "markout": {
-    "fills": 518,
-    "avgMarkoutPP": -5.73,
-    "note": "DIE entscheidende Zahl: pessimistische Fills (Preis handelt DURCH die Quote), Markout = Fill vs. Fair direkt nach dem Move. Negativ = Adverse Selection frisst Spread + Rewards → dann braucht's Delta-Hedge. Grobe Stundenauflösung (echte 1/10-Min erst mit Runner)."
+    "fills": 0,
+    "avgMarkoutPP": null,
+    "avgHedgedPP": null,
+    "avgSelectiveHedgedPP": null,
+    "selFills": 0,
+    "note": "Pessimistische Fills (Preis handelt DURCH die Quote), Markout = Fill vs. Fair nach dem Move. ROH negativ = Adverse Selection. GEHEDGED = BTC-Spot-getriebenen Teil per Delta-Hedge rausgerechnet (idealisiert, ohne Hedge-Kosten). SELEKTIV = nur maker-taugliche Märkte (genug Liq, nicht am Rand, nicht kurz vor Auflösung). Grobe Stundenauflösung."
   },
   "note": "Als Maker keine Fee → schon kleiner Puffer +EV; als Taker erst > ~3,5pp. Reward-berechtigt = Spread ≤ maxSpread & Liq ≥ minSize.",
   "board": [
@@ -37,7 +40,10 @@
       "shareMult": 1.0,
       "liquidityUSD": 0,
       "isNew": false,
-      "score": 82.6
+      "score": 82.6,
+      "spot": 62826,
+      "delta": 1.8e-05,
+      "makerSelect": false
     },
     {
       "market": "dip $85,000 bis 2027-01-01",
@@ -58,7 +64,10 @@
       "shareMult": 1.0,
       "liquidityUSD": 0,
       "isNew": false,
-      "score": 75.2
+      "score": 75.2,
+      "spot": 62826,
+      "delta": 2.4e-05,
+      "makerSelect": false
     },
     {
       "market": "erreicht $75,000 bis 2027-01-01",
@@ -79,7 +88,10 @@
       "shareMult": 1.0,
       "liquidityUSD": 0,
       "isNew": false,
-      "score": 65.9
+      "score": 65.9,
+      "spot": 62826,
+      "delta": 3.8e-05,
+      "makerSelect": false
     },
     {
       "market": "erreicht $80,000 bis 2027-01-01",
@@ -100,7 +112,10 @@
       "shareMult": 1.0,
       "liquidityUSD": 0,
       "isNew": false,
-      "score": 64.9
+      "score": 64.9,
+      "spot": 62826,
+      "delta": 3e-05,
+      "makerSelect": false
     },
     {
       "market": "dip $75,000 bis 2027-01-01",
@@ -121,7 +136,10 @@
       "shareMult": 1.0,
       "liquidityUSD": 0,
       "isNew": false,
-      "score": 50.9
+      "score": 50.9,
+      "spot": 62826,
+      "delta": 3.8e-05,
+      "makerSelect": false
     },
     {
       "market": "dip $60,000 bis 2026-08-01",
@@ -142,7 +160,10 @@
       "shareMult": 1.0,
       "liquidityUSD": 0,
       "isNew": false,
-      "score": 47.5
+      "score": 47.5,
+      "spot": 62826,
+      "delta": -0.00011,
+      "makerSelect": false
     },
     {
       "market": "erreicht $70,000 bis 2027-01-01",
@@ -163,7 +184,10 @@
       "shareMult": 1.0,
       "liquidityUSD": 0,
       "isNew": false,
-      "score": 32.4
+      "score": 32.4,
+      "spot": 62826,
+      "delta": 4.5e-05,
+      "makerSelect": false
     },
     {
       "market": "erreicht $65,000 bis 2027-01-01",
@@ -184,7 +208,10 @@
       "shareMult": 1.0,
       "liquidityUSD": 0,
       "isNew": false,
-      "score": 25.0
+      "score": 25.0,
+      "spot": 62826,
+      "delta": 5e-05,
+      "makerSelect": false
     },
     {
       "market": "dip $60,000 bis 2027-01-01",
@@ -205,7 +232,10 @@
       "shareMult": 1.0,
       "liquidityUSD": 0,
       "isNew": false,
-      "score": 24.2
+      "score": 24.2,
+      "spot": 62826,
+      "delta": -3.5e-05,
+      "makerSelect": false
     },
     {
       "market": "erreicht $62,500 bis 2026-08-01",
@@ -226,7 +256,10 @@
       "shareMult": 1.0,
       "liquidityUSD": 0,
       "isNew": false,
-      "score": 18.3
+      "score": 18.3,
+      "spot": 62826,
+      "delta": -0.000124,
+      "makerSelect": false
     },
     {
       "market": "dip $35,000 bis 2027-01-01",
@@ -247,7 +280,10 @@
       "shareMult": 0.044,
       "liquidityUSD": 109611,
       "isNew": false,
-      "score": 12.5
+      "score": 12.5,
+      "spot": 62826,
+      "delta": -1.4e-05,
+      "makerSelect": false
     },
     {
       "market": "dip $40,000 bis 2027-01-01",
@@ -268,7 +304,10 @@
       "shareMult": 0.066,
       "liquidityUSD": 71315,
       "isNew": false,
-      "score": 10.4
+      "score": 10.4,
+      "spot": 62826,
+      "delta": -1.8e-05,
+      "makerSelect": false
     },
     {
       "market": "dip $65,000 bis 2027-01-01",
@@ -289,7 +328,10 @@
       "shareMult": 1.0,
       "liquidityUSD": 0,
       "isNew": false,
-      "score": 10.0
+      "score": 10.0,
+      "spot": 62826,
+      "delta": 5e-05,
+      "makerSelect": false
     },
     {
       "market": "über $64,000 · 2026-07-09",
@@ -310,7 +352,10 @@
       "shareMult": 0.187,
       "liquidityUSD": 21749,
       "isNew": false,
-      "score": 9.7
+      "score": 9.7,
+      "spot": 62826,
+      "delta": 0.000203,
+      "makerSelect": true
     },
     {
       "market": "dip $60,000 bis 2027-01-01",
@@ -331,7 +376,10 @@
       "shareMult": 1.0,
       "liquidityUSD": 0,
       "isNew": false,
-      "score": 9.2
+      "score": 9.2,
+      "spot": 62826,
+      "delta": -3.5e-05,
+      "makerSelect": false
     },
     {
       "market": "dip $30,000 bis 2027-01-01",
@@ -352,7 +400,10 @@
       "shareMult": 0.06,
       "liquidityUSD": 78976,
       "isNew": false,
-      "score": 9.1
+      "score": 9.1,
+      "spot": 62826,
+      "delta": -1e-05,
+      "makerSelect": false
     },
     {
       "market": "dip $52,500 bis 2026-08-01",
@@ -373,7 +424,10 @@
       "shareMult": 0.117,
       "liquidityUSD": 37888,
       "isNew": false,
-      "score": 8.7
+      "score": 8.7,
+      "spot": 62826,
+      "delta": -4e-05,
+      "makerSelect": true
     },
     {
       "market": "dip $55,000 bis 2026-08-01",
@@ -394,7 +448,10 @@
       "shareMult": 0.093,
       "liquidityUSD": 48827,
       "isNew": false,
-      "score": 8.7
+      "score": 8.7,
+      "spot": 62826,
+      "delta": -5.9e-05,
+      "makerSelect": true
     },
     {
       "market": "dip $50,000 bis 2027-01-01",
@@ -415,7 +472,10 @@
       "shareMult": 0.046,
       "liquidityUSD": 104886,
       "isNew": false,
-      "score": 8.6
+      "score": 8.6,
+      "spot": 62826,
+      "delta": -2.9e-05,
+      "makerSelect": false
     },
     {
       "market": "über $72,000 · 2026-07-14",
@@ -436,7 +496,10 @@
       "shareMult": 0.444,
       "liquidityUSD": 6257,
       "isNew": true,
-      "score": 8.6
+      "score": 8.6,
+      "spot": 62826,
+      "delta": 3e-06,
+      "makerSelect": false
     },
     {
       "market": "über $60,000 · 2026-07-14",
@@ -457,7 +520,10 @@
       "shareMult": 0.308,
       "liquidityUSD": 11253,
       "isNew": true,
-      "score": 8.3
+      "score": 8.3,
+      "spot": 62826,
+      "delta": 8.3e-05,
+      "makerSelect": true
     },
     {
       "market": "dip $45,000 bis 2027-01-01",
@@ -478,7 +544,10 @@
       "shareMult": 0.037,
       "liquidityUSD": 129280,
       "isNew": false,
-      "score": 7.9
+      "score": 7.9,
+      "spot": 62826,
+      "delta": -2.4e-05,
+      "makerSelect": false
     },
     {
       "market": "erreicht $70,000 bis 2027-01-01",
@@ -499,7 +568,10 @@
       "shareMult": 0.149,
       "liquidityUSD": 28499,
       "isNew": false,
-      "score": 7.6
+      "score": 7.6,
+      "spot": 62826,
+      "delta": 4.5e-05,
+      "makerSelect": true
     },
     {
       "market": "über $62,000 · 2026-07-11",
@@ -520,7 +592,10 @@
       "shareMult": 0.181,
       "liquidityUSD": 22660,
       "isNew": false,
-      "score": 6.9
+      "score": 6.9,
+      "spot": 62826,
+      "delta": 0.000161,
+      "makerSelect": true
     },
     {
       "market": "über $68,000 · 2026-07-12",
@@ -541,7 +616,10 @@
       "shareMult": 0.438,
       "liquidityUSD": 6422,
       "isNew": false,
-      "score": 6.9
+      "score": 6.9,
+      "spot": 62826,
+      "delta": 1.9e-05,
+      "makerSelect": false
     },
     {
       "market": "dip $50,000 bis 2026-08-01",
@@ -562,7 +640,10 @@
       "shareMult": 0.088,
       "liquidityUSD": 51969,
       "isNew": false,
-      "score": 6.8
+      "score": 6.8,
+      "spot": 62826,
+      "delta": -2.6e-05,
+      "makerSelect": false
     },
     {
       "market": "über $72,000 · 2026-07-12",
@@ -583,7 +664,10 @@
       "shareMult": 0.409,
       "liquidityUSD": 7225,
       "isNew": false,
-      "score": 6.6
+      "score": 6.6,
+      "spot": 62826,
+      "delta": 1e-06,
+      "makerSelect": false
     },
     {
       "market": "über $62,000 · 2026-07-14",
@@ -604,7 +688,10 @@
       "shareMult": 0.197,
       "liquidityUSD": 20339,
       "isNew": true,
-      "score": 6.3
+      "score": 6.3,
+      "spot": 62826,
+      "delta": 0.000122,
+      "makerSelect": true
     },
     {
       "market": "über $72,000 · 2026-07-13",
@@ -625,7 +712,10 @@
       "shareMult": 0.401,
       "liquidityUSD": 7455,
       "isNew": true,
-      "score": 6.3
+      "score": 6.3,
+      "spot": 62826,
+      "delta": 2e-06,
+      "makerSelect": false
     },
     {
       "market": "dip $57,500 bis 2026-08-01",
@@ -646,7 +736,10 @@
       "shareMult": 0.08,
       "liquidityUSD": 57854,
       "isNew": false,
-      "score": 6.2
+      "score": 6.2,
+      "spot": 62826,
+      "delta": -8.4e-05,
+      "makerSelect": true
     },
     {
       "market": "über $64,000 · 2026-07-14",
@@ -667,7 +760,10 @@
       "shareMult": 0.301,
       "liquidityUSD": 11606,
       "isNew": true,
-      "score": 6.0
+      "score": 6.0,
+      "spot": 62826,
+      "delta": 0.000127,
+      "makerSelect": true
     },
     {
       "market": "über $74,000 · 2026-07-14",
@@ -688,7 +784,10 @@
       "shareMult": 0.302,
       "liquidityUSD": 11557,
       "isNew": true,
-      "score": 5.8
+      "score": 5.8,
+      "spot": 62826,
+      "delta": 0.0,
+      "makerSelect": false
     },
     {
       "market": "über $68,000 · 2026-07-14",
@@ -709,7 +808,10 @@
       "shareMult": 0.297,
       "liquidityUSD": 11828,
       "isNew": true,
-      "score": 5.8
+      "score": 5.8,
+      "spot": 62826,
+      "delta": 2.9e-05,
+      "makerSelect": false
     },
     {
       "market": "über $62,000 · 2026-07-13",
@@ -730,7 +832,10 @@
       "shareMult": 0.182,
       "liquidityUSD": 22419,
       "isNew": true,
-      "score": 5.7
+      "score": 5.7,
+      "spot": 62826,
+      "delta": 0.000132,
+      "makerSelect": true
     },
     {
       "market": "über $64,000 · 2026-07-10",
@@ -751,7 +856,10 @@
       "shareMult": 0.197,
       "liquidityUSD": 20380,
       "isNew": false,
-      "score": 5.7
+      "score": 5.7,
+      "spot": 62826,
+      "delta": 0.00018,
+      "makerSelect": true
     },
     {
       "market": "über $60,000 · 2026-07-11",
@@ -772,7 +880,10 @@
       "shareMult": 0.195,
       "liquidityUSD": 20588,
       "isNew": false,
-      "score": 5.6
+      "score": 5.6,
+      "spot": 62826,
+      "delta": 8.5e-05,
+      "makerSelect": true
     },
     {
       "market": "dip $60,000 bis 2026-08-01",
@@ -793,7 +904,10 @@
       "shareMult": 0.141,
       "liquidityUSD": 30496,
       "isNew": true,
-      "score": 5.6
+      "score": 5.6,
+      "spot": 62826,
+      "delta": -0.00011,
+      "makerSelect": true
     },
     {
       "market": "über $70,000 · 2026-07-14",
@@ -814,7 +928,10 @@
       "shareMult": 0.308,
       "liquidityUSD": 11208,
       "isNew": true,
-      "score": 5.6
+      "score": 5.6,
+      "spot": 62826,
+      "delta": 1.1e-05,
+      "makerSelect": false
     },
     {
       "market": "über $62,000 · 2026-07-09",
@@ -835,7 +952,10 @@
       "shareMult": 0.175,
       "liquidityUSD": 23528,
       "isNew": false,
-      "score": 5.5
+      "score": 5.5,
+      "spot": 62826,
+      "delta": 0.000226,
+      "makerSelect": true
     },
     {
       "market": "über $62,000 · 2026-07-12",
@@ -856,7 +976,10 @@
       "shareMult": 0.177,
       "liquidityUSD": 23279,
       "isNew": false,
-      "score": 5.5
+      "score": 5.5,
+      "spot": 62826,
+      "delta": 0.000144,
+      "makerSelect": true
     },
     {
       "market": "über $64,000 · 2026-07-11",
@@ -877,7 +1000,10 @@
       "shareMult": 0.192,
       "liquidityUSD": 20995,
       "isNew": false,
-      "score": 5.4
+      "score": 5.4,
+      "spot": 62826,
+      "delta": 0.000165,
+      "makerSelect": true
     },
     {
       "market": "über $68,000 · 2026-07-11",
@@ -898,7 +1024,10 @@
       "shareMult": 0.301,
       "liquidityUSD": 11584,
       "isNew": false,
-      "score": 5.3
+      "score": 5.3,
+      "spot": 62826,
+      "delta": 1.3e-05,
+      "makerSelect": false
     },
     {
       "market": "über $60,000 · 2026-07-12",
@@ -919,7 +1048,10 @@
       "shareMult": 0.196,
       "liquidityUSD": 20508,
       "isNew": false,
-      "score": 5.2
+      "score": 5.2,
+      "spot": 62826,
+      "delta": 8.5e-05,
+      "makerSelect": true
     },
     {
       "market": "dip $55,000 bis 2027-01-01",
@@ -940,7 +1072,10 @@
       "shareMult": 0.045,
       "liquidityUSD": 106862,
       "isNew": false,
-      "score": 4.9
+      "score": 4.9,
+      "spot": 62826,
+      "delta": -3.3e-05,
+      "makerSelect": false
     },
     {
       "market": "über $58,000 · 2026-07-14",
@@ -961,7 +1096,10 @@
       "shareMult": 0.205,
       "liquidityUSD": 19400,
       "isNew": true,
-      "score": 4.9
+      "score": 4.9,
+      "spot": 62826,
+      "delta": 4.7e-05,
+      "makerSelect": false
     },
     {
       "market": "über $66,000 · 2026-07-11",
@@ -982,7 +1120,10 @@
       "shareMult": 0.195,
       "liquidityUSD": 20701,
       "isNew": false,
-      "score": 4.9
+      "score": 4.9,
+      "spot": 62826,
+      "delta": 5.9e-05,
+      "makerSelect": false
     },
     {
       "market": "erreicht $65,000 bis 2027-01-01",
@@ -1003,7 +1144,10 @@
       "shareMult": 0.133,
       "liquidityUSD": 32611,
       "isNew": false,
-      "score": 4.9
+      "score": 4.9,
+      "spot": 62826,
+      "delta": 5e-05,
+      "makerSelect": false
     },
     {
       "market": "über $62,000 · 2026-07-08",
@@ -1024,7 +1168,10 @@
       "shareMult": 0.155,
       "liquidityUSD": 27216,
       "isNew": false,
-      "score": 4.9
+      "score": 4.9,
+      "spot": 62826,
+      "delta": 0.000286,
+      "makerSelect": false
     },
     {
       "market": "erreicht $85,000 bis 2027-01-01",
@@ -1045,7 +1192,10 @@
       "shareMult": 0.197,
       "liquidityUSD": 20399,
       "isNew": false,
-      "score": 4.8
+      "score": 4.8,
+      "spot": 62826,
+      "delta": 2.4e-05,
+      "makerSelect": true
     },
     {
       "market": "über $62,000 · 2026-07-10",
@@ -1066,7 +1216,10 @@
       "shareMult": 0.175,
       "liquidityUSD": 23614,
       "isNew": false,
-      "score": 4.8
+      "score": 4.8,
+      "spot": 62826,
+      "delta": 0.000183,
+      "makerSelect": true
     },
     {
       "market": "dip $47,500 bis 2026-08-01",
@@ -1087,7 +1240,10 @@
       "shareMult": 0.068,
       "liquidityUSD": 68585,
       "isNew": false,
-      "score": 4.7
+      "score": 4.7,
+      "spot": 62826,
+      "delta": -1.6e-05,
+      "makerSelect": false
     },
     {
       "market": "über $52,000 · 2026-07-12",
@@ -1108,7 +1264,10 @@
       "shareMult": 0.251,
       "liquidityUSD": 14922,
       "isNew": false,
-      "score": 4.7
+      "score": 4.7,
+      "spot": 62826,
+      "delta": 2e-06,
+      "makerSelect": false
     },
     {
       "market": "über $64,000 · 2026-07-08",
@@ -1129,7 +1288,10 @@
       "shareMult": 0.173,
       "liquidityUSD": 23846,
       "isNew": false,
-      "score": 4.6
+      "score": 4.6,
+      "spot": 62826,
+      "delta": 0.000154,
+      "makerSelect": false
     },
     {
       "market": "über $72,000 · 2026-07-11",
@@ -1150,7 +1312,10 @@
       "shareMult": 0.265,
       "liquidityUSD": 13859,
       "isNew": false,
-      "score": 4.5
+      "score": 4.5,
+      "spot": 62826,
+      "delta": 1e-06,
+      "makerSelect": false
     },
     {
       "market": "über $70,000 · 2026-07-11",
@@ -1171,7 +1336,10 @@
       "shareMult": 0.208,
       "liquidityUSD": 19033,
       "isNew": false,
-      "score": 4.5
+      "score": 4.5,
+      "spot": 62826,
+      "delta": 6e-06,
+      "makerSelect": false
     },
     {
       "market": "über $58,000 · 2026-07-13",
@@ -1192,7 +1360,10 @@
       "shareMult": 0.198,
       "liquidityUSD": 20283,
       "isNew": true,
-      "score": 4.4
+      "score": 4.4,
+      "spot": 62826,
+      "delta": 4.5e-05,
+      "makerSelect": false
     },
     {
       "market": "über $56,000 · 2026-07-14",
@@ -1213,7 +1384,10 @@
       "shareMult": 0.205,
       "liquidityUSD": 19378,
       "isNew": true,
-      "score": 4.4
+      "score": 4.4,
+      "spot": 62826,
+      "delta": 2.5e-05,
+      "makerSelect": false
     },
     {
       "market": "über $58,000 · 2026-07-11",
@@ -1234,7 +1408,10 @@
       "shareMult": 0.194,
       "liquidityUSD": 20741,
       "isNew": false,
-      "score": 4.4
+      "score": 4.4,
+      "spot": 62826,
+      "delta": 3.7e-05,
+      "makerSelect": false
     },
     {
       "market": "erreicht $80,000 bis 2027-01-01",
@@ -1255,7 +1432,10 @@
       "shareMult": 0.15,
       "liquidityUSD": 28372,
       "isNew": false,
-      "score": 4.3
+      "score": 4.3,
+      "spot": 62826,
+      "delta": 3e-05,
+      "makerSelect": true
     },
     {
       "market": "über $66,000 · 2026-07-14",
@@ -1276,7 +1456,10 @@
       "shareMult": 0.213,
       "liquidityUSD": 18449,
       "isNew": true,
-      "score": 4.3
+      "score": 4.3,
+      "spot": 62826,
+      "delta": 7.5e-05,
+      "makerSelect": true
     }
   ]
 }

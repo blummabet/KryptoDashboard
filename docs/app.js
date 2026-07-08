@@ -202,10 +202,32 @@
     const moTxt = mo.avgMarkoutPP == null ? "—" : (mo.avgMarkoutPP > 0 ? "+" : "") + mo.avgMarkoutPP + "pp";
     const moCol = mo.avgMarkoutPP == null ? "var(--muted)" : (mo.avgMarkoutPP >= 0 ? "var(--pos)" : "var(--neg)");
     $("makerHint").innerHTML = ((mk && mk.count) || 0) + " Märkte · " + ((mk && mk.rewardEligible) || 0)
-      + " reward-berechtigt · <b style='color:var(--accent)'>~" + day + "/Tag</b> Rewards · kumuliert <b style='color:var(--accent)'>" + cum + "</b>"
-      + " · Markout <b style='color:" + moCol + "'>" + moTxt + "</b> (" + (mo.fills || 0) + " Fills)";
+      + " reward-berechtigt · <b style='color:var(--accent)'>~" + day + "/Tag</b> Rewards · kumuliert <b style='color:var(--accent)'>" + cum + "</b>";
+
+    // Markout-Vergleich: roh → gehedged → selektiv+gehedged. Zeigt, ob Adverse Selection hedgebar ist.
+    const ppTxt = (v) => v == null ? "—" : (v > 0 ? "+" : "") + v + "pp";
+    const ppCol = (v) => v == null ? "var(--muted)" : (v >= 0 ? "var(--pos)" : "var(--neg)");
+    const nSel = mk && mk.board ? mk.board.filter(x => x.makerSelect).length : 0;
+    const cell = (label, v, hint) => `<div style="flex:1;min-width:150px">
+      <div class="lbl">${label}</div>
+      <div class="v" style="color:${ppCol(v)}">${ppTxt(v)}</div>
+      <div style="font-size:11px;color:var(--muted);margin-top:2px">${hint}</div></div>`;
+    const verdict = (mo.avgSelectiveHedgedPP != null && mo.avgSelectiveHedgedPP >= 0)
+      ? vchip("good", "hedgebar → Making trägt")
+      : (mo.avgHedgedPP != null && mo.avgHedgedPP > (mo.avgMarkoutPP == null ? -99 : mo.avgMarkoutPP)
+        ? vchip("early", "Hedge hilft, noch nicht positiv") : vchip("watch", "sammelt Fills"));
+    $("makerMarkout").innerHTML = `
+      <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start;margin:2px 0 8px">
+        ${cell("Roh", mo.avgMarkoutPP, (mo.fills || 0) + " Fills · ungehedged")}
+        <div style="font-size:20px;color:var(--muted);align-self:center">→</div>
+        ${cell("Delta-gehedged", mo.avgHedgedPP, "BTC-Spot-Teil rausgerechnet")}
+        <div style="font-size:20px;color:var(--muted);align-self:center">→</div>
+        ${cell("Selektiv + gehedged", mo.avgSelectiveHedgedPP, (mo.selFills || 0) + " Fills · " + nSel + " Märkte tauglich")}
+      </div>
+      <div>${verdict}</div>`;
+
     $("makerRows").innerHTML = b.length ? b.map(x => `<tr>
-      <td><div class="mkt-sub">${famChip(x.family)}${x.isNew ? '<span class="fam" style="background:rgba(76,141,255,.16);color:var(--accent2)">NEU</span>' : ""}${esc(x.market)}</div></td>
+      <td><div class="mkt-sub">${famChip(x.family)}${x.makerSelect ? '<span class="fam" style="background:rgba(47,208,138,.16);color:var(--pos)" title="maker-tauglich: genug Liq, nicht am Rand, nicht kurz vor Auflösung">tauglich</span>' : ""}${x.isNew ? '<span class="fam" style="background:rgba(76,141,255,.16);color:var(--accent2)">NEU</span>' : ""}${esc(x.market)}</div></td>
       <td class="r num">${pct(x.fair)}</td>
       <td class="r num">${x.bid != null ? cents(x.bid) + "/" + cents(x.ask) : "—"}</td>
       <td class="r num">${cents(x.quoteBid)}/${cents(x.quoteAsk)}</td>
@@ -293,9 +315,13 @@
         note: "Polys eigene Preisleiter widerspricht sich → risikoarm. Sauberste Kante, aber selten; Ausführen braucht den Runner. (" + (as.openCount || 0) + " offen)" },
       { name: "Maker-Rewards", val: ms.estRewardDayTotal != null ? "~$" + ms.estRewardDayTotal.toFixed(2) + "/Tag" : "—", state: "watch",
         note: "Geschätzte Belohnung fürs Quoten (Poly zahlt Maker). Nur Schätzung — echt erst mit Runner. Richtung stimmt, Höhe unsicher." },
-      { name: "Maker netto (Markout)", val: mkNet != null ? (mkNet > 0 ? "+" : "") + mkNet + "pp" : "—",
-        state: mkNet == null ? "watch" : (mkNet >= 0 ? "good" : "bad"),
-        note: "DIE Schlüsselzahl fürs Maken: negativ = wir werden abgeräumt (Adverse Selection frisst die Rewards). Wartet auf genug Fills." },
+      { name: "Maker netto (Markout)",
+        val: (mo.avgSelectiveHedgedPP != null ? mo.avgSelectiveHedgedPP : (mo.avgHedgedPP != null ? mo.avgHedgedPP : mkNet)) != null
+          ? ((v => (v > 0 ? "+" : "") + v + "pp")(mo.avgSelectiveHedgedPP != null ? mo.avgSelectiveHedgedPP : (mo.avgHedgedPP != null ? mo.avgHedgedPP : mkNet))) : "—",
+        state: (mo.avgSelectiveHedgedPP != null ? mo.avgSelectiveHedgedPP : mo.avgHedgedPP) == null
+          ? (mkNet == null ? "watch" : (mkNet >= 0 ? "good" : "bad"))
+          : ((mo.avgSelectiveHedgedPP != null ? mo.avgSelectiveHedgedPP : mo.avgHedgedPP) >= 0 ? "good" : "bad"),
+        note: "Nach Delta-Hedge + Selektivität (roh " + (mkNet != null ? mkNet + "pp" : "—") + "). Positiv = Adverse Selection ist hedgebar → Making trägt. Details im Maker-Tab." },
       { name: "Neu-Markt-Lag", val: money(ps.newMarketPnl), state: "early",
         note: "Frische Märkte starten träge bei ~50¢. Sieht ertragreich aus, ist aber evtl. nur Illiquidität — erst über Auflösungen beweisen. (" + (ps.newMarketCount || 0) + " Trades)" },
       { name: "Multi-Outcome Basket-Arb",

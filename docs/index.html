@@ -299,6 +299,11 @@
     <!-- MAKER-BOARD -->
     <div id="view-maker" class="hidden">
       <div class="explain">Statt den Spread zu bezahlen (Taker-Fee), stellst du als <b>Maker</b> Limit-Orders an unserer Fair und wirst dafür bezahlt: keine Fee + Anteil an Polys Reward-Pool (>$5 Mio./Monat, täglich ausgezahlt). Dieses Board rankt, wo Making am lohnendsten wäre, mit Vorschlags-Quotes und Reward-Berechtigung. Echtes Quoten kommt mit dem self-hosted Runner — das hier ist die Vorschau.</div>
+      <div class="card" style="margin-bottom:16px">
+        <div class="card-h"><span class="t">🎯 Markout — kann Making funktionieren?</span><span class="badge b-edge">Delta-Hedge-Test</span></div>
+        <div id="makerMarkout"><div class="empty">Lade…</div></div>
+        <div class="ctx-note">Markout = was ein Fill nach dem Move wirklich wert ist. <b>Roh</b> = negativ heißt Adverse Selection. <b>Delta-gehedged</b> = BTC-Spot-getriebenen Teil auf Binance gegen-gehedgt (idealisiert, ohne Hedge-Kosten). <b>Selektiv+gehedged</b> = nur maker-taugliche Märkte. Wird gehedged/selektiv positiv, ist die Adverse Selection <b>hedgebar</b> → Making trägt. Bleibt es negativ, ist sie echt-toxisch. Baut sich über die Läufe auf.</div>
+      </div>
       <div class="card">
         <div class="card-h"><span class="t">Maker-Board</span><span class="badge b-edge">fee-vorteilhaft</span>
           <span class="hint" id="makerHint"></span></div>
