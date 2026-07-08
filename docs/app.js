@@ -214,6 +214,36 @@
       : '<tr><td colspan="6" class="empty">Kein Maker-Board — noch keine Märkte mit Fair.</td></tr>';
   }
 
+  // ---- Analyse: CLV-vs-P&L-Lücke + BTC-Klumpenrisiko -------------------------------------
+  function renderAnalysis(an) {
+    const a = (an && an.attribution) || {}, e = (an && an.btcExposure) || {};
+    if (a.nClosed) {
+      const feeVerd = a.feeEatsEdge ? vchip("bad", "Fee frisst den Edge") : vchip("good", "Edge > Fee");
+      $("attribBody").innerHTML = `
+        <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:baseline;margin:2px 0 12px">
+          <div><div class="lbl">Brutto (vor Fee)</div><div class="v pos">${money(a.grossBeforeFees)}</div></div>
+          <div style="font-size:20px;color:var(--muted)">−</div>
+          <div><div class="lbl">Taker-Fees</div><div class="v neg">−$${Math.abs(a.feesTotal).toFixed(2)}</div></div>
+          <div style="font-size:20px;color:var(--muted)">=</div>
+          <div><div class="lbl">Netto realisiert</div><div class="v ${cls(a.realizedTotal)}">${money(a.realizedTotal)}</div></div>
+        </div>
+        <div style="margin-bottom:8px">${feeVerd} &nbsp;<b>Ø Fee ${a.avgFeePP}pp</b> vs <b>Ø Einstiegs-Edge ${a.avgEntryEdgePP}pp</b> — die Taker-Fee ist größer als die Kante.</div>
+        <div class="ctx-note">Trefferquote ${Math.round(a.winRate * 100)} % · Payoff ${a.payoffRatio} (Gewinner ≈ Verlierer gleich groß) · die 5 schlimmsten Trades = ${money(a.worstFiveSum)} (${Math.round(a.tailLossShare * 100)} % aller Verluste). <b>Vor Fee leicht positiv (${money(a.grossBeforeFees)}), nach Taker-Fee negativ</b> — genau die These: Taker-Konvergenz ist nach Fee tot, der tragfähige Weg ist Maker (zahlt keine Fee).</div>`;
+    }
+    if (e.n) {
+      const long = e.longStakeUSD || 0, short = e.shortStakeUSD || 0, tot = (long + short) || 1;
+      const lp = Math.round(long / tot * 100), sp = 100 - lp;
+      const verd = e.concentrated ? vchip("bad", "einseitige BTC-Wette") : vchip("good", "ausgewogen");
+      const fallsSteigt = e.netPct < 0 ? "FÄLLT" : "STEIGT";
+      $("exposureBody").innerHTML = `
+        <div style="font-size:26px;font-weight:800;margin:2px 0 8px">Netto-BTC ${e.netPct > 0 ? "+" : ""}${e.netPct} % <span style="font-size:14px;color:var(--muted)">${(e.direction || "").split(" ")[0]}</span></div>
+        <div style="display:flex;height:14px;border-radius:7px;overflow:hidden;margin-bottom:8px" title="grün = bullish, rot = bearish">
+          <div style="width:${lp}%;background:var(--pos)"></div><div style="width:${sp}%;background:var(--neg)"></div></div>
+        <div style="margin-bottom:8px">${verd} &nbsp;${e.nLong} bullish / ${e.nShort} bearish von ${e.n} offenen Positionen</div>
+        <div class="ctx-note">Fast alle offenen Positionen ziehen in dieselbe Richtung: das Buch gewinnt, wenn BTC <b>${fallsSteigt}</b>. Das ist <b>keine Fehlbepreisungs-Ernte, sondern eine gerichtete BTC-Wette</b> — daher die großen Tagesschwankungen (z.B. −$742). Sauberes Edge-Ernten wäre marktneutral (long ≈ short).</div>`;
+    }
+  }
+
   // ---- Verlauf Tag für Tag ----------------------------------------------------------------
   function renderTrend(sb) {
     const days = (sb && sb.days) || [];
@@ -316,8 +346,8 @@
       .then(r => r.ok ? r.json() : Promise.reject(r.status))
       .catch(() => fetch(name + bust).then(r => r.ok ? r.json() : Promise.reject(r.status)));
   };
-  Promise.allSettled([j("paper.json"), j("clv.json"), j("markets.json"), j("arb.json"), j("maker.json"), j("baskets.json"), j("scoreboard.json")])
-    .then(([pp, cl, mk, ar, ma, bk, sb]) => {
+  Promise.allSettled([j("paper.json"), j("clv.json"), j("markets.json"), j("arb.json"), j("maker.json"), j("baskets.json"), j("scoreboard.json"), j("analysis.json")])
+    .then(([pp, cl, mk, ar, ma, bk, sb, an]) => {
       const paper = pp.status === "fulfilled" ? pp.value : {};
       const clv = cl.status === "fulfilled" ? cl.value : {};
       const markets = mk.status === "fulfilled" ? mk.value : {};
@@ -325,9 +355,11 @@
       const maker = ma.status === "fulfilled" ? ma.value : {};
       const baskets = bk.status === "fulfilled" ? bk.value : {};
       const scoreboard = sb.status === "fulfilled" ? sb.value : {};
+      const analysis = an.status === "fulfilled" ? an.value : {};
       renderHero(paper, clv);
       renderIncome(paper, arb, maker, clv, baskets);
       renderTrend(scoreboard);
+      renderAnalysis(analysis);
       renderStrat(paper, arb, maker, markets);
       renderPortfolio(paper);
       renderRadar(markets, clv.trends || {});

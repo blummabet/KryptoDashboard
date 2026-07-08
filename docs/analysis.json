@@ -1,0 +1,107 @@
+{
+  "generatedAt": "2026-07-08 09:51 UTC",
+  "attribution": {
+    "nClosed": 89,
+    "realizedTotal": -90.88,
+    "feesTotal": 345.15,
+    "grossBeforeFees": 254.27,
+    "feeDragPct": 135.74,
+    "winRate": 0.449,
+    "nWin": 40,
+    "nLoss": 49,
+    "avgWin": 16.27,
+    "avgLoss": -15.14,
+    "payoffRatio": 1.07,
+    "avgFeePP": 3.88,
+    "avgEntryEdgePP": 2.49,
+    "feeEatsEdge": true,
+    "worstFiveSum": -293.63,
+    "tailLossShare": 0.396,
+    "worst": [
+      {
+        "market": "über $62,000 · 2026-07-05",
+        "side": "NO",
+        "pnl": -88.92,
+        "reason": "converged"
+      },
+      {
+        "market": "über $58,000 · 2026-07-10",
+        "side": "NO",
+        "pnl": -56.03,
+        "reason": "converged"
+      },
+      {
+        "market": "über $62,000 · 2026-07-12",
+        "side": "NO",
+        "pnl": -53.73,
+        "reason": "converged"
+      },
+      {
+        "market": "erreicht $65,000 bis 2026-08-01",
+        "side": "NO",
+        "pnl": -50.22,
+        "reason": "converged"
+      },
+      {
+        "market": "erreicht $65,000 bis 2027-01-01",
+        "side": "NO",
+        "pnl": -44.73,
+        "reason": "converged"
+      }
+    ],
+    "best": [
+      {
+        "market": "über $64,000 · 2026-07-05",
+        "side": "YES",
+        "pnl": 230.17,
+        "reason": "converged"
+      },
+      {
+        "market": "über $62,000 · 2026-07-11",
+        "side": "YES",
+        "pnl": 48.43,
+        "reason": "converged"
+      },
+      {
+        "market": "über $58,000 · 2026-07-11",
+        "side": "NO",
+        "pnl": 35.17,
+        "reason": "converged"
+      },
+      {
+        "market": "über $62,000 · 2026-07-07",
+        "side": "YES",
+        "pnl": 24.66,
+        "reason": "converged"
+      },
+      {
+        "market": "dip $60,000 bis 2026-08-01",
+        "side": "YES",
+        "pnl": 22.26,
+        "reason": "converged"
+      }
+    ],
+    "byReason": {
+      "converged": {
+        "n": 85,
+        "pnl": -34.6
+      },
+      "thesis_break": {
+        "n": 4,
+        "pnl": -56.28
+      }
+    }
+  },
+  "btcExposure": {
+    "n": 29,
+    "nLong": 1,
+    "nShort": 28,
+    "longStakeUSD": 100.0,
+    "shortStakeUSD": 2800.0,
+    "netWeighted": -1341.98,
+    "grossWeighted": 1516.06,
+    "netPct": -88.5,
+    "direction": "SHORT (fällt BTC → Buch gewinnt)",
+    "concentrated": true
+  }
+}
