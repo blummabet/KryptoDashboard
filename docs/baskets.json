@@ -1,23 +1,57 @@
 {
-  "generatedAt": "2026-07-10 21:17 UTC",
+  "generatedAt": "2026-07-10 23:11 UTC",
   "scanned": 600,
-  "count": 14,
+  "count": 16,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
     {
       "side": "buy",
-      "sumProb": 0.013,
-      "grossPP": 98.7,
-      "feePP": 0.07,
-      "netPP": 98.64,
+      "sumProb": 0.006,
+      "grossPP": 99.4,
+      "feePP": 0.02,
+      "netPP": 99.38,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x45ec1f7704d0ddd047e70443e830028d8801671283883ad1b46a29659488b600",
+      "event": "Venezuela leader end of 2026?",
+      "slug": "venezuela-leader-end-of-2026",
+      "endDate": "2026-12-31T00:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Diosdado Cabello Rondón",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "Evan Pettus",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "Richard Grenell",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.012,
+      "grossPP": 98.8,
+      "feePP": 0.06,
+      "netPP": 98.74,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2e8ee0b78c06349677514c81455c1256e07e0b2cf4c9cde23fd23f65eda05200",
       "event": "F1 Drivers' Champion",
       "slug": "2026-f1-drivers-champion",
       "endDate": "2026-12-06T00:00:00Z",
-      "n": 6,
+      "n": 5,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
@@ -41,11 +75,6 @@
           "name": "Nico Hülkenberg",
           "bid": 0.001,
           "ask": 0.002
-        },
-        {
-          "name": "Franco Colapinto",
-          "bid": null,
-          "ask": 0.001
         },
         {
           "name": "Isack Hadjar",
@@ -105,10 +134,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.03,
-      "grossPP": 97.0,
-      "feePP": 0.21,
-      "netPP": 96.79,
+      "sumProb": 0.022,
+      "grossPP": 97.8,
+      "feePP": 0.15,
+      "netPP": 97.65,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x55ab76d092f682bf5cbb7e14f13ee12f8410ce7cc1b7906f23b8fb56c11f6500",
@@ -123,7 +152,12 @@
         {
           "name": "Alesa Mengesha",
           "bid": 0.003,
-          "ask": 0.02
+          "ask": 0.01
+        },
+        {
+          "name": "Demeke Mekonnen",
+          "bid": 0.001,
+          "ask": 0.005
         },
         {
           "name": "Adanech Abiebie",
@@ -132,37 +166,32 @@
         },
         {
           "name": "Gedion Timothewos",
-          "bid": 0.001,
-          "ask": 0.003
-        },
-        {
-          "name": "Demeke Mekonnen",
-          "bid": 0.001,
+          "bid": 0.002,
           "ask": 0.003
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.045,
-      "grossPP": 95.5,
-      "feePP": 0.22,
-      "netPP": 95.28,
+      "sumProb": 0.041,
+      "grossPP": 95.9,
+      "feePP": 0.21,
+      "netPP": 95.69,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
       "event": "Ballon d'Or Winner 2026",
       "slug": "ballon-dor-winner-2026",
       "endDate": "2026-10-31T00:00:00Z",
-      "n": 5,
+      "n": 4,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "Michael Olise",
-          "bid": 0.034,
-          "ask": 0.036
+          "bid": 0.033,
+          "ask": 0.034
         },
         {
           "name": "Mohamed Salah",
@@ -175,11 +204,6 @@
           "ask": 0.002
         },
         {
-          "name": "Julian Alvarez",
-          "bid": 0.001,
-          "ask": 0.002
-        },
-        {
           "name": "Luis Diaz",
           "bid": 0.001,
           "ask": 0.002
@@ -188,132 +212,98 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.055,
-      "grossPP": 94.5,
-      "feePP": 0.28,
-      "netPP": 94.22,
+      "sumProb": 0.135,
+      "grossPP": 86.5,
+      "feePP": 0.68,
+      "netPP": 85.83,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xbb01d92208e308f14eb9917889bb2b449395207a26fe2a7990c3d5def7f74c00",
-      "event": "NBA: 2027 Champion",
-      "slug": "nba-2027-champion",
-      "endDate": "2027-07-01T00:00:00Z",
-      "n": 3,
+      "negRiskMarketID": "0x9defd5d00109fe066229142f39e86faa3f4b3ae499cb3dc0c5faa1235cc75300",
+      "event": "World Cup: Golden Ball Winner",
+      "slug": "world-cup-golden-ball-winner-20260603194031758",
+      "endDate": "2026-07-20T03:59:00Z",
+      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Toronto Raptors",
-          "bid": 0.04,
-          "ask": 0.041
+          "name": "Harry Kane",
+          "bid": 0.072,
+          "ask": 0.073
         },
         {
-          "name": "Milwaukee Bucks",
-          "bid": 0.006,
-          "ask": 0.007
+          "name": "Lamine Yamal",
+          "bid": 0.024,
+          "ask": 0.027
         },
         {
-          "name": "Sacramento Kings",
-          "bid": 0.006,
-          "ask": 0.007
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.101,
-      "grossPP": 89.9,
-      "feePP": 0.51,
-      "netPP": 89.4,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x7ad46529f01a320dd0ebe1a3852fa5029a463ab24695e42b379d4ac567f91100",
-      "event": "Argentina vs. Switzerland - Exact Score",
-      "slug": "fifwc-arg-che-2026-07-11-exact-score",
-      "endDate": "2026-07-12T01:00:00Z",
-      "n": 4,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Argentina 3 - 0 Switzerland",
-          "bid": 0.05,
-          "ask": 0.06
+          "name": "Rodri",
+          "bid": 0.011,
+          "ask": 0.016
         },
         {
-          "name": "Argentina 3 - 2 Switzerland",
-          "bid": 0.021,
-          "ask": 0.022
-        },
-        {
-          "name": "Argentina 2 - 3 Switzerland",
-          "bid": 0.01,
-          "ask": 0.011
-        },
-        {
-          "name": "Argentina 3 - 3 Switzerland",
-          "bid": 0.007,
-          "ask": 0.008
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.434,
-      "grossPP": 56.6,
-      "feePP": 1.74,
-      "netPP": 54.86,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
-      "event": "Next French Presidential Election",
-      "slug": "next-french-presidential-election",
-      "endDate": "2027-04-30T00:00:00Z",
-      "n": 19,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Marine Le Pen",
-          "bid": 0.274,
-          "ask": 0.275
-        },
-        {
-          "name": "Jordan Bardella",
-          "bid": 0.042,
-          "ask": 0.043
-        },
-        {
-          "name": "François Hollande",
-          "bid": 0.027,
-          "ask": 0.028
-        },
-        {
-          "name": "David Lisnard",
+          "name": "Ousmane Dembélé",
           "bid": 0.013,
-          "ask": 0.014
+          "ask": 0.015
         },
         {
-          "name": "Éric Zemmour",
-          "bid": 0.008,
-          "ask": 0.009
-        },
-        {
-          "name": "Marine Tondelier",
-          "bid": 0.005,
-          "ask": 0.006
+          "name": "Pedri",
+          "bid": 0.001,
+          "ask": 0.004
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.517,
-      "grossPP": 48.3,
-      "feePP": 2.07,
-      "netPP": 46.23,
+      "sumProb": 0.161,
+      "grossPP": 83.9,
+      "feePP": 0.64,
+      "netPP": 83.26,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x966a3221e05d8d0579854c4952085331da2a42989dee0fa033d24cada9dfca00",
+      "event": "Brazil Presidential Election",
+      "slug": "brazil-presidential-election",
+      "endDate": "2026-10-04T00:00:00Z",
+      "n": 5,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Renan Santos",
+          "bid": 0.1,
+          "ask": 0.101
+        },
+        {
+          "name": "Jair Bolsonaro",
+          "bid": 0.029,
+          "ask": 0.03
+        },
+        {
+          "name": "Ronaldo Caiado",
+          "bid": 0.014,
+          "ask": 0.016
+        },
+        {
+          "name": "Michelle Bolsonaro",
+          "bid": 0.01,
+          "ask": 0.012
+        },
+        {
+          "name": "Tereza Cristina",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.341,
+      "grossPP": 65.9,
+      "feePP": 1.36,
+      "netPP": 64.54,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
@@ -325,11 +315,6 @@
       "completeAsk": true,
       "tradable": false,
       "top": [
-        {
-          "name": "Gavin Newsom",
-          "bid": 0.184,
-          "ask": 0.185
-        },
         {
           "name": "Pete Buttigieg",
           "bid": 0.05,
@@ -354,22 +339,125 @@
           "name": "Stephen A. Smith",
           "bid": 0.01,
           "ask": 0.011
+        },
+        {
+          "name": "J.B. Pritzker",
+          "bid": 0.009,
+          "ask": 0.01
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.577,
-      "grossPP": 42.3,
-      "feePP": 2.31,
-      "netPP": 39.99,
+      "sumProb": 0.383,
+      "grossPP": 61.7,
+      "feePP": 1.92,
+      "netPP": 59.79,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x7ad46529f01a320dd0ebe1a3852fa5029a463ab24695e42b379d4ac567f91100",
+      "event": "Argentina vs. Switzerland - Exact Score",
+      "slug": "fifwc-arg-che-2026-07-11-exact-score",
+      "endDate": "2026-07-12T01:00:00Z",
+      "n": 8,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Argentina 2 - 0 Switzerland",
+          "bid": 0.11,
+          "ask": 0.12
+        },
+        {
+          "name": "Argentina 2 - 1 Switzerland",
+          "bid": 0.1,
+          "ask": 0.11
+        },
+        {
+          "name": "Argentina 3 - 0 Switzerland",
+          "bid": 0.05,
+          "ask": 0.06
+        },
+        {
+          "name": "Argentina 2 - 2 Switzerland",
+          "bid": 0.041,
+          "ask": 0.042
+        },
+        {
+          "name": "Argentina 3 - 2 Switzerland",
+          "bid": 0.021,
+          "ask": 0.022
+        },
+        {
+          "name": "Argentina 2 - 3 Switzerland",
+          "bid": 0.01,
+          "ask": 0.011
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.414,
+      "grossPP": 58.6,
+      "feePP": 1.66,
+      "netPP": 56.94,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
+      "event": "Next French Presidential Election",
+      "slug": "next-french-presidential-election",
+      "endDate": "2027-04-30T00:00:00Z",
+      "n": 18,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Marine Le Pen",
+          "bid": 0.273,
+          "ask": 0.274
+        },
+        {
+          "name": "Jordan Bardella",
+          "bid": 0.039,
+          "ask": 0.043
+        },
+        {
+          "name": "François Hollande",
+          "bid": 0.026,
+          "ask": 0.027
+        },
+        {
+          "name": "Bernard Cazeneuve",
+          "bid": 0.006,
+          "ask": 0.007
+        },
+        {
+          "name": "Jean Castex",
+          "bid": 0.005,
+          "ask": 0.006
+        },
+        {
+          "name": "Gérald Darmanin",
+          "bid": 0.005,
+          "ask": 0.006
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.585,
+      "grossPP": 41.5,
+      "feePP": 2.34,
+      "netPP": 39.16,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 21,
+      "n": 22,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -403,55 +491,6 @@
           "name": "Ron DeSantis",
           "bid": 0.013,
           "ask": 0.015
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.659,
-      "grossPP": 34.1,
-      "feePP": 3.29,
-      "netPP": 30.8,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x4418ee2aa5ce6e50500904045b2ba1b8bcdaef38de4441e8db45ef9beecb5e00",
-      "event": "Norway vs. England - Exact Score",
-      "slug": "fifwc-nor-eng-2026-07-11-exact-score",
-      "endDate": "2026-07-11T21:00:00Z",
-      "n": 12,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Norway 1 - 1 England",
-          "bid": 0.12,
-          "ask": 0.13
-        },
-        {
-          "name": "Norway 1 - 2 England",
-          "bid": 0.1,
-          "ask": 0.11
-        },
-        {
-          "name": "Norway 2 - 1 England",
-          "bid": 0.06,
-          "ask": 0.07
-        },
-        {
-          "name": "Norway 2 - 2 England",
-          "bid": 0.06,
-          "ask": 0.07
-        },
-        {
-          "name": "Norway 1 - 0 England",
-          "bid": 0.05,
-          "ask": 0.06
-        },
-        {
-          "name": "Norway 0 - 0 England",
-          "bid": 0.05,
-          "ask": 0.06
         }
       ]
     },
@@ -491,10 +530,59 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.917,
-      "grossPP": 8.3,
-      "feePP": 3.19,
-      "netPP": 5.11,
+      "sumProb": 0.813,
+      "grossPP": 18.7,
+      "feePP": 4.07,
+      "netPP": 14.63,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x4418ee2aa5ce6e50500904045b2ba1b8bcdaef38de4441e8db45ef9beecb5e00",
+      "event": "Norway vs. England - Exact Score",
+      "slug": "fifwc-nor-eng-2026-07-11-exact-score",
+      "endDate": "2026-07-11T21:00:00Z",
+      "n": 14,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Norway 1 - 1 England",
+          "bid": 0.12,
+          "ask": 0.13
+        },
+        {
+          "name": "Norway 1 - 2 England",
+          "bid": 0.1,
+          "ask": 0.11
+        },
+        {
+          "name": "Norway 0 - 2 England",
+          "bid": 0.08,
+          "ask": 0.09
+        },
+        {
+          "name": "Norway 2 - 1 England",
+          "bid": 0.06,
+          "ask": 0.07
+        },
+        {
+          "name": "Norway 2 - 2 England",
+          "bid": 0.06,
+          "ask": 0.07
+        },
+        {
+          "name": "Norway 1 - 3 England",
+          "bid": 0.05,
+          "ask": 0.07
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.935,
+      "grossPP": 6.5,
+      "feePP": 2.78,
+      "netPP": 3.72,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb4334245b644944872d9489525391b24a2440f138edf04643e9b17fce2810b00",
@@ -508,27 +596,71 @@
       "top": [
         {
           "name": "Troy Jackson",
-          "bid": 0.54,
-          "ask": 0.56
+          "bid": 0.61,
+          "ask": 0.62
         },
         {
           "name": "Shenna Bellows",
-          "bid": 0.32,
-          "ask": 0.34
+          "bid": 0.3,
+          "ask": 0.31
         },
         {
           "name": "Graham Platner",
-          "bid": 0.006,
-          "ask": 0.017
+          "bid": 0.002,
+          "ask": 0.005
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.942,
-      "grossPP": 5.8,
-      "feePP": 3.21,
-      "netPP": 2.59,
+      "sumProb": 0.973,
+      "grossPP": 2.7,
+      "feePP": 0.39,
+      "netPP": 2.32,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x5dd3c57e95e4b3d29722ae868668bc2e0848028a1d26974efa6081d26ad12200",
+      "event": "Russia Parliamentary Election Winner",
+      "slug": "russia-parliamentary-election-winner",
+      "endDate": "2026-09-20T00:00:00Z",
+      "n": 5,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "United Russia (ER)",
+          "bid": 0.949,
+          "ask": 0.959
+        },
+        {
+          "name": "Civic Platform (GP)",
+          "bid": 0.002,
+          "ask": 0.004
+        },
+        {
+          "name": "A Just Russia – For Truth (SRZP)",
+          "bid": 0.003,
+          "ask": 0.004
+        },
+        {
+          "name": "Rodina",
+          "bid": 0.002,
+          "ask": 0.003
+        },
+        {
+          "name": "Liberal Democratic Party of Russia (LDPR)",
+          "bid": 0.002,
+          "ask": 0.003
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.946,
+      "grossPP": 5.4,
+      "feePP": 3.23,
+      "netPP": 2.17,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x45ee6d247c08145ffc236054dcff9b77e02d0faa8d81f06ddabd96e423d9c700",
@@ -547,57 +679,13 @@
         },
         {
           "name": "Semifinals",
-          "bid": 0.17,
+          "bid": 0.18,
           "ask": 0.19
         },
         {
           "name": "Final",
-          "bid": 0.101,
-          "ask": 0.102
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.977,
-      "grossPP": 2.3,
-      "feePP": 0.43,
-      "netPP": 1.87,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x5dd3c57e95e4b3d29722ae868668bc2e0848028a1d26974efa6081d26ad12200",
-      "event": "Russia Parliamentary Election Winner",
-      "slug": "russia-parliamentary-election-winner",
-      "endDate": "2026-09-20T00:00:00Z",
-      "n": 5,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "United Russia (ER)",
-          "bid": 0.956,
-          "ask": 0.958
-        },
-        {
-          "name": "Civic Platform (GP)",
-          "bid": 0.002,
-          "ask": 0.007
-        },
-        {
-          "name": "A Just Russia – For Truth (SRZP)",
-          "bid": 0.003,
-          "ask": 0.004
-        },
-        {
-          "name": "Rodina",
-          "bid": 0.002,
-          "ask": 0.004
-        },
-        {
-          "name": "Liberal Democratic Party of Russia (LDPR)",
-          "bid": 0.002,
-          "ask": 0.004
+          "bid": 0.103,
+          "ask": 0.106
         }
       ]
     }
