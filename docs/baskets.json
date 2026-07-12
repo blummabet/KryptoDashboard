@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-07-12 22:04 UTC",
+  "generatedAt": "2026-07-12 23:04 UTC",
   "scanned": 600,
-  "count": 14,
+  "count": 15,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
     {
       "side": "buy",
-      "sumProb": 0.003,
-      "grossPP": 99.7,
-      "feePP": 0.02,
-      "netPP": 99.69,
+      "sumProb": 0.006,
+      "grossPP": 99.4,
+      "feePP": 0.03,
+      "netPP": 99.37,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x2df9aaff2ec718f40931165259073ccec59d97a251a7bc25f626fa51250f5300",
-      "event": "Highest temperature in Madrid on July 12?",
-      "slug": "highest-temperature-in-madrid-on-july-12-2026",
+      "negRiskMarketID": "0x77ef536094b55f95bf1c436113f7812ff0e4d6b55d1d5586685cb968ee3dff00",
+      "event": "Highest temperature in Dallas on July 12?",
+      "slug": "highest-temperature-in-dallas-on-july-12-2026",
       "endDate": "2026-07-12T12:00:00Z",
       "n": 3,
       "completeBid": false,
@@ -23,51 +23,17 @@
       "tradable": false,
       "top": [
         {
-          "name": "32°C or below",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "33°C",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "36°C",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.016,
-      "grossPP": 98.4,
-      "feePP": 0.08,
-      "netPP": 98.32,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x5c0dfc393df84ea1bb6792e2a6853dc9a3f028b9c8aa6a18fa46a188bb55d000",
-      "event": "Highest temperature in San Francisco on July 13?",
-      "slug": "highest-temperature-in-san-francisco-on-july-13-2026",
-      "endDate": "2026-07-13T12:00:00Z",
-      "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "86-87°F",
-          "bid": 0.008,
-          "ask": 0.012
-        },
-        {
-          "name": "92°F or higher",
+          "name": "100-101°F",
           "bid": 0.001,
-          "ask": 0.003
+          "ask": 0.004
         },
         {
-          "name": "90-91°F",
+          "name": "96-97°F",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "94-95°F",
           "bid": null,
           "ask": 0.001
         }
@@ -117,6 +83,50 @@
         },
         {
           "name": "Franco Colapinto",
+          "bid": null,
+          "ask": 0.001
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.036,
+      "grossPP": 96.4,
+      "feePP": 0.18,
+      "netPP": 96.22,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x5c0dfc393df84ea1bb6792e2a6853dc9a3f028b9c8aa6a18fa46a188bb55d000",
+      "event": "Highest temperature in San Francisco on July 13?",
+      "slug": "highest-temperature-in-san-francisco-on-july-13-2026",
+      "endDate": "2026-07-13T12:00:00Z",
+      "n": 5,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "84-85°F",
+          "bid": 0.011,
+          "ask": 0.019
+        },
+        {
+          "name": "86-87°F",
+          "bid": 0.006,
+          "ask": 0.01
+        },
+        {
+          "name": "92°F or higher",
+          "bid": 0.001,
+          "ask": 0.003
+        },
+        {
+          "name": "88-89°F",
+          "bid": 0.002,
+          "ask": 0.003
+        },
+        {
+          "name": "90-91°F",
           "bid": null,
           "ask": 0.001
         }
@@ -192,17 +202,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.236,
-      "grossPP": 76.4,
-      "feePP": 1.18,
-      "netPP": 75.22,
+      "sumProb": 0.306,
+      "grossPP": 69.4,
+      "feePP": 1.53,
+      "netPP": 67.87,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xccf3b77c315d3c799faffcfb70e3f2654a9002d383b00ec87f41ecd26c341400",
       "event": "England vs. Argentina - Exact Score",
       "slug": "fifwc-eng-arg-2026-07-15-exact-score",
       "endDate": "2026-07-15T19:00:00Z",
-      "n": 5,
+      "n": 6,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -218,6 +228,11 @@
           "ask": 0.08
         },
         {
+          "name": "England 2 - 2 Argentina",
+          "bid": 0.06,
+          "ask": 0.07
+        },
+        {
           "name": "England 3 - 2 Argentina",
           "bid": 0.029,
           "ask": 0.03
@@ -231,55 +246,6 @@
           "name": "England 3 - 3 Argentina",
           "bid": 0.015,
           "ask": 0.016
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.365,
-      "grossPP": 63.5,
-      "feePP": 1.82,
-      "netPP": 61.67,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x85162b0badc1aa44d1b23e007f9e03c901d7331f1140eef5500090739a948000",
-      "event": "Elon Musk # tweets July 10 - July 17, 2026?",
-      "slug": "elon-musk-of-tweets-july-10-july-17",
-      "endDate": "2026-07-17T16:00:00Z",
-      "n": 11,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "120-139",
-          "bid": 0.143,
-          "ask": 0.145
-        },
-        {
-          "name": "200-219",
-          "bid": 0.11,
-          "ask": 0.12
-        },
-        {
-          "name": "100-119",
-          "bid": 0.048,
-          "ask": 0.049
-        },
-        {
-          "name": "260-279",
-          "bid": 0.022,
-          "ask": 0.023
-        },
-        {
-          "name": "80-99",
-          "bid": 0.01,
-          "ask": 0.013
-        },
-        {
-          "name": "300-319",
-          "bid": 0.004,
-          "ask": 0.005
         }
       ]
     },
@@ -383,17 +349,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.475,
-      "grossPP": 52.5,
-      "feePP": 1.9,
-      "netPP": 50.6,
+      "sumProb": 0.467,
+      "grossPP": 53.3,
+      "feePP": 1.87,
+      "netPP": 51.43,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
       "event": "Democratic Presidential Nominee 2028",
       "slug": "democratic-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 34,
+      "n": 33,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -432,17 +398,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.505,
-      "grossPP": 49.5,
-      "feePP": 2.53,
-      "netPP": 46.98,
+      "sumProb": 0.527,
+      "grossPP": 47.3,
+      "feePP": 2.64,
+      "netPP": 44.66,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xbb01d92208e308f14eb9917889bb2b449395207a26fe2a7990c3d5def7f74c00",
       "event": "NBA: 2027 Champion",
       "slug": "nba-2027-champion",
       "endDate": "2027-07-01T00:00:00Z",
-      "n": 6,
+      "n": 7,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -454,8 +420,8 @@
         },
         {
           "name": "San Antonio Spurs",
-          "bid": 0.17,
-          "ask": 0.18
+          "bid": 0.18,
+          "ask": 0.19
         },
         {
           "name": "Los Angeles Lakers",
@@ -473,9 +439,58 @@
           "ask": 0.012
         },
         {
-          "name": "Los Angeles Clippers",
-          "bid": 0.009,
-          "ask": 0.01
+          "name": "Portland Trail Blazers",
+          "bid": 0.011,
+          "ask": 0.012
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.544,
+      "grossPP": 45.6,
+      "feePP": 2.72,
+      "netPP": 42.88,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x85162b0badc1aa44d1b23e007f9e03c901d7331f1140eef5500090739a948000",
+      "event": "Elon Musk # tweets July 10 - July 17, 2026?",
+      "slug": "elon-musk-of-tweets-july-10-july-17",
+      "endDate": "2026-07-17T16:00:00Z",
+      "n": 13,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "140-159",
+          "bid": 0.16,
+          "ask": 0.17
+        },
+        {
+          "name": "200-219",
+          "bid": 0.13,
+          "ask": 0.14
+        },
+        {
+          "name": "120-139",
+          "bid": 0.111,
+          "ask": 0.117
+        },
+        {
+          "name": "100-119",
+          "bid": 0.037,
+          "ask": 0.038
+        },
+        {
+          "name": "260-279",
+          "bid": 0.026,
+          "ask": 0.035
+        },
+        {
+          "name": "280-299",
+          "bid": 0.014,
+          "ask": 0.018
         }
       ]
     },
@@ -530,10 +545,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.813,
-      "grossPP": 18.7,
-      "feePP": 1.42,
-      "netPP": 17.28,
+      "sumProb": 0.804,
+      "grossPP": 19.6,
+      "feePP": 1.48,
+      "netPP": 18.12,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xd72f68ada62aff9ba67dd2cbb56fabec9928aa198daafbd8042ac18ccabec000",
@@ -547,8 +562,8 @@
       "top": [
         {
           "name": "Mojtaba Khamenei",
-          "bid": 0.796,
-          "ask": 0.805
+          "bid": 0.795,
+          "ask": 0.796
         },
         {
           "name": "Ali Motahari",
@@ -564,6 +579,40 @@
           "name": "Mohammad Khatami",
           "bid": 0.001,
           "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.84,
+      "grossPP": 16.0,
+      "feePP": 4.2,
+      "netPP": 11.8,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x6772b5a526f0b4646fa8f2fc1df425e8fb35ce7bdf1df2da2eb1c08f4c2fb100",
+      "event": "World Cup: Finals Exact Matchup",
+      "slug": "world-cup-finals-exact-matchup-20260708195422328",
+      "endDate": "2026-07-19T23:59:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "FRA vs ENG",
+          "bid": 0.34,
+          "ask": 0.35
+        },
+        {
+          "name": "FRA vs ARG",
+          "bid": 0.28,
+          "ask": 0.29
+        },
+        {
+          "name": "ESP vs ARG",
+          "bid": 0.19,
+          "ask": 0.2
         }
       ]
     },
