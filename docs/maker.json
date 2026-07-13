@@ -1,23 +1,28 @@
 {
-  "generatedAt": "2026-07-13T12:17:31Z",
+  "generatedAt": "2026-07-13T13:22:42Z",
   "count": 106,
   "rewardEligible": 74,
   "takerBreakevenPP": 3.5,
   "sim": {
     "estRewardDayTotal": 2.49,
-    "cumRewardEst": 10.8719,
-    "runs": 81,
+    "cumRewardEst": 10.9756,
+    "runs": 82,
     "assumedSizeUSD": 50.0,
     "dailyYield": 0.003,
     "note": "Reward-Schätzung: anteils-gewichtet (Konkurrenz-Liq), Eligibility = Spread≤maxSpread & Größe≥minSize, Quotes um die MITTE. Absolute Zahl unkalibriert (RICHTUNG stimmt: dünn/neu = mehr). Spread-Ertrag NICHT enthalten — echte Fills+Rewards erst mit Runner."
   },
   "markout": {
-    "fills": 685,
-    "avgMarkoutPP": -3.21,
-    "avgHedgedPP": 1.58,
-    "avgSelectiveHedgedPP": 1.94,
-    "selFills": 556,
-    "note": "Pessimistische Fills (Preis handelt DURCH die Quote), Markout = Fill vs. Fair nach dem Move. ROH negativ = Adverse Selection. GEHEDGED = BTC-Spot-getriebenen Teil per Delta-Hedge rausgerechnet (idealisiert, ohne Hedge-Kosten). SELEKTIV = nur maker-taugliche Märkte (genug Liq, nicht am Rand, nicht kurz vor Auflösung). Grobe Stundenauflösung."
+    "fills": 0,
+    "avgMarkoutPP": null,
+    "avgHedgedPP": null,
+    "avgSelectiveHedgedPP": null,
+    "selFills": 0,
+    "hedgeCostMakerPP": null,
+    "hedgeCostTakerPP": null,
+    "netMakerHedgePP": null,
+    "netTakerHedgePP": null,
+    "benchmark": "künftiger Markt-Mid (NICHT unsere Fair)",
+    "note": "Markout gegen den KÜNFTIGEN MARKT-MID (Standard im Market-Making) — nicht mehr gegen unsere Fair, die nachweislich schlechter kalibriert ist als der Markt. Fill wird im Folgelauf bewertet (sonst zirkulär). ROH negativ = Adverse Selection. GEHEDGED = Spot-getriebener Teil per Delta rausgerechnet. NETTO = minus echte Hedge-Kosten (Binance, Hin+Zurück). Erst NETTO entscheidet, ob Making trägt."
   },
   "note": "Als Maker keine Fee → schon kleiner Puffer +EV; als Taker erst > ~3,5pp. Reward-berechtigt = Spread ≤ maxSpread & Liq ≥ minSize.",
   "board": [

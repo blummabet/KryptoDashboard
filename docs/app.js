@@ -212,17 +212,28 @@
       <div class="lbl">${label}</div>
       <div class="v" style="color:${ppCol(v)}">${ppTxt(v)}</div>
       <div style="font-size:11px;color:var(--muted);margin-top:2px">${hint}</div></div>`;
-    const verdict = (mo.avgSelectiveHedgedPP != null && mo.avgSelectiveHedgedPP >= 0)
-      ? vchip("good", "hedgebar → Making trägt")
-      : (mo.avgHedgedPP != null && mo.avgHedgedPP > (mo.avgMarkoutPP == null ? -99 : mo.avgMarkoutPP)
-        ? vchip("early", "Hedge hilft, noch nicht positiv") : vchip("watch", "sammelt Fills"));
+    // NETTO (nach echten Hedge-Kosten) entscheidet — alles davor ist geschönt.
+    const netM = mo.netMakerHedgePP, netT = mo.netTakerHedgePP;
+    const verdict = (netT != null && netT >= 0) ? vchip("good", "trägt sogar mit teurem Hedge")
+      : (netM != null && netM >= 0) ? vchip("early", "trägt nur mit billigem Limit-Hedge")
+      : (netM != null) ? vchip("bad", "Hedge-Kosten fressen es auf")
+      : vchip("watch", "sammelt Fills (Benchmark neu gesetzt)");
     $("makerMarkout").innerHTML = `
-      <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start;margin:2px 0 8px">
-        ${cell("Roh", mo.avgMarkoutPP, (mo.fills || 0) + " Fills · ungehedged")}
+      <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:flex-start;margin:2px 0 10px">
+        ${cell("Roh", mo.avgMarkoutPP, (mo.fills || 0) + " Fills · vs. Markt-Mid")}
         <div style="font-size:20px;color:var(--muted);align-self:center">→</div>
-        ${cell("Delta-gehedged", mo.avgHedgedPP, "BTC-Spot-Teil rausgerechnet")}
+        ${cell("Delta-gehedged", mo.avgHedgedPP, "Spot-Teil rausgerechnet")}
         <div style="font-size:20px;color:var(--muted);align-self:center">→</div>
-        ${cell("Selektiv + gehedged", mo.avgSelectiveHedgedPP, (mo.selFills || 0) + " Fills · " + nSel + " Märkte tauglich")}
+        ${cell("Selektiv", mo.avgSelectiveHedgedPP, (mo.selFills || 0) + " Fills · " + nSel + " tauglich")}
+        <div style="font-size:20px;color:var(--muted);align-self:center">−</div>
+        ${cell("Hedge-Kosten", mo.hedgeCostMakerPP == null ? null : -mo.hedgeCostMakerPP,
+          "Limit " + (mo.hedgeCostMakerPP ?? "—") + "pp · Market " + (mo.hedgeCostTakerPP ?? "—") + "pp")}
+        <div style="font-size:20px;color:var(--fg);align-self:center">=</div>
+        <div style="flex:1;min-width:170px;padding:6px 10px;border-radius:8px;background:rgba(255,255,255,.04)">
+          <div class="lbl">NETTO — das zählt</div>
+          <div class="v" style="color:${ppCol(netM)}">${ppTxt(netM)}</div>
+          <div style="font-size:11px;color:var(--muted);margin-top:2px">mit Limit-Hedge · mit Market-Hedge: <b style="color:${ppCol(netT)}">${ppTxt(netT)}</b></div>
+        </div>
       </div>
       <div>${verdict}</div>`;
 
@@ -381,12 +392,9 @@
       { name: "Maker-Rewards", val: ms.estRewardDayTotal != null ? "~$" + ms.estRewardDayTotal.toFixed(2) + "/Tag" : "—", state: "watch",
         note: "Geschätzte Belohnung fürs Quoten (Poly zahlt Maker). Nur Schätzung — echt erst mit Runner. Richtung stimmt, Höhe unsicher." },
       { name: "Maker netto (Markout)",
-        val: (mo.avgSelectiveHedgedPP != null ? mo.avgSelectiveHedgedPP : (mo.avgHedgedPP != null ? mo.avgHedgedPP : mkNet)) != null
-          ? ((v => (v > 0 ? "+" : "") + v + "pp")(mo.avgSelectiveHedgedPP != null ? mo.avgSelectiveHedgedPP : (mo.avgHedgedPP != null ? mo.avgHedgedPP : mkNet))) : "—",
-        state: (mo.avgSelectiveHedgedPP != null ? mo.avgSelectiveHedgedPP : mo.avgHedgedPP) == null
-          ? (mkNet == null ? "watch" : (mkNet >= 0 ? "good" : "bad"))
-          : ((mo.avgSelectiveHedgedPP != null ? mo.avgSelectiveHedgedPP : mo.avgHedgedPP) >= 0 ? "good" : "bad"),
-        note: "Nach Delta-Hedge + Selektivität (roh " + (mkNet != null ? mkNet + "pp" : "—") + "). Positiv = Adverse Selection ist hedgebar → Making trägt. Details im Maker-Tab." },
+        val: mo.netMakerHedgePP != null ? (mo.netMakerHedgePP > 0 ? "+" : "") + mo.netMakerHedgePP + "pp" : "—",
+        state: mo.netMakerHedgePP == null ? "watch" : (mo.netMakerHedgePP >= 0 ? "good" : "bad"),
+        note: "NETTO: gegen den Markt-Mid gemessen (nicht gegen unser Modell), delta-gehedged, selektiv, <b>minus echte Hedge-Kosten</b>. Roh " + (mkNet != null ? mkNet + "pp" : "—") + ". Nur diese Zahl entscheidet, ob Making trägt." },
       { name: "Neu-Markt-Lag", val: money(ps.newMarketPnl), state: "early",
         note: "Frische Märkte starten träge bei ~50¢. Sieht ertragreich aus, ist aber evtl. nur Illiquidität — erst über Auflösungen beweisen. (" + (ps.newMarketCount || 0) + " Trades)" },
       { name: "Multi-Outcome Basket-Arb",

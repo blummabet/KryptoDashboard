@@ -33,6 +33,11 @@ REF_COMPETITION = 5000.0   # Liq-Skala für den Anteils-Proxy: viel Liq = kleine
 RUNS_PER_DAY = 24          # stündliche Kadenz
 MAKER_HALF_SPREAD = 0.02   # angenommene Quote-Distanz zur Mitte (±2¢) für die Fill-Simulation
 
+# Hedge-KOSTEN auf Binance-Spot (pro Seite; Hin+Zurück = ×2). Der Delta-Hedge ist nicht gratis —
+# ohne diese Kosten ist jede "gehedged positiv"-Zahl geschönt.
+HEDGE_FEE_MAKER = 0.0002   # 0,02 %/Seite — Hedge als Limit-Order (günstig, aber Ausführung unsicher)
+HEDGE_FEE_TAKER = 0.0010   # 0,10 %/Seite — Hedge sofort per Market-Order (sicher, teurer)
+
 
 # Selektivität: wo Making Sinn ergibt (adverse Selektion kleiner). Nicht am Rand (unsichere Fair),
 # nicht kurz vor Auflösung (Intraday-Toxizität), genug Liquidität.
@@ -118,40 +123,74 @@ def board(markets=None):
     return out
 
 
-def markout_step(board_rows, prev_mids, prev_spot, half=MAKER_HALF_SPREAD):
-    """Ein Markout-Schritt (testbar, ohne I/O): erkennt pessimistische Fills (Preis handelt DURCH
-    die Quote) und rechnet je Fill roh vs. delta-gehedged. Δspot ist global (ein BTC)."""
+def markout_step(board_rows, prev_mids, prev_spot, pending=None, half=MAKER_HALF_SPREAD):
+    """Ein Markout-Schritt (testbar, ohne I/O), in ZWEI Phasen.
+
+    ⚠️ KORREKTUR (2026-07-13): Markout wird jetzt gegen den KÜNFTIGEN MARKT-MID gemessen, NICHT
+    mehr gegen unsere Fair — die ist nachweislich schlechter kalibriert als der Marktpreis
+    (Brier 0,111 vs 0,096), ein Markout dagegen wäre wertlos. Das ist der Standard im Market-Making.
+
+    Wichtig: der Fill wird von einer Mid-Bewegung ausgelöst — bewertet man ihn gegen DENSELBEN Mid,
+    ist er per Konstruktion immer negativ (zirkulär). Deshalb:
+      Phase 1: offene Fills vom LETZTEN Lauf gegen den JETZIGEN Mid bewerten (echter Vorwärts-Markout).
+      Phase 2: neue Fills erkennen (Mid handelt durch die Quote vom letzten Lauf) → in die Warteschlange.
+    Hedge: Spot-getriebenen Teil per Delta rausrechnen; Hedge-Notional je Fill mitschreiben, damit
+    Hedge-KOSTEN später realistisch abgezogen werden können.
+    """
+    pending = pending or []
     spot_now = next((x.get("spot") for x in board_rows if x.get("spot") is not None), None)
-    dspot = (spot_now - prev_spot) if (spot_now is not None and prev_spot is not None) else 0.0
+    by_cid = {x["conditionId"]: x for x in board_rows if x.get("conditionId")}
+
+    # ── Phase 1: offene Fills gegen den jetzigen Markt-Mid bewerten ──────────────────────────
     fills = sel_fills = 0
-    raw = hedged = sel_hedged = 0.0
-    new_prev = {}
-    for x in board_rows:
-        cid, mid, fair = x.get("conditionId"), x.get("mid"), x.get("fair")
-        if cid and mid is not None:
-            new_prev[cid] = mid
-        if not x.get("rewardEligible") or mid is None or fair is None or cid not in prev_mids:
+    raw = hedged = sel_hedged = hedge_notional = 0.0
+    for f in pending:
+        x = by_cid.get(f.get("cid"))
+        if not x or x.get("mid") is None:
+            continue                      # Markt weg/aufgelöst → Fill verfällt
+        mid_now = x["mid"]
+        fp, side = f.get("fillPrice"), f.get("side")
+        if fp is None or side not in ("BUY", "SELL"):
             continue
-        pm = prev_mids[cid]
-        pb, pa = pm - half, pm + half
-        hedge_pp = (x.get("delta") or 0.0) * dspot * 100.0
-        mk = mk_h = None
-        if mid <= pb:                    # BUY @ pb (long digital → short delta Spot)
-            mk = (fair - pb) * 100.0
-            mk_h = mk - hedge_pp
-        elif mid >= pa:                  # SELL @ pa (short digital → long delta Spot)
-            mk = (pa - fair) * 100.0
-            mk_h = mk + hedge_pp
-        if mk is None:
-            continue
+        mk = (mid_now - fp) * 100.0 if side == "BUY" else (fp - mid_now) * 100.0
+        dspot = ((spot_now - f["spotAtFill"]) if (spot_now is not None and f.get("spotAtFill") is not None) else 0.0)
+        hedge_pp = (f.get("delta") or 0.0) * dspot * 100.0
+        mk_h = mk - hedge_pp if side == "BUY" else mk + hedge_pp
         fills += 1
         raw += mk
         hedged += mk_h
-        if x.get("makerSelect"):
+        hedge_notional += f.get("hedgeNotionalUSD") or 0.0
+        if f.get("select"):
             sel_fills += 1
             sel_hedged += mk_h
-    return {"spotNow": spot_now, "newPrev": new_prev, "fills": fills, "rawSum": round(raw, 3),
-            "hedgedSum": round(hedged, 3), "selFills": sel_fills, "selHedgedSum": round(sel_hedged, 3)}
+
+    # ── Phase 2: neue Fills erkennen (Quote vom letzten Lauf) → Warteschlange ────────────────
+    new_pending, new_prev = [], {}
+    for x in board_rows:
+        cid, mid = x.get("conditionId"), x.get("mid")
+        if cid and mid is not None:
+            new_prev[cid] = mid
+        if not x.get("rewardEligible") or mid is None or cid not in prev_mids:
+            continue
+        pm = prev_mids[cid]
+        pb, pa = pm - half, pm + half
+        if mid <= pb:
+            side, fp = "BUY", pb
+        elif mid >= pa:
+            side, fp = "SELL", pa
+        else:
+            continue
+        delta = x.get("delta") or 0.0
+        shares = ASSUMED_SIZE_USD / max(fp, 0.01)
+        hn = abs(shares * delta * (spot_now or 0.0))   # zu hedgendes Spot-Notional in USD
+        new_pending.append({"cid": cid, "side": side, "fillPrice": round(fp, 4),
+                            "spotAtFill": spot_now, "delta": delta,
+                            "select": bool(x.get("makerSelect")), "hedgeNotionalUSD": round(hn, 2)})
+
+    return {"spotNow": spot_now, "newPrev": new_prev, "newPending": new_pending,
+            "fills": fills, "rawSum": round(raw, 3), "hedgedSum": round(hedged, 3),
+            "selFills": sel_fills, "selHedgedSum": round(sel_hedged, 3),
+            "hedgeNotionalUSD": round(hedge_notional, 2)}
 
 
 def write():
@@ -179,27 +218,43 @@ def write():
     # Einmaliger Reset auf gemeinsame Stichprobe: roh & gehedged müssen über DIESELBEN Fills laufen,
     # sonst ist der Vergleich unfair (roh hatte Historie, gehedged fing bei 0 an). markoutV=2 markiert
     # die neue Ära; die alte −5,7pp-Baseline ist dokumentiert.
-    if sim.get("markoutV") != 2:
+    # markoutV=3: Benchmark gewechselt (Markt-Mid statt unserer Fair) → alte Zahlen unvergleichbar.
+    if sim.get("markoutV") != 3:
         sim["fills"] = 0
         sim["sumMarkoutPP"] = 0.0
         sim["sumHedgedPP"] = 0.0
         sim["selFills"] = 0
         sim["sumSelHedgedPP"] = 0.0
-        sim["markoutV"] = 2
+        sim["sumHedgeNotionalUSD"] = 0.0
+        sim["pendingFills"] = []
+        sim["markoutV"] = 3
 
-    # DELTA-HEDGE: die adverse Bewegung ist großteils BTC-Spot-getrieben. Wer den Fill sofort auf
-    # Binance-Spot gegen-hedgt (short delta·Notional bei BUY), neutralisiert genau diesen Teil.
-    step = markout_step(b, sim.get("prevMids", {}), sim.get("prevSpot"))
+    step = markout_step(b, sim.get("prevMids", {}), sim.get("prevSpot"), sim.get("pendingFills", []))
     sim["prevMids"] = step["newPrev"]
     sim["prevSpot"] = step["spotNow"]
+    sim["pendingFills"] = step["newPending"]
     sim["fills"] = sim.get("fills", 0) + step["fills"]
     sim["sumMarkoutPP"] = round(sim.get("sumMarkoutPP", 0.0) + step["rawSum"], 3)
     sim["sumHedgedPP"] = round(sim.get("sumHedgedPP", 0.0) + step["hedgedSum"], 3)
     sim["selFills"] = sim.get("selFills", 0) + step["selFills"]
     sim["sumSelHedgedPP"] = round(sim.get("sumSelHedgedPP", 0.0) + step["selHedgedSum"], 3)
-    avg_markout = round(sim["sumMarkoutPP"] / sim["fills"], 2) if sim["fills"] else None
-    avg_hedged = round(sim["sumHedgedPP"] / sim["fills"], 2) if sim["fills"] else None
+    sim["sumHedgeNotionalUSD"] = round(sim.get("sumHedgeNotionalUSD", 0.0) + step["hedgeNotionalUSD"], 2)
+
+    n = sim["fills"]
+    avg_markout = round(sim["sumMarkoutPP"] / n, 2) if n else None
+    avg_hedged = round(sim["sumHedgedPP"] / n, 2) if n else None
     avg_sel_hedged = round(sim["sumSelHedgedPP"] / sim["selFills"], 2) if sim["selFills"] else None
+
+    # Hedge-KOSTEN: Notional × Satz × 2 (auf + zu), umgerechnet in pp je Position.
+    def _cost_pp(rate):
+        if not n:
+            return None
+        return round(sim["sumHedgeNotionalUSD"] * rate * 2 / (n * ASSUMED_SIZE_USD) * 100, 2)
+
+    cost_maker, cost_taker = _cost_pp(HEDGE_FEE_MAKER), _cost_pp(HEDGE_FEE_TAKER)
+    net_of = lambda v, c: (round(v - c, 2) if (v is not None and c is not None) else None)
+    net_maker = net_of(avg_sel_hedged if avg_sel_hedged is not None else avg_hedged, cost_maker)
+    net_taker = net_of(avg_sel_hedged if avg_sel_hedged is not None else avg_hedged, cost_taker)
 
     SIM.parent.mkdir(parents=True, exist_ok=True)
     SIM.write_text(json.dumps(sim, indent=2, ensure_ascii=False))
@@ -219,19 +274,23 @@ def write():
             "fills": sim["fills"], "avgMarkoutPP": avg_markout,
             "avgHedgedPP": avg_hedged, "avgSelectiveHedgedPP": avg_sel_hedged,
             "selFills": sim.get("selFills", 0),
-            "note": "Pessimistische Fills (Preis handelt DURCH die Quote), Markout = Fill vs. Fair nach dem "
-                    "Move. ROH negativ = Adverse Selection. GEHEDGED = BTC-Spot-getriebenen Teil per Delta-"
-                    "Hedge rausgerechnet (idealisiert, ohne Hedge-Kosten). SELEKTIV = nur maker-taugliche "
-                    "Märkte (genug Liq, nicht am Rand, nicht kurz vor Auflösung). Grobe Stundenauflösung.",
+            "hedgeCostMakerPP": cost_maker, "hedgeCostTakerPP": cost_taker,
+            "netMakerHedgePP": net_maker, "netTakerHedgePP": net_taker,
+            "benchmark": "künftiger Markt-Mid (NICHT unsere Fair)",
+            "note": "Markout gegen den KÜNFTIGEN MARKT-MID (Standard im Market-Making) — nicht mehr gegen "
+                    "unsere Fair, die nachweislich schlechter kalibriert ist als der Markt. Fill wird im "
+                    "Folgelauf bewertet (sonst zirkulär). ROH negativ = Adverse Selection. GEHEDGED = "
+                    "Spot-getriebener Teil per Delta rausgerechnet. NETTO = minus echte Hedge-Kosten "
+                    "(Binance, Hin+Zurück). Erst NETTO entscheidet, ob Making trägt.",
         },
         "note": "Als Maker keine Fee → schon kleiner Puffer +EV; als Taker erst > ~3,5pp. "
                 "Reward-berechtigt = Spread ≤ maxSpread & Liq ≥ minSize.",
         "board": b[:60],
     }, indent=2, ensure_ascii=False))
-    print(f"  Maker-Board: {len(b)} Märkte, {n_elig} reward-berechtigt, "
-          f"est ${est_reward_day_total}/Tag, kumuliert ${sim['cumRewardEst']} | "
-          f"Markout roh {avg_markout} / gehedged {avg_hedged} / selektiv {avg_sel_hedged} "
-          f"({sim['fills']} Fills, {sim.get('selFills', 0)} selektiv)")
+    print(f"  Maker-Board: {len(b)} Märkte, {n_elig} reward-berechtigt, est ${est_reward_day_total}/Tag | "
+          f"Markout(vs Markt-Mid) roh {avg_markout} / gehedged {avg_hedged} / selektiv {avg_sel_hedged} "
+          f"| Hedge-Kosten {cost_maker}/{cost_taker}pp → NETTO {net_maker} (maker) / {net_taker} (taker) "
+          f"| {sim['fills']} Fills, {len(sim.get('pendingFills', []))} pending")
 
 
 if __name__ == "__main__":
