@@ -236,11 +236,76 @@
       : '<tr><td colspan="6" class="empty">Kein Maker-Board — noch keine Märkte mit Fair.</td></tr>';
   }
 
+  // ---- Whale-Follow (ehrliches Copy-Trading) ---------------------------------------------
+  function renderWhales(w) {
+    const s = (w && w.summary) || {}, ws = (w && w.wallets) || [], feed = (w && w.feed) || [];
+    const kpi = (k, v, cc, sub) => `<div class="kpi"><div class="k">${k}</div><div class="v ${cc || ""}">${v}</div>${sub ? `<div style="margin-top:5px;font-size:11px;color:var(--muted);line-height:1.35">${sub}</div>` : ""}</div>`;
+    const lag = s.avgCopyLagPP;
+    $("whaleKpis").innerHTML = [
+      kpi("Wale geprüft", s.walletsProbed ?? "—", "", "aus dem Live-Feed"),
+      kpi("Qualifiziert", s.qualifiedCount ?? "—", (s.qualifiedCount > 0 ? "pos" : "neg"), "würden wir kopieren"),
+      kpi("Aussortiert", s.rejectedCount ?? "—", "", "Glückspilze, Tote, Verlierer"),
+      kpi("Ø Copy-Lag", lag == null ? "—" : (lag > 0 ? "+" : "") + lag + "pp",
+        lag == null ? "" : (lag > 0 ? "neg" : "pos"), "<b>Ziel: nahe 0</b> · positiv = wir zahlen drauf"),
+    ].join("");
+
+    // Copy-Lag: die Kernaussage groß und ehrlich
+    if (!s.enabled) {
+      $("whaleLag").innerHTML = `<div class="empty">Kein API-Key gesetzt — Whale-Daten aus. (GitHub-Secret <b>POLYMARKETSCAN_API_KEY</b>)</div>`;
+    } else if (lag == null) {
+      $("whaleLag").innerHTML = `<div style="margin:4px 0">${vchip("watch", "noch keine Messung")} &nbsp;Kein qualifizierter Wal im aktuellen Feed — es gibt also gerade niemanden, den zu kopieren sich lohnen würde. <b>Das ist selbst schon ein Ergebnis.</b></div>`;
+    } else {
+      const bad = lag > 0;
+      const chip = bad ? vchip("bad", "Kopieren kostet") : vchip("good", "Lag zu unseren Gunsten");
+      $("whaleLag").innerHTML = `
+        <div style="font-size:34px;font-weight:800;color:${bad ? "var(--neg)" : "var(--pos)"};margin:2px 0 4px">
+          ${lag > 0 ? "+" : ""}${lag}pp</div>
+        <div style="margin-bottom:8px">${chip} &nbsp;pro kopiertem Trade · gemessen an ${s.lagSample || 0} Trades qualifizierter Wale</div>
+        <div style="font-size:13px;color:var(--muted);line-height:1.5">${bad
+          ? `Ein Wal müsste erst <b style="color:var(--fg)">${lag}pp</b> Kante verdienen, damit Kopieren für uns überhaupt bei <b>null</b> steht — und danach kommt noch die Taker-Fee (~3,5pp). Das ist die Hürde, die Copy-Trading-Seiten dir nicht zeigen.`
+          : `Der Lag läuft ausnahmsweise zu unseren Gunsten. Vorsicht: kleine Stichprobe, das kann drehen.`}</div>`;
+    }
+
+    $("whaleWalletHint").textContent = ws.length + " geprüft";
+    $("whaleWalletRows").innerHTML = ws.length ? ws.map(x => {
+      const verdict = x.qualified
+        ? vchip("good", "qualifiziert")
+        : vchip("bad", (x.rejectReasons || ["—"])[0]);
+      const more = (x.rejectReasons || []).length > 1
+        ? `<div class="grosslbl">+${x.rejectReasons.length - 1} weitere</div>` : "";
+      return `<tr style="${x.qualified ? "" : "opacity:.6"}">
+        <td><div class="mkt-sub"><b>${esc(x.name)}</b></div><div class="grosslbl">${esc((x.wallet || "").slice(0, 12))}…</div></td>
+        <td class="r pnl ${cls(x.pnl)}">${x.pnl == null ? "—" : (x.pnl >= 0 ? "+$" : "−$") + Math.abs(x.pnl).toLocaleString("de-DE", { maximumFractionDigits: 0 })}</td>
+        <td class="r pnl ${cls(x.roi)}">${x.roi == null ? "—" : (x.roi > 0 ? "+" : "") + x.roi + "%"}</td>
+        <td class="r num">${x.winRate ? x.winRate.toFixed(0) + "%" : "—"}</td>
+        <td class="r num">${x.resolved ?? "—"}</td>
+        <td class="r num">${x.uniqueMarkets ?? "—"}</td>
+        <td class="r num">${x.inactiveDays == null ? "—" : (x.inactiveDays < 1 ? "heute" : Math.round(x.inactiveDays) + "d")}</td>
+        <td>${verdict}${more}</td></tr>`;
+    }).join("") : '<tr><td colspan="8" class="empty">Noch keine Wale geprüft — läuft ab dem nächsten Pipeline-Lauf mit API-Key.</td></tr>';
+
+    $("whaleFeedHint").textContent = feed.length + " Großtrades";
+    $("whaleFeedRows").innerHTML = feed.length ? feed.map(t => `<tr style="${t.qualified ? "" : "opacity:.45"}">
+      <td><div class="mkt-sub">${t.qualified ? "🐋" : "🐟"} ${esc(t.name || "")}</div></td>
+      <td><div class="mkt-sub">${esc((t.market || "").slice(0, 46))}</div></td>
+      <td class="r"><span class="side side-${t.side === "BUY" ? "YES" : "NO"}">${esc(t.side || "")} ${esc(t.outcome || "")}</span></td>
+      <td class="r num">${t.price == null ? "—" : cents(t.price)}</td>
+      <td class="r num">${t.sizeUSD == null ? "—" : usd(t.sizeUSD)}</td>
+      <td class="r pnl ${t.copyLagPP == null ? "" : (t.copyLagPP > 0 ? "neg" : "pos")}">${t.copyLagPP == null ? "<span class='mkt-sub'>—</span>" : (t.copyLagPP > 0 ? "+" : "") + t.copyLagPP + "pp"}</td></tr>`).join("")
+      : '<tr><td colspan="6" class="empty">Kein Feed.</td></tr>';
+  }
+
   // ---- Analyse: CLV-vs-P&L-Lücke + BTC-Klumpenrisiko -------------------------------------
   function renderAnalysis(an) {
     const a = (an && an.attribution) || {}, e = (an && an.btcExposure) || {};
     if (a.nClosed) {
-      const feeVerd = a.feeEatsEdge ? vchip("bad", "Fee frisst den Edge") : vchip("good", "Edge > Fee");
+      // Ehrlich: ist die Kante schon VOR Fee weg, ist das die schlimmere Diagnose als "Fee frisst sie".
+      const grossNeg = a.grossBeforeFees != null && a.grossBeforeFees < 0;
+      const feeVerd = grossNeg ? vchip("bad", "keine Kante — schon vor Fee negativ")
+        : (a.feeEatsEdge ? vchip("bad", "Fee frisst den Edge") : vchip("good", "Edge > Fee"));
+      const story = grossNeg
+        ? `<b>Sogar VOR Fee negativ (${money(a.grossBeforeFees)})</b> — die Kante selbst ist weg, nicht nur von der Gebühr gefressen. Das ist die härtere Diagnose: die Strategie verliert aus eigener Kraft.`
+        : `<b>Vor Fee positiv (${money(a.grossBeforeFees)}), nach Taker-Fee negativ</b> — genau die These: Taker-Konvergenz ist nach Fee tot, der tragfähige Weg ist Maker (zahlt keine Fee).`;
       $("attribBody").innerHTML = `
         <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:baseline;margin:2px 0 12px">
           <div><div class="lbl">Brutto (vor Fee)</div><div class="v pos">${money(a.grossBeforeFees)}</div></div>
@@ -250,7 +315,7 @@
           <div><div class="lbl">Netto realisiert</div><div class="v ${cls(a.realizedTotal)}">${money(a.realizedTotal)}</div></div>
         </div>
         <div style="margin-bottom:8px">${feeVerd} &nbsp;<b>Ø Fee ${a.avgFeePP}pp</b> vs <b>Ø Einstiegs-Edge ${a.avgEntryEdgePP}pp</b> — die Taker-Fee ist größer als die Kante.</div>
-        <div class="ctx-note">Trefferquote ${Math.round(a.winRate * 100)} % · Payoff ${a.payoffRatio} (Gewinner ≈ Verlierer gleich groß) · die 5 schlimmsten Trades = ${money(a.worstFiveSum)} (${Math.round(a.tailLossShare * 100)} % aller Verluste). <b>Vor Fee leicht positiv (${money(a.grossBeforeFees)}), nach Taker-Fee negativ</b> — genau die These: Taker-Konvergenz ist nach Fee tot, der tragfähige Weg ist Maker (zahlt keine Fee).</div>`;
+        <div class="ctx-note">Trefferquote ${Math.round(a.winRate * 100)} % · Payoff ${a.payoffRatio} (&lt;1 = Verlierer größer als Gewinner) · die 5 schlimmsten Trades = ${money(a.worstFiveSum)} (${Math.round(a.tailLossShare * 100)} % aller Verluste). ${story}</div>`;
     }
     if (e.n) {
       const long = e.longStakeUSD || 0, short = e.shortStakeUSD || 0, tot = (long + short) || 1;
@@ -354,7 +419,7 @@
   }
 
   // ---- Tabs -------------------------------------------------------------------------------
-  const VIEWS = ["portfolio", "radar", "arb", "baskets", "maker"];
+  const VIEWS = ["portfolio", "radar", "arb", "baskets", "whales", "maker"];
   function switchTab(view) {
     document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x.dataset.view === view));
     VIEWS.forEach(v => $("view-" + v).classList.toggle("hidden", v !== view));
@@ -372,8 +437,8 @@
       .then(r => r.ok ? r.json() : Promise.reject(r.status))
       .catch(() => fetch(name + bust).then(r => r.ok ? r.json() : Promise.reject(r.status)));
   };
-  Promise.allSettled([j("paper.json"), j("clv.json"), j("markets.json"), j("arb.json"), j("maker.json"), j("baskets.json"), j("scoreboard.json"), j("analysis.json")])
-    .then(([pp, cl, mk, ar, ma, bk, sb, an]) => {
+  Promise.allSettled([j("paper.json"), j("clv.json"), j("markets.json"), j("arb.json"), j("maker.json"), j("baskets.json"), j("scoreboard.json"), j("analysis.json"), j("whales.json")])
+    .then(([pp, cl, mk, ar, ma, bk, sb, an, wh]) => {
       const paper = pp.status === "fulfilled" ? pp.value : {};
       const clv = cl.status === "fulfilled" ? cl.value : {};
       const markets = mk.status === "fulfilled" ? mk.value : {};
@@ -392,6 +457,7 @@
       if (markets.generatedAt) $("updated").textContent = "Stand: " + markets.generatedAt;
       renderArb(arb);
       renderBaskets(baskets);
+      renderWhales(wh.status === "fulfilled" ? wh.value : {});
       renderMaker(maker);
     });
 })();

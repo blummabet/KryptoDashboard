@@ -81,15 +81,24 @@ def gamma_markets_negrisk(max_markets: int = 600, page: int = 100) -> list:
 
 
 def fetch_market(slug: str) -> dict | None:
-    """Einen einzelnen Markt per Slug holen (u.a. für Auflösungs-Check). None bei Fehler/leer."""
+    """Einen einzelnen Markt per Slug holen (u.a. für Auflösungs-Check). None bei Fehler/leer.
+
+    ⚠️ TEUER GELERNT (2026-07-13): Gamma blendet bei /markets?slug=… GESCHLOSSENE Märkte per Default
+    AUS → aufgelöste Märkte kamen als [] zurück, resolutions.json blieb dauerhaft LEER und die ganze
+    Kalibrierung (Brier/CLV gegen Auflösung) war tot. Deshalb: erst normal (offene Märkte), und wenn
+    leer, nochmal mit closed=true (aufgelöste). Verifiziert: closed=true liefert outcomePrices ["0","1"].
+    """
     if not slug:
         return None
-    try:
-        d = _get_json(f"{GAMMA_MARKETS}?slug={slug}&limit=1")
-        return d[0] if d else None
-    except Exception as e:
-        print(f"  ⚠️ fetch_market({slug}): {e}")
-        return None
+    for q in (f"?slug={slug}&limit=1", f"?slug={slug}&closed=true&limit=1"):
+        try:
+            d = _get_json(f"{GAMMA_MARKETS}{q}")
+            if d:
+                return d[0]
+        except Exception as e:
+            print(f"  ⚠️ fetch_market({slug}): {e}")
+            return None
+    return None
 
 
 def is_derived_market(slug: str) -> bool:

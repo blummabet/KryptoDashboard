@@ -136,8 +136,40 @@ def market_whale_summary(slug: str | None = None, market_id: str | None = None,
 
 
 def leaderboard(limit: int = 50) -> list | None:
+    """Top-Trader nach PnL. Schema (verifiziert 2026-07-13): wallet_address, display_name,
+    total_pnl, total_volume, roi, num_trades, wins, losses, best_trade_roi, best_trade_market.
+    ⚠️ Dominiert von toten Ein-Treffer-Walen (z.B. Theo4: $22M, aber nur 23 Märkte, seit 11/2024 inaktiv)."""
     d = _get("leaderboard", {"limit": limit})
     return d if isinstance(d, list) else (d.get("traders") if isinstance(d, dict) else None)
+
+
+def whale_trades(limit: int = 50) -> list | None:
+    """Letzte Großtrades über ALLE Märkte (Live-Feed).
+    Schema: wallet, market (slug), market_question, side, size (USD), price, outcome, timestamp."""
+    d = _get("whale_trades", {"limit": limit})
+    if isinstance(d, dict):
+        d = d.get("trades") or d.get("items")
+    return d if isinstance(d, list) else None
+
+
+def wallet_profile(address: str) -> dict | None:
+    """Bilanz einer Wallet. Schema (verifiziert): num_trades, wins, losses, win_rate, unique_markets,
+    roi, total_pnl, total_volume, biggest_win_usd, biggest_loss_usd, first_trade_date, last_trade_date."""
+    if not address:
+        return None
+    d = _get("wallet_profile", {"address": address})
+    return d if isinstance(d, dict) else None
+
+
+def wallet_trades(address: str, limit: int = 50) -> list | None:
+    """Trade-Historie einer Wallet. Schema: market, market_question, event_slug, outcome, side,
+    price, size, trade_timestamp, transaction_hash. (Leer bei manchen Alt-Wallets.)"""
+    if not address:
+        return None
+    d = _get("wallet_trades", {"address": address, "limit": limit})
+    if isinstance(d, dict):
+        d = d.get("trades")
+    return d if isinstance(d, list) else None
 
 
 if __name__ == "__main__":

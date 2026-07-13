@@ -194,6 +194,7 @@
       <span class="tab" data-view="radar">Edge-Radar</span>
       <span class="tab" data-view="arb">Konsistenz-Arb</span>
       <span class="tab" data-view="baskets">Multi-Outcome</span>
+      <span class="tab" data-view="whales">🐋 Whale-Follow</span>
       <span class="tab" data-view="maker">Maker-Board</span>
     </div>
 
@@ -293,6 +294,39 @@
           <th class="r">Netto-Gap</th><th class="r">handelbar</th>
         </tr></thead><tbody id="basketRows"><tr><td colspan="6" class="empty">Lade…</td></tr></tbody></table>
         <div class="ctx-note">Auf liquiden Märkten (WM, Wahlen) ist die Kante durch den Overround meist wegarbitriert; sie taucht in <b>dünnen/frischen</b> Multi-Outcome-Märkten auf. Ausführung braucht ALLE Beine gleichzeitig + Runner. Read-only, kein echtes Geld.</div>
+      </div>
+    </div>
+
+    <!-- WHALE-FOLLOW -->
+    <div id="view-whales" class="hidden">
+      <div class="explain">Copy-Trading-Seiten (Polystreet &amp; Co.) zeigen dir nur <b>PnL</b> — und nur die Gewinner. Das ist <b>Survivorship Bias</b>: bei genug Tradern hat immer einer eine Traumkurve. Hier rechnen wir die Bilanz jedes Wals <b>selbst</b> nach und filtern hart: Ein-Treffer-Wunder, Inaktive, Verlierer und Kleinst-Stichproben fliegen raus.<br>
+        <span style="color:var(--warn)">Und wir messen die Zahl, die keine Copy-Seite ausweist:</span> den <b>Copy-Lag</b>. Wenn der Wal kauft, bewegt <b>seine eigene Order</b> den Preis — die Bücher sind dünn. Du kopierst danach und zahlst schlechter. <b>Frisst der Lag die Kante, ist Copy-Trading tot — egal wie gut der Wal ist.</b></div>
+
+      <div class="kpis" id="whaleKpis"></div>
+
+      <div class="card" style="margin-bottom:16px">
+        <div class="card-h"><span class="t">💸 Copy-Lag — was uns das Kopieren kostet</span><span class="badge b-edge">die ehrliche Zahl</span></div>
+        <div id="whaleLag"><div class="empty">Lade…</div></div>
+        <div class="ctx-note">Gemessen nur an Trades <b>qualifizierter</b> Wale: aktueller Poly-Preis minus sein Fill-Preis, in seine Richtung. <b>Positiv = wir zahlen drauf.</b> Ein Wal müsste also erst diesen Lag verdienen, bevor Kopieren für uns überhaupt bei null steht.</div>
+      </div>
+
+      <div class="card" style="margin-bottom:16px">
+        <div class="card-h"><span class="t">🐋 Die Wale — unsere eigene Bilanz</span><span class="badge b-edge">nicht dem Leaderboard geglaubt</span>
+          <span class="hint" id="whaleWalletHint"></span></div>
+        <table><thead><tr>
+          <th>Wallet</th><th class="r">PnL</th><th class="r">ROI</th><th class="r">Treffer</th>
+          <th class="r">aufgelöst</th><th class="r">Märkte</th><th class="r">zuletzt</th><th>Unser Urteil</th>
+        </tr></thead><tbody id="whaleWalletRows"><tr><td colspan="8" class="empty">Lade…</td></tr></tbody></table>
+        <div class="ctx-note">Qualifiziert = ≥50 aufgelöste Trades, ≥20 verschiedene Märkte, aktiv (&lt;45 Tage), positiver ROI, <b>und</b> kein Ein-Treffer-Wunder (ein Trade darf nicht &gt;50 % des Gewinns ausmachen).</div>
+      </div>
+
+      <div class="card">
+        <div class="card-h"><span class="t">📡 Live-Feed — Großtrades</span><span class="hint" id="whaleFeedHint"></span></div>
+        <table><thead><tr>
+          <th>Wal</th><th>Markt</th><th class="r">Seite</th><th class="r">Preis</th>
+          <th class="r">Größe</th><th class="r">Copy-Lag</th>
+        </tr></thead><tbody id="whaleFeedRows"><tr><td colspan="6" class="empty">Lade…</td></tr></tbody></table>
+        <div class="ctx-note">Grau = Wal nicht qualifiziert (den würden wir <b>nicht</b> kopieren). Copy-Lag wird nur für qualifizierte gemessen.</div>
       </div>
     </div>
 
