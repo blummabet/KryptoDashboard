@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T18:13:19Z",
+  "generatedAt": "2026-07-14T20:21:19Z",
   "count": 4,
   "tradableCount": 1,
   "basketFindings": [],
@@ -9,15 +9,23 @@
   "paper": {
     "summary": {
       "mode": "PAPER / DRY-RUN",
-      "totalPnl": 157.58,
+      "totalPnl": 200.12,
       "realizedPnl": 157.58,
-      "lockedOpen": 0,
-      "openCount": 0,
+      "lockedOpen": 42.54,
+      "openCount": 1,
       "closedCount": 3,
       "winRate": 1.0,
       "stakeUSD": 100.0
     },
-    "open": [],
+    "open": [
+      {
+        "label": "dip $60,000 bis 2026-08-01 (100%) ↔ dip $62,500 bis 2026-08-01 (68%) verletzt Monotonie",
+        "gapPP": 30.9,
+        "cost": 0.691,
+        "lockedMin": 42.54,
+        "entryTs": "2026-07-14T20:21:19Z"
+      }
+    ],
     "closed": [
       {
         "key": "0x94ffe3d2cb1d82da14d0131547415c2fd5d3573eb82cff842738c915d7201b44|0x95875dfa90858e65f69d6f724da1c648a6d153b9b22e513e5ed132cb13305229",
@@ -77,7 +85,14 @@
         "roiPct": 67.1
       }
     ],
-    "activity": []
+    "activity": [
+      {
+        "ts": "2026-07-14T20:21:19Z",
+        "type": "open",
+        "market": "dip $60,000 bis 2026-08-01 (100%) ↔ dip $62,500 bis 2026-08-01 (68%) verletzt Monotonie",
+        "gap": 32.5
+      }
+    ]
   },
   "findings": [
     {
@@ -87,16 +102,16 @@
       "lowStrike": 60000,
       "highStrike": 62500,
       "lowP": 1.0,
-      "highP": 0.53,
+      "highP": 0.675,
       "lowCid": "0x94ffe3d2cb1d82da14d0131547415c2fd5d3573eb82cff842738c915d7201b44",
       "highCid": "0x14ea3802ada17265002bff37ddc4ea65014d3e37cb80ef2ea8aa2f588a5f78bc",
       "lowBid": 0.999,
       "lowAsk": 1,
-      "highBid": 0.06,
-      "highAsk": 1,
-      "gapPP": 47.0,
+      "highBid": 0.66,
+      "highAsk": 0.69,
+      "gapPP": 32.5,
       "tradable": true,
-      "note": "dip $60,000 bis 2026-08-01 (100%) ↔ dip $62,500 bis 2026-08-01 (53%) verletzt Monotonie"
+      "note": "dip $60,000 bis 2026-08-01 (100%) ↔ dip $62,500 bis 2026-08-01 (68%) verletzt Monotonie"
     },
     {
       "family": "touch",
@@ -120,6 +135,24 @@
       "family": "touch",
       "date": "2027-01-01",
       "direction": "above",
+      "lowStrike": 180000,
+      "highStrike": 190000,
+      "lowP": 0.02,
+      "highP": 0.021,
+      "lowCid": "0x799c35de1e5f3ebd75053643e020e6df9e9a3f477e3d6066eb0a8565f65d547f",
+      "highCid": "0xe71b9d788ce662d967ff2c90749ff8b26cee290455ef6cb84f33d1393ffae115",
+      "lowBid": 0.019,
+      "lowAsk": 0.021,
+      "highBid": 0.02,
+      "highAsk": 0.022,
+      "gapPP": 0.1,
+      "tradable": false,
+      "note": "erreicht $180,000 bis 2027-01-01 (2%) ↔ erreicht $190,000 bis 2027-01-01 (2%) verletzt Monotonie"
+    },
+    {
+      "family": "touch",
+      "date": "2027-01-01",
+      "direction": "above",
       "lowStrike": 170000,
       "highStrike": 180000,
       "lowP": 0.0195,
@@ -133,24 +166,6 @@
       "gapPP": 0.05,
       "tradable": false,
       "note": "erreicht $170,000 bis 2027-01-01 (2%) ↔ erreicht $180,000 bis 2027-01-01 (2%) verletzt Monotonie"
-    },
-    {
-      "family": "touch",
-      "date": "2027-01-01",
-      "direction": "above",
-      "lowStrike": 180000,
-      "highStrike": 190000,
-      "lowP": 0.02,
-      "highP": 0.0205,
-      "lowCid": "0x799c35de1e5f3ebd75053643e020e6df9e9a3f477e3d6066eb0a8565f65d547f",
-      "highCid": "0xe71b9d788ce662d967ff2c90749ff8b26cee290455ef6cb84f33d1393ffae115",
-      "lowBid": 0.019,
-      "lowAsk": 0.021,
-      "highBid": 0.02,
-      "highAsk": 0.021,
-      "gapPP": 0.05,
-      "tradable": false,
-      "note": "erreicht $180,000 bis 2027-01-01 (2%) ↔ erreicht $190,000 bis 2027-01-01 (2%) verletzt Monotonie"
     }
   ]
 }
