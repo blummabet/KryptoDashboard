@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-19 17:11 UTC",
+  "generatedAt": "2026-07-19 19:20 UTC",
   "scanned": 600,
-  "count": 14,
+  "count": 11,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -75,51 +75,56 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.014,
-      "grossPP": 98.6,
-      "feePP": 0.07,
-      "netPP": 98.53,
+      "sumProb": 0.087,
+      "grossPP": 91.3,
+      "feePP": 0.44,
+      "netPP": 90.86,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xfe116e8e2fdc16676c0795ba1b4b5af7733077ea6d504ec98d0bb8dcf97b2300",
-      "event": "Elon Musk # tweets July 17 - July 24, 2026?",
-      "slug": "elon-musk-of-tweets-july-17-july-24",
-      "endDate": "2026-07-24T16:00:00Z",
-      "n": 3,
+      "negRiskMarketID": "0x2aed27503cae1ac0eca6255000609ad7c5f0b2ce62d3584dfa0fbe498bf14e00",
+      "event": "NBA Free Agency: Jalen Duren Next Team",
+      "slug": "nba-free-agency-jalen-duren-next-team-20260622170505392",
+      "endDate": "2026-10-31T23:59:00Z",
+      "n": 4,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "80-99",
-          "bid": 0.01,
-          "ask": 0.011
+          "name": "Cleveland Cavaliers",
+          "bid": 0.006,
+          "ask": 0.03
         },
         {
-          "name": "60-79",
-          "bid": 0.001,
-          "ask": 0.002
-        },
-        {
-          "name": "360-379",
+          "name": "Minnesota Timberwolves",
           "bid": null,
-          "ask": 0.001
+          "ask": 0.029
+        },
+        {
+          "name": "Toronto Raptors",
+          "bid": null,
+          "ask": 0.017
+        },
+        {
+          "name": "Portland Trail Blazers",
+          "bid": 0.004,
+          "ask": 0.011
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.118,
-      "grossPP": 88.2,
-      "feePP": 0.47,
-      "netPP": 87.73,
+      "sumProb": 0.11,
+      "grossPP": 89.0,
+      "feePP": 0.44,
+      "netPP": 88.56,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
       "event": "Democratic Presidential Nominee 2028",
       "slug": "democratic-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 21,
+      "n": 20,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -135,11 +140,6 @@
           "ask": 0.009
         },
         {
-          "name": "Roy Cooper",
-          "bid": 0.007,
-          "ask": 0.008
-        },
-        {
           "name": "Gretchen Whitmer",
           "bid": 0.005,
           "ask": 0.007
@@ -153,104 +153,31 @@
           "name": "Cory Booker",
           "bid": 0.006,
           "ask": 0.007
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.137,
-      "grossPP": 86.3,
-      "feePP": 0.69,
-      "netPP": 85.61,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x2aed27503cae1ac0eca6255000609ad7c5f0b2ce62d3584dfa0fbe498bf14e00",
-      "event": "NBA Free Agency: Jalen Duren Next Team",
-      "slug": "nba-free-agency-jalen-duren-next-team-20260622170505392",
-      "endDate": "2026-10-31T23:59:00Z",
-      "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
+        },
         {
-          "name": "Cleveland Cavaliers",
+          "name": "Hunter Biden",
           "bid": 0.004,
-          "ask": 0.105
-        },
-        {
-          "name": "Toronto Raptors",
-          "bid": null,
-          "ask": 0.017
-        },
-        {
-          "name": "Portland Trail Blazers",
-          "bid": 0.007,
-          "ask": 0.015
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.323,
-      "grossPP": 67.7,
-      "feePP": 1.29,
-      "netPP": 66.41,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
-      "event": "Republican Presidential Nominee 2028",
-      "slug": "republican-presidential-nominee-2028",
-      "endDate": "2028-11-07T00:00:00Z",
-      "n": 4,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Marco Rubio",
-          "bid": 0.279,
-          "ask": 0.28
-        },
-        {
-          "name": "Tucker Carlson",
-          "bid": 0.03,
-          "ask": 0.031
-        },
-        {
-          "name": "Elise Stefanik",
-          "bid": 0.005,
-          "ask": 0.006
-        },
-        {
-          "name": "Eric Trump",
-          "bid": 0.005,
           "ask": 0.006
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.368,
-      "grossPP": 63.2,
-      "feePP": 1.47,
-      "netPP": 61.73,
+      "sumProb": 0.161,
+      "grossPP": 83.9,
+      "feePP": 0.64,
+      "netPP": 83.26,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 23,
+      "n": 21,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
-        {
-          "name": "JD Vance",
-          "bid": 0.198,
-          "ask": 0.199
-        },
         {
           "name": "Josh Shapiro",
           "bid": 0.027,
@@ -275,100 +202,71 @@
           "name": "Wes Moore",
           "bid": 0.008,
           "ask": 0.009
+        },
+        {
+          "name": "Greg Abbott",
+          "bid": 0.008,
+          "ask": 0.009
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.496,
-      "grossPP": 50.4,
-      "feePP": 3.47,
-      "netPP": 46.93,
+      "sumProb": 0.32,
+      "grossPP": 68.0,
+      "feePP": 1.28,
+      "netPP": 66.72,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x03c9c6d9f7b20aaa1f33f99bd24bd16e4e0e00cfa892dde097b800655490b200",
-      "event": "Who will be the next Prime Minister of Israel after the next election?",
-      "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
-      "endDate": "2026-12-31T00:00:00Z",
+      "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
+      "event": "Republican Presidential Nominee 2028",
+      "slug": "republican-presidential-nominee-2028",
+      "endDate": "2028-11-07T00:00:00Z",
       "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Gadi Eizenkot",
-          "bid": 0.482,
-          "ask": 0.486
+          "name": "Marco Rubio",
+          "bid": 0.273,
+          "ask": 0.274
         },
         {
-          "name": "Yariv Levin",
+          "name": "Tucker Carlson",
+          "bid": 0.03,
+          "ask": 0.031
+        },
+        {
+          "name": "Elise Stefanik",
+          "bid": 0.005,
+          "ask": 0.006
+        },
+        {
+          "name": "Eric Trump",
+          "bid": 0.005,
+          "ask": 0.006
+        },
+        {
+          "name": "John Thune",
           "bid": 0.002,
           "ask": 0.003
-        },
-        {
-          "name": "Benny Gantz",
-          "bid": 0.002,
-          "ask": 0.003
-        },
-        {
-          "name": "Nir Barkat",
-          "bid": 0.001,
-          "ask": 0.002
-        },
-        {
-          "name": "Yair Golan",
-          "bid": 0.001,
-          "ask": 0.002
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.511,
-      "grossPP": 48.9,
-      "feePP": 2.56,
-      "netPP": 46.34,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x56c7bcc040eedc239b28de10d3cb76a94cd6d98e071564de3333ee74354ac600",
-      "event": "Highest temperature in NYC on July 19?",
-      "slug": "highest-temperature-in-nyc-on-july-19-2026",
-      "endDate": "2026-07-19T12:00:00Z",
-      "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "78-79°F",
-          "bid": 0.26,
-          "ask": 0.29
-        },
-        {
-          "name": "82-83°F",
-          "bid": 0.15,
-          "ask": 0.22
-        },
-        {
-          "name": "76-77°F",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.516,
-      "grossPP": 48.4,
-      "feePP": 2.58,
-      "netPP": 45.82,
+      "sumProb": 0.494,
+      "grossPP": 50.6,
+      "feePP": 2.47,
+      "netPP": 48.13,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xbb01d92208e308f14eb9917889bb2b449395207a26fe2a7990c3d5def7f74c00",
       "event": "NBA: 2027 Champion",
       "slug": "nba-2027-champion",
       "endDate": "2027-07-01T00:00:00Z",
-      "n": 9,
+      "n": 7,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -407,10 +305,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.718,
-      "grossPP": 28.2,
-      "feePP": 1.99,
-      "netPP": 26.21,
+      "sumProb": 0.72,
+      "grossPP": 28.0,
+      "feePP": 2.0,
+      "netPP": 26.0,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x966a3221e05d8d0579854c4952085331da2a42989dee0fa033d24cada9dfca00",
@@ -429,8 +327,8 @@
         },
         {
           "name": "Renan Santos",
-          "bid": 0.08,
-          "ask": 0.082
+          "bid": 0.082,
+          "ask": 0.084
         },
         {
           "name": "Ronaldo Caiado",
@@ -446,10 +344,59 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.906,
-      "grossPP": 9.4,
-      "feePP": 2.23,
-      "netPP": 7.17,
+      "sumProb": 0.852,
+      "grossPP": 14.8,
+      "feePP": 5.96,
+      "netPP": 8.84,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x03c9c6d9f7b20aaa1f33f99bd24bd16e4e0e00cfa892dde097b800655490b200",
+      "event": "Who will be the next Prime Minister of Israel after the next election?",
+      "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
+      "endDate": "2026-12-31T00:00:00Z",
+      "n": 6,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Gadi Eizenkot",
+          "bid": 0.481,
+          "ask": 0.482
+        },
+        {
+          "name": "Benjamin Netanyahu",
+          "bid": 0.35,
+          "ask": 0.36
+        },
+        {
+          "name": "Yariv Levin",
+          "bid": 0.002,
+          "ask": 0.003
+        },
+        {
+          "name": "Benny Gantz",
+          "bid": 0.002,
+          "ask": 0.003
+        },
+        {
+          "name": "Nir Barkat",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "Yair Golan",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.918,
+      "grossPP": 8.2,
+      "feePP": 2.16,
+      "netPP": 6.04,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2e8ee0b78c06349677514c81455c1256e07e0b2cf4c9cde23fd23f65eda05200",
@@ -464,7 +411,7 @@
         {
           "name": "Kimi Antonelli",
           "bid": 0.728,
-          "ask": 0.73
+          "ask": 0.743
         },
         {
           "name": "George Russell",
@@ -474,7 +421,7 @@
         {
           "name": "Charles Leclerc",
           "bid": 0.03,
-          "ask": 0.032
+          "ask": 0.031
         },
         {
           "name": "Max Verstappen",
@@ -483,17 +430,17 @@
         },
         {
           "name": "Lando Norris",
-          "bid": 0.02,
+          "bid": 0.019,
           "ask": 0.021
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.979,
-      "grossPP": 2.1,
-      "feePP": 0.21,
-      "netPP": 1.9,
+      "sumProb": 0.978,
+      "grossPP": 2.2,
+      "feePP": 0.2,
+      "netPP": 2.0,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x3496a65b46d0abe5e04f8719527707b6a2fee35b716e3aa4fb924edd70beb500",
@@ -517,40 +464,6 @@
         },
         {
           "name": "Jonas Vingegaard",
-          "bid": null,
-          "ask": 0.002
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.982,
-      "grossPP": 1.8,
-      "feePP": 0.11,
-      "netPP": 1.69,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xf8e7b1aaaef926b043d8e89c95b0acff4437c15476aac2373d40195b46fdb700",
-      "event": "Highest temperature in London on July 19?",
-      "slug": "highest-temperature-in-london-on-july-19-2026",
-      "endDate": "2026-07-19T12:00:00Z",
-      "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "21°C",
-          "bid": 0.96,
-          "ask": 0.98
-        },
-        {
-          "name": "20°C",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "23°C",
           "bid": null,
           "ask": 0.001
         }
