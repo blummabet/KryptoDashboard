@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-20T14:29:15Z",
-  "count": 4,
-  "tradableCount": 1,
+  "generatedAt": "2026-07-20T16:43:09Z",
+  "count": 5,
+  "tradableCount": 2,
   "basketFindings": [],
   "basketCount": 0,
   "basketTradable": 0,
@@ -9,10 +9,10 @@
   "paper": {
     "summary": {
       "mode": "PAPER / DRY-RUN",
-      "totalPnl": 200.12,
+      "totalPnl": 200.95,
       "realizedPnl": 157.58,
-      "lockedOpen": 42.54,
-      "openCount": 1,
+      "lockedOpen": 43.37,
+      "openCount": 2,
       "closedCount": 3,
       "winRate": 1.0,
       "stakeUSD": 100.0
@@ -24,6 +24,13 @@
         "cost": 0.691,
         "lockedMin": 42.54,
         "entryTs": "2026-07-14T20:21:19Z"
+      },
+      {
+        "label": "dip $62,500 bis 2026-08-01 (100%) ↔ dip $65,000 bis 2026-08-01 (50%) verletzt Monotonie",
+        "gapPP": 0.9,
+        "cost": 0.991,
+        "lockedMin": 0.83,
+        "entryTs": "2026-07-20T16:43:09Z"
       }
     ],
     "closed": [
@@ -85,7 +92,14 @@
         "roiPct": 67.1
       }
     ],
-    "activity": []
+    "activity": [
+      {
+        "ts": "2026-07-20T16:43:09Z",
+        "type": "open",
+        "market": "dip $62,500 bis 2026-08-01 (100%) ↔ dip $65,000 bis 2026-08-01 (50%) verletzt Monotonie",
+        "gap": 50.0
+      }
+    ]
   },
   "findings": [
     {
@@ -95,16 +109,34 @@
       "lowStrike": 60000,
       "highStrike": 62500,
       "lowP": 1.0,
-      "highP": 0.619,
+      "highP": 0.4355,
       "lowCid": "0x94ffe3d2cb1d82da14d0131547415c2fd5d3573eb82cff842738c915d7201b44",
       "highCid": "0x14ea3802ada17265002bff37ddc4ea65014d3e37cb80ef2ea8aa2f588a5f78bc",
       "lowBid": 0.999,
       "lowAsk": 1,
-      "highBid": 0.618,
-      "highAsk": 0.62,
-      "gapPP": 38.1,
+      "highBid": 0.435,
+      "highAsk": 0.436,
+      "gapPP": 56.45,
       "tradable": true,
-      "note": "dip $60,000 bis 2026-08-01 (100%) ↔ dip $62,500 bis 2026-08-01 (62%) verletzt Monotonie"
+      "note": "dip $60,000 bis 2026-08-01 (100%) ↔ dip $62,500 bis 2026-08-01 (44%) verletzt Monotonie"
+    },
+    {
+      "family": "touch",
+      "date": "2026-08-01",
+      "direction": "below",
+      "lowStrike": 62500,
+      "highStrike": 65000,
+      "lowP": 1.0,
+      "highP": 0.5,
+      "lowCid": "0x95875dfa90858e65f69d6f724da1c648a6d153b9b22e513e5ed132cb13305229",
+      "highCid": "0xb6299eef8d24d10e7feef439af31f54b2051a7630b02ecc7e466d8675d917a29",
+      "lowBid": 0.999,
+      "lowAsk": 1,
+      "highBid": 0.01,
+      "highAsk": 0.99,
+      "gapPP": 50.0,
+      "tradable": true,
+      "note": "dip $62,500 bis 2026-08-01 (100%) ↔ dip $65,000 bis 2026-08-01 (50%) verletzt Monotonie"
     },
     {
       "family": "touch",
@@ -126,6 +158,24 @@
     },
     {
       "family": "touch",
+      "date": "2026-08-01",
+      "direction": "below",
+      "lowStrike": 45000,
+      "highStrike": 47500,
+      "lowP": 0.0035,
+      "highP": 0.0025,
+      "lowCid": "0xec540d631a88397ca01a17e48193019b4d680fde10087a38d5c8467bfaae18c0",
+      "highCid": "0xdfbe36a1200c4ec361aa20733ede4d33085eef400c11d28a00079a2ba46d3d05",
+      "lowBid": 0.003,
+      "lowAsk": 0.004,
+      "highBid": 0.002,
+      "highAsk": 0.003,
+      "gapPP": 0.1,
+      "tradable": false,
+      "note": "dip $45,000 bis 2026-08-01 (0%) ↔ dip $47,500 bis 2026-08-01 (0%) verletzt Monotonie"
+    },
+    {
+      "family": "touch",
       "date": "2027-01-01",
       "direction": "below",
       "lowStrike": 20000,
@@ -141,24 +191,6 @@
       "gapPP": 0.05,
       "tradable": false,
       "note": "dip $20,000 bis 2027-01-01 (5%) ↔ dip $25,000 bis 2027-01-01 (4%) verletzt Monotonie"
-    },
-    {
-      "family": "touch",
-      "date": "2026-08-01",
-      "direction": "below",
-      "lowStrike": 45000,
-      "highStrike": 47500,
-      "lowP": 0.0035,
-      "highP": 0.003,
-      "lowCid": "0xec540d631a88397ca01a17e48193019b4d680fde10087a38d5c8467bfaae18c0",
-      "highCid": "0xdfbe36a1200c4ec361aa20733ede4d33085eef400c11d28a00079a2ba46d3d05",
-      "lowBid": 0.003,
-      "lowAsk": 0.004,
-      "highBid": 0.002,
-      "highAsk": 0.004,
-      "gapPP": 0.05,
-      "tradable": false,
-      "note": "dip $45,000 bis 2026-08-01 (0%) ↔ dip $47,500 bis 2026-08-01 (0%) verletzt Monotonie"
     }
   ]
 }
