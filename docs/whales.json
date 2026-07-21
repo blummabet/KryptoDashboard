@@ -2,68 +2,49 @@
   "summary": {
     "enabled": true,
     "feedCount": 50,
-    "walletsProbed": 10,
+    "walletsProbed": 9,
     "qualifiedCount": 1,
-    "rejectedCount": 9,
-    "avgCopyLagPP": 70.5,
+    "rejectedCount": 8,
+    "avgCopyLagPP": 0.5,
     "lagSample": 1,
-    "verdict": "Kopieren kostet im Schnitt 70.50pp pro Trade"
+    "verdict": "Kopieren kostet im Schnitt 0.50pp pro Trade"
   },
   "wallets": [
     {
-      "resolved": 2522,
-      "uniqueMarkets": 2350,
-      "roi": 2.95,
-      "pnl": 2087633.5,
-      "winRate": 42.2,
-      "volume": 322478445.0,
-      "inactiveDays": 7.8,
+      "resolved": 7488,
+      "uniqueMarkets": 2277,
+      "roi": 7.23,
+      "pnl": 964627.06,
+      "winRate": 56.7,
+      "volume": 6884028.0,
+      "inactiveDays": 3.5,
       "oneHit": false,
-      "biggestWin": 231312.81,
+      "biggestWin": 50665.37,
       "qualified": true,
       "rejectReasons": [],
-      "wallet": "0x9cb990f1862568a63d8601efeebe0304225c32f2",
-      "name": "0x9cb990f1…",
-      "firstTrade": "2025-05-04",
-      "lastTrade": "2026-07-13"
+      "wallet": "0x01c78f8873c0c86d6b6b92ff627e3802237ee995",
+      "name": "0x01c78f88…",
+      "firstTrade": "2026-05-04",
+      "lastTrade": "2026-07-18"
     },
     {
-      "resolved": 205,
-      "uniqueMarkets": 134,
-      "roi": 1.34,
-      "pnl": 3405.26,
-      "winRate": 75.6,
-      "volume": 2758792.0,
-      "inactiveDays": 63.0,
+      "resolved": 19,
+      "uniqueMarkets": 171,
+      "roi": 0.27,
+      "pnl": 201.19,
+      "winRate": 100.0,
+      "volume": 12396370.0,
+      "inactiveDays": 20.7,
       "oneHit": false,
-      "biggestWin": 342.93,
+      "biggestWin": 18.64,
       "qualified": false,
       "rejectReasons": [
-        "inaktiv seit 63d"
+        "zu wenig Historie (19 aufgelöst)"
       ],
-      "wallet": "0xd0ac6e6b585c00042a0552a6cf35f2f056ef7dee",
-      "name": "0xd0ac6e6b…",
-      "firstTrade": "2026-05-05",
-      "lastTrade": "2026-05-19"
-    },
-    {
-      "resolved": 518,
-      "uniqueMarkets": 442,
-      "roi": 0.86,
-      "pnl": 89306.56,
-      "winRate": 91.3,
-      "volume": 47261881.0,
-      "inactiveDays": 93.1,
-      "oneHit": false,
-      "biggestWin": 20978.95,
-      "qualified": false,
-      "rejectReasons": [
-        "inaktiv seit 93d"
-      ],
-      "wallet": "0x40604cb1f958c03bea0b18aa43e4cb0d62f33ec3",
-      "name": "0x40604cb1…",
-      "firstTrade": "2025-10-30",
-      "lastTrade": "2026-04-19"
+      "wallet": "0xae6d1b5181d17157c6111fc574a3ff6b1a45ded2",
+      "name": "0xae6d1b51…",
+      "firstTrade": "2026-02-09",
+      "lastTrade": "2026-06-30"
     },
     {
       "resolved": 580,
@@ -85,26 +66,47 @@
       "lastTrade": "2026-07-14"
     },
     {
-      "resolved": 3,
-      "uniqueMarkets": 8,
-      "roi": -0.19,
-      "pnl": -2322.43,
-      "winRate": 33.3,
-      "volume": 2395.0,
-      "inactiveDays": 31.3,
+      "resolved": 0,
+      "uniqueMarkets": 98,
+      "roi": -0.9,
+      "pnl": -1190.06,
+      "winRate": 50.0,
+      "volume": 132144.0,
+      "inactiveDays": 214.1,
       "oneHit": false,
-      "biggestWin": 0.55,
+      "biggestWin": 0.0,
+      "qualified": false,
+      "rejectReasons": [
+        "zu wenig Historie (0 aufgelöst)",
+        "inaktiv seit 214d",
+        "verliert Geld (ROI -0.9%)",
+        "negatives PnL"
+      ],
+      "wallet": "0x200e8ad4763eac3ada1e8b69ab516fcb728d7d37",
+      "name": "0x200e8ad4…",
+      "firstTrade": "2025-11-12",
+      "lastTrade": "2025-12-19"
+    },
+    {
+      "resolved": 3,
+      "uniqueMarkets": 151,
+      "roi": -2.06,
+      "pnl": -242.28,
+      "winRate": 33.3,
+      "volume": 5609.0,
+      "inactiveDays": 0.0,
+      "oneHit": false,
+      "biggestWin": 542.72,
       "qualified": false,
       "rejectReasons": [
         "zu wenig Historie (3 aufgelöst)",
-        "nur 8 Märkte",
-        "verliert Geld (ROI -0.2%)",
+        "verliert Geld (ROI -2.1%)",
         "negatives PnL"
       ],
-      "wallet": "0xdf92cfe44f3907eae14323e9c2e3d1dc6d3c32e6",
-      "name": "0xdf92cfe4…",
-      "firstTrade": "2026-06-05",
-      "lastTrade": "2026-06-20"
+      "wallet": "0x918c3b2623b825d0292e20232280b8cd80078415",
+      "name": "0x918c3b26…",
+      "firstTrade": "2025-02-03",
+      "lastTrade": "2026-07-21"
     },
     {
       "resolved": 1373,
@@ -149,26 +151,6 @@
       "lastTrade": "2026-02-14"
     },
     {
-      "resolved": 198,
-      "uniqueMarkets": 464,
-      "roi": -18.62,
-      "pnl": -275061.53,
-      "winRate": 71.7,
-      "volume": 365243725.0,
-      "inactiveDays": 9.0,
-      "oneHit": false,
-      "biggestWin": 98828.33,
-      "qualified": false,
-      "rejectReasons": [
-        "verliert Geld (ROI -18.6%)",
-        "negatives PnL"
-      ],
-      "wallet": "0x9f035eb3edc2399bd32d7d02a5d8f4776910766d",
-      "name": "0x9f035eb3…",
-      "firstTrade": "2026-01-05",
-      "lastTrade": "2026-07-12"
-    },
-    {
       "resolved": 0,
       "uniqueMarkets": 2,
       "roi": 0.0,
@@ -211,6 +193,97 @@
     }
   ],
   "feed": [
+    {
+      "wallet": "0x01c78f8873c0c86d6b6b92ff627e3802237ee995",
+      "name": "0x01c78f88…",
+      "qualified": true,
+      "market": "Generali Open: Daniel Altmaier vs Raphael Collignon",
+      "slug": "atp-altmaie-collign-2026-07-20",
+      "side": "BUY",
+      "outcome": "Daniel Altmaier",
+      "price": 0.4099999997,
+      "sizeUSD": 1851.707316,
+      "ts": "2026-07-21T14:24:19+00:00",
+      "copyLagPP": 0.5
+    },
+    {
+      "wallet": "0xfe4f44cfe9c11a3ec2accdeff8af2cdf30422081",
+      "name": "0xfe4f44cf…",
+      "qualified": false,
+      "market": "Will Adanech Abiebie be the next Prime Minister of Ethiopia?",
+      "slug": "will-adanech-abiebie-be-the-next-prime-minister-of-ethiopia",
+      "side": "SELL",
+      "outcome": "Yes",
+      "price": 0.003,
+      "sizeUSD": 1504.99,
+      "ts": "2026-07-21T14:24:16+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xa971322dc7623a723e2a8e878cfad0b958ece71a",
+      "name": "0xa971322d…",
+      "qualified": false,
+      "market": "Exact Score: SK Iberia 1999 0 - 0 ŠK Slovan Bratislava? AND Exact Score: Sabah FK 2 - 0 Kuopion PS?",
+      "slug": null,
+      "side": "BUY",
+      "outcome": null,
+      "price": 0.0089999994,
+      "sizeUSD": 1587.777777,
+      "ts": "2026-07-21T14:24:16+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xae6d1b5181d17157c6111fc574a3ff6b1a45ded2",
+      "name": "0xae6d1b51…",
+      "qualified": false,
+      "market": "Will the highest temperature in London be 20°C on July 21?",
+      "slug": "highest-temperature-in-london-on-july-21-2026",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.999,
+      "sizeUSD": 5158.33,
+      "ts": "2026-07-21T14:24:13+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x918c3b2623b825d0292e20232280b8cd80078415",
+      "name": "0x918c3b26…",
+      "qualified": false,
+      "market": "Detroit Tigers vs. Chicago Cubs AND New York Mets vs. Milwaukee Brewers AND San Francisco Giants vs. Kansas City Royals AND Tampa Bay Rays vs. Toronto Blue Jays AND Cincinnati Reds vs. Seattle Mariners AND Miami Marlins vs. Houston Astros AND Chicago White Sox vs. Texas Rangers AND St. Louis Cardinals vs. Los Angeles Angels",
+      "slug": null,
+      "side": "BUY",
+      "outcome": null,
+      "price": 0.0069999995,
+      "sizeUSD": 2047.142857,
+      "ts": "2026-07-21T14:24:12+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x200e8ad4763eac3ada1e8b69ab516fcb728d7d37",
+      "name": "0x200e8ad4…",
+      "qualified": false,
+      "market": "Will the highest temperature in London be 20°C on July 21?",
+      "slug": "highest-temperature-in-london-on-july-21-2026",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.9872271548,
+      "sizeUSD": 1418.9,
+      "ts": "2026-07-21T14:24:06+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x3fe0cfc8514262ac97aaa7420562e018bd3fbcd3",
+      "name": "0x3fe0cfc8…",
+      "qualified": false,
+      "market": "Will Adanech Abiebie be the next Prime Minister of Ethiopia?",
+      "slug": "next-prime-minister-of-ethiopia",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.997,
+      "sizeUSD": 1504.99,
+      "ts": "2026-07-21T14:24:06+00:00",
+      "copyLagPP": null
+    },
     {
       "wallet": "0xfe4f44cfe9c11a3ec2accdeff8af2cdf30422081",
       "name": "0xfe4f44cf…",
@@ -331,7 +404,7 @@
     {
       "wallet": "0x9cb990f1862568a63d8601efeebe0304225c32f2",
       "name": "0x9cb990f1…",
-      "qualified": true,
+      "qualified": false,
       "market": "Generali Open: Alex Molcan vs Sebastian Ofner",
       "slug": "atp-molcan-ofner-2026-07-20",
       "side": "BUY",
@@ -339,7 +412,7 @@
       "price": 0.22,
       "sizeUSD": 2643.27,
       "ts": "2026-07-21T14:04:12+00:00",
-      "copyLagPP": 70.5
+      "copyLagPP": null
     },
     {
       "wallet": "0x40604cb1f958c03bea0b18aa43e4cb0d62f33ec3",
@@ -769,99 +842,8 @@
       "sizeUSD": 1429.0,
       "ts": "2026-07-21T13:01:49+00:00",
       "copyLagPP": null
-    },
-    {
-      "wallet": "0x32b484581fc5606de9c1e43af4636b6be9bc8b21",
-      "name": "0x32b48458…",
-      "qualified": false,
-      "market": "Generali Open: Laslo Djere vs Quentin Halys",
-      "slug": "atp-djere-halys-2026-07-21",
-      "side": "BUY",
-      "outcome": "Quentin Halys",
-      "price": 0.8699900001,
-      "sizeUSD": 5000.057469,
-      "ts": "2026-07-21T13:01:48+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x60ec17443af511a21945f01430e61c803465f7b0",
-      "name": "0x60ec1744…",
-      "qualified": false,
-      "market": "LoL: Hanwha Life Esports vs DN SOOPers (BO1) - KeSPA Cup Group Stage",
-      "slug": "lol-hle1-dnf-2026-07-21",
-      "side": "BUY",
-      "outcome": "DN SOOPers",
-      "price": 0.8089572973,
-      "sizeUSD": 2349.567776,
-      "ts": "2026-07-21T12:59:04+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xe8725f4bd4de73c888dda35c4850f702c322819a",
-      "name": "0xe8725f4b…",
-      "qualified": false,
-      "market": "Will Kuopion PS win on 2026-07-21?",
-      "slug": "ucl-sf-kps-2026-07-21-kps",
-      "side": "BUY",
-      "outcome": "No",
-      "price": 0.8195697917,
-      "sizeUSD": 14304.0,
-      "ts": "2026-07-21T12:56:58+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xfe4f44cfe9c11a3ec2accdeff8af2cdf30422081",
-      "name": "0xfe4f44cf…",
-      "qualified": false,
-      "market": "Will Adanech Abiebie be the next Prime Minister of Ethiopia?",
-      "slug": "will-adanech-abiebie-be-the-next-prime-minister-of-ethiopia",
-      "side": "SELL",
-      "outcome": "Yes",
-      "price": 0.003,
-      "sizeUSD": 1504.99,
-      "ts": "2026-07-21T12:56:58+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x9f035eb3edc2399bd32d7d02a5d8f4776910766d",
-      "name": "0x9f035eb3…",
-      "qualified": false,
-      "market": "Hamburg European Open: Tamara Korpatsch vs Victoria Jimenez Kasintseva",
-      "slug": "wta-korpats-kasints-2026-07-21",
-      "side": "BUY",
-      "outcome": "Tamara Korpatsch",
-      "price": 0.69,
-      "sizeUSD": 3623.188403,
-      "ts": "2026-07-21T12:56:55+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x7e5e420a5cde8a322f3b5b93a12a164827f47315",
-      "name": "0x7e5e420a…",
-      "qualified": false,
-      "market": "Detroit Tigers vs. Chicago Cubs AND San Francisco Giants vs. Kansas City Royals AND Tampa Bay Rays vs. Toronto Blue Jays AND Cincinnati Reds vs. Seattle Mariners AND Washington Nationals vs. Colorado Rockies AND Miami Marlins vs. Houston Astros AND Chicago White Sox vs. Texas Rangers AND St. Louis Cardinals vs. Los Angeles Angels",
-      "slug": null,
-      "side": "BUY",
-      "outcome": null,
-      "price": 0.008,
-      "sizeUSD": 1428.75,
-      "ts": "2026-07-21T12:54:13+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x48ac40fc545cf327edd5365435c3a9f385614a7e",
-      "name": "0x48ac40fc…",
-      "qualified": false,
-      "market": "Bitcoin Up or Down - July 21, 8AM ET",
-      "slug": "bitcoin-up-or-down-july-21-2026-8am-et",
-      "side": "BUY",
-      "outcome": "Up",
-      "price": 0.97,
-      "sizeUSD": 3000.01,
-      "ts": "2026-07-21T12:54:13+00:00",
-      "copyLagPP": null
     }
   ],
-  "generatedAt": "2026-07-21 14:24 UTC",
+  "generatedAt": "2026-07-21 14:35 UTC",
   "note": "Ehrliches Copy-Trading: Bilanz selbst nachgerechnet (nicht dem Leaderboard glauben), Ein-Treffer-Wunder/Inaktive/Verlierer gefiltert, und der Copy-Lag ausgewiesen — die Kosten, die entstehen, weil der Wal mit seiner Order den Preis selbst bewegt."
 }
