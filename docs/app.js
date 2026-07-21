@@ -285,15 +285,16 @@
           <td class="r">${b.tradeable ? `<span class="side side-${b.edgePP > 0 ? "YES" : "NO"}">${esc(b.dir)}</span>` : '<span class="mkt-sub">—</span>'}</td></tr>`;
       }).join("");
       const te = c.topEdge || {};
+      const deg = "°" + (c.unit || "C");
       const teChip = te.tradeable ? vchip("good", "Kandidat: " + te.label + " " + (te.edgePP > 0 ? "+" : "") + te.edgePP + "pp")
         : vchip("watch", "kein 8pp-Edge");
       return `<div class="card" style="margin-bottom:16px">
         <div class="card-h"><span class="t">${esc(c.city)} ${grp(c.group)}</span>
           <span class="hint">${esc(c.station)} · ${esc(c.date)} · Liq ${usd(c.liquidityUSD)}</span></div>
         <div style="display:flex;gap:18px;flex-wrap:wrap;align-items:baseline;margin:2px 0 10px">
-          <div><div class="lbl">Unser Tipp (kalibriert)</div><div class="v">${c.calibratedMean}°C <span style="font-size:13px;color:var(--muted)">± ${c.sigma}</span></div></div>
-          <div><div class="lbl">Rohmodelle</div><div class="v" style="font-size:16px">${c.ensembleMean}°C <span style="font-size:11px;color:var(--muted)">Spread ${c.modelSpread}</span></div></div>
-          <div><div class="lbl">Bias</div><div class="v" style="font-size:16px;color:${c.bias > 0 ? "var(--pos)" : c.bias < 0 ? "var(--neg)" : "var(--muted)"}">${c.bias == null ? "—" : (c.bias > 0 ? "+" : "") + c.bias + "°C"}</div><div class="grosslbl">${c.calDays || 0} Tage</div></div>
+          <div><div class="lbl">Unser Tipp (kalibriert)</div><div class="v">${c.calibratedMean}${deg} <span style="font-size:13px;color:var(--muted)">± ${c.sigma}</span></div></div>
+          <div><div class="lbl">Rohmodelle</div><div class="v" style="font-size:16px">${c.ensembleMean}${deg} <span style="font-size:11px;color:var(--muted)">Spread ${c.modelSpread}</span></div></div>
+          <div><div class="lbl">Bias</div><div class="v" style="font-size:16px;color:${c.bias > 0 ? "var(--pos)" : c.bias < 0 ? "var(--neg)" : "var(--muted)"}">${c.bias == null ? "—" : (c.bias > 0 ? "+" : "") + c.bias + deg}</div><div class="grosslbl">${c.calDays || 0} Tage</div></div>
           <div style="align-self:center">${c.modeMatch ? vchip("watch", "Modus = Markt") : teChip}</div>
         </div>
         <table><thead><tr><th>Bucket</th><th class="r">unsere Wkt.</th><th></th><th class="r">Poly</th><th class="r">Edge</th><th class="r">Signal</th></tr></thead>

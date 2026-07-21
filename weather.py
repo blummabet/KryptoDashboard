@@ -20,6 +20,7 @@ from __future__ import annotations
 import datetime
 import json
 import pathlib
+import re
 import statistics
 import urllib.parse
 import urllib.request
@@ -86,17 +87,25 @@ def slug_date(slug: str):
 
 
 def bucket_range(label: str):
-    """'27°C' → (26.5,27.5) · '21°C or below' → (-inf,21.5) · '30°C or above' → (29.5,inf).
-    Auflösung auf GANZE Grad: Bucket X = Ist rundet auf X = Tmax in [X-0.5, X+0.5)."""
+    """Bucket-Grenzen in der EINHEIT DES MARKTES (°C oder °F egal — nur Zahlen).
+    Auflösung auf GANZE Grad: Bucket X = Ist rundet auf X = [X-0.5, X+0.5). Formate:
+      '20°C' / '77°F'        → (X-0.5, X+0.5)
+      '72-73°F' (Range)      → (72-0.5, 73+0.5) = (71.5, 73.5)
+      '19°C or below'        → (-inf, 19.5)
+      '90°F or higher'/'or above' → (89.5, inf)
+    (Positive Temperaturen angenommen — die Pilot-Städte sind sommerlich; Vorzeichen wird ignoriert.)"""
     low = (label or "").lower()
-    digs = "".join(c if (c.isdigit() or c == "-") else " " for c in low).split()
-    if not digs:
+    nums = re.findall(r"\d+", low)
+    if not nums:
         return None
-    x = int(digs[0])
-    if "below" in low or "under" in low or "≤" in low or "or less" in low:
-        return (float("-inf"), x + 0.5)
-    if "above" in low or "over" in low or "≥" in low or "or more" in low or "+" in label:
-        return (x - 0.5, float("inf"))
+    if "below" in low or "under" in low or "less" in low or "≤" in low:
+        return (float("-inf"), int(nums[0]) + 0.5)
+    if "above" in low or "higher" in low or "over" in low or "more" in low or "≥" in low:
+        return (int(nums[0]) - 0.5, float("inf"))
+    if len(nums) >= 2:                      # Range-Bucket, z.B. '72-73°F'
+        lo, hi = int(nums[0]), int(nums[1])
+        return (min(lo, hi) - 0.5, max(lo, hi) + 0.5)
+    x = int(nums[0])
     return (x - 0.5, x + 0.5)
 
 
@@ -180,14 +189,39 @@ def _yes(m):
         return None
 
 
+def _detect_unit(ev: dict) -> str:
+    """'F' wenn der Markt in Fahrenheit auflöst, sonst 'C'. Aus der Auflösungsbeschreibung."""
+    d = ((ev.get("markets") or [{}])[0].get("description") or "").lower()
+    if "fahrenheit" in d:
+        return "F"
+    if "celsius" in d:
+        return "C"
+    # Fallback: steht °F in einem Bucket-Label?
+    for m in ev.get("markets") or []:
+        if "°f" in (m.get("groupItemTitle") or "").lower():
+            return "F"
+    return "C"
+
+
+def _c_to(unit: str, temp_c: float, is_delta: bool = False) -> float:
+    """°C → Markt-Einheit. is_delta=True für Differenzen (Sigma/Bias): nur ×9/5, kein +32."""
+    if unit == "F":
+        return temp_c * 9 / 5 + (0 if is_delta else 32)
+    return temp_c
+
+
 def build_city(city: str, cfg: dict, ev: dict, date_iso: str) -> dict | None:
     fc = ensemble_forecast(cfg, date_iso)
     if not fc:
         return None
     cal = calibrate(cfg)
-    cal_mean = round(fc["mean"] + (cal["bias"] or 0.0), 2)
-    # Unsicherheit: Kalibrier-Reststreuung ODER Modell-Spread, mind. SIGMA_FLOOR.
-    sigma = max(cal.get("sigma") or fc["spread"] or SIGMA_FLOOR, SIGMA_FLOOR)
+    unit = _detect_unit(ev)
+    # Alles zuerst in °C rechnen (Open-Meteo liefert °C), dann in die MARKT-Einheit umrechnen —
+    # sonst °C-Prognose gegen °F-Buckets = Phantom-Edge (der −87pp-Bug).
+    cal_mean_c = fc["mean"] + (cal["bias"] or 0.0)
+    sigma_c = max(cal.get("sigma") or fc["spread"] or SIGMA_FLOOR, SIGMA_FLOOR)
+    cal_mean = round(_c_to(unit, cal_mean_c), 2)
+    sigma = round(_c_to(unit, sigma_c, is_delta=True), 2)
 
     buckets = []
     for m in (ev.get("markets") or []):
@@ -217,9 +251,12 @@ def build_city(city: str, cfg: dict, ev: dict, date_iso: str) -> dict | None:
     return {
         "city": city, "group": cfg["group"], "station": cfg["station"], "date": date_iso,
         "slug": ev.get("slug"), "liquidityUSD": round(ev.get("liquidity") or 0),
-        "vol24hUSD": round(ev.get("volume24hr") or 0),
-        "ensembleMean": fc["mean"], "modelSpread": fc["spread"], "models": fc["models"],
-        "bias": cal["bias"], "calDays": cal["n"], "calibratedMean": cal_mean, "sigma": round(sigma, 2),
+        "vol24hUSD": round(ev.get("volume24hr") or 0), "unit": unit,
+        # Alle Anzeige-Temperaturen in der MARKT-Einheit (damit sie zu den Buckets passen):
+        "ensembleMean": round(_c_to(unit, fc["mean"]), 2),
+        "modelSpread": round(_c_to(unit, fc["spread"], is_delta=True), 2),
+        "bias": round(_c_to(unit, cal["bias"], is_delta=True), 2) if cal["bias"] is not None else None,
+        "calDays": cal["n"], "calibratedMean": cal_mean, "sigma": sigma,
         "ourMode": our_mode, "marketMode": mkt_mode, "modeMatch": our_mode == mkt_mode,
         "topEdge": {"label": top["label"], "edgePP": top["edgePP"], "dir": top["dir"], "tradeable": top["tradeable"]},
         "buckets": buckets,
