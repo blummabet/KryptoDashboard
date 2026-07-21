@@ -195,6 +195,7 @@
       <span class="tab" data-view="arb">Konsistenz-Arb</span>
       <span class="tab" data-view="baskets">Multi-Outcome</span>
       <span class="tab" data-view="whales">🐋 Whale-Follow</span>
+      <span class="tab" data-view="weather">🌡️ Wetter</span>
       <span class="tab" data-view="maker">Maker-Board</span>
     </div>
 
@@ -328,6 +329,16 @@
         </tr></thead><tbody id="whaleFeedRows"><tr><td colspan="6" class="empty">Lade…</td></tr></tbody></table>
         <div class="ctx-note">Grau = Wal nicht qualifiziert (den würden wir <b>nicht</b> kopieren). Copy-Lag wird nur für qualifizierte gemessen.</div>
       </div>
+    </div>
+
+    <!-- WETTER-PILOT -->
+    <div id="view-weather" class="hidden">
+      <div class="explain">Der <b>andere Ansatz</b>: nicht BTC vorhersagen (unmöglich — Modell = Markt), sondern <b>Temperatur</b>. Die ist wissenschaftlich treffsicher, und Polymarket bepreist sie oft schief. Wir ziehen ein <b>Multi-Modell-Ensemble</b> (ECMWF, GFS, ICON, JMA, GEM) am <b>exakten Auflösungs-Flughafen</b> (Seoul löst auf Incheon auf, nicht die Stadt!), <b>kalibrieren</b> es gegen die Stationshistorie und rechnen daraus die Wahrscheinlichkeit jedes 1°C-Buckets. <b>Edge = unsere Wkt. − Poly-Preis.</b> Ab ~8pp interessant — das überlebt die Taker-Fee, anders als die winzigen BTC-Edges.<br>
+        <span style="color:var(--warn)">Pilot, read-only.</span> Der echte Test ist CLV + Trefferquote gegen echte Auflösungen über die nächsten Tage. Gemischt: <b>liquide</b> Städte (westlich, gute Daten, mehr Bots) und <b>Edge</b>-Städte (international, weniger Konkurrenz).</div>
+
+      <div class="kpis" id="weatherKpis"></div>
+      <div id="weatherCities"><div class="empty">Lade… (füllt sich ab dem ersten Pipeline-Lauf)</div></div>
+      <div class="ctx-note" style="margin-top:12px"><b>So liest du eine Stadt:</b> „Unser Tipp" = kalibrierte Ensemble-Temperatur ± Unsicherheit → wahrscheinlichster Bucket. „Markt-Modus" = worauf Poly die Masse legt. Weichen sie ab <b>und</b> unser Edge ist ≥8pp, ist das ein Kandidat. <b>Bias</b> = wie viel °C die Station systematisch wärmer/kälter läuft als die Rohmodelle (da sitzt der Edge). Basis-Risiko: unsere Temp muss die Wunderground-Zahl treffen — prüfen wir über die Auflösungen.</div>
     </div>
 
     <!-- MAKER-BOARD -->

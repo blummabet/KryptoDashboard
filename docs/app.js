@@ -247,6 +247,56 @@
       : '<tr><td colspan="6" class="empty">Kein Maker-Board — noch keine Märkte mit Fair.</td></tr>';
   }
 
+  // ---- Wetter-Pilot ----------------------------------------------------------------------
+  function renderWeather(w) {
+    const s = (w && w.summary) || {}, cities = (w && w.cities) || [];
+    const kpi = (k, v, cc, sub) => `<div class="kpi"><div class="k">${k}</div><div class="v ${cc || ""}">${v}</div>${sub ? `<div style="margin-top:5px;font-size:11px;color:var(--muted);line-height:1.35">${sub}</div>` : ""}</div>`;
+    $("weatherKpis").innerHTML = [
+      kpi("Städte getrackt", s.citiesTracked ?? "—", "", "gemischt liquid + edge"),
+      kpi("Märkte mit Edge", s.marketsWithEdge ?? "—", (s.marketsWithEdge > 0 ? "pos" : ""), "≥ 8pp · überlebt Fee"),
+      kpi("Größter Edge", s.bestEdgePP == null ? "—" : (s.bestEdgePP > 0 ? "+" : "") + s.bestEdgePP + "pp", (Math.abs(s.bestEdgePP || 0) >= 8 ? "pos" : ""), "unsere Wkt. − Poly"),
+      kpi("Ø |Bias|", s.avgAbsBias == null ? "—" : s.avgAbsBias + "°C", "", "Stations-Korrektur · da sitzt der Edge"),
+    ].join("");
+
+    if (!cities.length) {
+      $("weatherCities").innerHTML = '<div class="card"><div class="empty">Noch keine Wetterdaten — füllt sich ab dem ersten Pipeline-Lauf (Open-Meteo, kein Key nötig).</div></div>';
+      return;
+    }
+
+    const grp = (g) => g === "liquid"
+      ? '<span class="fam" style="background:rgba(76,141,255,.16);color:var(--accent2)">liquide</span>'
+      : '<span class="fam" style="background:rgba(240,180,60,.18);color:var(--warn)">edge</span>';
+
+    $("weatherCities").innerHTML = cities.map(c => {
+      const maxProb = Math.max(...c.buckets.map(b => Math.max(b.ourProb, b.polyPrice)), 0.01);
+      const rows = c.buckets.filter(b => b.ourProb >= 0.01 || b.polyPrice >= 0.01 || Math.abs(b.edgePP) >= 3).map(b => {
+        const isOur = b.label === c.ourMode, isMkt = b.label === c.marketMode;
+        const bar = (val, col) => `<span style="display:inline-block;height:8px;border-radius:2px;width:${Math.round(val / maxProb * 100)}%;background:${col};min-width:1px"></span>`;
+        return `<tr style="${b.tradeable ? "background:rgba(47,208,138,.06)" : ""}">
+          <td><b>${esc(b.label)}</b>${isOur ? ' <span class="grosslbl" style="color:var(--pos)">unser Tipp</span>' : ""}${isMkt ? ' <span class="grosslbl" style="color:var(--accent2)">Markt</span>' : ""}</td>
+          <td class="r num">${pct(b.ourProb)}</td>
+          <td style="width:80px">${bar(b.ourProb, "var(--pos)")}</td>
+          <td class="r num">${pct(b.polyPrice)}</td>
+          <td class="r pnl ${b.edgePP > 0 ? (Math.abs(b.edgePP) >= 8 ? "pos" : "") : (Math.abs(b.edgePP) >= 8 ? "neg" : "")}">${b.edgePP > 0 ? "+" : ""}${b.edgePP}pp</td>
+          <td class="r">${b.tradeable ? `<span class="side side-${b.edgePP > 0 ? "YES" : "NO"}">${esc(b.dir)}</span>` : '<span class="mkt-sub">—</span>'}</td></tr>`;
+      }).join("");
+      const te = c.topEdge || {};
+      const teChip = te.tradeable ? vchip("good", "Kandidat: " + te.label + " " + (te.edgePP > 0 ? "+" : "") + te.edgePP + "pp")
+        : vchip("watch", "kein 8pp-Edge");
+      return `<div class="card" style="margin-bottom:16px">
+        <div class="card-h"><span class="t">${esc(c.city)} ${grp(c.group)}</span>
+          <span class="hint">${esc(c.station)} · ${esc(c.date)} · Liq ${usd(c.liquidityUSD)}</span></div>
+        <div style="display:flex;gap:18px;flex-wrap:wrap;align-items:baseline;margin:2px 0 10px">
+          <div><div class="lbl">Unser Tipp (kalibriert)</div><div class="v">${c.calibratedMean}°C <span style="font-size:13px;color:var(--muted)">± ${c.sigma}</span></div></div>
+          <div><div class="lbl">Rohmodelle</div><div class="v" style="font-size:16px">${c.ensembleMean}°C <span style="font-size:11px;color:var(--muted)">Spread ${c.modelSpread}</span></div></div>
+          <div><div class="lbl">Bias</div><div class="v" style="font-size:16px;color:${c.bias > 0 ? "var(--pos)" : c.bias < 0 ? "var(--neg)" : "var(--muted)"}">${c.bias == null ? "—" : (c.bias > 0 ? "+" : "") + c.bias + "°C"}</div><div class="grosslbl">${c.calDays || 0} Tage</div></div>
+          <div style="align-self:center">${c.modeMatch ? vchip("watch", "Modus = Markt") : teChip}</div>
+        </div>
+        <table><thead><tr><th>Bucket</th><th class="r">unsere Wkt.</th><th></th><th class="r">Poly</th><th class="r">Edge</th><th class="r">Signal</th></tr></thead>
+          <tbody>${rows}</tbody></table></div>`;
+    }).join("");
+  }
+
   // ---- Whale-Follow (ehrliches Copy-Trading) ---------------------------------------------
   function renderWhales(w) {
     const s = (w && w.summary) || {}, ws = (w && w.wallets) || [], feed = (w && w.feed) || [];
@@ -427,7 +477,7 @@
   }
 
   // ---- Tabs -------------------------------------------------------------------------------
-  const VIEWS = ["portfolio", "radar", "arb", "baskets", "whales", "maker"];
+  const VIEWS = ["portfolio", "radar", "arb", "baskets", "whales", "weather", "maker"];
   function switchTab(view) {
     document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x.dataset.view === view));
     VIEWS.forEach(v => $("view-" + v).classList.toggle("hidden", v !== view));
@@ -445,8 +495,8 @@
       .then(r => r.ok ? r.json() : Promise.reject(r.status))
       .catch(() => fetch(name + bust).then(r => r.ok ? r.json() : Promise.reject(r.status)));
   };
-  Promise.allSettled([j("paper.json"), j("clv.json"), j("markets.json"), j("arb.json"), j("maker.json"), j("baskets.json"), j("scoreboard.json"), j("analysis.json"), j("whales.json")])
-    .then(([pp, cl, mk, ar, ma, bk, sb, an, wh]) => {
+  Promise.allSettled([j("paper.json"), j("clv.json"), j("markets.json"), j("arb.json"), j("maker.json"), j("baskets.json"), j("scoreboard.json"), j("analysis.json"), j("whales.json"), j("weather.json")])
+    .then(([pp, cl, mk, ar, ma, bk, sb, an, wh, we]) => {
       const paper = pp.status === "fulfilled" ? pp.value : {};
       const clv = cl.status === "fulfilled" ? cl.value : {};
       const markets = mk.status === "fulfilled" ? mk.value : {};
@@ -466,6 +516,7 @@
       renderArb(arb);
       renderBaskets(baskets);
       renderWhales(wh.status === "fulfilled" ? wh.value : {});
+      renderWeather(we.status === "fulfilled" ? we.value : {});
       renderMaker(maker);
     });
 })();
