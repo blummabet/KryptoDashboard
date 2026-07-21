@@ -45,27 +45,6 @@
       "lastTrade": "2026-07-09"
     },
     {
-      "resolved": 3,
-      "uniqueMarkets": 8,
-      "roi": 21.2,
-      "pnl": 637.34,
-      "winRate": 66.7,
-      "volume": 2593.0,
-      "inactiveDays": 47.0,
-      "oneHit": false,
-      "biggestWin": 162.15,
-      "qualified": false,
-      "rejectReasons": [
-        "zu wenig Historie (3 aufgelöst)",
-        "nur 8 Märkte",
-        "inaktiv seit 47d"
-      ],
-      "wallet": "0x970998da056e60c707d9b1fc55cfdf3d68c252ab",
-      "name": "0x970998da…",
-      "firstTrade": "2026-06-03",
-      "lastTrade": "2026-06-04"
-    },
-    {
       "resolved": 13,
       "uniqueMarkets": 46,
       "roi": 9.23,
@@ -86,23 +65,24 @@
       "lastTrade": "2026-07-20"
     },
     {
-      "resolved": 743,
-      "uniqueMarkets": 1101,
-      "roi": 0.05,
-      "pnl": 127.41,
-      "winRate": 91.9,
-      "volume": 38012865.0,
-      "inactiveDays": 4.6,
+      "resolved": 23,
+      "uniqueMarkets": 32,
+      "roi": 7.73,
+      "pnl": 1881.73,
+      "winRate": 65.2,
+      "volume": 17671.0,
+      "inactiveDays": 0.0,
       "oneHit": true,
-      "biggestWin": 438.92,
+      "biggestWin": 3620.85,
       "qualified": false,
       "rejectReasons": [
-        "Ein-Treffer-Wunder (344% des Gewinns aus 1 Trade)"
+        "zu wenig Historie (23 aufgelöst)",
+        "Ein-Treffer-Wunder (192% des Gewinns aus 1 Trade)"
       ],
-      "wallet": "0xf25de1a7357bbe92adf84ea58eff101375789d7a",
-      "name": "0xf25de1a7…",
-      "firstTrade": "2026-03-17",
-      "lastTrade": "2026-07-16"
+      "wallet": "0xec026c728998e0a57557e4ba79ca759d5d374b0f",
+      "name": "0xec026c72…",
+      "firstTrade": "2026-07-21",
+      "lastTrade": "2026-07-21"
     },
     {
       "resolved": 580,
@@ -111,7 +91,7 @@
       "pnl": 3039.9,
       "winRate": 53.6,
       "volume": 805186.0,
-      "inactiveDays": 7.1,
+      "inactiveDays": 7.2,
       "oneHit": true,
       "biggestWin": 77238.7,
       "qualified": false,
@@ -229,9 +209,69 @@
       "name": "0xc19e19ca…",
       "firstTrade": "2026-04-09",
       "lastTrade": "2026-04-10"
+    },
+    {
+      "resolved": 4,
+      "uniqueMarkets": 6,
+      "roi": 0.0,
+      "pnl": 10778.65,
+      "winRate": 50.0,
+      "volume": 139.0,
+      "inactiveDays": 42.5,
+      "oneHit": false,
+      "biggestWin": 21.74,
+      "qualified": false,
+      "rejectReasons": [
+        "zu wenig Historie (4 aufgelöst)",
+        "nur 6 Märkte",
+        "verliert Geld (ROI 0.0%)"
+      ],
+      "wallet": "0xa716193f5fd98549b3bebb159161ff2b0205301b",
+      "name": "B-5-T",
+      "firstTrade": "2026-06-09",
+      "lastTrade": "2026-06-09"
     }
   ],
   "feed": [
+    {
+      "wallet": "0xec026c728998e0a57557e4ba79ca759d5d374b0f",
+      "name": "0xec026c72…",
+      "qualified": false,
+      "market": "Bitcoin Up or Down - July 21, 8:35AM-8:40AM ET",
+      "slug": "btc-updown-5m-1784637300",
+      "side": "BUY",
+      "outcome": "Down",
+      "price": 0.5649212506,
+      "sizeUSD": 2632.4,
+      "ts": "2026-07-21T12:34:12+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xa716193f5fd98549b3bebb159161ff2b0205301b",
+      "name": "0xa716193f…",
+      "qualified": false,
+      "market": "Bitcoin Up or Down - July 21, 8:30AM-8:35AM ET",
+      "slug": "btc-updown-5m-1784637000",
+      "side": "SELL",
+      "outcome": "Up",
+      "price": 0.9008954305,
+      "sizeUSD": 1510.0,
+      "ts": "2026-07-21T12:34:12+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xec026c728998e0a57557e4ba79ca759d5d374b0f",
+      "name": "0xec026c72…",
+      "qualified": false,
+      "market": "Bitcoin Up or Down - July 21, 8:35AM-8:40AM ET",
+      "slug": "btc-updown-5m-1784637300",
+      "side": "BUY",
+      "outcome": "Down",
+      "price": 0.5518406982,
+      "sizeUSD": 1281.09,
+      "ts": "2026-07-21T12:34:12+00:00",
+      "copyLagPP": null
+    },
     {
       "wallet": "0xe6b5574eeeb2ed7b31fcb084d3957f7c95920490",
       "name": "0xe6b5574e…",
@@ -842,47 +882,8 @@
       "sizeUSD": 1000.0,
       "ts": "2026-07-21T09:59:06+00:00",
       "copyLagPP": null
-    },
-    {
-      "wallet": "0xc1fd69a2282879ebac4cf8133558c7f3595e7197",
-      "name": "0xc1fd69a2…",
-      "qualified": false,
-      "market": "Bitcoin Up or Down - July 21, 5:50AM-5:55AM ET",
-      "slug": "btc-updown-5m-1784627400",
-      "side": "SELL",
-      "outcome": "Down",
-      "price": 0.1343913327,
-      "sizeUSD": 1059.61,
-      "ts": "2026-07-21T09:53:49+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xfe4f44cfe9c11a3ec2accdeff8af2cdf30422081",
-      "name": "0xfe4f44cf…",
-      "qualified": false,
-      "market": "Will Demeke Mekonnen be the next Prime Minister of Ethiopia?",
-      "slug": "will-demeke-mekonnen-be-the-next-prime-minister-of-ethiopia",
-      "side": "SELL",
-      "outcome": "Yes",
-      "price": 0.002,
-      "sizeUSD": 1505.0,
-      "ts": "2026-07-21T09:53:49+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xb00cf07e6fa25034175f7da649524c23b08fdfa2",
-      "name": "0xb00cf07e…",
-      "qualified": false,
-      "market": "Will Sabah FK win on 2026-07-21?",
-      "slug": "ucl-sf-kps-2026-07-21-sf",
-      "side": "BUY",
-      "outcome": "Yes",
-      "price": 0.5899999999,
-      "sizeUSD": 1016.949151,
-      "ts": "2026-07-21T09:53:49+00:00",
-      "copyLagPP": null
     }
   ],
-  "generatedAt": "2026-07-21 12:40 UTC",
+  "generatedAt": "2026-07-21 12:44 UTC",
   "note": "Ehrliches Copy-Trading: Bilanz selbst nachgerechnet (nicht dem Leaderboard glauben), Ein-Treffer-Wunder/Inaktive/Verlierer gefiltert, und der Copy-Lag ausgewiesen — die Kosten, die entstehen, weil der Wal mit seiner Order den Preis selbst bewegt."
 }
