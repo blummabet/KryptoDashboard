@@ -259,7 +259,11 @@
     ].join("");
 
     if (!cities.length) {
-      $("weatherCities").innerHTML = '<div class="card"><div class="empty">Noch keine Wetterdaten — füllt sich ab dem ersten Pipeline-Lauf (Open-Meteo, kein Key nötig).</div></div>';
+      const errs = (s.errors || w.errors || []);
+      const errHtml = errs.length
+        ? `<div style="margin-top:10px;text-align:left;font-size:12px;color:var(--warn)"><b>Diagnose (${errs.length}):</b><br>${errs.map(esc).join("<br>")}</div>`
+        : "";
+      $("weatherCities").innerHTML = `<div class="card"><div class="empty">Noch keine Wetterdaten — füllt sich ab dem ersten sauberen Pipeline-Lauf (Open-Meteo, kein Key nötig).${errHtml}</div></div>`;
       return;
     }
 

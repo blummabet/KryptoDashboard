@@ -227,46 +227,57 @@ def build_city(city: str, cfg: dict, ev: dict, date_iso: str) -> dict | None:
 
 
 def build() -> dict:
+    errors = []
     try:
-        events = poly_core.gamma_events_by_tag("weather", limit=60) if hasattr(poly_core, "gamma_events_by_tag") else _weather_events()
+        events = _weather_events()
     except Exception as e:
         print(f"  ⚠️ weather: Event-Fetch {e}")
+        errors.append(f"Event-Fetch: {e}")
         events = []
+    print(f"  weather: {len(events)} Wetter-Events geholt")
+
     by_city = {}
     for ev in events:
         title = ev.get("title") or ""
         if "temperature" not in title.lower():
             continue
-        city = None
         for c in CITIES:
-            if c.lower() in title.lower():
-                city = c
+            if c.lower() in title.lower() and c not in by_city:
+                by_city[c] = ev
                 break
-        if not city or city in by_city:
-            continue
-        by_city[city] = ev
+    print(f"  weather: {len(by_city)} Städte gematcht: {', '.join(by_city) or '—'}")
 
     cities = []
     for city, cfg in CITIES.items():
         ev = by_city.get(city)
         if not ev:
             continue
-        date = slug_date(ev.get("slug", "")) or _end_date(ev.get("endDate"))
-        if not date:
-            continue
-        row = build_city(city, cfg, ev, date.isoformat())
-        if row:
-            cities.append(row)
-    cities.sort(key=lambda c: -abs(c["topEdge"]["edgePP"]))
+        try:
+            date = slug_date(ev.get("slug", "")) or _end_date(ev.get("endDate"))
+            if not date:
+                errors.append(f"{city}: kein Datum")
+                continue
+            row = build_city(city, cfg, ev, date.isoformat())
+            if row:
+                cities.append(row)
+            else:
+                errors.append(f"{city}: keine Forecast-/Bucket-Daten (Open-Meteo?)")
+        except Exception as e:                       # eine kaputte Stadt darf NICHT alles killen
+            import traceback
+            print(f"  ⚠️ weather {city}: {e}\n{traceback.format_exc()}")
+            errors.append(f"{city}: {e}")
+    cities.sort(key=lambda c: -abs((c.get("topEdge") or {}).get("edgePP") or 0))
 
-    edged = [c for c in cities if c["topEdge"]["tradeable"]]
+    edged = [c for c in cities if (c.get("topEdge") or {}).get("tradeable")]
+    biases = [abs(c["bias"]) for c in cities if c.get("bias") is not None]
     summary = {
         "citiesTracked": len(cities),
         "marketsWithEdge": len(edged),
         "bestEdgePP": cities[0]["topEdge"]["edgePP"] if cities else None,
-        "avgAbsBias": round(_mean([abs(c["bias"]) for c in cities if c["bias"] is not None]) or 0, 2) if cities else None,
+        "avgAbsBias": round(_mean(biases), 2) if biases else None,
+        "errors": errors,
     }
-    return {"summary": summary, "cities": cities}
+    return {"summary": summary, "cities": cities, "errors": errors}
 
 
 def _weather_events(limit: int = 60):
