@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-22 18:18 UTC",
+  "generatedAt": "2026-07-22 20:20 UTC",
   "scanned": 600,
-  "count": 13,
+  "count": 10,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -28,12 +28,12 @@
           "ask": 0.001
         },
         {
-          "name": "40°C",
+          "name": "37°C",
           "bid": null,
           "ask": 0.001
         },
         {
-          "name": "37°C",
+          "name": "40°C",
           "bid": null,
           "ask": 0.001
         }
@@ -41,74 +41,40 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.117,
-      "grossPP": 88.3,
-      "feePP": 0.59,
-      "netPP": 87.72,
+      "sumProb": 0.142,
+      "grossPP": 85.8,
+      "feePP": 0.57,
+      "netPP": 85.23,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xdcd7daabcacdc4ecf4f9a48d0a2708b52f356dd086c8070992136da62eb72b00",
-      "event": "How many Fed rate cuts in 2026?",
-      "slug": "how-many-fed-rate-cuts-in-2026",
+      "negRiskMarketID": "0xd1dae9b7a4d2dc2ee926122b07bde454e05943d4ba9c9b4e0ebf4da9da4aa700",
+      "event": "Largest Company end of December 2026?",
+      "slug": "largest-company-end-of-december-2026",
       "endDate": "2026-12-31T00:00:00Z",
-      "n": 3,
+      "n": 4,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "1 (25 bps)",
-          "bid": 0.09,
-          "ask": 0.1
+          "name": "Alphabet",
+          "bid": 0.11,
+          "ask": 0.13
         },
         {
-          "name": "3 (75 bps)",
-          "bid": 0.013,
-          "ask": 0.014
+          "name": "Amazon",
+          "bid": 0.004,
+          "ask": 0.005
         },
         {
-          "name": "5 (125 bps)",
+          "name": "Microsoft",
+          "bid": 0.003,
+          "ask": 0.004
+        },
+        {
+          "name": "Saudi Aramco",
           "bid": 0.002,
           "ask": 0.003
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.193,
-      "grossPP": 80.7,
-      "feePP": 0.97,
-      "netPP": 79.73,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x54ce6c4a102007abb58076896f251775c0ba68d034b161fc07137189c3c13400",
-      "event": "PFK Levski Sofia vs. Universitatea Craiova CS - Exact Score",
-      "slug": "ucl-pls-ucr-2026-07-22-exact-score",
-      "endDate": "2026-07-22T17:30:00Z",
-      "n": 4,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "PFK Levski Sofia 1 - 1 Universitatea Craiova CS",
-          "bid": 0.17,
-          "ask": 0.19
-        },
-        {
-          "name": "PFK Levski Sofia 0 - 1 Universitatea Craiova CS",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "PFK Levski Sofia 0 - 2 Universitatea Craiova CS",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "PFK Levski Sofia 0 - 0 Universitatea Craiova CS",
-          "bid": null,
-          "ask": 0.001
         }
       ]
     },
@@ -153,10 +119,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.247,
-      "grossPP": 75.3,
-      "feePP": 0.99,
-      "netPP": 74.31,
+      "sumProb": 0.246,
+      "grossPP": 75.4,
+      "feePP": 0.98,
+      "netPP": 74.42,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
@@ -176,12 +142,12 @@
         {
           "name": "Josh Shapiro",
           "bid": 0.05,
-          "ask": 0.052
+          "ask": 0.051
         },
         {
           "name": "Mark Kelly",
           "bid": 0.018,
-          "ask": 0.02
+          "ask": 0.019
         },
         {
           "name": "Chelsea Clinton",
@@ -190,8 +156,8 @@
         },
         {
           "name": "Bernie Sanders",
-          "bid": 0.005,
-          "ask": 0.006
+          "bid": 0.006,
+          "ask": 0.007
         },
         {
           "name": "Ruben Gallego",
@@ -202,10 +168,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.304,
-      "grossPP": 69.6,
-      "feePP": 1.52,
-      "netPP": 68.08,
+      "sumProb": 0.314,
+      "grossPP": 68.6,
+      "feePP": 1.57,
+      "netPP": 67.03,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xfb5399f0e1c4ea4d78a40957d48838ab5769fcec80592b8ce2ffd6e27a3cad00",
@@ -224,8 +190,8 @@
         },
         {
           "name": "Real Madrid",
-          "bid": 0.11,
-          "ask": 0.12
+          "bid": 0.12,
+          "ask": 0.13
         },
         {
           "name": "Atlético Madrid",
@@ -236,49 +202,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.371,
-      "grossPP": 62.9,
-      "feePP": 1.85,
-      "netPP": 61.05,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xbb01d92208e308f14eb9917889bb2b449395207a26fe2a7990c3d5def7f74c00",
-      "event": "NBA: 2027 Champion",
-      "slug": "nba-2027-champion",
-      "endDate": "2027-07-01T00:00:00Z",
-      "n": 4,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "San Antonio Spurs",
-          "bid": 0.18,
-          "ask": 0.19
-        },
-        {
-          "name": "Philadelphia 76ers",
-          "bid": 0.074,
-          "ask": 0.075
-        },
-        {
-          "name": "Miami Heat",
-          "bid": 0.069,
-          "ask": 0.07
-        },
-        {
-          "name": "Cleveland Cavaliers",
-          "bid": 0.035,
-          "ask": 0.036
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.415,
-      "grossPP": 58.5,
-      "feePP": 2.91,
-      "netPP": 55.59,
+      "sumProb": 0.414,
+      "grossPP": 58.6,
+      "feePP": 2.9,
+      "netPP": 55.7,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x03c9c6d9f7b20aaa1f33f99bd24bd16e4e0e00cfa892dde097b800655490b200",
@@ -298,7 +225,7 @@
         {
           "name": "Avigdor Lieberman",
           "bid": 0.02,
-          "ask": 0.022
+          "ask": 0.021
         },
         {
           "name": "Amir Ohana",
@@ -309,30 +236,35 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.474,
-      "grossPP": 52.6,
-      "feePP": 1.9,
-      "netPP": 50.7,
+      "sumProb": 0.518,
+      "grossPP": 48.2,
+      "feePP": 2.07,
+      "netPP": 46.13,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
       "event": "Republican Presidential Nominee 2028",
       "slug": "republican-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 3,
+      "n": 4,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "J.D. Vance",
-          "bid": 0.427,
+          "bid": 0.431,
           "ask": 0.434
+        },
+        {
+          "name": "Candace Owens",
+          "bid": 0.008,
+          "ask": 0.045
         },
         {
           "name": "Ron DeSantis",
           "bid": 0.026,
-          "ask": 0.028
+          "ask": 0.027
         },
         {
           "name": "Donald Trump Jr.",
@@ -343,44 +275,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.501,
-      "grossPP": 49.9,
-      "feePP": 2.51,
-      "netPP": 47.39,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x9b489ec1624b9d7d9744b9710150619daa34c76c269f86293e7e7bd63571c800",
-      "event": "AS Omónoia Leukosías vs. Qairat FK - Exact Score",
-      "slug": "ucl-omo-kai-2026-07-22-exact-score",
-      "endDate": "2026-07-22T17:00:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "AS Omónoia Leukosías 1 - 0 Qairat FK",
-          "bid": 0.31,
-          "ask": 0.34
-        },
-        {
-          "name": "AS Omónoia Leukosías 2 - 0 Qairat FK",
-          "bid": 0.12,
-          "ask": 0.14
-        },
-        {
-          "name": "AS Omónoia Leukosías 3 - 0 Qairat FK",
-          "bid": 0.016,
-          "ask": 0.021
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.652,
-      "grossPP": 34.8,
-      "feePP": 2.61,
-      "netPP": 32.19,
+      "sumProb": 0.644,
+      "grossPP": 35.6,
+      "feePP": 2.58,
+      "netPP": 33.02,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
@@ -404,8 +302,8 @@
         },
         {
           "name": "Gavin Newsom",
-          "bid": 0.129,
-          "ask": 0.13
+          "bid": 0.126,
+          "ask": 0.127
         },
         {
           "name": "Jon Ossoff",
@@ -426,10 +324,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.719,
-      "grossPP": 28.1,
-      "feePP": 3.6,
-      "netPP": 24.5,
+      "sumProb": 0.699,
+      "grossPP": 30.1,
+      "feePP": 3.5,
+      "netPP": 26.61,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x529fa4bdcff37fc7a34c71064bc2d7e41effd5fb25d65ae1ebefbbed42319800",
@@ -443,42 +341,42 @@
       "top": [
         {
           "name": "180-199",
-          "bid": 0.13,
-          "ask": 0.14
+          "bid": 0.14,
+          "ask": 0.15
         },
         {
           "name": "240-259",
-          "bid": 0.131,
-          "ask": 0.135
-        },
-        {
-          "name": "260-279",
-          "bid": 0.103,
-          "ask": 0.109
+          "bid": 0.123,
+          "ask": 0.124
         },
         {
           "name": "160-179",
-          "bid": 0.09,
-          "ask": 0.1
+          "bid": 0.1,
+          "ask": 0.11
+        },
+        {
+          "name": "260-279",
+          "bid": 0.095,
+          "ask": 0.099
         },
         {
           "name": "280-299",
-          "bid": 0.068,
-          "ask": 0.07
+          "bid": 0.059,
+          "ask": 0.062
         },
         {
           "name": "140-159",
-          "bid": 0.04,
-          "ask": 0.05
+          "bid": 0.05,
+          "ask": 0.06
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.867,
-      "grossPP": 13.3,
-      "feePP": 2.82,
-      "netPP": 10.48,
+      "sumProb": 0.869,
+      "grossPP": 13.1,
+      "feePP": 2.84,
+      "netPP": 10.27,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xd72f68ada62aff9ba67dd2cbb56fabec9928aa198daafbd8042ac18ccabec000",
@@ -498,7 +396,7 @@
         {
           "name": "Reza Pahlavi",
           "bid": 0.043,
-          "ask": 0.046
+          "ask": 0.047
         },
         {
           "name": "Ahmad Vahidi",
@@ -508,7 +406,7 @@
         {
           "name": "Mohammad-Bagher Ghalibaf",
           "bid": 0.016,
-          "ask": 0.018
+          "ask": 0.019
         },
         {
           "name": "Alireza Arafi",
