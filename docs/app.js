@@ -247,6 +247,29 @@
       : '<tr><td colspan="6" class="empty">Kein Maker-Board — noch keine Märkte mit Fair.</td></tr>';
   }
 
+  // ---- Reward-Farming-Simulator ----------------------------------------------------------
+  function renderRewards(w) {
+    const s = (w && w.summary) || {}, ms = (w && w.markets) || [];
+    const kpi = (k, v, cc, sub) => `<div class="kpi"><div class="k">${k}</div><div class="v ${cc || ""}">${v}</div>${sub ? `<div style="margin-top:5px;font-size:11px;color:var(--muted);line-height:1.35">${sub}</div>` : ""}</div>`;
+    $("rewardKpis").innerHTML = [
+      kpi("Reward-Märkte", s.marketsScanned ?? "—", "", "mit aktivem Pool"),
+      kpi("Netto-positiv", s.netPositive ?? "—", (s.netPositive > 0 ? "pos" : "neg"), "nach simuliertem Markout"),
+      kpi("Pools gesamt", s.totalPoolDay == null ? "—" : "$" + Math.round(s.totalPoolDay).toLocaleString("de-DE") + "/Tag", "", "adressierbar, alle LPs teilen sich das"),
+      kpi("Bester Netto", s.bestNetDay == null ? "—" : "$" + s.bestNetDay + "/Tag", (s.bestNetDay > 0 ? "pos" : "neg"), s.bestNetYieldPct == null ? "" : "~" + s.bestNetYieldPct + "% p.a. auf $" + (s.stakeUSD || 500)),
+    ].join("");
+    $("rewardHint").innerHTML = "Markout-Annahme <b>" + (s.markoutAssumedPP ?? "—") + "pp</b> (unsere Messung) · Konkurrenz <b>" + (s.assumedCompShares ?? "—") + "</b> Shares angenommen";
+    $("rewardRows").innerHTML = ms.length ? ms.map(m => `<tr style="${m.positive ? "" : "opacity:.6"}">
+      <td><div class="mkt-sub">${esc(m.question)}</div></td>
+      <td class="r num">$${Math.round(m.poolDay).toLocaleString("de-DE")}</td>
+      <td class="r num">${m.maxSpreadCents}¢</td>
+      <td class="r num">${m.optDistCents == null ? "—" : m.optDistCents + "¢"}</td>
+      <td class="r pnl pos">$${m.rewardDay}</td>
+      <td class="r pnl ${m.markoutDay > 0 ? "neg" : ""}">−$${m.markoutDay}</td>
+      <td class="r pnl ${cls(m.netDay)}"><b>${m.netDay == null ? "—" : (m.netDay >= 0 ? "+$" : "−$") + Math.abs(m.netDay)}</b></td>
+      <td class="r pnl ${cls(m.netYieldPct)}">${m.netYieldPct == null ? "—" : (m.netYieldPct > 0 ? "+" : "") + m.netYieldPct + "%"}</td></tr>`).join("")
+      : '<tr><td colspan="8" class="empty">Noch keine Reward-Daten — füllt sich ab dem nächsten Pipeline-Lauf.</td></tr>';
+  }
+
   // ---- Wetter-Pilot ----------------------------------------------------------------------
   function renderWeather(w) {
     const s = (w && w.summary) || {}, cities = (w && w.cities) || [];
@@ -482,7 +505,7 @@
   }
 
   // ---- Tabs -------------------------------------------------------------------------------
-  const VIEWS = ["portfolio", "radar", "arb", "baskets", "whales", "weather", "maker"];
+  const VIEWS = ["portfolio", "radar", "arb", "baskets", "whales", "weather", "rewards", "maker"];
   function switchTab(view) {
     document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x.dataset.view === view));
     VIEWS.forEach(v => $("view-" + v).classList.toggle("hidden", v !== view));
@@ -500,8 +523,8 @@
       .then(r => r.ok ? r.json() : Promise.reject(r.status))
       .catch(() => fetch(name + bust).then(r => r.ok ? r.json() : Promise.reject(r.status)));
   };
-  Promise.allSettled([j("paper.json"), j("clv.json"), j("markets.json"), j("arb.json"), j("maker.json"), j("baskets.json"), j("scoreboard.json"), j("analysis.json"), j("whales.json"), j("weather.json")])
-    .then(([pp, cl, mk, ar, ma, bk, sb, an, wh, we]) => {
+  Promise.allSettled([j("paper.json"), j("clv.json"), j("markets.json"), j("arb.json"), j("maker.json"), j("baskets.json"), j("scoreboard.json"), j("analysis.json"), j("whales.json"), j("weather.json"), j("rewards.json")])
+    .then(([pp, cl, mk, ar, ma, bk, sb, an, wh, we, rw]) => {
       const paper = pp.status === "fulfilled" ? pp.value : {};
       const clv = cl.status === "fulfilled" ? cl.value : {};
       const markets = mk.status === "fulfilled" ? mk.value : {};
@@ -522,6 +545,7 @@
       renderBaskets(baskets);
       renderWhales(wh.status === "fulfilled" ? wh.value : {});
       renderWeather(we.status === "fulfilled" ? we.value : {});
+      renderRewards(rw.status === "fulfilled" ? rw.value : {});
       renderMaker(maker);
     });
 })();

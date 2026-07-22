@@ -55,6 +55,9 @@ jobs:
       - name: Wetter-Pilot (Ensemble + Kalibrierung) → docs/weather.json
         run: python weather.py
 
+      - name: Reward-Farming-Simulator → docs/rewards.json
+        run: python rewards.py
+
       - name: Paper-Trading (dry-run) → docs/paper.json
         run: python paper_engine.py
 
@@ -71,7 +74,7 @@ jobs:
         run: |
           git config user.name "cryptoedge-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ docs/markets.json docs/clv.json docs/paper.json docs/arb.json docs/maker.json docs/baskets.json docs/scoreboard.json docs/analysis.json docs/whales.json docs/weather.json
+          git add data/ docs/markets.json docs/clv.json docs/paper.json docs/arb.json docs/maker.json docs/baskets.json docs/scoreboard.json docs/analysis.json docs/whales.json docs/weather.json docs/rewards.json
           if git diff --cached --quiet; then
             echo "keine Änderungen"
           else

@@ -196,6 +196,7 @@
       <span class="tab" data-view="baskets">Multi-Outcome</span>
       <span class="tab" data-view="whales">🐋 Whale-Follow</span>
       <span class="tab" data-view="weather">🌡️ Wetter</span>
+      <span class="tab" data-view="rewards">💰 Rewards</span>
       <span class="tab" data-view="maker">Maker-Board</span>
     </div>
 
@@ -328,6 +329,24 @@
           <th class="r">Größe</th><th class="r">Copy-Lag</th>
         </tr></thead><tbody id="whaleFeedRows"><tr><td colspan="6" class="empty">Lade…</td></tr></tbody></table>
         <div class="ctx-note">Grau = Wal nicht qualifiziert (den würden wir <b>nicht</b> kopieren). Copy-Lag wird nur für qualifizierte gemessen.</div>
+      </div>
+    </div>
+
+    <!-- REWARD-FARMING -->
+    <div id="view-rewards" class="hidden">
+      <div class="explain">Polymarkets <b>Liquidity Rewards</b>: ruhende Limit-Orders nahe am Midpoint werden pro Minute gesampelt und <b>quadratisch nach Nähe gescored</b> — man teilt sich den Tages-Pool anteilig, die Order muss <b>nicht gefillt werden</b>. Aber: nah am Mid = viel Reward <b>und</b> viele <b>toxische Fills</b> (Adverse Selection). Der ehrliche Wert ist <b>netto</b> = Reward − Markout-Verlust.<br>
+        Dieser Simulator rechnet genau das und sucht die optimale Platzierung („gescored, aber selten gefillt"), dann <b>rankt er alle Reward-Märkte nach Netto</b> — die Marktauswahl ist der eigentliche Hebel.<br>
+        <span style="color:var(--warn)">Simulation, kein Beweis:</span> Pool, Max-Spread und Min-Size sind <b>echt</b> (Gamma). Konkurrenz und Fill-Rate sind transparente <b>Annahmen</b>; der Markout kommt aus unserer echten Maker-Messung. Der Beweis käme erst live auf dem self-hosted Runner.</div>
+
+      <div class="kpis" id="rewardKpis"></div>
+      <div class="card">
+        <div class="card-h"><span class="t">Reward-Märkte nach Netto/Tag</span><span class="badge b-edge">Pool echt · Fill/Konkurrenz simuliert</span>
+          <span class="hint" id="rewardHint"></span></div>
+        <table><thead><tr>
+          <th>Markt</th><th class="r">Pool/Tag</th><th class="r">Max-Spread</th><th class="r">opt. Platz.</th>
+          <th class="r">Reward/Tag</th><th class="r">Markout/Tag</th><th class="r">NETTO/Tag</th><th class="r">Rendite p.a.</th>
+        </tr></thead><tbody id="rewardRows"><tr><td colspan="8" class="empty">Lade…</td></tr></tbody></table>
+        <div class="ctx-note"><b>opt. Platz.</b> = Abstand vom Mid, der Netto maximiert (0¢ = direkt am Mid). <b>Reward/Tag</b> = unser Anteil am Pool. <b>Markout/Tag</b> = erwarteter Verlust aus toxischen Fills. <b>Netto</b> = Reward − Markout — nur das zählt. Grün = plausibel positiv, aber erst live bewiesen. Der Hebel ist oben: ruhige Märkte mit fettem Pool und wenig Konkurrenz.</div>
       </div>
     </div>
 
