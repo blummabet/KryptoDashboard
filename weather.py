@@ -190,16 +190,16 @@ def _yes(m):
 
 
 def _detect_unit(ev: dict) -> str:
-    """'F' wenn der Markt in Fahrenheit auflöst, sonst 'C'. Aus der Auflösungsbeschreibung."""
-    d = ((ev.get("markets") or [{}])[0].get("description") or "").lower()
-    if "fahrenheit" in d:
-        return "F"
-    if "celsius" in d:
-        return "C"
-    # Fallback: steht °F in einem Bucket-Label?
+    """'F' oder 'C' — aus den BUCKET-LABELS (die haben eindeutig nur °F ODER °C).
+    ⚠️ NICHT aus der Beschreibung: die enthält bei JEDEM Markt den Wunderground-Satz
+    'toggle between Fahrenheit and Celsius' → 'fahrenheit'-Match feuert immer → alles fälschlich °F
+    (der +100pp-Phantom-Edge-Bug). Die Labels sind die Wahrheit: '72-73°F' vs '20°C'."""
     for m in ev.get("markets") or []:
-        if "°f" in (m.get("groupItemTitle") or "").lower():
+        t = (m.get("groupItemTitle") or "").lower()
+        if "°f" in t:
             return "F"
+        if "°c" in t:
+            return "C"
     return "C"
 
 

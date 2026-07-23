@@ -80,6 +80,15 @@ def test_build_city_edge_and_mode(monkeypatch):
     assert b25["edgePP"] < 0 and b25["dir"] == "meiden/verkaufen"
 
 
+def test_detect_unit_from_labels_not_description():
+    # Beschreibung nennt BEIDE Einheiten (Wunderground-Toggle) → darf NICHT auf 'F' reinfallen.
+    toggle = "highest temperature ... in degrees Celsius ... toggle between Fahrenheit and Celsius ..."
+    ev_c = {"markets": [{"groupItemTitle": "26°C", "description": toggle}]}
+    ev_f = {"markets": [{"groupItemTitle": "72-73°F", "description": toggle}]}
+    assert weather._detect_unit(ev_c) == "C"
+    assert weather._detect_unit(ev_f) == "F"
+
+
 def _fmkt(label, yes, desc, bid=None, ask=None):
     return {"groupItemTitle": label, "outcomePrices": f'["{yes}", "{1 - yes}"]',
             "bestBid": bid, "bestAsk": ask, "conditionId": label, "slug": "x-" + label,

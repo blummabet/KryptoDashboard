@@ -257,12 +257,12 @@
       kpi("Pools gesamt", s.totalPoolDay == null ? "—" : "$" + Math.round(s.totalPoolDay).toLocaleString("de-DE") + "/Tag", "", "adressierbar, alle LPs teilen sich das"),
       kpi("Bester Netto", s.bestNetDay == null ? "—" : "$" + s.bestNetDay + "/Tag", (s.bestNetDay > 0 ? "pos" : "neg"), s.bestNetYieldPct == null ? "" : "~" + s.bestNetYieldPct + "% p.a. auf $" + (s.stakeUSD || 500)),
     ].join("");
-    $("rewardHint").innerHTML = "Markout-Annahme <b>" + (s.markoutAssumedPP ?? "—") + "pp</b> (unsere Messung) · Konkurrenz <b>" + (s.assumedCompShares ?? "—") + "</b> Shares angenommen";
+    $("rewardHint").innerHTML = "Einsatz <b>$" + (s.stakeUSD ?? 500) + "</b>/Markt · Markout-Annahme <b>" + (s.markoutAssumedPP ?? "—") + "pp</b> (unsere Messung) · Anteil pro-rata gegen echte Liquidität";
     $("rewardRows").innerHTML = ms.length ? ms.map(m => `<tr style="${m.positive ? "" : "opacity:.6"}">
       <td><div class="mkt-sub">${esc(m.question)}</div></td>
       <td class="r num">$${Math.round(m.poolDay).toLocaleString("de-DE")}</td>
-      <td class="r num">${m.maxSpreadCents}¢</td>
-      <td class="r num">${m.optDistCents == null ? "—" : m.optDistCents + "¢"}</td>
+      <td class="r num">${m.liquidity == null ? "—" : "$" + Math.round(m.liquidity).toLocaleString("de-DE")}</td>
+      <td class="r num">${m.sharePct == null ? "—" : m.sharePct + "%"}</td>
       <td class="r pnl pos">$${m.rewardDay}</td>
       <td class="r pnl ${m.markoutDay > 0 ? "neg" : ""}">−$${m.markoutDay}</td>
       <td class="r pnl ${cls(m.netDay)}"><b>${m.netDay == null ? "—" : (m.netDay >= 0 ? "+$" : "−$") + Math.abs(m.netDay)}</b></td>

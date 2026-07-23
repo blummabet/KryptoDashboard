@@ -30,12 +30,11 @@ import poly_core
 OUT = pathlib.Path(__file__).parent / "docs" / "rewards.json"
 MAKER = pathlib.Path(__file__).parent / "docs" / "maker.json"
 
-STAKE_USD = 500.0        # Kapital, das wir je Markt ins Band legen (je Seite)
-# --- TRANSPARENTE ANNAHMEN (die unsicheren Größen; live zu kalibrieren) ---
-COMP_SHARES = 4000.0     # angenommene Konkurrenz-Liquidität im Band (Shares) — der Hauptunbekannte
-FILL_BASE = 0.04         # Bruchteil des Tagesvolumens, der uns am MID trifft (dist=0), pro $ Einsatz-Skala
+STAKE_USD = 500.0        # Kapital, das wir je Markt ins Band legen
+# --- ANNAHMEN (transparent; der Reward-Anteil rechnet jetzt gegen die ECHTE Markt-Liquidität) ---
 MARKOUT_FALLBACK_PP = 4.0  # |Markout| je Fill, falls maker.json keins liefert (unsere Messung ~ −4pp)
 MIN_POOL_USD = 5.0       # Pools darunter ignorieren (Rauschen; Poly-Floor ist eh $1/Tag)
+TURNOVER_DAMP = 0.15     # nur ein Bruchteil des Buch-Umschlags trifft wirklich UNSERE Order (gedämpft)
 
 
 def _f(x):
@@ -62,40 +61,38 @@ def order_score(size: float, dist: float, max_spread: float) -> float:
     return size * ((max_spread - dist) / max_spread) ** 2
 
 
-def fill_rate_per_day(dist: float, max_spread: float, vol24: float) -> float:
-    """Erwartete toxische Fills/Tag an Distanz dist. Nah am Mid = viele, am Rand ~0. Linear × Volumen."""
-    if max_spread <= 0:
-        return 0.0
-    prox = max(0.0, 1.0 - dist / max_spread)            # 1 am Mid, 0 am Rand
-    return FILL_BASE * (vol24 / 10000.0) * prox
+def reward_share(stake: float, liquidity: float) -> float:
+    """Unser Anteil am Tages-Pool ~ pro-rata nach Kapital gegen die ECHTE Markt-Liquidität.
+    (Standard-LP-Modell. Bester verfügbarer Proxy ohne Live-Orderbuch-Tiefe.)"""
+    liq = max(liquidity, stake)                          # nie weniger als unser eigener Einsatz
+    return stake / (stake + liq)
 
 
-def simulate(pool: float, max_spread: float, min_size: float, vol24: float, price: float,
-             markout_pp: float, stake: float = STAKE_USD, comp: float = COMP_SHARES) -> dict:
-    """Über die Platzierung (dist) optimieren: Reward/Tag − Markout-Verlust/Tag = NETTO/Tag."""
-    price = min(max(price, 0.02), 0.98)
-    our_shares = max(stake / price, min_size)           # mind. rewardsMinSize
-    steps = 24
-    best = None
-    for i in range(steps + 1):
-        dist = max_spread * i / steps
-        oscore = order_score(our_shares, dist, max_spread)
-        if oscore <= 0:
-            continue
-        comp_score = order_score(comp, max_spread * 0.5, max_spread)   # Konkurrenz ~ mittig im Band
-        reward_day = pool * oscore / (oscore + comp_score) if (oscore + comp_score) > 0 else 0.0
-        fills = fill_rate_per_day(dist, max_spread, vol24)
-        markout_day = fills * stake * (abs(markout_pp) / 100.0)         # Verlust je Fill × Einsatz
-        net = reward_day - markout_day
-        row = {"distCents": round(dist * 100, 2), "rewardDay": round(reward_day, 2),
-               "fillsDay": round(fills, 2), "markoutDay": round(markout_day, 2), "netDay": round(net, 2)}
-        if best is None or net > best["netDay"]:
-            best = row
-    if best is None:
-        return {"netDay": 0.0}
-    best["netYieldPct"] = round(best["netDay"] / stake * 100 * 365, 1)   # annualisiert auf den Einsatz
-    best["poolDay"] = round(pool, 2)
-    return best
+def markout_day(stake: float, vol24: float, liquidity: float, markout_pp: float) -> float:
+    """Erwarteter Markout-Verlust/Tag: wie oft das Buch umschlägt × unser Kapital × |Markout|.
+    Hohes Volumen relativ zur Liquidität = häufige (toxische) Fills."""
+    liq = max(liquidity, 1.0)
+    turnover = vol24 / liq                                # Buch-Umschläge/Tag
+    adverse_notional = turnover * TURNOVER_DAMP * stake   # was von UNS angehandelt wird (gedämpft)
+    return adverse_notional * abs(markout_pp) / 100.0
+
+
+def simulate(pool: float, vol24: float, liquidity: float, markout_pp: float,
+             stake: float = STAKE_USD) -> dict:
+    """Netto/Tag = Reward-Anteil am Pool − erwarteter Markout-Verlust. Gegen ECHTE Liquidität."""
+    share = reward_share(stake, liquidity)
+    reward_day = pool * share
+    mk_day = markout_day(stake, vol24, liquidity, markout_pp)
+    net = reward_day - mk_day
+    return {
+        "sharePct": round(share * 100, 3),
+        "rewardDay": round(reward_day, 2),
+        "markoutDay": round(mk_day, 2),
+        "netDay": round(net, 2),
+        "netYieldPct": round(net / stake * 100 * 365, 1),   # annualisiert auf den Einsatz
+        "poolDay": round(pool, 2),
+        "richness": round(pool / max(liquidity, 1.0) * 100, 3),   # Pool je $100 Liquidität = Ergiebigkeit
+    }
 
 
 def _markout_pp():
@@ -131,18 +128,18 @@ def build() -> dict:
         pool = _daily_pool(m)
         if pool < MIN_POOL_USD:
             continue
-        v = max_spread_c / 100.0                          # Cent → Preis
         min_size = _f(m.get("rewardsMinSize")) or 0.0
         vol24 = _f(m.get("volume24hr")) or 0.0
+        liquidity = _f(m.get("liquidityClob")) or _f(m.get("liquidityNum")) or _f(m.get("liquidity")) or 0.0
         bid, ask = _f(m.get("bestBid")), _f(m.get("bestAsk"))
         price = ((bid + ask) / 2) if (bid and ask) else (_f(m.get("lastTradePrice")) or 0.5)
-        sim = simulate(pool, v, min_size, vol24, price, markout_pp)
+        sim = simulate(pool, vol24, liquidity, markout_pp)
         rows.append({
             "question": (m.get("question") or "")[:70], "slug": m.get("slug"),
             "poolDay": round(pool, 2), "maxSpreadCents": max_spread_c, "minSize": min_size,
-            "vol24": round(vol24), "price": round(price, 3),
-            "optDistCents": sim.get("distCents"), "rewardDay": sim.get("rewardDay"),
-            "fillsDay": sim.get("fillsDay"), "markoutDay": sim.get("markoutDay"),
+            "vol24": round(vol24), "liquidity": round(liquidity), "price": round(price, 3),
+            "sharePct": sim.get("sharePct"), "richness": sim.get("richness"),
+            "rewardDay": sim.get("rewardDay"), "markoutDay": sim.get("markoutDay"),
             "netDay": sim.get("netDay"), "netYieldPct": sim.get("netYieldPct"),
             "positive": (sim.get("netDay") or 0) > 0,
         })
@@ -155,7 +152,7 @@ def build() -> dict:
         "bestNetDay": rows[0]["netDay"] if rows else None,
         "bestNetYieldPct": rows[0]["netYieldPct"] if rows else None,
         "markoutAssumedPP": round(markout_pp, 2),
-        "stakeUSD": STAKE_USD, "assumedCompShares": COMP_SHARES,
+        "stakeUSD": STAKE_USD,
     }
     return {"summary": summary, "markets": rows[:60]}
 

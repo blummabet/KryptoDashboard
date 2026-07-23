@@ -343,10 +343,10 @@
         <div class="card-h"><span class="t">Reward-Märkte nach Netto/Tag</span><span class="badge b-edge">Pool echt · Fill/Konkurrenz simuliert</span>
           <span class="hint" id="rewardHint"></span></div>
         <table><thead><tr>
-          <th>Markt</th><th class="r">Pool/Tag</th><th class="r">Max-Spread</th><th class="r">opt. Platz.</th>
+          <th>Markt</th><th class="r">Pool/Tag</th><th class="r">Liquidität</th><th class="r">unser Anteil</th>
           <th class="r">Reward/Tag</th><th class="r">Markout/Tag</th><th class="r">NETTO/Tag</th><th class="r">Rendite p.a.</th>
         </tr></thead><tbody id="rewardRows"><tr><td colspan="8" class="empty">Lade…</td></tr></tbody></table>
-        <div class="ctx-note"><b>opt. Platz.</b> = Abstand vom Mid, der Netto maximiert (0¢ = direkt am Mid). <b>Reward/Tag</b> = unser Anteil am Pool. <b>Markout/Tag</b> = erwarteter Verlust aus toxischen Fills. <b>Netto</b> = Reward − Markout — nur das zählt. Grün = plausibel positiv, aber erst live bewiesen. Der Hebel ist oben: ruhige Märkte mit fettem Pool und wenig Konkurrenz.</div>
+        <div class="ctx-note"><b>Reward-Anteil = pro-rata gegen die echte Markt-Liquidität</b> (unser $500 vs. alle anderen LPs) — kein erfundener Konkurrenz-Wert mehr. <b>Reward/Tag</b> = Pool × Anteil. <b>Markout/Tag</b> = erwarteter Verlust aus toxischen Fills (Volumen ÷ Liquidität × unser Markout). <b>Netto</b> = Reward − Markout. <span style="color:var(--warn)">Ehrlich: Liquidität ist ein grober Proxy für die echte Band-Tiefe — die Zahlen sind eher Obergrenzen. Der Beweis kommt erst live.</span> Der Hebel: fetter Pool bei dünner Liquidität.</div>
       </div>
     </div>
 
