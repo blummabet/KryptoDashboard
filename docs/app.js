@@ -330,10 +330,12 @@
     const s = (w && w.summary) || {}, ws = (w && w.wallets) || [], feed = (w && w.feed) || [];
     const kpi = (k, v, cc, sub) => `<div class="kpi"><div class="k">${k}</div><div class="v ${cc || ""}">${v}</div>${sub ? `<div style="margin-top:5px;font-size:11px;color:var(--muted);line-height:1.35">${sub}</div>` : ""}</div>`;
     const lag = s.avgCopyLagPP;
+    const wmin = s.whaleMinUSD ? "$" + Math.round(s.whaleMinUSD / 1000) + "k" : "$25k";
     $("whaleKpis").innerHTML = [
-      kpi("Wale geprüft", s.walletsProbed ?? "—", "", "aus dem Live-Feed"),
+      kpi("Echte Whale-Trades", s.whaleTradeCount ?? "—", (s.whaleTradeCount > 0 ? "pos" : "neg"),
+        "≥ " + wmin + " im Feed · größter " + (s.biggestTradeUSD == null ? "—" : "$" + Math.round(s.biggestTradeUSD / 1000) + "k")),
+      kpi("Wallets geprüft", s.walletsProbed ?? "—", "", "Leaderboard + echte Wale"),
       kpi("Qualifiziert", s.qualifiedCount ?? "—", (s.qualifiedCount > 0 ? "pos" : "neg"), "würden wir kopieren"),
-      kpi("Aussortiert", s.rejectedCount ?? "—", "", "Glückspilze, Tote, Verlierer"),
       kpi("Ø Copy-Lag", lag == null ? "—" : (lag > 0 ? "+" : "") + lag + "pp",
         lag == null ? "" : (lag > 0 ? "neg" : "pos"), "<b>Ziel: nahe 0</b> · positiv = wir zahlen drauf"),
     ].join("");
@@ -342,7 +344,7 @@
     if (!s.enabled) {
       $("whaleLag").innerHTML = `<div class="empty">Kein API-Key gesetzt — Whale-Daten aus. (GitHub-Secret <b>POLYMARKETSCAN_API_KEY</b>)</div>`;
     } else if (lag == null) {
-      $("whaleLag").innerHTML = `<div style="margin:4px 0">${vchip("watch", "noch keine Messung")} &nbsp;Kein qualifizierter Wal im aktuellen Feed — es gibt also gerade niemanden, den zu kopieren sich lohnen würde. <b>Das ist selbst schon ein Ergebnis.</b></div>`;
+      $("whaleLag").innerHTML = `<div style="margin:4px 0">${vchip("watch", "noch keine Messung")} &nbsp;Kein Trade ≥${wmin} von einem qualifizierten Wal im Fenster. <b>Echte Wale (≥$50k) sind selten — ein paar pro Woche</b>, nicht ständig. „Wenig los" ist hier teils die Realität des Marktes, kein Bug.</div>`;
     } else {
       const bad = lag > 0;
       const chip = bad ? vchip("bad", "Kopieren kostet") : vchip("good", "Lag zu unseren Gunsten");
@@ -373,9 +375,9 @@
         <td>${verdict}${more}</td></tr>`;
     }).join("") : '<tr><td colspan="8" class="empty">Noch keine Wale geprüft — läuft ab dem nächsten Pipeline-Lauf mit API-Key.</td></tr>';
 
-    $("whaleFeedHint").textContent = feed.length + " Großtrades";
-    $("whaleFeedRows").innerHTML = feed.length ? feed.map(t => `<tr style="${t.qualified ? "" : "opacity:.45"}">
-      <td><div class="mkt-sub">${t.qualified ? "🐋" : "🐟"} ${esc(t.name || "")}</div></td>
+    $("whaleFeedHint").textContent = feed.length + " Trades · 🐋 = ≥" + wmin;
+    $("whaleFeedRows").innerHTML = feed.length ? feed.map(t => `<tr style="${t.isWhale ? "" : "opacity:.45"}">
+      <td><div class="mkt-sub">${t.isWhale ? "🐋" : "🐟"} ${esc(t.name || "")}${t.qualified ? ' <span class="grosslbl" style="color:var(--pos)">qual.</span>' : ""}</div></td>
       <td><div class="mkt-sub">${esc((t.market || "").slice(0, 46))}</div></td>
       <td class="r"><span class="side side-${t.side === "BUY" ? "YES" : "NO"}">${esc(t.side || "")} ${esc(t.outcome || "")}</span></td>
       <td class="r num">${t.price == null ? "—" : cents(t.price)}</td>

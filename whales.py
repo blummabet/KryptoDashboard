@@ -27,8 +27,10 @@ import poly_core
 
 OUT = pathlib.Path(__file__).parent / "docs" / "whales.json"
 
-FEED_LIMIT = 50          # Live-Feed Großtrades
-MAX_WALLET_PROBES = 12   # Rate-Limit (30 Req/Min) → nur die aktivsten Wallets prüfen
+FEED_LIMIT = 100         # Live-Feed Großtrades (breiter ziehen, um echte Whale-Größen zu erwischen)
+MAX_WALLET_PROBES = 14   # Rate-Limit (30 Req/Min)
+LEADER_N = 12            # Top-Trader vom Leaderboard (bewiesene Groß-Wallets) mit-prüfen
+WHALE_MIN_USD = 25000    # ERST ab hier ein echter Wal (nicht $1k-„Fisch"). PolymarketScan: $50k = Whale.
 SLEEP = 2.1
 
 # Glaubwürdigkeits-Schwellen (bewusst hart — wir wollen keine Glückspilze kopieren)
@@ -126,13 +128,23 @@ def build() -> dict:
         return {"enabled": False, "wallets": [], "feed": [], "summary": {}}
 
     feed = pmscan.whale_trades(limit=FEED_LIMIT) or []
-    # aktivste Wallets zuerst (die mit den meisten Trades im Feed)
-    counts: dict[str, int] = {}
-    for t in feed:
+    big_trades = [t for t in feed if (_f(t.get("size")) or 0) >= WHALE_MIN_USD]  # ECHTE Whale-Größe
+
+    # Kandidaten = (a) bewiesene Groß-Wallets vom Leaderboard + (b) Wallets mit echtem Whale-Trade
+    # im Feed. NICHT mehr die aktivsten Klein-Trader (das waren HF-Grinder, keine Wale).
+    lb = pmscan.leaderboard(limit=LEADER_N) or []
+    time.sleep(SLEEP)
+    candidates, seen = [], set()
+    for t in lb:                                   # Leaderboard zuerst (bewiesen groß)
+        w = t.get("wallet_address") or t.get("wallet")
+        if w and w not in seen:
+            seen.add(w); candidates.append(w)
+    for t in sorted(big_trades, key=lambda t: -(_f(t.get("size")) or 0)):
         w = t.get("wallet")
-        if w:
-            counts[w] = counts.get(w, 0) + 1
-    candidates = sorted(counts, key=lambda w: -counts[w])[:MAX_WALLET_PROBES]
+        if w and w not in seen:
+            seen.add(w); candidates.append(w)
+    candidates = candidates[:MAX_WALLET_PROBES]
+    biggest = max((_f(t.get("size")) or 0) for t in feed) if feed else 0
 
     wallets = []
     for w in candidates:
@@ -149,25 +161,28 @@ def build() -> dict:
 
     qual = {w["wallet"] for w in wallets if w["qualified"]}
 
-    # Copy-Lag NUR für Trades qualifizierter Wale messen (Gamma-Preis jetzt vs. sein Fill).
+    # Copy-Lag NUR für ECHTE Whale-Trades (≥ WHALE_MIN) qualifizierter Wale messen.
     rows, lags = [], []
     seen_slug: dict[str, float | None] = {}
-    for t in feed:
+    # Feed nach Größe sortiert zeigen (die dicksten oben), damit man echte Wale sieht.
+    for t in sorted(feed, key=lambda t: -(_f(t.get("size")) or 0)):
         w = t.get("wallet")
+        size = _f(t.get("size")) or 0
         is_q = w in qual
+        is_whale = size >= WHALE_MIN_USD
         slug = t.get("market")
         lag = None
-        if is_q and slug:
+        if is_q and is_whale and slug:                  # Lag nur auf echten Whale-Fills
             if slug not in seen_slug:
                 seen_slug[slug] = _poly_price_now(slug)
             lag = _copy_lag_pp(t, seen_slug[slug])
             if lag is not None:
                 lags.append(lag)
         rows.append({
-            "wallet": w, "name": (w or "")[:10] + "…", "qualified": is_q,
+            "wallet": w, "name": (w or "")[:10] + "…", "qualified": is_q, "isWhale": is_whale,
             "market": t.get("market_question") or slug, "slug": slug,
             "side": t.get("side"), "outcome": t.get("outcome"),
-            "price": _f(t.get("price")), "sizeUSD": _f(t.get("size")),
+            "price": _f(t.get("price")), "sizeUSD": size,
             "ts": t.get("timestamp"), "copyLagPP": lag,
         })
 
@@ -175,14 +190,17 @@ def build() -> dict:
     summary = {
         "enabled": True,
         "feedCount": len(feed),
+        "whaleTradeCount": len(big_trades),
+        "biggestTradeUSD": round(biggest),
+        "whaleMinUSD": WHALE_MIN_USD,
         "walletsProbed": len(wallets),
         "qualifiedCount": len(qual),
         "rejectedCount": len(wallets) - len(qual),
         "avgCopyLagPP": avg_lag,
         "lagSample": len(lags),
-        # DIE ehrliche Kernaussage: positiver Lag = Kopieren kostet uns pro Trade so viel.
-        "verdict": ("Kopieren kostet im Schnitt %.2fpp pro Trade" % avg_lag) if avg_lag is not None
-                   else "noch keine Lag-Messung (keine qualifizierten Wale im Feed)",
+        "verdict": ("Kopieren kostet im Schnitt %.2fpp pro echtem Whale-Trade" % avg_lag) if avg_lag is not None
+                   else ("keine ≥$%dk-Whale-Trades qualifizierter Wale im Fenster — echte Wale sind selten"
+                         % (WHALE_MIN_USD // 1000)),
     }
     return {"summary": summary, "wallets": wallets, "feed": rows[:60]}
 

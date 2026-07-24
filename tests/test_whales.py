@@ -64,3 +64,11 @@ def test_copy_lag_sell_direction_flips():
 
 def test_copy_lag_none_without_price():
     assert whales._copy_lag_pp({"side": "BUY", "outcome": "Yes", "price": 0.5}, None) is None
+
+
+def test_whale_threshold_is_real_size():
+    # $1-5k-„Fische" sind KEINE Wale; die Schwelle liegt bei echter Whale-Größe
+    assert whales.WHALE_MIN_USD >= 25000
+    big = [{"size": 60000}, {"size": 2000}, {"size": 30000}]
+    whales_only = [t for t in big if t["size"] >= whales.WHALE_MIN_USD]
+    assert len(whales_only) == 2   # 60k + 30k, nicht der 2k-Fisch
