@@ -1,39 +1,39 @@
 {
-  "generatedAt": "2026-08-01 04:29 UTC",
+  "generatedAt": "2026-08-01 07:35 UTC",
   "scanned": 600,
-  "count": 12,
+  "count": 13,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
     {
       "side": "buy",
-      "sumProb": 0.058,
-      "grossPP": 94.2,
-      "feePP": 0.23,
-      "netPP": 93.97,
+      "sumProb": 0.003,
+      "grossPP": 99.7,
+      "feePP": 0.02,
+      "netPP": 99.69,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x45ec1f7704d0ddd047e70443e830028d8801671283883ad1b46a29659488b600",
-      "event": "Venezuela leader end of 2026?",
-      "slug": "venezuela-leader-end-of-2026",
-      "endDate": "2026-12-31T00:00:00Z",
+      "negRiskMarketID": "0x26d0d635338b32fc4fed2e17d26df9c358b450ccb10c4004e94391b5553f8600",
+      "event": "Highest temperature in Tokyo on August 1?",
+      "slug": "highest-temperature-in-tokyo-on-august-1-2026",
+      "endDate": "2026-08-01T12:00:00Z",
       "n": 3,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "No Head of State",
-          "bid": 0.018,
-          "ask": 0.055
+          "name": "32°C",
+          "bid": null,
+          "ask": 0.001
         },
         {
-          "name": "Dinorah Figuera",
-          "bid": 0.001,
-          "ask": 0.002
+          "name": "34°C",
+          "bid": null,
+          "ask": 0.001
         },
         {
-          "name": "Dan Caine",
+          "name": "33°C",
           "bid": null,
           "ask": 0.001
         }
@@ -41,10 +41,156 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.132,
-      "grossPP": 86.8,
-      "feePP": 0.66,
-      "netPP": 86.14,
+      "sumProb": 0.004,
+      "grossPP": 99.6,
+      "feePP": 0.02,
+      "netPP": 99.58,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xe7c8253f61321e23ae208ded1b4be7b726c6b5373665be14ead64987f3ff8e00",
+      "event": "Highest temperature in Guangzhou on August 1?",
+      "slug": "highest-temperature-in-guangzhou-on-august-1-2026",
+      "endDate": "2026-08-01T12:00:00Z",
+      "n": 3,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "33°C",
+          "bid": null,
+          "ask": 0.002
+        },
+        {
+          "name": "34°C",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "35°C or higher",
+          "bid": null,
+          "ask": 0.001
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.004,
+      "grossPP": 99.6,
+      "feePP": 0.02,
+      "netPP": 99.58,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x26dc55f7c1e0efe9f5b9ee017f107f4ff7fbe1909ba5870de6167a35e429eb00",
+      "event": "Highest temperature in Chengdu on August 1?",
+      "slug": "highest-temperature-in-chengdu-on-august-1-2026",
+      "endDate": "2026-08-01T12:00:00Z",
+      "n": 3,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "32°C or higher",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "26°C",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "25°C",
+          "bid": null,
+          "ask": 0.001
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.01,
+      "grossPP": 99.0,
+      "feePP": 0.07,
+      "netPP": 98.93,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xbb19753163aa16c89c14299275edb17a16138736c36dc1b6292f24a92a3dd200",
+      "event": "Next Premier of Quebec",
+      "slug": "next-premier-of-quebec-594",
+      "endDate": "2026-10-05T00:00:00Z",
+      "n": 4,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Sol Zanetti",
+          "bid": 0.001,
+          "ask": 0.003
+        },
+        {
+          "name": "Bernard Drainville",
+          "bid": 0.001,
+          "ask": 0.003
+        },
+        {
+          "name": "Éric Duhaime",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "Ruba Ghazal",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.066,
+      "grossPP": 93.4,
+      "feePP": 0.33,
+      "netPP": 93.07,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x85de20785f24956ff4ce1471e80f7d379d97f3fb8a20fb5dd881d03aac38df00",
+      "event": "MLB World Series Champion 2026",
+      "slug": "mlb-world-series-champion-2026",
+      "endDate": "2026-10-31T23:55:00Z",
+      "n": 4,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Boston Red Sox",
+          "bid": 0.042,
+          "ask": 0.043
+        },
+        {
+          "name": "Detroit Tigers",
+          "bid": 0.011,
+          "ask": 0.013
+        },
+        {
+          "name": "Los Angeles Angels",
+          "bid": 0.005,
+          "ask": 0.006
+        },
+        {
+          "name": "Miami Marlins",
+          "bid": 0.002,
+          "ask": 0.004
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.113,
+      "grossPP": 88.7,
+      "feePP": 0.57,
+      "netPP": 88.14,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xe600541fed4f687b3ab8e9391806369fe2fa8c96903f0fed97bb725d2054c500",
@@ -58,28 +204,28 @@
       "top": [
         {
           "name": "160-179",
-          "bid": 0.039,
-          "ask": 0.04
+          "bid": 0.034,
+          "ask": 0.035
         },
         {
           "name": "140-159",
-          "bid": 0.023,
-          "ask": 0.024
+          "bid": 0.018,
+          "ask": 0.02
         },
         {
           "name": "340-359",
-          "bid": 0.021,
-          "ask": 0.023
+          "bid": 0.019,
+          "ask": 0.02
         },
         {
           "name": "360-379",
           "bid": 0.009,
-          "ask": 0.012
+          "ask": 0.011
         },
         {
           "name": "120-139",
-          "bid": 0.006,
-          "ask": 0.01
+          "bid": 0.007,
+          "ask": 0.008
         },
         {
           "name": "380-399",
@@ -90,84 +236,40 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.155,
-      "grossPP": 84.5,
-      "feePP": 0.78,
-      "netPP": 83.72,
+      "sumProb": 0.166,
+      "grossPP": 83.4,
+      "feePP": 0.83,
+      "netPP": 82.57,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x5e58d2b08e99ebaaed6bfc3e5158d753032487084fd8b13a73daed059bb9a400",
-      "event": "Highest temperature in Shenzhen on August 1?",
-      "slug": "highest-temperature-in-shenzhen-on-august-1-2026",
-      "endDate": "2026-08-01T12:00:00Z",
+      "negRiskMarketID": "0xbb01d92208e308f14eb9917889bb2b449395207a26fe2a7990c3d5def7f74c00",
+      "event": "NBA: 2027 Champion",
+      "slug": "nba-2027-champion",
+      "endDate": "2027-07-01T00:00:00Z",
       "n": 4,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "32°C",
-          "bid": 0.137,
-          "ask": 0.139
-        },
-        {
-          "name": "33°C or higher",
-          "bid": 0.008,
-          "ask": 0.014
-        },
-        {
-          "name": "25°C",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "29°C",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.204,
-      "grossPP": 79.6,
-      "feePP": 1.02,
-      "netPP": 78.58,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
-      "event": "Pro Football: 2027 Champion",
-      "slug": "pro-football-2027-champion-20260729185915366",
-      "endDate": "2027-02-14T23:55:00Z",
-      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Philadelphia Eagles",
-          "bid": 0.045,
-          "ask": 0.046
+          "name": "Philadelphia 76ers",
+          "bid": 0.136,
+          "ask": 0.137
         },
         {
-          "name": "San Francisco 49ers",
-          "bid": 0.044,
-          "ask": 0.045
+          "name": "Los Angeles Lakers",
+          "bid": 0.02,
+          "ask": 0.021
         },
         {
-          "name": "Detroit Lions",
-          "bid": 0.041,
-          "ask": 0.042
+          "name": "Phoenix Suns",
+          "bid": 0.005,
+          "ask": 0.006
         },
         {
-          "name": "Houston Texans",
-          "bid": 0.038,
-          "ask": 0.039
-        },
-        {
-          "name": "Chicago Bears",
-          "bid": 0.03,
-          "ask": 0.032
+          "name": "New Orleans Pelicans",
+          "bid": 0.001,
+          "ask": 0.002
         }
       ]
     },
@@ -207,98 +309,103 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.376,
-      "grossPP": 62.4,
-      "feePP": 1.88,
-      "netPP": 60.52,
+      "sumProb": 0.245,
+      "grossPP": 75.5,
+      "feePP": 1.23,
+      "netPP": 74.28,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xbb01d92208e308f14eb9917889bb2b449395207a26fe2a7990c3d5def7f74c00",
-      "event": "NBA: 2027 Champion",
-      "slug": "nba-2027-champion",
-      "endDate": "2027-07-01T00:00:00Z",
+      "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
+      "event": "Pro Football: 2027 Champion",
+      "slug": "pro-football-2027-champion-20260729185915366",
+      "endDate": "2027-02-14T23:55:00Z",
+      "n": 7,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Philadelphia Eagles",
+          "bid": 0.058,
+          "ask": 0.064
+        },
+        {
+          "name": "San Francisco 49ers",
+          "bid": 0.042,
+          "ask": 0.043
+        },
+        {
+          "name": "Detroit Lions",
+          "bid": 0.041,
+          "ask": 0.042
+        },
+        {
+          "name": "Houston Texans",
+          "bid": 0.038,
+          "ask": 0.039
+        },
+        {
+          "name": "Chicago Bears",
+          "bid": 0.03,
+          "ask": 0.031
+        },
+        {
+          "name": "Minnesota Vikings",
+          "bid": 0.017,
+          "ask": 0.018
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.263,
+      "grossPP": 73.7,
+      "feePP": 1.05,
+      "netPP": 72.65,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
+      "event": "Democratic Presidential Nominee 2028",
+      "slug": "democratic-presidential-nominee-2028",
+      "endDate": "2028-11-07T00:00:00Z",
       "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "San Antonio Spurs",
-          "bid": 0.2,
-          "ask": 0.21
+          "name": "Alexandria Ocasio-Cortez",
+          "bid": 0.137,
+          "ask": 0.14
         },
         {
-          "name": "Philadelphia 76ers",
-          "bid": 0.136,
-          "ask": 0.137
+          "name": "Kamala Harris",
+          "bid": 0.085,
+          "ask": 0.086
         },
         {
-          "name": "Los Angeles Lakers",
-          "bid": 0.02,
-          "ask": 0.021
+          "name": "Mark Kelly",
+          "bid": 0.027,
+          "ask": 0.028
         },
         {
-          "name": "Phoenix Suns",
+          "name": "Hunter Biden",
           "bid": 0.005,
           "ask": 0.006
         },
         {
-          "name": "New Orleans Pelicans",
-          "bid": 0.001,
-          "ask": 0.002
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.43,
-      "grossPP": 57.0,
-      "feePP": 3.01,
-      "netPP": 53.99,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x03c9c6d9f7b20aaa1f33f99bd24bd16e4e0e00cfa892dde097b800655490b200",
-      "event": "Who will be the next Prime Minister of Israel after the next election?",
-      "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
-      "endDate": "2026-12-31T00:00:00Z",
-      "n": 5,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Benjamin Netanyahu",
-          "bid": 0.34,
-          "ask": 0.35
-        },
-        {
-          "name": "Naftali Bennett",
-          "bid": 0.06,
-          "ask": 0.07
-        },
-        {
-          "name": "Itamar Ben Gvir",
-          "bid": 0.004,
-          "ask": 0.005
-        },
-        {
-          "name": "Amir Ohana",
+          "name": "Elissa Slotkin",
           "bid": 0.002,
           "ask": 0.003
-        },
-        {
-          "name": "Benny Gantz",
-          "bid": 0.001,
-          "ask": 0.002
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.482,
-      "grossPP": 51.8,
-      "feePP": 1.93,
-      "netPP": 49.87,
+      "sumProb": 0.457,
+      "grossPP": 54.3,
+      "feePP": 1.83,
+      "netPP": 52.47,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
@@ -326,11 +433,6 @@
           "ask": 0.094
         },
         {
-          "name": "Donald Trump",
-          "bid": 0.026,
-          "ask": 0.027
-        },
-        {
           "name": "Tucker Carlson",
           "bid": 0.009,
           "ask": 0.01
@@ -339,132 +441,59 @@
           "name": "Jamie Dimon",
           "bid": 0.006,
           "ask": 0.007
+        },
+        {
+          "name": "James Talarico",
+          "bid": 0.005,
+          "ask": 0.006
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.753,
-      "grossPP": 24.7,
-      "feePP": 2.53,
-      "netPP": 22.17,
+      "sumProb": 0.746,
+      "grossPP": 25.4,
+      "feePP": 2.42,
+      "netPP": 22.98,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xd1dae9b7a4d2dc2ee926122b07bde454e05943d4ba9c9b4e0ebf4da9da4aa700",
       "event": "Largest Company end of December 2026?",
       "slug": "largest-company-end-of-december-2026",
       "endDate": "2026-12-31T00:00:00Z",
-      "n": 4,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "NVIDIA",
-          "bid": 0.55,
-          "ask": 0.56
-        },
-        {
-          "name": "Alphabet",
-          "bid": 0.16,
-          "ask": 0.17
-        },
-        {
-          "name": "SpaceX",
-          "bid": 0.013,
-          "ask": 0.016
-        },
-        {
-          "name": "Microsoft",
-          "bid": 0.005,
-          "ask": 0.007
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.966,
-      "grossPP": 3.4,
-      "feePP": 1.33,
-      "netPP": 2.07,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x1ce409cd4dcd5ff2162b678656d921b8113055f62febc3eb0a32f749980a7200",
-      "event": "Highest grossing movie in 2026?",
-      "slug": "highest-grossing-movie-in-2026",
-      "endDate": "2026-12-31T00:00:00Z",
-      "n": 4,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Spider-Man: Brand New Day",
-          "bid": 0.84,
-          "ask": 0.85
-        },
-        {
-          "name": "Avengers: Doomsday",
-          "bid": 0.07,
-          "ask": 0.08
-        },
-        {
-          "name": "Toy Story 5",
-          "bid": 0.014,
-          "ask": 0.027
-        },
-        {
-          "name": "The Odyssey",
-          "bid": 0.006,
-          "ask": 0.009
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.943,
-      "grossPP": 5.7,
-      "feePP": 4.64,
-      "netPP": 1.06,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xc194d621e2ef9468b86ed0db1328fd8d56ae8fba1e21b94c5c515e96ecbfc400",
-      "event": "Which party will gain most seats in Russian Parliamentary Election?",
-      "slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election",
-      "endDate": "2026-09-20T00:00:00Z",
       "n": 3,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "United Russia (ER)",
-          "bid": 0.62,
-          "ask": 0.64
+          "name": "NVIDIA",
+          "bid": 0.56,
+          "ask": 0.57
         },
         {
-          "name": "New People (NL)",
-          "bid": 0.3,
-          "ask": 0.301
+          "name": "Alphabet",
+          "bid": 0.15,
+          "ask": 0.16
         },
         {
-          "name": "Rodina",
-          "bid": 0.001,
-          "ask": 0.002
+          "name": "SpaceX",
+          "bid": 0.013,
+          "ask": 0.016
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.945,
-      "grossPP": 5.5,
-      "feePP": 4.72,
-      "netPP": 0.77,
+      "sumProb": 0.929,
+      "grossPP": 7.1,
+      "feePP": 3.85,
+      "netPP": 3.26,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x18c4624000ca5d6cdaf0159d2409f48a5b21a9136e17fb78cb4da3cc426a2400",
-      "event": "Highest temperature in Munich on August 1?",
-      "slug": "highest-temperature-in-munich-on-august-1-2026",
+      "negRiskMarketID": "0x213a0496b11be44a870f6f5934cee2c1bbd0685de4d91e91b941662091ab7c00",
+      "event": "Highest temperature in London on August 1?",
+      "slug": "highest-temperature-in-london-on-august-1-2026",
       "endDate": "2026-08-01T12:00:00Z",
       "n": 4,
       "completeBid": true,
@@ -472,24 +501,24 @@
       "tradable": false,
       "top": [
         {
-          "name": "29°C",
-          "bid": 0.43,
-          "ask": 0.44
+          "name": "26°C",
+          "bid": 0.57,
+          "ask": 0.58
+        },
+        {
+          "name": "25°C",
+          "bid": 0.27,
+          "ask": 0.3
+        },
+        {
+          "name": "24°C",
+          "bid": 0.01,
+          "ask": 0.03
         },
         {
           "name": "28°C",
-          "bid": 0.32,
-          "ask": 0.33
-        },
-        {
-          "name": "30°C",
-          "bid": 0.15,
-          "ask": 0.16
-        },
-        {
-          "name": "31°C",
-          "bid": 0.008,
-          "ask": 0.015
+          "bid": 0.005,
+          "ask": 0.019
         }
       ]
     }
