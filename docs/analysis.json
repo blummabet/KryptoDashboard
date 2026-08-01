@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-08-01 12:11 UTC",
+  "generatedAt": "2026-08-01 14:41 UTC",
   "attribution": {
-    "nClosed": 334,
-    "realizedTotal": -1290.86,
-    "feesTotal": 1141.34,
-    "grossBeforeFees": -149.52,
-    "feeDragPct": null,
-    "winRate": 0.5,
-    "nWin": 167,
+    "nClosed": 335,
+    "realizedTotal": -985.66,
+    "feesTotal": 1143.08,
+    "grossBeforeFees": 157.42,
+    "feeDragPct": 726.13,
+    "winRate": 0.501,
+    "nWin": 168,
     "nLoss": 167,
-    "avgWin": 20.61,
+    "avgWin": 22.31,
     "avgLoss": -28.34,
-    "payoffRatio": 0.73,
-    "avgFeePP": 3.42,
+    "payoffRatio": 0.79,
+    "avgFeePP": 3.41,
     "avgEntryEdgePP": 3.17,
     "feeEatsEdge": true,
     "worstFiveSum": -510.19,
@@ -51,6 +51,12 @@
     ],
     "best": [
       {
+        "market": "über $64,000 · 2026-08-01",
+        "side": "NO",
+        "pnl": 305.2,
+        "reason": "converged"
+      },
+      {
         "market": "über $64,000 · 2026-07-05",
         "side": "YES",
         "pnl": 230.17,
@@ -73,18 +79,12 @@
         "side": "YES",
         "pnl": 114.17,
         "reason": "thesis_break"
-      },
-      {
-        "market": "über $66,000 · 2026-07-28",
-        "side": "NO",
-        "pnl": 95.57,
-        "reason": "converged"
       }
     ],
     "byReason": {
       "converged": {
-        "n": 293,
-        "pnl": -1025.74
+        "n": 294,
+        "pnl": -720.54
       },
       "thesis_break": {
         "n": 18,
@@ -101,13 +101,13 @@
     }
   },
   "btcExposure": {
-    "n": 39,
+    "n": 38,
     "nLong": 0,
-    "nShort": 39,
+    "nShort": 38,
     "longStakeUSD": 0.0,
-    "shortStakeUSD": 3900.0,
-    "netWeighted": -1775.59,
-    "grossWeighted": 1775.59,
+    "shortStakeUSD": 3800.0,
+    "netWeighted": -1769.66,
+    "grossWeighted": 1769.66,
     "netPct": -100.0,
     "direction": "SHORT (fällt BTC → Buch gewinnt)",
     "concentrated": true
