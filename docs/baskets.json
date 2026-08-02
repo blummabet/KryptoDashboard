@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-02 13:48 UTC",
+  "generatedAt": "2026-08-02 15:13 UTC",
   "scanned": 600,
-  "count": 10,
+  "count": 12,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -80,10 +80,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.09,
-      "grossPP": 91.0,
+      "sumProb": 0.089,
+      "grossPP": 91.1,
       "feePP": 0.45,
-      "netPP": 90.55,
+      "netPP": 90.66,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x1ce409cd4dcd5ff2162b678656d921b8113055f62febc3eb0a32f749980a7200",
@@ -103,7 +103,7 @@
         {
           "name": "Dune: Messiah",
           "bid": 0.002,
-          "ask": 0.004
+          "ask": 0.003
         },
         {
           "name": "Star Wars: The Mandalorian and Grogu",
@@ -124,35 +124,35 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.186,
-      "grossPP": 81.4,
-      "feePP": 0.93,
-      "netPP": 80.47,
+      "sumProb": 0.2,
+      "grossPP": 80.0,
+      "feePP": 1.0,
+      "netPP": 79.0,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xe600541fed4f687b3ab8e9391806369fe2fa8c96903f0fed97bb725d2054c500",
       "event": "Elon Musk # tweets July 31 - August 7, 2026?",
       "slug": "elon-musk-of-tweets-july-31-august-7",
       "endDate": "2026-08-07T16:00:00Z",
-      "n": 6,
+      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "160-179",
-          "bid": 0.099,
-          "ask": 0.1
+          "bid": 0.108,
+          "ask": 0.109
         },
         {
           "name": "140-159",
-          "bid": 0.053,
-          "ask": 0.058
+          "bid": 0.059,
+          "ask": 0.06
         },
         {
           "name": "120-139",
-          "bid": 0.012,
-          "ask": 0.013
+          "bid": 0.015,
+          "ask": 0.018
         },
         {
           "name": "320-339",
@@ -163,9 +163,43 @@
           "name": "400-419",
           "bid": 0.001,
           "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.409,
+      "grossPP": 59.1,
+      "feePP": 2.04,
+      "netPP": 57.05,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x697ad5ad79df81b98b58ef5ea0ff713d40397e526b98bd36fbe57d4be4365000",
+      "event": "EPL: 2027 Champion",
+      "slug": "epl-2027-champion-20260701200428749",
+      "endDate": "2027-05-30T23:59:00Z",
+      "n": 4,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Arsenal",
+          "bid": 0.36,
+          "ask": 0.37
         },
         {
-          "name": "100-119",
+          "name": "Tottenham",
+          "bid": 0.031,
+          "ask": 0.032
+        },
+        {
+          "name": "Newcastle United",
+          "bid": 0.004,
+          "ask": 0.005
+        },
+        {
+          "name": "Bournemouth",
           "bid": 0.001,
           "ask": 0.002
         }
@@ -173,10 +207,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.4,
-      "grossPP": 60.0,
-      "feePP": 2.0,
-      "netPP": 58.0,
+      "sumProb": 0.41,
+      "grossPP": 59.0,
+      "feePP": 2.05,
+      "netPP": 56.95,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x85de20785f24956ff4ce1471e80f7d379d97f3fb8a20fb5dd881d03aac38df00",
@@ -191,7 +225,7 @@
         {
           "name": "Los Angeles Dodgers",
           "bid": 0.38,
-          "ask": 0.39
+          "ask": 0.4
         },
         {
           "name": "San Diego Padres",
@@ -217,17 +251,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.455,
-      "grossPP": 54.5,
-      "feePP": 1.82,
-      "netPP": 52.68,
+      "sumProb": 0.461,
+      "grossPP": 53.9,
+      "feePP": 1.84,
+      "netPP": 52.06,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 15,
+      "n": 16,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -266,30 +300,30 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.493,
-      "grossPP": 50.7,
+      "sumProb": 0.492,
+      "grossPP": 50.8,
       "feePP": 1.97,
-      "netPP": 48.73,
+      "netPP": 48.83,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
       "event": "Republican Presidential Nominee 2028",
       "slug": "republican-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 6,
+      "n": 7,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "J.D. Vance",
-          "bid": 0.46,
-          "ask": 0.462
+          "bid": 0.458,
+          "ask": 0.461
         },
         {
           "name": "Tucker Carlson",
-          "bid": 0.011,
-          "ask": 0.012
+          "bid": 0.008,
+          "ask": 0.009
         },
         {
           "name": "Thomas Massie",
@@ -302,9 +336,9 @@
           "ask": 0.007
         },
         {
-          "name": "Tom Cotton",
-          "bid": 0.001,
-          "ask": 0.002
+          "name": "Candace Owens",
+          "bid": 0.002,
+          "ask": 0.003
         },
         {
           "name": "John N. Kennedy",
@@ -315,10 +349,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.569,
-      "grossPP": 43.1,
-      "feePP": 2.85,
-      "netPP": 40.25,
+      "sumProb": 0.649,
+      "grossPP": 35.1,
+      "feePP": 3.25,
+      "netPP": 31.85,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xe372f0d292574a82ec290371bb80c20628dd02908fc37a3bd9e6b1465fc37d00",
@@ -332,27 +366,27 @@
       "top": [
         {
           "name": "The Odyssey",
-          "bid": 0.33,
-          "ask": 0.34
+          "bid": 0.36,
+          "ask": 0.37
         },
         {
           "name": "Avengers: Doomsday",
-          "bid": 0.101,
-          "ask": 0.129
+          "bid": 0.123,
+          "ask": 0.149
         },
         {
           "name": "Spider-Man: Brand New Day",
-          "bid": 0.08,
-          "ask": 0.1
+          "bid": 0.1,
+          "ask": 0.13
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.831,
-      "grossPP": 16.9,
+      "sumProb": 0.83,
+      "grossPP": 17.0,
       "feePP": 1.32,
-      "netPP": 15.58,
+      "netPP": 15.68,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x5283e4166486b229b3553cd5c13f9a20ca3ec41ce705b2941899992a05207b00",
@@ -371,8 +405,8 @@
         },
         {
           "name": "Alphabet",
-          "bid": 0.072,
-          "ask": 0.076
+          "bid": 0.074,
+          "ask": 0.075
         },
         {
           "name": "Microsoft",
@@ -388,10 +422,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.888,
-      "grossPP": 11.2,
-      "feePP": 4.08,
-      "netPP": 7.12,
+      "sumProb": 0.909,
+      "grossPP": 9.1,
+      "feePP": 4.18,
+      "netPP": 4.91,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
@@ -410,7 +444,7 @@
         },
         {
           "name": "Lamine Yamal",
-          "bid": 0.205,
+          "bid": 0.21,
           "ask": 0.211
         },
         {
@@ -420,18 +454,57 @@
         },
         {
           "name": "Khvicha Kvaratskhelia",
-          "bid": 0.016,
-          "ask": 0.018
+          "bid": 0.025,
+          "ask": 0.038
         },
         {
           "name": "Ousmane Dembélé",
           "bid": 0.009,
-          "ask": 0.01
+          "ask": 0.011
         },
         {
           "name": "Pau Cubarsi",
           "bid": 0.007,
           "ask": 0.008
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.975,
+      "grossPP": 2.5,
+      "feePP": 1.02,
+      "netPP": 1.49,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xdcd7daabcacdc4ecf4f9a48d0a2708b52f356dd086c8070992136da62eb72b00",
+      "event": "How many Fed rate cuts in 2026?",
+      "slug": "how-many-fed-rate-cuts-in-2026",
+      "endDate": "2026-12-31T00:00:00Z",
+      "n": 4,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "0 (0 bps)",
+          "bid": 0.885,
+          "ask": 0.886
+        },
+        {
+          "name": "1 (25 bps)",
+          "bid": 0.06,
+          "ask": 0.07
+        },
+        {
+          "name": "3 (75 bps)",
+          "bid": 0.011,
+          "ask": 0.013
+        },
+        {
+          "name": "4 (100 bps)",
+          "bid": 0.005,
+          "ask": 0.006
         }
       ]
     }
