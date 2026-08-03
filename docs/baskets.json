@@ -1,44 +1,10 @@
 {
-  "generatedAt": "2026-08-03 15:51 UTC",
+  "generatedAt": "2026-08-03 18:01 UTC",
   "scanned": 600,
-  "count": 8,
+  "count": 9,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
-    {
-      "side": "buy",
-      "sumProb": 0.003,
-      "grossPP": 99.7,
-      "feePP": 0.02,
-      "netPP": 99.69,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x92899240ee7831e5e201ba56c70297957c6f390d0b12ff53ea0c1945f0899e00",
-      "event": "Highest temperature in Shenzhen on August 3?",
-      "slug": "highest-temperature-in-shenzhen-on-august-3-2026",
-      "endDate": "2026-08-03T12:00:00Z",
-      "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "33°C or higher",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "32°C",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "30°C",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
     {
       "side": "buy",
       "sumProb": 0.004,
@@ -67,12 +33,12 @@
           "ask": 0.001
         },
         {
-          "name": "17°C",
+          "name": "16°C or below",
           "bid": null,
           "ask": 0.001
         },
         {
-          "name": "16°C or below",
+          "name": "17°C",
           "bid": null,
           "ask": 0.001
         }
@@ -80,10 +46,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.158,
-      "grossPP": 84.2,
-      "feePP": 0.79,
-      "netPP": 83.41,
+      "sumProb": 0.159,
+      "grossPP": 84.1,
+      "feePP": 0.8,
+      "netPP": 83.3,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x697ad5ad79df81b98b58ef5ea0ff713d40397e526b98bd36fbe57d4be4365000",
@@ -103,7 +69,7 @@
         {
           "name": "Tottenham",
           "bid": 0.033,
-          "ask": 0.034
+          "ask": 0.035
         },
         {
           "name": "Leeds United",
@@ -119,10 +85,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.21,
-      "grossPP": 79.0,
+      "sumProb": 0.209,
+      "grossPP": 79.1,
       "feePP": 0.84,
-      "netPP": 78.16,
+      "netPP": 78.26,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
@@ -146,8 +112,8 @@
         },
         {
           "name": "Wes Moore",
-          "bid": 0.015,
-          "ask": 0.016
+          "bid": 0.014,
+          "ask": 0.015
         },
         {
           "name": "Stephen A. Smith",
@@ -168,17 +134,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.418,
-      "grossPP": 58.2,
-      "feePP": 1.67,
-      "netPP": 56.53,
+      "sumProb": 0.359,
+      "grossPP": 64.1,
+      "feePP": 1.44,
+      "netPP": 62.66,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 11,
+      "n": 9,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -194,11 +160,6 @@
           "ask": 0.091
         },
         {
-          "name": "Kamala Harris",
-          "bid": 0.047,
-          "ask": 0.048
-        },
-        {
           "name": "Pete Buttigieg",
           "bid": 0.024,
           "ask": 0.025
@@ -209,9 +170,14 @@
           "ask": 0.016
         },
         {
-          "name": "Donald Trump Jr.",
-          "bid": 0.01,
-          "ask": 0.011
+          "name": "JB Pritzker",
+          "bid": 0.004,
+          "ask": 0.005
+        },
+        {
+          "name": "James Talarico",
+          "bid": 0.004,
+          "ask": 0.005
         }
       ]
     },
@@ -238,22 +204,22 @@
           "ask": 0.46
         },
         {
-          "name": "Tucker Carlson",
-          "bid": 0.015,
-          "ask": 0.016
-        },
-        {
           "name": "Donald Trump Jr.",
           "bid": 0.013,
           "ask": 0.016
         },
         {
-          "name": "Elon Musk",
-          "bid": 0.007,
-          "ask": 0.008
+          "name": "Tucker Carlson",
+          "bid": 0.014,
+          "ask": 0.015
         },
         {
           "name": "Ivanka Trump",
+          "bid": 0.007,
+          "ask": 0.009
+        },
+        {
+          "name": "Elon Musk",
           "bid": 0.007,
           "ask": 0.008
         },
@@ -266,10 +232,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.622,
-      "grossPP": 37.8,
-      "feePP": 3.11,
-      "netPP": 34.69,
+      "sumProb": 0.615,
+      "grossPP": 38.5,
+      "feePP": 3.08,
+      "netPP": 35.42,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xe600541fed4f687b3ab8e9391806369fe2fa8c96903f0fed97bb725d2054c500",
@@ -288,37 +254,37 @@
         },
         {
           "name": "240-259",
-          "bid": 0.14,
-          "ask": 0.15
+          "bid": 0.13,
+          "ask": 0.14
         },
         {
           "name": "160-179",
-          "bid": 0.078,
-          "ask": 0.086
+          "bid": 0.098,
+          "ask": 0.104
         },
         {
           "name": "260-279",
-          "bid": 0.07,
-          "ask": 0.08
-        },
-        {
-          "name": "280-299",
-          "bid": 0.04,
-          "ask": 0.045
+          "bid": 0.06,
+          "ask": 0.07
         },
         {
           "name": "140-159",
-          "bid": 0.023,
-          "ask": 0.024
+          "bid": 0.034,
+          "ask": 0.035
+        },
+        {
+          "name": "280-299",
+          "bid": 0.032,
+          "ask": 0.035
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.754,
-      "grossPP": 24.6,
-      "feePP": 2.86,
-      "netPP": 21.74,
+      "sumProb": 0.758,
+      "grossPP": 24.2,
+      "feePP": 2.79,
+      "netPP": 21.41,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xd1dae9b7a4d2dc2ee926122b07bde454e05943d4ba9c9b4e0ebf4da9da4aa700",
@@ -332,13 +298,13 @@
       "top": [
         {
           "name": "NVIDIA",
-          "bid": 0.51,
-          "ask": 0.52
+          "bid": 0.52,
+          "ask": 0.53
         },
         {
           "name": "Apple",
-          "bid": 0.205,
-          "ask": 0.215
+          "bid": 0.206,
+          "ask": 0.209
         },
         {
           "name": "Microsoft",
@@ -354,6 +320,79 @@
           "name": "Amazon",
           "bid": 0.003,
           "ask": 0.004
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.914,
+      "grossPP": 8.6,
+      "feePP": 4.57,
+      "netPP": 4.03,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x37a5ac38f6a1c3fe67aea1dabe1523763d7edc7fd5e800d00d5062bf2e596500",
+      "event": "FK Kudrivka vs. FK Shakhtar Donetsk - Exact Score",
+      "slug": "ukr1-kud-shd-2026-08-03-exact-score",
+      "endDate": "2026-08-03T15:00:00Z",
+      "n": 4,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "FK Kudrivka 3 - 0 FK Shakhtar Donetsk",
+          "bid": null,
+          "ask": 0.449
+        },
+        {
+          "name": "FK Kudrivka 0 - 1 FK Shakhtar Donetsk",
+          "bid": null,
+          "ask": 0.359
+        },
+        {
+          "name": "FK Kudrivka 1 - 0 FK Shakhtar Donetsk",
+          "bid": null,
+          "ask": 0.098
+        },
+        {
+          "name": "FK Kudrivka 0 - 0 FK Shakhtar Donetsk",
+          "bid": null,
+          "ask": 0.008
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.992,
+      "grossPP": 0.8,
+      "feePP": 0.06,
+      "netPP": 0.74,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x56a66fe44d1c5779dc1e65dd60cab237f0ce0134af8466d78e7cad996ffbec00",
+      "event": "Highest temperature in Wellington on August 4?",
+      "slug": "highest-temperature-in-wellington-on-august-4-2026",
+      "endDate": "2026-08-04T12:00:00Z",
+      "n": 3,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "10°C",
+          "bid": 0.98,
+          "ask": 0.99
+        },
+        {
+          "name": "9°C",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "8°C",
+          "bid": null,
+          "ask": 0.001
         }
       ]
     }
