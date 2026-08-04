@@ -1,10 +1,44 @@
 {
-  "generatedAt": "2026-08-03 23:15 UTC",
+  "generatedAt": "2026-08-04 03:31 UTC",
   "scanned": 600,
-  "count": 7,
+  "count": 15,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
+    {
+      "side": "buy",
+      "sumProb": 0.053,
+      "grossPP": 94.7,
+      "feePP": 0.37,
+      "netPP": 94.33,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x101575704192f285db490a8a660518fcbedacda3ba5b06fc3972ca8f558dc000",
+      "event": "Bitcoin price on August 4?",
+      "slug": "bitcoin-price-on-august-4-2026",
+      "endDate": "2026-08-04T16:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "60,000-62,000",
+          "bid": 0.032,
+          "ask": 0.036
+        },
+        {
+          "name": "66,000-68,000",
+          "bid": 0.006,
+          "ask": 0.011
+        },
+        {
+          "name": "58,000-60,000",
+          "bid": 0.005,
+          "ask": 0.006
+        }
+      ]
+    },
     {
       "side": "buy",
       "sumProb": 0.072,
@@ -24,7 +58,7 @@
       "top": [
         {
           "name": "Donald Trump Jr.",
-          "bid": 0.013,
+          "bid": 0.014,
           "ask": 0.016
         },
         {
@@ -56,6 +90,79 @@
     },
     {
       "side": "buy",
+      "sumProb": 0.141,
+      "grossPP": 85.9,
+      "feePP": 0.7,
+      "netPP": 85.2,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x85de20785f24956ff4ce1471e80f7d379d97f3fb8a20fb5dd881d03aac38df00",
+      "event": "MLB World Series Champion 2026",
+      "slug": "mlb-world-series-champion-2026",
+      "endDate": "2026-10-31T23:55:00Z",
+      "n": 4,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Boston Red Sox",
+          "bid": 0.065,
+          "ask": 0.092
+        },
+        {
+          "name": "Seattle Mariners",
+          "bid": 0.034,
+          "ask": 0.036
+        },
+        {
+          "name": "San Diego Padres",
+          "bid": 0.009,
+          "ask": 0.01
+        },
+        {
+          "name": "Washington Nationals",
+          "bid": 0.002,
+          "ask": 0.003
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.144,
+      "grossPP": 85.6,
+      "feePP": 0.72,
+      "netPP": 84.88,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xfb5399f0e1c4ea4d78a40957d48838ab5769fcec80592b8ce2ffd6e27a3cad00",
+      "event": "UEFA Champions League: 2027 Champion",
+      "slug": "uefa-champions-league-2027-champion-20260701202025549",
+      "endDate": "2027-05-30T23:59:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Real Madrid",
+          "bid": 0.13,
+          "ask": 0.14
+        },
+        {
+          "name": "Shakhtar Donetsk",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "Slavia Prague",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
       "sumProb": 0.166,
       "grossPP": 83.4,
       "feePP": 0.83,
@@ -78,7 +185,7 @@
         },
         {
           "name": "Tottenham",
-          "bid": 0.033,
+          "bid": 0.032,
           "ask": 0.034
         },
         {
@@ -90,79 +197,30 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.298,
-      "grossPP": 70.2,
-      "feePP": 1.19,
-      "netPP": 69.01,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
-      "event": "Presidential Election Winner 2028",
-      "slug": "presidential-election-winner-2028",
-      "endDate": "2028-11-07T00:00:00Z",
-      "n": 12,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Marco Rubio",
-          "bid": 0.134,
-          "ask": 0.135
-        },
-        {
-          "name": "Alexandria Ocasio-Cortez",
-          "bid": 0.09,
-          "ask": 0.091
-        },
-        {
-          "name": "Pete Buttigieg",
-          "bid": 0.024,
-          "ask": 0.025
-        },
-        {
-          "name": "Ro Khanna",
-          "bid": 0.01,
-          "ask": 0.011
-        },
-        {
-          "name": "Greg Abbott",
-          "bid": 0.008,
-          "ask": 0.009
-        },
-        {
-          "name": "Ivanka Trump",
-          "bid": 0.004,
-          "ask": 0.006
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.39,
-      "grossPP": 61.0,
-      "feePP": 1.56,
-      "netPP": 59.44,
+      "sumProb": 0.34,
+      "grossPP": 66.0,
+      "feePP": 1.36,
+      "netPP": 64.64,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
       "event": "Democratic Presidential Nominee 2028",
       "slug": "democratic-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 7,
+      "n": 6,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Gavin Newsom",
-          "bid": 0.189,
-          "ask": 0.19
+          "name": "Jon Ossoff",
+          "bid": 0.149,
+          "ask": 0.15
         },
         {
-          "name": "Jon Ossoff",
-          "bid": 0.146,
-          "ask": 0.147
+          "name": "Alexandria Ocasio-Cortez",
+          "bid": 0.135,
+          "ask": 0.139
         },
         {
           "name": "Mark Kelly",
@@ -188,78 +246,288 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.499,
-      "grossPP": 50.1,
-      "feePP": 2.5,
-      "netPP": 47.61,
+      "sumProb": 0.345,
+      "grossPP": 65.5,
+      "feePP": 2.42,
+      "netPP": 63.09,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x0ad385f3e41e6325f169ff422608ed0145c2cea02f8c76300e1915375021ae00",
-      "event": "Highest temperature in Hong Kong on August 4?",
-      "slug": "highest-temperature-in-hong-kong-on-august-4-2026",
-      "endDate": "2026-08-04T12:00:00Z",
+      "negRiskMarketID": "0x03c9c6d9f7b20aaa1f33f99bd24bd16e4e0e00cfa892dde097b800655490b200",
+      "event": "Who will be the next Prime Minister of Israel after the next election?",
+      "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
+      "endDate": "2026-12-31T00:00:00Z",
       "n": 3,
       "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Benjamin Netanyahu",
+          "bid": 0.33,
+          "ask": 0.34
+        },
+        {
+          "name": "Amir Ohana",
+          "bid": 0.002,
+          "ask": 0.003
+        },
+        {
+          "name": "Yossi Cohen",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.48,
+      "grossPP": 52.0,
+      "feePP": 2.4,
+      "netPP": 49.6,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x910978b55072c2ca8f1ef93f3a55c3909c0ca8c24c4c12b5f24f606d0fa03800",
+      "event": "Highest temperature in London on August 4?",
+      "slug": "highest-temperature-in-london-on-august-4-2026",
+      "endDate": "2026-08-04T12:00:00Z",
+      "n": 5,
+      "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "30°C",
-          "bid": 0.42,
-          "ask": 0.46
+          "bid": 0.27,
+          "ask": 0.28
         },
         {
           "name": "28°C",
+          "bid": 0.15,
+          "ask": 0.16
+        },
+        {
+          "name": "27°C",
           "bid": 0.02,
           "ask": 0.03
         },
         {
-          "name": "27°C",
-          "bid": 0.003,
+          "name": "31°C",
+          "bid": 0.007,
           "ask": 0.009
+        },
+        {
+          "name": "26°C",
+          "bid": null,
+          "ask": 0.001
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.55,
-      "grossPP": 45.0,
-      "feePP": 2.75,
-      "netPP": 42.25,
+      "sumProb": 0.532,
+      "grossPP": 46.8,
+      "feePP": 2.66,
+      "netPP": 44.14,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x6822b2bc3d2d72342676dd5167ed15894e0d7076e82babfdd963722ed2d34000",
-      "event": "WSOP Main Event Winner",
-      "slug": "wsop-main-event-winner-20260714164336205",
-      "endDate": null,
+      "negRiskMarketID": "0xe19955a59d89e18f188e8f92bc25293db835f04d708702080716734476805800",
+      "event": "July Inflation US - Annual",
+      "slug": "july-inflation-us-annual-20260714150613267",
+      "endDate": "2026-08-12T03:59:00Z",
       "n": 3,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Lucas Jumalon",
-          "bid": 0.33,
-          "ask": 0.34
+          "name": "3.3%",
+          "bid": 0.34,
+          "ask": 0.35
         },
         {
-          "name": "Michael Gagliano",
-          "bid": 0.11,
-          "ask": 0.13
+          "name": "3.5%",
+          "bid": 0.17,
+          "ask": 0.18
         },
         {
-          "name": "Han Feng",
-          "bid": 0.06,
-          "ask": 0.08
+          "name": "4.1%",
+          "bid": 0.001,
+          "ask": 0.002
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.775,
-      "grossPP": 22.5,
-      "feePP": 2.7,
-      "netPP": 19.8,
+      "sumProb": 0.554,
+      "grossPP": 44.6,
+      "feePP": 2.77,
+      "netPP": 41.83,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x590f42a54fad94d875b7807427d32e704ea29f6a7bda99e83d31540169fd2d00",
+      "event": "Highest temperature in Seoul (Incheon) on August 4?",
+      "slug": "highest-temperature-in-seoul-on-august-4-2026",
+      "endDate": "2026-08-04T12:00:00Z",
+      "n": 6,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "35°C",
+          "bid": 0.34,
+          "ask": 0.35
+        },
+        {
+          "name": "33°C",
+          "bid": 0.07,
+          "ask": 0.09
+        },
+        {
+          "name": "36°C",
+          "bid": 0.07,
+          "ask": 0.08
+        },
+        {
+          "name": "37°C",
+          "bid": 0.02,
+          "ask": 0.025
+        },
+        {
+          "name": "38°C or higher",
+          "bid": 0.004,
+          "ask": 0.008
+        },
+        {
+          "name": "32°C",
+          "bid": null,
+          "ask": 0.001
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.635,
+      "grossPP": 36.5,
+      "feePP": 2.54,
+      "netPP": 33.96,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
+      "event": "Presidential Election Winner 2028",
+      "slug": "presidential-election-winner-2028",
+      "endDate": "2028-11-07T00:00:00Z",
+      "n": 17,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "JD Vance",
+          "bid": 0.207,
+          "ask": 0.208
+        },
+        {
+          "name": "Marco Rubio",
+          "bid": 0.134,
+          "ask": 0.135
+        },
+        {
+          "name": "Jon Ossoff",
+          "bid": 0.093,
+          "ask": 0.094
+        },
+        {
+          "name": "Alexandria Ocasio-Cortez",
+          "bid": 0.09,
+          "ask": 0.091
+        },
+        {
+          "name": "Pete Buttigieg",
+          "bid": 0.024,
+          "ask": 0.025
+        },
+        {
+          "name": "Donald Trump",
+          "bid": 0.023,
+          "ask": 0.024
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.678,
+      "grossPP": 32.2,
+      "feePP": 4.75,
+      "netPP": 27.45,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x447f0bc59f46826a48dcf0cc15bf0c68b7ee8bb104d08e2d5a3cfd7ce7427b00",
+      "event": "Where will the next next round of US-Iran peace talks be...?",
+      "slug": "where-will-the-next-next-round-of-us-iran-peace-talks-beptptpt-20260623023740663",
+      "endDate": "2026-09-30T23:59:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "No Meeting by September 30",
+          "bid": 0.358,
+          "ask": 0.359
+        },
+        {
+          "name": "Switzerland",
+          "bid": 0.22,
+          "ask": 0.24
+        },
+        {
+          "name": "Oman",
+          "bid": 0.078,
+          "ask": 0.079
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.772,
+      "grossPP": 22.8,
+      "feePP": 1.3,
+      "netPP": 21.5,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x9ece6daee972fc3046f61b1b97708c60dda245fd4618b72e407f124960f37a00",
+      "event": "\"Spider-Man: Brand New Day\" total domestic gross by August 31?",
+      "slug": "spider-man-brand-new-day-total-domestic-gross-by-august-31-20260716181307512",
+      "endDate": "2026-08-31T23:59:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "900m+",
+          "bid": 0.739,
+          "ask": 0.756
+        },
+        {
+          "name": "600 - 700m",
+          "bid": 0.002,
+          "ask": 0.008
+        },
+        {
+          "name": "500 - 600m",
+          "bid": 0.003,
+          "ask": 0.008
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.783,
+      "grossPP": 21.7,
+      "feePP": 2.65,
+      "netPP": 19.05,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xd1dae9b7a4d2dc2ee926122b07bde454e05943d4ba9c9b4e0ebf4da9da4aa700",
@@ -273,23 +541,62 @@
       "top": [
         {
           "name": "NVIDIA",
-          "bid": 0.54,
-          "ask": 0.55
+          "bid": 0.55,
+          "ask": 0.56
         },
         {
           "name": "Apple",
-          "bid": 0.197,
-          "ask": 0.21
+          "bid": 0.199,
+          "ask": 0.208
         },
         {
           "name": "Microsoft",
-          "bid": 0.01,
+          "bid": 0.009,
           "ask": 0.011
         },
         {
           "name": "Tesla",
           "bid": 0.002,
           "ask": 0.004
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.84,
+      "grossPP": 16.0,
+      "feePP": 4.2,
+      "netPP": 11.8,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x6822b2bc3d2d72342676dd5167ed15894e0d7076e82babfdd963722ed2d34000",
+      "event": "WSOP Main Event Winner",
+      "slug": "wsop-main-event-winner-20260714164336205",
+      "endDate": null,
+      "n": 4,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Lucas Jumalon",
+          "bid": 0.35,
+          "ask": 0.36
+        },
+        {
+          "name": "Greg Mueller",
+          "bid": 0.1,
+          "ask": 0.18
+        },
+        {
+          "name": "Michael Gagliano",
+          "bid": 0.14,
+          "ask": 0.17
+        },
+        {
+          "name": "Han Feng",
+          "bid": 0.08,
+          "ask": 0.13
         }
       ]
     }
