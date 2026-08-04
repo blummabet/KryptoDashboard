@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-08-04 15:34 UTC",
+  "generatedAt": "2026-08-04 18:02 UTC",
   "attribution": {
-    "nClosed": 354,
-    "realizedTotal": -822.33,
-    "feesTotal": 1214.36,
-    "grossBeforeFees": 392.03,
-    "feeDragPct": 309.76,
-    "winRate": 0.52,
+    "nClosed": 355,
+    "realizedTotal": -924.96,
+    "feesTotal": 1216.99,
+    "grossBeforeFees": 292.03,
+    "feeDragPct": 416.73,
+    "winRate": 0.518,
     "nWin": 184,
-    "nLoss": 170,
+    "nLoss": 171,
     "avgWin": 21.44,
-    "avgLoss": -28.04,
-    "payoffRatio": 0.76,
+    "avgLoss": -28.48,
+    "payoffRatio": 0.75,
     "avgFeePP": 3.43,
-    "avgEntryEdgePP": 3.17,
+    "avgEntryEdgePP": 3.18,
     "feeEatsEdge": true,
-    "worstFiveSum": -510.19,
-    "tailLossShare": 0.107,
+    "worstFiveSum": -511.59,
+    "tailLossShare": 0.105,
     "worst": [
       {
         "market": "über $62,000 · 2026-07-06",
@@ -31,6 +31,12 @@
         "reason": "resolved_loss"
       },
       {
+        "market": "über $64,000 · 2026-08-04",
+        "side": "NO",
+        "pnl": -102.63,
+        "reason": "resolved_loss"
+      },
+      {
         "market": "über $64,000 · 2026-07-26",
         "side": "NO",
         "pnl": -101.56,
@@ -40,12 +46,6 @@
         "market": "über $66,000 · 2026-07-22",
         "side": "NO",
         "pnl": -101.37,
-        "reason": "resolved_loss"
-      },
-      {
-        "market": "über $64,000 · 2026-07-07",
-        "side": "YES",
-        "pnl": -101.23,
         "reason": "resolved_loss"
       }
     ],
@@ -91,8 +91,8 @@
         "pnl": -218.72
       },
       "resolved_loss": {
-        "n": 5,
-        "pnl": -508.93
+        "n": 6,
+        "pnl": -611.56
       },
       "resolved_win": {
         "n": 18,
@@ -101,13 +101,13 @@
     }
   },
   "btcExposure": {
-    "n": 37,
+    "n": 36,
     "nLong": 0,
-    "nShort": 37,
+    "nShort": 36,
     "longStakeUSD": 0.0,
-    "shortStakeUSD": 3700.0,
-    "netWeighted": -1773.0,
-    "grossWeighted": 1773.0,
+    "shortStakeUSD": 3600.0,
+    "netWeighted": -1682.79,
+    "grossWeighted": 1682.79,
     "netPct": -100.0,
     "direction": "SHORT (fällt BTC → Buch gewinnt)",
     "concentrated": true
