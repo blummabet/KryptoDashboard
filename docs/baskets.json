@@ -1,44 +1,10 @@
 {
-  "generatedAt": "2026-08-08 16:48 UTC",
+  "generatedAt": "2026-08-08 17:41 UTC",
   "scanned": 600,
   "count": 10,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
-    {
-      "side": "buy",
-      "sumProb": 0.012,
-      "grossPP": 98.8,
-      "feePP": 0.06,
-      "netPP": 98.74,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xfb5399f0e1c4ea4d78a40957d48838ab5769fcec80592b8ce2ffd6e27a3cad00",
-      "event": "UEFA Champions League: 2027 Champion",
-      "slug": "uefa-champions-league-2027-champion-20260701202025549",
-      "endDate": "2027-05-30T23:59:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Roma",
-          "bid": 0.005,
-          "ask": 0.006
-        },
-        {
-          "name": "Porto",
-          "bid": 0.003,
-          "ask": 0.004
-        },
-        {
-          "name": "Shakhtar Donetsk",
-          "bid": 0.001,
-          "ask": 0.002
-        }
-      ]
-    },
     {
       "side": "buy",
       "sumProb": 0.017,
@@ -85,17 +51,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.208,
-      "grossPP": 79.2,
-      "feePP": 0.83,
-      "netPP": 78.37,
+      "sumProb": 0.202,
+      "grossPP": 79.8,
+      "feePP": 0.81,
+      "netPP": 78.99,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
       "event": "Democratic Presidential Nominee 2028",
       "slug": "democratic-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 6,
+      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -121,11 +87,6 @@
           "ask": 0.006
         },
         {
-          "name": "Cory Booker",
-          "bid": 0.005,
-          "ask": 0.006
-        },
-        {
           "name": "Tim Walz",
           "bid": 0.002,
           "ask": 0.003
@@ -134,10 +95,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.246,
-      "grossPP": 75.4,
-      "feePP": 1.23,
-      "netPP": 74.17,
+      "sumProb": 0.247,
+      "grossPP": 75.3,
+      "feePP": 1.24,
+      "netPP": 74.06,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb494d4000f5ef0d4b1c180c3095c4303e7c19175bceb561bc1e576c4e588bf00",
@@ -155,29 +116,29 @@
           "ask": 0.19
         },
         {
-          "name": "120-139",
-          "bid": 0.011,
+          "name": "300-319",
+          "bid": 0.013,
           "ask": 0.016
         },
         {
-          "name": "300-319",
-          "bid": 0.015,
-          "ask": 0.016
+          "name": "120-139",
+          "bid": 0.013,
+          "ask": 0.014
         },
         {
           "name": "320-339",
-          "bid": 0.007,
+          "bid": 0.006,
           "ask": 0.008
+        },
+        {
+          "name": "100-119",
+          "bid": 0.002,
+          "ask": 0.005
         },
         {
           "name": "340-359",
           "bid": 0.002,
           "ask": 0.004
-        },
-        {
-          "name": "380-399",
-          "bid": null,
-          "ask": 0.003
         }
       ]
     },
@@ -222,17 +183,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.405,
-      "grossPP": 59.5,
-      "feePP": 1.62,
-      "netPP": 57.88,
+      "sumProb": 0.38,
+      "grossPP": 62.0,
+      "feePP": 1.52,
+      "netPP": 60.48,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 20,
+      "n": 18,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -250,22 +211,22 @@
         {
           "name": "Donald Trump",
           "bid": 0.019,
-          "ask": 0.02
-        },
-        {
-          "name": "Ron DeSantis",
-          "bid": 0.015,
-          "ask": 0.016
-        },
-        {
-          "name": "Donald Trump Jr.",
-          "bid": 0.009,
-          "ask": 0.01
+          "ask": 0.021
         },
         {
           "name": "Wes Moore",
           "bid": 0.007,
           "ask": 0.008
+        },
+        {
+          "name": "Ivanka Trump",
+          "bid": 0.005,
+          "ask": 0.006
+        },
+        {
+          "name": "Tom Cotton",
+          "bid": 0.001,
+          "ask": 0.002
         }
       ]
     },
@@ -359,10 +320,59 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.775,
-      "grossPP": 22.5,
-      "feePP": 2.63,
-      "netPP": 19.88,
+      "sumProb": 0.76,
+      "grossPP": 24.0,
+      "feePP": 1.84,
+      "netPP": 22.16,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x966a3221e05d8d0579854c4952085331da2a42989dee0fa033d24cada9dfca00",
+      "event": "Brazil Presidential Election",
+      "slug": "brazil-presidential-election",
+      "endDate": "2026-10-04T00:00:00Z",
+      "n": 8,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Luiz Inácio Lula da Silva",
+          "bid": 0.64,
+          "ask": 0.65
+        },
+        {
+          "name": "Renan Santos",
+          "bid": 0.076,
+          "ask": 0.079
+        },
+        {
+          "name": "Ronaldo Caiado",
+          "bid": 0.013,
+          "ask": 0.014
+        },
+        {
+          "name": "Romeu Zema",
+          "bid": 0.005,
+          "ask": 0.006
+        },
+        {
+          "name": "Jair Bolsonaro",
+          "bid": 0.003,
+          "ask": 0.005
+        },
+        {
+          "name": "Geraldo Alckmin",
+          "bid": 0.002,
+          "ask": 0.003
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.774,
+      "grossPP": 22.6,
+      "feePP": 2.62,
+      "netPP": 19.98,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xc194d621e2ef9468b86ed0db1328fd8d56ae8fba1e21b94c5c515e96ecbfc400",
@@ -386,17 +396,17 @@
         },
         {
           "name": "Yabloko",
-          "bid": 0.016,
-          "ask": 0.021
+          "bid": 0.017,
+          "ask": 0.02
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.776,
-      "grossPP": 22.4,
-      "feePP": 3.88,
-      "netPP": 18.52,
+      "sumProb": 0.803,
+      "grossPP": 19.7,
+      "feePP": 4.02,
+      "netPP": 15.69,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x30fdf38cd7b67a64068790415d1b5a17e3d7cb37f57dd880bc1cdb536f765100",
@@ -415,18 +425,18 @@
         },
         {
           "name": "<40",
-          "bid": 0.18,
-          "ask": 0.19
+          "bid": 0.22,
+          "ask": 0.24
         },
         {
           "name": "90-114",
-          "bid": 0.057,
-          "ask": 0.072
+          "bid": 0.047,
+          "ask": 0.051
         },
         {
           "name": "115-139",
-          "bid": 0.012,
-          "ask": 0.013
+          "bid": 0.009,
+          "ask": 0.011
         },
         {
           "name": "165-189",
