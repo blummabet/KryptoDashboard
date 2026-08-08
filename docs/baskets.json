@@ -1,32 +1,61 @@
 {
-  "generatedAt": "2026-08-08 08:54 UTC",
+  "generatedAt": "2026-08-08 09:50 UTC",
   "scanned": 600,
-  "count": 9,
+  "count": 10,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
     {
       "side": "buy",
-      "sumProb": 0.165,
-      "grossPP": 83.5,
-      "feePP": 0.83,
-      "netPP": 82.67,
+      "sumProb": 0.004,
+      "grossPP": 99.6,
+      "feePP": 0.02,
+      "netPP": 99.58,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x7fb44204e38a8cf64fc6911aafb1c7500037eecfc50a07da382ddbd04095c900",
+      "event": "Highest temperature in Beijing on August 8?",
+      "slug": "highest-temperature-in-beijing-on-august-8-2026",
+      "endDate": "2026-08-08T12:00:00Z",
+      "n": 3,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "33°C",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "30°C",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "31°C",
+          "bid": null,
+          "ask": 0.001
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.015,
+      "grossPP": 98.5,
+      "feePP": 0.07,
+      "netPP": 98.42,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xfb5399f0e1c4ea4d78a40957d48838ab5769fcec80592b8ce2ffd6e27a3cad00",
       "event": "UEFA Champions League: 2027 Champion",
       "slug": "uefa-champions-league-2027-champion-20260701202025549",
       "endDate": "2027-05-30T23:59:00Z",
-      "n": 5,
+      "n": 4,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
-        {
-          "name": "Barcelona",
-          "bid": 0.14,
-          "ask": 0.15
-        },
         {
           "name": "Roma",
           "bid": 0.005,
@@ -83,7 +112,7 @@
         },
         {
           "name": "100-119",
-          "bid": 0.009,
+          "bid": 0.008,
           "ask": 0.011
         },
         {
@@ -117,8 +146,8 @@
       "top": [
         {
           "name": "Jon Ossoff",
-          "bid": 0.162,
-          "ask": 0.163
+          "bid": 0.161,
+          "ask": 0.162
         },
         {
           "name": "Mark Kelly",
@@ -132,8 +161,8 @@
         },
         {
           "name": "James Talarico",
-          "bid": 0.018,
-          "ask": 0.02
+          "bid": 0.019,
+          "ask": 0.021
         },
         {
           "name": "Wes Moore",
@@ -183,17 +212,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.521,
-      "grossPP": 47.9,
-      "feePP": 2.08,
-      "netPP": 45.82,
+      "sumProb": 0.51,
+      "grossPP": 49.0,
+      "feePP": 2.04,
+      "netPP": 46.96,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 21,
+      "n": 20,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -232,44 +261,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.588,
-      "grossPP": 41.2,
-      "feePP": 2.94,
-      "netPP": 38.26,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x85de20785f24956ff4ce1471e80f7d379d97f3fb8a20fb5dd881d03aac38df00",
-      "event": "MLB World Series Champion 2026",
-      "slug": "mlb-world-series-champion-2026",
-      "endDate": "2026-10-31T23:55:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Los Angeles Dodgers",
-          "bid": 0.39,
-          "ask": 0.4
-        },
-        {
-          "name": "Boston Red Sox",
-          "bid": 0.099,
-          "ask": 0.119
-        },
-        {
-          "name": "Tampa Bay Rays",
-          "bid": 0.06,
-          "ask": 0.069
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.619,
-      "grossPP": 38.1,
-      "feePP": 2.35,
-      "netPP": 35.76,
+      "sumProb": 0.616,
+      "grossPP": 38.4,
+      "feePP": 2.33,
+      "netPP": 36.07,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
@@ -288,13 +283,13 @@
         },
         {
           "name": "Lionel Messi",
-          "bid": 0.022,
-          "ask": 0.023
+          "bid": 0.021,
+          "ask": 0.022
         },
         {
           "name": "Ousmane Dembélé",
           "bid": 0.013,
-          "ask": 0.016
+          "ask": 0.014
         },
         {
           "name": "Erling Haaland",
@@ -332,8 +327,8 @@
         },
         {
           "name": "Marco Rubio",
-          "bid": 0.233,
-          "ask": 0.234
+          "bid": 0.232,
+          "ask": 0.233
         },
         {
           "name": "Tucker Carlson",
@@ -343,7 +338,7 @@
         {
           "name": "Donald Trump",
           "bid": 0.019,
-          "ask": 0.02
+          "ask": 0.021
         },
         {
           "name": "Steve Bannon",
@@ -359,10 +354,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.784,
-      "grossPP": 21.6,
-      "feePP": 1.92,
-      "netPP": 19.68,
+      "sumProb": 0.806,
+      "grossPP": 19.4,
+      "feePP": 2.23,
+      "netPP": 17.17,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xa405a2d05d8bebc03b51be7704b3bb944f6fe5051c2d513b91f923ecc1c47600",
@@ -376,23 +371,62 @@
       "top": [
         {
           "name": "140-150m",
-          "bid": 0.69,
-          "ask": 0.7
+          "bid": 0.66,
+          "ask": 0.68
         },
         {
           "name": "150-160m",
-          "bid": 0.05,
-          "ask": 0.07
+          "bid": 0.07,
+          "ask": 0.1
         },
         {
           "name": "160-170m",
-          "bid": 0.006,
-          "ask": 0.009
+          "bid": 0.012,
+          "ask": 0.021
         },
         {
           "name": "170-180m",
           "bid": 0.001,
           "ask": 0.005
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.986,
+      "grossPP": 1.4,
+      "feePP": 0.58,
+      "netPP": 0.82,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xe2bada94c7e971260775dadfbe95e5fc32dd76686af913795200f6ef5da29c00",
+      "event": "Which company has best AI model end of August?",
+      "slug": "which-company-has-best-ai-model-end-of-august-20260717015626546",
+      "endDate": "2026-08-31T00:00:00Z",
+      "n": 4,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Anthropic",
+          "bid": 0.91,
+          "ask": 0.92
+        },
+        {
+          "name": "OpenAI",
+          "bid": 0.038,
+          "ask": 0.039
+        },
+        {
+          "name": "Google",
+          "bid": 0.022,
+          "ask": 0.025
+        },
+        {
+          "name": "DeepSeek",
+          "bid": 0.001,
+          "ask": 0.002
         }
       ]
     }
