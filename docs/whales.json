@@ -3,14 +3,14 @@
     "enabled": true,
     "feedCount": 50,
     "whaleTradeCount": 2,
-    "biggestTradeUSD": 31033,
+    "biggestTradeUSD": 33928,
     "whaleMinUSD": 25000,
     "walletsProbed": 14,
-    "qualifiedCount": 5,
-    "rejectedCount": 9,
-    "avgCopyLagPP": -0.5,
-    "lagSample": 1,
-    "verdict": "Kopieren kostet im Schnitt -0.50pp pro echtem Whale-Trade"
+    "qualifiedCount": 4,
+    "rejectedCount": 10,
+    "avgCopyLagPP": null,
+    "lagSample": 0,
+    "verdict": "keine ≥$25k-Whale-Trades qualifizierter Wale im Fenster — echte Wale sind selten"
   },
   "wallets": [
     {
@@ -20,7 +20,7 @@
       "pnl": 23052360.0,
       "winRate": 57.1,
       "volume": 1386181.0,
-      "inactiveDays": 0.3,
+      "inactiveDays": 0.4,
       "oneHit": false,
       "biggestWin": 536824.24,
       "qualified": true,
@@ -65,30 +65,13 @@
       "lastTrade": "2026-06-30"
     },
     {
-      "resolved": 6404,
-      "uniqueMarkets": 3118,
-      "roi": 2.03,
-      "pnl": 738737.98,
-      "winRate": 70.3,
-      "volume": 66854616.0,
-      "inactiveDays": 30.3,
-      "oneHit": false,
-      "biggestWin": 93023.87,
-      "qualified": true,
-      "rejectReasons": [],
-      "wallet": "0xb10047d6a254b2ebb306d7a7d13bf59171ab6461",
-      "name": "0xb10047d6…",
-      "firstTrade": "2024-08-03",
-      "lastTrade": "2026-07-08"
-    },
-    {
       "resolved": 1659,
       "uniqueMarkets": 573,
       "roi": 0.06,
       "pnl": 13702.16,
       "winRate": 86.2,
       "volume": 39554769.0,
-      "inactiveDays": 15.0,
+      "inactiveDays": 15.1,
       "oneHit": false,
       "biggestWin": 296.0,
       "qualified": true,
@@ -105,7 +88,7 @@
       "pnl": 9063378.0,
       "winRate": 100.0,
       "volume": 3696321.0,
-      "inactiveDays": 53.4,
+      "inactiveDays": 53.5,
       "oneHit": true,
       "biggestWin": 4750526.65,
       "qualified": false,
@@ -113,7 +96,7 @@
         "zu wenig Historie (2 aufgelöst)",
         "nur 4 Märkte",
         "Ein-Treffer-Wunder (52% des Gewinns aus 1 Trade)",
-        "inaktiv seit 53d"
+        "inaktiv seit 54d"
       ],
       "wallet": "0xed64a7bf029040aa331abc87902434d815ef217d",
       "name": "0xed64a7bf…",
@@ -127,7 +110,7 @@
       "pnl": 8709973.0,
       "winRate": 87.5,
       "volume": 4641881.0,
-      "inactiveDays": 633.6,
+      "inactiveDays": 633.7,
       "oneHit": false,
       "biggestWin": 4281504.88,
       "qualified": false,
@@ -148,7 +131,7 @@
       "pnl": 9238345.0,
       "winRate": 100.0,
       "volume": 8279554.0,
-      "inactiveDays": 53.1,
+      "inactiveDays": 53.2,
       "oneHit": true,
       "biggestWin": 7336119.47,
       "qualified": false,
@@ -167,10 +150,10 @@
       "resolved": 22,
       "uniqueMarkets": 23,
       "roi": 51.27,
-      "pnl": 22053934.0,
+      "pnl": 22053933.75,
       "winRate": 81.8,
-      "volume": 381659361.0,
-      "inactiveDays": 630.8,
+      "volume": 43065780.0,
+      "inactiveDays": 630.9,
       "oneHit": false,
       "biggestWin": 8303171.23,
       "qualified": false,
@@ -211,7 +194,7 @@
       "pnl": 8928561.0,
       "winRate": 83.3,
       "volume": 11802251.0,
-      "inactiveDays": 49.0,
+      "inactiveDays": 49.1,
       "oneHit": true,
       "biggestWin": 5922681.53,
       "qualified": false,
@@ -233,7 +216,7 @@
       "pnl": 16619507.0,
       "winRate": 60.6,
       "volume": 411257553.0,
-      "inactiveDays": 630.8,
+      "inactiveDays": 630.9,
       "oneHit": true,
       "biggestWin": 9710283.25,
       "qualified": false,
@@ -267,6 +250,26 @@
       "lastTrade": "2026-07-14"
     },
     {
+      "resolved": 27,
+      "uniqueMarkets": 85,
+      "roi": 5.83,
+      "pnl": 187219.17,
+      "winRate": 92.6,
+      "volume": 483031.0,
+      "inactiveDays": 49.7,
+      "oneHit": false,
+      "biggestWin": 91728.18,
+      "qualified": false,
+      "rejectReasons": [
+        "zu wenig Historie (27 aufgelöst)",
+        "inaktiv seit 50d"
+      ],
+      "wallet": "0x73e3fec494611d73c170cb2f23850fd998b21be9",
+      "name": "0x73e3fec4…",
+      "firstTrade": "2026-06-04",
+      "lastTrade": "2026-06-19"
+    },
+    {
       "resolved": 2498,
       "uniqueMarkets": 1604,
       "roi": 5.32,
@@ -288,18 +291,18 @@
   ],
   "feed": [
     {
-      "wallet": "0xb10047d6a254b2ebb306d7a7d13bf59171ab6461",
-      "name": "0xb10047d6…",
-      "qualified": true,
+      "wallet": "0x73e3fec494611d73c170cb2f23850fd998b21be9",
+      "name": "0x73e3fec4…",
+      "qualified": false,
       "isWhale": true,
-      "market": "Strait of Hormuz traffic returns to normal by August 31?",
-      "slug": "strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320",
+      "market": "Counter-Strike: EYEBALLERS vs Phantom (BO3) - Esports World Cup Open Qualifier Group 10",
+      "slug": "cs2-eye-pha-2026-08-08",
       "side": "BUY",
-      "outcome": "Yes",
-      "price": 0.13,
-      "sizeUSD": 31032.93,
-      "ts": "2026-08-08T01:41:16+00:00",
-      "copyLagPP": -0.5
+      "outcome": "EYEBALLERS",
+      "price": 0.55,
+      "sizeUSD": 33927.91,
+      "ts": "2026-08-08T05:51:33+00:00",
+      "copyLagPP": null
     },
     {
       "wallet": "0x23222038e8255625fff4fff060af8fff89833ede",
@@ -344,20 +347,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x9e3ed7b661a903fc97afcf49e0f014ebe869f882",
-      "name": "0x9e3ed7b6…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Minnesota Twins vs. Milwaukee Brewers",
-      "slug": "mlb-min-mil-2026-08-07",
-      "side": "BUY",
-      "outcome": "Milwaukee Brewers",
-      "price": 0.001,
-      "sizeUSD": 9520.0,
-      "ts": "2026-08-08T02:31:16+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0xafde461fce5aa0fabdb7711c59db93b65e343e1d",
       "name": "0xafde461f…",
       "qualified": false,
@@ -369,20 +358,6 @@
       "price": 0.2100089628,
       "sizeUSD": 7999.74,
       "ts": "2026-08-08T05:22:39+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-      "name": "0x03805a13…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will the Liberal Democratic Party of Russia (LDPR) gain the most seats in the next Russian parliamentary election?",
-      "slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election",
-      "side": "SELL",
-      "outcome": "Yes",
-      "price": 0.0511733393,
-      "sizeUSD": 6962.53,
-      "ts": "2026-08-08T02:11:12+00:00",
       "copyLagPP": null
     },
     {
@@ -428,6 +403,90 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x89ed6799c6edad1b8b6ac9e058316ad5a275121e",
+      "name": "0x89ed6799…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Berhanu Nega be the next Prime Minister of Ethiopia?",
+      "slug": "next-prime-minister-of-ethiopia",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.995,
+      "sizeUSD": 5094.0,
+      "ts": "2026-08-08T06:41:46+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x66b58093676354bc03bf3a9ead97c230635b5bd9",
+      "name": "0x66b58093…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Berhanu Nega be the next Prime Minister of Ethiopia?",
+      "slug": "next-prime-minister-of-ethiopia",
+      "side": "SELL",
+      "outcome": "Yes",
+      "price": 0.005,
+      "sizeUSD": 5094.0,
+      "ts": "2026-08-08T06:41:42+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x89ed6799c6edad1b8b6ac9e058316ad5a275121e",
+      "name": "0x89ed6799…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Berhanu Nega be the next Prime Minister of Ethiopia?",
+      "slug": "next-prime-minister-of-ethiopia",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.995,
+      "sizeUSD": 5094.0,
+      "ts": "2026-08-08T06:41:34+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x66b58093676354bc03bf3a9ead97c230635b5bd9",
+      "name": "0x66b58093…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Berhanu Nega be the next Prime Minister of Ethiopia?",
+      "slug": "next-prime-minister-of-ethiopia",
+      "side": "SELL",
+      "outcome": "Yes",
+      "price": 0.005,
+      "sizeUSD": 5094.0,
+      "ts": "2026-08-08T06:41:30+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x89ed6799c6edad1b8b6ac9e058316ad5a275121e",
+      "name": "0x89ed6799…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Berhanu Nega be the next Prime Minister of Ethiopia?",
+      "slug": "next-prime-minister-of-ethiopia",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.995,
+      "sizeUSD": 5094.0,
+      "ts": "2026-08-08T06:41:22+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xa1aff5144382108a5e19d78216b01033c03999bc",
+      "name": "0xa1aff514…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Adanech Abiebie be the next Prime Minister of Ethiopia?",
+      "slug": "next-prime-minister-of-ethiopia",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.997,
+      "sizeUSD": 5092.0,
+      "ts": "2026-08-08T06:01:30+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x79fe6c317e3e24ab02037ec170dc879137cfc5de",
       "name": "0x79fe6c31…",
       "qualified": false,
@@ -439,6 +498,34 @@
       "price": 0.997,
       "sizeUSD": 5061.0,
       "ts": "2026-08-08T05:31:39+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x66b58093676354bc03bf3a9ead97c230635b5bd9",
+      "name": "0x66b58093…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Berhanu Nega be the next Prime Minister of Ethiopia?",
+      "slug": "will-berhanu-nega-be-the-next-prime-minister-of-ethiopia",
+      "side": "SELL",
+      "outcome": "Yes",
+      "price": 0.005,
+      "sizeUSD": 5037.0,
+      "ts": "2026-08-08T06:31:43+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xddd942bb91068ad92e9f65dfbf9146ca760832bf",
+      "name": "0xddd942bb…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Berhanu Nega be the next Prime Minister of Ethiopia?",
+      "slug": "next-prime-minister-of-ethiopia",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.995,
+      "sizeUSD": 5037.0,
+      "ts": "2026-08-08T06:31:37+00:00",
       "copyLagPP": null
     },
     {
@@ -498,17 +585,17 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x2480f5c700615e96721c45d2dca278a4ddc3c85d",
-      "name": "0x2480f5c7…",
+      "wallet": "0x797c85d2b86aa20db5af41360781d26f853a9581",
+      "name": "0x797c85d2…",
       "qualified": false,
       "isWhale": false,
-      "market": "Will Bitcoin reach $74,000 August 3-9?",
-      "slug": "what-price-will-bitcoin-hit-august-3-9-2026",
+      "market": "Will Vancouver Whitecaps FC win on 2026-08-07?",
+      "slug": "lec-vwh-jua-2026-08-07",
       "side": "BUY",
-      "outcome": "No",
-      "price": 0.999,
-      "sizeUSD": 3406.62,
-      "ts": "2026-08-08T02:31:19+00:00",
+      "outcome": "Yes",
+      "price": 0.001,
+      "sizeUSD": 3840.0,
+      "ts": "2026-08-08T06:31:42+00:00",
       "copyLagPP": null
     },
     {
@@ -582,20 +669,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x6a0385ed55ebd20067a1a59e908267310f5592d3",
-      "name": "0x6a0385ed…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Toronto Blue Jays vs. Philadelphia Phillies",
-      "slug": "mlb-tor-phi-2026-08-07",
-      "side": "BUY",
-      "outcome": "Toronto Blue Jays",
-      "price": 0.62,
-      "sizeUSD": 2364.63,
-      "ts": "2026-08-08T02:21:21+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x4b2ef52807c8d830e71841afc1c6c63e46a38968",
       "name": "0x4b2ef528…",
       "qualified": false,
@@ -607,6 +680,20 @@
       "price": 0.0262556625,
       "sizeUSD": 2321.42,
       "ts": "2026-08-08T04:41:31+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x836ffd95ef3cf3c7987612279b2152b11ce6906e",
+      "name": "0x836ffd95…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Kharg Island no longer under Iranian control by September 30?",
+      "slug": "kharg-island-no-longer-under-iranian-control-by-march-31",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.953,
+      "sizeUSD": 2243.01,
+      "ts": "2026-08-08T06:42:57+00:00",
       "copyLagPP": null
     },
     {
@@ -624,20 +711,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x3dfb153c197d4c19d3b31c1ecd2c7b6860eeabaf",
-      "name": "0x3dfb153c…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Detroit Tigers vs. San Francisco Giants",
-      "slug": "mlb-det-sf-2026-08-07",
-      "side": "BUY",
-      "outcome": "Detroit Tigers",
-      "price": 0.53,
-      "sizeUSD": 2222.0,
-      "ts": "2026-08-08T02:41:10+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x80cce7d679b3121b08fe7c90272877294b85b5a4",
       "name": "0x80cce7d6…",
       "qualified": false,
@@ -649,20 +722,6 @@
       "price": 0.0186326608,
       "sizeUSD": 2146.768,
       "ts": "2026-08-08T04:51:33+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x9c2617462567859fcf5764e03b9a687ebca274bc",
-      "name": "0x9c261746…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Strait of Hormuz traffic returns to normal by August 31?",
-      "slug": "strait-of-hormuz-traffic-returns-to-normal-by-august-31-20260702154212320",
-      "side": "BUY",
-      "outcome": "No",
-      "price": 0.87,
-      "sizeUSD": 2135.92,
-      "ts": "2026-08-08T02:11:15+00:00",
       "copyLagPP": null
     },
     {
@@ -708,6 +767,34 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x3f176a240c7b6c0e470bf150f43fc1c883de7035",
+      "name": "0x3f176a24…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Counter-Strike: Fluxo W7M vs DUSTY (BO3) - Esports World Cup Open Qualifier Group 2 AND Counter-Strike: 100 Thieves vs NADE (BO3) - Esports World Cup Open Qualifier Group 11 AND Counter-Strike: ASTRAL vs Kreazion (BO3) - Esports World Cup Open Qualifier Group 1 AND Counter-Strike: Dhala vs Prestige (BO3) - Esports World Cup Open Qualifier Group 12 AND Counter-Strike: Infinite vs Giant Pandas (BO3) - Esports World Cup Open Qualifier Group 5 AND Counter-Strike: 9INE vs ABT Esports (BO3) - Esports World Cup Open Qualifier Group 7 AND Counter-Strike: SadFamous vs Eternal Fire (BO3) - Esports World Cup Open Qualifier Group 11 AND Counter-Strike: GenOne vs Galactik rebels (BO3) - Esports World Cup Open Qualifier Group 4 AND Counter-Strike: Sangal vs zeste (BO3) - Esports World Cup Open Qualifier Group 16",
+      "slug": null,
+      "side": "BUY",
+      "outcome": null,
+      "price": 0.5153249993,
+      "sizeUSD": 1891.483377,
+      "ts": "2026-08-08T05:51:39+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x2ee2ddb256146390d9bd567c8defd1b3297d6ae6",
+      "name": "0x2ee2ddb2…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Trump out as President by August 31?",
+      "slug": "trump-out-as-president-by-august-31-20260730185655928",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.994,
+      "sizeUSD": 1797.5,
+      "ts": "2026-08-08T06:31:45+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x5268527977f700f9bf9b6d5cd843859e4e70135d",
       "name": "0x52685279…",
       "qualified": false,
@@ -719,34 +806,6 @@
       "price": 0.22,
       "sizeUSD": 1584.61,
       "ts": "2026-08-08T02:41:16+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
-      "name": "0xd1ed1219…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Toronto Blue Jays vs. Philadelphia Phillies",
-      "slug": "mlb-tor-phi-2026-08-07",
-      "side": "BUY",
-      "outcome": "Philadelphia Phillies",
-      "price": 0.5322807018,
-      "sizeUSD": 1539.0,
-      "ts": "2026-08-08T01:31:16+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x161a7f666ca49d592848cf415b42f49a84714103",
-      "name": "0x161a7f66…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Houston Astros vs. San Diego Padres: O/U 8.5",
-      "slug": "mlb-hou-sd-2026-08-07",
-      "side": "BUY",
-      "outcome": "Under",
-      "price": 0.54,
-      "sizeUSD": 1434.0,
-      "ts": "2026-08-08T01:51:09+00:00",
       "copyLagPP": null
     },
     {
@@ -778,48 +837,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0xea83902f60f4329c8f55d8cb921aae5878cfe0cc",
-      "name": "0xea83902f…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "National Bank Open: Learner Tien vs Tommy Paul",
-      "slug": "atp-tien-paul-2026-08-07",
-      "side": "BUY",
-      "outcome": "Learner Tien",
-      "price": 0.5091401676,
-      "sizeUSD": 1337.47,
-      "ts": "2026-08-08T01:31:16+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x689f7d0a49d2646dc199848ffbdb4757242e259c",
-      "name": "0x689f7d0a…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Atlanta Braves vs. New York Yankees",
-      "slug": "mlb-atl-nyy-2026-08-07",
-      "side": "BUY",
-      "outcome": "Atlanta Braves",
-      "price": 0.47,
-      "sizeUSD": 1264.73,
-      "ts": "2026-08-08T02:21:16+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b",
-      "name": "0x7c3db723…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will Kai or Speed be eliminated by falling?",
-      "slug": "will-kai-or-speed-be-eliminated-by-falling-20260807142948637",
-      "side": "BUY",
-      "outcome": "Yes",
-      "price": 0.9989217866,
-      "sizeUSD": 1263.85,
-      "ts": "2026-08-08T01:41:19+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x5268527977f700f9bf9b6d5cd843859e4e70135d",
       "name": "0x52685279…",
       "qualified": false,
@@ -831,20 +848,6 @@
       "price": 0.52,
       "sizeUSD": 1201.92,
       "ts": "2026-08-08T02:41:16+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x173314380de52766200850634f85a1b7a88b9411",
-      "name": "0x17331438…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will Kai and Speed beat the Minecraft challenge by August 17?",
-      "slug": "kai-and-speed-beat-minecraft-challenge-byptptpt-20260807141254095",
-      "side": "BUY",
-      "outcome": "No",
-      "price": 0.8,
-      "sizeUSD": 1200.0,
-      "ts": "2026-08-08T02:41:12+00:00",
       "copyLagPP": null
     },
     {
@@ -946,17 +949,17 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x6faed947bb89d5d579718a4295a3ee700d098f07",
-      "name": "0x6faed947…",
+      "wallet": "0xaff389b0c6e066057c44c25fae7277880b276ecc",
+      "name": "0xaff389b0…",
       "qualified": false,
       "isWhale": false,
-      "market": "National Bank Open: Caty McNally vs Alexandra Eala",
-      "slug": "wta-mcnally-eala-2026-08-08",
+      "market": "Will 1. FC Cologne win on 2026-08-07?",
+      "slug": "clf-koe-rso-2026-08-07",
       "side": "BUY",
-      "outcome": "Caty McNally",
-      "price": 0.4373799209,
-      "sizeUSD": 1023.595226,
-      "ts": "2026-08-08T02:31:21+00:00",
+      "outcome": "No",
+      "price": 0.001,
+      "sizeUSD": 1000.0,
+      "ts": "2026-08-08T05:50:39+00:00",
       "copyLagPP": null
     },
     {
@@ -988,6 +991,6 @@
       "copyLagPP": null
     }
   ],
-  "generatedAt": "2026-08-08 05:53 UTC",
+  "generatedAt": "2026-08-08 07:09 UTC",
   "note": "Ehrliches Copy-Trading: Bilanz selbst nachgerechnet (nicht dem Leaderboard glauben), Ein-Treffer-Wunder/Inaktive/Verlierer gefiltert, und der Copy-Lag ausgewiesen — die Kosten, die entstehen, weil der Wal mit seiner Order den Preis selbst bewegt."
 }
