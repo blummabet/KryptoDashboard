@@ -2,12 +2,12 @@
   "summary": {
     "enabled": true,
     "feedCount": 50,
-    "whaleTradeCount": 1,
+    "whaleTradeCount": 2,
     "biggestTradeUSD": 37509,
     "whaleMinUSD": 25000,
-    "walletsProbed": 13,
+    "walletsProbed": 14,
     "qualifiedCount": 3,
-    "rejectedCount": 10,
+    "rejectedCount": 11,
     "avgCopyLagPP": null,
     "lagSample": 0,
     "verdict": "keine ≥$25k-Whale-Trades qualifizierter Wale im Fenster — echte Wale sind selten"
@@ -17,9 +17,9 @@
       "resolved": 19988,
       "uniqueMarkets": 3416,
       "roi": 49.28,
-      "pnl": 23033879.52,
+      "pnl": 23046768.24,
       "winRate": 57.1,
-      "volume": 1773913077.0,
+      "volume": 1775857702.0,
       "inactiveDays": 1.0,
       "oneHit": false,
       "biggestWin": 536824.24,
@@ -37,7 +37,7 @@
       "pnl": 12743949.53,
       "winRate": 56.5,
       "volume": 1033439822.0,
-      "inactiveDays": 1.7,
+      "inactiveDays": 1.8,
       "oneHit": false,
       "biggestWin": 224114.64,
       "qualified": true,
@@ -54,7 +54,7 @@
       "pnl": 11386691.0,
       "winRate": 52.6,
       "volume": 40697629.0,
-      "inactiveDays": 38.9,
+      "inactiveDays": 39.0,
       "oneHit": false,
       "biggestWin": 1095000.0,
       "qualified": true,
@@ -219,7 +219,7 @@
       "pnl": 8052184.5,
       "winRate": 66.7,
       "volume": 31179692.0,
-      "inactiveDays": 25.0,
+      "inactiveDays": 25.1,
       "oneHit": true,
       "biggestWin": 6096744.94,
       "qualified": false,
@@ -239,7 +239,7 @@
       "pnl": 11839902.0,
       "winRate": 49.4,
       "volume": 99774425.0,
-      "inactiveDays": 110.4,
+      "inactiveDays": 110.5,
       "oneHit": false,
       "biggestWin": 1095000.0,
       "qualified": false,
@@ -270,6 +270,27 @@
       "name": "0x224a89db…",
       "firstTrade": "2026-06-06",
       "lastTrade": "2026-07-29"
+    },
+    {
+      "resolved": 14,
+      "uniqueMarkets": 50,
+      "roi": -10.38,
+      "pnl": -86898.52,
+      "winRate": 92.9,
+      "volume": 1267517.0,
+      "inactiveDays": 21.8,
+      "oneHit": false,
+      "biggestWin": 48383.11,
+      "qualified": false,
+      "rejectReasons": [
+        "zu wenig Historie (14 aufgelöst)",
+        "verliert Geld (ROI -10.4%)",
+        "negatives PnL"
+      ],
+      "wallet": "0xfe5428c1b7fae9f29cc5ce3b393d9a77251541d6",
+      "name": "0xfe5428c1…",
+      "firstTrade": "2024-12-23",
+      "lastTrade": "2026-07-18"
     }
   ],
   "feed": [
@@ -285,6 +306,20 @@
       "price": 0.64,
       "sizeUSD": 37509.37,
       "ts": "2026-08-08T20:33:01+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xfe5428c1b7fae9f29cc5ce3b393d9a77251541d6",
+      "name": "0xfe5428c1…",
+      "qualified": false,
+      "isWhale": true,
+      "market": "Cincinnati Reds vs. Washington Nationals",
+      "slug": "mlb-cin-wsh-2026-08-08",
+      "side": "BUY",
+      "outcome": "Cincinnati Reds",
+      "price": 0.56,
+      "sizeUSD": 25731.32,
+      "ts": "2026-08-08T22:23:07+00:00",
       "copyLagPP": null
     },
     {
@@ -470,6 +505,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0xc2e5359b204c4296b7e1a07603fe0b657486b3a5",
+      "name": "0xc2e5359b…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "UFC Fight Night: Manoel Sousa vs. Richie Miranda (Lightweight, Prelims)",
+      "slug": "ufc-man15-rmiran-2026-08-08",
+      "side": "BUY",
+      "outcome": "Manoel Sousa",
+      "price": 0.75,
+      "sizeUSD": 3922.0,
+      "ts": "2026-08-08T22:13:12+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x46cdc5a0ce0692849821a3056e983c55c38e6b95",
       "name": "0x46cdc5a0…",
       "qualified": false,
@@ -484,17 +533,31 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x122b758a408246a180efeb5ba654e21b553fac59",
-      "name": "0x122b758a…",
+      "wallet": "0x26b46988d027c6c03cfa12a7c0c6d778be49b8a9",
+      "name": "0x26b46988…",
       "qualified": false,
       "isWhale": false,
-      "market": "Will PSV win on 2026-08-08?",
-      "slug": "ere-psv-sit-2026-08-08",
+      "market": "Fight to Go the Distance?",
+      "slug": "ufc-ste36-gui2-2026-08-08-go-the-distance",
       "side": "BUY",
       "outcome": "No",
-      "price": 0.1254839853,
-      "sizeUSD": 3019.1,
-      "ts": "2026-08-08T19:32:58+00:00",
+      "price": 0.60500005,
+      "sizeUSD": 2999.99,
+      "ts": "2026-08-08T22:13:28+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x56acab44cfca2e88bb9b3406890aea7bfa0cd77e",
+      "name": "0x56acab44…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will CA Boca Juniors vs. CA Vélez Sarsfield end in a draw?",
+      "slug": "arg-boc-vel-2026-08-08",
+      "side": "BUY",
+      "outcome": "Yes",
+      "price": 0.26,
+      "sizeUSD": 2988.5,
+      "ts": "2026-08-08T21:53:09+00:00",
       "copyLagPP": null
     },
     {
@@ -537,6 +600,20 @@
       "price": 0.41,
       "sizeUSD": 2700.0,
       "ts": "2026-08-08T20:03:03+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x35f84931607cef621fe75177fce90970265adaa1",
+      "name": "0x35f84931…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Counter-Strike: 1WIN vs Liquid (BO3) - Esports World Cup Open Qualifier Play-Ins",
+      "slug": "cs2-1win-tl1-2026-08-09",
+      "side": "BUY",
+      "outcome": "Liquid",
+      "price": 0.67,
+      "sizeUSD": 2480.0,
+      "ts": "2026-08-08T21:43:12+00:00",
       "copyLagPP": null
     },
     {
@@ -610,20 +687,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x2ec5ac52dcb5537f1fe8b47ee3cfd34bd666fd53",
-      "name": "0x2ec5ac52…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "PSV vs. Fortuna Sittard: O/U 2.5",
-      "slug": "ere-psv-sit-2026-08-08-total-2pt5",
-      "side": "BUY",
-      "outcome": "Under",
-      "price": 0.01,
-      "sizeUSD": 2000.0,
-      "ts": "2026-08-08T19:33:01+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0xea83902f60f4329c8f55d8cb921aae5878cfe0cc",
       "name": "0xea83902f…",
       "qualified": false,
@@ -635,20 +698,6 @@
       "price": 0.7198888889,
       "sizeUSD": 1800.0,
       "ts": "2026-08-08T19:42:58+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xa3c52f48fad1b6888d58c7aa30a5d1cefe786930",
-      "name": "0xa3c52f48…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Counter-Strike: 1WIN vs Liquid (BO3) - Esports World Cup Open Qualifier Play-Ins",
-      "slug": "cs2-1win-tl1-2026-08-09",
-      "side": "BUY",
-      "outcome": "Liquid",
-      "price": 0.68,
-      "sizeUSD": 1749.99,
-      "ts": "2026-08-08T19:13:00+00:00",
       "copyLagPP": null
     },
     {
@@ -708,34 +757,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x4171038d6e472cce0236d8705d75cfb8c68fbdb1",
-      "name": "0x4171038d…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Bitcoin Up or Down - August 8, 3:35PM-3:40PM ET",
-      "slug": "btc-updown-5m-1786217700",
-      "side": "BUY",
-      "outcome": "Up",
-      "price": 0.6902038215,
-      "sizeUSD": 1521.92,
-      "ts": "2026-08-08T19:33:00+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xb88a08e31e1b7cb732693eb62fedac6d5f7f6f9d",
-      "name": "0xb88a08e3…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "National Bank Open: Nuno Borges vs Luciano Darderi",
-      "slug": "atp-borges-darderi-2026-08-08",
-      "side": "BUY",
-      "outcome": "Nuno Borges",
-      "price": 0.001,
-      "sizeUSD": 1500.0,
-      "ts": "2026-08-08T19:38:15+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
       "name": "0x204f72f3…",
       "qualified": true,
@@ -792,20 +813,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x4171038d6e472cce0236d8705d75cfb8c68fbdb1",
-      "name": "0x4171038d…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Bitcoin Up or Down - August 8, 3:35PM-3:40PM ET",
-      "slug": "btc-updown-5m-1786217700",
-      "side": "BUY",
-      "outcome": "Up",
-      "price": 0.6376830061,
-      "sizeUSD": 1352.96,
-      "ts": "2026-08-08T19:33:00+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x0346afae2603313d2bbee96b628536c8cbe352a5",
       "name": "0x0346afae…",
       "qualified": false,
@@ -848,6 +855,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x4245e3e8833f0bb7e7453ccc1fb95dbee2da7111",
+      "name": "0x4245e3e8…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Bitcoin Up or Down - August 8, 6:30PM-6:35PM ET",
+      "slug": "btc-updown-5m-1786228200",
+      "side": "BUY",
+      "outcome": "Up",
+      "price": 0.4476046875,
+      "sizeUSD": 1256.12,
+      "ts": "2026-08-08T22:33:16+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x7414f47e227846765c8abb1048606003a57072a3",
       "name": "0x7414f47e…",
       "qualified": false,
@@ -859,20 +880,6 @@
       "price": 0.82,
       "sizeUSD": 1250.0,
       "ts": "2026-08-08T21:03:04+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x0346afae2603313d2bbee96b628536c8cbe352a5",
-      "name": "0x0346afae…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "PSV vs. Fortuna Sittard: O/U 4.5",
-      "slug": "ere-psv-sit-2026-08-08-more-markets",
-      "side": "BUY",
-      "outcome": "Under",
-      "price": 0.88,
-      "sizeUSD": 1227.27,
-      "ts": "2026-08-08T19:38:09+00:00",
       "copyLagPP": null
     },
     {
@@ -890,6 +897,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+      "name": "0x204f72f3…",
+      "qualified": true,
+      "isWhale": false,
+      "market": "Will CA Boca Juniors win on 2026-08-08?",
+      "slug": "arg-boc-vel-2026-08-08",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.39,
+      "sizeUSD": 1182.0,
+      "ts": "2026-08-08T22:23:13+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x4a1a27c4af018a874e97e551410953cb29e70208",
       "name": "0x4a1a27c4…",
       "qualified": false,
@@ -904,17 +925,17 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x2a69660046d7acc4ab204d7cc5ba78b0776cd2f7",
-      "name": "0x2a696600…",
+      "wallet": "0x4245e3e8833f0bb7e7453ccc1fb95dbee2da7111",
+      "name": "0x4245e3e8…",
       "qualified": false,
       "isWhale": false,
-      "market": "PSV vs. Fortuna Sittard: O/U 4.5",
-      "slug": "ere-psv-sit-2026-08-08-more-markets",
+      "market": "Bitcoin Up or Down - August 8, 6:30PM-6:35PM ET",
+      "slug": "btc-updown-5m-1786228200",
       "side": "BUY",
-      "outcome": "Over",
-      "price": 0.12,
-      "sizeUSD": 1094.59,
-      "ts": "2026-08-08T19:38:12+00:00",
+      "outcome": "Up",
+      "price": 0.1878299715,
+      "sizeUSD": 1059.94,
+      "ts": "2026-08-08T22:33:16+00:00",
       "copyLagPP": null
     },
     {
@@ -946,6 +967,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x896b00204a25abc91061e22d87387598cdf74ca3",
+      "name": "0x896b0020…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will the price of Bitcoin be above $56,000 on August 9?",
+      "slug": "bitcoin-above-on-august-9-2026",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.001,
+      "sizeUSD": 1000.0,
+      "ts": "2026-08-08T22:23:12+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0xdd882a70680633a75516f6ed5fce443e2d96dadb",
       "name": "0xdd882a70…",
       "qualified": false,
@@ -958,22 +993,8 @@
       "sizeUSD": 1000.0,
       "ts": "2026-08-08T20:43:04+00:00",
       "copyLagPP": null
-    },
-    {
-      "wallet": "0x63850ce907044eac77fba13d59f263ade68093f2",
-      "name": "0x63850ce9…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will MrBeast's next video get less than 40 million views on week 1?",
-      "slug": "of-views-of-mrbeast-video-week-1-20260803174219757",
-      "side": "BUY",
-      "outcome": "No",
-      "price": 0.985,
-      "sizeUSD": 1000.0,
-      "ts": "2026-08-08T19:22:52+00:00",
-      "copyLagPP": null
     }
   ],
-  "generatedAt": "2026-08-08 21:41 UTC",
+  "generatedAt": "2026-08-08 22:41 UTC",
   "note": "Ehrliches Copy-Trading: Bilanz selbst nachgerechnet (nicht dem Leaderboard glauben), Ein-Treffer-Wunder/Inaktive/Verlierer gefiltert, und der Copy-Lag ausgewiesen — die Kosten, die entstehen, weil der Wal mit seiner Order den Preis selbst bewegt."
 }
