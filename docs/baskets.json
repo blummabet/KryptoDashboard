@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-09 08:57 UTC",
+  "generatedAt": "2026-08-09 09:52 UTC",
   "scanned": 600,
-  "count": 14,
+  "count": 12,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -85,35 +85,50 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.062,
-      "grossPP": 93.8,
-      "feePP": 0.25,
-      "netPP": 93.55,
+      "sumProb": 0.082,
+      "grossPP": 91.8,
+      "feePP": 0.33,
+      "netPP": 91.47,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xe2bada94c7e971260775dadfbe95e5fc32dd76686af913795200f6ef5da29c00",
-      "event": "Which company has best AI model end of August?",
-      "slug": "which-company-has-best-ai-model-end-of-august-20260717015626546",
-      "endDate": "2026-08-31T00:00:00Z",
-      "n": 3,
+      "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
+      "event": "Democratic Presidential Nominee 2028",
+      "slug": "democratic-presidential-nominee-2028",
+      "endDate": "2028-11-07T00:00:00Z",
+      "n": 11,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "OpenAI",
-          "bid": 0.057,
-          "ask": 0.058
+          "name": "James Talarico",
+          "bid": 0.019,
+          "ask": 0.02
         },
         {
-          "name": "Alibaba",
-          "bid": 0.001,
-          "ask": 0.002
+          "name": "Wes Moore",
+          "bid": 0.014,
+          "ask": 0.015
         },
         {
-          "name": "Moonshot",
-          "bid": 0.001,
-          "ask": 0.002
+          "name": "Chelsea Clinton",
+          "bid": 0.007,
+          "ask": 0.008
+        },
+        {
+          "name": "Hunter Biden",
+          "bid": 0.005,
+          "ask": 0.007
+        },
+        {
+          "name": "Raphael Warnock",
+          "bid": 0.006,
+          "ask": 0.007
+        },
+        {
+          "name": "Cory Booker",
+          "bid": 0.005,
+          "ask": 0.006
         }
       ]
     },
@@ -158,17 +173,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.363,
-      "grossPP": 63.7,
-      "feePP": 1.45,
-      "netPP": 62.25,
+      "sumProb": 0.356,
+      "grossPP": 64.4,
+      "feePP": 1.42,
+      "netPP": 62.98,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 13,
+      "n": 12,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -207,10 +222,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.371,
-      "grossPP": 62.9,
-      "feePP": 1.48,
-      "netPP": 61.42,
+      "sumProb": 0.372,
+      "grossPP": 62.8,
+      "feePP": 1.49,
+      "netPP": 61.31,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
@@ -230,7 +245,7 @@
         {
           "name": "David Lisnard",
           "bid": 0.026,
-          "ask": 0.031
+          "ask": 0.032
         },
         {
           "name": "Sébastien Lecornu",
@@ -256,66 +271,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.427,
-      "grossPP": 57.3,
-      "feePP": 1.71,
-      "netPP": 55.59,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
-      "event": "Democratic Presidential Nominee 2028",
-      "slug": "democratic-presidential-nominee-2028",
-      "endDate": "2028-11-07T00:00:00Z",
-      "n": 14,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Gavin Newsom",
-          "bid": 0.181,
-          "ask": 0.182
-        },
-        {
-          "name": "Jon Ossoff",
-          "bid": 0.16,
-          "ask": 0.161
-        },
-        {
-          "name": "James Talarico",
-          "bid": 0.019,
-          "ask": 0.02
-        },
-        {
-          "name": "Wes Moore",
-          "bid": 0.014,
-          "ask": 0.015
-        },
-        {
-          "name": "Chelsea Clinton",
-          "bid": 0.007,
-          "ask": 0.008
-        },
-        {
-          "name": "Hunter Biden",
-          "bid": 0.005,
-          "ask": 0.007
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.446,
-      "grossPP": 55.4,
-      "feePP": 2.23,
-      "netPP": 53.17,
+      "sumProb": 0.438,
+      "grossPP": 56.2,
+      "feePP": 2.19,
+      "netPP": 54.01,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x85de20785f24956ff4ce1471e80f7d379d97f3fb8a20fb5dd881d03aac38df00",
       "event": "MLB World Series Champion 2026",
       "slug": "mlb-world-series-champion-2026",
       "endDate": "2026-10-31T23:55:00Z",
-      "n": 5,
+      "n": 4,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -339,11 +305,6 @@
           "name": "San Diego Padres",
           "bid": 0.011,
           "ask": 0.012
-        },
-        {
-          "name": "Toronto Blue Jays",
-          "bid": 0.003,
-          "ask": 0.008
         }
       ]
     },
@@ -437,17 +398,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.755,
-      "grossPP": 24.5,
-      "feePP": 1.82,
-      "netPP": 22.68,
+      "sumProb": 0.752,
+      "grossPP": 24.8,
+      "feePP": 1.81,
+      "netPP": 22.99,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x966a3221e05d8d0579854c4952085331da2a42989dee0fa033d24cada9dfca00",
       "event": "Brazil Presidential Election",
       "slug": "brazil-presidential-election",
       "endDate": "2026-10-04T00:00:00Z",
-      "n": 7,
+      "n": 6,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -473,12 +434,12 @@
           "ask": 0.005
         },
         {
-          "name": "Geraldo Alckmin",
-          "bid": 0.002,
-          "ask": 0.003
+          "name": "Camilo Santana",
+          "bid": 0.001,
+          "ask": 0.002
         },
         {
-          "name": "Camilo Santana",
+          "name": "Michelle Bolsonaro",
           "bid": 0.001,
           "ask": 0.002
         }
@@ -486,10 +447,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.805,
-      "grossPP": 19.5,
-      "feePP": 4.03,
-      "netPP": 15.47,
+      "sumProb": 0.807,
+      "grossPP": 19.3,
+      "feePP": 4.04,
+      "netPP": 15.26,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb494d4000f5ef0d4b1c180c3095c4303e7c19175bceb561bc1e576c4e588bf00",
@@ -502,14 +463,14 @@
       "tradable": false,
       "top": [
         {
-          "name": "200-219",
+          "name": "180-199",
           "bid": 0.23,
           "ask": 0.24
         },
         {
-          "name": "180-199",
-          "bid": 0.22,
-          "ask": 0.23
+          "name": "200-219",
+          "bid": 0.23,
+          "ask": 0.24
         },
         {
           "name": "160-179",
@@ -518,12 +479,12 @@
         },
         {
           "name": "140-159",
-          "bid": 0.07,
-          "ask": 0.08
+          "bid": 0.06,
+          "ask": 0.07
         },
         {
           "name": "260-279",
-          "bid": 0.029,
+          "bid": 0.028,
           "ask": 0.033
         },
         {
@@ -535,17 +496,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.929,
-      "grossPP": 7.1,
-      "feePP": 3.9,
-      "netPP": 3.21,
+      "sumProb": 0.835,
+      "grossPP": 16.5,
+      "feePP": 3.43,
+      "netPP": 13.08,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
       "event": "Ballon d'Or Winner 2026",
       "slug": "ballon-dor-winner-2026",
       "endDate": "2026-10-31T00:00:00Z",
-      "n": 7,
+      "n": 6,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -557,13 +518,8 @@
         },
         {
           "name": "Lamine Yamal",
-          "bid": 0.155,
-          "ask": 0.156
-        },
-        {
-          "name": "Rodri",
-          "bid": 0.08,
-          "ask": 0.09
+          "bid": 0.151,
+          "ask": 0.152
         },
         {
           "name": "Kylian Mbappé",
@@ -579,50 +535,11 @@
           "name": "Erling Haaland",
           "bid": 0.003,
           "ask": 0.004
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.966,
-      "grossPP": 3.4,
-      "feePP": 2.63,
-      "netPP": 0.77,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xa25749bf77e5c7fe173c90d3b3fc10804d4d2558d0dfc96bf7fd027a019f0000",
-      "event": "# of views of MrBeast video week 1?",
-      "slug": "of-views-of-mrbeast-video-week-1-20260803174219757",
-      "endDate": "2026-08-15T23:59:00Z",
-      "n": 5,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "60-70M",
-          "bid": 0.71,
-          "ask": 0.72
         },
         {
-          "name": "70-80M",
-          "bid": 0.198,
-          "ask": 0.2
-        },
-        {
-          "name": "50-60M",
-          "bid": 0.02,
-          "ask": 0.039
-        },
-        {
-          "name": "40-50M",
-          "bid": 0.002,
-          "ask": 0.006
-        },
-        {
-          "name": "<40M",
-          "bid": null,
-          "ask": 0.001
+          "name": "Michael Olise",
+          "bid": 0.001,
+          "ask": 0.002
         }
       ]
     }
