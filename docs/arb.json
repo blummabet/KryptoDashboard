@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-09T15:41:20Z",
-  "count": 7,
-  "tradableCount": 0,
+  "generatedAt": "2026-08-09T16:49:33Z",
+  "count": 5,
+  "tradableCount": 2,
   "basketFindings": [],
   "basketCount": 0,
   "basketTradable": 0,
@@ -9,15 +9,23 @@
   "paper": {
     "summary": {
       "mode": "PAPER / DRY-RUN",
-      "totalPnl": 200.95,
+      "totalPnl": 201.78,
       "realizedPnl": 200.95,
-      "lockedOpen": 0,
-      "openCount": 0,
+      "lockedOpen": 0.83,
+      "openCount": 1,
       "closedCount": 5,
       "winRate": 1.0,
       "stakeUSD": 100.0
     },
-    "open": [],
+    "open": [
+      {
+        "label": "dip $62,500 bis 2026-09-01 (100%) ↔ dip $65,000 bis 2026-09-01 (50%) verletzt Monotonie",
+        "gapPP": 0.9,
+        "cost": 0.991,
+        "lockedMin": 0.83,
+        "entryTs": "2026-08-09T16:49:33Z"
+      }
+    ],
     "closed": [
       {
         "key": "0x14ea3802ada17265002bff37ddc4ea65014d3e37cb80ef2ea8aa2f588a5f78bc|0x94ffe3d2cb1d82da14d0131547415c2fd5d3573eb82cff842738c915d7201b44",
@@ -115,44 +123,87 @@
         "roiPct": 67.1
       }
     ],
-    "activity": []
+    "activity": [
+      {
+        "ts": "2026-08-09T16:49:33Z",
+        "type": "open",
+        "market": "dip $62,500 bis 2026-09-01 (100%) ↔ dip $65,000 bis 2026-09-01 (50%) verletzt Monotonie",
+        "gap": 50.0
+      }
+    ]
   },
   "findings": [
+    {
+      "family": "touch",
+      "date": "2026-09-01",
+      "direction": "below",
+      "lowStrike": 62500,
+      "highStrike": 65000,
+      "lowP": 1.0,
+      "highP": 0.5,
+      "lowCid": "0xc5adcfd699ac8f48280df64036d83be87a83b7a082e92fdcd10a79bb9e7aae77",
+      "highCid": "0x072818b6480abb66a11c5fbc3325cfda7cf0d8b176c271b7607be84d4e8a619a",
+      "lowBid": 0.999,
+      "lowAsk": 1,
+      "highBid": 0.01,
+      "highAsk": 0.99,
+      "gapPP": 50.0,
+      "tradable": true,
+      "note": "dip $62,500 bis 2026-09-01 (100%) ↔ dip $65,000 bis 2026-09-01 (50%) verletzt Monotonie"
+    },
+    {
+      "family": "above",
+      "date": "2026-08-16",
+      "direction": "above",
+      "lowStrike": 56000,
+      "highStrike": 58000,
+      "lowP": 0.5,
+      "highP": 0.9845,
+      "lowCid": "0x8fc5a8de1d1ae6ee5a6ca3d7a54083ad0c76a502b5f53f1defb2fb984f3aa555",
+      "highCid": "0xd48e8bd10d4781bf0c2cab61019a8109f7960a968e286609cbefb33dfeffbcc5",
+      "lowBid": null,
+      "lowAsk": 1,
+      "highBid": 0.97,
+      "highAsk": 0.999,
+      "gapPP": 48.45,
+      "tradable": true,
+      "note": "über $56,000 · 2026-08-16 (50%) ↔ über $58,000 · 2026-08-16 (98%) verletzt Monotonie"
+    },
     {
       "family": "above",
       "date": "2026-08-14",
       "direction": "above",
       "lowStrike": 72000,
       "highStrike": 74000,
-      "lowP": 0.0075,
+      "lowP": 0.0085,
       "highP": 0.011,
       "lowCid": "0x56ee746d7d024601290985ac6ad8ba2b727c2343bfc18d35aa54dc9770c7fddb",
       "highCid": "0x4d656af9ab7567b09887726f9c7274cfe89c14505e26f71b4658c1439d942f8e",
       "lowBid": 0.003,
-      "lowAsk": 0.012,
+      "lowAsk": 0.014,
       "highBid": 0.003,
       "highAsk": 0.019,
-      "gapPP": 0.35,
+      "gapPP": 0.25,
       "tradable": false,
       "note": "über $72,000 · 2026-08-14 (1%) ↔ über $74,000 · 2026-08-14 (1%) verletzt Monotonie"
     },
     {
       "family": "above",
-      "date": "2026-08-12",
+      "date": "2026-08-11",
       "direction": "above",
-      "lowStrike": 70000,
-      "highStrike": 72000,
-      "lowP": 0.008,
-      "highP": 0.011,
-      "lowCid": "0x657e71cb476b7315cbb32f7c92e544b2c03f0a8550ae9f066a5299540db277f3",
-      "highCid": "0x763b1b520c5cf08c6732a658a8dd07cb574a97f41a662c7502128da4c08a9c45",
-      "lowBid": 0.004,
-      "lowAsk": 0.012,
-      "highBid": 0.003,
-      "highAsk": 0.019,
-      "gapPP": 0.3,
+      "lowStrike": 58000,
+      "highStrike": 60000,
+      "lowP": 0.9965,
+      "highP": 0.9985,
+      "lowCid": "0x06faead3be0d04161764d6b49550c2709ad338bcb580d8ddfa46c5f4f4703aa0",
+      "highCid": "0x3d24628169ad139d217a10470c8c4a25f7f1a7307aedaef65d345da3e5c8561b",
+      "lowBid": 0.994,
+      "lowAsk": 0.999,
+      "highBid": 0.998,
+      "highAsk": 0.999,
+      "gapPP": 0.2,
       "tradable": false,
-      "note": "über $70,000 · 2026-08-12 (1%) ↔ über $72,000 · 2026-08-12 (1%) verletzt Monotonie"
+      "note": "über $58,000 · 2026-08-11 (100%) ↔ über $60,000 · 2026-08-11 (100%) verletzt Monotonie"
     },
     {
       "family": "touch",
@@ -171,78 +222,6 @@
       "gapPP": 0.2,
       "tradable": false,
       "note": "erreicht $180,000 bis 2027-01-01 (2%) ↔ erreicht $190,000 bis 2027-01-01 (2%) verletzt Monotonie"
-    },
-    {
-      "family": "above",
-      "date": "2026-08-11",
-      "direction": "above",
-      "lowStrike": 58000,
-      "highStrike": 60000,
-      "lowP": 0.997,
-      "highP": 0.9985,
-      "lowCid": "0x06faead3be0d04161764d6b49550c2709ad338bcb580d8ddfa46c5f4f4703aa0",
-      "highCid": "0x3d24628169ad139d217a10470c8c4a25f7f1a7307aedaef65d345da3e5c8561b",
-      "lowBid": 0.995,
-      "lowAsk": 0.999,
-      "highBid": 0.998,
-      "highAsk": 0.999,
-      "gapPP": 0.15,
-      "tradable": false,
-      "note": "über $58,000 · 2026-08-11 (100%) ↔ über $60,000 · 2026-08-11 (100%) verletzt Monotonie"
-    },
-    {
-      "family": "above",
-      "date": "2026-08-14",
-      "direction": "above",
-      "lowStrike": 54000,
-      "highStrike": 56000,
-      "lowP": 0.9945,
-      "highP": 0.995,
-      "lowCid": "0x8b772d4ddab68bed2b6e80880daa85c5a97007a148a7c38084dfcfc282f46422",
-      "highCid": "0x130013f3873c5a6ff1e66748b50d082b00999c6df963dba5a2e6d1a73b43cef0",
-      "lowBid": 0.991,
-      "lowAsk": 0.998,
-      "highBid": 0.991,
-      "highAsk": 0.999,
-      "gapPP": 0.05,
-      "tradable": false,
-      "note": "über $54,000 · 2026-08-14 (99%) ↔ über $56,000 · 2026-08-14 (100%) verletzt Monotonie"
-    },
-    {
-      "family": "above",
-      "date": "2026-08-11",
-      "direction": "above",
-      "lowStrike": 56000,
-      "highStrike": 58000,
-      "lowP": 0.9965,
-      "highP": 0.997,
-      "lowCid": "0xf8a0e8b214966215fa37f63d9cda8526ad00d646086b1c9c0d7a37c010e10a5e",
-      "highCid": "0x06faead3be0d04161764d6b49550c2709ad338bcb580d8ddfa46c5f4f4703aa0",
-      "lowBid": 0.993,
-      "lowAsk": 1,
-      "highBid": 0.995,
-      "highAsk": 0.999,
-      "gapPP": 0.05,
-      "tradable": false,
-      "note": "über $56,000 · 2026-08-11 (100%) ↔ über $58,000 · 2026-08-11 (100%) verletzt Monotonie"
-    },
-    {
-      "family": "above",
-      "date": "2026-08-10",
-      "direction": "above",
-      "lowStrike": 56000,
-      "highStrike": 58000,
-      "lowP": 0.999,
-      "highP": 0.9995,
-      "lowCid": "0xbe54e975a165e063ac7d64274dc89007f476abc0298f0089878a80f89a7a152e",
-      "highCid": "0x13eed94f19c3b04419a5b6bcf2a2b43c201ed18ccdbec6ed302d248f2e8e6335",
-      "lowBid": 0.998,
-      "lowAsk": 1,
-      "highBid": 0.999,
-      "highAsk": 1,
-      "gapPP": 0.05,
-      "tradable": false,
-      "note": "über $56,000 · 2026-08-10 (100%) ↔ über $58,000 · 2026-08-10 (100%) verletzt Monotonie"
     }
   ]
 }

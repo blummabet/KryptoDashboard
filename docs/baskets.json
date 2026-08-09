@@ -1,50 +1,55 @@
 {
-  "generatedAt": "2026-08-09 15:41 UTC",
+  "generatedAt": "2026-08-09 16:49 UTC",
   "scanned": 600,
-  "count": 13,
+  "count": 11,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
     {
       "side": "buy",
-      "sumProb": 0.003,
-      "grossPP": 99.7,
-      "feePP": 0.02,
-      "netPP": 99.69,
+      "sumProb": 0.019,
+      "grossPP": 98.1,
+      "feePP": 0.1,
+      "netPP": 98.0,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x68fc1ef2ddb981585352afa1e778639bf7815a50ec099ab900cddc73ab3d6100",
-      "event": "FC Groningen vs. FC Utrecht - Exact Score",
-      "slug": "ere-gro-utr-2026-08-09-exact-score",
-      "endDate": "2026-08-09T12:30:00Z",
-      "n": 3,
-      "completeBid": false,
+      "negRiskMarketID": "0xbb01d92208e308f14eb9917889bb2b449395207a26fe2a7990c3d5def7f74c00",
+      "event": "NBA: 2027 Champion",
+      "slug": "nba-2027-champion",
+      "endDate": "2027-07-01T00:00:00Z",
+      "n": 4,
+      "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "FC Groningen 2 - 3 FC Utrecht",
-          "bid": null,
-          "ask": 0.001
+          "name": "Charlotte Hornets",
+          "bid": 0.005,
+          "ask": 0.006
         },
         {
-          "name": "FC Groningen 3 - 3 FC Utrecht",
-          "bid": null,
-          "ask": 0.001
+          "name": "Dallas Mavericks",
+          "bid": 0.005,
+          "ask": 0.006
         },
         {
-          "name": "FC Groningen 1 - 2 FC Utrecht",
-          "bid": null,
-          "ask": 0.001
+          "name": "Phoenix Suns",
+          "bid": 0.004,
+          "ask": 0.005
+        },
+        {
+          "name": "Milwaukee Bucks",
+          "bid": 0.001,
+          "ask": 0.002
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.034,
-      "grossPP": 96.6,
-      "feePP": 0.17,
-      "netPP": 96.43,
+      "sumProb": 0.037,
+      "grossPP": 96.3,
+      "feePP": 0.18,
+      "netPP": 96.11,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb494d4000f5ef0d4b1c180c3095c4303e7c19175bceb561bc1e576c4e588bf00",
@@ -58,18 +63,18 @@
       "top": [
         {
           "name": "120-139",
-          "bid": 0.016,
-          "ask": 0.018
+          "bid": 0.019,
+          "ask": 0.02
         },
         {
-          "name": "300-319",
+          "name": "100-119",
           "bid": 0.005,
           "ask": 0.006
         },
         {
-          "name": "100-119",
-          "bid": 0.003,
-          "ask": 0.004
+          "name": "300-319",
+          "bid": 0.004,
+          "ask": 0.005
         },
         {
           "name": "320-339",
@@ -150,7 +155,7 @@
           "ask": 0.007
         },
         {
-          "name": "Hunter Biden",
+          "name": "Cory Booker",
           "bid": 0.005,
           "ask": 0.006
         },
@@ -173,17 +178,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.052,
-      "grossPP": 94.8,
-      "feePP": 0.21,
-      "netPP": 94.59,
+      "sumProb": 0.055,
+      "grossPP": 94.5,
+      "feePP": 0.22,
+      "netPP": 94.28,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 3,
+      "n": 4,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -199,6 +204,11 @@
           "ask": 0.003
         },
         {
+          "name": "Zohran Mamdani",
+          "bid": 0.002,
+          "ask": 0.003
+        },
+        {
           "name": "Tulsi Gabbard",
           "bid": 0.002,
           "ask": 0.003
@@ -207,45 +217,45 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.239,
-      "grossPP": 76.1,
-      "feePP": 1.2,
-      "netPP": 74.91,
+      "sumProb": 0.169,
+      "grossPP": 83.1,
+      "feePP": 0.84,
+      "netPP": 82.25,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xbb01d92208e308f14eb9917889bb2b449395207a26fe2a7990c3d5def7f74c00",
-      "event": "NBA: 2027 Champion",
-      "slug": "nba-2027-champion",
-      "endDate": "2027-07-01T00:00:00Z",
+      "negRiskMarketID": "0x7db74de8403823823d4624b19d2b08fcbe53edc54e46c4765156543179a61100",
+      "event": "2026 Men’s US Open Winner (Tennis)",
+      "slug": "2026-mens-us-open-winner-tennis",
+      "endDate": "2026-09-13T00:00:00Z",
       "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Oklahoma City Thunder",
-          "bid": 0.21,
-          "ask": 0.22
+          "name": "Alexander Zverev",
+          "bid": 0.101,
+          "ask": 0.104
         },
         {
-          "name": "Charlotte Hornets",
+          "name": "Taylor Fritz",
+          "bid": 0.029,
+          "ask": 0.032
+        },
+        {
+          "name": "Arthur Fils",
+          "bid": 0.013,
+          "ask": 0.016
+        },
+        {
+          "name": "Felix Auger Aliassime",
+          "bid": 0.008,
+          "ask": 0.009
+        },
+        {
+          "name": "Jiri Lehecka",
           "bid": 0.005,
-          "ask": 0.006
-        },
-        {
-          "name": "Dallas Mavericks",
-          "bid": 0.005,
-          "ask": 0.006
-        },
-        {
-          "name": "Phoenix Suns",
-          "bid": 0.004,
-          "ask": 0.005
-        },
-        {
-          "name": "Milwaukee Bucks",
-          "bid": 0.001,
-          "ask": 0.002
+          "ask": 0.008
         }
       ]
     },
@@ -268,7 +278,7 @@
       "top": [
         {
           "name": "Lamine Yamal",
-          "bid": 0.159,
+          "bid": 0.162,
           "ask": 0.174
         },
         {
@@ -295,17 +305,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.314,
-      "grossPP": 68.6,
-      "feePP": 1.26,
-      "netPP": 67.34,
+      "sumProb": 0.349,
+      "grossPP": 65.1,
+      "feePP": 1.4,
+      "netPP": 63.7,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
       "event": "Next French Presidential Election",
       "slug": "next-french-presidential-election",
       "endDate": "2027-04-30T00:00:00Z",
-      "n": 4,
+      "n": 6,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -314,6 +324,11 @@
           "name": "Marine Le Pen",
           "bid": 0.302,
           "ask": 0.303
+        },
+        {
+          "name": "David Lisnard",
+          "bid": 0.026,
+          "ask": 0.033
         },
         {
           "name": "Bernard Cazeneuve",
@@ -329,22 +344,27 @@
           "name": "François Ruffin",
           "bid": 0.002,
           "ask": 0.003
+        },
+        {
+          "name": "Mathilde Panot",
+          "bid": 0.001,
+          "ask": 0.002
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.427,
-      "grossPP": 57.3,
-      "feePP": 2.14,
-      "netPP": 55.16,
+      "sumProb": 0.439,
+      "grossPP": 56.1,
+      "feePP": 2.2,
+      "netPP": 53.9,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x85de20785f24956ff4ce1471e80f7d379d97f3fb8a20fb5dd881d03aac38df00",
       "event": "MLB World Series Champion 2026",
       "slug": "mlb-world-series-champion-2026",
       "endDate": "2026-10-31T23:55:00Z",
-      "n": 3,
+      "n": 4,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -363,6 +383,11 @@
           "name": "Detroit Tigers",
           "bid": 0.012,
           "ask": 0.013
+        },
+        {
+          "name": "San Diego Padres",
+          "bid": 0.011,
+          "ask": 0.012
         }
       ]
     },
@@ -431,79 +456,6 @@
           "name": "Ron DeSantis",
           "bid": 0.03,
           "ask": 0.031
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.721,
-      "grossPP": 27.9,
-      "feePP": 1.76,
-      "netPP": 26.14,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x966a3221e05d8d0579854c4952085331da2a42989dee0fa033d24cada9dfca00",
-      "event": "Brazil Presidential Election",
-      "slug": "brazil-presidential-election",
-      "endDate": "2026-10-04T00:00:00Z",
-      "n": 4,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Luiz Inácio Lula da Silva",
-          "bid": 0.63,
-          "ask": 0.64
-        },
-        {
-          "name": "Renan Santos",
-          "bid": 0.076,
-          "ask": 0.077
-        },
-        {
-          "name": "Camilo Santana",
-          "bid": 0.001,
-          "ask": 0.002
-        },
-        {
-          "name": "Michelle Bolsonaro",
-          "bid": 0.001,
-          "ask": 0.002
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.983,
-      "grossPP": 1.7,
-      "feePP": 0.12,
-      "netPP": 1.59,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xc12543d440fe41d5c515983eab707d17d54ddffd460f1588302cf9db6473c500",
-      "event": "Highest temperature in Madrid on August 9?",
-      "slug": "highest-temperature-in-madrid-on-august-9-2026",
-      "endDate": "2026-08-09T12:00:00Z",
-      "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "37°C",
-          "bid": 0.97,
-          "ask": 0.98
-        },
-        {
-          "name": "36°C",
-          "bid": 0.001,
-          "ask": 0.002
-        },
-        {
-          "name": "35°C",
-          "bid": null,
-          "ask": 0.001
         }
       ]
     }
