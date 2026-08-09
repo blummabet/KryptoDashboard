@@ -2,15 +2,15 @@
   "summary": {
     "enabled": true,
     "feedCount": 50,
-    "whaleTradeCount": 1,
-    "biggestTradeUSD": 139030,
+    "whaleTradeCount": 0,
+    "biggestTradeUSD": 20000,
     "whaleMinUSD": 25000,
-    "walletsProbed": 13,
-    "qualifiedCount": 4,
+    "walletsProbed": 12,
+    "qualifiedCount": 3,
     "rejectedCount": 9,
-    "avgCopyLagPP": 2.95,
-    "lagSample": 1,
-    "verdict": "Kopieren kostet im Schnitt 2.95pp pro echtem Whale-Trade"
+    "avgCopyLagPP": null,
+    "lagSample": 0,
+    "verdict": "keine ≥$25k-Whale-Trades qualifizierter Wale im Fenster — echte Wale sind selten"
   },
   "wallets": [
     {
@@ -20,7 +20,7 @@
       "pnl": 12743949.53,
       "winRate": 56.5,
       "volume": 1033439822.0,
-      "inactiveDays": 2.4,
+      "inactiveDays": 2.5,
       "oneHit": false,
       "biggestWin": 224114.64,
       "qualified": true,
@@ -37,7 +37,7 @@
       "pnl": 11386691.0,
       "winRate": 52.6,
       "volume": 40697629.0,
-      "inactiveDays": 39.6,
+      "inactiveDays": 39.7,
       "oneHit": false,
       "biggestWin": 1095000.0,
       "qualified": true,
@@ -62,23 +62,6 @@
       "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
       "name": "0x204f72f3…",
       "firstTrade": "2026-06-14",
-      "lastTrade": "2026-08-07"
-    },
-    {
-      "resolved": 7578,
-      "uniqueMarkets": 4092,
-      "roi": 0.78,
-      "pnl": 7549221.04,
-      "winRate": 58.8,
-      "volume": 871158764.0,
-      "inactiveDays": 2.5,
-      "oneHit": false,
-      "biggestWin": 2069237.81,
-      "qualified": true,
-      "rejectReasons": [],
-      "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
-      "name": "0x2c335066…",
-      "firstTrade": "2025-10-08",
       "lastTrade": "2026-08-07"
     },
     {
@@ -233,10 +216,10 @@
       "resolved": 15,
       "uniqueMarkets": 31,
       "roi": 11.6,
-      "pnl": 8052184.5,
+      "pnl": 8052184.54,
       "winRate": 66.7,
-      "volume": 31179692.0,
-      "inactiveDays": 25.7,
+      "volume": 72132443.0,
+      "inactiveDays": 25.8,
       "oneHit": true,
       "biggestWin": 6096744.94,
       "qualified": false,
@@ -271,20 +254,6 @@
   ],
   "feed": [
     {
-      "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
-      "name": "0x2c335066…",
-      "qualified": true,
-      "isWhale": true,
-      "market": "LoL: JD Gaming vs Team WE (BO3) - LPL Group Ascend",
-      "slug": "lol-jdg-we-2026-08-09",
-      "side": "BUY",
-      "outcome": "JD Gaming",
-      "price": 0.9699990074,
-      "sizeUSD": 139030.0,
-      "ts": "2026-08-09T12:49:00+00:00",
-      "copyLagPP": 2.95
-    },
-    {
       "wallet": "0xdb859a551fcf56e49416160911476bea7307152f",
       "name": "0xdb859a55…",
       "qualified": false,
@@ -299,17 +268,17 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0xf201a19b43471261a3c1ba9247335d55270e527e",
-      "name": "0xf201a19b…",
-      "qualified": false,
+      "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
+      "name": "0x2005d16a…",
+      "qualified": true,
       "isWhale": false,
-      "market": "Dota 2: Power Rangers vs Yellow Submarine (BO3) - EPL Masters Playoffs",
-      "slug": "dota2-pr1-yes-2026-08-09",
-      "side": "SELL",
-      "outcome": "Yellow Submarine",
-      "price": 0.999,
-      "sizeUSD": 10851.26,
-      "ts": "2026-08-09T12:48:55+00:00",
+      "market": "Will Liverpool FC win on 2026-08-09?",
+      "slug": "clf-lfc-asm-2026-08-09-lfc",
+      "side": "BUY",
+      "outcome": "Yes",
+      "price": 0.39,
+      "sizeUSD": 7450.0,
+      "ts": "2026-08-09T14:56:34+00:00",
       "copyLagPP": null
     },
     {
@@ -341,6 +310,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x614dc8d3542c12103d2c6a3553fd761e391d1546",
+      "name": "0x614dc8d3…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "US-Iran Final Nuclear Deal by December 31, 2026?",
+      "slug": "us-iran-final-nuclear-deal-by-december-31-2026",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.7,
+      "sizeUSD": 5000.0,
+      "ts": "2026-08-09T14:56:34+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0xa4928dafb87cec08fe7f63f4eae83b3b7c28d2fd",
       "name": "0xa4928daf…",
       "qualified": false,
@@ -366,6 +349,20 @@
       "price": 0.7,
       "sizeUSD": 4640.42,
       "ts": "2026-08-09T13:04:45+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x9e3ed7b661a903fc97afcf49e0f014ebe869f882",
+      "name": "0x9e3ed7b6…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "LoL: Team Heretics vs G2 Esports - Game 1 Winner",
+      "slug": "lol-th-g2-2026-08-09",
+      "side": "BUY",
+      "outcome": "Team Heretics",
+      "price": 0.1066469775,
+      "sizeUSD": 4474.013332,
+      "ts": "2026-08-09T15:15:19+00:00",
       "copyLagPP": null
     },
     {
@@ -425,6 +422,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0xe9076a87c5ed90ef16e6fe6529c943baeca0cff6",
+      "name": "0xe9076a87…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will the price of Bitcoin be above $66,000 on August 9?",
+      "slug": "bitcoin-above-on-august-9-2026",
+      "side": "SELL",
+      "outcome": "Yes",
+      "price": 0.001,
+      "sizeUSD": 3492.83,
+      "ts": "2026-08-09T15:05:16+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0xd0e762ffa866af24c0b81e80b68acfc4430b3335",
       "name": "0xd0e762ff…",
       "qualified": false,
@@ -436,20 +447,6 @@
       "price": 0.999,
       "sizeUSD": 3008.36,
       "ts": "2026-08-09T14:31:33+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xa7042a6a20139d170616881b763577ff79f011c1",
-      "name": "0xa7042a6a…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Lillestrøm SK vs. Rosenborg BK: O/U 1.5",
-      "slug": "nor-lil-rbk-2026-08-09-more-markets",
-      "side": "BUY",
-      "outcome": "Over",
-      "price": 0.7346891524,
-      "sizeUSD": 2722.239726,
-      "ts": "2026-08-09T12:48:54+00:00",
       "copyLagPP": null
     },
     {
@@ -649,6 +646,34 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x6d20c35f65d9899b6d6b74f8466e824580f9a165",
+      "name": "0x6d20c35f…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Counter-Strike: 100 Thieves vs BC.Game Esports (BO3) - Esports World Cup Open Qualifier Play-Ins",
+      "slug": "cs2-100t-bcg-2026-08-09",
+      "side": "BUY",
+      "outcome": "BC.Game Esports",
+      "price": 0.3694901489,
+      "sizeUSD": 1630.28,
+      "ts": "2026-08-09T15:05:19+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+      "name": "0x204f72f3…",
+      "qualified": true,
+      "isWhale": false,
+      "market": "IFK Goteborg vs. Kalmar FF: O/U 3.5",
+      "slug": "swe-ifk-kal-2026-08-09-more-markets",
+      "side": "BUY",
+      "outcome": "Under",
+      "price": 0.4799999999,
+      "sizeUSD": 1597.291665,
+      "ts": "2026-08-09T15:15:18+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x076daa87c4fe1a85402a9b6b8e0a866224388d4c",
       "name": "0x076daa87…",
       "qualified": false,
@@ -719,6 +744,34 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x514b2379137cbc3458ac683ac5f47c28f1b67c62",
+      "name": "0x514b2379…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Bitcoin Up or Down - August 9, 11AM ET",
+      "slug": "bitcoin-up-or-down-august-9-2026-11am-et",
+      "side": "BUY",
+      "outcome": "Down",
+      "price": 0.5914732822,
+      "sizeUSD": 1521.624097,
+      "ts": "2026-08-09T15:15:19+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x208d5c070885f34d889fb1c35b4c96247b769172",
+      "name": "0x208d5c07…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "The Hundred: Sunrisers Leeds vs Welsh Fire",
+      "slug": "crichundred-sun-wel-2026-08-09",
+      "side": "BUY",
+      "outcome": "Sunrisers Leeds",
+      "price": 0.987,
+      "sizeUSD": 1519.756769,
+      "ts": "2026-08-09T15:25:21+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x791e45264c99eecaeb095caea9ad863740d29bda",
       "name": "0x791e4526…",
       "qualified": false,
@@ -747,20 +800,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x7a5927f87464229a723fa70f22a0159ea2d368fb",
-      "name": "0x7a5927f8…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "LoL: JD Gaming vs Team WE (BO3) - LPL Group Ascend",
-      "slug": "lol-jdg-we-2026-08-09",
-      "side": "SELL",
-      "outcome": "JD Gaming",
-      "price": 0.999,
-      "sizeUSD": 1416.54,
-      "ts": "2026-08-09T12:54:42+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
       "name": "0x2005d16a…",
       "qualified": true,
@@ -772,20 +811,6 @@
       "price": 0.32,
       "sizeUSD": 1360.0,
       "ts": "2026-08-09T14:05:06+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xaa4c629fcb0759e494ee5d35f7def59b088a9671",
-      "name": "0xaa4c629f…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will Kilmarnock FC win on 2026-08-09?",
-      "slug": "scop-kil-cel-2026-08-09-kil",
-      "side": "BUY",
-      "outcome": "No",
-      "price": 0.9584435084,
-      "sizeUSD": 1345.932219,
-      "ts": "2026-08-09T12:49:00+00:00",
       "copyLagPP": null
     },
     {
@@ -817,20 +842,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x99ef0b0a60b56fef34a3bed8ec89078bd78fba25",
-      "name": "0x99ef0b0a…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "LoL: JD Gaming vs Team WE - Game 2 Winner",
-      "slug": "lol-jdg-we-2026-08-09-game2",
-      "side": "SELL",
-      "outcome": "Team WE",
-      "price": 0.04,
-      "sizeUSD": 1130.94,
-      "ts": "2026-08-09T12:48:58+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0xf85171e952b8fc523cc7458a31fd179b40afef53",
       "name": "0xf85171e9…",
       "qualified": false,
@@ -842,20 +853,6 @@
       "price": 0.99,
       "sizeUSD": 1097.25,
       "ts": "2026-08-09T13:44:55+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xf201a19b43471261a3c1ba9247335d55270e527e",
-      "name": "0xf201a19b…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "LoL: JD Gaming vs Team WE - Game 2 Winner",
-      "slug": "lol-jdg-we-2026-08-09-game2",
-      "side": "BUY",
-      "outcome": "Team WE",
-      "price": 0.04,
-      "sizeUSD": 1095.88,
-      "ts": "2026-08-09T12:49:00+00:00",
       "copyLagPP": null
     },
     {
@@ -955,22 +952,8 @@
       "sizeUSD": 1009.99,
       "ts": "2026-08-09T13:44:51+00:00",
       "copyLagPP": null
-    },
-    {
-      "wallet": "0xbadb9af986ee66437bd39e6cd3d3036cbbdc31a7",
-      "name": "0xbadb9af9…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Game Handicap: KC (-1.5) vs Fnatic (+1.5)",
-      "slug": "lol-fnc-kc-2026-08-09",
-      "side": "BUY",
-      "outcome": "Fnatic",
-      "price": 0.4,
-      "sizeUSD": 1000.0,
-      "ts": "2026-08-09T12:48:55+00:00",
-      "copyLagPP": null
     }
   ],
-  "generatedAt": "2026-08-09 14:47 UTC",
+  "generatedAt": "2026-08-09 15:42 UTC",
   "note": "Ehrliches Copy-Trading: Bilanz selbst nachgerechnet (nicht dem Leaderboard glauben), Ein-Treffer-Wunder/Inaktive/Verlierer gefiltert, und der Copy-Lag ausgewiesen — die Kosten, die entstehen, weil der Wal mit seiner Order den Preis selbst bewegt."
 }
