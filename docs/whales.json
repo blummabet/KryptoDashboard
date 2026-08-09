@@ -8,9 +8,9 @@
     "walletsProbed": 13,
     "qualifiedCount": 4,
     "rejectedCount": 9,
-    "avgCopyLagPP": -10.5,
+    "avgCopyLagPP": -6.5,
     "lagSample": 1,
-    "verdict": "Kopieren kostet im Schnitt -10.50pp pro echtem Whale-Trade"
+    "verdict": "Kopieren kostet im Schnitt -6.50pp pro echtem Whale-Trade"
   },
   "wallets": [
     {
@@ -20,7 +20,7 @@
       "pnl": 12728951.81,
       "winRate": 56.5,
       "volume": 1040137712.0,
-      "inactiveDays": 2.6,
+      "inactiveDays": 2.7,
       "oneHit": false,
       "biggestWin": 224114.64,
       "qualified": true,
@@ -37,7 +37,7 @@
       "pnl": 11386691.0,
       "winRate": 52.6,
       "volume": 40697629.0,
-      "inactiveDays": 39.8,
+      "inactiveDays": 39.9,
       "oneHit": false,
       "biggestWin": 1095000.0,
       "qualified": true,
@@ -131,7 +131,7 @@
       "pnl": 9238345.0,
       "winRate": 100.0,
       "volume": 8279554.0,
-      "inactiveDays": 54.6,
+      "inactiveDays": 54.7,
       "oneHit": true,
       "biggestWin": 7336119.47,
       "qualified": false,
@@ -173,7 +173,7 @@
       "pnl": 8474966.0,
       "winRate": 100.0,
       "volume": 8914066.0,
-      "inactiveDays": 44.7,
+      "inactiveDays": 44.8,
       "oneHit": true,
       "biggestWin": 4701163.79,
       "qualified": false,
@@ -256,7 +256,7 @@
       "pnl": 11839902.0,
       "winRate": 49.4,
       "volume": 99774425.0,
-      "inactiveDays": 111.3,
+      "inactiveDays": 111.4,
       "oneHit": false,
       "biggestWin": 1095000.0,
       "qualified": false,
@@ -282,7 +282,21 @@
       "price": 0.55,
       "sizeUSD": 25651.63,
       "ts": "2026-08-09T18:05:48+00:00",
-      "copyLagPP": -10.5
+      "copyLagPP": -6.5
+    },
+    {
+      "wallet": "0x760f1063f9f07d5125de802b16775a967b7f326a",
+      "name": "0x760f1063…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "National Bank Open: Joao Fonseca vs Ben Shelton",
+      "slug": "atp-fonseca-shelton-2026-08-10",
+      "side": "BUY",
+      "outcome": "Ben Shelton",
+      "price": 0.55,
+      "sizeUSD": 17145.454544,
+      "ts": "2026-08-09T19:36:03+00:00",
+      "copyLagPP": null
     },
     {
       "wallet": "0xe16e8a3c20d51eb3ce4ce23516bd7bfb2e14bd58",
@@ -327,20 +341,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x2a69660046d7acc4ab204d7cc5ba78b0776cd2f7",
-      "name": "0x2a696600…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will NK Varaždin win on 2026-08-09?",
-      "slug": "hr1-sla-var-2026-08-09",
-      "side": "BUY",
-      "outcome": "No",
-      "price": 0.0293644062,
-      "sizeUSD": 7866.66,
-      "ts": "2026-08-09T17:59:09+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0xab828a2bcb4a5a93a94cdeedf3cb70b6211babe5",
       "name": "0xab828a2b…",
       "qualified": false,
@@ -352,20 +352,6 @@
       "price": 0.2989967172,
       "sizeUSD": 7106.67,
       "ts": "2026-08-09T18:49:10+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
-      "name": "0x204f72f3…",
-      "qualified": true,
-      "isWhale": false,
-      "market": "RSC Anderlecht vs. RAAL La Louviere: RAAL La Louviere O/U 1.5",
-      "slug": "bel1-rsc-raal-2026-08-09-more-markets",
-      "side": "BUY",
-      "outcome": "Under",
-      "price": 0.93,
-      "sizeUSD": 5629.494614,
-      "ts": "2026-08-09T17:59:04+00:00",
       "copyLagPP": null
     },
     {
@@ -383,20 +369,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
-      "name": "0x204f72f3…",
-      "qualified": true,
-      "isWhale": false,
-      "market": "Will NK Varaždin win on 2026-08-09?",
-      "slug": "hr1-sla-var-2026-08-09",
-      "side": "BUY",
-      "outcome": "No",
-      "price": 0.017,
-      "sizeUSD": 5000.0,
-      "ts": "2026-08-09T17:59:04+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
       "name": "0x2005d16a…",
       "qualified": true,
@@ -408,6 +380,20 @@
       "price": 0.7,
       "sizeUSD": 4860.0,
       "ts": "2026-08-09T18:49:15+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x4956f69ada024c5cb23ed4f38f0dc4c04d2ee2c7",
+      "name": "0x4956f69a…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Seattle Sounders FC win on 2026-08-09?",
+      "slug": "lec-sea-que-2026-08-09",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.4,
+      "sizeUSD": 4744.6,
+      "ts": "2026-08-09T19:26:07+00:00",
       "copyLagPP": null
     },
     {
@@ -453,20 +439,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x54a78f8c6e64572111c5683a9efeed25a04c881b",
-      "name": "0x54a78f8c…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "US x Iran Effective Ceasefire by July 31?",
-      "slug": "us-x-iran-effective-ceasfire-byptptpt-2-week-pause-20260715194822042",
-      "side": "BUY",
-      "outcome": "Yes",
-      "price": 0.91,
-      "sizeUSD": 4276.86,
-      "ts": "2026-08-09T17:55:54+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x48611e62b91a2a0cf8de06d2c9374d2920483aae",
       "name": "0x48611e62…",
       "qualified": false,
@@ -509,31 +481,31 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0xff81cc85838ce8f91a7d4ae2eeddadfa3f8444c9",
-      "name": "0xff81cc85…",
+      "wallet": "0x54d00bee04ad0fef256af327f4f0bb6842e18e20",
+      "name": "0x54d00bee…",
       "qualified": false,
       "isWhale": false,
-      "market": "National Bank Open: Tallon Griekspoor vs Daniel Merida Aguilar",
-      "slug": "atp-grieksp-aguilar-2026-08-10",
+      "market": "Will Seattle Sounders FC win on 2026-08-09?",
+      "slug": "lec-sea-que-2026-08-09",
       "side": "SELL",
-      "outcome": "Daniel Merida Aguilar",
-      "price": 0.999,
-      "sizeUSD": 3269.56,
-      "ts": "2026-08-09T17:59:06+00:00",
+      "outcome": "Yes",
+      "price": 0.5537761608,
+      "sizeUSD": 3174.6,
+      "ts": "2026-08-09T19:36:01+00:00",
       "copyLagPP": null
     },
     {
-      "wallet": "0xbea4b5171e6c7d6a7e8da50574ad113a9a99fac9",
-      "name": "0xbea4b517…",
+      "wallet": "0xabb89972b21b304c1bed2bf26f35c8741ac9bba3",
+      "name": "0xabb89972…",
       "qualified": false,
       "isWhale": false,
-      "market": "Cincinnati Reds vs. Washington Nationals: O/U 7.5",
-      "slug": "mlb-cin-wsh-2026-08-09",
+      "market": "Atlanta Braves vs. New York Yankees",
+      "slug": "mlb-atl-nyy-2026-08-09",
       "side": "BUY",
-      "outcome": "Under",
-      "price": 0.5899999999,
-      "sizeUSD": 2542.37288,
-      "ts": "2026-08-09T17:55:58+00:00",
+      "outcome": "Atlanta Braves",
+      "price": 0.71,
+      "sizeUSD": 3085.24,
+      "ts": "2026-08-09T19:35:55+00:00",
       "copyLagPP": null
     },
     {
@@ -607,6 +579,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0xbb2546c397599103600313853d94433eefc762ed",
+      "name": "0xbb2546c3…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "National Bank Open: Learner Tien vs Thiago Agustin Tirante",
+      "slug": "atp-tien-tirante-2026-08-10",
+      "side": "BUY",
+      "outcome": "Learner Tien",
+      "price": 0.8699999999,
+      "sizeUSD": 1839.080453,
+      "ts": "2026-08-09T19:15:58+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0xc48083523401bfea0d6743a2f875246508a2937a",
       "name": "0xc4808352…",
       "qualified": false,
@@ -618,6 +604,20 @@
       "price": 0.13,
       "sizeUSD": 1836.0,
       "ts": "2026-08-09T18:49:07+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xbb2546c397599103600313853d94433eefc762ed",
+      "name": "0xbb2546c3…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Atlanta Braves vs. New York Yankees",
+      "slug": "mlb-atl-nyy-2026-08-09",
+      "side": "BUY",
+      "outcome": "New York Yankees",
+      "price": 0.2799999997,
+      "sizeUSD": 1785.714284,
+      "ts": "2026-08-09T19:36:10+00:00",
       "copyLagPP": null
     },
     {
@@ -635,17 +635,17 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0xabb89972b21b304c1bed2bf26f35c8741ac9bba3",
-      "name": "0xabb89972…",
+      "wallet": "0x0346afae2603313d2bbee96b628536c8cbe352a5",
+      "name": "0x0346afae…",
       "qualified": false,
       "isWhale": false,
-      "market": "Athletics vs. Boston Red Sox",
-      "slug": "mlb-oak-bos-2026-08-09",
-      "side": "SELL",
-      "outcome": "Boston Red Sox",
-      "price": 0.64,
-      "sizeUSD": 1626.98,
-      "ts": "2026-08-09T17:59:10+00:00",
+      "market": "Will Moreirense FC win on 2026-08-09?",
+      "slug": "por-mor-scb-2026-08-09",
+      "side": "BUY",
+      "outcome": "Yes",
+      "price": 0.12,
+      "sizeUSD": 1628.0,
+      "ts": "2026-08-09T19:35:55+00:00",
       "copyLagPP": null
     },
     {
@@ -691,17 +691,17 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x2fbccc3918a358ef674854dbd4bbd89b896ef944",
-      "name": "0x2fbccc39…",
+      "wallet": "0x86df6ce94c9263d09a6052b43d652adb7b51d902",
+      "name": "0x86df6ce9…",
       "qualified": false,
       "isWhale": false,
-      "market": "LoL: Fnatic vs Karmine Corp - Game 2 Winner",
-      "slug": "lol-fnc-kc-2026-08-09",
-      "side": "BUY",
-      "outcome": "Karmine Corp",
-      "price": 0.86,
-      "sizeUSD": 1500.0,
-      "ts": "2026-08-09T17:55:58+00:00",
+      "market": "Valorant: Gentle Mates vs Enterprise Esports - Map 2 Winner",
+      "slug": "val-gm-ep1-2026-08-09",
+      "side": "SELL",
+      "outcome": "Enterprise Esports",
+      "price": 0.6509491615,
+      "sizeUSD": 1369.63,
+      "ts": "2026-08-09T19:16:03+00:00",
       "copyLagPP": null
     },
     {
@@ -775,20 +775,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x1a62e23d8d67192286eebc18c0dcf6f9cff34ab9",
-      "name": "0x1a62e23d…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Parma Calcio vs. Sampdoria Genoa: O/U 5.5",
-      "slug": "clf-par-sg-2026-08-09-more-markets",
-      "side": "BUY",
-      "outcome": "Over",
-      "price": 0.0396989584,
-      "sizeUSD": 1259.478862,
-      "ts": "2026-08-09T17:59:06+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x12375d98761d91af452585b7b16efd3d2a86e11c",
       "name": "0x12375d98…",
       "qualified": false,
@@ -800,20 +786,6 @@
       "price": 0.5,
       "sizeUSD": 1200.0,
       "ts": "2026-08-09T18:25:55+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xb2e28dafe130a77086831ace307e3db217054e99",
-      "name": "0xb2e28daf…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will Seattle Sounders FC win on 2026-08-09?",
-      "slug": "lec-sea-que-2026-08-09",
-      "side": "BUY",
-      "outcome": "Yes",
-      "price": 0.45,
-      "sizeUSD": 1200.0,
-      "ts": "2026-08-09T17:59:06+00:00",
       "copyLagPP": null
     },
     {
@@ -831,6 +803,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x31edde142a6dec8f09b8e741f4a119618ab0552e",
+      "name": "0x31edde14…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Baltimore Orioles vs. Texas Rangers: O/U 10.5",
+      "slug": "mlb-bal-tex-2026-08-09",
+      "side": "BUY",
+      "outcome": "Under",
+      "price": 0.4299999998,
+      "sizeUSD": 1162.790696,
+      "ts": "2026-08-09T19:16:00+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x00c8ef6895e2fb38b538cac8c08edd6b82289ccd",
       "name": "0x00c8ef68…",
       "qualified": false,
@@ -842,6 +828,20 @@
       "price": 0.999,
       "sizeUSD": 1152.17,
       "ts": "2026-08-09T18:01:37+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xc3ff873a442f65dd9a55ee1bd6a83060957c9708",
+      "name": "0xc3ff873a…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Exact Score: CD Derio 0 - 2 Club Portugalete?",
+      "slug": "clf-der-port-2026-08-08-exact-score",
+      "side": "BUY",
+      "outcome": "Yes",
+      "price": 0.999,
+      "sizeUSD": 1129.99,
+      "ts": "2026-08-09T19:35:55+00:00",
       "copyLagPP": null
     },
     {
@@ -915,17 +915,17 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0xbc4bf9c1cdc6e1eb42b69b7cc2e6aedba4ebecc5",
-      "name": "0xbc4bf9c1…",
-      "qualified": false,
+      "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+      "name": "0x204f72f3…",
+      "qualified": true,
       "isWhale": false,
-      "market": "LoL: Fnatic vs Karmine Corp - Game 2 Winner",
-      "slug": "lol-fnc-kc-2026-08-09-game2",
+      "market": "Spread: Washington Mystics (-1.5)",
+      "slug": "wnba-phx-wsh-2026-08-09-spread-home-1pt5",
       "side": "BUY",
-      "outcome": "Karmine Corp",
-      "price": 0.86,
-      "sizeUSD": 1031.52,
-      "ts": "2026-08-09T17:56:00+00:00",
+      "outcome": "Washington Mystics",
+      "price": 0.5099999996,
+      "sizeUSD": 1019.607842,
+      "ts": "2026-08-09T19:26:09+00:00",
       "copyLagPP": null
     },
     {
@@ -971,6 +971,6 @@
       "copyLagPP": null
     }
   ],
-  "generatedAt": "2026-08-09 18:56 UTC",
+  "generatedAt": "2026-08-09 19:44 UTC",
   "note": "Ehrliches Copy-Trading: Bilanz selbst nachgerechnet (nicht dem Leaderboard glauben), Ein-Treffer-Wunder/Inaktive/Verlierer gefiltert, und der Copy-Lag ausgewiesen — die Kosten, die entstehen, weil der Wal mit seiner Order den Preis selbst bewegt."
 }
