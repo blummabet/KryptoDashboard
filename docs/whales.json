@@ -3,14 +3,14 @@
     "enabled": true,
     "feedCount": 50,
     "whaleTradeCount": 1,
-    "biggestTradeUSD": 40336,
+    "biggestTradeUSD": 27104,
     "whaleMinUSD": 25000,
     "walletsProbed": 13,
-    "qualifiedCount": 3,
-    "rejectedCount": 10,
-    "avgCopyLagPP": null,
-    "lagSample": 0,
-    "verdict": "keine ≥$25k-Whale-Trades qualifizierter Wale im Fenster — echte Wale sind selten"
+    "qualifiedCount": 4,
+    "rejectedCount": 9,
+    "avgCopyLagPP": -0.05,
+    "lagSample": 1,
+    "verdict": "Kopieren kostet im Schnitt -0.05pp pro echtem Whale-Trade"
   },
   "wallets": [
     {
@@ -54,7 +54,7 @@
       "pnl": 23179801.74,
       "winRate": 57.1,
       "volume": 1781324723.0,
-      "inactiveDays": 2.0,
+      "inactiveDays": 2.1,
       "oneHit": false,
       "biggestWin": 536824.24,
       "qualified": true,
@@ -65,13 +65,30 @@
       "lastTrade": "2026-08-07"
     },
     {
+      "resolved": 82,
+      "uniqueMarkets": 86,
+      "roi": 0.08,
+      "pnl": 104426.35,
+      "winRate": 85.4,
+      "volume": 337061054.0,
+      "inactiveDays": 20.2,
+      "oneHit": false,
+      "biggestWin": 9995.22,
+      "qualified": true,
+      "rejectReasons": [],
+      "wallet": "0xfedc381bf3fb5d20433bb4a0216b15dbbc5c6398",
+      "name": "0xfedc381b…",
+      "firstTrade": "2024-07-29",
+      "lastTrade": "2026-07-20"
+    },
+    {
       "resolved": 2,
       "uniqueMarkets": 4,
       "roi": 68.24,
       "pnl": 9063378.0,
       "winRate": 100.0,
       "volume": 3696321.0,
-      "inactiveDays": 55.1,
+      "inactiveDays": 55.2,
       "oneHit": true,
       "biggestWin": 4750526.65,
       "qualified": false,
@@ -93,7 +110,7 @@
       "pnl": 8709973.0,
       "winRate": 87.5,
       "volume": 4641881.0,
-      "inactiveDays": 635.3,
+      "inactiveDays": 635.4,
       "oneHit": false,
       "biggestWin": 4281504.88,
       "qualified": false,
@@ -133,16 +150,16 @@
       "resolved": 22,
       "uniqueMarkets": 23,
       "roi": 51.27,
-      "pnl": 22053933.75,
+      "pnl": 22053934.0,
       "winRate": 81.8,
-      "volume": 43065780.0,
-      "inactiveDays": 632.5,
+      "volume": 381659361.0,
+      "inactiveDays": 632.6,
       "oneHit": false,
       "biggestWin": 8303171.23,
       "qualified": false,
       "rejectReasons": [
         "zu wenig Historie (22 aufgelöst)",
-        "inaktiv seit 632d"
+        "inaktiv seit 633d"
       ],
       "wallet": "0x56687bf447db6ffa42ffe2204a05edaa20f55839",
       "name": "0x56687bf4…",
@@ -177,7 +194,7 @@
       "pnl": 8928561.0,
       "winRate": 83.3,
       "volume": 11802251.0,
-      "inactiveDays": 50.7,
+      "inactiveDays": 50.8,
       "oneHit": true,
       "biggestWin": 5922681.53,
       "qualified": false,
@@ -199,13 +216,13 @@
       "pnl": 16619507.0,
       "winRate": 60.6,
       "volume": 411257553.0,
-      "inactiveDays": 632.5,
+      "inactiveDays": 632.6,
       "oneHit": true,
       "biggestWin": 9710283.25,
       "qualified": false,
       "rejectReasons": [
         "Ein-Treffer-Wunder (58% des Gewinns aus 1 Trade)",
-        "inaktiv seit 632d"
+        "inaktiv seit 633d"
       ],
       "wallet": "0x1f2dd6d473f3e824cd2f8a89d9c69fb96f6ad0cf",
       "name": "0x1f2dd6d4…",
@@ -250,84 +267,35 @@
       "name": "0x4879a9d9…",
       "firstTrade": "2025-12-12",
       "lastTrade": "2026-04-20"
-    },
-    {
-      "resolved": 5,
-      "uniqueMarkets": 11,
-      "roi": 0.18,
-      "pnl": 2081.75,
-      "winRate": 100.0,
-      "volume": 340483.0,
-      "inactiveDays": 82.7,
-      "oneHit": false,
-      "biggestWin": 795.11,
-      "qualified": false,
-      "rejectReasons": [
-        "zu wenig Historie (5 aufgelöst)",
-        "nur 11 Märkte",
-        "inaktiv seit 83d"
-      ],
-      "wallet": "0x59368957544eaf2e921b0b9b17471eadd30d0b7b",
-      "name": "0x59368957…",
-      "firstTrade": "2026-04-07",
-      "lastTrade": "2026-05-19"
     }
   ],
   "feed": [
     {
-      "wallet": "0x59368957544eaf2e921b0b9b17471eadd30d0b7b",
-      "name": "0x59368957…",
-      "qualified": false,
+      "wallet": "0xfedc381bf3fb5d20433bb4a0216b15dbbc5c6398",
+      "name": "0xfedc381b…",
+      "qualified": true,
       "isWhale": true,
-      "market": "Israel x Iran ceasefire continues through August 9?",
-      "slug": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
-      "side": "BUY",
-      "outcome": "Yes",
-      "price": 0.997,
-      "sizeUSD": 40335.55,
-      "ts": "2026-08-09T20:16:10+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x9bb1bc70c9e098f2f297416d06a0aa3992534dbe",
-      "name": "0x9bb1bc70…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Toronto Blue Jays vs. Philadelphia Phillies",
-      "slug": "mlb-tor-phi-2026-08-09",
+      "market": "Will Oprah Winfrey win the 2028 Democratic presidential nomination?",
+      "slug": "will-oprah-winfrey-win-the-2028-democratic-presidential-nomination",
       "side": "SELL",
-      "outcome": "Philadelphia Phillies",
-      "price": 0.819238768,
-      "sizeUSD": 12344.37,
-      "ts": "2026-08-09T20:26:15+00:00",
-      "copyLagPP": null
+      "outcome": "Yes",
+      "price": 0.004,
+      "sizeUSD": 27103.84,
+      "ts": "2026-08-09T23:36:31+00:00",
+      "copyLagPP": -0.05
     },
     {
-      "wallet": "0x5268527977f700f9bf9b6d5cd843859e4e70135d",
-      "name": "0x52685279…",
-      "qualified": false,
+      "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+      "name": "0x204f72f3…",
+      "qualified": true,
       "isWhale": false,
-      "market": "Atlanta Braves vs. New York Yankees",
-      "slug": "mlb-atl-nyy-2026-08-09",
+      "market": "CR Flamengo vs. EC Vitória: O/U 2.5",
+      "slug": "bra-fla-vit-2026-08-09-more-markets",
       "side": "BUY",
-      "outcome": "Atlanta Braves",
-      "price": 0.84,
-      "sizeUSD": 9519.05,
-      "ts": "2026-08-09T20:06:13+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x5268527977f700f9bf9b6d5cd843859e4e70135d",
-      "name": "0x52685279…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Atlanta Braves vs. New York Yankees",
-      "slug": "mlb-atl-nyy-2026-08-09",
-      "side": "BUY",
-      "outcome": "Atlanta Braves",
-      "price": 0.84,
-      "sizeUSD": 9367.06,
-      "ts": "2026-08-09T20:06:12+00:00",
+      "outcome": "Under",
+      "price": 0.43,
+      "sizeUSD": 8243.29,
+      "ts": "2026-08-09T23:16:27+00:00",
       "copyLagPP": null
     },
     {
@@ -342,6 +310,34 @@
       "price": 0.7699844961,
       "sizeUSD": 6450.0,
       "ts": "2026-08-09T20:46:10+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x2a69660046d7acc4ab204d7cc5ba78b0776cd2f7",
+      "name": "0x2a696600…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "CR Flamengo vs. EC Vitória: O/U 2.5",
+      "slug": "bra-fla-vit-2026-08-09-more-markets",
+      "side": "BUY",
+      "outcome": "Under",
+      "price": 0.43,
+      "sizeUSD": 6275.0,
+      "ts": "2026-08-09T23:16:27+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x122b758a408246a180efeb5ba654e21b553fac59",
+      "name": "0x122b758a…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "CR Flamengo vs. EC Vitória: O/U 2.5",
+      "slug": "bra-fla-vit-2026-08-09-more-markets",
+      "side": "BUY",
+      "outcome": "Over",
+      "price": 0.5496621041,
+      "sizeUSD": 5263.16,
+      "ts": "2026-08-09T23:16:25+00:00",
       "copyLagPP": null
     },
     {
@@ -373,20 +369,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x5268527977f700f9bf9b6d5cd843859e4e70135d",
-      "name": "0x52685279…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Atlanta Braves vs. New York Yankees",
-      "slug": "mlb-atl-nyy-2026-08-09",
-      "side": "BUY",
-      "outcome": "New York Yankees",
-      "price": 0.17,
-      "sizeUSD": 3744.5,
-      "ts": "2026-08-09T20:06:15+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
       "name": "0xd1ed1219…",
       "qualified": false,
@@ -415,6 +397,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x63305bba381f0a1957694e6cb084ce02005e6841",
+      "name": "0x63305bba…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Strait of Hormuz traffic returns to normal by September 30?",
+      "slug": "strait-of-hormuz-traffic-returns-to-normal-by-september-30-20260702154339440",
+      "side": "BUY",
+      "outcome": "Yes",
+      "price": 0.1774749162,
+      "sizeUSD": 3380.759443,
+      "ts": "2026-08-09T23:36:27+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x689f7d0a49d2646dc199848ffbdb4757242e259c",
       "name": "0x689f7d0a…",
       "qualified": false,
@@ -426,6 +422,20 @@
       "price": 0.42,
       "sizeUSD": 3293.34,
       "ts": "2026-08-09T22:16:24+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xbca08c1bc204a34f2fddbe47b438b9bd42ac9705",
+      "name": "0xbca08c1b…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Cleveland Guardians vs. Chicago White Sox: O/U 8.5",
+      "slug": "mlb-cle-cws-2026-08-09",
+      "side": "BUY",
+      "outcome": "Under",
+      "price": 0.9058139328,
+      "sizeUSD": 3232.098633,
+      "ts": "2026-08-09T23:26:25+00:00",
       "copyLagPP": null
     },
     {
@@ -471,6 +481,34 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x122b758a408246a180efeb5ba654e21b553fac59",
+      "name": "0x122b758a…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "CR Flamengo vs. EC Vitória: O/U 2.5",
+      "slug": "bra-fla-vit-2026-08-09-more-markets",
+      "side": "BUY",
+      "outcome": "Over",
+      "price": 0.5633046902,
+      "sizeUSD": 2687.09,
+      "ts": "2026-08-09T23:16:25+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+      "name": "0x204f72f3…",
+      "qualified": true,
+      "isWhale": false,
+      "market": "CR Flamengo vs. EC Vitória: O/U 2.5",
+      "slug": "bra-fla-vit-2026-08-09-more-markets",
+      "side": "BUY",
+      "outcome": "Under",
+      "price": 0.4299999999,
+      "sizeUSD": 2576.069766,
+      "ts": "2026-08-09T23:16:27+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x7072da163b82ffbb622211022f741a775d4369ac",
       "name": "0x7072da16…",
       "qualified": false,
@@ -485,31 +523,17 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
-      "name": "0x2005d16a…",
-      "qualified": true,
+      "wallet": "0xb4d250f58c26840e09723a83ce9c8149aa32ce99",
+      "name": "0xb4d250f5…",
+      "qualified": false,
       "isWhale": false,
-      "market": "Toronto Blue Jays vs. Philadelphia Phillies",
-      "slug": "mlb-tor-phi-2026-08-09",
-      "side": "BUY",
-      "outcome": "Philadelphia Phillies",
-      "price": 0.811,
-      "sizeUSD": 2420.0,
-      "ts": "2026-08-09T20:26:18+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
-      "name": "0x2005d16a…",
-      "qualified": true,
-      "isWhale": false,
-      "market": "Toronto Blue Jays vs. Philadelphia Phillies",
-      "slug": "mlb-tor-phi-2026-08-09",
-      "side": "BUY",
-      "outcome": "Philadelphia Phillies",
-      "price": 0.811,
-      "sizeUSD": 2420.0,
-      "ts": "2026-08-09T20:26:15+00:00",
+      "market": "Will CA Paranaense win on 2026-08-09?",
+      "slug": "bra-san-cap-2026-08-09",
+      "side": "SELL",
+      "outcome": "Yes",
+      "price": 0.999,
+      "sizeUSD": 2382.5,
+      "ts": "2026-08-09T23:26:27+00:00",
       "copyLagPP": null
     },
     {
@@ -541,20 +565,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0xb3cfe7615d64db8dfa743a1b1a2b976911460ebd",
-      "name": "0xb3cfe761…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Chicago Cubs vs. Kansas City Royals",
-      "slug": "mlb-chc-kc-2026-08-09",
-      "side": "BUY",
-      "outcome": "Kansas City Royals",
-      "price": 0.0031176574,
-      "sizeUSD": 2282.56,
-      "ts": "2026-08-09T20:16:15+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0xfc2f4f50ce2f6045d35558a5e2d8d4b2ac6610c7",
       "name": "0xfc2f4f50…",
       "qualified": false,
@@ -580,6 +590,20 @@
       "price": 0.4899376932,
       "sizeUSD": 2086.45,
       "ts": "2026-08-09T21:11:39+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x709179e7392e59922ab2d73cb1141698b30096f8",
+      "name": "0x709179e7…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will San Diego FC win on 2026-08-09?",
+      "slug": "lec-sdg-tij-2026-08-09",
+      "side": "BUY",
+      "outcome": "Yes",
+      "price": 0.52,
+      "sizeUSD": 2085.37,
+      "ts": "2026-08-09T22:46:21+00:00",
       "copyLagPP": null
     },
     {
@@ -625,20 +649,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x8d7e6bacd880bec31bea4a6717eb2d7678864bb1",
-      "name": "0x8d7e6bac…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will SE Palmeiras win on 2026-08-09? AND Will CR Flamengo win on 2026-08-09? AND Will EC Bahia win on 2026-08-09? AND Will Santos FC vs. CA Paranaense end in a draw? AND Will SC Corinthians Paulista win on 2026-08-09?",
-      "slug": null,
-      "side": "BUY",
-      "outcome": null,
-      "price": 0.012089999,
-      "sizeUSD": 1970.491475,
-      "ts": "2026-08-09T20:06:40+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x996ac56c9e72b6ca38a30ae9f6e85152d9afe3cc",
       "name": "0x996ac56c…",
       "qualified": false,
@@ -664,20 +674,6 @@
       "price": 0.26,
       "sizeUSD": 1872.58,
       "ts": "2026-08-09T22:06:24+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x151a14d7d6e33146e92b6cf53eea8da596ebe86c",
-      "name": "0x151a14d7…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will the Communist Party of the Russian Federation (KPRF) win the most seats in the next Russian parliamentary election?",
-      "slug": "russia-parliamentary-election-winner",
-      "side": "BUY",
-      "outcome": "Yes",
-      "price": 0.003,
-      "sizeUSD": 1800.0,
-      "ts": "2026-08-09T20:36:12+00:00",
       "copyLagPP": null
     },
     {
@@ -734,20 +730,6 @@
       "price": 0.51,
       "sizeUSD": 1626.53,
       "ts": "2026-08-09T20:56:18+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
-      "name": "0x204f72f3…",
-      "qualified": true,
-      "isWhale": false,
-      "market": "Toronto Blue Jays vs. Philadelphia Phillies: O/U 11.5",
-      "slug": "mlb-tor-phi-2026-08-09",
-      "side": "BUY",
-      "outcome": "Under",
-      "price": 0.6799999998,
-      "sizeUSD": 1608.308821,
-      "ts": "2026-08-09T20:36:13+00:00",
       "copyLagPP": null
     },
     {
@@ -821,6 +803,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x5268527977f700f9bf9b6d5cd843859e4e70135d",
+      "name": "0x52685279…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "National Bank Open: Joao Fonseca vs Ben Shelton",
+      "slug": "atp-fonseca-shelton-2026-08-10",
+      "side": "BUY",
+      "outcome": "Ben Shelton",
+      "price": 0.62,
+      "sizeUSD": 1353.0,
+      "ts": "2026-08-09T22:46:24+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x694da87a3d29e40e52ac6135db04290c2e07e762",
       "name": "0x694da87a…",
       "qualified": false,
@@ -849,20 +845,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
-      "name": "0x204f72f3…",
-      "qualified": true,
-      "isWhale": false,
-      "market": "Toronto Blue Jays vs. Philadelphia Phillies: O/U 11.5",
-      "slug": "mlb-tor-phi-2026-08-09",
-      "side": "BUY",
-      "outcome": "Under",
-      "price": 0.6699999999,
-      "sizeUSD": 1260.791042,
-      "ts": "2026-08-09T20:36:07+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x161a7f666ca49d592848cf415b42f49a84714103",
       "name": "0x161a7f66…",
       "qualified": false,
@@ -888,6 +870,20 @@
       "price": 0.2599999995,
       "sizeUSD": 1153.846152,
       "ts": "2026-08-09T21:26:12+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x076daa87c4fe1a85402a9b6b8e0a866224388d4c",
+      "name": "0x076daa87…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "CR Flamengo vs. EC Vitória: O/U 2.5",
+      "slug": "bra-fla-vit-2026-08-09-more-markets",
+      "side": "BUY",
+      "outcome": "Under",
+      "price": 0.4299999998,
+      "sizeUSD": 1127.279068,
+      "ts": "2026-08-09T23:16:27+00:00",
       "copyLagPP": null
     },
     {
@@ -947,17 +943,17 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
-      "name": "0x204f72f3…",
-      "qualified": true,
+      "wallet": "0xbca08c1bc204a34f2fddbe47b438b9bd42ac9705",
+      "name": "0xbca08c1b…",
+      "qualified": false,
       "isWhale": false,
-      "market": "Sport Lisboa e Benfica vs. Académico de Viseu FC: O/U 3.5",
-      "slug": "por-ben-acv-2026-08-09-total-3pt5",
+      "market": "Spread: Chicago White Sox (-1.5)",
+      "slug": "mlb-cle-cws-2026-08-09",
       "side": "BUY",
-      "outcome": "Under",
-      "price": 0.55,
-      "sizeUSD": 1005.0,
-      "ts": "2026-08-09T20:06:15+00:00",
+      "outcome": "Chicago White Sox",
+      "price": 0.9698993239,
+      "sizeUSD": 1010.17,
+      "ts": "2026-08-09T23:26:25+00:00",
       "copyLagPP": null
     },
     {
@@ -975,6 +971,6 @@
       "copyLagPP": null
     }
   ],
-  "generatedAt": "2026-08-09 22:44 UTC",
+  "generatedAt": "2026-08-09 23:42 UTC",
   "note": "Ehrliches Copy-Trading: Bilanz selbst nachgerechnet (nicht dem Leaderboard glauben), Ein-Treffer-Wunder/Inaktive/Verlierer gefiltert, und der Copy-Lag ausgewiesen — die Kosten, die entstehen, weil der Wal mit seiner Order den Preis selbst bewegt."
 }
