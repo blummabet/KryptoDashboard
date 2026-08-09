@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-09 20:47 UTC",
+  "generatedAt": "2026-08-09 21:43 UTC",
   "scanned": 600,
-  "count": 13,
+  "count": 12,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -173,10 +173,44 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.045,
-      "grossPP": 95.5,
-      "feePP": 0.22,
-      "netPP": 95.28,
+      "sumProb": 0.103,
+      "grossPP": 89.7,
+      "feePP": 0.52,
+      "netPP": 89.19,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xc0907531709bfa9be6679054e11ab9b15f4fe58b54a84a4ea12f64760b6c7d00",
+      "event": "Eurozone Annual Inflation 2026",
+      "slug": "eurozone-2026-annual-inflation",
+      "endDate": "2027-01-19T00:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "1.9–2.1%",
+          "bid": 0.009,
+          "ask": 0.055
+        },
+        {
+          "name": "1.0–1.2%",
+          "bid": 0.016,
+          "ask": 0.044
+        },
+        {
+          "name": "1.3–1.5%",
+          "bid": 0.003,
+          "ask": 0.004
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.114,
+      "grossPP": 88.6,
+      "feePP": 0.57,
+      "netPP": 88.03,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb494d4000f5ef0d4b1c180c3095c4303e7c19175bceb561bc1e576c4e588bf00",
@@ -189,29 +223,29 @@
       "tradable": false,
       "top": [
         {
+          "name": "140-159",
+          "bid": 0.07,
+          "ask": 0.08
+        },
+        {
           "name": "120-139",
           "bid": 0.013,
-          "ask": 0.019
+          "ask": 0.014
         },
         {
           "name": "280-299",
-          "bid": 0.009,
-          "ask": 0.01
-        },
-        {
-          "name": "100-119",
-          "bid": 0.003,
-          "ask": 0.005
-        },
-        {
-          "name": "300-319",
-          "bid": 0.004,
-          "ask": 0.005
+          "bid": 0.011,
+          "ask": 0.012
         },
         {
           "name": "320-339",
           "bid": 0.002,
-          "ask": 0.004
+          "ask": 0.003
+        },
+        {
+          "name": "100-119",
+          "bid": 0.002,
+          "ask": 0.003
         },
         {
           "name": "340-359",
@@ -222,137 +256,25 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.12,
-      "grossPP": 88.0,
-      "feePP": 0.6,
-      "netPP": 87.4,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xacf869481dee7eaa4fcbdee191a35218a3182770d42eed615577ddb3403a9800",
-      "event": "Highest temperature in NYC on August 9?",
-      "slug": "highest-temperature-in-nyc-on-august-9-2026",
-      "endDate": "2026-08-09T12:00:00Z",
-      "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "92-93°F",
-          "bid": 0.07,
-          "ask": 0.11
-        },
-        {
-          "name": "94-95°F",
-          "bid": 0.001,
-          "ask": 0.009
-        },
-        {
-          "name": "88-89°F",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.179,
-      "grossPP": 82.1,
-      "feePP": 0.9,
-      "netPP": 81.2,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xae49a2410bf3aca5c0150820936fd1326b98e3dfe2c921ff71315bb55069e800",
-      "event": "Highest temperature in Hong Kong on August 10?",
-      "slug": "highest-temperature-in-hong-kong-on-august-10-2026",
-      "endDate": "2026-08-10T12:00:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "34°C",
-          "bid": 0.13,
-          "ask": 0.14
-        },
-        {
-          "name": "33°C",
-          "bid": 0.006,
-          "ask": 0.02
-        },
-        {
-          "name": "38°C",
-          "bid": 0.01,
-          "ask": 0.019
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.288,
-      "grossPP": 71.2,
-      "feePP": 1.44,
-      "netPP": 69.76,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
-      "event": "Ballon d'Or Winner 2026",
-      "slug": "ballon-dor-winner-2026",
-      "endDate": "2026-10-31T00:00:00Z",
-      "n": 5,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Lamine Yamal",
-          "bid": 0.176,
-          "ask": 0.179
-        },
-        {
-          "name": "Kylian Mbappé",
-          "bid": 0.08,
-          "ask": 0.081
-        },
-        {
-          "name": "Lionel Messi",
-          "bid": 0.02,
-          "ask": 0.021
-        },
-        {
-          "name": "Erling Haaland",
-          "bid": 0.003,
-          "ask": 0.004
-        },
-        {
-          "name": "Michael Olise",
-          "bid": 0.002,
-          "ask": 0.003
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.295,
-      "grossPP": 70.5,
-      "feePP": 1.18,
-      "netPP": 69.32,
+      "sumProb": 0.189,
+      "grossPP": 81.1,
+      "feePP": 0.76,
+      "netPP": 80.34,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 7,
+      "n": 8,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "JD Vance",
-          "bid": 0.214,
-          "ask": 0.215
+          "name": "Alexandria Ocasio-Cortez",
+          "bid": 0.093,
+          "ask": 0.102
         },
         {
           "name": "Kamala Harris",
@@ -370,12 +292,56 @@
           "ask": 0.009
         },
         {
+          "name": "Jamie Dimon",
+          "bid": 0.006,
+          "ask": 0.007
+        },
+        {
           "name": "Eric Trump",
           "bid": 0.002,
           "ask": 0.003
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.286,
+      "grossPP": 71.4,
+      "feePP": 1.43,
+      "netPP": 69.97,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
+      "event": "Ballon d'Or Winner 2026",
+      "slug": "ballon-dor-winner-2026",
+      "endDate": "2026-10-31T00:00:00Z",
+      "n": 5,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Lamine Yamal",
+          "bid": 0.176,
+          "ask": 0.178
         },
         {
-          "name": "Zohran Mamdani",
+          "name": "Kylian Mbappé",
+          "bid": 0.08,
+          "ask": 0.081
+        },
+        {
+          "name": "Lionel Messi",
+          "bid": 0.019,
+          "ask": 0.02
+        },
+        {
+          "name": "Erling Haaland",
+          "bid": 0.003,
+          "ask": 0.004
+        },
+        {
+          "name": "Michael Olise",
           "bid": 0.002,
           "ask": 0.003
         }
@@ -490,17 +456,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.72,
-      "grossPP": 28.0,
-      "feePP": 3.5,
-      "netPP": 24.5,
+      "sumProb": 0.711,
+      "grossPP": 28.9,
+      "feePP": 3.46,
+      "netPP": 25.45,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x7db74de8403823823d4624b19d2b08fcbe53edc54e46c4765156543179a61100",
       "event": "2026 Men’s US Open Winner (Tennis)",
       "slug": "2026-mens-us-open-winner-tennis",
       "endDate": "2026-09-13T00:00:00Z",
-      "n": 7,
+      "n": 6,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -531,9 +497,9 @@
           "ask": 0.016
         },
         {
-          "name": "Felix Auger Aliassime",
-          "bid": 0.008,
-          "ask": 0.009
+          "name": "Jiri Lehecka",
+          "bid": 0.006,
+          "ask": 0.007
         }
       ]
     }
