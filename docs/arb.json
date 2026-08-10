@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-09T23:41:55Z",
-  "count": 3,
+  "generatedAt": "2026-08-10T02:29:42Z",
+  "count": 2,
   "tradableCount": 0,
   "basketFindings": [],
   "basketCount": 0,
@@ -10,23 +10,34 @@
     "summary": {
       "mode": "PAPER / DRY-RUN",
       "totalPnl": 201.78,
-      "realizedPnl": 200.95,
-      "lockedOpen": 0.83,
-      "openCount": 1,
-      "closedCount": 5,
+      "realizedPnl": 201.78,
+      "lockedOpen": 0,
+      "openCount": 0,
+      "closedCount": 6,
       "winRate": 1.0,
       "stakeUSD": 100.0
     },
-    "open": [
-      {
-        "label": "dip $62,500 bis 2026-09-01 (100%) ↔ dip $65,000 bis 2026-09-01 (50%) verletzt Monotonie",
-        "gapPP": 0.9,
-        "cost": 0.991,
-        "lockedMin": 0.83,
-        "entryTs": "2026-08-09T16:49:33Z"
-      }
-    ],
+    "open": [],
     "closed": [
+      {
+        "key": "0x072818b6480abb66a11c5fbc3325cfda7cf0d8b176c271b7607be84d4e8a619a|0xc5adcfd699ac8f48280df64036d83be87a83b7a082e92fdcd10a79bb9e7aae77",
+        "status": "CLOSED",
+        "entryTs": "2026-08-09T16:49:33Z",
+        "label": "dip $62,500 bis 2026-09-01 (100%) ↔ dip $65,000 bis 2026-09-01 (50%) verletzt Monotonie",
+        "supersetCid": "0x072818b6480abb66a11c5fbc3325cfda7cf0d8b176c271b7607be84d4e8a619a",
+        "subsetCid": "0xc5adcfd699ac8f48280df64036d83be87a83b7a082e92fdcd10a79bb9e7aae77",
+        "supP": 0.99,
+        "subP": 0.999,
+        "cost": 0.991,
+        "gapPP": 0.9,
+        "shares": 100.91,
+        "feePaid": 0.08,
+        "lockedMin": 0.83,
+        "exitTs": "2026-08-10T02:29:42Z",
+        "payoff": 1.0,
+        "realizedPnl": 0.83,
+        "roiPct": 0.8
+      },
       {
         "key": "0x14ea3802ada17265002bff37ddc4ea65014d3e37cb80ef2ea8aa2f588a5f78bc|0x94ffe3d2cb1d82da14d0131547415c2fd5d3573eb82cff842738c915d7201b44",
         "status": "CLOSED",
@@ -123,7 +134,14 @@
         "roiPct": 67.1
       }
     ],
-    "activity": []
+    "activity": [
+      {
+        "ts": "2026-08-10T02:29:42Z",
+        "type": "settle",
+        "market": "dip $62,500 bis 2026-09-01 (100%) ↔ dip $65,000 bis 2026-09-01 (50%) verletzt Monotonie",
+        "pnl": 0.83
+      }
+    ]
   },
   "findings": [
     {
@@ -145,38 +163,20 @@
       "note": "erreicht $180,000 bis 2027-01-01 (2%) ↔ erreicht $190,000 bis 2027-01-01 (2%) verletzt Monotonie"
     },
     {
-      "family": "touch",
-      "date": "2026-09-01",
-      "direction": "below",
-      "lowStrike": 62500,
-      "highStrike": 65000,
-      "lowP": 1.0,
-      "highP": 0.9995,
-      "lowCid": "0xc5adcfd699ac8f48280df64036d83be87a83b7a082e92fdcd10a79bb9e7aae77",
-      "highCid": "0x072818b6480abb66a11c5fbc3325cfda7cf0d8b176c271b7607be84d4e8a619a",
-      "lowBid": 0.999,
-      "lowAsk": 1,
-      "highBid": 0.999,
-      "highAsk": 1,
-      "gapPP": 0.05,
-      "tradable": false,
-      "note": "dip $62,500 bis 2026-09-01 (100%) ↔ dip $65,000 bis 2026-09-01 (100%) verletzt Monotonie"
-    },
-    {
       "family": "above",
       "date": "2026-08-13",
       "direction": "above",
       "lowStrike": 70000,
       "highStrike": 72000,
       "lowP": 0.012,
-      "highP": 0.0125,
+      "highP": 0.013,
       "lowCid": "0xe0e2efb11cc6c0d6093ca3537a5d3e44ac39bf0622910cf0ccb9bbb6a53586f2",
       "highCid": "0x25f7f79ba51fb8254689275a5da52d90d7cb441697d140b2b2494852e9e03ed6",
       "lowBid": 0.005,
       "lowAsk": 0.019,
-      "highBid": 0.002,
+      "highBid": 0.003,
       "highAsk": 0.023,
-      "gapPP": 0.05,
+      "gapPP": 0.1,
       "tradable": false,
       "note": "über $70,000 · 2026-08-13 (1%) ↔ über $72,000 · 2026-08-13 (1%) verletzt Monotonie"
     }
