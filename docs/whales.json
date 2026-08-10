@@ -14,6 +14,23 @@
   },
   "wallets": [
     {
+      "resolved": 19990,
+      "uniqueMarkets": 3717,
+      "roi": 53.45,
+      "pnl": 23198368.0,
+      "winRate": 55.9,
+      "volume": 2309493.0,
+      "inactiveDays": 0.0,
+      "oneHit": false,
+      "biggestWin": 211145.38,
+      "qualified": true,
+      "rejectReasons": [],
+      "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+      "name": "0x204f72f3…",
+      "firstTrade": "2026-06-13",
+      "lastTrade": "2026-08-10"
+    },
+    {
       "resolved": 19958,
       "uniqueMarkets": 6523,
       "roi": 8.58,
@@ -48,30 +65,13 @@
       "lastTrade": "2026-06-30"
     },
     {
-      "resolved": 19988,
-      "uniqueMarkets": 3416,
-      "roi": 1.3,
-      "pnl": 23198558.38,
-      "winRate": 57.1,
-      "volume": 1782856337.0,
-      "inactiveDays": 2.8,
-      "oneHit": false,
-      "biggestWin": 536824.24,
-      "qualified": true,
-      "rejectReasons": [],
-      "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
-      "name": "0x204f72f3…",
-      "firstTrade": "2026-06-14",
-      "lastTrade": "2026-08-07"
-    },
-    {
       "resolved": 2,
       "uniqueMarkets": 4,
       "roi": 68.24,
       "pnl": 9063378.0,
       "winRate": 100.0,
       "volume": 3696321.0,
-      "inactiveDays": 55.9,
+      "inactiveDays": 56.0,
       "oneHit": true,
       "biggestWin": 4750526.65,
       "qualified": false,
@@ -93,7 +93,7 @@
       "pnl": 8709973.0,
       "winRate": 87.5,
       "volume": 4641881.0,
-      "inactiveDays": 636.1,
+      "inactiveDays": 636.2,
       "oneHit": false,
       "biggestWin": 4281504.88,
       "qualified": false,
@@ -114,7 +114,7 @@
       "pnl": 9238345.0,
       "winRate": 100.0,
       "volume": 8279554.0,
-      "inactiveDays": 55.6,
+      "inactiveDays": 55.7,
       "oneHit": true,
       "biggestWin": 7336119.47,
       "qualified": false,
@@ -136,7 +136,7 @@
       "pnl": 22053933.75,
       "winRate": 81.8,
       "volume": 43065780.0,
-      "inactiveDays": 633.3,
+      "inactiveDays": 633.4,
       "oneHit": false,
       "biggestWin": 8303171.23,
       "qualified": false,
@@ -178,7 +178,7 @@
       "pnl": 8928561.0,
       "winRate": 83.3,
       "volume": 11802251.0,
-      "inactiveDays": 51.5,
+      "inactiveDays": 51.6,
       "oneHit": true,
       "biggestWin": 5922681.53,
       "qualified": false,
@@ -197,10 +197,10 @@
       "resolved": 66,
       "uniqueMarkets": 55,
       "roi": 21.87,
-      "pnl": 16619507.0,
+      "pnl": 16619506.63,
       "winRate": 60.6,
-      "volume": 411257553.0,
-      "inactiveDays": 633.3,
+      "volume": 76615701.0,
+      "inactiveDays": 633.4,
       "oneHit": true,
       "biggestWin": 9710283.25,
       "qualified": false,
@@ -311,6 +311,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0xa309f903dbbd559e87d8d368834b8e41355c4cf2",
+      "name": "0xa309f903…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will the Fed decrease interest rates by 50+ bps after the September 2026 meeting?",
+      "slug": "fed-decision-in-september-762",
+      "side": "SELL",
+      "outcome": "Yes",
+      "price": 0.008,
+      "sizeUSD": 6349.73,
+      "ts": "2026-08-10T18:47:24+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0xe1000ddb5f5025849765e29d051dfff78f5d4d41",
       "name": "0xe1000ddb…",
       "qualified": false,
@@ -353,20 +367,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x51ad675fcb07c4b690501aea44605f798ede5e56",
-      "name": "0x51ad675f…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Todi: Murkel Dellien vs Daniel Galan",
-      "slug": "atp-dellie-galan-2026-08-10",
-      "side": "BUY",
-      "outcome": "Daniel Galan",
-      "price": 0.9972859592,
-      "sizeUSD": 5013.607,
-      "ts": "2026-08-10T15:37:12+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x2a69660046d7acc4ab204d7cc5ba78b0776cd2f7",
       "name": "0x2a696600…",
       "qualified": false,
@@ -378,6 +378,20 @@
       "price": 0.14,
       "sizeUSD": 4841.8,
       "ts": "2026-08-10T16:07:18+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x9cb990f1862568a63d8601efeebe0304225c32f2",
+      "name": "0x9cb990f1…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "National Bank Open: Rafael Jodar vs Arthur Fils",
+      "slug": "atp-jodar-fils-2026-08-11",
+      "side": "BUY",
+      "outcome": "Rafael Jodar",
+      "price": 0.54,
+      "sizeUSD": 4500.0,
+      "ts": "2026-08-10T18:07:25+00:00",
       "copyLagPP": null
     },
     {
@@ -406,20 +420,6 @@
       "price": 0.0094224335,
       "sizeUSD": 3847.28,
       "ts": "2026-08-10T16:57:19+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x3d0a2cfe37769d915b40c49fe85b3602d53e1bd3",
-      "name": "0x3d0a2cfe…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Hamburg: Cezar Cretu vs Marvin Moeller",
-      "slug": "atp-cretu-moelle-2026-08-10",
-      "side": "SELL",
-      "outcome": "Marvin Moeller",
-      "price": 0.5211545522,
-      "sizeUSD": 3403.38,
-      "ts": "2026-08-10T15:37:18+00:00",
       "copyLagPP": null
     },
     {
@@ -462,6 +462,20 @@
       "price": 0.94,
       "sizeUSD": 2882.978716,
       "ts": "2026-08-10T16:07:10+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xb3cf15f10ce065bab2f8857a1c49b85ddc5e4723",
+      "name": "0xb3cf15f1…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will there be no change in Fed interest rates after the September 2026 meeting?",
+      "slug": "fed-decision-in-september-762",
+      "side": "SELL",
+      "outcome": "Yes",
+      "price": 0.54,
+      "sizeUSD": 2700.0,
+      "ts": "2026-08-10T18:57:16+00:00",
       "copyLagPP": null
     },
     {
@@ -591,34 +605,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x1d603dad31fac599c1de6b6002d066993460453d",
-      "name": "0x1d603dad…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Hamburg: Cezar Cretu vs Marvin Moeller",
-      "slug": "atp-cretu-moelle-2026-08-10",
-      "side": "BUY",
-      "outcome": "Marvin Moeller",
-      "price": 0.5393186247,
-      "sizeUSD": 1854.19148,
-      "ts": "2026-08-10T15:37:19+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x4773906be5973bc5cf2b77436da04ead4d152289",
-      "name": "0x4773906b…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Todi: Murkel Dellien vs Daniel Galan",
-      "slug": "atp-dellie-galan-2026-08-10",
-      "side": "BUY",
-      "outcome": "Daniel Galan",
-      "price": 0.92,
-      "sizeUSD": 1820.32,
-      "ts": "2026-08-10T15:22:16+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x9c0331b72169045e4dcdaf3bd88bf4f4700d522d",
       "name": "0x9c0331b7…",
       "qualified": false,
@@ -731,6 +717,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0xad2f5bf835fee93d6e7403a274cdc40f7a2dac6a",
+      "name": "0xad2f5bf8…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Dota 2: Yellow Submarine vs Level UP (BO3) - EPL Masters Playoffs",
+      "slug": "dota2-yes-lvlup1-2026-08-10",
+      "side": "BUY",
+      "outcome": "Level UP",
+      "price": 0.9869382371,
+      "sizeUSD": 1444.88,
+      "ts": "2026-08-10T18:17:12+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x306602dba8a0db274e938b2ef334a559e5b2693a",
       "name": "0x306602db…",
       "qualified": false,
@@ -745,20 +745,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x0d874197406ca18d05d49c453ca07731c8bce214",
-      "name": "0x0d874197…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "LoL: SK Gaming vs Team Vitality - Game 1 Winner",
-      "slug": "lol-sk-vit-2026-08-10",
-      "side": "BUY",
-      "outcome": "Team Vitality",
-      "price": 0.5599999997,
-      "sizeUSD": 1392.85714,
-      "ts": "2026-08-10T15:17:12+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0xd84aad0777e7cb621ca1658189790fbe446ff2a1",
       "name": "0xd84aad07…",
       "qualified": false,
@@ -770,6 +756,20 @@
       "price": 0.0369999993,
       "sizeUSD": 1351.35135,
       "ts": "2026-08-10T17:57:19+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x71bf058ed10d26ec55b19cc4f539b869ac72f6ed",
+      "name": "0x71bf058e…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Norrby IF vs. Orebro SK: O/U 2.5",
+      "slug": "swe2-nor-osk-2026-08-10-more-markets",
+      "side": "SELL",
+      "outcome": "Over",
+      "price": 0.999,
+      "sizeUSD": 1346.15,
+      "ts": "2026-08-10T18:27:18+00:00",
       "copyLagPP": null
     },
     {
@@ -843,17 +843,17 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x5268527977f700f9bf9b6d5cd843859e4e70135d",
-      "name": "0x52685279…",
+      "wallet": "0xb1cab0980a363688dfc674dc7f5288ed9acab14f",
+      "name": "0xb1cab098…",
       "qualified": false,
       "isWhale": false,
-      "market": "Todi: Murkel Dellien vs Daniel Galan",
-      "slug": "atp-dellie-galan-2026-08-10",
+      "market": "Bitcoin Up or Down - August 10, 2:35PM-2:40PM ET",
+      "slug": "btc-updown-5m-1786386900",
       "side": "BUY",
-      "outcome": "Daniel Galan",
-      "price": 0.72,
-      "sizeUSD": 1079.45,
-      "ts": "2026-08-10T15:17:15+00:00",
+      "outcome": "Up",
+      "price": 0.0899503442,
+      "sizeUSD": 1079.43,
+      "ts": "2026-08-10T18:37:21+00:00",
       "copyLagPP": null
     },
     {
@@ -882,6 +882,20 @@
       "price": 0.49,
       "sizeUSD": 1030.0,
       "ts": "2026-08-10T16:07:15+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
+      "name": "0x2005d16a…",
+      "qualified": true,
+      "isWhale": false,
+      "market": "Vasteraas SK vs. Djurgardens IF: O/U 2.5",
+      "slug": "swe-vas-dju-2026-08-10-more-markets",
+      "side": "BUY",
+      "outcome": "Under",
+      "price": 0.58,
+      "sizeUSD": 1029.29,
+      "ts": "2026-08-10T18:17:12+00:00",
       "copyLagPP": null
     },
     {
@@ -939,22 +953,8 @@
       "sizeUSD": 1000.0,
       "ts": "2026-08-10T16:07:18+00:00",
       "copyLagPP": null
-    },
-    {
-      "wallet": "0x9238743eeba8bbfe9e85ac7ba2e1e3d77877b73e",
-      "name": "0x9238743e…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will Ukraine re-enter Rodynske by September 30, 2026?",
-      "slug": "will-ukraine-re-enter-rodynske-by-september-30-2026-20260724164113824",
-      "side": "BUY",
-      "outcome": "Yes",
-      "price": 0.10441565,
-      "sizeUSD": 1000.0,
-      "ts": "2026-08-10T15:37:16+00:00",
-      "copyLagPP": null
     }
   ],
-  "generatedAt": "2026-08-10 18:01 UTC",
+  "generatedAt": "2026-08-10 19:12 UTC",
   "note": "Ehrliches Copy-Trading: Bilanz selbst nachgerechnet (nicht dem Leaderboard glauben), Ein-Treffer-Wunder/Inaktive/Verlierer gefiltert, und der Copy-Lag ausgewiesen — die Kosten, die entstehen, weil der Wal mit seiner Order den Preis selbst bewegt."
 }
