@@ -2,15 +2,15 @@
   "summary": {
     "enabled": true,
     "feedCount": 50,
-    "whaleTradeCount": 1,
-    "biggestTradeUSD": 75654,
+    "whaleTradeCount": 0,
+    "biggestTradeUSD": 10000,
     "whaleMinUSD": 25000,
-    "walletsProbed": 13,
-    "qualifiedCount": 4,
+    "walletsProbed": 12,
+    "qualifiedCount": 3,
     "rejectedCount": 9,
-    "avgCopyLagPP": 0.5,
-    "lagSample": 1,
-    "verdict": "Kopieren kostet im Schnitt 0.50pp pro echtem Whale-Trade"
+    "avgCopyLagPP": null,
+    "lagSample": 0,
+    "verdict": "keine ≥$25k-Whale-Trades qualifizierter Wale im Fenster — echte Wale sind selten"
   },
   "wallets": [
     {
@@ -20,7 +20,7 @@
       "pnl": 12673638.29,
       "winRate": 56.5,
       "volume": 1042572023.0,
-      "inactiveDays": 3.5,
+      "inactiveDays": 3.6,
       "oneHit": false,
       "biggestWin": 224114.64,
       "qualified": true,
@@ -37,7 +37,7 @@
       "pnl": 11386690.88,
       "winRate": 52.6,
       "volume": 298637139.0,
-      "inactiveDays": 40.7,
+      "inactiveDays": 40.8,
       "oneHit": false,
       "biggestWin": 1095000.0,
       "qualified": true,
@@ -46,23 +46,6 @@
       "name": "0x6a72f618…",
       "firstTrade": "2025-06-26",
       "lastTrade": "2026-06-30"
-    },
-    {
-      "resolved": 1240,
-      "uniqueMarkets": 1026,
-      "roi": 2.93,
-      "pnl": 1633569.1,
-      "winRate": 84.0,
-      "volume": 171213675.0,
-      "inactiveDays": 6.4,
-      "oneHit": false,
-      "biggestWin": 53110.78,
-      "qualified": true,
-      "rejectReasons": [],
-      "wallet": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
-      "name": "0x000d257d…",
-      "firstTrade": "2020-11-09",
-      "lastTrade": "2026-08-04"
     },
     {
       "resolved": 19988,
@@ -237,7 +220,7 @@
       "pnl": 8052184.54,
       "winRate": 66.7,
       "volume": 72132443.0,
-      "inactiveDays": 26.8,
+      "inactiveDays": 26.9,
       "oneHit": true,
       "biggestWin": 6096744.94,
       "qualified": false,
@@ -271,34 +254,6 @@
     }
   ],
   "feed": [
-    {
-      "wallet": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
-      "name": "0x000d257d…",
-      "qualified": true,
-      "isWhale": true,
-      "market": "US announces end of Iranian blockade by August 10, 2026?",
-      "slug": "us-announces-end-of-iranian-blockade-by-august-10-2026",
-      "side": "BUY",
-      "outcome": "No",
-      "price": 0.989515062,
-      "sizeUSD": 75654.41,
-      "ts": "2026-08-10T14:32:12+00:00",
-      "copyLagPP": 0.5
-    },
-    {
-      "wallet": "0xfe787d2da716d60e8acff57fb87eb13cd4d10319",
-      "name": "0xfe787d2d…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Spread: Arizona Diamondbacks (-1.5)",
-      "slug": "mlb-col-ari-2026-08-10",
-      "side": "BUY",
-      "outcome": "Arizona Diamondbacks",
-      "price": 0.47,
-      "sizeUSD": 24308.7,
-      "ts": "2026-08-10T15:07:18+00:00",
-      "copyLagPP": null
-    },
     {
       "wallet": "0xa4b7b1814b0da33f2b61be4939976898aa476008",
       "name": "0xa4b7b181…",
@@ -398,20 +353,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x076daa87c4fe1a85402a9b6b8e0a866224388d4c",
-      "name": "0x076daa87…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Todi: Murkel Dellien vs Daniel Galan",
-      "slug": "atp-dellie-galan-2026-08-10",
-      "side": "BUY",
-      "outcome": "Murkel Dellien",
-      "price": 0.4299999999,
-      "sizeUSD": 5209.232557,
-      "ts": "2026-08-10T14:34:52+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x51ad675fcb07c4b690501aea44605f798ede5e56",
       "name": "0x51ad675f…",
       "qualified": false,
@@ -468,20 +409,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
-      "name": "0x000d257d…",
-      "qualified": true,
-      "isWhale": false,
-      "market": "US announces end of Iranian blockade by August 12, 2026?",
-      "slug": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
-      "side": "BUY",
-      "outcome": "No",
-      "price": 0.97231319,
-      "sizeUSD": 3761.04,
-      "ts": "2026-08-10T14:34:52+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x3d0a2cfe37769d915b40c49fe85b3602d53e1bd3",
       "name": "0x3d0a2cfe…",
       "qualified": false,
@@ -493,20 +420,6 @@
       "price": 0.5211545522,
       "sizeUSD": 3403.38,
       "ts": "2026-08-10T15:37:18+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xd1ef1cf69c0419f82a34c019da9c442d3bd08fc2",
-      "name": "0xd1ef1cf6…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Dana White's Contender Series: Joe Kropschot vs. Jon Kunneman (Middleweight, Main Card) AND Dana White's Contender Series: Bilal Hasan vs. Mridul Saikia (Flyweight, Main Card) AND Dana White's Contender Series: Abe Alsaghir vs. Fabrizio Escarrega (Lightweight, Main Card) AND Dana White's Contender Series: Tom Pagliarulo vs. Ananias Mulumba (Featherweight, Main Card) AND Dana White's Contender Series: Anthony Wint vs. Matt Adams (Heavyweight, Main Card)",
-      "slug": null,
-      "side": "BUY",
-      "outcome": null,
-      "price": 0.2295340246,
-      "sizeUSD": 3356.03648,
-      "ts": "2026-08-10T14:47:12+00:00",
       "copyLagPP": null
     },
     {
@@ -535,20 +448,6 @@
       "price": 0.987,
       "sizeUSD": 3000.0,
       "ts": "2026-08-10T16:57:22+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x839623e88c4f80b6c9e3e91150590890f2068123",
-      "name": "0x839623e8…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Bitcoin Up or Down - August 10, 10:30AM-10:35AM ET",
-      "slug": "btc-updown-5m-1786372200",
-      "side": "BUY",
-      "outcome": "Down",
-      "price": 0.01,
-      "sizeUSD": 3000.0,
-      "ts": "2026-08-10T14:34:58+00:00",
       "copyLagPP": null
     },
     {
@@ -608,17 +507,45 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x29788995bd3d54faec1c4cf8b37f564793deb511",
-      "name": "0x29788995…",
+      "wallet": "0xe5047b7b7eb66eafdc80540048c31227f641600e",
+      "name": "0xe5047b7b…",
       "qualified": false,
       "isWhale": false,
-      "market": "Hamburg: Cezar Cretu vs Marvin Moeller",
-      "slug": "atp-cretu-moelle-2026-08-10",
+      "market": "LoL: Natus Vincere vs G2 Esports - Game 1 Winner",
+      "slug": "lol-navi-g2-2026-08-10-game1",
       "side": "BUY",
-      "outcome": "Cezar Cretu",
-      "price": 0.0403650771,
-      "sizeUSD": 2477.389023,
-      "ts": "2026-08-10T14:47:09+00:00",
+      "outcome": "Natus Vincere",
+      "price": 0.568555936,
+      "sizeUSD": 2386.39,
+      "ts": "2026-08-10T17:07:22+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xb62f2a7f53dfbd4da0f1ddb055a9cc1378771978",
+      "name": "0xb62f2a7f…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "LoL: Bulldog Esports vs B2U - Game 1 Winner",
+      "slug": "lol-bld-b2u-2026-08-10-game1",
+      "side": "SELL",
+      "outcome": "B2U",
+      "price": 0.999,
+      "sizeUSD": 2315.4,
+      "ts": "2026-08-10T17:47:19+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x3471a897e56a8d3621ca79af87dae4325977f17e",
+      "name": "0x3471a897…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "LoL: Natus Vincere vs G2 Esports - Game 1 Winner",
+      "slug": "lol-navi-g2-2026-08-10-game1",
+      "side": "BUY",
+      "outcome": "Natus Vincere",
+      "price": 0.28,
+      "sizeUSD": 2256.46,
+      "ts": "2026-08-10T17:12:18+00:00",
       "copyLagPP": null
     },
     {
@@ -636,17 +563,17 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x1dbf0ac12fc39564bf646b54b6f31de8942f1a6b",
-      "name": "0x1dbf0ac1…",
+      "wallet": "0xc3237b58fbcfc71392142cfea1137a98f9640171",
+      "name": "0xc3237b58…",
       "qualified": false,
       "isWhale": false,
-      "market": "Todi: Murkel Dellien vs Daniel Galan",
-      "slug": "atp-dellie-galan-2026-08-10",
+      "market": "Hamburg: Mika Petkovic vs Niels McDonald",
+      "slug": "atp-petkovi-mcdona-2026-08-10",
       "side": "BUY",
-      "outcome": "Daniel Galan",
-      "price": 0.58,
-      "sizeUSD": 2204.53,
-      "ts": "2026-08-10T14:37:15+00:00",
+      "outcome": "Niels McDonald",
+      "price": 0.4350817851,
+      "sizeUSD": 2066.27818,
+      "ts": "2026-08-10T17:37:19+00:00",
       "copyLagPP": null
     },
     {
@@ -675,20 +602,6 @@
       "price": 0.5393186247,
       "sizeUSD": 1854.19148,
       "ts": "2026-08-10T15:37:19+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x0dd60a6ddeea6f93659789cac7af6a9d12835f62",
-      "name": "0x0dd60a6d…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Iran full airspace closure by August 15?",
-      "slug": "iran-full-airspace-closure-by-august-15",
-      "side": "BUY",
-      "outcome": "No",
-      "price": 0.9549452466,
-      "sizeUSD": 1826.37,
-      "ts": "2026-08-10T14:27:16+00:00",
       "copyLagPP": null
     },
     {
@@ -748,6 +661,48 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x34a1eed3f6bb10dd2f99b79cb4e8ca8749ae7622",
+      "name": "0x34a1eed3…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "IK Sirius vs. IF Brommapojkarna: O/U 3.5",
+      "slug": "swe-sir-bro-2026-08-10-more-markets",
+      "side": "BUY",
+      "outcome": "Under",
+      "price": 0.11,
+      "sizeUSD": 1704.0,
+      "ts": "2026-08-10T17:27:21+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x34a1eed3f6bb10dd2f99b79cb4e8ca8749ae7622",
+      "name": "0x34a1eed3…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "IK Sirius vs. IF Brommapojkarna: O/U 3.5",
+      "slug": "swe-sir-bro-2026-08-10-more-markets",
+      "side": "BUY",
+      "outcome": "Under",
+      "price": 0.11,
+      "sizeUSD": 1656.0,
+      "ts": "2026-08-10T17:27:16+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x34a89e6845c0793fcf131d23a56a8b7d360f8c5c",
+      "name": "0x34a89e68…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Counter-Strike: Spirit vs JiJieHao (BO1) - Esports World Cup Group A",
+      "slug": "cs2-ts7-jjh-2026-08-12",
+      "side": "BUY",
+      "outcome": "Spirit",
+      "price": 0.9,
+      "sizeUSD": 1621.0,
+      "ts": "2026-08-10T17:57:21+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x85e9cbc6e662f9d1896dd0b60c15fbbd20252eea",
       "name": "0x85e9cbc6…",
       "qualified": false,
@@ -759,20 +714,6 @@
       "price": 0.7215441006,
       "sizeUSD": 1539.753422,
       "ts": "2026-08-10T16:27:10+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x736539924a5602b37a03a54fc12c1cc8f98964da",
-      "name": "0x73653992…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will the next Google Gemini Pro model be released by August 14, 2026?",
-      "slug": "next-google-gemini-pro-model-released-byptptpt",
-      "side": "BUY",
-      "outcome": "No",
-      "price": 0.87,
-      "sizeUSD": 1499.22,
-      "ts": "2026-08-10T14:35:01+00:00",
       "copyLagPP": null
     },
     {
@@ -790,6 +731,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x306602dba8a0db274e938b2ef334a559e5b2693a",
+      "name": "0x306602db…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Yabloko Effectively Banned From 2026 Russian Elections by September 17?",
+      "slug": "yabloko-effectively-banned-from-2026-russian-elections-by-september-17-20260807161302974",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.0352151507,
+      "sizeUSD": 1419.843421,
+      "ts": "2026-08-10T17:27:19+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x0d874197406ca18d05d49c453ca07731c8bce214",
       "name": "0x0d874197…",
       "qualified": false,
@@ -804,17 +759,31 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x7a0face7188ae921d0fa1301e237280f73041305",
-      "name": "0x7a0face7…",
+      "wallet": "0xd84aad0777e7cb621ca1658189790fbe446ff2a1",
+      "name": "0xd84aad07…",
       "qualified": false,
       "isWhale": false,
-      "market": "LoL: Natus Vincere vs G2 Esports (BO3) - LEC Regular Season AND LoL: SK Gaming vs Team Vitality (BO3) - LEC Regular Season",
-      "slug": null,
+      "market": "Will the New England Patriots win the 2027 NFL league championship?",
+      "slug": "will-the-new-england-patriots-win-the-2027-nfl-league-championship",
       "side": "BUY",
-      "outcome": null,
-      "price": 0.5605999994,
-      "sizeUSD": 1356.218874,
-      "ts": "2026-08-10T14:34:52+00:00",
+      "outcome": "Yes",
+      "price": 0.0369999993,
+      "sizeUSD": 1351.35135,
+      "ts": "2026-08-10T17:57:19+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x58093e1e1a9175af5d519436d06017e4e7629868",
+      "name": "0x58093e1e…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "LoL: Natus Vincere vs G2 Esports - Game 2 Winner",
+      "slug": "lol-navi-g2-2026-08-10-game2",
+      "side": "BUY",
+      "outcome": "Natus Vincere",
+      "price": 0.3,
+      "sizeUSD": 1300.0,
+      "ts": "2026-08-10T17:47:24+00:00",
       "copyLagPP": null
     },
     {
@@ -832,17 +801,17 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0xb528ecbf13802468f6b0f9fc97cf181589f80874",
-      "name": "0xb528ecbf…",
+      "wallet": "0x10ef48324b3ebc06d9137794c70285e8e37a7d7b",
+      "name": "0x10ef4832…",
       "qualified": false,
       "isWhale": false,
-      "market": "National Bank Open: Luciano Darderi vs Brandon Nakashima AND Todi: Maxim Mrva vs Pierluigi Basile AND Todi: Filippo Romano vs Massimo Giunta AND National Bank Open: Rafael Jodar vs Arthur Fils AND Brownsburg: David Jorda Sanchis vs Jack Pinnington Jones AND Brownsburg: Felix Balshaw vs Daniel Milavsky AND Todi: Marco Cecchinato vs Nick Hardt AND Brownsburg: Colton Smith vs Felix Gill AND Brownsburg: Ugo Blanchet vs Rei Sakamoto AND Hamburg: Raul Brancaccio vs Filip Jianu",
-      "slug": null,
+      "market": "LoL: Natus Vincere vs G2 Esports - Game 1 Winner",
+      "slug": "lol-navi-g2-2026-08-10-game1",
       "side": "BUY",
-      "outcome": null,
-      "price": 0.0107599992,
-      "sizeUSD": 1239.792842,
-      "ts": "2026-08-10T14:34:51+00:00",
+      "outcome": "Natus Vincere",
+      "price": 0.3599999996,
+      "sizeUSD": 1226.555554,
+      "ts": "2026-08-10T17:17:22+00:00",
       "copyLagPP": null
     },
     {
@@ -860,17 +829,17 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x8fbf269d473ee4e5f0e88adb276ceca85c5fdac3",
-      "name": "0x8fbf269d…",
+      "wallet": "0xc68603e0fa68857282c1119c6cbcfc20fa2d5a55",
+      "name": "0xc68603e0…",
       "qualified": false,
       "isWhale": false,
-      "market": "Will the U.S. invade Iran before 2027?",
-      "slug": "will-the-us-invade-iran-before-2027",
-      "side": "BUY",
-      "outcome": "Yes",
-      "price": 0.1699999993,
-      "sizeUSD": 1176.470587,
-      "ts": "2026-08-10T14:27:16+00:00",
+      "market": "POFC Botev Vratsa vs. PFC Slavia Sofia: O/U 1.5",
+      "slug": "bul-bvr-sla-2026-08-10-total-1pt5",
+      "side": "SELL",
+      "outcome": "Over",
+      "price": 0.99,
+      "sizeUSD": 1100.0,
+      "ts": "2026-08-10T17:42:18+00:00",
       "copyLagPP": null
     },
     {
@@ -916,6 +885,48 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0xa9f2d6b4a8b0b322ddb2f837c2852c1b47056c8e",
+      "name": "0xa9f2d6b4…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Strait of Hormuz traffic returns to normal by September 30?",
+      "slug": "strait-of-hormuz-traffic-returns-to-normal-by-september-30-20260702154339440",
+      "side": "SELL",
+      "outcome": "Yes",
+      "price": 0.15,
+      "sizeUSD": 1000.0,
+      "ts": "2026-08-10T17:57:22+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xdc36e99e2ddb2291286fe0a7d5317044b11c8542",
+      "name": "0xdc36e99e…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Elon Musk post 140-159 tweets from August 4 to August 11, 2026?",
+      "slug": "elon-musk-of-tweets-august-4-august-11-140-159",
+      "side": "BUY",
+      "outcome": "Yes",
+      "price": 0.001,
+      "sizeUSD": 1000.0,
+      "ts": "2026-08-10T17:17:22+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xcf0aca0d7a395202aec661c3666be9cc098e320a",
+      "name": "0xcf0aca0d…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Dota 2: Yellow Submarine vs Level UP - Game 2 Winner",
+      "slug": "dota2-yes-lvlup1-2026-08-10-game2",
+      "side": "SELL",
+      "outcome": "Level UP",
+      "price": 0.999,
+      "sizeUSD": 1000.0,
+      "ts": "2026-08-10T17:12:18+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x4c3f94a23b2439ba2749cb829af3fd1f9a2e31b9",
       "name": "0x4c3f94a2…",
       "qualified": false,
@@ -942,36 +953,8 @@
       "sizeUSD": 1000.0,
       "ts": "2026-08-10T15:37:16+00:00",
       "copyLagPP": null
-    },
-    {
-      "wallet": "0x9dc5fa3f999f3f72863bc31626761fea8e03d6b7",
-      "name": "0x9dc5fa3f…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will the price of Bitcoin be above $64,000 on August 10?",
-      "slug": "bitcoin-above-on-august-10-2026",
-      "side": "BUY",
-      "outcome": "No",
-      "price": 0.004,
-      "sizeUSD": 1000.0,
-      "ts": "2026-08-10T15:07:09+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x6acaaf797e065cfe0c21cd9d92a8fb2f21d7db59",
-      "name": "0x6acaaf79…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Bitcoin Up or Down - August 10, 10:30AM-10:35AM ET",
-      "slug": "btc-updown-5m-1786372200",
-      "side": "BUY",
-      "outcome": "Down",
-      "price": 0.001,
-      "sizeUSD": 1000.0,
-      "ts": "2026-08-10T14:37:15+00:00",
-      "copyLagPP": null
     }
   ],
-  "generatedAt": "2026-08-10 17:05 UTC",
+  "generatedAt": "2026-08-10 18:01 UTC",
   "note": "Ehrliches Copy-Trading: Bilanz selbst nachgerechnet (nicht dem Leaderboard glauben), Ein-Treffer-Wunder/Inaktive/Verlierer gefiltert, und der Copy-Lag ausgewiesen — die Kosten, die entstehen, weil der Wal mit seiner Order den Preis selbst bewegt."
 }
