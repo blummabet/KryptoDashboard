@@ -1,111 +1,23 @@
 {
-  "generatedAt": "2026-08-11 11:53 UTC",
+  "generatedAt": "2026-08-11 13:26 UTC",
   "scanned": 600,
-  "count": 13,
+  "count": 10,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
     {
       "side": "buy",
-      "sumProb": 0.313,
-      "grossPP": 68.7,
-      "feePP": 1.57,
-      "netPP": 67.14,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x029c63c721ee4d65bca5b3380a706530b29acd84d44245bcc025c191f3ecd300",
-      "event": "The International 2026: Winner",
-      "slug": "the-international-2026-winner-20260629212545745",
-      "endDate": null,
-      "n": 6,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Team Falcons",
-          "bid": 0.09,
-          "ask": 0.1
-        },
-        {
-          "name": "Team Spirit",
-          "bid": 0.07,
-          "ask": 0.1
-        },
-        {
-          "name": "Team Liquid",
-          "bid": 0.06,
-          "ask": 0.07
-        },
-        {
-          "name": "Vici Gaming",
-          "bid": 0.018,
-          "ask": 0.024
-        },
-        {
-          "name": "GamerLegion",
-          "bid": 0.006,
-          "ask": 0.01
-        },
-        {
-          "name": "OG",
-          "bid": 0.007,
-          "ask": 0.009
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.32,
-      "grossPP": 68.0,
-      "feePP": 1.28,
-      "netPP": 66.72,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
-      "event": "Next French Presidential Election",
-      "slug": "next-french-presidential-election",
-      "endDate": "2027-04-30T00:00:00Z",
-      "n": 4,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Marine Le Pen",
-          "bid": 0.308,
-          "ask": 0.311
-        },
-        {
-          "name": "Bernard Cazeneuve",
-          "bid": 0.004,
-          "ask": 0.005
-        },
-        {
-          "name": "Clémence Guetté",
-          "bid": 0.001,
-          "ask": 0.002
-        },
-        {
-          "name": "Mathilde Panot",
-          "bid": 0.001,
-          "ask": 0.002
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.325,
-      "grossPP": 67.5,
-      "feePP": 1.62,
-      "netPP": 65.88,
+      "sumProb": 0.254,
+      "grossPP": 74.6,
+      "feePP": 1.27,
+      "netPP": 73.33,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
       "event": "Pro Football: 2027 Champion",
       "slug": "pro-football-2027-champion-20260729185915366",
       "endDate": "2027-02-14T23:55:00Z",
-      "n": 6,
+      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -121,14 +33,9 @@
           "ask": 0.08
         },
         {
-          "name": "Baltimore Ravens",
-          "bid": 0.069,
-          "ask": 0.07
-        },
-        {
           "name": "Detroit Lions",
           "bid": 0.041,
-          "ask": 0.043
+          "ask": 0.042
         },
         {
           "name": "Jacksonville Jaguars",
@@ -144,10 +51,59 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.346,
-      "grossPP": 65.4,
-      "feePP": 2.42,
-      "netPP": 62.98,
+      "sumProb": 0.256,
+      "grossPP": 74.4,
+      "feePP": 1.28,
+      "netPP": 73.12,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x029c63c721ee4d65bca5b3380a706530b29acd84d44245bcc025c191f3ecd300",
+      "event": "The International 2026: Winner",
+      "slug": "the-international-2026-winner-20260629212545745",
+      "endDate": null,
+      "n": 6,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Team Falcons",
+          "bid": 0.09,
+          "ask": 0.1
+        },
+        {
+          "name": "Team Spirit",
+          "bid": 0.07,
+          "ask": 0.1
+        },
+        {
+          "name": "Vici Gaming",
+          "bid": 0.02,
+          "ask": 0.024
+        },
+        {
+          "name": "GamerLegion",
+          "bid": 0.005,
+          "ask": 0.017
+        },
+        {
+          "name": "OG",
+          "bid": 0.009,
+          "ask": 0.014
+        },
+        {
+          "name": "HULIGANI",
+          "bid": null,
+          "ask": 0.001
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.314,
+      "grossPP": 68.6,
+      "feePP": 2.2,
+      "netPP": 66.4,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x03c9c6d9f7b20aaa1f33f99bd24bd16e4e0e00cfa892dde097b800655490b200",
@@ -161,13 +117,13 @@
       "top": [
         {
           "name": "Benjamin Netanyahu",
-          "bid": 0.32,
-          "ask": 0.33
+          "bid": 0.29,
+          "ask": 0.3
         },
         {
           "name": "Moshe Feiglin",
-          "bid": 0.01,
-          "ask": 0.012
+          "bid": 0.004,
+          "ask": 0.01
         },
         {
           "name": "Yossi Cohen",
@@ -271,17 +227,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.459,
-      "grossPP": 54.1,
-      "feePP": 1.84,
-      "netPP": 52.26,
+      "sumProb": 0.455,
+      "grossPP": 54.5,
+      "feePP": 1.82,
+      "netPP": 52.68,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
       "event": "Democratic Presidential Nominee 2028",
       "slug": "democratic-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 11,
+      "n": 10,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -393,54 +349,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.732,
-      "grossPP": 26.8,
-      "feePP": 1.81,
-      "netPP": 24.99,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x966a3221e05d8d0579854c4952085331da2a42989dee0fa033d24cada9dfca00",
-      "event": "Brazil Presidential Election",
-      "slug": "brazil-presidential-election",
-      "endDate": "2026-10-04T00:00:00Z",
-      "n": 5,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Luiz Inácio Lula da Silva",
-          "bid": 0.63,
-          "ask": 0.64
-        },
-        {
-          "name": "Renan Santos",
-          "bid": 0.075,
-          "ask": 0.076
-        },
-        {
-          "name": "Ronaldo Caiado",
-          "bid": 0.011,
-          "ask": 0.012
-        },
-        {
-          "name": "Fernando Haddad",
-          "bid": 0.001,
-          "ask": 0.002
-        },
-        {
-          "name": "Camilo Santana",
-          "bid": 0.001,
-          "ask": 0.002
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.876,
-      "grossPP": 12.4,
-      "feePP": 1.09,
-      "netPP": 11.31,
+      "sumProb": 0.778,
+      "grossPP": 22.2,
+      "feePP": 1.67,
+      "netPP": 20.53,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xf73cfd30e2a38658ba9e87ee9c2f931e4c37050d5a911a1294b4ecd06d5d3000",
@@ -454,57 +366,18 @@
       "top": [
         {
           "name": "64,000-66,000",
-          "bid": 0.84,
-          "ask": 0.86
+          "bid": 0.75,
+          "ask": 0.77
         },
         {
           "name": "66,000-68,000",
-          "bid": 0.005,
-          "ask": 0.01
+          "bid": 0.001,
+          "ask": 0.004
         },
         {
           "name": "60,000-62,000",
-          "bid": 0.005,
-          "ask": 0.006
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.916,
-      "grossPP": 8.4,
-      "feePP": 3.66,
-      "netPP": 4.74,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x627ef8a5b5b7977e6f3b5f4966124771b3364f61d98bbb02f201bc4fffd66100",
-      "event": "South Carolina Republican Senate Special Primary Winner",
-      "slug": "south-carolina-republican-senate-special-primary-winner-20260712135206676",
-      "endDate": "2026-08-11T00:00:00Z",
-      "n": 4,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Darline Graham Nordone",
-          "bid": 0.398,
-          "ask": 0.403
-        },
-        {
-          "name": "Ralph Norman",
-          "bid": 0.25,
-          "ask": 0.27
-        },
-        {
-          "name": "Russell Fry",
-          "bid": 0.212,
-          "ask": 0.22
-        },
-        {
-          "name": "Mark Sanford",
-          "bid": 0.02,
-          "ask": 0.023
+          "bid": 0.002,
+          "ask": 0.004
         }
       ]
     },
@@ -547,7 +420,7 @@
         },
         {
           "name": "Ben Shelton",
-          "bid": 0.023,
+          "bid": 0.024,
           "ask": 0.028
         },
         {
