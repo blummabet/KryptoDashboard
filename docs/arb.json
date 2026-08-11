@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-11T09:10:58Z",
-  "count": 4,
-  "tradableCount": 1,
+  "generatedAt": "2026-08-11T11:01:40Z",
+  "count": 3,
+  "tradableCount": 0,
   "basketFindings": [],
   "basketCount": 0,
   "basketTradable": 0,
@@ -142,34 +142,9 @@
         "roiPct": 67.1
       }
     ],
-    "activity": [
-      {
-        "ts": "2026-08-11T09:10:58Z",
-        "type": "open",
-        "market": "erreicht $85,000 bis 2027-01-01 (20%) ↔ erreicht $90,000 bis 2027-01-01 (100%) verletzt Monotonie",
-        "gap": 79.5
-      }
-    ]
+    "activity": []
   },
   "findings": [
-    {
-      "family": "touch",
-      "date": "2027-01-01",
-      "direction": "above",
-      "lowStrike": 85000,
-      "highStrike": 90000,
-      "lowP": 0.205,
-      "highP": 1.0,
-      "lowCid": "0x1239389645c8a73b170b78ef3a83d69b6cf1d2711d412829ea8836660b08fc93",
-      "highCid": "0xeea323848af312ec374930197cdb33b28d1e66a420faacfed5c53af46b0be51c",
-      "lowBid": 0.2,
-      "lowAsk": 0.21,
-      "highBid": 0.999,
-      "highAsk": 1,
-      "gapPP": 79.5,
-      "tradable": true,
-      "note": "erreicht $85,000 bis 2027-01-01 (20%) ↔ erreicht $90,000 bis 2027-01-01 (100%) verletzt Monotonie"
-    },
     {
       "family": "touch",
       "date": "2027-01-01",
@@ -190,6 +165,24 @@
     },
     {
       "family": "touch",
+      "date": "2027-01-01",
+      "direction": "below",
+      "lowStrike": 15000,
+      "highStrike": 20000,
+      "lowP": 0.0255,
+      "highP": 0.024,
+      "lowCid": "0xa885bfe10688056a9d0f4e9a1523bfa18f66fda065f0400d714ba54776083713",
+      "highCid": "0x23fb92bb72604ff35bfe591b5506de47f1bf6632ed55c388baa4843118bf69fc",
+      "lowBid": 0.022,
+      "lowAsk": 0.029,
+      "highBid": 0.021,
+      "highAsk": 0.027,
+      "gapPP": 0.15,
+      "tradable": false,
+      "note": "dip $15,000 bis 2027-01-01 (3%) ↔ dip $20,000 bis 2027-01-01 (2%) verletzt Monotonie"
+    },
+    {
+      "family": "touch",
       "date": "2026-09-01",
       "direction": "below",
       "lowStrike": 40000,
@@ -205,24 +198,6 @@
       "gapPP": 0.1,
       "tradable": false,
       "note": "dip $40,000 bis 2026-09-01 (1%) ↔ dip $42,500 bis 2026-09-01 (1%) verletzt Monotonie"
-    },
-    {
-      "family": "touch",
-      "date": "2027-01-01",
-      "direction": "below",
-      "lowStrike": 10000,
-      "highStrike": 15000,
-      "lowP": 0.023,
-      "highP": 0.0225,
-      "lowCid": "0xd8a5843555ba95455a28d895660c07c59b615184bf4ae64893992f3504797d29",
-      "highCid": "0xa885bfe10688056a9d0f4e9a1523bfa18f66fda065f0400d714ba54776083713",
-      "lowBid": 0.022,
-      "lowAsk": 0.024,
-      "highBid": 0.022,
-      "highAsk": 0.023,
-      "gapPP": 0.05,
-      "tradable": false,
-      "note": "dip $10,000 bis 2027-01-01 (2%) ↔ dip $15,000 bis 2027-01-01 (2%) verletzt Monotonie"
     }
   ]
 }
