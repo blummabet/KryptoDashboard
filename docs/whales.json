@@ -5,8 +5,8 @@
     "whaleTradeCount": 1,
     "biggestTradeUSD": 50000,
     "whaleMinUSD": 25000,
-    "walletsProbed": 12,
-    "qualifiedCount": 2,
+    "walletsProbed": 13,
+    "qualifiedCount": 3,
     "rejectedCount": 10,
     "avgCopyLagPP": null,
     "lagSample": 0,
@@ -14,13 +14,30 @@
   },
   "wallets": [
     {
+      "resolved": 19990,
+      "uniqueMarkets": 3717,
+      "roi": 53.45,
+      "pnl": 23222794.7,
+      "winRate": 55.9,
+      "volume": 1783875167.0,
+      "inactiveDays": 0.5,
+      "oneHit": false,
+      "biggestWin": 211145.38,
+      "qualified": true,
+      "rejectReasons": [],
+      "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+      "name": "0x204f72f3…",
+      "firstTrade": "2026-06-13",
+      "lastTrade": "2026-08-10"
+    },
+    {
       "resolved": 19958,
       "uniqueMarkets": 6523,
       "roi": 8.58,
       "pnl": 12673638.29,
       "winRate": 56.5,
       "volume": 1042572023.0,
-      "inactiveDays": 4.0,
+      "inactiveDays": 4.1,
       "oneHit": false,
       "biggestWin": 224114.64,
       "qualified": true,
@@ -37,7 +54,7 @@
       "pnl": 11386690.88,
       "winRate": 52.6,
       "volume": 298637139.0,
-      "inactiveDays": 41.2,
+      "inactiveDays": 41.3,
       "oneHit": false,
       "biggestWin": 1095000.0,
       "qualified": true,
@@ -139,7 +156,7 @@
       "pnl": 8474966.0,
       "winRate": 100.0,
       "volume": 8914066.0,
-      "inactiveDays": 46.1,
+      "inactiveDays": 46.2,
       "oneHit": true,
       "biggestWin": 4701163.79,
       "qualified": false,
@@ -203,7 +220,7 @@
       "pnl": 8052184.54,
       "winRate": 66.7,
       "volume": 72132443.0,
-      "inactiveDays": 27.3,
+      "inactiveDays": 27.4,
       "oneHit": true,
       "biggestWin": 6096744.94,
       "qualified": false,
@@ -223,7 +240,7 @@
       "pnl": 11839902.0,
       "winRate": 49.4,
       "volume": 99774425.0,
-      "inactiveDays": 112.7,
+      "inactiveDays": 112.8,
       "oneHit": false,
       "biggestWin": 1095000.0,
       "qualified": false,
@@ -242,7 +259,7 @@
       "pnl": 81038.56,
       "winRate": 72.3,
       "volume": 37405544.0,
-      "inactiveDays": 4.5,
+      "inactiveDays": 4.6,
       "oneHit": true,
       "biggestWin": 156665.0,
       "qualified": false,
@@ -286,31 +303,31 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x5268527977f700f9bf9b6d5cd843859e4e70135d",
-      "name": "0x52685279…",
+      "wallet": "0xf95846967c9093e4881506162077ec8f7049db13",
+      "name": "0xf9584696…",
       "qualified": false,
       "isWhale": false,
-      "market": "New York Mets vs. Atlanta Braves",
-      "slug": "mlb-nym-atl-2026-08-10",
+      "market": "National Bank Open: Luciano Darderi vs Brandon Nakashima",
+      "slug": "atp-darderi-nakashi-2026-08-11",
       "side": "BUY",
-      "outcome": "Atlanta Braves",
-      "price": 0.24,
-      "sizeUSD": 6720.83,
-      "ts": "2026-08-11T00:57:40+00:00",
+      "outcome": "Luciano Darderi",
+      "price": 0.32,
+      "sizeUSD": 12000.0,
+      "ts": "2026-08-11T05:47:45+00:00",
       "copyLagPP": null
     },
     {
-      "wallet": "0x536075898ec928492dcd70efb372e641eede1f6f",
-      "name": "0x53607589…",
+      "wallet": "0xb741a5dade4a298897a3124ed798a9cca1fba996",
+      "name": "0xb741a5da…",
       "qualified": false,
       "isWhale": false,
-      "market": "Will Bitcoin reach $70,000 August 10-16?",
-      "slug": "will-bitcoin-reach-70k-august-10-16-2026",
+      "market": "Will Count Binface win less than 10% of votes in the Clacton parliamentary by-election?",
+      "slug": "clacton-by-election-count-binface-vote-20260708142507718",
       "side": "BUY",
       "outcome": "Yes",
-      "price": 0.025,
-      "sizeUSD": 6600.0,
-      "ts": "2026-08-11T00:07:40+00:00",
+      "price": 0.1174636275,
+      "sizeUSD": 7491.680768,
+      "ts": "2026-08-11T04:37:51+00:00",
       "copyLagPP": null
     },
     {
@@ -328,20 +345,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x8effee583860fbd87a121cb7044709ce58c5e593",
-      "name": "0x8effee58…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will Kai and Speed beat the Minecraft challenge by August 17?",
-      "slug": "will-kai-and-speed-beat-the-minecraft-challenge-by-august-17-20260807213124706",
-      "side": "SELL",
-      "outcome": "No",
-      "price": 0.88,
-      "sizeUSD": 4741.88,
-      "ts": "2026-08-10T23:47:40+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x1a9567b6373a835a7425381406e1a952ccf73a16",
       "name": "0x1a9567b6…",
       "qualified": false,
@@ -353,6 +356,20 @@
       "price": 0.78,
       "sizeUSD": 3846.153845,
       "ts": "2026-08-11T01:32:39+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xe542afd3881c4c330ba0ebbb603bb470b2ba0a37",
+      "name": "0xe542afd3…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Felix Auger Aliassime win the 2026 Men's US Open?",
+      "slug": "2026-mens-us-open-winner-tennis",
+      "side": "BUY",
+      "outcome": "Yes",
+      "price": 0.0074354951,
+      "sizeUSD": 3772.35,
+      "ts": "2026-08-11T05:57:40+00:00",
       "copyLagPP": null
     },
     {
@@ -398,9 +415,23 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
+      "name": "0x13fa4ce1…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Arthur Fils win the 2026 Men's US Open?",
+      "slug": "2026-mens-us-open-winner-tennis",
+      "side": "SELL",
+      "outcome": "Yes",
+      "price": 0.014,
+      "sizeUSD": 2970.69,
+      "ts": "2026-08-11T04:37:40+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
       "name": "0x204f72f3…",
-      "qualified": false,
+      "qualified": true,
       "isWhale": false,
       "market": "Spread: New York Mets (-1.5)",
       "slug": "mlb-nym-atl-2026-08-10-spread-away-1pt5",
@@ -409,6 +440,20 @@
       "price": 0.5399999999,
       "sizeUSD": 2658.685184,
       "ts": "2026-08-11T01:25:33+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xf68a281980f8c13828e84e147e3822381d6e5b1b",
+      "name": "0xf68a2819…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Kai and Speed beat the Minecraft challenge by August 17?",
+      "slug": "kai-and-speed-beat-minecraft-challenge-byptptpt-20260807141254095",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.82,
+      "sizeUSD": 2611.18,
+      "ts": "2026-08-11T05:27:46+00:00",
       "copyLagPP": null
     },
     {
@@ -428,7 +473,7 @@
     {
       "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
       "name": "0x204f72f3…",
-      "qualified": false,
+      "qualified": true,
       "isWhale": false,
       "market": "Spread: Boston Red Sox (-2.5)",
       "slug": "mlb-bos-tor-2026-08-10-spread-away-2pt5",
@@ -437,34 +482,6 @@
       "price": 0.04,
       "sizeUSD": 2500.0,
       "ts": "2026-08-11T00:57:42+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x6db568e61e5e3de7d87f831431b673f38ce2e279",
-      "name": "0x6db568e6…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Toronto Tempo vs. Atlanta Dream",
-      "slug": "wnba-tor-atl-2026-08-10",
-      "side": "BUY",
-      "outcome": "Atlanta Dream",
-      "price": 0.91,
-      "sizeUSD": 2409.43,
-      "ts": "2026-08-11T00:17:36+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x851b1719f70a23f081427a5ded1e534de699961e",
-      "name": "0x851b1719…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will CA Unión win on 2026-08-10?",
-      "slug": "arg-uni-cac-2026-08-10-uni",
-      "side": "BUY",
-      "outcome": "No",
-      "price": 0.4199999999,
-      "sizeUSD": 2380.952379,
-      "ts": "2026-08-11T00:07:39+00:00",
       "copyLagPP": null
     },
     {
@@ -479,6 +496,20 @@
       "price": 0.0599999996,
       "sizeUSD": 2210.833332,
       "ts": "2026-08-11T04:02:43+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x6fda0ed5f98ed193f2d2b418d578e30b9345b87b",
+      "name": "0x6fda0ed5…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "SK Iberia 1999 vs. Larne FC: Team to Advance AND Larne FC vs. SK Iberia 1999: Team to Advance",
+      "slug": null,
+      "side": "BUY",
+      "outcome": null,
+      "price": 0.1325069992,
+      "sizeUSD": 2126.513933,
+      "ts": "2026-08-11T05:27:46+00:00",
       "copyLagPP": null
     },
     {
@@ -498,7 +529,7 @@
     {
       "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
       "name": "0x204f72f3…",
-      "qualified": false,
+      "qualified": true,
       "isWhale": false,
       "market": "Spread: Minnesota Twins (-2.5)",
       "slug": "mlb-bal-min-2026-08-10",
@@ -521,6 +552,20 @@
       "price": 0.69,
       "sizeUSD": 1999.0,
       "ts": "2026-08-11T04:17:48+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x8b4bca1d794779e66e023d44391b2a86c5ab541b",
+      "name": "0x8b4bca1d…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "US announces end of Iranian blockade by August 11, 2026?",
+      "slug": "us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.993,
+      "sizeUSD": 1921.08,
+      "ts": "2026-08-11T05:57:48+00:00",
       "copyLagPP": null
     },
     {
@@ -678,20 +723,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x492bb408693470df7d031ef48f3a5466055b45ee",
-      "name": "0x492bb408…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "National Bank Open: Diana Shnaider vs Iga Swiatek",
-      "slug": "wta-shnaide-swiatek-2026-08-11",
-      "side": "BUY",
-      "outcome": "Diana Shnaider",
-      "price": 0.14,
-      "sizeUSD": 1328.04,
-      "ts": "2026-08-10T23:47:39+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0xeb490d0534bb68b4c2ce139b219a728cd2c3693e",
       "name": "0xeb490d05…",
       "qualified": false,
@@ -731,20 +762,6 @@
       "price": 0.2389919693,
       "sizeUSD": 1255.2723,
       "ts": "2026-08-11T02:47:48+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
-      "name": "0xd1ed1219…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Boston Red Sox vs. Toronto Blue Jays: O/U 4.5",
-      "slug": "mlb-bos-tor-2026-08-10",
-      "side": "BUY",
-      "outcome": "Under",
-      "price": 0.48,
-      "sizeUSD": 1250.0,
-      "ts": "2026-08-11T00:57:31+00:00",
       "copyLagPP": null
     },
     {
@@ -818,6 +835,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0xf9b71663d723d28fa455db659098e1dacde860a4",
+      "name": "0xf9b71663…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Russia capture all of Chasiv Yar by September 30?",
+      "slug": "will-russia-capture-all-of-chasiv-yar-by",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.5965525778,
+      "sizeUSD": 1090.67,
+      "ts": "2026-08-11T05:17:51+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x8847ab6503185c9d461db231d718f22bc3a5262d",
       "name": "0x8847ab65…",
       "qualified": false,
@@ -848,7 +879,7 @@
     {
       "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
       "name": "0x204f72f3…",
-      "qualified": false,
+      "qualified": true,
       "isWhale": false,
       "market": "Spread: Milwaukee Brewers (-2.5)",
       "slug": "mlb-mil-sd-2026-08-10",
@@ -942,22 +973,8 @@
       "sizeUSD": 1000.0,
       "ts": "2026-08-11T02:07:39+00:00",
       "copyLagPP": null
-    },
-    {
-      "wallet": "0x0d2d845a6ff64e31e04a70afce8a573940767ff5",
-      "name": "0x0d2d845a…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Spread: Toronto Blue Jays (-1.5)",
-      "slug": "mlb-bos-tor-2026-08-10",
-      "side": "BUY",
-      "outcome": "Boston Red Sox",
-      "price": 0.42,
-      "sizeUSD": 1000.0,
-      "ts": "2026-08-11T00:57:31+00:00",
-      "copyLagPP": null
     }
   ],
-  "generatedAt": "2026-08-11 04:38 UTC",
+  "generatedAt": "2026-08-11 06:01 UTC",
   "note": "Ehrliches Copy-Trading: Bilanz selbst nachgerechnet (nicht dem Leaderboard glauben), Ein-Treffer-Wunder/Inaktive/Verlierer gefiltert, und der Copy-Lag ausgewiesen — die Kosten, die entstehen, weil der Wal mit seiner Order den Preis selbst bewegt."
 }
