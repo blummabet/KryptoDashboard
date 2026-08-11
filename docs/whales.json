@@ -2,12 +2,12 @@
   "summary": {
     "enabled": true,
     "feedCount": 50,
-    "whaleTradeCount": 2,
-    "biggestTradeUSD": 28110,
+    "whaleTradeCount": 1,
+    "biggestTradeUSD": 25286,
     "whaleMinUSD": 25000,
-    "walletsProbed": 14,
+    "walletsProbed": 13,
     "qualifiedCount": 3,
-    "rejectedCount": 11,
+    "rejectedCount": 10,
     "avgCopyLagPP": null,
     "lagSample": 0,
     "verdict": "keine ≥$25k-Whale-Trades qualifizierter Wale im Fenster — echte Wale sind selten"
@@ -17,10 +17,10 @@
       "resolved": 19984,
       "uniqueMarkets": 2971,
       "roi": 87.77,
-      "pnl": 23233618.0,
+      "pnl": 23246843.27,
       "winRate": 54.0,
-      "volume": 4132882.0,
-      "inactiveDays": 0.0,
+      "volume": 1785890743.0,
+      "inactiveDays": 0.1,
       "oneHit": false,
       "biggestWin": 35865.43,
       "qualified": true,
@@ -37,7 +37,7 @@
       "pnl": 11386690.88,
       "winRate": 52.6,
       "volume": 298637139.0,
-      "inactiveDays": 41.9,
+      "inactiveDays": 42.0,
       "oneHit": false,
       "biggestWin": 1095000.0,
       "qualified": true,
@@ -54,7 +54,7 @@
       "pnl": 12690293.9,
       "winRate": 56.5,
       "volume": 1045855519.0,
-      "inactiveDays": 4.7,
+      "inactiveDays": 4.8,
       "oneHit": false,
       "biggestWin": 224114.64,
       "qualified": true,
@@ -71,7 +71,7 @@
       "pnl": 9063378.0,
       "winRate": 100.0,
       "volume": 3696321.0,
-      "inactiveDays": 57.0,
+      "inactiveDays": 57.1,
       "oneHit": true,
       "biggestWin": 4750526.65,
       "qualified": false,
@@ -93,7 +93,7 @@
       "pnl": 8709973.0,
       "winRate": 87.5,
       "volume": 4641881.0,
-      "inactiveDays": 637.2,
+      "inactiveDays": 637.3,
       "oneHit": false,
       "biggestWin": 4281504.88,
       "qualified": false,
@@ -114,7 +114,7 @@
       "pnl": 22053933.75,
       "winRate": 81.2,
       "volume": 43065780.0,
-      "inactiveDays": 587.5,
+      "inactiveDays": 587.6,
       "oneHit": false,
       "biggestWin": 8302013.6,
       "qualified": false,
@@ -134,7 +134,7 @@
       "pnl": 8474966.0,
       "winRate": 100.0,
       "volume": 8914066.0,
-      "inactiveDays": 46.8,
+      "inactiveDays": 46.9,
       "oneHit": true,
       "biggestWin": 4701163.79,
       "qualified": false,
@@ -240,38 +240,17 @@
       "pnl": 11839902.0,
       "winRate": 49.4,
       "volume": 99774425.0,
-      "inactiveDays": 113.4,
+      "inactiveDays": 113.5,
       "oneHit": false,
       "biggestWin": 1095000.0,
       "qualified": false,
       "rejectReasons": [
-        "inaktiv seit 113d"
+        "inaktiv seit 114d"
       ],
       "wallet": "0x4879a9d9be67a2958d67e2171d99ef77e30bd4c5",
       "name": "0x4879a9d9…",
       "firstTrade": "2025-12-12",
       "lastTrade": "2026-04-20"
-    },
-    {
-      "resolved": 4,
-      "uniqueMarkets": 4,
-      "roi": 0.61,
-      "pnl": 491.54,
-      "winRate": 50.0,
-      "volume": 592.0,
-      "inactiveDays": 9.6,
-      "oneHit": true,
-      "biggestWin": 2906.56,
-      "qualified": false,
-      "rejectReasons": [
-        "zu wenig Historie (4 aufgelöst)",
-        "nur 4 Märkte",
-        "Ein-Treffer-Wunder (591% des Gewinns aus 1 Trade)"
-      ],
-      "wallet": "0xd1144f39995ae527c2b4cbd3a7fe6394bfd3b5b3",
-      "name": "0xd1144f39…",
-      "firstTrade": "2026-08-01",
-      "lastTrade": "2026-08-02"
     },
     {
       "resolved": 388,
@@ -295,20 +274,6 @@
     }
   ],
   "feed": [
-    {
-      "wallet": "0xd1144f39995ae527c2b4cbd3a7fe6394bfd3b5b3",
-      "name": "0xd1144f39…",
-      "qualified": false,
-      "isWhale": true,
-      "market": "Todi: Carlo Alberto Caniato vs Francesco Passaro",
-      "slug": "atp-caniato-passaro-2026-08-11",
-      "side": "BUY",
-      "outcome": "Francesco Passaro",
-      "price": 0.6580564761,
-      "sizeUSD": 28110.28,
-      "ts": "2026-08-11T18:59:27+00:00",
-      "copyLagPP": null
-    },
     {
       "wallet": "0x16bb9951a36fce71e2ef57890b786145e0ba8492",
       "name": "0x16bb9951…",
@@ -366,6 +331,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x981466a6a7a4c9e63704c14b2988c4bda65c4347",
+      "name": "0x981466a6…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will the price of Bitcoin be above $54,000 on August 12?",
+      "slug": "bitcoin-above-54k-on-august-12-2026",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.001,
+      "sizeUSD": 5000.0,
+      "ts": "2026-08-11T21:18:45+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x64e93f87d8a0c1b2cde6f20d71f211372a95eb4c",
       "name": "0x64e93f87…",
       "qualified": false,
@@ -394,6 +373,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0xd6d9ed4117ddd92d85878cf981c11ba2a0bb2c2f",
+      "name": "0xd6d9ed41…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "LoL: Team Solid vs 7REX (BO3) - Circuito Desafiante Play-In",
+      "slug": "lol-ts3-7rex-2026-08-11",
+      "side": "SELL",
+      "outcome": "7REX",
+      "price": 0.999,
+      "sizeUSD": 4532.61,
+      "ts": "2026-08-11T21:45:13+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x4e645fb82ea6cc2d3bf51ad11ac799a556f2fc32",
       "name": "0x4e645fb8…",
       "qualified": false,
@@ -419,20 +412,6 @@
       "price": 0.999,
       "sizeUSD": 3430.04,
       "ts": "2026-08-11T19:23:28+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x2f2b21abc4acc31883fc6ee6f8b54da67870d743",
-      "name": "0x2f2b21ab…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will the price of Bitcoin be above $60,000 on August 12?",
-      "slug": "bitcoin-above-on-august-12-2026",
-      "side": "BUY",
-      "outcome": "No",
-      "price": 0.0027057711,
-      "sizeUSD": 3171.0,
-      "ts": "2026-08-11T18:59:22+00:00",
       "copyLagPP": null
     },
     {
@@ -475,6 +454,20 @@
       "price": 0.001,
       "sizeUSD": 2500.0,
       "ts": "2026-08-11T20:19:19+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x820a0e91fdf03907ff7d05d0145f9d326f16ca12",
+      "name": "0x820a0e91…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "National Bank Open: Belinda Bencic vs Coco Gauff",
+      "slug": "wta-bencic-gauff-2026-08-11",
+      "side": "BUY",
+      "outcome": "Coco Gauff",
+      "price": 0.62,
+      "sizeUSD": 2310.91,
+      "ts": "2026-08-11T21:55:13+00:00",
       "copyLagPP": null
     },
     {
@@ -548,20 +541,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x122cb94c437ea5e6f088c6c0c143c592ab8efbed",
-      "name": "0x122cb94c…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Putin out as President of Russia by August 31, 2026?",
-      "slug": "putin-out-before-2027",
-      "side": "BUY",
-      "outcome": "Yes",
-      "price": 0.015,
-      "sizeUSD": 2000.0,
-      "ts": "2026-08-11T19:09:27+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x8a8685a792c184e5c2ee8c7d4d4baba7c2c94998",
       "name": "0x8a8685a7…",
       "qualified": false,
@@ -590,6 +569,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0xd6d9ed4117ddd92d85878cf981c11ba2a0bb2c2f",
+      "name": "0xd6d9ed41…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "LoL: Team Solid vs 7REX (BO3) - Circuito Desafiante Play-In",
+      "slug": "lol-ts3-7rex-2026-08-11",
+      "side": "BUY",
+      "outcome": "7REX",
+      "price": 0.96,
+      "sizeUSD": 1942.48,
+      "ts": "2026-08-11T21:18:43+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x5985469ec8024dd54bcdf33b9a9e7228c1bdb3c5",
       "name": "0x5985469e…",
       "qualified": false,
@@ -604,6 +597,34 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0xc1288413973a8e48a28b702c94450a6b1fc3d982",
+      "name": "0xc1288413…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Counter-Strike: Peak Agency vs RUSH Gaming - Map 1 Winner",
+      "slug": "cs2-pea-rush2-2026-08-11",
+      "side": "BUY",
+      "outcome": "RUSH Gaming",
+      "price": 0.999,
+      "sizeUSD": 1936.5,
+      "ts": "2026-08-11T21:55:09+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x242d54697287fec6b31e0953362afda06218f11e",
+      "name": "0x242d5469…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Orlando City SC win on 2026-08-15? AND Will Charlotte FC win on 2026-08-15? AND Will Atlanta United FC win on 2026-08-15? AND Will Chicago Fire FC win on 2026-08-16? AND Will Vancouver Whitecaps FC win on 2026-08-16? AND Will CF Montréal win on 2026-08-15? AND Will Colorado Rapids SC win on 2026-08-15? AND Will Inter Miami CF win on 2026-08-15? AND Will New York City FC win on 2026-08-16? AND Will Real Salt Lake win on 2026-08-15?",
+      "slug": null,
+      "side": "BUY",
+      "outcome": null,
+      "price": 0.0009999995,
+      "sizeUSD": 1923.910998,
+      "ts": "2026-08-11T20:55:09+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x45c0081f45cf27409c327560bdd2312c7324f541",
       "name": "0x45c0081f…",
       "qualified": false,
@@ -615,20 +636,6 @@
       "price": 0.9546465757,
       "sizeUSD": 1909.32,
       "ts": "2026-08-11T19:49:30+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x12d9a4302be53dd8c9f13aabfbdf3518f1c001bb",
-      "name": "0x12d9a430…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will FK CSKA 1948 Sofia win on 2026-08-11?",
-      "slug": "col-csk1-pao-2026-08-11",
-      "side": "BUY",
-      "outcome": "Yes",
-      "price": 0.0149069007,
-      "sizeUSD": 1901.41,
-      "ts": "2026-08-11T19:09:22+00:00",
       "copyLagPP": null
     },
     {
@@ -671,6 +678,20 @@
       "price": 0.999,
       "sizeUSD": 1671.42,
       "ts": "2026-08-11T19:49:36+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xe5e85446b5e571074503769d4088ef3112542352",
+      "name": "0xe5e85446…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Elon Musk post 100-119 tweets from August 7 to August 14, 2026?",
+      "slug": "elon-musk-of-tweets-august-7-august-14-100-119",
+      "side": "BUY",
+      "outcome": "Yes",
+      "price": 0.006460306,
+      "sizeUSD": 1547.914285,
+      "ts": "2026-08-11T21:05:09+00:00",
       "copyLagPP": null
     },
     {
@@ -744,6 +765,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x0346afae2603313d2bbee96b628536c8cbe352a5",
+      "name": "0x0346afae…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Recoleta FC win on 2026-08-11?",
+      "slug": "sud-boc-rec1-2026-08-11",
+      "side": "BUY",
+      "outcome": "Yes",
+      "price": 0.0558307846,
+      "sizeUSD": 1333.33,
+      "ts": "2026-08-11T21:55:15+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x5f5ecd1cf5e5cec63cf01feda49da68242fd980b",
       "name": "0x5f5ecd1c…",
       "qualified": false,
@@ -758,34 +793,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x8d0c8253703b8febbe53f45d182671c5385dc90a",
-      "name": "0x8d0c8253…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Olympique Lyonnais vs. AC Sparta Praha: O/U 3.5",
-      "slug": "ucl-lyo-spp-2026-08-11-more-markets",
-      "side": "BUY",
-      "outcome": "Under",
-      "price": 0.59,
-      "sizeUSD": 1286.38,
-      "ts": "2026-08-11T18:59:22+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xc61d8674887a442b995881393f83c707514f3933",
-      "name": "0xc61d8674…",
-      "qualified": false,
-      "isWhale": false,
-      "market": null,
-      "slug": null,
-      "side": "BUY",
-      "outcome": null,
-      "price": 0.1343999993,
-      "sizeUSD": 1266.538399,
-      "ts": "2026-08-11T18:58:27+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
       "name": "0x204f72f3…",
       "qualified": true,
@@ -797,6 +804,20 @@
       "price": 0.016,
       "sizeUSD": 1265.0,
       "ts": "2026-08-11T20:09:28+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xbfab152afa43741b41be0f355f862be2630cf067",
+      "name": "0xbfab152a…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Dota 2: Rune Eaters vs Zero Tenacity (BO3) - EPL Masters Playoffs",
+      "slug": "dota2-re-z10-2026-08-11",
+      "side": "BUY",
+      "outcome": "Zero Tenacity",
+      "price": 0.08,
+      "sizeUSD": 1250.0,
+      "ts": "2026-08-11T21:35:18+00:00",
       "copyLagPP": null
     },
     {
@@ -952,50 +973,8 @@
       "sizeUSD": 1000.0,
       "ts": "2026-08-11T19:59:24+00:00",
       "copyLagPP": null
-    },
-    {
-      "wallet": "0xaf520014bbcbf836722462f29945a75aa2a8efdf",
-      "name": "0xaf520014…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Dota 2: Spirit Academy vs Level UP - Game 3 Winner",
-      "slug": "dota2-spirit1-lvlup1-2026-08-11",
-      "side": "SELL",
-      "outcome": "Spirit Academy",
-      "price": 0.999,
-      "sizeUSD": 1000.0,
-      "ts": "2026-08-11T19:09:28+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x5ee0e9591d83b85edb73ba87ac40dbdf8473d6a6",
-      "name": "0x5ee0e959…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Spread: Olympique Lyonnais (-1.5)",
-      "slug": "ucl-lyo-spp-2026-08-11-more-markets",
-      "side": "BUY",
-      "outcome": "AC Sparta Praha",
-      "price": 0.53,
-      "sizeUSD": 1000.0,
-      "ts": "2026-08-11T18:59:28+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xbec7f8efc3724484c5d27271e6feb9924c515977",
-      "name": "0xbec7f8ef…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will Kai and Speed beat the Minecraft challenge by August 16?",
-      "slug": "kai-and-speed-beat-minecraft-challenge-byptptpt-20260807141254095",
-      "side": "BUY",
-      "outcome": "Yes",
-      "price": 0.16,
-      "sizeUSD": 1000.0,
-      "ts": "2026-08-11T18:59:25+00:00",
-      "copyLagPP": null
     }
   ],
-  "generatedAt": "2026-08-11 21:00 UTC",
+  "generatedAt": "2026-08-11 22:01 UTC",
   "note": "Ehrliches Copy-Trading: Bilanz selbst nachgerechnet (nicht dem Leaderboard glauben), Ein-Treffer-Wunder/Inaktive/Verlierer gefiltert, und der Copy-Lag ausgewiesen — die Kosten, die entstehen, weil der Wal mit seiner Order den Preis selbst bewegt."
 }
