@@ -1,16 +1,50 @@
 {
-  "generatedAt": "2026-08-12 15:09 UTC",
+  "generatedAt": "2026-08-12 17:08 UTC",
   "scanned": 600,
-  "count": 10,
+  "count": 11,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
     {
       "side": "buy",
-      "sumProb": 0.023,
-      "grossPP": 97.7,
+      "sumProb": 0.007,
+      "grossPP": 99.3,
+      "feePP": 0.03,
+      "netPP": 99.27,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xb44ae272981ad818ee2a93c9cd224e3615abab0459c71768475fb2db31e1d600",
+      "event": "Highest temperature in Munich on August 12?",
+      "slug": "highest-temperature-in-munich-on-august-12-2026",
+      "endDate": "2026-08-12T12:00:00Z",
+      "n": 3,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "31°C",
+          "bid": null,
+          "ask": 0.005
+        },
+        {
+          "name": "29°C",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "32°C",
+          "bid": null,
+          "ask": 0.001
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.022,
+      "grossPP": 97.8,
       "feePP": 0.11,
-      "netPP": 97.59,
+      "netPP": 97.69,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x418429e74b5f1b8af94ce77441e5139ede7da9a65eec4f0e0350fc8de1634300",
@@ -24,8 +58,8 @@
       "top": [
         {
           "name": "100-119",
-          "bid": 0.012,
-          "ask": 0.015
+          "bid": 0.01,
+          "ask": 0.014
         },
         {
           "name": "80-99",
@@ -46,44 +80,78 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.054,
-      "grossPP": 94.6,
-      "feePP": 0.27,
-      "netPP": 94.33,
+      "sumProb": 0.048,
+      "grossPP": 95.2,
+      "feePP": 0.24,
+      "netPP": 94.96,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xb44ae272981ad818ee2a93c9cd224e3615abab0459c71768475fb2db31e1d600",
-      "event": "Highest temperature in Munich on August 12?",
-      "slug": "highest-temperature-in-munich-on-august-12-2026",
-      "endDate": "2026-08-12T12:00:00Z",
+      "negRiskMarketID": "0xbb01d92208e308f14eb9917889bb2b449395207a26fe2a7990c3d5def7f74c00",
+      "event": "NBA: 2027 Champion",
+      "slug": "nba-2027-champion",
+      "endDate": "2027-07-01T00:00:00Z",
       "n": 3,
-      "completeBid": false,
+      "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "31°C",
-          "bid": 0.03,
-          "ask": 0.04
+          "name": "Toronto Raptors",
+          "bid": 0.037,
+          "ask": 0.038
         },
         {
-          "name": "32°C",
+          "name": "Phoenix Suns",
+          "bid": 0.005,
+          "ask": 0.007
+        },
+        {
+          "name": "Chicago Bulls",
           "bid": 0.002,
-          "ask": 0.013
-        },
-        {
-          "name": "29°C",
-          "bid": null,
-          "ask": 0.001
+          "ask": 0.003
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.249,
-      "grossPP": 75.1,
-      "feePP": 1.25,
-      "netPP": 73.85,
+      "sumProb": 0.136,
+      "grossPP": 86.4,
+      "feePP": 0.68,
+      "netPP": 85.72,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x697ad5ad79df81b98b58ef5ea0ff713d40397e526b98bd36fbe57d4be4365000",
+      "event": "EPL: 2027 Champion",
+      "slug": "epl-2027-champion-20260701200428749",
+      "endDate": "2027-05-30T23:59:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Liverpool",
+          "bid": 0.12,
+          "ask": 0.13
+        },
+        {
+          "name": "Newcastle United",
+          "bid": 0.002,
+          "ask": 0.004
+        },
+        {
+          "name": "Crystal Palace",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.241,
+      "grossPP": 75.9,
+      "feePP": 1.21,
+      "netPP": 74.7,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x029c63c721ee4d65bca5b3380a706530b29acd84d44245bcc025c191f3ecd300",
@@ -108,12 +176,61 @@
         {
           "name": "Vici Gaming",
           "bid": 0.017,
-          "ask": 0.026
+          "ask": 0.018
         },
         {
           "name": "HULIGANI",
           "bid": 0.002,
           "ask": 0.003
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.256,
+      "grossPP": 74.4,
+      "feePP": 1.28,
+      "netPP": 73.12,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xdf68e72efcda772cc98bd2a5c0eeeb59550e391dbae3ea7091e2c6433d6d4700",
+      "event": "Elon Musk # tweets August 11 - August 18, 2026?",
+      "slug": "elon-musk-of-tweets-august-11-august-18",
+      "endDate": "2026-08-18T16:00:00Z",
+      "n": 8,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "160-179",
+          "bid": 0.21,
+          "ask": 0.22
+        },
+        {
+          "name": "100-119",
+          "bid": 0.012,
+          "ask": 0.018
+        },
+        {
+          "name": "300-319",
+          "bid": 0.006,
+          "ask": 0.008
+        },
+        {
+          "name": "80-99",
+          "bid": 0.002,
+          "ask": 0.003
+        },
+        {
+          "name": "360-379",
+          "bid": 0.001,
+          "ask": 0.003
+        },
+        {
+          "name": "380-399",
+          "bid": 0.001,
+          "ask": 0.002
         }
       ]
     },
@@ -158,10 +275,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.381,
-      "grossPP": 61.9,
-      "feePP": 1.52,
-      "netPP": 60.38,
+      "sumProb": 0.385,
+      "grossPP": 61.5,
+      "feePP": 1.54,
+      "netPP": 59.96,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x966a3221e05d8d0579854c4952085331da2a42989dee0fa033d24cada9dfca00",
@@ -180,18 +297,18 @@
         },
         {
           "name": "Renan Santos",
-          "bid": 0.075,
-          "ask": 0.076
+          "bid": 0.076,
+          "ask": 0.078
+        },
+        {
+          "name": "Ronaldo Caiado",
+          "bid": 0.008,
+          "ask": 0.011
         },
         {
           "name": "Jair Bolsonaro",
           "bid": 0.01,
           "ask": 0.011
-        },
-        {
-          "name": "Ronaldo Caiado",
-          "bid": 0.008,
-          "ask": 0.009
         },
         {
           "name": "Fernando Haddad",
@@ -207,10 +324,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.407,
-      "grossPP": 59.3,
-      "feePP": 1.63,
-      "netPP": 57.67,
+      "sumProb": 0.406,
+      "grossPP": 59.4,
+      "feePP": 1.62,
+      "netPP": 57.78,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
@@ -244,8 +361,8 @@
         },
         {
           "name": "Thomas Massie",
-          "bid": 0.013,
-          "ask": 0.014
+          "bid": 0.011,
+          "ask": 0.013
         },
         {
           "name": "James Talarico",
@@ -256,59 +373,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.479,
-      "grossPP": 52.1,
-      "feePP": 2.4,
-      "netPP": 49.7,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xdf68e72efcda772cc98bd2a5c0eeeb59550e391dbae3ea7091e2c6433d6d4700",
-      "event": "Elon Musk # tweets August 11 - August 18, 2026?",
-      "slug": "elon-musk-of-tweets-august-11-august-18",
-      "endDate": "2026-08-18T16:00:00Z",
-      "n": 7,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "180-199",
-          "bid": 0.22,
-          "ask": 0.23
-        },
-        {
-          "name": "160-179",
-          "bid": 0.2,
-          "ask": 0.21
-        },
-        {
-          "name": "100-119",
-          "bid": 0.026,
-          "ask": 0.028
-        },
-        {
-          "name": "300-319",
-          "bid": 0.005,
-          "ask": 0.006
-        },
-        {
-          "name": "80-99",
-          "bid": 0.002,
-          "ask": 0.003
-        },
-        {
-          "name": "500+",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.485,
-      "grossPP": 51.5,
-      "feePP": 1.94,
-      "netPP": 49.56,
+      "sumProb": 0.483,
+      "grossPP": 51.7,
+      "feePP": 1.93,
+      "netPP": 49.77,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
@@ -322,8 +390,8 @@
       "top": [
         {
           "name": "Alexandria Ocasio-Cortez",
-          "bid": 0.178,
-          "ask": 0.184
+          "bid": 0.18,
+          "ask": 0.182
         },
         {
           "name": "Gavin Newsom",
@@ -354,79 +422,40 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.847,
-      "grossPP": 15.3,
-      "feePP": 1.47,
-      "netPP": 13.83,
+      "sumProb": 0.952,
+      "grossPP": 4.8,
+      "feePP": 4.14,
+      "netPP": 0.66,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x852033aacaaaef9ef11f34d33534cf8ad77d898da29e06550bf0eb1095b34500",
-      "event": "Wisconsin Governor Democratic Primary Margin of Victory (0.2% Brackets)",
-      "slug": "wisconsin-governor-democratic-primary-margin-of-victory-0pt2-brackets-20260812041248272",
-      "endDate": "2026-08-12T23:59:00Z",
-      "n": 5,
+      "negRiskMarketID": "0xc194d621e2ef9468b86ed0db1328fd8d56ae8fba1e21b94c5c515e96ecbfc400",
+      "event": "Which party will gain most seats in Russian Parliamentary Election?",
+      "slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election",
+      "endDate": "2026-09-20T00:00:00Z",
+      "n": 4,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Crowley 0.4–0.6%",
-          "bid": 0.73,
-          "ask": 0.74
+          "name": "United Russia (ER)",
+          "bid": 0.67,
+          "ask": 0.68
         },
         {
-          "name": "Crowley 0.6–0.8%",
-          "bid": 0.039,
-          "ask": 0.04
+          "name": "New People (NL)",
+          "bid": 0.246,
+          "ask": 0.248
         },
         {
-          "name": "Crowley <0.2%",
-          "bid": 0.032,
-          "ask": 0.033
+          "name": "Communist Party of the Russian Federation (KPRF)",
+          "bid": 0.019,
+          "ask": 0.02
         },
         {
-          "name": "Crowley 0.8–1%",
-          "bid": 0.018,
-          "ask": 0.019
-        },
-        {
-          "name": "Crowley 1–1.2%",
-          "bid": 0.013,
-          "ask": 0.015
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.88,
-      "grossPP": 12.0,
-      "feePP": 0.8,
-      "netPP": 11.2,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x72514014416b5305d3d4debd02bbfa9cd928837d02277b734f928381ab273900",
-      "event": "Highest temperature in Madrid on August 12?",
-      "slug": "highest-temperature-in-madrid-on-august-12-2026",
-      "endDate": "2026-08-12T12:00:00Z",
-      "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "38°C",
-          "bid": 0.82,
-          "ask": 0.86
-        },
-        {
-          "name": "40°C",
-          "bid": 0.005,
-          "ask": 0.019
-        },
-        {
-          "name": "37°C",
-          "bid": null,
-          "ask": 0.001
+          "name": "Yabloko",
+          "bid": 0.003,
+          "ask": 0.004
         }
       ]
     }
