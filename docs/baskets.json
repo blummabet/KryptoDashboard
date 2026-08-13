@@ -1,10 +1,44 @@
 {
-  "generatedAt": "2026-08-13 13:38 UTC",
+  "generatedAt": "2026-08-13 15:08 UTC",
   "scanned": 600,
-  "count": 14,
+  "count": 15,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
+    {
+      "side": "buy",
+      "sumProb": 0.007,
+      "grossPP": 99.3,
+      "feePP": 0.04,
+      "netPP": 99.27,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xfb5399f0e1c4ea4d78a40957d48838ab5769fcec80592b8ce2ffd6e27a3cad00",
+      "event": "UEFA Champions League: 2027 Champion",
+      "slug": "uefa-champions-league-2027-champion-20260701202025549",
+      "endDate": "2027-05-30T23:59:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "PSV Eindhoven",
+          "bid": 0.002,
+          "ask": 0.003
+        },
+        {
+          "name": "Shakhtar Donetsk",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "Feyenoord",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
     {
       "side": "buy",
       "sumProb": 0.057,
@@ -80,6 +114,55 @@
     },
     {
       "side": "buy",
+      "sumProb": 0.183,
+      "grossPP": 81.7,
+      "feePP": 0.92,
+      "netPP": 80.78,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xdf68e72efcda772cc98bd2a5c0eeeb59550e391dbae3ea7091e2c6433d6d4700",
+      "event": "Elon Musk # tweets August 11 - August 18, 2026?",
+      "slug": "elon-musk-of-tweets-august-11-august-18",
+      "endDate": "2026-08-18T16:00:00Z",
+      "n": 7,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "140-159",
+          "bid": 0.12,
+          "ask": 0.13
+        },
+        {
+          "name": "120-139",
+          "bid": 0.022,
+          "ask": 0.025
+        },
+        {
+          "name": "260-279",
+          "bid": 0.012,
+          "ask": 0.017
+        },
+        {
+          "name": "300-319",
+          "bid": 0.004,
+          "ask": 0.006
+        },
+        {
+          "name": "380-399",
+          "bid": null,
+          "ask": 0.002
+        },
+        {
+          "name": "360-379",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
       "sumProb": 0.22,
       "grossPP": 78.0,
       "feePP": 1.1,
@@ -129,108 +212,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.321,
-      "grossPP": 67.9,
-      "feePP": 1.61,
-      "netPP": 66.3,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xdf68e72efcda772cc98bd2a5c0eeeb59550e391dbae3ea7091e2c6433d6d4700",
-      "event": "Elon Musk # tweets August 11 - August 18, 2026?",
-      "slug": "elon-musk-of-tweets-august-11-august-18",
-      "endDate": "2026-08-18T16:00:00Z",
-      "n": 8,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "160-179",
-          "bid": 0.24,
-          "ask": 0.25
-        },
-        {
-          "name": "120-139",
-          "bid": 0.037,
-          "ask": 0.039
-        },
-        {
-          "name": "260-279",
-          "bid": 0.012,
-          "ask": 0.013
-        },
-        {
-          "name": "280-299",
-          "bid": 0.008,
-          "ask": 0.009
-        },
-        {
-          "name": "300-319",
-          "bid": 0.004,
-          "ask": 0.005
-        },
-        {
-          "name": "360-379",
-          "bid": 0.001,
-          "ask": 0.002
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.354,
-      "grossPP": 64.6,
-      "feePP": 1.77,
-      "netPP": 62.83,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xdc5a2e26c51dc285867b613a52865b4fb567a8c785f85018ca5df57de8a06200",
-      "event": "EWC 2026 CS2: Winner",
-      "slug": "ewc-2026-cs2-winner-20260810160005076",
-      "endDate": null,
-      "n": 18,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Team Spirit",
-          "bid": 0.15,
-          "ask": 0.16
-        },
-        {
-          "name": "G2 Esports",
-          "bid": 0.014,
-          "ask": 0.034
-        },
-        {
-          "name": "FaZe Clan",
-          "bid": 0.024,
-          "ask": 0.025
-        },
-        {
-          "name": "GamerLegion",
-          "bid": 0.011,
-          "ask": 0.019
-        },
-        {
-          "name": "The MongolZ",
-          "bid": 0.014,
-          "ask": 0.018
-        },
-        {
-          "name": "FUT Esports",
-          "bid": 0.014,
-          "ask": 0.015
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.442,
-      "grossPP": 55.8,
-      "feePP": 3.09,
-      "netPP": 52.71,
+      "sumProb": 0.44,
+      "grossPP": 56.0,
+      "feePP": 3.08,
+      "netPP": 52.92,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x03c9c6d9f7b20aaa1f33f99bd24bd16e4e0e00cfa892dde097b800655490b200",
@@ -255,12 +240,12 @@
         {
           "name": "Avigdor Lieberman",
           "bid": 0.058,
-          "ask": 0.06
+          "ask": 0.059
         },
         {
           "name": "Gilad Erdan",
-          "bid": 0.008,
-          "ask": 0.009
+          "bid": 0.007,
+          "ask": 0.008
         },
         {
           "name": "Itamar Ben Gvir",
@@ -271,59 +256,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.516,
-      "grossPP": 48.4,
-      "feePP": 2.58,
-      "netPP": 45.82,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x029c63c721ee4d65bca5b3380a706530b29acd84d44245bcc025c191f3ecd300",
-      "event": "The International 2026: Winner",
-      "slug": "the-international-2026-winner-20260629212545745",
-      "endDate": null,
-      "n": 7,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "TEAM VISION",
-          "bid": 0.24,
-          "ask": 0.26
-        },
-        {
-          "name": "Team Falcons",
-          "bid": 0.13,
-          "ask": 0.18
-        },
-        {
-          "name": "LGD Gaming",
-          "bid": 0.019,
-          "ask": 0.021
-        },
-        {
-          "name": "Xtreme Gaming",
-          "bid": 0.019,
-          "ask": 0.021
-        },
-        {
-          "name": "Vici Gaming",
-          "bid": 0.016,
-          "ask": 0.017
-        },
-        {
-          "name": "Team Resilience",
-          "bid": 0.011,
-          "ask": 0.016
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.648,
-      "grossPP": 35.2,
-      "feePP": 2.59,
-      "netPP": 32.61,
+      "sumProb": 0.459,
+      "grossPP": 54.1,
+      "feePP": 1.84,
+      "netPP": 52.26,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
@@ -341,11 +277,6 @@
           "ask": 0.191
         },
         {
-          "name": "Gavin Newsom",
-          "bid": 0.169,
-          "ask": 0.17
-        },
-        {
           "name": "Jon Ossoff",
           "bid": 0.154,
           "ask": 0.155
@@ -356,12 +287,66 @@
           "ask": 0.053
         },
         {
-          "name": "Mark Kelly",
-          "bid": 0.03,
-          "ask": 0.031
+          "name": "J.B. Pritzker",
+          "bid": 0.011,
+          "ask": 0.012
         },
         {
-          "name": "J.B. Pritzker",
+          "name": "Dwayne 'The Rock' Johnson",
+          "bid": 0.01,
+          "ask": 0.011
+        },
+        {
+          "name": "Michelle Obama",
+          "bid": 0.007,
+          "ask": 0.008
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.503,
+      "grossPP": 49.7,
+      "feePP": 2.52,
+      "netPP": 47.19,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x029c63c721ee4d65bca5b3380a706530b29acd84d44245bcc025c191f3ecd300",
+      "event": "The International 2026: Winner",
+      "slug": "the-international-2026-winner-20260629212545745",
+      "endDate": null,
+      "n": 7,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "TEAM VISION",
+          "bid": 0.26,
+          "ask": 0.27
+        },
+        {
+          "name": "Team Falcons",
+          "bid": 0.13,
+          "ask": 0.16
+        },
+        {
+          "name": "LGD Gaming",
+          "bid": 0.019,
+          "ask": 0.021
+        },
+        {
+          "name": "Xtreme Gaming",
+          "bid": 0.02,
+          "ask": 0.021
+        },
+        {
+          "name": "Vici Gaming",
+          "bid": 0.016,
+          "ask": 0.017
+        },
+        {
+          "name": "Team Resilience",
           "bid": 0.011,
           "ask": 0.012
         }
@@ -408,17 +393,66 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.858,
-      "grossPP": 14.2,
-      "feePP": 3.43,
-      "netPP": 10.77,
+      "sumProb": 0.692,
+      "grossPP": 30.8,
+      "feePP": 3.46,
+      "netPP": 27.34,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xdc5a2e26c51dc285867b613a52865b4fb567a8c785f85018ca5df57de8a06200",
+      "event": "EWC 2026 CS2: Winner",
+      "slug": "ewc-2026-cs2-winner-20260810160005076",
+      "endDate": null,
+      "n": 16,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Team Vitality",
+          "bid": 0.28,
+          "ask": 0.33
+        },
+        {
+          "name": "Team Spirit",
+          "bid": 0.15,
+          "ask": 0.16
+        },
+        {
+          "name": "paiN Gaming",
+          "bid": 0.002,
+          "ask": 0.036
+        },
+        {
+          "name": "G2 Esports",
+          "bid": 0.022,
+          "ask": 0.035
+        },
+        {
+          "name": "FaZe Clan",
+          "bid": 0.023,
+          "ask": 0.025
+        },
+        {
+          "name": "The MongolZ",
+          "bid": 0.014,
+          "ask": 0.019
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.834,
+      "grossPP": 16.6,
+      "feePP": 3.34,
+      "netPP": 13.26,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 24,
+      "n": 21,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -430,8 +464,8 @@
         },
         {
           "name": "Alexandria Ocasio-Cortez",
-          "bid": 0.125,
-          "ask": 0.126
+          "bid": 0.128,
+          "ask": 0.129
         },
         {
           "name": "Marco Rubio",
@@ -457,10 +491,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.949,
-      "grossPP": 5.1,
+      "sumProb": 0.951,
+      "grossPP": 4.9,
       "feePP": 0.28,
-      "netPP": 4.82,
+      "netPP": 4.62,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xe2bada94c7e971260775dadfbe95e5fc32dd76686af913795200f6ef5da29c00",
@@ -479,8 +513,8 @@
         },
         {
           "name": "DeepSeek",
-          "bid": 0.003,
-          "ask": 0.004
+          "bid": 0.002,
+          "ask": 0.006
         },
         {
           "name": "SpaceXAI",
@@ -496,10 +530,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.919,
-      "grossPP": 8.1,
-      "feePP": 4.05,
-      "netPP": 4.05,
+      "sumProb": 0.917,
+      "grossPP": 8.3,
+      "feePP": 4.04,
+      "netPP": 4.26,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xc194d621e2ef9468b86ed0db1328fd8d56ae8fba1e21b94c5c515e96ecbfc400",
@@ -518,8 +552,8 @@
         },
         {
           "name": "New People (NL)",
-          "bid": 0.24,
-          "ask": 0.241
+          "bid": 0.237,
+          "ask": 0.239
         },
         {
           "name": "Yabloko",
@@ -569,10 +603,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.942,
-      "grossPP": 5.8,
-      "feePP": 3.84,
-      "netPP": 1.96,
+      "sumProb": 0.945,
+      "grossPP": 5.5,
+      "feePP": 3.92,
+      "netPP": 1.59,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
@@ -586,23 +620,23 @@
       "top": [
         {
           "name": "Harry Kane",
-          "bid": 0.586,
-          "ask": 0.587
+          "bid": 0.574,
+          "ask": 0.581
         },
         {
           "name": "Lamine Yamal",
           "bid": 0.157,
-          "ask": 0.158
+          "ask": 0.167
         },
         {
           "name": "Kylian Mbappé",
-          "bid": 0.072,
-          "ask": 0.075
+          "bid": 0.073,
+          "ask": 0.079
         },
         {
           "name": "Khvicha Kvaratskhelia",
-          "bid": 0.062,
-          "ask": 0.07
+          "bid": 0.061,
+          "ask": 0.066
         },
         {
           "name": "Lionel Messi",
