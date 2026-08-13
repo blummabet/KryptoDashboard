@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-08-13 15:10 UTC",
+  "generatedAt": "2026-08-13 17:09 UTC",
   "attribution": {
-    "nClosed": 436,
-    "realizedTotal": -888.82,
-    "feesTotal": 1492.59,
-    "grossBeforeFees": 603.77,
-    "feeDragPct": 247.21,
-    "winRate": 0.493,
-    "nWin": 215,
+    "nClosed": 437,
+    "realizedTotal": -639.94,
+    "feesTotal": 1494.59,
+    "grossBeforeFees": 854.65,
+    "feeDragPct": 174.88,
+    "winRate": 0.494,
+    "nWin": 216,
     "nLoss": 221,
-    "avgWin": 22.71,
+    "avgWin": 23.75,
     "avgLoss": -26.11,
-    "payoffRatio": 0.87,
+    "payoffRatio": 0.91,
     "avgFeePP": 3.42,
-    "avgEntryEdgePP": 3.16,
+    "avgEntryEdgePP": 3.17,
     "feeEatsEdge": true,
     "worstFiveSum": -511.59,
     "tailLossShare": 0.089,
@@ -63,6 +63,12 @@
         "reason": "converged"
       },
       {
+        "market": "über $64,000 · 2026-08-13",
+        "side": "NO",
+        "pnl": 248.88,
+        "reason": "resolved_win"
+      },
+      {
         "market": "über $64,000 · 2026-07-05",
         "side": "YES",
         "pnl": 230.17,
@@ -73,12 +79,6 @@
         "side": "YES",
         "pnl": 185.47,
         "reason": "converged"
-      },
-      {
-        "market": "über $64,000 · 2026-07-17",
-        "side": "NO",
-        "pnl": 150.39,
-        "reason": "resolved_win"
       }
     ],
     "byReason": {
@@ -95,20 +95,20 @@
         "pnl": -611.56
       },
       "resolved_win": {
-        "n": 20,
-        "pnl": 796.25
+        "n": 21,
+        "pnl": 1045.13
       }
     }
   },
   "btcExposure": {
     "n": 39,
-    "nLong": 0,
-    "nShort": 39,
-    "longStakeUSD": 0.0,
-    "shortStakeUSD": 3900.0,
-    "netWeighted": -1977.66,
-    "grossWeighted": 1977.66,
-    "netPct": -100.0,
+    "nLong": 1,
+    "nShort": 38,
+    "longStakeUSD": 100.0,
+    "shortStakeUSD": 3800.0,
+    "netWeighted": -1589.17,
+    "grossWeighted": 1789.17,
+    "netPct": -88.8,
     "direction": "SHORT (fällt BTC → Buch gewinnt)",
     "concentrated": true
   }
