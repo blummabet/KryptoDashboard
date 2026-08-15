@@ -1,11 +1,11 @@
 {
   "summary": {
-    "citiesTracked": 5,
-    "marketsWithEdge": 5,
+    "citiesTracked": 4,
+    "marketsWithEdge": 4,
     "bestEdgePP": -78.7,
-    "avgAbsBias": 0.45,
+    "avgAbsBias": 0.38,
     "errors": [
-      "Lucknow: keine Forecast-/Bucket-Daten (Open-Meteo?)"
+      "Seoul: keine Forecast-/Bucket-Daten (Open-Meteo?)"
     ]
   },
   "cities": [
@@ -15,8 +15,8 @@
       "station": "London City (EGLC)",
       "date": "2026-08-15",
       "slug": "highest-temperature-in-london-on-august-15-2026",
-      "liquidityUSD": 263098,
-      "vol24hUSD": 125989,
+      "liquidityUSD": 271222,
+      "vol24hUSD": 124490,
       "unit": "C",
       "ensembleMean": 26.56,
       "modelSpread": 1.44,
@@ -158,161 +158,13 @@
       ]
     },
     {
-      "city": "Seoul",
-      "group": "edge",
-      "station": "Incheon (RKSI)",
-      "date": "2026-08-15",
-      "slug": "highest-temperature-in-seoul-on-august-15-2026",
-      "liquidityUSD": 47441,
-      "vol24hUSD": 77536,
-      "unit": "C",
-      "ensembleMean": 26.92,
-      "modelSpread": 0.48,
-      "bias": 0.76,
-      "calDays": 21,
-      "calibratedMean": 27.68,
-      "sigma": 1.0,
-      "ourMode": "28°C",
-      "marketMode": "28°C",
-      "modeMatch": true,
-      "topEdge": {
-        "label": "28°C",
-        "edgePP": -63.4,
-        "dir": "meiden/verkaufen",
-        "tradeable": true
-      },
-      "buckets": [
-        {
-          "label": "24°C or below",
-          "conditionId": "0xa65a7f4a50c930819d3cbfb7203d7057a3e401673563ab9c2d1aca1c6bdb1c40",
-          "ourProb": 0.0007,
-          "polyPrice": 0.0,
-          "edgePP": 0.1,
-          "bestBid": null,
-          "bestAsk": 0.001,
-          "dir": "kaufen",
-          "tradeable": false
-        },
-        {
-          "label": "25°C",
-          "conditionId": "0x379080f0228171762b2352e3dd3521020093d83ab59687af05e31feddbe11410",
-          "ourProb": 0.0139,
-          "polyPrice": 0.0,
-          "edgePP": 1.4,
-          "bestBid": null,
-          "bestAsk": 0.001,
-          "dir": "kaufen",
-          "tradeable": false
-        },
-        {
-          "label": "26°C",
-          "conditionId": "0xdea95ddd3b84add3258008acb1f77e4c8dd181ea3fbf8c674ccaa5edfbf2fd9b",
-          "ourProb": 0.1044,
-          "polyPrice": 0.0,
-          "edgePP": 10.4,
-          "bestBid": null,
-          "bestAsk": 0.001,
-          "dir": "kaufen",
-          "tradeable": true
-        },
-        {
-          "label": "27°C",
-          "conditionId": "0x6b8d1831ec4dc04bd59b1d84abe2dc27d34b514ce1e42411a74611c11925c737",
-          "ourProb": 0.3096,
-          "polyPrice": 0.0,
-          "edgePP": 31.0,
-          "bestBid": null,
-          "bestAsk": 0.001,
-          "dir": "kaufen",
-          "tradeable": true
-        },
-        {
-          "label": "28°C",
-          "conditionId": "0x3ad4a2e2e45a87dd8863af2547851334a551b7b2521bdd32fcc7780cefee9109",
-          "ourProb": 0.3653,
-          "polyPrice": 0.9995,
-          "edgePP": -63.4,
-          "bestBid": 0.999,
-          "bestAsk": 1,
-          "dir": "meiden/verkaufen",
-          "tradeable": true
-        },
-        {
-          "label": "29°C",
-          "conditionId": "0x2015455addc0b342c39b0a83d086af8c0fe4ce522403d3ee21eaca503b130d9f",
-          "ourProb": 0.1717,
-          "polyPrice": 0.0,
-          "edgePP": 17.2,
-          "bestBid": null,
-          "bestAsk": 0.001,
-          "dir": "kaufen",
-          "tradeable": true
-        },
-        {
-          "label": "30°C",
-          "conditionId": "0x88c0512e02c3cbc184cc67206432354e7c2a9fd59f9b3e7986685a0f2c28ee37",
-          "ourProb": 0.032,
-          "polyPrice": 0.0,
-          "edgePP": 3.2,
-          "bestBid": null,
-          "bestAsk": 0.001,
-          "dir": "kaufen",
-          "tradeable": false
-        },
-        {
-          "label": "31°C",
-          "conditionId": "0xb73f8c5d8dc82b16c9636d9b1955956de663387b652bc9e0e5716e9d073f231a",
-          "ourProb": 0.0023,
-          "polyPrice": 0.0,
-          "edgePP": 0.2,
-          "bestBid": null,
-          "bestAsk": 0.001,
-          "dir": "kaufen",
-          "tradeable": false
-        },
-        {
-          "label": "32°C",
-          "conditionId": "0x6c8327af103f437d2881b9cae3295c1a483f43aa2383e0113438d114ecc1f5a3",
-          "ourProb": 0.0001,
-          "polyPrice": 0.0,
-          "edgePP": 0.0,
-          "bestBid": null,
-          "bestAsk": 0.001,
-          "dir": "meiden/verkaufen",
-          "tradeable": false
-        },
-        {
-          "label": "33°C",
-          "conditionId": "0xa447cd1b5ab5ed1a2b48f4475a10d93465cc1012612a27a7e9f8888e10c722f3",
-          "ourProb": 0.0,
-          "polyPrice": 0.0,
-          "edgePP": 0.0,
-          "bestBid": null,
-          "bestAsk": 0.001,
-          "dir": "meiden/verkaufen",
-          "tradeable": false
-        },
-        {
-          "label": "34°C or higher",
-          "conditionId": "0x42d6977d7fb68930be550fafaf5e29f45e6269be5148f381c8ef297a0cf3163f",
-          "ourProb": 0.0,
-          "polyPrice": 0.0,
-          "edgePP": 0.0,
-          "bestBid": null,
-          "bestAsk": 0.001,
-          "dir": "meiden/verkaufen",
-          "tradeable": false
-        }
-      ]
-    },
-    {
       "city": "Milan",
       "group": "liquid",
       "station": "Malpensa (LIMC)",
       "date": "2026-08-15",
       "slug": "highest-temperature-in-milan-on-august-15-2026",
-      "liquidityUSD": 227260,
-      "vol24hUSD": 25643,
+      "liquidityUSD": 224326,
+      "vol24hUSD": 25428,
       "unit": "C",
       "ensembleMean": 34.2,
       "modelSpread": 1.03,
@@ -459,8 +311,8 @@
       "station": "Wellington Intl (NZWN)",
       "date": "2026-08-16",
       "slug": "highest-temperature-in-wellington-on-august-16-2026",
-      "liquidityUSD": 199791,
-      "vol24hUSD": 46446,
+      "liquidityUSD": 199623,
+      "vol24hUSD": 48838,
       "unit": "C",
       "ensembleMean": 9.48,
       "modelSpread": 0.39,
@@ -473,7 +325,7 @@
       "modeMatch": false,
       "topEdge": {
         "label": "10°C",
-        "edgePP": -58.9,
+        "edgePP": -60.9,
         "dir": "meiden/verkaufen",
         "tradeable": true
       },
@@ -548,10 +400,10 @@
           "label": "10°C",
           "conditionId": "0xc30e900351fba3d5299fd830b518f323fe4df72cb637ab63d3cd3139a7dc0d8c",
           "ourProb": 0.3413,
-          "polyPrice": 0.93,
-          "edgePP": -58.9,
-          "bestBid": 0.92,
-          "bestAsk": 0.94,
+          "polyPrice": 0.95,
+          "edgePP": -60.9,
+          "bestBid": 0.94,
+          "bestAsk": 0.96,
           "dir": "meiden/verkaufen",
           "tradeable": true
         },
@@ -559,10 +411,10 @@
           "label": "11°C",
           "conditionId": "0x88e5159a6556562034aa8ec9cbde4fe1289279d2ccf82f48fdbbc2c41ab0751e",
           "ourProb": 0.1359,
-          "polyPrice": 0.055,
-          "edgePP": 8.1,
-          "bestBid": 0.04,
-          "bestAsk": 0.07,
+          "polyPrice": 0.04,
+          "edgePP": 9.6,
+          "bestBid": 0.03,
+          "bestAsk": 0.05,
           "dir": "kaufen",
           "tradeable": true
         },
@@ -570,10 +422,10 @@
           "label": "12°C",
           "conditionId": "0x688fce595813c2bcfb60aa7840d3d3d59e9f796f42858058a8ad6fe1a5deaccb",
           "ourProb": 0.0214,
-          "polyPrice": 0.017,
-          "edgePP": 0.4,
-          "bestBid": 0.015,
-          "bestAsk": 0.019,
+          "polyPrice": 0.013,
+          "edgePP": 0.8,
+          "bestBid": 0.008,
+          "bestAsk": 0.018,
           "dir": "kaufen",
           "tradeable": false
         },
@@ -581,10 +433,10 @@
           "label": "13°C",
           "conditionId": "0x631c3ccbb9728a317fb4eb01275dfa774cb3572a00f644dfc08c8aca07a62eb4",
           "ourProb": 0.0013,
-          "polyPrice": 0.002,
-          "edgePP": -0.1,
-          "bestBid": 0.001,
-          "bestAsk": 0.003,
+          "polyPrice": 0.001,
+          "edgePP": 0.0,
+          "bestBid": null,
+          "bestAsk": 0.002,
           "dir": "meiden/verkaufen",
           "tradeable": false
         },
@@ -607,8 +459,8 @@
       "station": "LaGuardia (KLGA)",
       "date": "2026-08-15",
       "slug": "highest-temperature-in-nyc-on-august-15-2026",
-      "liquidityUSD": 98619,
-      "vol24hUSD": 61604,
+      "liquidityUSD": 97297,
+      "vol24hUSD": 63947,
       "unit": "F",
       "ensembleMean": 83.44,
       "modelSpread": 1.22,
@@ -621,7 +473,7 @@
       "modeMatch": false,
       "topEdge": {
         "label": "82-83°F",
-        "edgePP": -31.4,
+        "edgePP": -42.4,
         "dir": "meiden/verkaufen",
         "tradeable": true
       },
@@ -663,21 +515,21 @@
           "label": "80-81°F",
           "conditionId": "0x604a647c244c0af83a082188b9a5e68bd6daa8c253d78785bc9067f132e175f1",
           "ourProb": 0.0669,
-          "polyPrice": 0.17,
-          "edgePP": -10.3,
-          "bestBid": 0.14,
-          "bestAsk": 0.2,
+          "polyPrice": 0.085,
+          "edgePP": -1.8,
+          "bestBid": 0.08,
+          "bestAsk": 0.09,
           "dir": "meiden/verkaufen",
-          "tradeable": true
+          "tradeable": false
         },
         {
           "label": "82-83°F",
           "conditionId": "0x0657c46abfedc4d8550610f76e2b0560d988b1e211a2758cecea9b691d156906",
           "ourProb": 0.2912,
-          "polyPrice": 0.605,
-          "edgePP": -31.4,
-          "bestBid": 0.54,
-          "bestAsk": 0.67,
+          "polyPrice": 0.715,
+          "edgePP": -42.4,
+          "bestBid": 0.68,
+          "bestAsk": 0.75,
           "dir": "meiden/verkaufen",
           "tradeable": true
         },
@@ -685,10 +537,10 @@
           "label": "84-85°F",
           "conditionId": "0x76bbc4e1971bf6966b700649195d6e581ed83d0b39b975bd9efb4a04cc54fb9f",
           "ourProb": 0.4135,
-          "polyPrice": 0.24,
-          "edgePP": 17.4,
-          "bestBid": 0.19,
-          "bestAsk": 0.29,
+          "polyPrice": 0.185,
+          "edgePP": 22.9,
+          "bestBid": 0.15,
+          "bestAsk": 0.22,
           "dir": "kaufen",
           "tradeable": true
         },
@@ -696,10 +548,10 @@
           "label": "86-87°F",
           "conditionId": "0xb4fbbc664c90a2b43a9c58a25c67efc9ca529efa0612ff66ed5d9784815863ec",
           "ourProb": 0.1927,
-          "polyPrice": 0.01,
-          "edgePP": 18.3,
-          "bestBid": null,
-          "bestAsk": 0.02,
+          "polyPrice": 0.005,
+          "edgePP": 18.8,
+          "bestBid": 0.001,
+          "bestAsk": 0.009,
           "dir": "kaufen",
           "tradeable": true
         },
@@ -751,8 +603,8 @@
     }
   ],
   "errors": [
-    "Lucknow: keine Forecast-/Bucket-Daten (Open-Meteo?)"
+    "Seoul: keine Forecast-/Bucket-Daten (Open-Meteo?)"
   ],
-  "generatedAt": "2026-08-15 18:43 UTC",
+  "generatedAt": "2026-08-15 19:31 UTC",
   "note": "Wetter-Pilot (read-only): kalibriertes Multi-Modell-Ensemble am exakten Auflösungs-Flughafen vs. Poly-1°C-Buckets. Edge ab 8pp interessant (überlebt Fee). Der echte Test ist CLV + Trefferquote gegen Auflösungen — läuft über die Tage."
 }
