@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-15 03:50 UTC",
+  "generatedAt": "2026-08-15 04:41 UTC",
   "scanned": 600,
-  "count": 12,
+  "count": 10,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -46,10 +46,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.059,
-      "grossPP": 94.1,
-      "feePP": 0.3,
-      "netPP": 93.8,
+      "sumProb": 0.062,
+      "grossPP": 93.8,
+      "feePP": 0.31,
+      "netPP": 93.49,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x418429e74b5f1b8af94ce77441e5139ede7da9a65eec4f0e0350fc8de1634300",
@@ -63,8 +63,8 @@
       "top": [
         {
           "name": "120-139",
-          "bid": 0.045,
-          "ask": 0.05
+          "bid": 0.05,
+          "ask": 0.053
         },
         {
           "name": "360-379",
@@ -193,10 +193,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.334,
-      "grossPP": 66.6,
-      "feePP": 1.67,
-      "netPP": 64.93,
+      "sumProb": 0.336,
+      "grossPP": 66.4,
+      "feePP": 1.68,
+      "netPP": 64.72,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
@@ -215,8 +215,8 @@
         },
         {
           "name": "Baltimore Ravens",
-          "bid": 0.069,
-          "ask": 0.07
+          "bid": 0.071,
+          "ask": 0.072
         },
         {
           "name": "Denver Broncos",
@@ -242,40 +242,6 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.372,
-      "grossPP": 62.8,
-      "feePP": 1.86,
-      "netPP": 60.94,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xe00fd396e0e8da1f6edc19047b7829ade8b44a046911aab4d57a274ba4886900",
-      "event": "Highest temperature in Seoul (Incheon) on August 15?",
-      "slug": "highest-temperature-in-seoul-on-august-15-2026",
-      "endDate": "2026-08-15T12:00:00Z",
-      "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "28°C",
-          "bid": 0.29,
-          "ask": 0.37
-        },
-        {
-          "name": "27°C",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "26°C",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
       "sumProb": 0.522,
       "grossPP": 47.8,
       "feePP": 2.09,
@@ -293,7 +259,7 @@
       "top": [
         {
           "name": "J.D. Vance",
-          "bid": 0.467,
+          "bid": 0.468,
           "ask": 0.47
         },
         {
@@ -325,10 +291,59 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.745,
-      "grossPP": 25.5,
-      "feePP": 3.73,
-      "netPP": 21.77,
+      "sumProb": 0.71,
+      "grossPP": 29.0,
+      "feePP": 3.55,
+      "netPP": 25.45,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xa9cc0adfe4154aee5495ca62a9a3d6523c0a884df0d1cd978b1e9ecb22cd1500",
+      "event": "Highest temperature in Hong Kong on August 15?",
+      "slug": "highest-temperature-in-hong-kong-on-august-15-2026",
+      "endDate": "2026-08-15T12:00:00Z",
+      "n": 7,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "30°C",
+          "bid": 0.33,
+          "ask": 0.39
+        },
+        {
+          "name": "32°C",
+          "bid": 0.21,
+          "ask": 0.25
+        },
+        {
+          "name": "29°C",
+          "bid": 0.03,
+          "ask": 0.04
+        },
+        {
+          "name": "33°C",
+          "bid": 0.011,
+          "ask": 0.02
+        },
+        {
+          "name": "34°C",
+          "bid": 0.002,
+          "ask": 0.007
+        },
+        {
+          "name": "28°C",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.71,
+      "grossPP": 29.0,
+      "feePP": 3.55,
+      "netPP": 25.45,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x029c63c721ee4d65bca5b3380a706530b29acd84d44245bcc025c191f3ecd300",
@@ -342,17 +357,17 @@
       "top": [
         {
           "name": "TEAM VISION",
-          "bid": 0.36,
-          "ask": 0.4
+          "bid": 0.35,
+          "ask": 0.39
         },
         {
           "name": "Team Falcons",
-          "bid": 0.06,
+          "bid": 0.07,
           "ask": 0.11
         },
         {
           "name": "Team Yandex",
-          "bid": 0.06,
+          "bid": 0.099,
           "ask": 0.1
         },
         {
@@ -361,72 +376,23 @@
           "ask": 0.07
         },
         {
-          "name": "Aurora Gaming",
-          "bid": 0.038,
-          "ask": 0.041
+          "name": "LGD Gaming",
+          "bid": 0.007,
+          "ask": 0.026
         },
         {
           "name": "Xtreme Gaming",
           "bid": 0.012,
-          "ask": 0.023
+          "ask": 0.013
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.761,
-      "grossPP": 23.9,
-      "feePP": 3.51,
-      "netPP": 20.39,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xa9cc0adfe4154aee5495ca62a9a3d6523c0a884df0d1cd978b1e9ecb22cd1500",
-      "event": "Highest temperature in Hong Kong on August 15?",
-      "slug": "highest-temperature-in-hong-kong-on-august-15-2026",
-      "endDate": "2026-08-15T12:00:00Z",
-      "n": 6,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "30°C",
-          "bid": 0.52,
-          "ask": 0.53
-        },
-        {
-          "name": "29°C",
-          "bid": 0.19,
-          "ask": 0.2
-        },
-        {
-          "name": "28°C",
-          "bid": 0.004,
-          "ask": 0.016
-        },
-        {
-          "name": "33°C",
-          "bid": 0.003,
-          "ask": 0.008
-        },
-        {
-          "name": "34°C",
-          "bid": 0.004,
-          "ask": 0.006
-        },
-        {
-          "name": "37°C or higher",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.803,
-      "grossPP": 19.7,
-      "feePP": 3.17,
-      "netPP": 16.54,
+      "sumProb": 0.81,
+      "grossPP": 19.0,
+      "feePP": 2.92,
+      "netPP": 16.08,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
@@ -440,32 +406,32 @@
       "top": [
         {
           "name": "Harry Kane",
-          "bid": 0.583,
-          "ask": 0.585
+          "bid": 0.612,
+          "ask": 0.613
         },
         {
           "name": "Lamine Yamal",
-          "bid": 0.171,
-          "ask": 0.174
-        },
-        {
-          "name": "Fabian Ruiz",
-          "bid": 0.012,
-          "ask": 0.023
+          "bid": 0.167,
+          "ask": 0.168
         },
         {
           "name": "Lionel Messi",
           "bid": 0.02,
           "ask": 0.021
+        },
+        {
+          "name": "Fabian Ruiz",
+          "bid": 0.007,
+          "ask": 0.008
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.92,
-      "grossPP": 8.0,
-      "feePP": 3.5,
-      "netPP": 4.5,
+      "sumProb": 0.919,
+      "grossPP": 8.1,
+      "feePP": 3.49,
+      "netPP": 4.61,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xc194d621e2ef9468b86ed0db1328fd8d56ae8fba1e21b94c5c515e96ecbfc400",
@@ -485,46 +451,12 @@
         {
           "name": "New People (NL)",
           "bid": 0.194,
-          "ask": 0.206
+          "ask": 0.205
         },
         {
           "name": "Yabloko",
           "bid": 0.003,
           "ask": 0.004
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.988,
-      "grossPP": 1.2,
-      "feePP": 0.17,
-      "netPP": 1.03,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x5283e4166486b229b3553cd5c13f9a20ca3ec41ce705b2941899992a05207b00",
-      "event": "Largest Company end of August?",
-      "slug": "largest-company-end-of-august-20260715202138598",
-      "endDate": "2026-08-31T23:59:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "NVIDIA",
-          "bid": 0.971,
-          "ask": 0.973
-        },
-        {
-          "name": "Alphabet",
-          "bid": 0.011,
-          "ask": 0.013
-        },
-        {
-          "name": "Amazon",
-          "bid": 0.001,
-          "ask": 0.002
         }
       ]
     }
