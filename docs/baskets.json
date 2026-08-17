@@ -1,32 +1,27 @@
 {
-  "generatedAt": "2026-08-17 13:49 UTC",
+  "generatedAt": "2026-08-17 14:38 UTC",
   "scanned": 600,
-  "count": 11,
+  "count": 12,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
     {
       "side": "buy",
-      "sumProb": 0.022,
-      "grossPP": 97.8,
-      "feePP": 0.09,
-      "netPP": 97.71,
+      "sumProb": 0.007,
+      "grossPP": 99.3,
+      "feePP": 0.03,
+      "netPP": 99.27,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
       "event": "Next French Presidential Election",
       "slug": "next-french-presidential-election",
       "endDate": "2027-04-30T00:00:00Z",
-      "n": 4,
+      "n": 3,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
-        {
-          "name": "Sébastien Lecornu",
-          "bid": 0.014,
-          "ask": 0.015
-        },
         {
           "name": "Gérald Darmanin",
           "bid": 0.002,
@@ -41,6 +36,40 @@
           "name": "François Asselineau",
           "bid": 0.001,
           "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.019,
+      "grossPP": 98.1,
+      "feePP": 0.1,
+      "netPP": 98.0,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xbb01d92208e308f14eb9917889bb2b449395207a26fe2a7990c3d5def7f74c00",
+      "event": "NBA: 2027 Champion",
+      "slug": "nba-2027-champion",
+      "endDate": "2027-07-01T00:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Golden State Warriors",
+          "bid": 0.011,
+          "ask": 0.013
+        },
+        {
+          "name": "Memphis Grizzlies",
+          "bid": 0.002,
+          "ask": 0.003
+        },
+        {
+          "name": "Chicago Bulls",
+          "bid": 0.002,
+          "ask": 0.003
         }
       ]
     },
@@ -271,10 +300,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.703,
-      "grossPP": 29.7,
-      "feePP": 2.32,
-      "netPP": 27.38,
+      "sumProb": 0.704,
+      "grossPP": 29.6,
+      "feePP": 2.31,
+      "netPP": 27.29,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x447f0bc59f46826a48dcf0cc15bf0c68b7ee8bb104d08e2d5a3cfd7ce7427b00",
@@ -288,8 +317,8 @@
       "top": [
         {
           "name": "No Meeting by September 30",
-          "bid": 0.683,
-          "ask": 0.686
+          "bid": 0.684,
+          "ask": 0.687
         },
         {
           "name": "Iraq",
@@ -315,10 +344,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.695,
-      "grossPP": 30.5,
-      "feePP": 3.48,
-      "netPP": 27.02,
+      "sumProb": 0.706,
+      "grossPP": 29.4,
+      "feePP": 3.53,
+      "netPP": 25.87,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x418429e74b5f1b8af94ce77441e5139ede7da9a65eec4f0e0350fc8de1634300",
@@ -332,13 +361,13 @@
       "top": [
         {
           "name": "160-179",
-          "bid": 0.24,
-          "ask": 0.25
+          "bid": 0.25,
+          "ask": 0.26
         },
         {
           "name": "120-139",
-          "bid": 0.197,
-          "ask": 0.203
+          "bid": 0.196,
+          "ask": 0.205
         },
         {
           "name": "180-199",
@@ -364,10 +393,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.697,
-      "grossPP": 30.3,
-      "feePP": 3.48,
-      "netPP": 26.81,
+      "sumProb": 0.749,
+      "grossPP": 25.1,
+      "feePP": 3.75,
+      "netPP": 21.36,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2a2fb00caf3e9a3502abbcc23ac4cd393315295fe04b3f28d217e1a58047c900",
@@ -381,32 +410,32 @@
       "top": [
         {
           "name": "82-83°F",
-          "bid": 0.32,
-          "ask": 0.33
+          "bid": 0.28,
+          "ask": 0.3
         },
         {
           "name": "80-81°F",
-          "bid": 0.18,
-          "ask": 0.21
+          "bid": 0.19,
+          "ask": 0.22
         },
         {
           "name": "78-79°F",
-          "bid": 0.1,
-          "ask": 0.13
+          "bid": 0.12,
+          "ask": 0.16
         },
         {
           "name": "75°F or below",
-          "bid": 0.014,
-          "ask": 0.027
+          "bid": 0.036,
+          "ask": 0.069
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.912,
-      "grossPP": 8.8,
-      "feePP": 1.25,
-      "netPP": 7.55,
+      "sumProb": 0.917,
+      "grossPP": 8.3,
+      "feePP": 1.27,
+      "netPP": 7.03,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xd1dae9b7a4d2dc2ee926122b07bde454e05943d4ba9c9b4e0ebf4da9da4aa700",
@@ -420,13 +449,13 @@
       "top": [
         {
           "name": "NVIDIA",
-          "bid": 0.78,
+          "bid": 0.79,
           "ask": 0.8
         },
         {
           "name": "Apple",
           "bid": 0.109,
-          "ask": 0.11
+          "ask": 0.115
         },
         {
           "name": "Amazon",
@@ -437,10 +466,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.935,
-      "grossPP": 6.5,
-      "feePP": 0.3,
-      "netPP": 6.2,
+      "sumProb": 0.937,
+      "grossPP": 6.3,
+      "feePP": 0.31,
+      "netPP": 5.99,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xca56e7fdbfe06c2cfa75118fc945a001ba34e78bc462cb22da0ff9ccc1795a00",
@@ -460,7 +489,7 @@
         {
           "name": "Amazon",
           "bid": 0.002,
-          "ask": 0.003
+          "ask": 0.005
         },
         {
           "name": "SpaceX",
