@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-08-16 23:30 UTC",
+  "generatedAt": "2026-08-17 01:51 UTC",
   "scanned": 600,
-  "count": 15,
+  "count": 17,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
     {
       "side": "buy",
-      "sumProb": 0.014,
-      "grossPP": 98.6,
-      "feePP": 0.06,
-      "netPP": 98.54,
+      "sumProb": 0.011,
+      "grossPP": 98.9,
+      "feePP": 0.04,
+      "netPP": 98.86,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x5283e4166486b229b3553cd5c13f9a20ca3ec41ce705b2941899992a05207b00",
       "event": "Largest Company end of August?",
       "slug": "largest-company-end-of-august-20260715202138598",
       "endDate": "2026-08-31T23:59:00Z",
-      "n": 6,
+      "n": 3,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
@@ -33,58 +33,9 @@
           "ask": 0.002
         },
         {
-          "name": "Tesla",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "Broadcom",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "Saudi Aramco",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
           "name": "Microsoft",
           "bid": null,
           "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.034,
-      "grossPP": 96.6,
-      "feePP": 0.14,
-      "netPP": 96.46,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
-      "event": "Republican Presidential Nominee 2028",
-      "slug": "republican-presidential-nominee-2028",
-      "endDate": "2028-11-07T00:00:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Ron DeSantis",
-          "bid": 0.029,
-          "ask": 0.03
-        },
-        {
-          "name": "Mike Johnson",
-          "bid": 0.001,
-          "ask": 0.002
-        },
-        {
-          "name": "Tom Cotton",
-          "bid": 0.001,
-          "ask": 0.002
         }
       ]
     },
@@ -129,93 +80,49 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.098,
-      "grossPP": 90.2,
-      "feePP": 0.49,
-      "netPP": 89.71,
+      "sumProb": 0.044,
+      "grossPP": 95.6,
+      "feePP": 0.22,
+      "netPP": 95.38,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x418429e74b5f1b8af94ce77441e5139ede7da9a65eec4f0e0350fc8de1634300",
-      "event": "Elon Musk # tweets August 14 - August 21, 2026?",
-      "slug": "elon-musk-of-tweets-august-14-august-21",
-      "endDate": "2026-08-21T16:00:00Z",
-      "n": 5,
-      "completeBid": false,
+      "negRiskMarketID": "0x7db74de8403823823d4624b19d2b08fcbe53edc54e46c4765156543179a61100",
+      "event": "2026 Men’s US Open Winner (Tennis)",
+      "slug": "2026-mens-us-open-winner-tennis",
+      "endDate": "2026-09-13T00:00:00Z",
+      "n": 4,
+      "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "100-119",
-          "bid": 0.079,
-          "ask": 0.08
+          "name": "Felix Auger Aliassime",
+          "bid": 0.013,
+          "ask": 0.019
         },
         {
-          "name": "80-99",
+          "name": "Arthur Fils",
+          "bid": 0.012,
+          "ask": 0.014
+        },
+        {
+          "name": "Lorenzo Musetti",
           "bid": 0.005,
-          "ask": 0.006
+          "ask": 0.008
         },
         {
-          "name": "260-279",
-          "bid": 0.005,
-          "ask": 0.006
-        },
-        {
-          "name": "280-299",
+          "name": "Hubert Hurkacz",
           "bid": 0.002,
           "ask": 0.003
-        },
-        {
-          "name": "300-319",
-          "bid": null,
-          "ask": 0.003
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.153,
-      "grossPP": 84.7,
-      "feePP": 0.77,
-      "netPP": 83.94,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x4c9218b950c4178032aefb7891ef9c024a166ba8b4787139acac166baf552900",
-      "event": "Highest temperature in Munich on August 17?",
-      "slug": "highest-temperature-in-munich-on-august-17-2026",
-      "endDate": "2026-08-17T12:00:00Z",
-      "n": 4,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "23°C",
-          "bid": 0.127,
-          "ask": 0.15
-        },
-        {
-          "name": "22°C",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "20°C or below",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "21°C",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.178,
-      "grossPP": 82.2,
-      "feePP": 0.89,
-      "netPP": 81.31,
+      "sumProb": 0.23,
+      "grossPP": 77.0,
+      "feePP": 1.15,
+      "netPP": 75.85,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x85de20785f24956ff4ce1471e80f7d379d97f3fb8a20fb5dd881d03aac38df00",
@@ -228,19 +135,19 @@
       "tradable": false,
       "top": [
         {
+          "name": "Milwaukee Brewers",
+          "bid": 0.084,
+          "ask": 0.085
+        },
+        {
           "name": "Atlanta Braves",
-          "bid": 0.069,
-          "ask": 0.07
+          "bid": 0.065,
+          "ask": 0.066
         },
         {
           "name": "Boston Red Sox",
           "bid": 0.053,
-          "ask": 0.055
-        },
-        {
-          "name": "Chicago White Sox",
-          "bid": 0.027,
-          "ask": 0.028
+          "ask": 0.054
         },
         {
           "name": "Toronto Blue Jays",
@@ -256,54 +163,59 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.263,
-      "grossPP": 73.7,
-      "feePP": 1.32,
-      "netPP": 72.39,
+      "sumProb": 0.257,
+      "grossPP": 74.3,
+      "feePP": 1.29,
+      "netPP": 73.02,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
-      "event": "Pro Football: 2027 Champion",
-      "slug": "pro-football-2027-champion-20260729185915366",
-      "endDate": "2027-02-14T23:55:00Z",
-      "n": 5,
-      "completeBid": true,
+      "negRiskMarketID": "0x418429e74b5f1b8af94ce77441e5139ede7da9a65eec4f0e0350fc8de1634300",
+      "event": "Elon Musk # tweets August 14 - August 21, 2026?",
+      "slug": "elon-musk-of-tweets-august-14-august-21",
+      "endDate": "2026-08-21T16:00:00Z",
+      "n": 8,
+      "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Los Angeles Rams",
-          "bid": 0.13,
-          "ask": 0.14
+          "name": "120-139",
+          "bid": 0.154,
+          "ask": 0.158
         },
         {
-          "name": "Dallas Cowboys",
-          "bid": 0.044,
-          "ask": 0.045
+          "name": "100-119",
+          "bid": 0.068,
+          "ask": 0.069
         },
         {
-          "name": "Jacksonville Jaguars",
-          "bid": 0.033,
-          "ask": 0.034
+          "name": "240-259",
+          "bid": 0.012,
+          "ask": 0.013
         },
         {
-          "name": "Green Bay Packers",
-          "bid": 0.032,
-          "ask": 0.033
+          "name": "80-99",
+          "bid": 0.004,
+          "ask": 0.006
         },
         {
-          "name": "Washington Commanders",
-          "bid": 0.01,
-          "ask": 0.011
+          "name": "260-279",
+          "bid": 0.005,
+          "ask": 0.006
+        },
+        {
+          "name": "280-299",
+          "bid": 0.001,
+          "ask": 0.002
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.279,
-      "grossPP": 72.1,
-      "feePP": 1.4,
-      "netPP": 70.71,
+      "sumProb": 0.277,
+      "grossPP": 72.3,
+      "feePP": 1.39,
+      "netPP": 70.92,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x029c63c721ee4d65bca5b3380a706530b29acd84d44245bcc025c191f3ecd300",
@@ -321,23 +233,72 @@
           "ask": 0.103
         },
         {
-          "name": "1w Team",
-          "bid": 0.074,
-          "ask": 0.089
-        },
-        {
           "name": "Nigma Galaxy",
           "bid": 0.075,
+          "ask": 0.087
+        },
+        {
+          "name": "1w Team",
+          "bid": 0.074,
           "ask": 0.087
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.399,
-      "grossPP": 60.1,
-      "feePP": 1.6,
-      "netPP": 58.5,
+      "sumProb": 0.362,
+      "grossPP": 63.8,
+      "feePP": 1.81,
+      "netPP": 61.99,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
+      "event": "Pro Football: 2027 Champion",
+      "slug": "pro-football-2027-champion-20260729185915366",
+      "endDate": "2027-02-14T23:55:00Z",
+      "n": 7,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Los Angeles Rams",
+          "bid": 0.13,
+          "ask": 0.14
+        },
+        {
+          "name": "Denver Broncos",
+          "bid": 0.053,
+          "ask": 0.054
+        },
+        {
+          "name": "Dallas Cowboys",
+          "bid": 0.044,
+          "ask": 0.045
+        },
+        {
+          "name": "Philadelphia Eagles",
+          "bid": 0.044,
+          "ask": 0.045
+        },
+        {
+          "name": "Jacksonville Jaguars",
+          "bid": 0.033,
+          "ask": 0.034
+        },
+        {
+          "name": "Green Bay Packers",
+          "bid": 0.032,
+          "ask": 0.033
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.402,
+      "grossPP": 59.8,
+      "feePP": 1.61,
+      "netPP": 58.19,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
@@ -357,7 +318,7 @@
         {
           "name": "Gavin Newsom",
           "bid": 0.167,
-          "ask": 0.17
+          "ask": 0.169
         },
         {
           "name": "James Talarico",
@@ -365,25 +326,59 @@
           "ask": 0.022
         },
         {
-          "name": "Andrew Yang",
-          "bid": 0.001,
-          "ask": 0.002
+          "name": "Hunter Biden",
+          "bid": 0.005,
+          "ask": 0.006
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.563,
-      "grossPP": 43.7,
-      "feePP": 2.25,
-      "netPP": 41.45,
+      "sumProb": 0.583,
+      "grossPP": 41.7,
+      "feePP": 2.31,
+      "netPP": 39.38,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x83607c7272eb69d5e01ffdf00c56020e0c6797ff4e3804a9ee88e0eb1fea5f00",
+      "event": "Highest temperature in Hong Kong on August 17?",
+      "slug": "highest-temperature-in-hong-kong-on-august-17-2026",
+      "endDate": "2026-08-17T12:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "33°C",
+          "bid": 0.53,
+          "ask": 0.56
+        },
+        {
+          "name": "35°C",
+          "bid": 0.009,
+          "ask": 0.018
+        },
+        {
+          "name": "31°C",
+          "bid": 0.002,
+          "ask": 0.005
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.656,
+      "grossPP": 34.4,
+      "feePP": 2.62,
+      "netPP": 31.78,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 15,
+      "n": 16,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -399,6 +394,11 @@
           "ask": 0.134
         },
         {
+          "name": "Jon Ossoff",
+          "bid": 0.092,
+          "ask": 0.093
+        },
+        {
           "name": "Gavin Newsom",
           "bid": 0.087,
           "ask": 0.088
@@ -412,20 +412,15 @@
           "name": "Tucker Carlson",
           "bid": 0.013,
           "ask": 0.015
-        },
-        {
-          "name": "Dwayne 'The Rock' Johnson",
-          "bid": 0.014,
-          "ask": 0.015
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.702,
-      "grossPP": 29.8,
-      "feePP": 2.34,
-      "netPP": 27.46,
+      "sumProb": 0.705,
+      "grossPP": 29.5,
+      "feePP": 2.32,
+      "netPP": 27.18,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x447f0bc59f46826a48dcf0cc15bf0c68b7ee8bb104d08e2d5a3cfd7ce7427b00",
@@ -439,8 +434,8 @@
       "top": [
         {
           "name": "No Meeting by September 30",
-          "bid": 0.683,
-          "ask": 0.684
+          "bid": 0.685,
+          "ask": 0.687
         },
         {
           "name": "Iran",
@@ -466,10 +461,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.849,
-      "grossPP": 15.1,
-      "feePP": 1.42,
-      "netPP": 13.68,
+      "sumProb": 0.85,
+      "grossPP": 15.0,
+      "feePP": 1.43,
+      "netPP": 13.57,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xd72f68ada62aff9ba67dd2cbb56fabec9928aa198daafbd8042ac18ccabec000",
@@ -483,18 +478,67 @@
       "top": [
         {
           "name": "Mojtaba Khamenei",
-          "bid": 0.822,
+          "bid": 0.821,
           "ask": 0.823
         },
         {
           "name": "Mahmoud Ahmadinejad",
           "bid": 0.013,
-          "ask": 0.018
+          "ask": 0.019
         },
         {
           "name": "Hassan Rouhani",
           "bid": 0.006,
           "ask": 0.008
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.92,
+      "grossPP": 8.0,
+      "feePP": 4.6,
+      "netPP": 3.4,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x4c9218b950c4178032aefb7891ef9c024a166ba8b4787139acac166baf552900",
+      "event": "Highest temperature in Munich on August 17?",
+      "slug": "highest-temperature-in-munich-on-august-17-2026",
+      "endDate": "2026-08-17T12:00:00Z",
+      "n": 8,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "26°C",
+          "bid": 0.295,
+          "ask": 0.347
+        },
+        {
+          "name": "27°C",
+          "bid": 0.203,
+          "ask": 0.301
+        },
+        {
+          "name": "24°C",
+          "bid": 0.1,
+          "ask": 0.15
+        },
+        {
+          "name": "23°C",
+          "bid": 0.09,
+          "ask": 0.109
+        },
+        {
+          "name": "29°C",
+          "bid": 0.004,
+          "ask": 0.01
+        },
+        {
+          "name": "22°C",
+          "bid": null,
+          "ask": 0.001
         }
       ]
     },
@@ -549,10 +593,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.936,
-      "grossPP": 6.4,
+      "sumProb": 0.935,
+      "grossPP": 6.5,
       "feePP": 3.33,
-      "netPP": 3.07,
+      "netPP": 3.18,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xc194d621e2ef9468b86ed0db1328fd8d56ae8fba1e21b94c5c515e96ecbfc400",
@@ -572,7 +616,7 @@
         {
           "name": "New People (NL)",
           "bid": 0.194,
-          "ask": 0.197
+          "ask": 0.196
         },
         {
           "name": "Yabloko",
@@ -605,7 +649,7 @@
       "top": [
         {
           "name": "27°C",
-          "bid": 0.95,
+          "bid": 0.96,
           "ask": 0.97
         },
         {
@@ -627,6 +671,40 @@
           "name": "23°C or below",
           "bid": null,
           "ask": 0.001
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.964,
+      "grossPP": 3.6,
+      "feePP": 1.3,
+      "netPP": 2.3,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xdcd7daabcacdc4ecf4f9a48d0a2708b52f356dd086c8070992136da62eb72b00",
+      "event": "How many Fed rate cuts in 2026?",
+      "slug": "how-many-fed-rate-cuts-in-2026",
+      "endDate": "2026-12-31T00:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "0 (0 bps)",
+          "bid": 0.851,
+          "ask": 0.852
+        },
+        {
+          "name": "1 (25 bps)",
+          "bid": 0.1,
+          "ask": 0.11
+        },
+        {
+          "name": "6 (150 bps)",
+          "bid": 0.001,
+          "ask": 0.002
         }
       ]
     }
