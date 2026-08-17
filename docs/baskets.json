@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-17 18:53 UTC",
+  "generatedAt": "2026-08-17 19:37 UTC",
   "scanned": 600,
-  "count": 14,
+  "count": 13,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -13,29 +13,44 @@
       "netPP": 98.11,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xbb01d92208e308f14eb9917889bb2b449395207a26fe2a7990c3d5def7f74c00",
-      "event": "NBA: 2027 Champion",
-      "slug": "nba-2027-champion",
-      "endDate": "2027-07-01T00:00:00Z",
-      "n": 3,
+      "negRiskMarketID": "0xdcd7daabcacdc4ecf4f9a48d0a2708b52f356dd086c8070992136da62eb72b00",
+      "event": "How many Fed rate cuts in 2026?",
+      "slug": "how-many-fed-rate-cuts-in-2026",
+      "endDate": "2026-12-31T00:00:00Z",
+      "n": 6,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Golden State Warriors",
-          "bid": 0.011,
-          "ask": 0.012
+          "name": "4 (100 bps)",
+          "bid": 0.003,
+          "ask": 0.005
         },
         {
-          "name": "Memphis Grizzlies",
-          "bid": 0.002,
+          "name": "5 (125 bps)",
+          "bid": 0.003,
+          "ask": 0.004
+        },
+        {
+          "name": "6 (150 bps)",
+          "bid": 0.001,
           "ask": 0.003
         },
         {
-          "name": "Chicago Bulls",
-          "bid": 0.002,
-          "ask": 0.003
+          "name": "9 (225 bps)",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "10 (250 bps)",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "11 (275 bps)",
+          "bid": 0.001,
+          "ask": 0.002
         }
       ]
     },
@@ -90,17 +105,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.062,
-      "grossPP": 93.8,
-      "feePP": 0.25,
-      "netPP": 93.55,
+      "sumProb": 0.06,
+      "grossPP": 94.0,
+      "feePP": 0.24,
+      "netPP": 93.76,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
       "event": "Republican Presidential Nominee 2028",
       "slug": "republican-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 4,
+      "n": 3,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -119,118 +134,30 @@
           "name": "Nikki Haley",
           "bid": 0.002,
           "ask": 0.003
-        },
-        {
-          "name": "Mike Johnson",
-          "bid": 0.001,
-          "ask": 0.002
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.153,
-      "grossPP": 84.7,
-      "feePP": 0.77,
-      "netPP": 83.94,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x12de3965a87078f7193604dd6cc608f451c60bd34de0996c326d17cd0faa7900",
-      "event": "Cardiff City FC vs. Wrexham AFC - Exact Score",
-      "slug": "elc-car-wre-2026-08-17-exact-score",
-      "endDate": "2026-08-17T19:00:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Cardiff City FC 2 - 1 Wrexham AFC",
-          "bid": 0.09,
-          "ask": 0.1
-        },
-        {
-          "name": "Cardiff City FC 2 - 3 Wrexham AFC",
-          "bid": 0.029,
-          "ask": 0.034
-        },
-        {
-          "name": "Cardiff City FC 3 - 3 Wrexham AFC",
-          "bid": 0.017,
-          "ask": 0.019
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.168,
-      "grossPP": 83.2,
-      "feePP": 0.84,
-      "netPP": 82.36,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xdcd7daabcacdc4ecf4f9a48d0a2708b52f356dd086c8070992136da62eb72b00",
-      "event": "How many Fed rate cuts in 2026?",
-      "slug": "how-many-fed-rate-cuts-in-2026",
-      "endDate": "2026-12-31T00:00:00Z",
-      "n": 9,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "1 (25 bps)",
-          "bid": 0.09,
-          "ask": 0.1
-        },
-        {
-          "name": "2 (50 bps)",
-          "bid": 0.04,
-          "ask": 0.042
-        },
-        {
-          "name": "3 (75 bps)",
-          "bid": 0.006,
-          "ask": 0.008
-        },
-        {
-          "name": "4 (100 bps)",
-          "bid": 0.003,
-          "ask": 0.005
-        },
-        {
-          "name": "5 (125 bps)",
-          "bid": 0.002,
-          "ask": 0.004
-        },
-        {
-          "name": "6 (150 bps)",
-          "bid": 0.001,
-          "ask": 0.003
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.233,
-      "grossPP": 76.7,
-      "feePP": 1.17,
-      "netPP": 75.53,
+      "sumProb": 0.204,
+      "grossPP": 79.6,
+      "feePP": 1.02,
+      "netPP": 78.58,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x7db74de8403823823d4624b19d2b08fcbe53edc54e46c4765156543179a61100",
       "event": "2026 Men’s US Open Winner (Tennis)",
       "slug": "2026-mens-us-open-winner-tennis",
       "endDate": "2026-09-13T00:00:00Z",
-      "n": 6,
+      "n": 4,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "Carlos Alcaraz",
-          "bid": 0.12,
-          "ask": 0.13
+          "bid": 0.1,
+          "ask": 0.12
         },
         {
           "name": "Novak Djokovic",
@@ -243,84 +170,25 @@
           "ask": 0.015
         },
         {
-          "name": "Joao Fonseca",
-          "bid": 0.01,
-          "ask": 0.013
-        },
-        {
           "name": "Andrey Rublev",
           "bid": 0.005,
           "ask": 0.008
-        },
-        {
-          "name": "Frances Tiafoe",
-          "bid": 0.004,
-          "ask": 0.006
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.386,
-      "grossPP": 61.4,
-      "feePP": 1.93,
-      "netPP": 59.47,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x271fcb1721ba681ecd8fea1e136d9ac7aeca0fd0000ddb7d3da3262831fd9b00",
-      "event": "RC Deportivo A Coruña vs. Elche CF - Exact Score",
-      "slug": "lal-dep-elc-2026-08-17-exact-score",
-      "endDate": "2026-08-17T19:00:00Z",
-      "n": 6,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "RC Deportivo A Coruña 0 - 0 Elche CF",
-          "bid": 0.11,
-          "ask": 0.12
-        },
-        {
-          "name": "RC Deportivo A Coruña 2 - 0 Elche CF",
-          "bid": 0.08,
-          "ask": 0.09
-        },
-        {
-          "name": "RC Deportivo A Coruña 1 - 2 Elche CF",
-          "bid": 0.06,
-          "ask": 0.07
-        },
-        {
-          "name": "RC Deportivo A Coruña 0 - 2 Elche CF",
-          "bid": 0.041,
-          "ask": 0.045
-        },
-        {
-          "name": "RC Deportivo A Coruña 3 - 1 Elche CF",
-          "bid": 0.033,
-          "ask": 0.038
-        },
-        {
-          "name": "RC Deportivo A Coruña 1 - 3 Elche CF",
-          "bid": 0.02,
-          "ask": 0.023
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.496,
-      "grossPP": 50.4,
-      "feePP": 1.98,
-      "netPP": 48.42,
+      "sumProb": 0.403,
+      "grossPP": 59.7,
+      "feePP": 1.61,
+      "netPP": 58.09,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 7,
+      "n": 6,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -336,11 +204,6 @@
           "ask": 0.131
         },
         {
-          "name": "Jon Ossoff",
-          "bid": 0.092,
-          "ask": 0.093
-        },
-        {
           "name": "Donald Trump",
           "bid": 0.021,
           "ask": 0.022
@@ -354,55 +217,109 @@
           "name": "Elon Musk",
           "bid": 0.006,
           "ask": 0.007
+        },
+        {
+          "name": "Kim Kardashian",
+          "bid": 0.001,
+          "ask": 0.002
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.6,
-      "grossPP": 40.0,
-      "feePP": 2.4,
-      "netPP": 37.6,
+      "sumProb": 0.463,
+      "grossPP": 53.7,
+      "feePP": 2.32,
+      "netPP": 51.38,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
-      "event": "Democratic Presidential Nominee 2028",
-      "slug": "democratic-presidential-nominee-2028",
-      "endDate": "2028-11-07T00:00:00Z",
-      "n": 7,
-      "completeBid": true,
+      "negRiskMarketID": "0x418429e74b5f1b8af94ce77441e5139ede7da9a65eec4f0e0350fc8de1634300",
+      "event": "Elon Musk # tweets August 14 - August 21, 2026?",
+      "slug": "elon-musk-of-tweets-august-14-august-21",
+      "endDate": "2026-08-21T16:00:00Z",
+      "n": 8,
+      "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Alexandria Ocasio-Cortez",
-          "bid": 0.21,
-          "ask": 0.211
+          "name": "120-139",
+          "bid": 0.212,
+          "ask": 0.231
         },
         {
-          "name": "Gavin Newsom",
-          "bid": 0.158,
-          "ask": 0.161
+          "name": "180-199",
+          "bid": 0.12,
+          "ask": 0.13
         },
         {
-          "name": "Jon Ossoff",
-          "bid": 0.149,
-          "ask": 0.15
+          "name": "100-119",
+          "bid": 0.081,
+          "ask": 0.084
         },
         {
-          "name": "Josh Shapiro",
-          "bid": 0.049,
-          "ask": 0.05
+          "name": "80-99",
+          "bid": 0.006,
+          "ask": 0.008
         },
         {
-          "name": "Wes Moore",
-          "bid": 0.016,
-          "ask": 0.02
+          "name": "240-259",
+          "bid": 0.004,
+          "ask": 0.005
         },
         {
-          "name": "Hunter Biden",
-          "bid": 0.005,
-          "ask": 0.006
+          "name": "260-279",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.541,
+      "grossPP": 45.9,
+      "feePP": 2.7,
+      "netPP": 43.2,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x271fcb1721ba681ecd8fea1e136d9ac7aeca0fd0000ddb7d3da3262831fd9b00",
+      "event": "RC Deportivo A Coruña vs. Elche CF - Exact Score",
+      "slug": "lal-dep-elc-2026-08-17-exact-score",
+      "endDate": "2026-08-17T19:00:00Z",
+      "n": 9,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "RC Deportivo A Coruña 2 - 0 Elche CF",
+          "bid": 0.16,
+          "ask": 0.18
+        },
+        {
+          "name": "RC Deportivo A Coruña 1 - 2 Elche CF",
+          "bid": 0.058,
+          "ask": 0.087
+        },
+        {
+          "name": "RC Deportivo A Coruña 2 - 3 Elche CF",
+          "bid": 0.007,
+          "ask": 0.08
+        },
+        {
+          "name": "RC Deportivo A Coruña 3 - 1 Elche CF",
+          "bid": 0.041,
+          "ask": 0.077
+        },
+        {
+          "name": "RC Deportivo A Coruña 1 - 3 Elche CF",
+          "bid": 0.002,
+          "ask": 0.06
+        },
+        {
+          "name": "RC Deportivo A Coruña 3 - 3 Elche CF",
+          "bid": 0.001,
+          "ask": 0.038
         }
       ]
     },
@@ -447,50 +364,99 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.726,
-      "grossPP": 27.4,
-      "feePP": 3.63,
-      "netPP": 23.77,
+      "sumProb": 0.82,
+      "grossPP": 18.0,
+      "feePP": 4.1,
+      "netPP": 13.9,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x418429e74b5f1b8af94ce77441e5139ede7da9a65eec4f0e0350fc8de1634300",
-      "event": "Elon Musk # tweets August 14 - August 21, 2026?",
-      "slug": "elon-musk-of-tweets-august-14-august-21",
-      "endDate": "2026-08-21T16:00:00Z",
-      "n": 10,
-      "completeBid": false,
+      "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
+      "event": "Pro Football: 2027 Champion",
+      "slug": "pro-football-2027-champion-20260729185915366",
+      "endDate": "2027-02-14T23:55:00Z",
+      "n": 18,
+      "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "160-179",
-          "bid": 0.25,
-          "ask": 0.26
+          "name": "Los Angeles Rams",
+          "bid": 0.14,
+          "ask": 0.15
         },
         {
-          "name": "120-139",
-          "bid": 0.226,
-          "ask": 0.235
-        },
-        {
-          "name": "180-199",
-          "bid": 0.11,
-          "ask": 0.12
-        },
-        {
-          "name": "100-119",
+          "name": "Buffalo Bills",
           "bid": 0.08,
-          "ask": 0.081
+          "ask": 0.09
         },
         {
-          "name": "220-239",
+          "name": "Seattle Seahawks",
+          "bid": 0.08,
+          "ask": 0.09
+        },
+        {
+          "name": "Baltimore Ravens",
+          "bid": 0.072,
+          "ask": 0.073
+        },
+        {
+          "name": "Kansas City Chiefs",
+          "bid": 0.059,
+          "ask": 0.06
+        },
+        {
+          "name": "Dallas Cowboys",
+          "bid": 0.056,
+          "ask": 0.057
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.88,
+      "grossPP": 12.0,
+      "feePP": 3.6,
+      "netPP": 8.4,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
+      "event": "Ballon d'Or Winner 2026",
+      "slug": "ballon-dor-winner-2026",
+      "endDate": "2026-10-31T00:00:00Z",
+      "n": 6,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Harry Kane",
+          "bid": 0.578,
+          "ask": 0.58
+        },
+        {
+          "name": "Lamine Yamal",
+          "bid": 0.153,
+          "ask": 0.155
+        },
+        {
+          "name": "Rodri",
+          "bid": 0.09,
+          "ask": 0.11
+        },
+        {
+          "name": "Ousmane Dembélé",
+          "bid": 0.018,
+          "ask": 0.019
+        },
+        {
+          "name": "Fabian Ruiz",
           "bid": 0.012,
-          "ask": 0.013
+          "ask": 0.014
         },
         {
-          "name": "80-99",
-          "bid": 0.005,
-          "ask": 0.008
+          "name": "Jude Bellingham",
+          "bid": 0.001,
+          "ask": 0.002
         }
       ]
     },
@@ -530,10 +496,59 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.894,
-      "grossPP": 10.6,
-      "feePP": 4.47,
-      "netPP": 6.13,
+      "sumProb": 0.877,
+      "grossPP": 12.3,
+      "feePP": 4.38,
+      "netPP": 7.92,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xdc5a2e26c51dc285867b613a52865b4fb567a8c785f85018ca5df57de8a06200",
+      "event": "EWC 2026 CS2: Winner",
+      "slug": "ewc-2026-cs2-winner-20260810160005076",
+      "endDate": null,
+      "n": 13,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Team Vitality",
+          "bid": 0.23,
+          "ask": 0.24
+        },
+        {
+          "name": "Team Falcons",
+          "bid": 0.17,
+          "ask": 0.18
+        },
+        {
+          "name": "FURIA",
+          "bid": 0.11,
+          "ask": 0.12
+        },
+        {
+          "name": "MOUZ",
+          "bid": 0.116,
+          "ask": 0.117
+        },
+        {
+          "name": "Natus Vincere",
+          "bid": 0.054,
+          "ask": 0.064
+        },
+        {
+          "name": "G2 Esports",
+          "bid": 0.045,
+          "ask": 0.046
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.904,
+      "grossPP": 9.6,
+      "feePP": 4.52,
+      "netPP": 5.08,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x697ad5ad79df81b98b58ef5ea0ff713d40397e526b98bd36fbe57d4be4365000",
@@ -548,7 +563,7 @@
         {
           "name": "Arsenal",
           "bid": 0.43,
-          "ask": 0.44
+          "ask": 0.45
         },
         {
           "name": "Manchester City",
@@ -574,55 +589,6 @@
           "name": "Sunderland",
           "bid": 0.001,
           "ask": 0.002
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.894,
-      "grossPP": 10.6,
-      "feePP": 4.47,
-      "netPP": 6.13,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
-      "event": "Pro Football: 2027 Champion",
-      "slug": "pro-football-2027-champion-20260729185915366",
-      "endDate": "2027-02-14T23:55:00Z",
-      "n": 20,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Los Angeles Rams",
-          "bid": 0.14,
-          "ask": 0.15
-        },
-        {
-          "name": "Buffalo Bills",
-          "bid": 0.08,
-          "ask": 0.09
-        },
-        {
-          "name": "Seattle Seahawks",
-          "bid": 0.08,
-          "ask": 0.09
-        },
-        {
-          "name": "Baltimore Ravens",
-          "bid": 0.072,
-          "ask": 0.073
-        },
-        {
-          "name": "Kansas City Chiefs",
-          "bid": 0.059,
-          "ask": 0.062
-        },
-        {
-          "name": "Dallas Cowboys",
-          "bid": 0.056,
-          "ask": 0.057
         }
       ]
     }
