@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-17 08:56 UTC",
+  "generatedAt": "2026-08-17 09:54 UTC",
   "scanned": 600,
-  "count": 14,
+  "count": 10,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -9,58 +9,19 @@
       "side": "buy",
       "sumProb": 0.02,
       "grossPP": 98.0,
-      "feePP": 0.14,
-      "netPP": 97.86,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x55ab76d092f682bf5cbb7e14f13ee12f8410ce7cc1b7906f23b8fb56c11f6500",
-      "event": "Next Prime Minister of Ethiopia?",
-      "slug": "next-prime-minister-of-ethiopia",
-      "endDate": "2026-06-01T00:00:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Adanech Abiebie",
-          "bid": 0.005,
-          "ask": 0.009
-        },
-        {
-          "name": "Demeke Mekonnen",
-          "bid": 0.003,
-          "ask": 0.006
-        },
-        {
-          "name": "Shimelis Abdisa",
-          "bid": 0.002,
-          "ask": 0.005
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.039,
-      "grossPP": 96.1,
-      "feePP": 0.16,
-      "netPP": 95.94,
+      "feePP": 0.08,
+      "netPP": 97.92,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
       "event": "Next French Presidential Election",
       "slug": "next-french-presidential-election",
       "endDate": "2027-04-30T00:00:00Z",
-      "n": 4,
+      "n": 3,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
-        {
-          "name": "Sarah Knafo",
-          "bid": 0.018,
-          "ask": 0.019
-        },
         {
           "name": "Sébastien Lecornu",
           "bid": 0.014,
@@ -80,17 +41,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.218,
-      "grossPP": 78.2,
-      "feePP": 1.09,
-      "netPP": 77.11,
+      "sumProb": 0.157,
+      "grossPP": 84.3,
+      "feePP": 0.79,
+      "netPP": 83.52,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x7db74de8403823823d4624b19d2b08fcbe53edc54e46c4765156543179a61100",
       "event": "2026 Men’s US Open Winner (Tennis)",
       "slug": "2026-mens-us-open-winner-tennis",
       "endDate": "2026-09-13T00:00:00Z",
-      "n": 5,
+      "n": 3,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -101,24 +62,53 @@
           "ask": 0.13
         },
         {
-          "name": "Ben Shelton",
-          "bid": 0.05,
-          "ask": 0.058
-        },
-        {
           "name": "Felix Auger Aliassime",
-          "bid": 0.014,
+          "bid": 0.015,
           "ask": 0.019
         },
         {
           "name": "Lorenzo Musetti",
           "bid": 0.005,
           "ask": 0.008
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.222,
+      "grossPP": 77.8,
+      "feePP": 1.11,
+      "netPP": 76.69,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xa6bb6a937d995202e212b4495a8878532f7bd1726d0884d2579e79b5d2de1300",
+      "event": "Highest temperature in Busan on August 17?",
+      "slug": "highest-temperature-in-busan-on-august-17-2026",
+      "endDate": "2026-08-17T12:00:00Z",
+      "n": 4,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "25°C",
+          "bid": 0.07,
+          "ask": 0.149
         },
         {
-          "name": "Hubert Hurkacz",
-          "bid": 0.002,
-          "ask": 0.003
+          "name": "27°C",
+          "bid": 0.03,
+          "ask": 0.07
+        },
+        {
+          "name": "28°C",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "24°C",
+          "bid": null,
+          "ask": 0.001
         }
       ]
     },
@@ -168,10 +158,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.389,
-      "grossPP": 61.1,
-      "feePP": 1.95,
-      "netPP": 59.16,
+      "sumProb": 0.388,
+      "grossPP": 61.2,
+      "feePP": 1.94,
+      "netPP": 59.26,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
@@ -206,7 +196,7 @@
         {
           "name": "Jacksonville Jaguars",
           "bid": 0.033,
-          "ask": 0.035
+          "ask": 0.034
         },
         {
           "name": "Green Bay Packers",
@@ -266,10 +256,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.587,
-      "grossPP": 41.3,
-      "feePP": 2.35,
-      "netPP": 38.95,
+      "sumProb": 0.585,
+      "grossPP": 41.5,
+      "feePP": 2.34,
+      "netPP": 39.16,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
@@ -307,9 +297,43 @@
           "ask": 0.018
         },
         {
-          "name": "Tucker Carlson",
-          "bid": 0.015,
-          "ask": 0.016
+          "name": "Ron DeSantis",
+          "bid": 0.014,
+          "ask": 0.015
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.687,
+      "grossPP": 31.3,
+      "feePP": 2.24,
+      "netPP": 29.06,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x6af31401e1e3050b3c26010fd24fb8241c91afe6ba8484d4d98b15ce253d7700",
+      "event": "Highest temperature in London on August 17?",
+      "slug": "highest-temperature-in-london-on-august-17-2026",
+      "endDate": "2026-08-17T12:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "26°C",
+          "bid": 0.6,
+          "ask": 0.62
+        },
+        {
+          "name": "28°C",
+          "bid": 0.03,
+          "ask": 0.05
+        },
+        {
+          "name": "24°C",
+          "bid": 0.009,
+          "ask": 0.017
         }
       ]
     },
@@ -346,12 +370,12 @@
           "ask": 0.005
         },
         {
-          "name": "Russia",
+          "name": "Kazakhstan",
           "bid": null,
           "ask": 0.001
         },
         {
-          "name": "Kazakhstan",
+          "name": "Russia",
           "bid": null,
           "ask": 0.001
         }
@@ -359,10 +383,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.752,
-      "grossPP": 24.8,
-      "feePP": 3.76,
-      "netPP": 21.04,
+      "sumProb": 0.774,
+      "grossPP": 22.6,
+      "feePP": 3.87,
+      "netPP": 18.73,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x418429e74b5f1b8af94ce77441e5139ede7da9a65eec4f0e0350fc8de1634300",
@@ -376,13 +400,13 @@
       "top": [
         {
           "name": "160-179",
-          "bid": 0.22,
-          "ask": 0.23
+          "bid": 0.23,
+          "ask": 0.24
         },
         {
           "name": "120-139",
           "bid": 0.201,
-          "ask": 0.207
+          "ask": 0.208
         },
         {
           "name": "180-199",
@@ -391,8 +415,8 @@
         },
         {
           "name": "100-119",
-          "bid": 0.073,
-          "ask": 0.075
+          "bid": 0.069,
+          "ask": 0.07
         },
         {
           "name": "200-219",
@@ -400,199 +424,9 @@
           "ask": 0.06
         },
         {
-          "name": "240-259",
-          "bid": 0.007,
-          "ask": 0.008
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.85,
-      "grossPP": 15.0,
-      "feePP": 1.43,
-      "netPP": 13.57,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xd72f68ada62aff9ba67dd2cbb56fabec9928aa198daafbd8042ac18ccabec000",
-      "event": "Iran leader end of 2026?",
-      "slug": "iran-leader-end-of-2026",
-      "endDate": "2026-12-31T00:00:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Mojtaba Khamenei",
-          "bid": 0.821,
-          "ask": 0.823
-        },
-        {
-          "name": "Mahmoud Ahmadinejad",
-          "bid": 0.012,
-          "ask": 0.019
-        },
-        {
-          "name": "Hassan Rouhani",
-          "bid": 0.006,
-          "ask": 0.008
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.903,
-      "grossPP": 9.7,
-      "feePP": 0.98,
-      "netPP": 8.72,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xa6bb6a937d995202e212b4495a8878532f7bd1726d0884d2579e79b5d2de1300",
-      "event": "Highest temperature in Busan on August 17?",
-      "slug": "highest-temperature-in-busan-on-august-17-2026",
-      "endDate": "2026-08-17T12:00:00Z",
-      "n": 4,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "25°C",
-          "bid": 0.352,
-          "ask": 0.854
-        },
-        {
-          "name": "27°C",
-          "bid": 0.01,
-          "ask": 0.03
-        },
-        {
-          "name": "28°C",
-          "bid": 0.002,
-          "ask": 0.018
-        },
-        {
-          "name": "24°C",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.921,
-      "grossPP": 7.9,
-      "feePP": 0.5,
-      "netPP": 7.39,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xa386b4dfbd968378721ed52ef687bc21d7729e1c16592a4f9ccc08978440c000",
-      "event": "Lowest temperature in Hong Kong on August 17?",
-      "slug": "lowest-temperature-in-hong-kong-on-august-17-2026",
-      "endDate": "2026-08-17T12:00:00Z",
-      "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "28°C",
-          "bid": 0.81,
-          "ask": 0.91
-        },
-        {
-          "name": "25°C",
-          "bid": 0.001,
-          "ask": 0.01
-        },
-        {
-          "name": "29°C",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.938,
-      "grossPP": 6.2,
-      "feePP": 3.61,
-      "netPP": 2.59,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
-      "event": "Ballon d'Or Winner 2026",
-      "slug": "ballon-dor-winner-2026",
-      "endDate": "2026-10-31T00:00:00Z",
-      "n": 9,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Harry Kane",
-          "bid": 0.607,
-          "ask": 0.608
-        },
-        {
-          "name": "Lamine Yamal",
-          "bid": 0.156,
-          "ask": 0.157
-        },
-        {
-          "name": "Kylian Mbappé",
-          "bid": 0.078,
-          "ask": 0.079
-        },
-        {
-          "name": "Khvicha Kvaratskhelia",
-          "bid": 0.041,
-          "ask": 0.042
-        },
-        {
-          "name": "Ousmane Dembélé",
-          "bid": 0.017,
+          "name": "220-239",
+          "bid": 0.019,
           "ask": 0.02
-        },
-        {
-          "name": "Lionel Messi",
-          "bid": 0.018,
-          "ask": 0.019
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.964,
-      "grossPP": 3.6,
-      "feePP": 1.3,
-      "netPP": 2.3,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xdcd7daabcacdc4ecf4f9a48d0a2708b52f356dd086c8070992136da62eb72b00",
-      "event": "How many Fed rate cuts in 2026?",
-      "slug": "how-many-fed-rate-cuts-in-2026",
-      "endDate": "2026-12-31T00:00:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "0 (0 bps)",
-          "bid": 0.851,
-          "ask": 0.852
-        },
-        {
-          "name": "1 (25 bps)",
-          "bid": 0.1,
-          "ask": 0.11
-        },
-        {
-          "name": "6 (150 bps)",
-          "bid": 0.001,
-          "ask": 0.002
         }
       ]
     }
