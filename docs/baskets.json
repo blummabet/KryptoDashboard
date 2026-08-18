@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-18 16:43 UTC",
+  "generatedAt": "2026-08-18 17:37 UTC",
   "scanned": 600,
-  "count": 16,
+  "count": 15,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -34,6 +34,45 @@
         },
         {
           "name": "Richard Grenell",
+          "bid": null,
+          "ask": 0.001
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.015,
+      "grossPP": 98.5,
+      "feePP": 0.07,
+      "netPP": 98.42,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x23403c8cfac005e18626bf38bff5cb1ea3e986c743c2ccec00eca5d1af006e00",
+      "event": "Elon Musk # tweets August 18 - August 25, 2026?",
+      "slug": "elon-musk-of-tweets-august-18-august-25",
+      "endDate": "2026-08-25T16:00:00Z",
+      "n": 4,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "80-99",
+          "bid": 0.009,
+          "ask": 0.01
+        },
+        {
+          "name": "40-59",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "60-79",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "20-39",
           "bid": null,
           "ask": 0.001
         }
@@ -114,83 +153,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.022,
-      "grossPP": 97.8,
-      "feePP": 0.11,
-      "netPP": 97.69,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x23403c8cfac005e18626bf38bff5cb1ea3e986c743c2ccec00eca5d1af006e00",
-      "event": "Elon Musk # tweets August 18 - August 25, 2026?",
-      "slug": "elon-musk-of-tweets-august-18-august-25",
-      "endDate": "2026-08-25T16:00:00Z",
-      "n": 4,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "80-99",
-          "bid": 0.008,
-          "ask": 0.017
-        },
-        {
-          "name": "40-59",
-          "bid": 0.001,
-          "ask": 0.002
-        },
-        {
-          "name": "60-79",
-          "bid": 0.001,
-          "ask": 0.002
-        },
-        {
-          "name": "20-39",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.055,
-      "grossPP": 94.5,
-      "feePP": 0.22,
-      "netPP": 94.28,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
-      "event": "Next French Presidential Election",
-      "slug": "next-french-presidential-election",
-      "endDate": "2027-04-30T00:00:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "David Lisnard",
-          "bid": 0.035,
-          "ask": 0.036
-        },
-        {
-          "name": "Dominique de Villepin",
-          "bid": 0.016,
-          "ask": 0.017
-        },
-        {
-          "name": "Gérald Darmanin",
-          "bid": 0.001,
-          "ask": 0.002
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.104,
-      "grossPP": 89.6,
+      "sumProb": 0.103,
+      "grossPP": 89.7,
       "feePP": 0.52,
-      "netPP": 89.08,
+      "netPP": 89.19,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x3ea86d56792cca29ce42a9d3673752a43582a9a8f98149aab8350cb2f094e900",
@@ -210,7 +176,7 @@
         {
           "name": "80-81°F",
           "bid": null,
-          "ask": 0.002
+          "ask": 0.001
         },
         {
           "name": "76-77°F",
@@ -392,10 +358,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.717,
-      "grossPP": 28.3,
-      "feePP": 3.58,
-      "netPP": 24.72,
+      "sumProb": 0.712,
+      "grossPP": 28.8,
+      "feePP": 3.56,
+      "netPP": 25.24,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xdc5a2e26c51dc285867b613a52865b4fb567a8c785f85018ca5df57de8a06200",
@@ -425,17 +391,17 @@
         {
           "name": "MOUZ",
           "bid": 0.126,
-          "ask": 0.129
+          "ask": 0.128
         },
         {
           "name": "FaZe Clan",
           "bid": 0.015,
-          "ask": 0.021
+          "ask": 0.018
         },
         {
           "name": "magic",
           "bid": 0.007,
-          "ask": 0.01
+          "ask": 0.009
         }
       ]
     },
@@ -490,24 +456,24 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.794,
-      "grossPP": 20.6,
-      "feePP": 3.97,
-      "netPP": 16.63,
+      "sumProb": 0.792,
+      "grossPP": 20.8,
+      "feePP": 3.96,
+      "netPP": 16.84,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x697ad5ad79df81b98b58ef5ea0ff713d40397e526b98bd36fbe57d4be4365000",
       "event": "EPL: 2027 Champion",
       "slug": "epl-2027-champion-20260701200428749",
       "endDate": "2027-05-30T23:59:00Z",
-      "n": 6,
+      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "Arsenal",
-          "bid": 0.44,
+          "bid": 0.45,
           "ask": 0.46
         },
         {
@@ -529,9 +495,48 @@
           "name": "Bournemouth",
           "bid": 0.001,
           "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.81,
+      "grossPP": 19.0,
+      "feePP": 2.95,
+      "netPP": 16.05,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
+      "event": "Ballon d'Or Winner 2026",
+      "slug": "ballon-dor-winner-2026",
+      "endDate": "2026-10-31T00:00:00Z",
+      "n": 5,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Harry Kane",
+          "bid": 0.609,
+          "ask": 0.61
         },
         {
-          "name": "Sunderland",
+          "name": "Lamine Yamal",
+          "bid": 0.152,
+          "ask": 0.163
+        },
+        {
+          "name": "Lionel Messi",
+          "bid": 0.018,
+          "ask": 0.02
+        },
+        {
+          "name": "Ousmane Dembélé",
+          "bid": 0.014,
+          "ask": 0.015
+        },
+        {
+          "name": "Jude Bellingham",
           "bid": 0.001,
           "ask": 0.002
         }
@@ -588,59 +593,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.88,
-      "grossPP": 12.0,
-      "feePP": 3.3,
-      "netPP": 8.7,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
-      "event": "Ballon d'Or Winner 2026",
-      "slug": "ballon-dor-winner-2026",
-      "endDate": "2026-10-31T00:00:00Z",
-      "n": 6,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Harry Kane",
-          "bid": 0.609,
-          "ask": 0.61
-        },
-        {
-          "name": "Lamine Yamal",
-          "bid": 0.15,
-          "ask": 0.157
-        },
-        {
-          "name": "Kylian Mbappé",
-          "bid": 0.073,
-          "ask": 0.075
-        },
-        {
-          "name": "Lionel Messi",
-          "bid": 0.018,
-          "ask": 0.02
-        },
-        {
-          "name": "Ousmane Dembélé",
-          "bid": 0.014,
-          "ask": 0.016
-        },
-        {
-          "name": "Jude Bellingham",
-          "bid": 0.001,
-          "ask": 0.002
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.918,
-      "grossPP": 8.2,
+      "sumProb": 0.917,
+      "grossPP": 8.3,
       "feePP": 3.67,
-      "netPP": 4.53,
+      "netPP": 4.63,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
