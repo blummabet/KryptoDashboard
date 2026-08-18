@@ -3,11 +3,11 @@
     "enabled": true,
     "feedCount": 50,
     "whaleTradeCount": 0,
-    "biggestTradeUSD": 12000,
+    "biggestTradeUSD": 9911,
     "whaleMinUSD": 25000,
     "walletsProbed": 12,
-    "qualifiedCount": 2,
-    "rejectedCount": 10,
+    "qualifiedCount": 3,
+    "rejectedCount": 9,
     "avgCopyLagPP": null,
     "lagSample": 0,
     "verdict": "keine ≥$25k-Whale-Trades qualifizierter Wale im Fenster — echte Wale sind selten"
@@ -48,6 +48,23 @@
       "lastTrade": "2026-08-17"
     },
     {
+      "resolved": 7330,
+      "uniqueMarkets": 4540,
+      "roi": 1.0,
+      "pnl": 8823631.0,
+      "winRate": 60.1,
+      "volume": 52578836.0,
+      "inactiveDays": 0.1,
+      "oneHit": false,
+      "biggestWin": 1438170.76,
+      "qualified": true,
+      "rejectReasons": [],
+      "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
+      "name": "0x2c335066…",
+      "firstTrade": "2025-10-29",
+      "lastTrade": "2026-08-18"
+    },
+    {
       "resolved": 16,
       "uniqueMarkets": 16,
       "roi": 51.27,
@@ -75,7 +92,7 @@
       "pnl": 5711459.8,
       "winRate": 100.0,
       "volume": 20086062.0,
-      "inactiveDays": 176.3,
+      "inactiveDays": 176.4,
       "oneHit": false,
       "biggestWin": 2016301.32,
       "qualified": false,
@@ -95,7 +112,7 @@
       "pnl": 6083643.1,
       "winRate": 81.0,
       "volume": 23538463.0,
-      "inactiveDays": 640.8,
+      "inactiveDays": 640.9,
       "oneHit": true,
       "biggestWin": 3250602.14,
       "qualified": false,
@@ -116,7 +133,7 @@
       "pnl": 7807265.5,
       "winRate": 100.0,
       "volume": 24895574.0,
-      "inactiveDays": 640.0,
+      "inactiveDays": 640.1,
       "oneHit": true,
       "biggestWin": 11447930.97,
       "qualified": false,
@@ -138,7 +155,7 @@
       "pnl": 16619507.0,
       "winRate": 60.8,
       "volume": 1230202.0,
-      "inactiveDays": 641.2,
+      "inactiveDays": 641.3,
       "oneHit": true,
       "biggestWin": 9670331.96,
       "qualified": false,
@@ -158,7 +175,7 @@
       "pnl": 8052184.54,
       "winRate": 66.7,
       "volume": 72132443.0,
-      "inactiveDays": 34.3,
+      "inactiveDays": 34.4,
       "oneHit": true,
       "biggestWin": 5976031.78,
       "qualified": false,
@@ -228,56 +245,9 @@
       "name": "0xe90bec87…",
       "firstTrade": "2025-11-17",
       "lastTrade": "2026-04-03"
-    },
-    {
-      "resolved": 7578,
-      "uniqueMarkets": 4092,
-      "roi": 0.0,
-      "pnl": 8811149.14,
-      "winRate": 58.8,
-      "volume": 908300081.0,
-      "inactiveDays": 11.1,
-      "oneHit": false,
-      "biggestWin": 2069237.81,
-      "qualified": false,
-      "rejectReasons": [
-        "verliert Geld (ROI 0.0%)"
-      ],
-      "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
-      "name": "0x2c335066…",
-      "firstTrade": "2025-10-08",
-      "lastTrade": "2026-08-07"
     }
   ],
   "feed": [
-    {
-      "wallet": "0xf377b9fb12a4b7507a4f997461a73eb30b564159",
-      "name": "0xf377b9fb…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Cincinnati Open: Tommy Paul vs Adolfo Vallejo",
-      "slug": "atp-paul-vallejo-2026-08-17",
-      "side": "BUY",
-      "outcome": "Tommy Paul",
-      "price": 0.45,
-      "sizeUSD": 12000.0,
-      "ts": "2026-08-18T03:23:48+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xfe787d2da716d60e8acff57fb87eb13cd4d10319",
-      "name": "0xfe787d2d…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Cincinnati Open: Tommy Paul vs Adolfo Vallejo",
-      "slug": "atp-paul-vallejo-2026-08-17",
-      "side": "BUY",
-      "outcome": "Adolfo Vallejo",
-      "price": 0.55,
-      "sizeUSD": 11411.69,
-      "ts": "2026-08-18T03:23:48+00:00",
-      "copyLagPP": null
-    },
     {
       "wallet": "0x975042ec9a04605964f2ac0716b0f1e8af6d031d",
       "name": "0x975042ec…",
@@ -290,34 +260,6 @@
       "price": 0.01,
       "sizeUSD": 9911.04,
       "ts": "2026-08-18T05:14:13+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xf3a1493cf87d23177107b5b3f737f0c586f1bf4b",
-      "name": "0xf3a1493c…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Cincinnati Open: Tommy Paul vs Adolfo Vallejo",
-      "slug": "atp-paul-vallejo-2026-08-17",
-      "side": "BUY",
-      "outcome": "Tommy Paul",
-      "price": 0.31,
-      "sizeUSD": 7812.5,
-      "ts": "2026-08-18T03:33:37+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xfe787d2da716d60e8acff57fb87eb13cd4d10319",
-      "name": "0xfe787d2d…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Cincinnati Open: Tommy Paul vs Adolfo Vallejo",
-      "slug": "atp-paul-vallejo-2026-08-17",
-      "side": "BUY",
-      "outcome": "Adolfo Vallejo",
-      "price": 0.69,
-      "sizeUSD": 7737.5,
-      "ts": "2026-08-18T03:33:37+00:00",
       "copyLagPP": null
     },
     {
@@ -349,6 +291,34 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x2d613c30614b68eada0a37d65bddf3778d981fa7",
+      "name": "0x2d613c30…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Bab el-Mandeb Strait effectively closed by September 30?",
+      "slug": "bab-el-mandeb-strait-effectively-closed-by-september-30-999-671",
+      "side": "SELL",
+      "outcome": "No",
+      "price": 0.8718293053,
+      "sizeUSD": 4642.91,
+      "ts": "2026-08-18T05:46:22+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xe159d1df12a7f5b64b193a7ce56497852ed2f13d",
+      "name": "0xe159d1df…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Bitcoin Up or Down - August 18, 2:10AM-2:15AM ET",
+      "slug": "btc-updown-5m-1787033400",
+      "side": "BUY",
+      "outcome": "Down",
+      "price": 0.0011461192,
+      "sizeUSD": 4362.548,
+      "ts": "2026-08-18T06:14:16+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x851b1719f70a23f081427a5ded1e534de699961e",
       "name": "0x851b1719…",
       "qualified": false,
@@ -377,31 +347,17 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x54bab0bc94667af224e21528804d49c1b87e04e4",
-      "name": "0x54bab0bc…",
+      "wallet": "0x7db26f764623b0df0bafeb70aa287a368b5b1b3b",
+      "name": "0x7db26f76…",
       "qualified": false,
       "isWhale": false,
-      "market": "Cincinnati Open: Tommy Paul vs Adolfo Vallejo",
-      "slug": "atp-paul-vallejo-2026-08-17",
-      "side": "SELL",
-      "outcome": "Adolfo Vallejo",
-      "price": 0.55,
-      "sizeUSD": 2653.84,
-      "ts": "2026-08-18T03:23:51+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x32b484581fc5606de9c1e43af4636b6be9bc8b21",
-      "name": "0x32b48458…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Cincinnati Open: Tommy Paul vs Adolfo Vallejo",
-      "slug": "atp-paul-vallejo-2026-08-17",
+      "market": "Bitcoin Up or Down - August 18, 2:10AM-2:15AM ET",
+      "slug": "btc-updown-5m-1787033400",
       "side": "BUY",
-      "outcome": "Adolfo Vallejo",
-      "price": 0.55,
-      "sizeUSD": 2648.15,
-      "ts": "2026-08-18T03:23:51+00:00",
+      "outcome": "Up",
+      "price": 0.999,
+      "sizeUSD": 3325.0,
+      "ts": "2026-08-18T06:14:16+00:00",
       "copyLagPP": null
     },
     {
@@ -416,6 +372,20 @@
       "price": 0.53,
       "sizeUSD": 2541.14,
       "ts": "2026-08-18T03:43:51+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x0faa4ef3ce122d029ed54a47ec8cf70447999ff8",
+      "name": "0x0faa4ef3…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Bitcoin Up or Down - August 18, 1:50AM-1:55AM ET",
+      "slug": "btc-updown-5m-1787032200",
+      "side": "SELL",
+      "outcome": "Up",
+      "price": 0.9161591512,
+      "sizeUSD": 2520.12,
+      "ts": "2026-08-18T05:54:15+00:00",
       "copyLagPP": null
     },
     {
@@ -503,62 +473,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x0346afae2603313d2bbee96b628536c8cbe352a5",
-      "name": "0x0346afae…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will Club Puebla win on 2026-08-17?",
-      "slug": "mex-pac-pue-2026-08-17",
-      "side": "BUY",
-      "outcome": "Yes",
-      "price": 0.68,
-      "sizeUSD": 2019.12,
-      "ts": "2026-08-18T03:43:46+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x44c58184f89a5c2f699dc8943009cb3d75a08d45",
-      "name": "0x44c58184…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will Club Puebla win on 2026-08-17?",
-      "slug": "mex-pac-pue-2026-08-17",
-      "side": "SELL",
-      "outcome": "Yes",
-      "price": 0.68,
-      "sizeUSD": 2019.12,
-      "ts": "2026-08-18T03:43:46+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xf83b52d7f5f86de4dc6870f46955bac038c844a2",
-      "name": "0xf83b52d7…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Cincinnati Open: Tommy Paul vs Adolfo Vallejo",
-      "slug": "atp-paul-vallejo-2026-08-17",
-      "side": "BUY",
-      "outcome": "Tommy Paul",
-      "price": 0.3099999998,
-      "sizeUSD": 1855.387095,
-      "ts": "2026-08-18T03:33:37+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xfe787d2da716d60e8acff57fb87eb13cd4d10319",
-      "name": "0xfe787d2d…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Cincinnati Open: Tommy Paul vs Adolfo Vallejo",
-      "slug": "atp-paul-vallejo-2026-08-17",
-      "side": "BUY",
-      "outcome": "Adolfo Vallejo",
-      "price": 0.6900000002,
-      "sizeUSD": 1855.387095,
-      "ts": "2026-08-18T03:33:37+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x54bab0bc94667af224e21528804d49c1b87e04e4",
       "name": "0x54bab0bc…",
       "qualified": false,
@@ -629,6 +543,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x408327fa978bbcc8f6f5b275bbe736fb2943308f",
+      "name": "0x408327fa…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "US announces end of Iranian blockade by August 31, 2026?",
+      "slug": "us-announces-end-of-iranian-blockade-by-august-31-2026-20260713152715084-642-513-584-641-939-632-729",
+      "side": "SELL",
+      "outcome": "No",
+      "price": 0.9,
+      "sizeUSD": 1600.0,
+      "ts": "2026-08-18T05:54:18+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x4f29e103339919c4baaea2a60195cf1c8bb27a7e",
       "name": "0x4f29e103…",
       "qualified": false,
@@ -668,6 +596,34 @@
       "price": 0.68,
       "sizeUSD": 1540.05,
       "ts": "2026-08-18T03:43:49+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x20458998cd99f7ed1096d74d39fe2c8ddf46c77c",
+      "name": "0x20458998…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Club Atlético de Madrid win on 2026-08-19?",
+      "slug": "lal-mad-mala-2026-08-19",
+      "side": "BUY",
+      "outcome": "Yes",
+      "price": 0.76,
+      "sizeUSD": 1320.0,
+      "ts": "2026-08-18T06:24:01+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xe9d31c24fc8d6a4beb58ee1808fdbefd0e72079f",
+      "name": "0xe9d31c24…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "ITF W15 Tianjin 3 Women: Maria Kalyakina vs Dabin Kim",
+      "slug": "itf-kalyaki-dabinki-2026-08-18",
+      "side": "BUY",
+      "outcome": "Maria Kalyakina",
+      "price": 0.6074711719,
+      "sizeUSD": 1316.934918,
+      "ts": "2026-08-18T05:44:07+00:00",
       "copyLagPP": null
     },
     {
@@ -825,6 +781,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0xf6f687d9c728a4fc5590d71e2e53b9d418e20e74",
+      "name": "0xf6f687d9…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Bitcoin Up or Down - August 18, 1:50AM-1:55AM ET",
+      "slug": "btc-updown-5m-1787032200",
+      "side": "BUY",
+      "outcome": "Up",
+      "price": 0.9811485679,
+      "sizeUSD": 1019.2136,
+      "ts": "2026-08-18T05:54:16+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x5d5f19c31f3866f1009243ad096a2d1f9f3455a8",
       "name": "0x5d5f19c3…",
       "qualified": false,
@@ -850,6 +820,34 @@
       "price": 0.6602881501,
       "sizeUSD": 1006.42,
       "ts": "2026-08-18T04:03:58+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xd68960807da73e86457c751ebc9d4d1ee2236ec7",
+      "name": "0xd6896080…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Bitcoin Up or Down - August 18, 2:00AM-2:05AM ET",
+      "slug": "btc-updown-5m-1787032800",
+      "side": "BUY",
+      "outcome": "Up",
+      "price": 0.01,
+      "sizeUSD": 1000.0,
+      "ts": "2026-08-18T06:03:58+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x9006751a04d629f45cc0c15b26c5685a0e309fb8",
+      "name": "0x9006751a…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will the highest temperature in Busan be 30°C on August 18?",
+      "slug": "highest-temperature-in-busan-on-august-18-2026",
+      "side": "BUY",
+      "outcome": "Yes",
+      "price": 0.001,
+      "sizeUSD": 1000.0,
+      "ts": "2026-08-18T05:44:07+00:00",
       "copyLagPP": null
     },
     {
@@ -951,6 +949,6 @@
       "copyLagPP": null
     }
   ],
-  "generatedAt": "2026-08-18 05:39 UTC",
+  "generatedAt": "2026-08-18 07:00 UTC",
   "note": "Ehrliches Copy-Trading: Bilanz selbst nachgerechnet (nicht dem Leaderboard glauben), Ein-Treffer-Wunder/Inaktive/Verlierer gefiltert, und der Copy-Lag ausgewiesen — die Kosten, die entstehen, weil der Wal mit seiner Order den Preis selbst bewegt."
 }
