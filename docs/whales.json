@@ -2,8 +2,8 @@
   "summary": {
     "enabled": true,
     "feedCount": 50,
-    "whaleTradeCount": 3,
-    "biggestTradeUSD": 28698,
+    "whaleTradeCount": 2,
+    "biggestTradeUSD": 27600,
     "whaleMinUSD": 25000,
     "walletsProbed": 14,
     "qualifiedCount": 2,
@@ -37,7 +37,7 @@
       "pnl": 8858452.93,
       "winRate": 60.1,
       "volume": 911002547.0,
-      "inactiveDays": 1.7,
+      "inactiveDays": 1.8,
       "oneHit": false,
       "biggestWin": 1438170.76,
       "qualified": true,
@@ -75,7 +75,7 @@
       "pnl": 5711459.8,
       "winRate": 100.0,
       "volume": 20086062.0,
-      "inactiveDays": 178.0,
+      "inactiveDays": 178.1,
       "oneHit": false,
       "biggestWin": 2016301.32,
       "qualified": false,
@@ -95,14 +95,14 @@
       "pnl": 6083643.1,
       "winRate": 81.0,
       "volume": 23538463.0,
-      "inactiveDays": 642.5,
+      "inactiveDays": 642.6,
       "oneHit": true,
       "biggestWin": 3250602.14,
       "qualified": false,
       "rejectReasons": [
         "zu wenig Historie (21 aufgelöst)",
         "Ein-Treffer-Wunder (53% des Gewinns aus 1 Trade)",
-        "inaktiv seit 642d"
+        "inaktiv seit 643d"
       ],
       "wallet": "0x8119010a6e589062aa03583bb3f39ca632d9f887",
       "name": "0x8119010a…",
@@ -116,7 +116,7 @@
       "pnl": 16619507.0,
       "winRate": 60.8,
       "volume": 1230202.0,
-      "inactiveDays": 642.9,
+      "inactiveDays": 643.0,
       "oneHit": true,
       "biggestWin": 9670331.96,
       "qualified": false,
@@ -172,10 +172,10 @@
     {
       "resolved": 4027,
       "uniqueMarkets": 2278,
-      "roi": 3.91,
-      "pnl": 11386690.88,
+      "roi": 3.92,
+      "pnl": 11386691.0,
       "winRate": 52.6,
-      "volume": 298637139.0,
+      "volume": 21016650.0,
       "inactiveDays": 50.0,
       "oneHit": false,
       "biggestWin": 1095000.0,
@@ -227,6 +227,26 @@
       "lastTrade": "2026-04-03"
     },
     {
+      "resolved": 250,
+      "uniqueMarkets": 218,
+      "roi": 0.79,
+      "pnl": -256970.7,
+      "winRate": 62.4,
+      "volume": 68099461.0,
+      "inactiveDays": 243.1,
+      "oneHit": false,
+      "biggestWin": 181513.04,
+      "qualified": false,
+      "rejectReasons": [
+        "inaktiv seit 243d",
+        "negatives PnL"
+      ],
+      "wallet": "0xab19716584931d81cd9e7763402673a64baa4876",
+      "name": "0xab197165…",
+      "firstTrade": "2025-04-26",
+      "lastTrade": "2025-12-19"
+    },
+    {
       "resolved": 11,
       "uniqueMarkets": 54,
       "roi": -53.74,
@@ -252,9 +272,9 @@
       "resolved": 19996,
       "uniqueMarkets": 3343,
       "roi": 0.0,
-      "pnl": 23608347.59,
+      "pnl": 23626739.59,
       "winRate": 54.9,
-      "volume": 1820326825.0,
+      "volume": 1820486910.0,
       "inactiveDays": 2.8,
       "oneHit": false,
       "biggestWin": 32918.76,
@@ -266,44 +286,9 @@
       "name": "0x204f72f3…",
       "firstTrade": "2026-08-10",
       "lastTrade": "2026-08-17"
-    },
-    {
-      "resolved": 65,
-      "uniqueMarkets": 347,
-      "roi": 0.0,
-      "pnl": -630844.0,
-      "winRate": 100.0,
-      "volume": 0,
-      "inactiveDays": 96.2,
-      "oneHit": false,
-      "biggestWin": 132696.49,
-      "qualified": false,
-      "rejectReasons": [
-        "inaktiv seit 96d",
-        "verliert Geld (ROI 0.0%)",
-        "negatives PnL"
-      ],
-      "wallet": "0xf5f92940519a72da460b1c2a606bc1230f0e87b0",
-      "name": "kekasaur",
-      "firstTrade": "2026-03-08",
-      "lastTrade": "2026-05-15"
     }
   ],
   "feed": [
-    {
-      "wallet": "0xf5f92940519a72da460b1c2a606bc1230f0e87b0",
-      "name": "0xf5f92940…",
-      "qualified": false,
-      "isWhale": true,
-      "market": "Will SE Palmeiras win on 2026-08-19?",
-      "slug": "lib-cep-pal-2026-08-19-pal",
-      "side": "BUY",
-      "outcome": "Yes",
-      "price": 0.54,
-      "sizeUSD": 28697.7,
-      "ts": "2026-08-19T21:01:13+00:00",
-      "copyLagPP": null
-    },
     {
       "wallet": "0xff349f645fe441978625b5e16e008d67f8cabf20",
       "name": "0xff349f64…",
@@ -431,48 +416,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x52d93dcf81444f793dda7fedc370f7a35101fb1a",
-      "name": "0x52d93dcf…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will SE Palmeiras win on 2026-08-19?",
-      "slug": "lib-cep-pal-2026-08-19-pal",
-      "side": "BUY",
-      "outcome": "No",
-      "price": 0.46,
-      "sizeUSD": 6278.0,
-      "ts": "2026-08-19T21:01:13+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x2a69660046d7acc4ab204d7cc5ba78b0776cd2f7",
-      "name": "0x2a696600…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will SE Palmeiras win on 2026-08-19?",
-      "slug": "lib-cep-pal-2026-08-19-pal",
-      "side": "BUY",
-      "outcome": "No",
-      "price": 0.46,
-      "sizeUSD": 5204.5,
-      "ts": "2026-08-19T21:01:13+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xf5f92940519a72da460b1c2a606bc1230f0e87b0",
-      "name": "0xf5f92940…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will SE Palmeiras win on 2026-08-19?",
-      "slug": "lib-cep-pal-2026-08-19-pal",
-      "side": "BUY",
-      "outcome": "Yes",
-      "price": 0.54,
-      "sizeUSD": 5204.5,
-      "ts": "2026-08-19T21:01:13+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x58b3380f71bd6c706dd398a5e60bde55fa3a653c",
       "name": "0x58b3380f…",
       "qualified": false,
@@ -557,6 +500,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x97cb3a7cef8eb9f7e5c1b549be4bdcb77e4bc910",
+      "name": "0x97cb3a7c…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Israel x Iran ceasefire continues through August 31?",
+      "slug": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.05,
+      "sizeUSD": 4000.0,
+      "ts": "2026-08-19T23:01:16+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0xb4fc3b8dfa7e5966df6d7ed8932e87eb46aaa926",
       "name": "0xb4fc3b8d…",
       "qualified": false,
@@ -568,20 +525,6 @@
       "price": 0.1383336073,
       "sizeUSD": 3614.450665,
       "ts": "2026-08-19T21:21:10+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x3f3aa7005f8006bfcc367d43a25cde25509fe8fd",
-      "name": "0x3f3aa700…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will SE Palmeiras win on 2026-08-19?",
-      "slug": "lib-cep-pal-2026-08-19-pal",
-      "side": "BUY",
-      "outcome": "No",
-      "price": 0.46,
-      "sizeUSD": 3331.34,
-      "ts": "2026-08-19T21:01:13+00:00",
       "copyLagPP": null
     },
     {
@@ -683,17 +626,17 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0xfb07f48542d2b655e9d0bf1cc92a8a6feee8e2cc",
-      "name": "0xfb07f485…",
+      "wallet": "0x76d90685ded3907b5bba8af633812aceca00205a",
+      "name": "0x76d90685…",
       "qualified": false,
       "isWhale": false,
-      "market": "Will SE Palmeiras win on 2026-08-19?",
-      "slug": "lib-cep-pal-2026-08-19-pal",
-      "side": "BUY",
-      "outcome": "No",
-      "price": 0.46,
-      "sizeUSD": 2000.0,
-      "ts": "2026-08-19T21:01:13+00:00",
+      "market": "Will the price of Bitcoin be above $72,000 on August 20?",
+      "slug": "bitcoin-above-72k-on-august-20-2026",
+      "side": "SELL",
+      "outcome": "Yes",
+      "price": 0.0538711105,
+      "sizeUSD": 1900.0,
+      "ts": "2026-08-19T22:51:19+00:00",
       "copyLagPP": null
     },
     {
@@ -711,17 +654,17 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0xc29198ad764bd6adaf7bb971a3757a689ece5d74",
-      "name": "0xc29198ad…",
+      "wallet": "0x748ac19f73c96312e98227f49f65699542943c56",
+      "name": "0x748ac19f…",
       "qualified": false,
       "isWhale": false,
-      "market": "Will SE Palmeiras win on 2026-08-19?",
-      "slug": "lib-cep-pal-2026-08-19-pal",
-      "side": "BUY",
+      "market": "Israel x Iran ceasefire continues through August 31?",
+      "slug": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
+      "side": "SELL",
       "outcome": "No",
-      "price": 0.46,
-      "sizeUSD": 1435.0,
-      "ts": "2026-08-19T21:01:13+00:00",
+      "price": 0.05,
+      "sizeUSD": 1549.32,
+      "ts": "2026-08-19T23:01:16+00:00",
       "copyLagPP": null
     },
     {
@@ -753,34 +696,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x2a69660046d7acc4ab204d7cc5ba78b0776cd2f7",
-      "name": "0x2a696600…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will FC Cincinnati vs. New York City FC end in a draw?",
-      "slug": "mls-fcc-nyc-2026-08-19-draw",
-      "side": "BUY",
-      "outcome": "No",
-      "price": 0.77,
-      "sizeUSD": 1345.0,
-      "ts": "2026-08-19T21:01:13+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x8fba2c29715c41dd87e781c23373aa1e0549d08a",
-      "name": "0x8fba2c29…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will FC Cincinnati vs. New York City FC end in a draw?",
-      "slug": "mls-fcc-nyc-2026-08-19-draw",
-      "side": "BUY",
-      "outcome": "Yes",
-      "price": 0.23,
-      "sizeUSD": 1345.0,
-      "ts": "2026-08-19T21:01:13+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0xedc35944a67658dc37d4e8de948cea2a7fa3f923",
       "name": "0xedc35944…",
       "qualified": false,
@@ -806,6 +721,20 @@
       "price": 0.13,
       "sizeUSD": 1298.49,
       "ts": "2026-08-19T21:21:10+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xfdc8ce613812090420010e8193507160fd8dc678",
+      "name": "0xfdc8ce61…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will SE Palmeiras win on 2026-08-19?",
+      "slug": "lib-cep-pal-2026-08-19-pal",
+      "side": "SELL",
+      "outcome": "No",
+      "price": 0.28,
+      "sizeUSD": 1279.99,
+      "ts": "2026-08-19T22:41:18+00:00",
       "copyLagPP": null
     },
     {
@@ -837,6 +766,34 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x492bb408693470df7d031ef48f3a5466055b45ee",
+      "name": "0x492bb408…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Cincinnati Open: Nuno Borges vs Brandon Nakashima",
+      "slug": "atp-borges-nakashi-2026-08-19",
+      "side": "BUY",
+      "outcome": "Nuno Borges",
+      "price": 0.22,
+      "sizeUSD": 1213.99,
+      "ts": "2026-08-19T22:51:12+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x91784d82fbe4543459ee85fc9809be185d70a2b2",
+      "name": "0x91784d82…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Israel x Iran ceasefire continues through August 31?",
+      "slug": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
+      "side": "SELL",
+      "outcome": "No",
+      "price": 0.05,
+      "sizeUSD": 1196.68,
+      "ts": "2026-08-19T23:01:16+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0xdc41c39b95453c943174f369926018f6963bdd7e",
       "name": "0xdc41c39b…",
       "qualified": false,
@@ -865,6 +822,20 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0x06dc51826bc524d9a83770e7de9dd7e005b04524",
+      "name": "0x06dc5182…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will the price of Bitcoin be above $72,000 on August 20?",
+      "slug": "bitcoin-above-72k-on-august-20-2026",
+      "side": "BUY",
+      "outcome": "Yes",
+      "price": 0.052,
+      "sizeUSD": 1043.69,
+      "ts": "2026-08-19T22:51:19+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x2f8e0b09ed54342796a488281baa40dff63b0c69",
       "name": "0x2f8e0b09…",
       "qualified": false,
@@ -876,6 +847,48 @@
       "price": 0.4870098565,
       "sizeUSD": 1026.673264,
       "ts": "2026-08-19T21:51:12+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x40ce68f1564f3c751b12d88a393d8cc0651dbf90",
+      "name": "0x40ce68f1…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "LoL: CTBC Flying Oyster vs MVK Esports (BO5) - LCP Playoffs",
+      "slug": "lol-cfo-mvk-2026-08-20",
+      "side": "BUY",
+      "outcome": "CTBC Flying Oyster",
+      "price": 0.59,
+      "sizeUSD": 1000.0,
+      "ts": "2026-08-19T23:21:12+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xda3a9b7afff7b44ad4fd75308723194e0a11381f",
+      "name": "0xda3a9b7a…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "LoL: CTBC Flying Oyster vs MVK Esports (BO5) - LCP Playoffs",
+      "slug": "lol-cfo-mvk-2026-08-20",
+      "side": "BUY",
+      "outcome": "MVK Esports",
+      "price": 0.41,
+      "sizeUSD": 1000.0,
+      "ts": "2026-08-19T23:21:12+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x5297f1e1d0f0584537af763652a0a5f874037b99",
+      "name": "0x5297f1e1…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Israel x Iran ceasefire continues through August 31?",
+      "slug": "israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
+      "side": "SELL",
+      "outcome": "No",
+      "price": 0.05,
+      "sizeUSD": 1000.0,
+      "ts": "2026-08-19T23:01:16+00:00",
       "copyLagPP": null
     },
     {
@@ -975,22 +988,8 @@
       "sizeUSD": 1000.0,
       "ts": "2026-08-19T21:11:15+00:00",
       "copyLagPP": null
-    },
-    {
-      "wallet": "0xadfb6cba33cebca02eab6111ace1e3924b9cc2ef",
-      "name": "0xadfb6cba…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will SE Palmeiras win on 2026-08-19?",
-      "slug": "lib-cep-pal-2026-08-19-pal",
-      "side": "BUY",
-      "outcome": "No",
-      "price": 0.46,
-      "sizeUSD": 1000.0,
-      "ts": "2026-08-19T21:01:13+00:00",
-      "copyLagPP": null
     }
   ],
-  "generatedAt": "2026-08-19 22:37 UTC",
+  "generatedAt": "2026-08-19 23:34 UTC",
   "note": "Ehrliches Copy-Trading: Bilanz selbst nachgerechnet (nicht dem Leaderboard glauben), Ein-Treffer-Wunder/Inaktive/Verlierer gefiltert, und der Copy-Lag ausgewiesen — die Kosten, die entstehen, weil der Wal mit seiner Order den Preis selbst bewegt."
 }
