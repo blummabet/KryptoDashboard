@@ -1,10 +1,93 @@
 {
-  "generatedAt": "2026-08-19 16:42 UTC",
+  "generatedAt": "2026-08-19 17:36 UTC",
   "scanned": 600,
-  "count": 11,
+  "count": 12,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
+    {
+      "side": "buy",
+      "sumProb": 0.011,
+      "grossPP": 98.9,
+      "feePP": 0.06,
+      "netPP": 98.84,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xaa7a45e2f86ac9bdf39cf1f82c89c164e2c80a59265c50e3a0a6b3e6e3e59000",
+      "event": "Elon Musk # tweets August 21 - August 28, 2026?",
+      "slug": "elon-musk-of-tweets-august-21-august-28-2026",
+      "endDate": "2026-08-28T16:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "500+",
+          "bid": 0.002,
+          "ask": 0.004
+        },
+        {
+          "name": "380-399",
+          "bid": 0.003,
+          "ask": 0.004
+        },
+        {
+          "name": "400-419",
+          "bid": 0.001,
+          "ask": 0.003
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.016,
+      "grossPP": 98.4,
+      "feePP": 0.05,
+      "netPP": 98.35,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x91e8fbf577df044df2cd5c39e9d309b0331820115fcb49947eb1f66f83dda900",
+      "event": "LALIGA: 2027 Champion",
+      "slug": "laliga-2027-champion-20260701200737375",
+      "endDate": "2027-05-30T23:59:00Z",
+      "n": 7,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Betis",
+          "bid": 0.003,
+          "ask": 0.004
+        },
+        {
+          "name": "Valencia",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "Celta Vigo",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "Real Sociedad",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "Getafe",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "Rayo Vallecano",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
     {
       "side": "buy",
       "sumProb": 0.017,
@@ -46,100 +129,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.023,
-      "grossPP": 97.7,
-      "feePP": 0.07,
-      "netPP": 97.63,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x91e8fbf577df044df2cd5c39e9d309b0331820115fcb49947eb1f66f83dda900",
-      "event": "LALIGA: 2027 Champion",
-      "slug": "laliga-2027-champion-20260701200737375",
-      "endDate": "2027-05-30T23:59:00Z",
-      "n": 10,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Betis",
-          "bid": 0.003,
-          "ask": 0.004
-        },
-        {
-          "name": "Athletic Bilbao",
-          "bid": 0.002,
-          "ask": 0.003
-        },
-        {
-          "name": "Valencia",
-          "bid": 0.001,
-          "ask": 0.002
-        },
-        {
-          "name": "Celta Vigo",
-          "bid": 0.001,
-          "ask": 0.002
-        },
-        {
-          "name": "Real Sociedad",
-          "bid": 0.001,
-          "ask": 0.002
-        },
-        {
-          "name": "Getafe",
-          "bid": 0.001,
-          "ask": 0.002
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.033,
-      "grossPP": 96.7,
-      "feePP": 0.1,
-      "netPP": 96.6,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x697ad5ad79df81b98b58ef5ea0ff713d40397e526b98bd36fbe57d4be4365000",
-      "event": "EPL: 2027 Champion",
-      "slug": "epl-2027-champion-20260701200428749",
-      "endDate": "2027-05-30T23:59:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Tottenham",
-          "bid": 0.025,
-          "ask": 0.026
-        },
-        {
-          "name": "Newcastle United",
-          "bid": 0.003,
-          "ask": 0.004
-        },
-        {
-          "name": "Brighton",
-          "bid": 0.002,
-          "ask": 0.003
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.175,
-      "grossPP": 82.5,
-      "feePP": 0.52,
-      "netPP": 81.97,
+      "sumProb": 0.233,
+      "grossPP": 76.7,
+      "feePP": 0.7,
+      "netPP": 76.0,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
       "event": "Pro Football: 2027 Champion",
       "slug": "pro-football-2027-champion-20260729185915366",
       "endDate": "2027-02-14T23:55:00Z",
-      "n": 3,
+      "n": 4,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -150,8 +150,13 @@
           "ask": 0.09
         },
         {
+          "name": "Dallas Cowboys",
+          "bid": 0.057,
+          "ask": 0.058
+        },
+        {
           "name": "Philadelphia Eagles",
-          "bid": 0.044,
+          "bid": 0.043,
           "ask": 0.045
         },
         {
@@ -207,17 +212,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.34,
-      "grossPP": 66.0,
-      "feePP": 1.7,
-      "netPP": 64.3,
+      "sumProb": 0.43,
+      "grossPP": 57.0,
+      "feePP": 2.15,
+      "netPP": 54.85,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2adf2f8c978308c8f730086acd10f08675b0b5d8ab832299209ccf9120ca6000",
       "event": "Club Atlético de Madrid vs. Málaga CF - Exact Score",
       "slug": "lal-mad-mala-2026-08-19-exact-score",
       "endDate": "2026-08-19T19:00:00Z",
-      "n": 4,
+      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -229,8 +234,13 @@
         },
         {
           "name": "Club Atlético de Madrid 3 - 0 Málaga CF",
-          "bid": 0.1,
-          "ask": 0.11
+          "bid": 0.09,
+          "ask": 0.1
+        },
+        {
+          "name": "Club Atlético de Madrid 2 - 1 Málaga CF",
+          "bid": 0.09,
+          "ask": 0.1
         },
         {
           "name": "Club Atlético de Madrid 1 - 1 Málaga CF",
@@ -295,17 +305,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.551,
-      "grossPP": 44.9,
-      "feePP": 2.2,
-      "netPP": 42.7,
+      "sumProb": 0.602,
+      "grossPP": 39.8,
+      "feePP": 2.41,
+      "netPP": 37.39,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
       "event": "Democratic Presidential Nominee 2028",
       "slug": "democratic-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 15,
+      "n": 16,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
@@ -326,6 +336,11 @@
           "ask": 0.137
         },
         {
+          "name": "Josh Shapiro",
+          "bid": 0.05,
+          "ask": 0.051
+        },
+        {
           "name": "Rahm Emanuel",
           "bid": 0.023,
           "ask": 0.024
@@ -334,35 +349,79 @@
           "name": "Stephen A. Smith",
           "bid": 0.003,
           "ask": 0.004
-        },
-        {
-          "name": "Chelsea Clinton",
-          "bid": 0.003,
-          "ask": 0.004
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.68,
-      "grossPP": 32.0,
-      "feePP": 3.4,
-      "netPP": 28.6,
+      "sumProb": 0.703,
+      "grossPP": 29.7,
+      "feePP": 2.11,
+      "netPP": 27.59,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x697ad5ad79df81b98b58ef5ea0ff713d40397e526b98bd36fbe57d4be4365000",
+      "event": "EPL: 2027 Champion",
+      "slug": "epl-2027-champion-20260701200428749",
+      "endDate": "2027-05-30T23:59:00Z",
+      "n": 7,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Arsenal",
+          "bid": 0.45,
+          "ask": 0.47
+        },
+        {
+          "name": "Chelsea",
+          "bid": 0.09,
+          "ask": 0.1
+        },
+        {
+          "name": "Manchester United",
+          "bid": 0.09,
+          "ask": 0.1
+        },
+        {
+          "name": "Tottenham",
+          "bid": 0.023,
+          "ask": 0.024
+        },
+        {
+          "name": "Newcastle United",
+          "bid": 0.003,
+          "ask": 0.004
+        },
+        {
+          "name": "Brighton",
+          "bid": 0.002,
+          "ask": 0.003
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.79,
+      "grossPP": 21.0,
+      "feePP": 3.95,
+      "netPP": 17.05,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x23403c8cfac005e18626bf38bff5cb1ea3e986c743c2ccec00eca5d1af006e00",
       "event": "Elon Musk # tweets August 18 - August 25, 2026?",
       "slug": "elon-musk-of-tweets-august-18-august-25",
       "endDate": "2026-08-25T16:00:00Z",
-      "n": 20,
+      "n": 21,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "260-279",
-          "bid": 0.142,
-          "ask": 0.145
+          "bid": 0.146,
+          "ask": 0.148
         },
         {
           "name": "200-219",
@@ -371,8 +430,13 @@
         },
         {
           "name": "280-299",
-          "bid": 0.109,
-          "ask": 0.11
+          "bid": 0.119,
+          "ask": 0.121
+        },
+        {
+          "name": "300-319",
+          "bid": 0.084,
+          "ask": 0.092
         },
         {
           "name": "180-199",
@@ -381,61 +445,61 @@
         },
         {
           "name": "320-339",
-          "bid": 0.05,
-          "ask": 0.051
-        },
-        {
-          "name": "160-179",
-          "bid": 0.035,
-          "ask": 0.04
+          "bid": 0.064,
+          "ask": 0.066
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.74,
-      "grossPP": 26.0,
-      "feePP": 3.7,
-      "netPP": 22.3,
+      "sumProb": 0.801,
+      "grossPP": 19.9,
+      "feePP": 4.0,
+      "netPP": 15.9,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xdc5a2e26c51dc285867b613a52865b4fb567a8c785f85018ca5df57de8a06200",
       "event": "EWC 2026 CS2: Winner",
       "slug": "ewc-2026-cs2-winner-20260810160005076",
       "endDate": null,
-      "n": 4,
-      "completeBid": true,
+      "n": 5,
+      "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "Team Vitality",
-          "bid": 0.22,
-          "ask": 0.24
+          "bid": 0.21,
+          "ask": 0.25
         },
         {
           "name": "Team Falcons",
           "bid": 0.18,
-          "ask": 0.19
-        },
-        {
-          "name": "Team Spirit",
-          "bid": 0.14,
-          "ask": 0.16
+          "ask": 0.21
         },
         {
           "name": "FURIA",
+          "bid": 0.14,
+          "ask": 0.18
+        },
+        {
+          "name": "Team Spirit",
           "bid": 0.13,
-          "ask": 0.15
+          "ask": 0.16
+        },
+        {
+          "name": "magic",
+          "bid": null,
+          "ask": 0.001
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.847,
-      "grossPP": 15.3,
-      "feePP": 1.8,
-      "netPP": 13.5,
+      "sumProb": 0.844,
+      "grossPP": 15.6,
+      "feePP": 1.79,
+      "netPP": 13.81,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
@@ -459,8 +523,8 @@
         },
         {
           "name": "Khvicha Kvaratskhelia",
-          "bid": 0.025,
-          "ask": 0.027
+          "bid": 0.021,
+          "ask": 0.024
         },
         {
           "name": "Lionel Messi",
