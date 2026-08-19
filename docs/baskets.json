@@ -1,44 +1,10 @@
 {
-  "generatedAt": "2026-08-19 17:36 UTC",
+  "generatedAt": "2026-08-19 18:49 UTC",
   "scanned": 600,
-  "count": 12,
+  "count": 11,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
-    {
-      "side": "buy",
-      "sumProb": 0.011,
-      "grossPP": 98.9,
-      "feePP": 0.06,
-      "netPP": 98.84,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xaa7a45e2f86ac9bdf39cf1f82c89c164e2c80a59265c50e3a0a6b3e6e3e59000",
-      "event": "Elon Musk # tweets August 21 - August 28, 2026?",
-      "slug": "elon-musk-of-tweets-august-21-august-28-2026",
-      "endDate": "2026-08-28T16:00:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "500+",
-          "bid": 0.002,
-          "ask": 0.004
-        },
-        {
-          "name": "380-399",
-          "bid": 0.003,
-          "ask": 0.004
-        },
-        {
-          "name": "400-419",
-          "bid": 0.001,
-          "ask": 0.003
-        }
-      ]
-    },
     {
       "side": "buy",
       "sumProb": 0.016,
@@ -90,10 +56,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.017,
-      "grossPP": 98.3,
-      "feePP": 0.07,
-      "netPP": 98.23,
+      "sumProb": 0.016,
+      "grossPP": 98.4,
+      "feePP": 0.06,
+      "netPP": 98.34,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
@@ -101,7 +67,7 @@
       "slug": "republican-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
       "n": 4,
-      "completeBid": true,
+      "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
@@ -122,17 +88,17 @@
         },
         {
           "name": "Tim Scott",
-          "bid": 0.001,
-          "ask": 0.002
+          "bid": null,
+          "ask": 0.001
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.233,
-      "grossPP": 76.7,
-      "feePP": 0.7,
-      "netPP": 76.0,
+      "sumProb": 0.206,
+      "grossPP": 79.4,
+      "feePP": 0.62,
+      "netPP": 78.78,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
@@ -151,7 +117,7 @@
         },
         {
           "name": "Dallas Cowboys",
-          "bid": 0.057,
+          "bid": 0.056,
           "ask": 0.058
         },
         {
@@ -160,9 +126,9 @@
           "ask": 0.045
         },
         {
-          "name": "Houston Texans",
-          "bid": 0.039,
-          "ask": 0.04
+          "name": "Minnesota Vikings",
+          "bid": 0.012,
+          "ask": 0.013
         }
       ]
     },
@@ -212,45 +178,50 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.43,
-      "grossPP": 57.0,
-      "feePP": 2.15,
-      "netPP": 54.85,
+      "sumProb": 0.501,
+      "grossPP": 49.9,
+      "feePP": 2.51,
+      "netPP": 47.39,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2adf2f8c978308c8f730086acd10f08675b0b5d8ab832299209ccf9120ca6000",
       "event": "Club Atlético de Madrid vs. Málaga CF - Exact Score",
       "slug": "lal-mad-mala-2026-08-19-exact-score",
       "endDate": "2026-08-19T19:00:00Z",
-      "n": 5,
+      "n": 6,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "Club Atlético de Madrid 2 - 0 Málaga CF",
-          "bid": 0.12,
-          "ask": 0.13
-        },
-        {
-          "name": "Club Atlético de Madrid 3 - 0 Málaga CF",
-          "bid": 0.09,
-          "ask": 0.1
+          "bid": 0.11,
+          "ask": 0.12
         },
         {
           "name": "Club Atlético de Madrid 2 - 1 Málaga CF",
+          "bid": 0.1,
+          "ask": 0.11
+        },
+        {
+          "name": "Club Atlético de Madrid 1 - 1 Málaga CF",
           "bid": 0.09,
           "ask": 0.1
         },
         {
-          "name": "Club Atlético de Madrid 1 - 1 Málaga CF",
+          "name": "Club Atlético de Madrid 3 - 0 Málaga CF",
           "bid": 0.08,
           "ask": 0.09
         },
         {
+          "name": "Club Atlético de Madrid 3 - 1 Málaga CF",
+          "bid": 0.06,
+          "ask": 0.07
+        },
+        {
           "name": "Club Atlético de Madrid 3 - 3 Málaga CF",
-          "bid": 0.007,
-          "ask": 0.01
+          "bid": 0.01,
+          "ask": 0.011
         }
       ]
     },
@@ -305,10 +276,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.602,
-      "grossPP": 39.8,
-      "feePP": 2.41,
-      "netPP": 37.39,
+      "sumProb": 0.601,
+      "grossPP": 39.9,
+      "feePP": 2.4,
+      "netPP": 37.5,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
@@ -328,7 +299,7 @@
         {
           "name": "Gavin Newsom",
           "bid": 0.151,
-          "ask": 0.152
+          "ask": 0.153
         },
         {
           "name": "Jon Ossoff",
@@ -354,108 +325,59 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.703,
-      "grossPP": 29.7,
-      "feePP": 2.11,
-      "netPP": 27.59,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x697ad5ad79df81b98b58ef5ea0ff713d40397e526b98bd36fbe57d4be4365000",
-      "event": "EPL: 2027 Champion",
-      "slug": "epl-2027-champion-20260701200428749",
-      "endDate": "2027-05-30T23:59:00Z",
-      "n": 7,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Arsenal",
-          "bid": 0.45,
-          "ask": 0.47
-        },
-        {
-          "name": "Chelsea",
-          "bid": 0.09,
-          "ask": 0.1
-        },
-        {
-          "name": "Manchester United",
-          "bid": 0.09,
-          "ask": 0.1
-        },
-        {
-          "name": "Tottenham",
-          "bid": 0.023,
-          "ask": 0.024
-        },
-        {
-          "name": "Newcastle United",
-          "bid": 0.003,
-          "ask": 0.004
-        },
-        {
-          "name": "Brighton",
-          "bid": 0.002,
-          "ask": 0.003
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.79,
-      "grossPP": 21.0,
-      "feePP": 3.95,
-      "netPP": 17.05,
+      "sumProb": 0.639,
+      "grossPP": 36.1,
+      "feePP": 3.2,
+      "netPP": 32.91,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x23403c8cfac005e18626bf38bff5cb1ea3e986c743c2ccec00eca5d1af006e00",
       "event": "Elon Musk # tweets August 18 - August 25, 2026?",
       "slug": "elon-musk-of-tweets-august-18-august-25",
       "endDate": "2026-08-25T16:00:00Z",
-      "n": 21,
+      "n": 19,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "260-279",
-          "bid": 0.146,
-          "ask": 0.148
+          "name": "280-299",
+          "bid": 0.134,
+          "ask": 0.135
         },
         {
           "name": "200-219",
-          "bid": 0.13,
-          "ask": 0.14
-        },
-        {
-          "name": "280-299",
-          "bid": 0.119,
-          "ask": 0.121
+          "bid": 0.1,
+          "ask": 0.11
         },
         {
           "name": "300-319",
-          "bid": 0.084,
-          "ask": 0.092
-        },
-        {
-          "name": "180-199",
-          "bid": 0.07,
-          "ask": 0.08
+          "bid": 0.096,
+          "ask": 0.097
         },
         {
           "name": "320-339",
-          "bid": 0.064,
-          "ask": 0.066
+          "bid": 0.077,
+          "ask": 0.08
+        },
+        {
+          "name": "180-199",
+          "bid": 0.06,
+          "ask": 0.07
+        },
+        {
+          "name": "340-359",
+          "bid": 0.049,
+          "ask": 0.05
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.801,
-      "grossPP": 19.9,
-      "feePP": 4.0,
-      "netPP": 15.9,
+      "sumProb": 0.771,
+      "grossPP": 22.9,
+      "feePP": 3.85,
+      "netPP": 19.04,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xdc5a2e26c51dc285867b613a52865b4fb567a8c785f85018ca5df57de8a06200",
@@ -469,22 +391,22 @@
       "top": [
         {
           "name": "Team Vitality",
-          "bid": 0.21,
-          "ask": 0.25
+          "bid": 0.22,
+          "ask": 0.26
         },
         {
           "name": "Team Falcons",
           "bid": 0.18,
-          "ask": 0.21
+          "ask": 0.19
         },
         {
           "name": "FURIA",
-          "bid": 0.14,
-          "ask": 0.18
+          "bid": 0.13,
+          "ask": 0.16
         },
         {
           "name": "Team Spirit",
-          "bid": 0.13,
+          "bid": 0.12,
           "ask": 0.16
         },
         {
@@ -540,6 +462,45 @@
           "name": "Erling Haaland",
           "bid": 0.001,
           "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.934,
+      "grossPP": 6.6,
+      "feePP": 3.6,
+      "netPP": 3.0,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xc194d621e2ef9468b86ed0db1328fd8d56ae8fba1e21b94c5c515e96ecbfc400",
+      "event": "Which party will gain most seats in Russian Parliamentary Election?",
+      "slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election",
+      "endDate": "2026-09-20T00:00:00Z",
+      "n": 4,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "United Russia (ER)",
+          "bid": 0.7,
+          "ask": 0.71
+        },
+        {
+          "name": "New People (NL)",
+          "bid": 0.208,
+          "ask": 0.217
+        },
+        {
+          "name": "Rodina",
+          "bid": 0.003,
+          "ask": 0.004
+        },
+        {
+          "name": "A Just Russia – For Truth (SRZP)",
+          "bid": 0.002,
+          "ask": 0.003
         }
       ]
     }
