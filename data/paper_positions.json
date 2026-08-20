@@ -13,8 +13,8 @@
     "shares": 800.0,
     "stakeUSD": 100.0,
     "feePaid": 0.88,
-    "markPoly": 0.07,
-    "curEdgePP": 1.74
+    "markPoly": 0.075,
+    "curEdgePP": 1.04
   },
   {
     "conditionId": "0x1e5564c1a2a6839cc2780a889437c63786a2c2ec5e95569b710ee659a3e8baa2",
@@ -329,7 +329,7 @@
     "stakeUSD": 100.0,
     "feePaid": 0.52,
     "markPoly": 0.085,
-    "curEdgePP": -1.6
+    "curEdgePP": -1.68
   },
   {
     "conditionId": "0x0c27b49f0c9ce6d1c48bf2c38af75e06bd9bf1575e573094df739d8c668a329f",
@@ -390,7 +390,7 @@
     "stakeUSD": 100.0,
     "feePaid": 0.39,
     "markPoly": 0.065,
-    "curEdgePP": -2.79
+    "curEdgePP": -2.91
   },
   {
     "conditionId": "0x357ef67b1d8665d64339f06f3b5c250aeb6294caf708f90cfc60a51f473c8f48",
@@ -495,7 +495,7 @@
     "stakeUSD": 100.0,
     "feePaid": 0.32,
     "markPoly": 0.0435,
-    "curEdgePP": -2.19
+    "curEdgePP": -2.28
   },
   {
     "conditionId": "0x38903ef70b7d9ee41ea22ef2aec6287e4e6c77ec8702ca741e37d5c5df090a4d",
@@ -600,7 +600,7 @@
     "stakeUSD": 100.0,
     "feePaid": 0.25,
     "markPoly": 0.0325,
-    "curEdgePP": -1.9
+    "curEdgePP": -1.93
   },
   {
     "conditionId": "0xd5a422e44c9b421ca08dcfd3d3cb6275648b4cbc69eb8f8ad7e2c70e6edd7c70",
@@ -660,8 +660,8 @@
     "shares": 103.31,
     "stakeUSD": 100.0,
     "feePaid": 0.22,
-    "markPoly": 0.028,
-    "curEdgePP": -1.94
+    "markPoly": 0.0285,
+    "curEdgePP": -2.01
   },
   {
     "conditionId": "0x6e7647e8f1e27cca3e0154146dfe503d2c4b4facb4439e25d4c30c3db5d0da1d",
@@ -7933,7 +7933,7 @@
     "feePaid": 0.3,
     "wasNew": false,
     "markPoly": 0.0295,
-    "curEdgePP": 5.57
+    "curEdgePP": 5.48
   },
   {
     "conditionId": "0x23fb92bb72604ff35bfe591b5506de47f1bf6632ed55c388baa4843118bf69fc",
@@ -7953,7 +7953,7 @@
     "feePaid": 0.25,
     "wasNew": false,
     "markPoly": 0.0175,
-    "curEdgePP": 1.64
+    "curEdgePP": 1.59
   },
   {
     "conditionId": "0x706b9bcba6eaa4e89e7751693cdd92f3a01ee2dfba3ff2d08745fc40f5a3b60e",
@@ -8469,7 +8469,7 @@
     "feePaid": 0.24,
     "wasNew": false,
     "markPoly": 0.0275,
-    "curEdgePP": -2.29
+    "curEdgePP": -2.22
   },
   {
     "conditionId": "0x6c8bc8cd9b2d64358ad995ccee8e998cf0f81a89c4be0b8e51eadf09c6be60ba",
@@ -8787,7 +8787,7 @@
     "feePaid": 0.95,
     "wasNew": true,
     "markPoly": 0.004,
-    "curEdgePP": 2.18
+    "curEdgePP": 2.2
   },
   {
     "conditionId": "0xdf1463edbf062d8fdd82c5eb0bdb5fd69450b0c21c9dab4858dcaeaba8e2068f",
@@ -8807,7 +8807,7 @@
     "feePaid": 0.49,
     "wasNew": true,
     "markPoly": 0.0025,
-    "curEdgePP": 1.79
+    "curEdgePP": 1.8
   },
   {
     "conditionId": "0x462dc3a25f4bd83645256c18ef2ad472b93135a29b4fc53fe02dd0762b42c2e9",
@@ -8852,7 +8852,7 @@
     "feePaid": 1.54,
     "wasNew": true,
     "markPoly": 0.0095,
-    "curEdgePP": 0.62
+    "curEdgePP": 0.63
   },
   {
     "conditionId": "0x0a061d09daa5ac4221fa7ea0d7abf84ab2ac42af0817a001d4c0dd3262be2cd8",
@@ -8935,7 +8935,7 @@
     "market": "dip $57,500 bis 2026-09-01",
     "family": "touch",
     "side": "YES",
-    "status": "OPEN",
+    "status": "CLOSED",
     "tokenId": "105934924793101961671194607931144938442778142774865876808979595111561162727678",
     "entryTs": "2026-08-01T12:11:08Z",
     "entryPoly": 0.385,
@@ -8944,10 +8944,15 @@
     "shares": 259.74,
     "stakeUSD": 100.0,
     "realShares": 12.987,
-    "feePaid": 2.7,
+    "feePaid": 2.82,
     "wasNew": true,
     "markPoly": 0.013,
-    "curEdgePP": 1.13
+    "curEdgePP": 1.13,
+    "exitTs": "2026-08-20T10:43:18Z",
+    "exitMark": 0.0175,
+    "exitReason": "converged",
+    "realizedPnl": -98.27,
+    "roiPct": -98.3
   },
   {
     "conditionId": "0x211f2f58d38d8022f3d71a99685ebec3ff12a396118c38e8fb97fdcab53ded1e",
@@ -9277,8 +9282,8 @@
     "realShares": 7.7519,
     "feePaid": 2.48,
     "wasNew": false,
-    "markPoly": 0.0275,
-    "curEdgePP": 1.95
+    "markPoly": 0.025,
+    "curEdgePP": 1.89
   },
   {
     "conditionId": "0xecd58376ddb13511de05c6fb27d13aac49c3a5f15fcb9156cf4074053b575d6a",
@@ -11598,7 +11603,7 @@
     "feePaid": 0.83,
     "wasNew": false,
     "markPoly": 0.0475,
-    "curEdgePP": 5.27
+    "curEdgePP": 4.81
   },
   {
     "conditionId": "0x6d801ef10c8ec40d2b022b14e44078e45a486c408d076cfa34fa557c14b36ff4",
@@ -13166,8 +13171,8 @@
     "realShares": 6.6489,
     "feePaid": 1.74,
     "wasNew": false,
-    "markPoly": 0.8085,
-    "curEdgePP": -6.68
+    "markPoly": 0.8315,
+    "curEdgePP": -2.49
   },
   {
     "conditionId": "0x6c8bc8cd9b2d64358ad995ccee8e998cf0f81a89c4be0b8e51eadf09c6be60ba",
@@ -13186,8 +13191,8 @@
     "realShares": 8.4746,
     "feePaid": 2.87,
     "wasNew": false,
-    "markPoly": 0.485,
-    "curEdgePP": 1.98
+    "markPoly": 0.475,
+    "curEdgePP": 3.14
   },
   {
     "conditionId": "0x3e15100a0910fb5ad9db105e6ec1577a23ca3107a1946a5cb193df23fa77c969",
@@ -13195,7 +13200,7 @@
     "market": "über $68,000 · 2026-08-21",
     "family": "above",
     "side": "NO",
-    "status": "OPEN",
+    "status": "CLOSED",
     "tokenId": "42571915234610335803318999828190679288299592235127774932514520334512107115974",
     "entryTs": "2026-08-19T16:44:18Z",
     "entryPoly": 0.656,
@@ -13204,10 +13209,15 @@
     "shares": 290.7,
     "stakeUSD": 100.0,
     "realShares": 14.5349,
-    "feePaid": 2.41,
+    "feePaid": 2.71,
     "wasNew": false,
     "markPoly": 0.952,
-    "curEdgePP": -1.79
+    "curEdgePP": -1.79,
+    "exitTs": "2026-08-20T10:43:18Z",
+    "exitMark": 0.957,
+    "exitReason": "converged",
+    "realizedPnl": -90.21,
+    "roiPct": -90.2
   },
   {
     "conditionId": "0x1f6fd30434f4b6d9426b5cdc968bf4fffe67f8e61f33c14e1b2a2681c71d1237",
@@ -13226,8 +13236,8 @@
     "realShares": 13.5318,
     "feePaid": 2.59,
     "wasNew": false,
-    "markPoly": 0.9085,
-    "curEdgePP": -0.97
+    "markPoly": 0.9265,
+    "curEdgePP": -1.22
   },
   {
     "conditionId": "0x9e59f99528e2f5c3906dd8774bc294857f29678ebb3d38afb084d0b138fc70f9",
@@ -13246,8 +13256,8 @@
     "realShares": 13.624,
     "feePaid": 2.57,
     "wasNew": false,
-    "markPoly": 0.9275,
-    "curEdgePP": -2.22
+    "markPoly": 0.938,
+    "curEdgePP": -1.12
   },
   {
     "conditionId": "0x617c1b35ee4bd875e9336e6439d0e4384353d0b984c261723eb4f7c600d213bc",
@@ -13266,8 +13276,8 @@
     "realShares": 5.3533,
     "feePaid": 0.46,
     "wasNew": false,
-    "markPoly": 0.5025,
-    "curEdgePP": -16.97
+    "markPoly": 0.456,
+    "curEdgePP": -7.27
   },
   {
     "conditionId": "0x1eb3854e6016aff4cc1778eb124fd8965211573d954b74e3ec66f5ad2785aedb",
@@ -13311,8 +13321,8 @@
     "realShares": 17.8571,
     "feePaid": 1.96,
     "wasNew": false,
-    "markPoly": 0.245,
-    "curEdgePP": 1.06
+    "markPoly": 0.23,
+    "curEdgePP": 2.59
   },
   {
     "conditionId": "0xfd105823dbf627e8a57aa1924703ef23138050d9d8da4a98a5136ea2ad98acd4",
@@ -13331,8 +13341,8 @@
     "realShares": 161.2903,
     "feePaid": 0.22,
     "wasNew": false,
-    "markPoly": 0.1315,
-    "curEdgePP": 2.68
+    "markPoly": 0.137,
+    "curEdgePP": 1.79
   },
   {
     "conditionId": "0x752fa61c93f16c4b15e85b0bd438d9c684176b0ea7b319a84c8aca34616e8a8c",
@@ -13351,8 +13361,8 @@
     "realShares": 11.7647,
     "feePaid": 2.98,
     "wasNew": false,
-    "markPoly": 0.355,
-    "curEdgePP": 0.74
+    "markPoly": 0.345,
+    "curEdgePP": 1.79
   },
   {
     "conditionId": "0x29a5359b7ceb474cce180b5c7648fe41c36955e11e4f925a5f7b68fe17dd9836",
@@ -13397,7 +13407,7 @@
     "feePaid": 0.88,
     "wasNew": false,
     "markPoly": 0.11,
-    "curEdgePP": 1.49
+    "curEdgePP": 1.36
   },
   {
     "conditionId": "0xacec7e5b90ccb1ac4c950e3aff18156d6ce1bb7b0c87c001a281279412dca784",
@@ -13441,8 +13451,8 @@
     "realShares": 7.6161,
     "feePaid": 2.4,
     "wasNew": false,
-    "markPoly": 0.77,
-    "curEdgePP": -5.88
+    "markPoly": 0.774,
+    "curEdgePP": -4.01
   },
   {
     "conditionId": "0xaa02d68f9b35e188fae2aeae14f6594ede7fcc292dd0c4268c41521da76ffaf1",
@@ -13461,8 +13471,8 @@
     "realShares": 7.728,
     "feePaid": 2.47,
     "wasNew": false,
-    "markPoly": 0.748,
-    "curEdgePP": -4.85
+    "markPoly": 0.7665,
+    "curEdgePP": -4.59
   },
   {
     "conditionId": "0x84fdc3f917e34acca874f93d978e84ed0c08969903ddf40a5d65274b3a5b4fdf",
@@ -13600,8 +13610,8 @@
     "realShares": 18.8679,
     "feePaid": 1.86,
     "wasNew": true,
-    "markPoly": 0.115,
-    "curEdgePP": 6.96
+    "markPoly": 0.145,
+    "curEdgePP": 3.25
   },
   {
     "conditionId": "0xbb379a14cd03f68c35c279ddbd928a6326f4fd2e21827f8cdaaf59715d6df50e",
@@ -13668,8 +13678,8 @@
     "realShares": 16.3934,
     "feePaid": 2.14,
     "wasNew": true,
-    "markPoly": 0.295,
-    "curEdgePP": 6.53
+    "markPoly": 0.31,
+    "curEdgePP": 4.92
   },
   {
     "conditionId": "0xbe9a79eb872ee4f92b4982eada7d63891366dd763cbf4402ad43a7a14c0d1adf",
@@ -13688,8 +13698,8 @@
     "realShares": 8.5985,
     "feePaid": 2.93,
     "wasNew": false,
-    "markPoly": 0.5255,
-    "curEdgePP": -13.54
+    "markPoly": 0.4475,
+    "curEdgePP": -6.6
   },
   {
     "conditionId": "0xee5fd084aa2f9b48ed2d02668095335e07fd169345ce84e18df0dd8e1c317d4a",
@@ -13708,8 +13718,8 @@
     "realShares": 5.7045,
     "feePaid": 0.86,
     "wasNew": false,
-    "markPoly": 0.916,
-    "curEdgePP": 2.72
+    "markPoly": 0.9325,
+    "curEdgePP": 4.6
   },
   {
     "conditionId": "0xc4bde1d397625e1990fec7f787b9eb2e5727c666d0480c4e9c96b0dbd12602c6",
@@ -13763,7 +13773,7 @@
     "market": "über $74,000 · 2026-08-25",
     "family": "above",
     "side": "YES",
-    "status": "OPEN",
+    "status": "CLOSED",
     "tokenId": "59344559960736583055643213306719302202434911281627820108059710699591447815923",
     "entryTs": "2026-08-20T09:47:07Z",
     "entryPoly": 0.2685,
@@ -13772,8 +13782,13 @@
     "shares": 372.44,
     "stakeUSD": 100.0,
     "realShares": 18.622,
-    "feePaid": 1.88,
-    "wasNew": true
+    "feePaid": 3.76,
+    "wasNew": true,
+    "exitTs": "2026-08-20T10:43:18Z",
+    "exitMark": 0.269,
+    "exitReason": "thesis_break",
+    "realizedPnl": -3.57,
+    "roiPct": -3.6
   },
   {
     "conditionId": "0xc4bde1d397625e1990fec7f787b9eb2e5727c666d0480c4e9c96b0dbd12602c6",
@@ -13791,7 +13806,9 @@
     "stakeUSD": 100.0,
     "realShares": 10.01,
     "feePaid": 3.5,
-    "wasNew": false
+    "wasNew": false,
+    "markPoly": 0.482,
+    "curEdgePP": 1.92
   },
   {
     "conditionId": "0x18be95e18195d4ac93c34012544fd4424d226d50fb85ef6740e98bbe52ba48e8",
@@ -13809,7 +13826,9 @@
     "stakeUSD": 100.0,
     "realShares": 9.7752,
     "feePaid": 3.42,
-    "wasNew": false
+    "wasNew": false,
+    "markPoly": 0.4825,
+    "curEdgePP": -8.03
   },
   {
     "conditionId": "0x7e2122d54359f590e9ffdf59092f8e052f5f718181188fef5534e62402f0bab3",
@@ -13827,6 +13846,44 @@
     "stakeUSD": 100.0,
     "realShares": 18.5529,
     "feePaid": 1.89,
+    "wasNew": false,
+    "markPoly": 0.2585,
+    "curEdgePP": 2.63
+  },
+  {
+    "conditionId": "0x92512acb1272ed3f9d36931efb0576347769def7a00dcdefd8929e9485eab57d",
+    "slug": "bitcoin-above-74k-on-august-20-2026",
+    "market": "über $74,000 · 2026-08-20",
+    "family": "above",
+    "side": "NO",
+    "status": "OPEN",
+    "tokenId": "52377711272485080760942021886612284594184147622365268999239757070269368580284",
+    "entryTs": "2026-08-20T10:43:18Z",
+    "entryPoly": 0.0635,
+    "entryFair": 0.0166,
+    "entryEdgePP": -5.13,
+    "shares": 106.78,
+    "stakeUSD": 100.0,
+    "realShares": 5.339,
+    "feePaid": 0.44,
+    "wasNew": false
+  },
+  {
+    "conditionId": "0xfd13c67069e83a4a8ba1ba425f259185bcbae282c4f91074646e3c5cf97b7ae3",
+    "slug": "will-bitcoin-reach-72pt5k-in-august-2026",
+    "market": "erreicht $72,500 bis 2026-09-01",
+    "family": "touch",
+    "side": "YES",
+    "status": "OPEN",
+    "tokenId": "63777258880233969161552040740657214803720763923675808082556752399673335048100",
+    "entryTs": "2026-08-20T10:43:18Z",
+    "entryPoly": 0.8495,
+    "entryFair": 0.8911,
+    "entryEdgePP": 3.11,
+    "shares": 117.72,
+    "stakeUSD": 100.0,
+    "realShares": 5.8858,
+    "feePaid": 1.05,
     "wasNew": false
   }
 ]
