@@ -1,49 +1,10 @@
 {
-  "generatedAt": "2026-08-21 20:36 UTC",
+  "generatedAt": "2026-08-21 21:35 UTC",
   "scanned": 600,
-  "count": 13,
+  "count": 12,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
-    {
-      "side": "buy",
-      "sumProb": 0.004,
-      "grossPP": 99.6,
-      "feePP": 0.02,
-      "netPP": 99.58,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x76f4e1657d14a91dec3c3a3a3ffb3b3dafbf915ec526fb4aed8fa0fc025dea00",
-      "event": "Highest temperature in London on August 21?",
-      "slug": "highest-temperature-in-london-on-august-21-2026",
-      "endDate": "2026-08-21T12:00:00Z",
-      "n": 4,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "24°C",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "19°C",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "20°C",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "23°C",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
     {
       "side": "buy",
       "sumProb": 0.085,
@@ -173,10 +134,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.273,
-      "grossPP": 72.7,
+      "sumProb": 0.272,
+      "grossPP": 72.8,
       "feePP": 1.09,
-      "netPP": 71.61,
+      "netPP": 71.71,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
@@ -201,7 +162,7 @@
         {
           "name": "Mark Kelly",
           "bid": 0.027,
-          "ask": 0.029
+          "ask": 0.028
         },
         {
           "name": "Bernie Sanders",
@@ -214,7 +175,7 @@
           "ask": 0.001
         },
         {
-          "name": "Hakeem Jeffries",
+          "name": "Josh Stein",
           "bid": null,
           "ask": 0.001
         }
@@ -222,17 +183,56 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.341,
-      "grossPP": 65.9,
-      "feePP": 1.36,
-      "netPP": 64.54,
+      "sumProb": 0.363,
+      "grossPP": 63.7,
+      "feePP": 1.45,
+      "netPP": 62.25,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
+      "event": "Next French Presidential Election",
+      "slug": "next-french-presidential-election",
+      "endDate": "2027-04-30T00:00:00Z",
+      "n": 4,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Marine Le Pen",
+          "bid": 0.321,
+          "ask": 0.322
+        },
+        {
+          "name": "Jordan Bardella",
+          "bid": 0.021,
+          "ask": 0.022
+        },
+        {
+          "name": "Dominique de Villepin",
+          "bid": 0.016,
+          "ask": 0.017
+        },
+        {
+          "name": "Ségolène Royal",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.457,
+      "grossPP": 54.3,
+      "feePP": 1.83,
+      "netPP": 52.47,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 10,
+      "n": 11,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
@@ -241,6 +241,11 @@
           "name": "JD Vance",
           "bid": 0.204,
           "ask": 0.205
+        },
+        {
+          "name": "Marco Rubio",
+          "bid": 0.115,
+          "ask": 0.116
         },
         {
           "name": "Gavin Newsom",
@@ -261,128 +266,45 @@
           "name": "Wes Moore",
           "bid": 0.007,
           "ask": 0.009
-        },
-        {
-          "name": "Glenn Youngkin",
-          "bid": 0.006,
-          "ask": 0.007
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.48,
-      "grossPP": 52.0,
-      "feePP": 2.4,
-      "netPP": 49.6,
+      "sumProb": 0.73,
+      "grossPP": 27.0,
+      "feePP": 1.45,
+      "netPP": 25.55,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xbcdf2aa37167e6ad42a16090b9c3fe09aa58e861c0b5184359bc9f1489a6ce00",
-      "event": "Real Betis Balompié vs. Real Sociedad de Fútbol - Exact Score",
-      "slug": "lal-bet-rso-2026-08-21-exact-score",
-      "endDate": "2026-08-21T19:00:00Z",
-      "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Real Betis Balompié 1 - 0 Real Sociedad de Fútbol",
-          "bid": 0.45,
-          "ask": 0.47
-        },
-        {
-          "name": "Real Betis Balompié 3 - 3 Real Sociedad de Fútbol",
-          "bid": null,
-          "ask": 0.009
-        },
-        {
-          "name": "Real Betis Balompié 0 - 0 Real Sociedad de Fútbol",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.575,
-      "grossPP": 42.5,
-      "feePP": 2.24,
-      "netPP": 40.27,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x0db54bbc7ded328e6fc67c538a5f00be2507e900b8c3caf81791dd39c9c23a00",
-      "event": "Highest temperature in Dallas on August 21?",
-      "slug": "highest-temperature-in-dallas-on-august-21-2026",
-      "endDate": "2026-08-21T12:00:00Z",
-      "n": 3,
+      "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
+      "event": "Ballon d'Or Winner 2026",
+      "slug": "ballon-dor-winner-2026",
+      "endDate": "2026-10-31T00:00:00Z",
+      "n": 4,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "99°F or below",
-          "bid": 0.465,
-          "ask": 0.564
+          "name": "Harry Kane",
+          "bid": 0.623,
+          "ask": 0.624
         },
         {
-          "name": "104-105°F",
-          "bid": 0.002,
+          "name": "Kylian Mbappé",
+          "bid": 0.072,
+          "ask": 0.073
+        },
+        {
+          "name": "Lionel Messi",
+          "bid": 0.023,
+          "ask": 0.024
+        },
+        {
+          "name": "Fabian Ruiz",
+          "bid": 0.006,
           "ask": 0.009
-        },
-        {
-          "name": "106-107°F",
-          "bid": 0.001,
-          "ask": 0.002
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.632,
-      "grossPP": 36.8,
-      "feePP": 2.86,
-      "netPP": 33.94,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xc1f9f9d0bc07bbd140a30c4dc8f8fdd757ffc339a216a7199444ed6aa8a8a900",
-      "event": "Arsenal FC vs. Coventry City FC - Exact Score",
-      "slug": "epl-ars-cov-2026-08-21-exact-score",
-      "endDate": "2026-08-21T19:00:00Z",
-      "n": 14,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Arsenal FC 3 - 0 Coventry City FC",
-          "bid": 0.51,
-          "ask": 0.53
-        },
-        {
-          "name": "Arsenal FC 3 - 1 Coventry City FC",
-          "bid": 0.06,
-          "ask": 0.08
-        },
-        {
-          "name": "Arsenal FC 3 - 3 Coventry City FC",
-          "bid": null,
-          "ask": 0.007
-        },
-        {
-          "name": "Arsenal FC 3 - 2 Coventry City FC",
-          "bid": 0.001,
-          "ask": 0.005
-        },
-        {
-          "name": "Arsenal FC 1 - 1 Coventry City FC",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "Arsenal FC 2 - 1 Coventry City FC",
-          "bid": null,
-          "ask": 0.001
         }
       ]
     },
@@ -437,54 +359,49 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.763,
-      "grossPP": 23.7,
-      "feePP": 1.54,
-      "netPP": 22.16,
+      "sumProb": 0.836,
+      "grossPP": 16.4,
+      "feePP": 0.99,
+      "netPP": 15.41,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
-      "event": "Ballon d'Or Winner 2026",
-      "slug": "ballon-dor-winner-2026",
-      "endDate": "2026-10-31T00:00:00Z",
-      "n": 5,
-      "completeBid": true,
+      "negRiskMarketID": "0x0db54bbc7ded328e6fc67c538a5f00be2507e900b8c3caf81791dd39c9c23a00",
+      "event": "Highest temperature in Dallas on August 21?",
+      "slug": "highest-temperature-in-dallas-on-august-21-2026",
+      "endDate": "2026-08-21T12:00:00Z",
+      "n": 4,
+      "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Harry Kane",
-          "bid": 0.623,
-          "ask": 0.624
+          "name": "99°F or below",
+          "bid": 0.789,
+          "ask": 0.819
         },
         {
-          "name": "Kylian Mbappé",
-          "bid": 0.072,
-          "ask": 0.073
+          "name": "104-105°F",
+          "bid": 0.002,
+          "ask": 0.01
         },
         {
-          "name": "Khvicha Kvaratskhelia",
-          "bid": 0.032,
-          "ask": 0.033
+          "name": "102-103°F",
+          "bid": 0.003,
+          "ask": 0.006
         },
         {
-          "name": "Lionel Messi",
-          "bid": 0.023,
-          "ask": 0.024
-        },
-        {
-          "name": "Fabian Ruiz",
-          "bid": 0.006,
-          "ask": 0.009
+          "name": "106-107°F",
+          "bid": null,
+          "ask": 0.001
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.946,
-      "grossPP": 5.4,
-      "feePP": 0.38,
-      "netPP": 5.02,
+      "sumProb": 0.948,
+      "grossPP": 5.2,
+      "feePP": 0.37,
+      "netPP": 4.83,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb631110d2a180d821cc8231e483f5293b026da3ce322154258d42909bafa8d00",
@@ -498,8 +415,8 @@
       "top": [
         {
           "name": "Alibaba",
-          "bid": 0.922,
-          "ask": 0.926
+          "bid": 0.923,
+          "ask": 0.928
         },
         {
           "name": "Z.ai",
@@ -520,17 +437,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.983,
-      "grossPP": 1.7,
-      "feePP": 0.11,
-      "netPP": 1.59,
+      "sumProb": 0.981,
+      "grossPP": 1.9,
+      "feePP": 0.1,
+      "netPP": 1.8,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xe2bada94c7e971260775dadfbe95e5fc32dd76686af913795200f6ef5da29c00",
       "event": "Which company has best AI model end of August?",
       "slug": "which-company-has-best-ai-model-end-of-august-20260717015626546",
       "endDate": "2026-08-31T00:00:00Z",
-      "n": 6,
+      "n": 4,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
@@ -554,16 +471,55 @@
           "name": "DeepSeek",
           "bid": null,
           "ask": 0.001
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.976,
+      "grossPP": 2.4,
+      "feePP": 1.18,
+      "netPP": 1.22,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xca0183b5cc07abf36864707013c684dd3061a8000bc4f90903bc025b2b7e7000",
+      "event": "Brazil Presidential Election First Round: 2nd Place",
+      "slug": "brazil-presidential-election-first-round-2nd-place",
+      "endDate": "2026-10-04T00:00:00Z",
+      "n": 15,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Flávio Bolsonaro",
+          "bid": 0.82,
+          "ask": 0.84
         },
         {
-          "name": "Baidu",
-          "bid": null,
-          "ask": 0.001
+          "name": "Luiz Inácio Lula da Silva",
+          "bid": 0.056,
+          "ask": 0.059
         },
         {
-          "name": "Moonshot",
-          "bid": null,
-          "ask": 0.001
+          "name": "Renan Santos",
+          "bid": 0.044,
+          "ask": 0.048
+        },
+        {
+          "name": "Ronaldo Caiado",
+          "bid": 0.002,
+          "ask": 0.007
+        },
+        {
+          "name": "Camilo Santana",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "Fernando Haddad",
+          "bid": 0.001,
+          "ask": 0.002
         }
       ]
     }
