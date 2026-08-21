@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-21 09:49 UTC",
+  "generatedAt": "2026-08-21 10:40 UTC",
   "scanned": 600,
-  "count": 17,
+  "count": 15,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -41,17 +41,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.005,
-      "grossPP": 99.5,
+      "sumProb": 0.006,
+      "grossPP": 99.4,
       "feePP": 0.02,
-      "netPP": 99.48,
+      "netPP": 99.38,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xe2bada94c7e971260775dadfbe95e5fc32dd76686af913795200f6ef5da29c00",
       "event": "Which company has best AI model end of August?",
       "slug": "which-company-has-best-ai-model-end-of-august-20260717015626546",
       "endDate": "2026-08-31T00:00:00Z",
-      "n": 4,
+      "n": 5,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
@@ -72,6 +72,11 @@
           "ask": 0.001
         },
         {
+          "name": "DeepSeek",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
           "name": "Baidu",
           "bid": null,
           "ask": 0.001
@@ -80,10 +85,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.015,
-      "grossPP": 98.5,
+      "sumProb": 0.014,
+      "grossPP": 98.6,
       "feePP": 0.06,
-      "netPP": 98.44,
+      "netPP": 98.54,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb631110d2a180d821cc8231e483f5293b026da3ce322154258d42909bafa8d00",
@@ -98,12 +103,12 @@
         {
           "name": "Z.ai",
           "bid": 0.007,
-          "ask": 0.013
+          "ask": 0.011
         },
         {
           "name": "StepFun",
           "bid": null,
-          "ask": 0.001
+          "ask": 0.002
         },
         {
           "name": "Meituan",
@@ -214,7 +219,7 @@
       "top": [
         {
           "name": "Lewis Hamilton",
-          "bid": 0.111,
+          "bid": 0.11,
           "ask": 0.117
         },
         {
@@ -324,40 +329,6 @@
           "name": "Wes Moore",
           "bid": 0.007,
           "ask": 0.009
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.294,
-      "grossPP": 70.6,
-      "feePP": 2.06,
-      "netPP": 68.54,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x03c9c6d9f7b20aaa1f33f99bd24bd16e4e0e00cfa892dde097b800655490b200",
-      "event": "Who will be the next Prime Minister of Israel after the next election?",
-      "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
-      "endDate": "2026-12-31T00:00:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Benjamin Netanyahu",
-          "bid": 0.28,
-          "ask": 0.29
-        },
-        {
-          "name": "Yair Lapid",
-          "bid": 0.001,
-          "ask": 0.002
-        },
-        {
-          "name": "Ayelet Shaked",
-          "bid": 0.001,
-          "ask": 0.002
         }
       ]
     },
@@ -559,17 +530,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.753,
-      "grossPP": 24.7,
-      "feePP": 1.58,
-      "netPP": 23.12,
+      "sumProb": 0.742,
+      "grossPP": 25.8,
+      "feePP": 1.56,
+      "netPP": 24.24,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
       "event": "Ballon d'Or Winner 2026",
       "slug": "ballon-dor-winner-2026",
       "endDate": "2026-10-31T00:00:00Z",
-      "n": 6,
+      "n": 5,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
@@ -577,7 +548,7 @@
         {
           "name": "Harry Kane",
           "bid": 0.61,
-          "ask": 0.613
+          "ask": 0.611
         },
         {
           "name": "Rodri",
@@ -592,12 +563,7 @@
         {
           "name": "Ousmane Dembélé",
           "bid": 0.015,
-          "ask": 0.017
-        },
-        {
-          "name": "Fabian Ruiz",
-          "bid": 0.007,
-          "ask": 0.008
+          "ask": 0.016
         },
         {
           "name": "Pau Cubarsi",
@@ -608,10 +574,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.77,
-      "grossPP": 23.0,
-      "feePP": 3.85,
-      "netPP": 19.15,
+      "sumProb": 0.81,
+      "grossPP": 19.0,
+      "feePP": 4.05,
+      "netPP": 14.95,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xdc5a2e26c51dc285867b613a52865b4fb567a8c785f85018ca5df57de8a06200",
@@ -624,62 +590,28 @@
       "tradable": false,
       "top": [
         {
+          "name": "Team Falcons",
+          "bid": 0.26,
+          "ask": 0.28
+        },
+        {
           "name": "Team Vitality",
           "bid": 0.26,
           "ask": 0.27
         },
         {
-          "name": "Team Falcons",
-          "bid": 0.25,
-          "ask": 0.26
-        },
-        {
           "name": "FURIA",
           "bid": 0.23,
-          "ask": 0.24
+          "ask": 0.26
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.771,
-      "grossPP": 22.9,
-      "feePP": 3.85,
-      "netPP": 19.04,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xb8fa12ee8c9b94ce0b134b37ac9dadf533be3ade9bfd2b9f7d3b9b9a7dd80100",
-      "event": "Highest temperature in Munich on August 21?",
-      "slug": "highest-temperature-in-munich-on-august-21-2026",
-      "endDate": "2026-08-21T12:00:00Z",
-      "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "22°C",
-          "bid": 0.46,
-          "ask": 0.5
-        },
-        {
-          "name": "21°C",
-          "bid": 0.18,
-          "ask": 0.27
-        },
-        {
-          "name": "20°C",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.884,
-      "grossPP": 11.6,
-      "feePP": 2.65,
-      "netPP": 8.95,
+      "sumProb": 0.879,
+      "grossPP": 12.1,
+      "feePP": 2.64,
+      "netPP": 9.46,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x029c63c721ee4d65bca5b3380a706530b29acd84d44245bcc025c191f3ecd300",
@@ -687,39 +619,39 @@
       "slug": "the-international-2026-winner-20260629212545745",
       "endDate": null,
       "n": 6,
-      "completeBid": true,
+      "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "TEAM VISION",
-          "bid": 0.47,
-          "ask": 0.48
+          "bid": 0.48,
+          "ask": 0.49
         },
         {
           "name": "Team Yandex",
-          "bid": 0.162,
+          "bid": 0.161,
           "ask": 0.171
         },
         {
           "name": "Nigma Galaxy",
           "bid": 0.081,
-          "ask": 0.09
+          "ask": 0.098
         },
         {
           "name": "Team Liquid",
-          "bid": 0.069,
-          "ask": 0.08
+          "bid": 0.07,
+          "ask": 0.083
         },
         {
           "name": "BoomBoys",
-          "bid": 0.032,
-          "ask": 0.035
+          "bid": 0.033,
+          "ask": 0.036
         },
         {
           "name": "Team Falcons",
-          "bid": 0.001,
-          "ask": 0.028
+          "bid": null,
+          "ask": 0.001
         }
       ]
     }
