@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-21 18:52 UTC",
+  "generatedAt": "2026-08-21 19:33 UTC",
   "scanned": 600,
-  "count": 11,
+  "count": 12,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -33,12 +33,12 @@
           "ask": 0.001
         },
         {
-          "name": "23°C",
+          "name": "20°C",
           "bid": null,
           "ask": 0.001
         },
         {
-          "name": "20°C",
+          "name": "23°C",
           "bid": null,
           "ask": 0.001
         }
@@ -90,10 +90,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.138,
-      "grossPP": 86.2,
+      "sumProb": 0.137,
+      "grossPP": 86.3,
       "feePP": 0.41,
-      "netPP": 85.79,
+      "netPP": 85.89,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2e8ee0b78c06349677514c81455c1256e07e0b2cf4c9cde23fd23f65eda05200",
@@ -118,7 +118,7 @@
         {
           "name": "Charles Leclerc",
           "bid": 0.02,
-          "ask": 0.022
+          "ask": 0.021
         },
         {
           "name": "Oscar Piastri",
@@ -173,17 +173,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.246,
-      "grossPP": 75.4,
+      "sumProb": 0.244,
+      "grossPP": 75.6,
       "feePP": 0.98,
-      "netPP": 74.42,
+      "netPP": 74.62,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
       "event": "Democratic Presidential Nominee 2028",
       "slug": "democratic-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 8,
+      "n": 7,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
@@ -204,12 +204,12 @@
           "ask": 0.005
         },
         {
-          "name": "Graham Platner",
-          "bid": 0.001,
-          "ask": 0.002
+          "name": "Abigail Spanberger",
+          "bid": null,
+          "ask": 0.001
         },
         {
-          "name": "Abigail Spanberger",
+          "name": "Josh Stein",
           "bid": null,
           "ask": 0.001
         },
@@ -222,17 +222,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.248,
-      "grossPP": 75.2,
-      "feePP": 0.99,
-      "netPP": 74.21,
+      "sumProb": 0.245,
+      "grossPP": 75.5,
+      "feePP": 0.98,
+      "netPP": 74.52,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
       "event": "Republican Presidential Nominee 2028",
       "slug": "republican-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 8,
+      "n": 7,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -244,7 +244,7 @@
         },
         {
           "name": "Donald Trump Jr.",
-          "bid": 0.017,
+          "bid": 0.016,
           "ask": 0.02
         },
         {
@@ -258,14 +258,48 @@
           "ask": 0.003
         },
         {
-          "name": "Erika Kirk",
+          "name": "Nikki Haley",
           "bid": 0.002,
           "ask": 0.003
         },
         {
-          "name": "Nikki Haley",
-          "bid": 0.002,
-          "ask": 0.003
+          "name": "Rick Scott",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.295,
+      "grossPP": 70.5,
+      "feePP": 1.48,
+      "netPP": 69.03,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xbcdf2aa37167e6ad42a16090b9c3fe09aa58e861c0b5184359bc9f1489a6ce00",
+      "event": "Real Betis Balompié vs. Real Sociedad de Fútbol - Exact Score",
+      "slug": "lal-bet-rso-2026-08-21-exact-score",
+      "endDate": "2026-08-21T19:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Real Betis Balompié 1 - 0 Real Sociedad de Fútbol",
+          "bid": 0.14,
+          "ask": 0.16
+        },
+        {
+          "name": "Real Betis Balompié 0 - 0 Real Sociedad de Fútbol",
+          "bid": 0.12,
+          "ask": 0.13
+        },
+        {
+          "name": "Real Betis Balompié 3 - 3 Real Sociedad de Fútbol",
+          "bid": 0.004,
+          "ask": 0.005
         }
       ]
     },
@@ -320,66 +354,66 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.602,
-      "grossPP": 39.8,
-      "feePP": 3.01,
-      "netPP": 36.79,
+      "sumProb": 0.632,
+      "grossPP": 36.8,
+      "feePP": 3.16,
+      "netPP": 33.64,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xc1f9f9d0bc07bbd140a30c4dc8f8fdd757ffc339a216a7199444ed6aa8a8a900",
       "event": "Arsenal FC vs. Coventry City FC - Exact Score",
       "slug": "epl-ars-cov-2026-08-21-exact-score",
       "endDate": "2026-08-21T19:00:00Z",
-      "n": 11,
-      "completeBid": true,
+      "n": 14,
+      "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Arsenal FC 2 - 0 Coventry City FC",
-          "bid": 0.14,
-          "ask": 0.15
-        },
-        {
           "name": "Arsenal FC 3 - 0 Coventry City FC",
-          "bid": 0.12,
-          "ask": 0.13
-        },
-        {
-          "name": "Arsenal FC 2 - 1 Coventry City FC",
-          "bid": 0.08,
-          "ask": 0.09
+          "bid": 0.19,
+          "ask": 0.21
         },
         {
           "name": "Arsenal FC 3 - 1 Coventry City FC",
           "bid": 0.07,
-          "ask": 0.08
+          "ask": 0.11
         },
         {
-          "name": "Arsenal FC 1 - 1 Coventry City FC",
-          "bid": 0.06,
-          "ask": 0.061
+          "name": "Arsenal FC 2 - 0 Coventry City FC",
+          "bid": 0.08,
+          "ask": 0.11
         },
         {
-          "name": "Arsenal FC 0 - 0 Coventry City FC",
-          "bid": 0.039,
-          "ask": 0.04
+          "name": "Arsenal FC 2 - 1 Coventry City FC",
+          "bid": 0.003,
+          "ask": 0.06
+        },
+        {
+          "name": "Arsenal FC 3 - 3 Coventry City FC",
+          "bid": 0.001,
+          "ask": 0.058
+        },
+        {
+          "name": "Arsenal FC 3 - 2 Coventry City FC",
+          "bid": null,
+          "ask": 0.039
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.77,
-      "grossPP": 23.0,
-      "feePP": 1.62,
-      "netPP": 21.38,
+      "sumProb": 0.737,
+      "grossPP": 26.3,
+      "feePP": 1.52,
+      "netPP": 24.78,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
       "event": "Ballon d'Or Winner 2026",
       "slug": "ballon-dor-winner-2026",
       "endDate": "2026-10-31T00:00:00Z",
-      "n": 6,
+      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -393,11 +427,6 @@
           "name": "Kylian Mbappé",
           "bid": 0.072,
           "ask": 0.073
-        },
-        {
-          "name": "Khvicha Kvaratskhelia",
-          "bid": 0.032,
-          "ask": 0.033
         },
         {
           "name": "Lionel Messi",
@@ -418,10 +447,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.945,
-      "grossPP": 5.5,
-      "feePP": 0.38,
-      "netPP": 5.12,
+      "sumProb": 0.947,
+      "grossPP": 5.3,
+      "feePP": 0.37,
+      "netPP": 4.93,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb631110d2a180d821cc8231e483f5293b026da3ce322154258d42909bafa8d00",
@@ -436,7 +465,7 @@
         {
           "name": "Alibaba",
           "bid": 0.922,
-          "ask": 0.925
+          "ask": 0.927
         },
         {
           "name": "Z.ai",
@@ -457,17 +486,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.983,
-      "grossPP": 1.7,
-      "feePP": 0.11,
-      "netPP": 1.59,
+      "sumProb": 0.982,
+      "grossPP": 1.8,
+      "feePP": 0.1,
+      "netPP": 1.7,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xe2bada94c7e971260775dadfbe95e5fc32dd76686af913795200f6ef5da29c00",
       "event": "Which company has best AI model end of August?",
       "slug": "which-company-has-best-ai-model-end-of-august-20260717015626546",
       "endDate": "2026-08-31T00:00:00Z",
-      "n": 6,
+      "n": 5,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
@@ -494,11 +523,6 @@
         },
         {
           "name": "Baidu",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "Moonshot",
           "bid": null,
           "ask": 0.001
         }
