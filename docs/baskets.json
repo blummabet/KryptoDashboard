@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-08-22 04:44 UTC",
+  "generatedAt": "2026-08-22 05:38 UTC",
   "scanned": 600,
-  "count": 14,
+  "count": 15,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
     {
       "side": "buy",
-      "sumProb": 0.027,
-      "grossPP": 97.3,
-      "feePP": 0.14,
-      "netPP": 97.16,
+      "sumProb": 0.026,
+      "grossPP": 97.4,
+      "feePP": 0.13,
+      "netPP": 97.27,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xf25fb875464ede4297bc51beb78a1b717f357f05f8f95d309f40515b17b48a00",
@@ -28,13 +28,13 @@
           "ask": 0.01
         },
         {
-          "name": "Hull City AFC 3 - 3 Manchester United FC",
-          "bid": 0.006,
-          "ask": 0.009
-        },
-        {
           "name": "Hull City AFC 3 - 1 Manchester United FC",
           "bid": 0.006,
+          "ask": 0.008
+        },
+        {
+          "name": "Hull City AFC 3 - 3 Manchester United FC",
+          "bid": 0.007,
           "ask": 0.008
         }
       ]
@@ -80,35 +80,35 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.073,
-      "grossPP": 92.7,
-      "feePP": 0.37,
-      "netPP": 92.34,
+      "sumProb": 0.099,
+      "grossPP": 90.1,
+      "feePP": 0.5,
+      "netPP": 89.61,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xf1e20a4efbb8cc06670b854b5a38d52621ec067c5c21c41b9687cc018fc6ed00",
-      "event": "Highest temperature in Hong Kong on August 22?",
-      "slug": "highest-temperature-in-hong-kong-on-august-22-2026",
-      "endDate": "2026-08-22T12:00:00Z",
+      "negRiskMarketID": "0xaa7a45e2f86ac9bdf39cf1f82c89c164e2c80a59265c50e3a0a6b3e6e3e59000",
+      "event": "Elon Musk # tweets August 21 - August 28, 2026?",
+      "slug": "elon-musk-of-tweets-august-21-august-28-2026",
+      "endDate": "2026-08-28T16:00:00Z",
       "n": 3,
-      "completeBid": false,
+      "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "30°C",
-          "bid": 0.06,
-          "ask": 0.07
+          "name": "320-339",
+          "bid": 0.068,
+          "ask": 0.077
         },
         {
-          "name": "29°C",
+          "name": "120-139",
           "bid": 0.001,
-          "ask": 0.002
+          "ask": 0.013
         },
         {
-          "name": "28°C",
-          "bid": null,
-          "ask": 0.001
+          "name": "140-159",
+          "bid": 0.005,
+          "ask": 0.009
         }
       ]
     },
@@ -241,17 +241,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.27,
-      "grossPP": 73.0,
-      "feePP": 1.08,
-      "netPP": 71.92,
+      "sumProb": 0.274,
+      "grossPP": 72.6,
+      "feePP": 1.1,
+      "netPP": 71.5,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
       "event": "Democratic Presidential Nominee 2028",
       "slug": "democratic-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 7,
+      "n": 8,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
@@ -272,17 +272,17 @@
           "ask": 0.03
         },
         {
+          "name": "John Fetterman",
+          "bid": 0.003,
+          "ask": 0.004
+        },
+        {
           "name": "Abigail Spanberger",
           "bid": null,
           "ask": 0.001
         },
         {
-          "name": "Alex Padilla",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "Hakeem Jeffries",
+          "name": "Josh Stein",
           "bid": null,
           "ask": 0.001
         }
@@ -290,17 +290,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.287,
-      "grossPP": 71.3,
-      "feePP": 1.15,
-      "netPP": 70.15,
+      "sumProb": 0.289,
+      "grossPP": 71.1,
+      "feePP": 1.16,
+      "netPP": 69.94,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 12,
+      "n": 13,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
@@ -333,7 +333,7 @@
         {
           "name": "Wes Moore",
           "bid": 0.007,
-          "ask": 0.008
+          "ask": 0.009
         }
       ]
     },
@@ -417,10 +417,44 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.745,
-      "grossPP": 25.5,
-      "feePP": 2.98,
-      "netPP": 22.52,
+      "sumProb": 0.462,
+      "grossPP": 53.8,
+      "feePP": 2.31,
+      "netPP": 51.49,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xf2d26ed3ab2c7b9ca4d9dddb4efa3de0aaf0f142c2c965aca3ec60e7845ce400",
+      "event": "Highest temperature in Shanghai on August 22?",
+      "slug": "highest-temperature-in-shanghai-on-august-22-2026",
+      "endDate": "2026-08-22T12:00:00Z",
+      "n": 3,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "31°C",
+          "bid": 0.37,
+          "ask": 0.46
+        },
+        {
+          "name": "29°C",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "28°C",
+          "bid": null,
+          "ask": 0.001
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.743,
+      "grossPP": 25.7,
+      "feePP": 2.97,
+      "netPP": 22.73,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
@@ -450,7 +484,7 @@
         {
           "name": "Donald Trump Jr.",
           "bid": 0.015,
-          "ask": 0.019
+          "ask": 0.017
         },
         {
           "name": "Sarah Huckabee Sanders",
@@ -466,35 +500,74 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.841,
-      "grossPP": 15.9,
-      "feePP": 1.41,
-      "netPP": 14.5,
+      "sumProb": 0.894,
+      "grossPP": 10.6,
+      "feePP": 4.47,
+      "netPP": 6.13,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xc2fb71c5d2c3cc3dcf3bec6b3439a35722c1597d829f2979adf42ec5199a2000",
-      "event": "Elon Musk # tweets August 20 - August 22, 2026?",
-      "slug": "elon-musk-of-tweets-august-20-august-22-2026",
-      "endDate": "2026-08-22T16:00:00Z",
+      "negRiskMarketID": "0xdc5a2e26c51dc285867b613a52865b4fb567a8c785f85018ca5df57de8a06200",
+      "event": "EWC 2026 CS2: Winner",
+      "slug": "ewc-2026-cs2-winner-20260810160005076",
+      "endDate": null,
       "n": 3,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "90-114",
-          "bid": 0.76,
-          "ask": 0.78
+          "name": "Team Spirit",
+          "bid": 0.48,
+          "ask": 0.49
         },
         {
-          "name": "65-89",
-          "bid": 0.028,
-          "ask": 0.038
+          "name": "FURIA",
+          "bid": 0.27,
+          "ask": 0.28
         },
         {
-          "name": "140-164",
-          "bid": 0.01,
-          "ask": 0.023
+          "name": "Legacy",
+          "bid": 0.11,
+          "ask": 0.124
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.932,
+      "grossPP": 6.8,
+      "feePP": 0.72,
+      "netPP": 6.08,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xb631110d2a180d821cc8231e483f5293b026da3ce322154258d42909bafa8d00",
+      "event": "Best Chinese AI Company end of August?",
+      "slug": "best-chinese-ai-company-end-of-august-20260717004241592",
+      "endDate": "2026-08-31T00:00:00Z",
+      "n": 4,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Alibaba",
+          "bid": 0.874,
+          "ask": 0.876
+        },
+        {
+          "name": "Z.ai",
+          "bid": 0.038,
+          "ask": 0.054
+        },
+        {
+          "name": "StepFun",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "Meituan",
+          "bid": null,
+          "ask": 0.001
         }
       ]
     },
@@ -544,45 +617,6 @@
           "name": "Ousmane Dembélé",
           "bid": 0.015,
           "ask": 0.016
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.975,
-      "grossPP": 2.5,
-      "feePP": 0.53,
-      "netPP": 1.97,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xb631110d2a180d821cc8231e483f5293b026da3ce322154258d42909bafa8d00",
-      "event": "Best Chinese AI Company end of August?",
-      "slug": "best-chinese-ai-company-end-of-august-20260717004241592",
-      "endDate": "2026-08-31T00:00:00Z",
-      "n": 4,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Alibaba",
-          "bid": 0.918,
-          "ask": 0.921
-        },
-        {
-          "name": "Z.ai",
-          "bid": 0.039,
-          "ask": 0.052
-        },
-        {
-          "name": "StepFun",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "Meituan",
-          "bid": null,
-          "ask": 0.001
         }
       ]
     }
