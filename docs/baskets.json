@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-08-22 16:37 UTC",
+  "generatedAt": "2026-08-22 17:31 UTC",
   "scanned": 600,
-  "count": 11,
+  "count": 12,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
     {
       "side": "buy",
-      "sumProb": 0.022,
-      "grossPP": 97.8,
+      "sumProb": 0.024,
+      "grossPP": 97.6,
       "feePP": 0.07,
-      "netPP": 97.73,
+      "netPP": 97.53,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xafa4232ba6045534f8b8bf7595dc8ace16d12f8741971c587b5653a43de78c00",
@@ -24,8 +24,8 @@
       "top": [
         {
           "name": "McLaren",
-          "bid": 0.017,
-          "ask": 0.018
+          "bid": 0.019,
+          "ask": 0.02
         },
         {
           "name": "Aston Martin",
@@ -41,10 +41,44 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.057,
-      "grossPP": 94.3,
-      "feePP": 0.29,
-      "netPP": 94.02,
+      "sumProb": 0.042,
+      "grossPP": 95.8,
+      "feePP": 0.13,
+      "netPP": 95.67,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x91e8fbf577df044df2cd5c39e9d309b0331820115fcb49947eb1f66f83dda900",
+      "event": "LALIGA: 2027 Champion",
+      "slug": "laliga-2027-champion-20260701200737375",
+      "endDate": "2027-05-30T23:59:00Z",
+      "n": 3,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Atlético Madrid",
+          "bid": 0.036,
+          "ask": 0.037
+        },
+        {
+          "name": "Betis",
+          "bid": 0.003,
+          "ask": 0.004
+        },
+        {
+          "name": "Valencia",
+          "bid": null,
+          "ask": 0.001
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.046,
+      "grossPP": 95.4,
+      "feePP": 0.23,
+      "netPP": 95.17,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xaa7a45e2f86ac9bdf39cf1f82c89c164e2c80a59265c50e3a0a6b3e6e3e59000",
@@ -58,13 +92,13 @@
       "top": [
         {
           "name": "160-179",
-          "bid": 0.03,
-          "ask": 0.036
+          "bid": 0.029,
+          "ask": 0.03
         },
         {
           "name": "140-159",
-          "bid": 0.013,
-          "ask": 0.02
+          "bid": 0.012,
+          "ask": 0.015
         },
         {
           "name": "80-99",
@@ -109,10 +143,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.158,
-      "grossPP": 84.2,
-      "feePP": 0.47,
-      "netPP": 83.73,
+      "sumProb": 0.159,
+      "grossPP": 84.1,
+      "feePP": 0.48,
+      "netPP": 83.62,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2e8ee0b78c06349677514c81455c1256e07e0b2cf4c9cde23fd23f65eda05200",
@@ -131,8 +165,8 @@
         },
         {
           "name": "Lando Norris",
-          "bid": 0.035,
-          "ask": 0.043
+          "bid": 0.036,
+          "ask": 0.044
         },
         {
           "name": "Oscar Piastri",
@@ -192,17 +226,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.276,
-      "grossPP": 72.4,
+      "sumProb": 0.274,
+      "grossPP": 72.6,
       "feePP": 1.1,
-      "netPP": 71.3,
+      "netPP": 71.5,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
       "event": "Democratic Presidential Nominee 2028",
       "slug": "democratic-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 7,
+      "n": 6,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
@@ -210,17 +244,12 @@
         {
           "name": "Alexandria Ocasio-Cortez",
           "bid": 0.236,
-          "ask": 0.237
+          "ask": 0.238
         },
         {
           "name": "Mark Kelly",
           "bid": 0.029,
-          "ask": 0.03
-        },
-        {
-          "name": "John Fetterman",
-          "bid": 0.003,
-          "ask": 0.004
+          "ask": 0.031
         },
         {
           "name": "Abigail Spanberger",
@@ -228,7 +257,7 @@
           "ask": 0.002
         },
         {
-          "name": "Josh Stein",
+          "name": "Hakeem Jeffries",
           "bid": null,
           "ask": 0.001
         },
@@ -236,49 +265,59 @@
           "name": "Alex Padilla",
           "bid": null,
           "ask": 0.001
+        },
+        {
+          "name": "Josh Stein",
+          "bid": null,
+          "ask": 0.001
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.29,
-      "grossPP": 71.0,
-      "feePP": 1.45,
-      "netPP": 69.55,
+      "sumProb": 0.324,
+      "grossPP": 67.6,
+      "feePP": 1.62,
+      "netPP": 65.98,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xd87d6174b689a34554b67cef88a12f82634aa002c83b73b29230132086420700",
       "event": "Brentford FC vs. Tottenham Hotspur FC - Exact Score",
       "slug": "epl-bre-tot-2026-08-22-exact-score",
       "endDate": "2026-08-22T16:30:00Z",
-      "n": 3,
-      "completeBid": true,
+      "n": 4,
+      "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
+          "name": "Brentford FC 2 - 0 Tottenham Hotspur FC",
+          "bid": 0.17,
+          "ask": 0.18
+        },
+        {
           "name": "Brentford FC 2 - 1 Tottenham Hotspur FC",
-          "bid": 0.1,
-          "ask": 0.11
+          "bid": 0.12,
+          "ask": 0.13
+        },
+        {
+          "name": "Brentford FC 3 - 3 Tottenham Hotspur FC",
+          "bid": 0.009,
+          "ask": 0.013
         },
         {
           "name": "Brentford FC 1 - 0 Tottenham Hotspur FC",
-          "bid": 0.09,
-          "ask": 0.1
-        },
-        {
-          "name": "Brentford FC 2 - 0 Tottenham Hotspur FC",
-          "bid": 0.07,
-          "ask": 0.08
+          "bid": null,
+          "ask": 0.001
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.38,
-      "grossPP": 62.0,
+      "sumProb": 0.379,
+      "grossPP": 62.1,
       "feePP": 1.52,
-      "netPP": 60.48,
+      "netPP": 60.58,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
@@ -292,8 +331,8 @@
       "top": [
         {
           "name": "Marine Le Pen",
-          "bid": 0.316,
-          "ask": 0.319
+          "bid": 0.315,
+          "ask": 0.318
         },
         {
           "name": "Gabriel Attal",
@@ -309,17 +348,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.417,
-      "grossPP": 58.3,
-      "feePP": 1.67,
-      "netPP": 56.63,
+      "sumProb": 0.442,
+      "grossPP": 55.8,
+      "feePP": 1.77,
+      "netPP": 54.03,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 8,
+      "n": 9,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -335,6 +374,11 @@
           "ask": 0.131
         },
         {
+          "name": "Pete Buttigieg",
+          "bid": 0.024,
+          "ask": 0.025
+        },
+        {
           "name": "Ron DeSantis",
           "bid": 0.014,
           "ask": 0.015
@@ -348,27 +392,22 @@
           "name": "Tucker Carlson",
           "bid": 0.013,
           "ask": 0.014
-        },
-        {
-          "name": "Thomas Massie",
-          "bid": 0.01,
-          "ask": 0.011
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.512,
-      "grossPP": 48.8,
-      "feePP": 2.05,
-      "netPP": 46.75,
+      "sumProb": 0.52,
+      "grossPP": 48.0,
+      "feePP": 2.08,
+      "netPP": 45.92,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
       "event": "Republican Presidential Nominee 2028",
       "slug": "republican-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 11,
+      "n": 12,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -384,6 +423,11 @@
           "ask": 0.01
         },
         {
+          "name": "Thomas Massie",
+          "bid": 0.007,
+          "ask": 0.008
+        },
+        {
           "name": "Sarah Huckabee Sanders",
           "bid": 0.005,
           "ask": 0.006
@@ -395,11 +439,6 @@
         },
         {
           "name": "Katie Britt",
-          "bid": 0.002,
-          "ask": 0.003
-        },
-        {
-          "name": "Nikki Haley",
           "bid": 0.002,
           "ask": 0.003
         }
@@ -434,8 +473,8 @@
         },
         {
           "name": "Novak Djokovic",
-          "bid": 0.097,
-          "ask": 0.098
+          "bid": 0.094,
+          "ask": 0.097
         },
         {
           "name": "Ben Shelton",
