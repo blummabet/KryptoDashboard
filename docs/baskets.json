@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-22 12:57 UTC",
+  "generatedAt": "2026-08-22 13:40 UTC",
   "scanned": 600,
-  "count": 9,
+  "count": 8,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -77,12 +77,12 @@
           "ask": 0.002
         },
         {
-          "name": "Alex Padilla",
+          "name": "Josh Stein",
           "bid": null,
           "ask": 0.001
         },
         {
-          "name": "Hakeem Jeffries",
+          "name": "Alex Padilla",
           "bid": null,
           "ask": 0.001
         }
@@ -207,17 +207,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.276,
-      "grossPP": 72.4,
+      "sumProb": 0.275,
+      "grossPP": 72.5,
       "feePP": 1.1,
-      "netPP": 71.3,
+      "netPP": 71.4,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 9,
+      "n": 8,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
@@ -251,55 +251,6 @@
           "name": "Eric Trump",
           "bid": 0.001,
           "ask": 0.002
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.45,
-      "grossPP": 55.0,
-      "feePP": 2.25,
-      "netPP": 52.75,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xf25fb875464ede4297bc51beb78a1b717f357f05f8f95d309f40515b17b48a00",
-      "event": "Hull City AFC vs. Manchester United FC - Exact Score",
-      "slug": "epl-hul-mun-2026-08-22-exact-score",
-      "endDate": "2026-08-22T11:30:00Z",
-      "n": 11,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Hull City AFC 2 - 0 Manchester United FC",
-          "bid": 0.292,
-          "ask": 0.295
-        },
-        {
-          "name": "Hull City AFC 3 - 1 Manchester United FC",
-          "bid": 0.058,
-          "ask": 0.065
-        },
-        {
-          "name": "Hull City AFC 2 - 3 Manchester United FC",
-          "bid": 0.043,
-          "ask": 0.047
-        },
-        {
-          "name": "Hull City AFC 3 - 2 Manchester United FC",
-          "bid": 0.024,
-          "ask": 0.029
-        },
-        {
-          "name": "Hull City AFC 3 - 3 Manchester United FC",
-          "bid": 0.005,
-          "ask": 0.008
-        },
-        {
-          "name": "Hull City AFC 0 - 0 Manchester United FC",
-          "bid": null,
-          "ask": 0.001
         }
       ]
     },
