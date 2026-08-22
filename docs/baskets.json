@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-22 03:52 UTC",
+  "generatedAt": "2026-08-22 04:44 UTC",
   "scanned": 600,
-  "count": 12,
+  "count": 14,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -63,7 +63,7 @@
         },
         {
           "name": "Dallas Mavericks",
-          "bid": 0.009,
+          "bid": 0.008,
           "ask": 0.017
         },
         {
@@ -75,6 +75,40 @@
           "name": "New Orleans Pelicans",
           "bid": 0.001,
           "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.073,
+      "grossPP": 92.7,
+      "feePP": 0.37,
+      "netPP": 92.34,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xf1e20a4efbb8cc06670b854b5a38d52621ec067c5c21c41b9687cc018fc6ed00",
+      "event": "Highest temperature in Hong Kong on August 22?",
+      "slug": "highest-temperature-in-hong-kong-on-august-22-2026",
+      "endDate": "2026-08-22T12:00:00Z",
+      "n": 3,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "30°C",
+          "bid": 0.06,
+          "ask": 0.07
+        },
+        {
+          "name": "29°C",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "28°C",
+          "bid": null,
+          "ask": 0.001
         }
       ]
     },
@@ -243,12 +277,12 @@
           "ask": 0.001
         },
         {
-          "name": "Hakeem Jeffries",
+          "name": "Alex Padilla",
           "bid": null,
           "ask": 0.001
         },
         {
-          "name": "Josh Stein",
+          "name": "Hakeem Jeffries",
           "bid": null,
           "ask": 0.001
         }
@@ -256,17 +290,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.29,
-      "grossPP": 71.0,
-      "feePP": 1.16,
-      "netPP": 69.84,
+      "sumProb": 0.287,
+      "grossPP": 71.3,
+      "feePP": 1.15,
+      "netPP": 70.15,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 13,
+      "n": 12,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
@@ -298,8 +332,8 @@
         },
         {
           "name": "Wes Moore",
-          "bid": 0.008,
-          "ask": 0.009
+          "bid": 0.007,
+          "ask": 0.008
         }
       ]
     },
@@ -344,6 +378,40 @@
           "name": "Ségolène Royal",
           "bid": 0.001,
           "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.43,
+      "grossPP": 57.0,
+      "feePP": 1.29,
+      "netPP": 55.71,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x91e8fbf577df044df2cd5c39e9d309b0331820115fcb49947eb1f66f83dda900",
+      "event": "LALIGA: 2027 Champion",
+      "slug": "laliga-2027-champion-20260701200737375",
+      "endDate": "2027-05-30T23:59:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Real Madrid",
+          "bid": 0.38,
+          "ask": 0.39
+        },
+        {
+          "name": "Atlético Madrid",
+          "bid": 0.035,
+          "ask": 0.036
+        },
+        {
+          "name": "Betis",
+          "bid": 0.003,
+          "ask": 0.004
         }
       ]
     },
@@ -398,10 +466,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.772,
-      "grossPP": 22.8,
-      "feePP": 1.76,
-      "netPP": 21.04,
+      "sumProb": 0.841,
+      "grossPP": 15.9,
+      "feePP": 1.41,
+      "netPP": 14.5,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xc2fb71c5d2c3cc3dcf3bec6b3439a35722c1597d829f2979adf42ec5199a2000",
@@ -415,18 +483,18 @@
       "top": [
         {
           "name": "90-114",
-          "bid": 0.7,
-          "ask": 0.71
-        },
-        {
-          "name": "140-164",
-          "bid": 0.011,
-          "ask": 0.035
+          "bid": 0.76,
+          "ask": 0.78
         },
         {
           "name": "65-89",
-          "bid": 0.011,
-          "ask": 0.027
+          "bid": 0.028,
+          "ask": 0.038
+        },
+        {
+          "name": "140-164",
+          "bid": 0.01,
+          "ask": 0.023
         }
       ]
     },
@@ -483,8 +551,8 @@
       "side": "buy",
       "sumProb": 0.975,
       "grossPP": 2.5,
-      "feePP": 0.51,
-      "netPP": 1.99,
+      "feePP": 0.53,
+      "netPP": 1.97,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb631110d2a180d821cc8231e483f5293b026da3ce322154258d42909bafa8d00",
@@ -499,12 +567,12 @@
         {
           "name": "Alibaba",
           "bid": 0.918,
-          "ask": 0.924
+          "ask": 0.921
         },
         {
           "name": "Z.ai",
-          "bid": 0.037,
-          "ask": 0.049
+          "bid": 0.039,
+          "ask": 0.052
         },
         {
           "name": "StepFun",
