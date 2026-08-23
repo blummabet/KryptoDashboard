@@ -2,8 +2,8 @@
   "summary": {
     "enabled": true,
     "feedCount": 50,
-    "whaleTradeCount": 3,
-    "biggestTradeUSD": 100526,
+    "whaleTradeCount": 5,
+    "biggestTradeUSD": 123635,
     "whaleMinUSD": 25000,
     "walletsProbed": 14,
     "qualifiedCount": 2,
@@ -20,7 +20,7 @@
       "pnl": 12692373.29,
       "winRate": 57.2,
       "volume": 1094900629.0,
-      "inactiveDays": 6.1,
+      "inactiveDays": 6.2,
       "oneHit": false,
       "biggestWin": 109004.61,
       "qualified": true,
@@ -34,9 +34,9 @@
       "resolved": 19997,
       "uniqueMarkets": 3270,
       "roi": 77.08,
-      "pnl": 23694014.24,
+      "pnl": 23699698.44,
       "winRate": 55.8,
-      "volume": 1837988415.0,
+      "volume": 1838130289.0,
       "inactiveDays": 2.7,
       "oneHit": false,
       "biggestWin": 41792.41,
@@ -98,7 +98,7 @@
       "pnl": 22053933.75,
       "winRate": 81.2,
       "volume": 43065780.0,
-      "inactiveDays": 598.8,
+      "inactiveDays": 598.9,
       "oneHit": false,
       "biggestWin": 8302013.6,
       "qualified": false,
@@ -202,7 +202,7 @@
       "pnl": 11839902.0,
       "winRate": 49.4,
       "volume": 99774425.0,
-      "inactiveDays": 124.7,
+      "inactiveDays": 124.8,
       "oneHit": false,
       "biggestWin": 1095000.0,
       "qualified": false,
@@ -215,13 +215,32 @@
       "lastTrade": "2026-04-20"
     },
     {
+      "resolved": 127,
+      "uniqueMarkets": 244,
+      "roi": 4.79,
+      "pnl": 516626.85,
+      "winRate": 66.9,
+      "volume": 25304265.0,
+      "inactiveDays": 16.6,
+      "oneHit": true,
+      "biggestWin": 370891.27,
+      "qualified": false,
+      "rejectReasons": [
+        "Ein-Treffer-Wunder (72% des Gewinns aus 1 Trade)"
+      ],
+      "wallet": "0x7bc14171ccb0d3e6bac219ec6a76211826e28db4",
+      "name": "0x7bc14171…",
+      "firstTrade": "2026-06-03",
+      "lastTrade": "2026-08-06"
+    },
+    {
       "resolved": 4027,
       "uniqueMarkets": 2278,
       "roi": 3.92,
       "pnl": 11386690.88,
       "winRate": 52.6,
       "volume": 298637139.0,
-      "inactiveDays": 53.2,
+      "inactiveDays": 53.3,
       "oneHit": false,
       "biggestWin": 1095000.0,
       "qualified": false,
@@ -240,7 +259,7 @@
       "pnl": 62528.87,
       "winRate": 85.2,
       "volume": 5167514.0,
-      "inactiveDays": 34.1,
+      "inactiveDays": 34.2,
       "oneHit": true,
       "biggestWin": 233026.4,
       "qualified": false,
@@ -251,28 +270,6 @@
       "name": "0x6db983ff…",
       "firstTrade": "2025-10-14",
       "lastTrade": "2026-07-20"
-    },
-    {
-      "resolved": 2,
-      "uniqueMarkets": 12,
-      "roi": -14.64,
-      "pnl": -3381.16,
-      "winRate": 100.0,
-      "volume": 37702.0,
-      "inactiveDays": 7.6,
-      "oneHit": false,
-      "biggestWin": 3100.47,
-      "qualified": false,
-      "rejectReasons": [
-        "zu wenig Historie (2 aufgelöst)",
-        "nur 12 Märkte",
-        "verliert Geld (ROI -14.6%)",
-        "negatives PnL"
-      ],
-      "wallet": "0x88c3fcdca5c1a4afbcc6352ba3a50123d17dbea3",
-      "name": "0x88c3fcdc…",
-      "firstTrade": "2026-08-15",
-      "lastTrade": "2026-08-15"
     },
     {
       "resolved": 7342,
@@ -296,6 +293,20 @@
   ],
   "feed": [
     {
+      "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
+      "name": "0x2c335066…",
+      "qualified": false,
+      "isWhale": true,
+      "market": "Will TEAM VISION Win The International 2026?",
+      "slug": "the-international-2026-winner-20260629212545745",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.42,
+      "sizeUSD": 123634.73,
+      "ts": "2026-08-23T04:46:22+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0x6db983ff1cbc85249e64e6ccd101aaa613ba4ab5",
       "name": "0x6db983ff…",
       "qualified": false,
@@ -307,6 +318,20 @@
       "price": 0.004,
       "sizeUSD": 100525.59,
       "ts": "2026-08-23T03:49:01+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x7bc14171ccb0d3e6bac219ec6a76211826e28db4",
+      "name": "0x7bc14171…",
+      "qualified": false,
+      "isWhale": true,
+      "market": "Will TEAM VISION Win The International 2026?",
+      "slug": "the-international-2026-winner-20260629212545745",
+      "side": "BUY",
+      "outcome": "Yes",
+      "price": 0.58,
+      "sizeUSD": 100000.0,
+      "ts": "2026-08-23T04:46:22+00:00",
       "copyLagPP": null
     },
     {
@@ -335,6 +360,20 @@
       "price": 0.63,
       "sizeUSD": 56243.91,
       "ts": "2026-08-23T03:36:52+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x63bcf78f77cef62b4a9b8d101a14247bf90292c5",
+      "name": "0x63bcf78f…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will TEAM VISION Win The International 2026?",
+      "slug": "the-international-2026-winner-20260629212545745",
+      "side": "BUY",
+      "outcome": "Yes",
+      "price": 0.58,
+      "sizeUSD": 21945.73,
+      "ts": "2026-08-23T04:46:22+00:00",
       "copyLagPP": null
     },
     {
@@ -464,17 +503,31 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x6db983ff1cbc85249e64e6ccd101aaa613ba4ab5",
-      "name": "0x6db983ff…",
+      "wallet": "0x1250846658e2a118930edb02e31f7a7e82258f99",
+      "name": "0x12508466…",
       "qualified": false,
       "isWhale": false,
-      "market": "Will Amazon be the largest company in the world by market cap on December 31?",
-      "slug": "largest-company-end-of-december-2026",
+      "market": "Dota 2: TEAM VISION vs Team Spirit (BO5) - The International Playoffs",
+      "slug": "dota2-vsn2-ts8-2026-08-23",
       "side": "BUY",
-      "outcome": "Yes",
-      "price": 0.002,
-      "sizeUSD": 4697.55,
-      "ts": "2026-08-23T03:36:45+00:00",
+      "outcome": "Team Spirit",
+      "price": 0.4399999999,
+      "sizeUSD": 4132.340908,
+      "ts": "2026-08-23T05:16:24+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xee00ba338c59557141789b127927a55f5cc5cea1",
+      "name": "0xee00ba33…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Dota 2: TEAM VISION vs Team Spirit (BO5) - The International Playoffs",
+      "slug": "dota2-vsn2-ts8-2026-08-23",
+      "side": "BUY",
+      "outcome": "TEAM VISION",
+      "price": 0.5600000001,
+      "sizeUSD": 4132.340908,
+      "ts": "2026-08-23T05:16:24+00:00",
       "copyLagPP": null
     },
     {
@@ -646,34 +699,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x2787692672096be48fe4fe0f7921925b7cace0c4",
-      "name": "0x27876926…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Dota 2: Team Yandex vs Team Spirit - Game 2 Winner",
-      "slug": "dota2-ty-ts8-2026-08-22",
-      "side": "BUY",
-      "outcome": "Team Yandex",
-      "price": 0.38,
-      "sizeUSD": 2000.0,
-      "ts": "2026-08-23T03:36:46+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xe97482c7e5df01af3e1c407969f0c2ede0d1f815",
-      "name": "0xe97482c7…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Dota 2: Team Yandex vs Team Spirit (BO3) - The International Playoffs",
-      "slug": "dota2-ty-ts8-2026-08-22",
-      "side": "SELL",
-      "outcome": "Team Spirit",
-      "price": 0.81,
-      "sizeUSD": 1999.97,
-      "ts": "2026-08-23T03:36:19+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x231699490d08919d8f1d3f0b90fd2a677e3e9819",
       "name": "0x23169949…",
       "qualified": false,
@@ -730,17 +755,17 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0xed446954680979932092e970b443e6ae61e34f76",
-      "name": "0xed446954…",
+      "wallet": "0x2a69660046d7acc4ab204d7cc5ba78b0776cd2f7",
+      "name": "0x2a696600…",
       "qualified": false,
       "isWhale": false,
-      "market": "Dota 2: Team Yandex vs Team Spirit (BO3) - The International Playoffs",
-      "slug": "dota2-ty-ts8-2026-08-22",
+      "market": "Club Atlético de Madrid vs. Villarreal CF: O/U 3.5",
+      "slug": "lal-mad-vil-2026-08-23-more-markets",
       "side": "BUY",
-      "outcome": "Team Spirit",
-      "price": 0.81,
-      "sizeUSD": 1443.96,
-      "ts": "2026-08-23T03:36:19+00:00",
+      "outcome": "Over",
+      "price": 0.31,
+      "sizeUSD": 1381.0,
+      "ts": "2026-08-23T05:16:19+00:00",
       "copyLagPP": null
     },
     {
@@ -828,20 +853,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0x749f78457c3c4f9e62753ebae70c517b653f6be1",
-      "name": "0x749f7845…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Dota 2: Team Yandex vs Team Spirit - Game 2 Winner",
-      "slug": "dota2-ty-ts8-2026-08-22",
-      "side": "BUY",
-      "outcome": "Team Yandex",
-      "price": 0.3799999997,
-      "sizeUSD": 1263.157893,
-      "ts": "2026-08-23T03:36:51+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0xa36fcb6947c4ac1f09ee894aa1fd0756b90e180b",
       "name": "0xa36fcb69…",
       "qualified": false,
@@ -895,6 +906,20 @@
       "price": 0.999,
       "sizeUSD": 1003.18,
       "ts": "2026-08-23T04:36:24+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x5e39013a1d7c4b502ad2ea073d7e8a0469ca352c",
+      "name": "0x5e39013a…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Club Atlético de Madrid vs. Villarreal CF: O/U 3.5",
+      "slug": "lal-mad-vil-2026-08-23-more-markets",
+      "side": "BUY",
+      "outcome": "Under",
+      "price": 0.69,
+      "sizeUSD": 1000.0,
+      "ts": "2026-08-23T05:16:19+00:00",
       "copyLagPP": null
     },
     {
@@ -966,36 +991,8 @@
       "sizeUSD": 1000.0,
       "ts": "2026-08-23T03:36:55+00:00",
       "copyLagPP": null
-    },
-    {
-      "wallet": "0x2787692672096be48fe4fe0f7921925b7cace0c4",
-      "name": "0x27876926…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Dota 2: Team Yandex vs Team Spirit - Game 2 Winner",
-      "slug": "dota2-ty-ts8-2026-08-22-game2",
-      "side": "BUY",
-      "outcome": "Team Yandex",
-      "price": 0.38,
-      "sizeUSD": 1000.0,
-      "ts": "2026-08-23T03:36:22+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xb18ce332f37ec360715413774d9f6ce249fc694f",
-      "name": "0xb18ce332…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Dota 2: Team Yandex vs Team Spirit - Game 2 Winner",
-      "slug": "dota2-ty-ts8-2026-08-22-game2",
-      "side": "BUY",
-      "outcome": "Team Spirit",
-      "price": 0.62,
-      "sizeUSD": 1000.0,
-      "ts": "2026-08-23T03:36:22+00:00",
-      "copyLagPP": null
     }
   ],
-  "generatedAt": "2026-08-23 04:50 UTC",
+  "generatedAt": "2026-08-23 05:40 UTC",
   "note": "Ehrliches Copy-Trading: Bilanz selbst nachgerechnet (nicht dem Leaderboard glauben), Ein-Treffer-Wunder/Inaktive/Verlierer gefiltert, und der Copy-Lag ausgewiesen — die Kosten, die entstehen, weil der Wal mit seiner Order den Preis selbst bewegt."
 }
