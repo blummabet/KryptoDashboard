@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-08-23 16:38 UTC",
+  "generatedAt": "2026-08-23 17:30 UTC",
   "scanned": 600,
-  "count": 16,
+  "count": 15,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
     {
       "side": "buy",
-      "sumProb": 0.042,
-      "grossPP": 95.8,
-      "feePP": 0.17,
-      "netPP": 95.63,
+      "sumProb": 0.035,
+      "grossPP": 96.5,
+      "feePP": 0.14,
+      "netPP": 96.36,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
       "event": "Republican Presidential Nominee 2028",
       "slug": "republican-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 9,
+      "n": 8,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -26,11 +26,6 @@
           "name": "Ron DeSantis",
           "bid": 0.017,
           "ask": 0.018
-        },
-        {
-          "name": "Thomas Massie",
-          "bid": 0.006,
-          "ask": 0.007
         },
         {
           "name": "Steve Bannon",
@@ -49,6 +44,11 @@
         },
         {
           "name": "Rick Scott",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "Doug Burgum",
           "bid": 0.001,
           "ask": 0.002
         }
@@ -85,79 +85,6 @@
           "name": "Orlando Magic",
           "bid": 0.008,
           "ask": 0.009
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.126,
-      "grossPP": 87.4,
-      "feePP": 0.38,
-      "netPP": 87.02,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x85de20785f24956ff4ce1471e80f7d379d97f3fb8a20fb5dd881d03aac38df00",
-      "event": "MLB World Series Champion 2026",
-      "slug": "mlb-world-series-champion-2026",
-      "endDate": "2026-10-31T23:55:00Z",
-      "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Milwaukee Brewers",
-          "bid": 0.119,
-          "ask": 0.12
-        },
-        {
-          "name": "Baltimore Orioles",
-          "bid": 0.003,
-          "ask": 0.005
-        },
-        {
-          "name": "Pittsburgh Pirates",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.19,
-      "grossPP": 81.0,
-      "feePP": 0.95,
-      "netPP": 80.05,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xb47df170ea42ff5cfedfcea596a4a8aaa945a1b86cf392823ac1e57d2f80fa00",
-      "event": "Newcastle United FC vs. Liverpool FC - Exact Score",
-      "slug": "epl-new-liv-2026-08-23-exact-score",
-      "endDate": "2026-08-23T15:30:00Z",
-      "n": 4,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Newcastle United FC 1 - 0 Liverpool FC",
-          "bid": 0.143,
-          "ask": 0.147
-        },
-        {
-          "name": "Newcastle United FC 2 - 3 Liverpool FC",
-          "bid": 0.029,
-          "ask": 0.033
-        },
-        {
-          "name": "Newcastle United FC 3 - 3 Liverpool FC",
-          "bid": 0.008,
-          "ask": 0.009
-        },
-        {
-          "name": "Newcastle United FC 0 - 0 Liverpool FC",
-          "bid": null,
-          "ask": 0.001
         }
       ]
     },
@@ -261,10 +188,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.321,
-      "grossPP": 67.9,
+      "sumProb": 0.319,
+      "grossPP": 68.1,
       "feePP": 1.28,
-      "netPP": 66.62,
+      "netPP": 66.82,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
@@ -283,13 +210,13 @@
         },
         {
           "name": "Gabriel Attal",
-          "bid": 0.048,
-          "ask": 0.053
+          "bid": 0.049,
+          "ask": 0.052
         },
         {
           "name": "Sébastien Lecornu",
           "bid": 0.015,
-          "ask": 0.018
+          "ask": 0.017
         }
       ]
     },
@@ -339,10 +266,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.464,
-      "grossPP": 53.6,
-      "feePP": 1.86,
-      "netPP": 51.74,
+      "sumProb": 0.467,
+      "grossPP": 53.3,
+      "feePP": 1.87,
+      "netPP": 51.43,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
@@ -371,8 +298,8 @@
         },
         {
           "name": "Andy Beshear",
-          "bid": 0.022,
-          "ask": 0.023
+          "bid": 0.024,
+          "ask": 0.026
         },
         {
           "name": "Zohran Mamdani",
@@ -388,17 +315,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.515,
-      "grossPP": 48.5,
-      "feePP": 2.06,
-      "netPP": 46.44,
+      "sumProb": 0.551,
+      "grossPP": 44.9,
+      "feePP": 2.2,
+      "netPP": 42.7,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 13,
+      "n": 16,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -429,18 +356,18 @@
           "ask": 0.015
         },
         {
-          "name": "Raphael Warnock",
-          "bid": 0.002,
-          "ask": 0.003
+          "name": "Ron DeSantis",
+          "bid": 0.013,
+          "ask": 0.014
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.687,
-      "grossPP": 31.3,
-      "feePP": 1.71,
-      "netPP": 29.59,
+      "sumProb": 0.692,
+      "grossPP": 30.8,
+      "feePP": 1.73,
+      "netPP": 29.07,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x966a3221e05d8d0579854c4952085331da2a42989dee0fa033d24cada9dfca00",
@@ -459,8 +386,8 @@
         },
         {
           "name": "Renan Santos",
-          "bid": 0.032,
-          "ask": 0.033
+          "bid": 0.033,
+          "ask": 0.038
         },
         {
           "name": "Romeu Zema",
@@ -486,10 +413,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.726,
-      "grossPP": 27.4,
-      "feePP": 2.0,
-      "netPP": 25.4,
+      "sumProb": 0.716,
+      "grossPP": 28.4,
+      "feePP": 2.07,
+      "netPP": 26.33,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xc194d621e2ef9468b86ed0db1328fd8d56ae8fba1e21b94c5c515e96ecbfc400",
@@ -504,7 +431,7 @@
         {
           "name": "United Russia (ER)",
           "bid": 0.7,
-          "ask": 0.72
+          "ask": 0.71
         },
         {
           "name": "Yabloko",
@@ -520,17 +447,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.864,
-      "grossPP": 13.6,
-      "feePP": 2.59,
-      "netPP": 11.01,
+      "sumProb": 0.839,
+      "grossPP": 16.1,
+      "feePP": 2.52,
+      "netPP": 13.58,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x7db74de8403823823d4624b19d2b08fcbe53edc54e46c4765156543179a61100",
       "event": "2026 Men’s US Open Winner (Tennis)",
       "slug": "2026-mens-us-open-winner-tennis",
       "endDate": "2026-09-13T00:00:00Z",
-      "n": 11,
+      "n": 10,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -542,7 +469,7 @@
         },
         {
           "name": "Alexander Zverev",
-          "bid": 0.197,
+          "bid": 0.196,
           "ask": 0.198
         },
         {
@@ -552,8 +479,8 @@
         },
         {
           "name": "Ben Shelton",
-          "bid": 0.078,
-          "ask": 0.079
+          "bid": 0.077,
+          "ask": 0.078
         },
         {
           "name": "Arthur Fils",
@@ -569,10 +496,44 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.938,
-      "grossPP": 6.2,
-      "feePP": 0.31,
-      "netPP": 5.89,
+      "sumProb": 0.863,
+      "grossPP": 13.7,
+      "feePP": 0.73,
+      "netPP": 12.98,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xdcd7daabcacdc4ecf4f9a48d0a2708b52f356dd086c8070992136da62eb72b00",
+      "event": "How many Fed rate cuts in 2026?",
+      "slug": "how-many-fed-rate-cuts-in-2026",
+      "endDate": "2026-12-31T00:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "0 (0 bps)",
+          "bid": 0.858,
+          "ask": 0.859
+        },
+        {
+          "name": "7 (175 bps)",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "6 (150 bps)",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.94,
+      "grossPP": 6.0,
+      "feePP": 0.32,
+      "netPP": 5.68,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x5357c4b324a57aa0bceb1af50b350eed5578830ac76d083135980edfe880ed00",
@@ -591,13 +552,13 @@
         },
         {
           "name": "Jimmie Åkesson",
-          "bid": 0.004,
-          "ask": 0.005
+          "bid": 0.003,
+          "ask": 0.006
         },
         {
           "name": "Ebba Busch",
           "bid": 0.002,
-          "ask": 0.003
+          "ask": 0.004
         }
       ]
     },
@@ -652,10 +613,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.96,
-      "grossPP": 4.0,
-      "feePP": 2.76,
-      "netPP": 1.24,
+      "sumProb": 0.948,
+      "grossPP": 5.2,
+      "feePP": 2.72,
+      "netPP": 2.48,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x697ad5ad79df81b98b58ef5ea0ff713d40397e526b98bd36fbe57d4be4365000",
@@ -679,8 +640,8 @@
         },
         {
           "name": "Liverpool",
-          "bid": 0.11,
-          "ask": 0.12
+          "bid": 0.1,
+          "ask": 0.11
         },
         {
           "name": "Manchester United",
@@ -693,9 +654,9 @@
           "ask": 0.015
         },
         {
-          "name": "Brighton",
-          "bid": 0.006,
-          "ask": 0.01
+          "name": "Aston Villa",
+          "bid": 0.008,
+          "ask": 0.009
         }
       ]
     }
