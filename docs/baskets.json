@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-24 10:49 UTC",
+  "generatedAt": "2026-08-24 11:40 UTC",
   "scanned": 600,
-  "count": 16,
+  "count": 17,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -41,6 +41,55 @@
     },
     {
       "side": "buy",
+      "sumProb": 0.006,
+      "grossPP": 99.4,
+      "feePP": 0.03,
+      "netPP": 99.37,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x0616d34d8096334ffd0daba7eee2e0e7eed69e9dff453c460ac01605473bba00",
+      "event": "Highest temperature in Taipei on August 24?",
+      "slug": "highest-temperature-in-taipei-on-august-24-2026",
+      "endDate": "2026-08-24T12:00:00Z",
+      "n": 6,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "28°C",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "29°C",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "30°C",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "27°C",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "22°C or below",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "32°C or higher",
+          "bid": null,
+          "ask": 0.001
+        }
+      ]
+    },
+    {
+      "side": "buy",
       "sumProb": 0.009,
       "grossPP": 99.1,
       "feePP": 0.04,
@@ -62,7 +111,7 @@
           "ask": 0.001
         },
         {
-          "name": "Mistral",
+          "name": "Meituan",
           "bid": null,
           "ask": 0.001
         },
@@ -72,12 +121,7 @@
           "ask": 0.001
         },
         {
-          "name": "Meituan",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "MiniMax",
+          "name": "Mistral",
           "bid": null,
           "ask": 0.001
         },
@@ -85,49 +129,20 @@
           "name": "Amazon",
           "bid": null,
           "ask": 0.001
+        },
+        {
+          "name": "Tencent",
+          "bid": null,
+          "ask": 0.001
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.046,
-      "grossPP": 95.4,
-      "feePP": 0.23,
-      "netPP": 95.17,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xaa7a45e2f86ac9bdf39cf1f82c89c164e2c80a59265c50e3a0a6b3e6e3e59000",
-      "event": "Elon Musk # tweets August 21 - August 28, 2026?",
-      "slug": "elon-musk-of-tweets-august-21-august-28-2026",
-      "endDate": "2026-08-28T16:00:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "300-319",
-          "bid": 0.029,
-          "ask": 0.03
-        },
-        {
-          "name": "140-159",
-          "bid": 0.013,
-          "ask": 0.014
-        },
-        {
-          "name": "120-139",
-          "bid": 0.001,
-          "ask": 0.002
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.062,
-      "grossPP": 93.8,
-      "feePP": 0.31,
-      "netPP": 93.49,
+      "sumProb": 0.032,
+      "grossPP": 96.8,
+      "feePP": 0.16,
+      "netPP": 96.64,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x33e89762d27319b8e78d5904c318c1fa9cc455bc57f18520e10b8b5dd4daf900",
@@ -141,16 +156,16 @@
       "top": [
         {
           "name": "41–43M",
-          "bid": 0.05,
-          "ask": 0.06
+          "bid": 0.01,
+          "ask": 0.03
         },
         {
-          "name": "39–41M",
+          "name": "37–39M",
           "bid": null,
           "ask": 0.001
         },
         {
-          "name": "37–39M",
+          "name": "39–41M",
           "bid": null,
           "ask": 0.001
         }
@@ -258,7 +273,7 @@
       "top": [
         {
           "name": "Philadelphia Phillies",
-          "bid": 0.057,
+          "bid": 0.06,
           "ask": 0.065
         },
         {
@@ -324,25 +339,25 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.255,
-      "grossPP": 74.5,
-      "feePP": 1.28,
-      "netPP": 73.22,
+      "sumProb": 0.204,
+      "grossPP": 79.6,
+      "feePP": 1.02,
+      "netPP": 78.58,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x9f013ddb82c5dc1e1958da83520885876627957ef03aa4b1d5b1f1319572bc00",
       "event": "Highest temperature in Madrid on August 24?",
       "slug": "highest-temperature-in-madrid-on-august-24-2026",
       "endDate": "2026-08-24T12:00:00Z",
-      "n": 5,
+      "n": 4,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "27°C",
-          "bid": 0.22,
-          "ask": 0.25
+          "bid": 0.17,
+          "ask": 0.2
         },
         {
           "name": "33°C or higher",
@@ -358,11 +373,40 @@
           "name": "24°C",
           "bid": null,
           "ask": 0.001
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.216,
+      "grossPP": 78.4,
+      "feePP": 1.08,
+      "netPP": 77.32,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xfd37775c59b89870837962214761faae29d7436dbff5c31c4c5db03485384300",
+      "event": "Fulham FC vs. Chelsea FC - Exact Score",
+      "slug": "epl-ful-che-2026-08-24-exact-score",
+      "endDate": "2026-08-24T19:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Fulham FC 0 - 1 Chelsea FC",
+          "bid": 0.1,
+          "ask": 0.11
         },
         {
-          "name": "25°C",
-          "bid": null,
-          "ask": 0.001
+          "name": "Fulham FC 1 - 0 Chelsea FC",
+          "bid": 0.06,
+          "ask": 0.07
+        },
+        {
+          "name": "Fulham FC 2 - 0 Chelsea FC",
+          "bid": 0.033,
+          "ask": 0.036
         }
       ]
     },
@@ -412,17 +456,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.42,
-      "grossPP": 58.0,
-      "feePP": 1.68,
-      "netPP": 56.32,
+      "sumProb": 0.413,
+      "grossPP": 58.7,
+      "feePP": 1.65,
+      "netPP": 57.05,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
       "event": "Democratic Presidential Nominee 2028",
       "slug": "democratic-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 9,
+      "n": 7,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -443,35 +487,35 @@
           "ask": 0.028
         },
         {
-          "name": "Zohran Mamdani",
-          "bid": 0.003,
-          "ask": 0.004
-        },
-        {
           "name": "Elissa Slotkin",
           "bid": 0.002,
           "ask": 0.003
         },
         {
-          "name": "LeBron James",
-          "bid": 0.002,
-          "ask": 0.003
+          "name": "Abigail Spanberger",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "Josh Stein",
+          "bid": 0.001,
+          "ask": 0.002
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.432,
-      "grossPP": 56.8,
-      "feePP": 1.3,
-      "netPP": 55.5,
+      "sumProb": 0.427,
+      "grossPP": 57.3,
+      "feePP": 1.28,
+      "netPP": 56.02,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xfb5399f0e1c4ea4d78a40957d48838ab5769fcec80592b8ce2ffd6e27a3cad00",
       "event": "UEFA Champions League: 2027 Champion",
       "slug": "uefa-champions-league-2027-champion-20260701202025549",
       "endDate": "2027-05-30T23:59:00Z",
-      "n": 14,
+      "n": 13,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -510,10 +554,59 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.52,
-      "grossPP": 48.0,
-      "feePP": 2.08,
-      "netPP": 45.92,
+      "sumProb": 0.468,
+      "grossPP": 53.2,
+      "feePP": 1.4,
+      "netPP": 51.8,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
+      "event": "Pro Football: 2027 Champion",
+      "slug": "pro-football-2027-champion-20260729185915366",
+      "endDate": "2027-02-14T23:55:00Z",
+      "n": 10,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Los Angeles Rams",
+          "bid": 0.14,
+          "ask": 0.15
+        },
+        {
+          "name": "Kansas City Chiefs",
+          "bid": 0.06,
+          "ask": 0.061
+        },
+        {
+          "name": "Dallas Cowboys",
+          "bid": 0.06,
+          "ask": 0.061
+        },
+        {
+          "name": "Denver Broncos",
+          "bid": 0.05,
+          "ask": 0.051
+        },
+        {
+          "name": "San Francisco 49ers",
+          "bid": 0.042,
+          "ask": 0.043
+        },
+        {
+          "name": "Detroit Lions",
+          "bid": 0.04,
+          "ask": 0.041
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.518,
+      "grossPP": 48.2,
+      "feePP": 2.07,
+      "netPP": 46.13,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
@@ -537,13 +630,13 @@
         },
         {
           "name": "Gabriel Attal",
-          "bid": 0.043,
-          "ask": 0.045
+          "bid": 0.042,
+          "ask": 0.044
         },
         {
           "name": "François Hollande",
           "bid": 0.031,
-          "ask": 0.033
+          "ask": 0.032
         },
         {
           "name": "Raphaël Glucksmann",
@@ -559,66 +652,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.548,
-      "grossPP": 45.2,
-      "feePP": 1.64,
-      "netPP": 43.56,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
-      "event": "Pro Football: 2027 Champion",
-      "slug": "pro-football-2027-champion-20260729185915366",
-      "endDate": "2027-02-14T23:55:00Z",
-      "n": 12,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Los Angeles Rams",
-          "bid": 0.14,
-          "ask": 0.15
-        },
-        {
-          "name": "Baltimore Ravens",
-          "bid": 0.074,
-          "ask": 0.075
-        },
-        {
-          "name": "Kansas City Chiefs",
-          "bid": 0.061,
-          "ask": 0.062
-        },
-        {
-          "name": "Dallas Cowboys",
-          "bid": 0.06,
-          "ask": 0.061
-        },
-        {
-          "name": "Denver Broncos",
-          "bid": 0.05,
-          "ask": 0.051
-        },
-        {
-          "name": "San Francisco 49ers",
-          "bid": 0.042,
-          "ask": 0.043
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.863,
-      "grossPP": 13.7,
+      "sumProb": 0.859,
+      "grossPP": 14.1,
       "feePP": 1.89,
-      "netPP": 11.81,
+      "netPP": 12.21,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
       "event": "Ballon d'Or Winner 2026",
       "slug": "ballon-dor-winner-2026",
       "endDate": "2026-10-31T00:00:00Z",
-      "n": 8,
+      "n": 7,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
@@ -626,7 +670,7 @@
         {
           "name": "Harry Kane",
           "bid": 0.613,
-          "ask": 0.617
+          "ask": 0.615
         },
         {
           "name": "Lamine Yamal",
@@ -657,10 +701,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.965,
-      "grossPP": 3.5,
-      "feePP": 1.39,
-      "netPP": 2.11,
+      "sumProb": 0.968,
+      "grossPP": 3.2,
+      "feePP": 1.4,
+      "netPP": 1.8,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2e8ee0b78c06349677514c81455c1256e07e0b2cf4c9cde23fd23f65eda05200",
@@ -674,23 +718,23 @@
       "top": [
         {
           "name": "Kimi Antonelli",
-          "bid": 0.75,
-          "ask": 0.751
+          "bid": 0.749,
+          "ask": 0.75
         },
         {
           "name": "Lando Norris",
           "bid": 0.089,
-          "ask": 0.09
+          "ask": 0.094
         },
         {
           "name": "Lewis Hamilton",
           "bid": 0.06,
-          "ask": 0.062
+          "ask": 0.061
         },
         {
           "name": "George Russell",
-          "bid": 0.048,
-          "ask": 0.049
+          "bid": 0.049,
+          "ask": 0.05
         },
         {
           "name": "Max Verstappen",
@@ -699,7 +743,7 @@
         },
         {
           "name": "Oscar Piastri",
-          "bid": 0.003,
+          "bid": 0.004,
           "ask": 0.006
         }
       ]
