@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-25 18:53 UTC",
+  "generatedAt": "2026-08-25 19:41 UTC",
   "scanned": 600,
-  "count": 11,
+  "count": 12,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -41,26 +41,21 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.169,
-      "grossPP": 83.1,
-      "feePP": 0.68,
-      "netPP": 82.42,
+      "sumProb": 0.082,
+      "grossPP": 91.8,
+      "feePP": 0.33,
+      "netPP": 91.47,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 6,
+      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
-        {
-          "name": "Gavin Newsom",
-          "bid": 0.086,
-          "ask": 0.087
-        },
         {
           "name": "Kamala Harris",
           "bid": 0.032,
@@ -183,10 +178,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.383,
-      "grossPP": 61.7,
-      "feePP": 2.68,
-      "netPP": 59.02,
+      "sumProb": 0.378,
+      "grossPP": 62.2,
+      "feePP": 2.65,
+      "netPP": 59.55,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x03c9c6d9f7b20aaa1f33f99bd24bd16e4e0e00cfa892dde097b800655490b200",
@@ -211,12 +206,46 @@
         {
           "name": "Ofer Winter",
           "bid": 0.002,
-          "ask": 0.02
+          "ask": 0.015
         },
         {
           "name": "Gilad Erdan",
           "bid": 0.002,
           "ask": 0.003
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.53,
+      "grossPP": 47.0,
+      "feePP": 2.65,
+      "netPP": 44.35,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xdaac803f0d39f726edf612f3356424346185613e245b42879679073e85c21300",
+      "event": "BLAST Open Porto 2026: Winner",
+      "slug": "blast-open-porto-2026-winner-20260806201117422",
+      "endDate": null,
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Spirit",
+          "bid": 0.27,
+          "ask": 0.28
+        },
+        {
+          "name": "Falcons",
+          "bid": 0.19,
+          "ask": 0.2
+        },
+        {
+          "name": "FUT",
+          "bid": 0.04,
+          "ask": 0.05
         }
       ]
     },
@@ -302,12 +331,12 @@
           "ask": 0.028
         },
         {
-          "name": "Doug Burgum",
+          "name": "Tom Cotton",
           "bid": 0.001,
           "ask": 0.002
         },
         {
-          "name": "Tom Cotton",
+          "name": "Doug Burgum",
           "bid": 0.001,
           "ask": 0.002
         }
@@ -315,50 +344,45 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.768,
-      "grossPP": 23.2,
-      "feePP": 3.84,
-      "netPP": 19.36,
+      "sumProb": 0.739,
+      "grossPP": 26.1,
+      "feePP": 2.09,
+      "netPP": 24.01,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xd744d38d34da59cf93dca9745ba4f752d6b916173aabf69a9d4ed7af88c9db00",
-      "event": "Valencia CF vs. Real Betis Balompié - Exact Score",
-      "slug": "lal-val-bet-2026-08-25-exact-score",
-      "endDate": "2026-08-25T19:00:00Z",
-      "n": 10,
+      "negRiskMarketID": "0xc194d621e2ef9468b86ed0db1328fd8d56ae8fba1e21b94c5c515e96ecbfc400",
+      "event": "Which party will gain most seats in Russian Parliamentary Election?",
+      "slug": "which-party-will-gain-most-seats-in-russian-parliamentary-election",
+      "endDate": "2026-09-20T00:00:00Z",
+      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Valencia CF 1 - 1 Real Betis Balompié",
-          "bid": 0.14,
-          "ask": 0.15
+          "name": "United Russia (ER)",
+          "bid": 0.71,
+          "ask": 0.72
         },
         {
-          "name": "Valencia CF 0 - 1 Real Betis Balompié",
-          "bid": 0.1,
-          "ask": 0.11
+          "name": "Communist Party of the Russian Federation (KPRF)",
+          "bid": 0.011,
+          "ask": 0.012
         },
         {
-          "name": "Valencia CF 1 - 0 Real Betis Balompié",
-          "bid": 0.1,
-          "ask": 0.11
+          "name": "Yabloko",
+          "bid": 0.002,
+          "ask": 0.003
         },
         {
-          "name": "Valencia CF 1 - 2 Real Betis Balompié",
-          "bid": 0.08,
-          "ask": 0.09
+          "name": "A Just Russia – For Truth (SRZP)",
+          "bid": 0.001,
+          "ask": 0.002
         },
         {
-          "name": "Valencia CF 2 - 1 Real Betis Balompié",
-          "bid": 0.08,
-          "ask": 0.09
-        },
-        {
-          "name": "Valencia CF 0 - 0 Real Betis Balompié",
-          "bid": 0.08,
-          "ask": 0.09
+          "name": "Rodina",
+          "bid": 0.001,
+          "ask": 0.002
         }
       ]
     },
@@ -413,35 +437,35 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.828,
-      "grossPP": 17.2,
-      "feePP": 4.14,
-      "netPP": 13.06,
+      "sumProb": 0.832,
+      "grossPP": 16.8,
+      "feePP": 4.16,
+      "netPP": 12.64,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xaa7a45e2f86ac9bdf39cf1f82c89c164e2c80a59265c50e3a0a6b3e6e3e59000",
       "event": "Elon Musk # tweets August 21 - August 28, 2026?",
       "slug": "elon-musk-of-tweets-august-21-august-28-2026",
       "endDate": "2026-08-28T16:00:00Z",
-      "n": 14,
+      "n": 15,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "220-239",
-          "bid": 0.27,
-          "ask": 0.28
+          "bid": 0.28,
+          "ask": 0.29
         },
         {
           "name": "200-219",
-          "bid": 0.15,
-          "ask": 0.16
+          "bid": 0.16,
+          "ask": 0.17
         },
         {
           "name": "260-279",
-          "bid": 0.14,
-          "ask": 0.15
+          "bid": 0.13,
+          "ask": 0.14
         },
         {
           "name": "280-299",
@@ -450,13 +474,13 @@
         },
         {
           "name": "180-199",
-          "bid": 0.046,
-          "ask": 0.047
+          "bid": 0.049,
+          "ask": 0.05
         },
         {
           "name": "300-319",
-          "bid": 0.044,
-          "ask": 0.045
+          "bid": 0.039,
+          "ask": 0.04
         }
       ]
     },
@@ -479,7 +503,7 @@
       "top": [
         {
           "name": "Harry Kane",
-          "bid": 0.614,
+          "bid": 0.613,
           "ask": 0.615
         },
         {
