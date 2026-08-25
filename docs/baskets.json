@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-25 16:51 UTC",
+  "generatedAt": "2026-08-25 17:41 UTC",
   "scanned": 600,
-  "count": 10,
+  "count": 12,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -75,40 +75,6 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.363,
-      "grossPP": 63.7,
-      "feePP": 2.54,
-      "netPP": 61.16,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x03c9c6d9f7b20aaa1f33f99bd24bd16e4e0e00cfa892dde097b800655490b200",
-      "event": "Prime Minister of Israel after the next election?",
-      "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
-      "endDate": "2026-12-31T00:00:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Benjamin Netanyahu",
-          "bid": 0.27,
-          "ask": 0.28
-        },
-        {
-          "name": "Naftali Bennett",
-          "bid": 0.07,
-          "ask": 0.08
-        },
-        {
-          "name": "Gilad Erdan",
-          "bid": 0.002,
-          "ask": 0.003
-        }
-      ]
-    },
-    {
-      "side": "buy",
       "sumProb": 0.374,
       "grossPP": 62.6,
       "feePP": 1.5,
@@ -151,6 +117,45 @@
         },
         {
           "name": "Chelsea Clinton",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.365,
+      "grossPP": 63.5,
+      "feePP": 2.56,
+      "netPP": 60.95,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x03c9c6d9f7b20aaa1f33f99bd24bd16e4e0e00cfa892dde097b800655490b200",
+      "event": "Prime Minister of Israel after the next election?",
+      "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
+      "endDate": "2026-12-31T00:00:00Z",
+      "n": 4,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Benjamin Netanyahu",
+          "bid": 0.27,
+          "ask": 0.28
+        },
+        {
+          "name": "Naftali Bennett",
+          "bid": 0.07,
+          "ask": 0.08
+        },
+        {
+          "name": "Gilad Erdan",
+          "bid": 0.002,
+          "ask": 0.003
+        },
+        {
+          "name": "Ofer Winter",
           "bid": 0.001,
           "ask": 0.002
         }
@@ -207,10 +212,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.422,
-      "grossPP": 57.8,
-      "feePP": 2.11,
-      "netPP": 55.69,
+      "sumProb": 0.421,
+      "grossPP": 57.9,
+      "feePP": 2.1,
+      "netPP": 55.8,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xd744d38d34da59cf93dca9745ba4f752d6b916173aabf69a9d4ed7af88c9db00",
@@ -245,16 +250,50 @@
         {
           "name": "Valencia CF 3 - 1 Real Betis Balompié",
           "bid": 0.03,
-          "ask": 0.032
+          "ask": 0.031
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.706,
-      "grossPP": 29.4,
+      "sumProb": 0.53,
+      "grossPP": 47.0,
+      "feePP": 2.65,
+      "netPP": 44.35,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xdaac803f0d39f726edf612f3356424346185613e245b42879679073e85c21300",
+      "event": "BLAST Open Porto 2026: Winner",
+      "slug": "blast-open-porto-2026-winner-20260806201117422",
+      "endDate": null,
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Spirit",
+          "bid": 0.27,
+          "ask": 0.28
+        },
+        {
+          "name": "Falcons",
+          "bid": 0.19,
+          "ask": 0.2
+        },
+        {
+          "name": "FUT",
+          "bid": 0.04,
+          "ask": 0.05
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.705,
+      "grossPP": 29.5,
       "feePP": 2.82,
-      "netPP": 26.58,
+      "netPP": 26.68,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
@@ -273,8 +312,8 @@
         },
         {
           "name": "Marco Rubio",
-          "bid": 0.194,
-          "ask": 0.2
+          "bid": 0.196,
+          "ask": 0.199
         },
         {
           "name": "Tucker Carlson",
@@ -282,12 +321,12 @@
           "ask": 0.028
         },
         {
-          "name": "Tom Cotton",
+          "name": "Doug Burgum",
           "bid": 0.001,
           "ask": 0.002
         },
         {
-          "name": "Doug Burgum",
+          "name": "Tom Cotton",
           "bid": 0.001,
           "ask": 0.002
         }
@@ -295,10 +334,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.794,
-      "grossPP": 20.6,
-      "feePP": 3.18,
-      "netPP": 17.42,
+      "sumProb": 0.797,
+      "grossPP": 20.3,
+      "feePP": 3.19,
+      "netPP": 17.11,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
@@ -312,8 +351,8 @@
       "top": [
         {
           "name": "Marine Le Pen",
-          "bid": 0.328,
-          "ask": 0.329
+          "bid": 0.329,
+          "ask": 0.332
         },
         {
           "name": "Édouard Philippe",
@@ -344,10 +383,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.846,
-      "grossPP": 15.4,
-      "feePP": 2.54,
-      "netPP": 12.86,
+      "sumProb": 0.837,
+      "grossPP": 16.3,
+      "feePP": 2.51,
+      "netPP": 13.79,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x7db74de8403823823d4624b19d2b08fcbe53edc54e46c4765156543179a61100",
@@ -371,8 +410,8 @@
         },
         {
           "name": "Novak Djokovic",
-          "bid": 0.108,
-          "ask": 0.117
+          "bid": 0.107,
+          "ask": 0.109
         },
         {
           "name": "Ben Shelton",
@@ -382,7 +421,7 @@
         {
           "name": "Taylor Fritz",
           "bid": 0.054,
-          "ask": 0.058
+          "ask": 0.057
         },
         {
           "name": "Daniil Medvedev",
@@ -393,10 +432,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.888,
-      "grossPP": 11.2,
-      "feePP": 4.44,
-      "netPP": 6.76,
+      "sumProb": 0.833,
+      "grossPP": 16.7,
+      "feePP": 4.17,
+      "netPP": 12.53,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xaa7a45e2f86ac9bdf39cf1f82c89c164e2c80a59265c50e3a0a6b3e6e3e59000",
@@ -415,28 +454,62 @@
         },
         {
           "name": "200-219",
-          "bid": 0.21,
-          "ask": 0.22
+          "bid": 0.18,
+          "ask": 0.19
         },
         {
-          "name": "180-199",
+          "name": "260-279",
           "bid": 0.12,
           "ask": 0.13
         },
         {
-          "name": "260-279",
-          "bid": 0.09,
-          "ask": 0.1
-        },
-        {
           "name": "280-299",
-          "bid": 0.049,
-          "ask": 0.05
+          "bid": 0.07,
+          "ask": 0.071
         },
         {
-          "name": "160-179",
-          "bid": 0.03,
+          "name": "180-199",
+          "bid": 0.06,
+          "ask": 0.07
+        },
+        {
+          "name": "300-319",
+          "bid": 0.035,
           "ask": 0.036
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.892,
+      "grossPP": 10.8,
+      "feePP": 0.84,
+      "netPP": 9.96,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xdcd7daabcacdc4ecf4f9a48d0a2708b52f356dd086c8070992136da62eb72b00",
+      "event": "How many Fed rate cuts in 2026?",
+      "slug": "how-many-fed-rate-cuts-in-2026",
+      "endDate": "2026-12-31T00:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "0 (0 bps)",
+          "bid": 0.861,
+          "ask": 0.862
+        },
+        {
+          "name": "2 (50 bps)",
+          "bid": 0.025,
+          "ask": 0.026
+        },
+        {
+          "name": "4 (100 bps)",
+          "bid": 0.003,
+          "ask": 0.004
         }
       ]
     }
