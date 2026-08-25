@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-25 15:55 UTC",
+  "generatedAt": "2026-08-25 16:51 UTC",
   "scanned": 600,
-  "count": 14,
+  "count": 10,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -41,17 +41,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.226,
-      "grossPP": 77.4,
-      "feePP": 0.68,
-      "netPP": 76.72,
+      "sumProb": 0.171,
+      "grossPP": 82.9,
+      "feePP": 0.51,
+      "netPP": 82.39,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
       "event": "Pro Football: 2027 Champion",
       "slug": "pro-football-2027-champion-20260729185915366",
       "endDate": "2027-02-14T23:55:00Z",
-      "n": 4,
+      "n": 3,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -62,74 +62,64 @@
           "ask": 0.08
         },
         {
-          "name": "Dallas Cowboys",
-          "bid": 0.056,
-          "ask": 0.057
-        },
-        {
           "name": "Houston Texans",
           "bid": 0.047,
           "ask": 0.048
         },
         {
-          "name": "Los Angeles Chargers",
-          "bid": 0.04,
-          "ask": 0.041
+          "name": "Detroit Lions",
+          "bid": 0.042,
+          "ask": 0.043
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.318,
-      "grossPP": 68.2,
-      "feePP": 1.59,
-      "netPP": 66.61,
+      "sumProb": 0.363,
+      "grossPP": 63.7,
+      "feePP": 2.54,
+      "netPP": 61.16,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xd744d38d34da59cf93dca9745ba4f752d6b916173aabf69a9d4ed7af88c9db00",
-      "event": "Valencia CF vs. Real Betis Balompié - Exact Score",
-      "slug": "lal-val-bet-2026-08-25-exact-score",
-      "endDate": "2026-08-25T19:00:00Z",
-      "n": 4,
+      "negRiskMarketID": "0x03c9c6d9f7b20aaa1f33f99bd24bd16e4e0e00cfa892dde097b800655490b200",
+      "event": "Prime Minister of Israel after the next election?",
+      "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
+      "endDate": "2026-12-31T00:00:00Z",
+      "n": 3,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Valencia CF 0 - 1 Real Betis Balompié",
-          "bid": 0.1,
-          "ask": 0.11
+          "name": "Benjamin Netanyahu",
+          "bid": 0.27,
+          "ask": 0.28
         },
         {
-          "name": "Valencia CF 1 - 2 Real Betis Balompié",
-          "bid": 0.08,
-          "ask": 0.09
+          "name": "Naftali Bennett",
+          "bid": 0.07,
+          "ask": 0.08
         },
         {
-          "name": "Valencia CF 2 - 1 Real Betis Balompié",
-          "bid": 0.08,
-          "ask": 0.09
-        },
-        {
-          "name": "Valencia CF 3 - 1 Real Betis Balompié",
-          "bid": 0.025,
-          "ask": 0.028
+          "name": "Gilad Erdan",
+          "bid": 0.002,
+          "ask": 0.003
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.368,
-      "grossPP": 63.2,
-      "feePP": 1.47,
-      "netPP": 61.73,
+      "sumProb": 0.374,
+      "grossPP": 62.6,
+      "feePP": 1.5,
+      "netPP": 61.1,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
       "event": "Democratic Presidential Nominee 2028",
       "slug": "democratic-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 7,
+      "n": 10,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -150,7 +140,7 @@
           "ask": 0.006
         },
         {
-          "name": "Chelsea Clinton",
+          "name": "Andrew Yang",
           "bid": 0.001,
           "ask": 0.002
         },
@@ -160,7 +150,7 @@
           "ask": 0.002
         },
         {
-          "name": "Kim Kardashian",
+          "name": "Chelsea Clinton",
           "bid": 0.001,
           "ask": 0.002
         }
@@ -217,139 +207,61 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.419,
-      "grossPP": 58.1,
-      "feePP": 2.93,
-      "netPP": 55.17,
+      "sumProb": 0.422,
+      "grossPP": 57.8,
+      "feePP": 2.11,
+      "netPP": 55.69,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x03c9c6d9f7b20aaa1f33f99bd24bd16e4e0e00cfa892dde097b800655490b200",
-      "event": "Prime Minister of Israel after the next election?",
-      "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
-      "endDate": "2026-12-31T00:00:00Z",
-      "n": 4,
+      "negRiskMarketID": "0xd744d38d34da59cf93dca9745ba4f752d6b916173aabf69a9d4ed7af88c9db00",
+      "event": "Valencia CF vs. Real Betis Balompié - Exact Score",
+      "slug": "lal-val-bet-2026-08-25-exact-score",
+      "endDate": "2026-08-25T19:00:00Z",
+      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Benjamin Netanyahu",
-          "bid": 0.27,
-          "ask": 0.28
-        },
-        {
-          "name": "Naftali Bennett",
-          "bid": 0.07,
-          "ask": 0.08
-        },
-        {
-          "name": "Avigdor Lieberman",
-          "bid": 0.055,
-          "ask": 0.056
-        },
-        {
-          "name": "Gilad Erdan",
-          "bid": 0.002,
-          "ask": 0.003
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.51,
-      "grossPP": 49.0,
-      "feePP": 2.55,
-      "netPP": 46.45,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xdaac803f0d39f726edf612f3356424346185613e245b42879679073e85c21300",
-      "event": "BLAST Open Porto 2026: Winner",
-      "slug": "blast-open-porto-2026-winner-20260806201117422",
-      "endDate": null,
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Spirit",
-          "bid": 0.27,
-          "ask": 0.28
-        },
-        {
-          "name": "Falcons",
-          "bid": 0.18,
-          "ask": 0.19
-        },
-        {
-          "name": "FUT",
-          "bid": 0.035,
-          "ask": 0.04
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.638,
-      "grossPP": 36.2,
-      "feePP": 3.19,
-      "netPP": 33.01,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xaa7a45e2f86ac9bdf39cf1f82c89c164e2c80a59265c50e3a0a6b3e6e3e59000",
-      "event": "Elon Musk # tweets August 21 - August 28, 2026?",
-      "slug": "elon-musk-of-tweets-august-21-august-28-2026",
-      "endDate": "2026-08-28T16:00:00Z",
-      "n": 12,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "220-239",
-          "bid": 0.26,
-          "ask": 0.27
-        },
-        {
-          "name": "180-199",
+          "name": "Valencia CF 0 - 1 Real Betis Balompié",
           "bid": 0.1,
           "ask": 0.11
         },
         {
-          "name": "260-279",
-          "bid": 0.1,
-          "ask": 0.11
+          "name": "Valencia CF 1 - 0 Real Betis Balompié",
+          "bid": 0.09,
+          "ask": 0.1
         },
         {
-          "name": "280-299",
-          "bid": 0.05,
-          "ask": 0.051
+          "name": "Valencia CF 1 - 2 Real Betis Balompié",
+          "bid": 0.08,
+          "ask": 0.09
         },
         {
-          "name": "160-179",
-          "bid": 0.032,
-          "ask": 0.036
+          "name": "Valencia CF 2 - 1 Real Betis Balompié",
+          "bid": 0.08,
+          "ask": 0.09
         },
         {
-          "name": "300-319",
-          "bid": 0.025,
-          "ask": 0.026
+          "name": "Valencia CF 3 - 1 Real Betis Balompié",
+          "bid": 0.03,
+          "ask": 0.032
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.673,
-      "grossPP": 32.7,
-      "feePP": 2.69,
-      "netPP": 30.01,
+      "sumProb": 0.706,
+      "grossPP": 29.4,
+      "feePP": 2.82,
+      "netPP": 26.58,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
       "event": "Republican Presidential Nominee 2028",
       "slug": "republican-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 4,
+      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -362,7 +274,12 @@
         {
           "name": "Marco Rubio",
           "bid": 0.194,
-          "ask": 0.195
+          "ask": 0.2
+        },
+        {
+          "name": "Tucker Carlson",
+          "bid": 0.025,
+          "ask": 0.028
         },
         {
           "name": "Tom Cotton",
@@ -378,17 +295,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.815,
-      "grossPP": 18.5,
-      "feePP": 3.26,
-      "netPP": 15.24,
+      "sumProb": 0.794,
+      "grossPP": 20.6,
+      "feePP": 3.18,
+      "netPP": 17.42,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
       "event": "Next French Presidential Election",
       "slug": "next-french-presidential-election",
       "endDate": "2027-04-30T00:00:00Z",
-      "n": 17,
+      "n": 7,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -419,48 +336,9 @@
           "ask": 0.027
         },
         {
-          "name": "Bernard Cazeneuve",
-          "bid": 0.002,
-          "ask": 0.003
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.858,
-      "grossPP": 14.2,
-      "feePP": 1.0,
-      "netPP": 13.2,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xf3833d3a63329b3bf5017862d6bd7023cd04616afba5108038352d30b9f88a00",
-      "event": "Highest temperature in Munich on August 25?",
-      "slug": "highest-temperature-in-munich-on-august-25-2026",
-      "endDate": "2026-08-25T12:00:00Z",
-      "n": 4,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "17°C",
-          "bid": 0.611,
-          "ask": 0.829
-        },
-        {
-          "name": "19°C",
-          "bid": null,
-          "ask": 0.02
-        },
-        {
-          "name": "20°C",
+          "name": "Jean Castex",
           "bid": 0.001,
-          "ask": 0.008
-        },
-        {
-          "name": "16°C",
-          "bid": null,
-          "ask": 0.001
+          "ask": 0.002
         }
       ]
     },
@@ -515,84 +393,50 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.902,
-      "grossPP": 9.8,
-      "feePP": 2.02,
-      "netPP": 7.78,
+      "sumProb": 0.888,
+      "grossPP": 11.2,
+      "feePP": 4.44,
+      "netPP": 6.76,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
-      "event": "Ballon d'Or Winner 2026",
-      "slug": "ballon-dor-winner-2026",
-      "endDate": "2026-10-31T00:00:00Z",
-      "n": 8,
+      "negRiskMarketID": "0xaa7a45e2f86ac9bdf39cf1f82c89c164e2c80a59265c50e3a0a6b3e6e3e59000",
+      "event": "Elon Musk # tweets August 21 - August 28, 2026?",
+      "slug": "elon-musk-of-tweets-august-21-august-28-2026",
+      "endDate": "2026-08-28T16:00:00Z",
+      "n": 14,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Harry Kane",
-          "bid": 0.614,
-          "ask": 0.615
+          "name": "220-239",
+          "bid": 0.27,
+          "ask": 0.28
         },
         {
-          "name": "Lamine Yamal",
-          "bid": 0.154,
-          "ask": 0.156
+          "name": "200-219",
+          "bid": 0.21,
+          "ask": 0.22
         },
         {
-          "name": "Kylian Mbappé",
-          "bid": 0.064,
-          "ask": 0.065
+          "name": "180-199",
+          "bid": 0.12,
+          "ask": 0.13
         },
         {
-          "name": "Lionel Messi",
-          "bid": 0.027,
-          "ask": 0.028
+          "name": "260-279",
+          "bid": 0.09,
+          "ask": 0.1
         },
         {
-          "name": "Khvicha Kvaratskhelia",
-          "bid": 0.018,
-          "ask": 0.02
+          "name": "280-299",
+          "bid": 0.049,
+          "ask": 0.05
         },
         {
-          "name": "Ousmane Dembélé",
-          "bid": 0.013,
-          "ask": 0.014
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.99,
-      "grossPP": 1.0,
-      "feePP": 0.07,
-      "netPP": 0.93,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x94aae168ba09f30b079bcfee8aaf19887a8bfe955a6820f5daf56f486e44ee00",
-      "event": "Highest temperature in Paris on August 25?",
-      "slug": "highest-temperature-in-paris-on-august-25-2026",
-      "endDate": "2026-08-25T12:00:00Z",
-      "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "29°C",
-          "bid": 0.968,
-          "ask": 0.988
-        },
-        {
-          "name": "28°C",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "27°C",
-          "bid": null,
-          "ask": 0.001
+          "name": "160-179",
+          "bid": 0.03,
+          "ask": 0.036
         }
       ]
     }
