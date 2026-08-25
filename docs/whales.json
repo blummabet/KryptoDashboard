@@ -6,8 +6,8 @@
     "biggestTradeUSD": 10162,
     "whaleMinUSD": 25000,
     "walletsProbed": 12,
-    "qualifiedCount": 3,
-    "rejectedCount": 9,
+    "qualifiedCount": 4,
+    "rejectedCount": 8,
     "avgCopyLagPP": null,
     "lagSample": 0,
     "verdict": "keine ≥$25k-Whale-Trades qualifizierter Wale im Fenster — echte Wale sind selten"
@@ -20,7 +20,7 @@
       "pnl": 23619698.5,
       "winRate": 54.3,
       "volume": 1850826069.0,
-      "inactiveDays": 0.1,
+      "inactiveDays": 0.2,
       "oneHit": false,
       "biggestWin": 47233.66,
       "qualified": true,
@@ -37,7 +37,7 @@
       "pnl": 12737699.65,
       "winRate": 58.1,
       "volume": 1104253249.0,
-      "inactiveDays": 0.1,
+      "inactiveDays": 0.2,
       "oneHit": false,
       "biggestWin": 109004.61,
       "qualified": true,
@@ -54,7 +54,7 @@
       "pnl": 6293200.42,
       "winRate": 48.0,
       "volume": 133330928.0,
-      "inactiveDays": 0.2,
+      "inactiveDays": 0.3,
       "oneHit": false,
       "biggestWin": 2882989.96,
       "qualified": true,
@@ -65,13 +65,30 @@
       "lastTrade": "2026-08-25"
     },
     {
+      "resolved": 8815,
+      "uniqueMarkets": 5561,
+      "roi": 0.79,
+      "pnl": 7452539.62,
+      "winRate": 60.0,
+      "volume": 957205811.0,
+      "inactiveDays": 0.2,
+      "oneHit": false,
+      "biggestWin": 1438170.76,
+      "qualified": true,
+      "rejectReasons": [],
+      "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
+      "name": "0x2c335066…",
+      "firstTrade": "2025-10-08",
+      "lastTrade": "2026-08-25"
+    },
+    {
       "resolved": 2,
       "uniqueMarkets": 3,
       "roi": 55.89,
       "pnl": 7602742.0,
       "winRate": 100.0,
       "volume": 39737174.0,
-      "inactiveDays": 67.6,
+      "inactiveDays": 67.7,
       "oneHit": true,
       "biggestWin": 4916503.25,
       "qualified": false,
@@ -178,7 +195,7 @@
       "pnl": 8052184.54,
       "winRate": 66.7,
       "volume": 72132443.0,
-      "inactiveDays": 41.5,
+      "inactiveDays": 41.6,
       "oneHit": true,
       "biggestWin": 5976031.78,
       "qualified": false,
@@ -199,7 +216,7 @@
       "pnl": 11839902.0,
       "winRate": 49.4,
       "volume": 99774425.0,
-      "inactiveDays": 126.9,
+      "inactiveDays": 127.0,
       "oneHit": false,
       "biggestWin": 1095000.0,
       "qualified": false,
@@ -218,36 +235,17 @@
       "pnl": 11386690.88,
       "winRate": 52.6,
       "volume": 298637139.0,
-      "inactiveDays": 55.4,
+      "inactiveDays": 55.5,
       "oneHit": false,
       "biggestWin": 1095000.0,
       "qualified": false,
       "rejectReasons": [
-        "inaktiv seit 55d"
+        "inaktiv seit 56d"
       ],
       "wallet": "0x6a72f61820b26b1fe4d956e17b6dc2a1ea3033ee",
       "name": "0x6a72f618…",
       "firstTrade": "2025-06-25",
       "lastTrade": "2026-06-30"
-    },
-    {
-      "resolved": 8695,
-      "uniqueMarkets": 5419,
-      "roi": 0.0,
-      "pnl": 7452538.13,
-      "winRate": 59.9,
-      "volume": 957205811.0,
-      "inactiveDays": 1.6,
-      "oneHit": false,
-      "biggestWin": 1438170.76,
-      "qualified": false,
-      "rejectReasons": [
-        "verliert Geld (ROI 0.0%)"
-      ],
-      "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
-      "name": "0x2c335066…",
-      "firstTrade": "2025-10-08",
-      "lastTrade": "2026-08-23"
     }
   ],
   "feed": [
@@ -277,20 +275,6 @@
       "price": 0.6,
       "sizeUSD": 5833.57,
       "ts": "2026-08-25T09:06:13+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xbca08c1bc204a34f2fddbe47b438b9bd42ac9705",
-      "name": "0xbca08c1b…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Philadelphia Phillies vs. Seattle Mariners",
-      "slug": "mlb-phi-sea-2026-08-24",
-      "side": "BUY",
-      "outcome": "Seattle Mariners",
-      "price": 0.9545791426,
-      "sizeUSD": 5758.72,
-      "ts": "2026-08-25T03:26:04+00:00",
       "copyLagPP": null
     },
     {
@@ -364,62 +348,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0xfe787d2da716d60e8acff57fb87eb13cd4d10319",
-      "name": "0xfe787d2d…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Pittsburgh Pirates vs. San Diego Padres",
-      "slug": "mlb-pit-sd-2026-08-24",
-      "side": "BUY",
-      "outcome": "San Diego Padres",
-      "price": 0.81,
-      "sizeUSD": 4245.73,
-      "ts": "2026-08-25T05:06:07+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x4755188644460fc8140a18ccefc1e80b6a5e4158",
-      "name": "0x47551886…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will the total domestic gross for Spider-Man: Brand New Day be between 800m and 900m by August 31?",
-      "slug": "will-the-total-domestic-gross-for-spider-man-brand-new-day-be-between-800m-and-900m-by-august-31-20260717232947959",
-      "side": "SELL",
-      "outcome": "Yes",
-      "price": 0.9,
-      "sizeUSD": 4095.32,
-      "ts": "2026-08-25T04:46:04+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x9aeb534c42b58b21673d5e03e9da14fbd15b2729",
-      "name": "0x9aeb534c…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will the total domestic gross for Spider-Man: Brand New Day be between 800m and 900m by August 31?",
-      "slug": "will-the-total-domestic-gross-for-spider-man-brand-new-day-be-between-800m-and-900m-by-august-31-20260717232947959",
-      "side": "BUY",
-      "outcome": "Yes",
-      "price": 0.9,
-      "sizeUSD": 4000.0,
-      "ts": "2026-08-25T04:46:04+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xfe787d2da716d60e8acff57fb87eb13cd4d10319",
-      "name": "0xfe787d2d…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Pittsburgh Pirates vs. San Diego Padres",
-      "slug": "mlb-pit-sd-2026-08-24",
-      "side": "BUY",
-      "outcome": "San Diego Padres",
-      "price": 0.81,
-      "sizeUSD": 3658.58,
-      "ts": "2026-08-25T05:06:07+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0xc4086b708cd3a50880b7069add1a1a80000f4675",
       "name": "0xc4086b70…",
       "qualified": false,
@@ -431,6 +359,34 @@
       "price": 0.07,
       "sizeUSD": 3338.0,
       "ts": "2026-08-25T08:36:12+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x08458f7e9d2858027de579e4c3ca305475496b6f",
+      "name": "0x08458f7e…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "US ceasefire against Iran continues through August 31?",
+      "slug": "us-ceasefire-against-iran-continues-throughptptpt",
+      "side": "SELL",
+      "outcome": "No",
+      "price": 0.05,
+      "sizeUSD": 3153.52,
+      "ts": "2026-08-25T10:06:10+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x2d99e29c4f066ba32098c65e4c7454b277d94ca3",
+      "name": "0x2d99e29c…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "US ceasefire against Iran continues through August 31?",
+      "slug": "us-ceasefire-against-iran-continues-throughptptpt",
+      "side": "SELL",
+      "outcome": "Yes",
+      "price": 0.95,
+      "sizeUSD": 3153.52,
+      "ts": "2026-08-25T10:06:10+00:00",
       "copyLagPP": null
     },
     {
@@ -487,20 +443,6 @@
       "price": 0.0699999997,
       "sizeUSD": 2642.857141,
       "ts": "2026-08-25T09:17:00+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x54bab0bc94667af224e21528804d49c1b87e04e4",
-      "name": "0x54bab0bc…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Monterrey Open: Diane Parry vs Donna Vekic",
-      "slug": "wta-parry-vekic-2026-08-24",
-      "side": "SELL",
-      "outcome": "Donna Vekic",
-      "price": 0.7340640218,
-      "sizeUSD": 2219.87,
-      "ts": "2026-08-25T04:46:00+00:00",
       "copyLagPP": null
     },
     {
@@ -571,34 +513,6 @@
       "price": 0.001,
       "sizeUSD": 2000.0,
       "ts": "2026-08-25T08:36:15+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xf0f86cdb6872730ca12c84ff8b014a539b8c325f",
-      "name": "0xf0f86cdb…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will the lowest temperature in Karachi be 27°C on August 24?",
-      "slug": "lowest-temperature-in-karachi-on-august-24-2026",
-      "side": "BUY",
-      "outcome": "Yes",
-      "price": 0.999,
-      "sizeUSD": 2000.0,
-      "ts": "2026-08-25T03:45:57+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0x4247c89f4a9236a6b5fb24502023bcc98ab1455f",
-      "name": "0x4247c89f…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will the lowest temperature in Karachi be 27°C on August 24?",
-      "slug": "lowest-temperature-in-karachi-on-august-24-2026",
-      "side": "BUY",
-      "outcome": "No",
-      "price": 0.001,
-      "sizeUSD": 2000.0,
-      "ts": "2026-08-25T03:45:57+00:00",
       "copyLagPP": null
     },
     {
@@ -700,34 +614,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0xc683d080703f2f9a5bdf571a3f36b7122a9318e7",
-      "name": "0xc683d080…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will Yariv Levin be the next Prime Minister of Israel?",
-      "slug": "will-yariv-levin-be-the-next-prime-minister-of-israel",
-      "side": "BUY",
-      "outcome": "Yes",
-      "price": 0.0029999994,
-      "sizeUSD": 1666.666666,
-      "ts": "2026-08-25T03:36:03+00:00",
-      "copyLagPP": null
-    },
-    {
-      "wallet": "0xbefa95c276ee8ef6ff3ef43d1c1c454f52bc300d",
-      "name": "0xbefa95c2…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Will Yariv Levin be the next Prime Minister of Israel?",
-      "slug": "will-yariv-levin-be-the-next-prime-minister-of-israel",
-      "side": "SELL",
-      "outcome": "Yes",
-      "price": 0.0029999994,
-      "sizeUSD": 1666.666666,
-      "ts": "2026-08-25T03:36:03+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0x06ac70013cd0c7992ec830ad5df9f7f66d5b79ec",
       "name": "0x06ac7001…",
       "qualified": false,
@@ -753,6 +639,20 @@
       "price": 0.53,
       "sizeUSD": 1436.0,
       "ts": "2026-08-25T06:06:12+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x051300d847059498c35894114dee1aa38ee36ee8",
+      "name": "0x051300d8…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Bitcoin dip to $75,000 in August?",
+      "slug": "will-bitcoin-dip-to-75k-in-august-2026",
+      "side": "BUY",
+      "outcome": "Yes",
+      "price": 0.3825519972,
+      "sizeUSD": 1416.487178,
+      "ts": "2026-08-25T10:16:18+00:00",
       "copyLagPP": null
     },
     {
@@ -784,20 +684,6 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0xfe787d2da716d60e8acff57fb87eb13cd4d10319",
-      "name": "0xfe787d2d…",
-      "qualified": false,
-      "isWhale": false,
-      "market": "Monterrey Open: Diane Parry vs Donna Vekic",
-      "slug": "wta-parry-vekic-2026-08-24",
-      "side": "BUY",
-      "outcome": "Donna Vekic",
-      "price": 0.73,
-      "sizeUSD": 1286.31,
-      "ts": "2026-08-25T04:46:00+00:00",
-      "copyLagPP": null
-    },
-    {
       "wallet": "0xe40aaa5ce1dac0b7dc24c9d0284f27e17c3fe4a2",
       "name": "0xe40aaa5c…",
       "qualified": false,
@@ -823,6 +709,20 @@
       "price": 0.9032673267,
       "sizeUSD": 1111.0,
       "ts": "2026-08-25T09:17:01+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x0ba2a0a806ff648e90a5765b07d4d49ca5e97f35",
+      "name": "0x0ba2a0a8…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Bitcoin hit $150k by December 31, 2027?",
+      "slug": "when-will-bitcoin-hit-150k",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.6889701897,
+      "sizeUSD": 1107.0,
+      "ts": "2026-08-25T10:06:07+00:00",
       "copyLagPP": null
     },
     {
@@ -868,6 +768,34 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0xd9348f90507bacd923b3d1d1683e8c8b0e629d2e",
+      "name": "0xd9348f90…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Counter-Strike: Mai Tai vs Raccoons (BO3) - Exort Fiesta Group Stage",
+      "slug": "cs2-maitai-raccoo-2026-08-25",
+      "side": "BUY",
+      "outcome": "Mai Tai",
+      "price": 0.1899999994,
+      "sizeUSD": 1052.631577,
+      "ts": "2026-08-25T09:56:18+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x513587a2f36a8cb29333052a6a479091ef8a7217",
+      "name": "0x513587a2…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Counter-Strike: Mai Tai vs Raccoons (BO3) - Exort Fiesta Group Stage",
+      "slug": "cs2-maitai-raccoo-2026-08-25",
+      "side": "BUY",
+      "outcome": "Raccoons",
+      "price": 0.8100000006,
+      "sizeUSD": 1052.631577,
+      "ts": "2026-08-25T09:56:18+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0xcc792a28d90f3c5d8fe91e48a184913a65031c2a",
       "name": "0xcc792a28…",
       "qualified": false,
@@ -910,17 +838,17 @@
       "copyLagPP": null
     },
     {
-      "wallet": "0xb1ca909e848cc24ec4e220ce1c453bc290c51705",
-      "name": "0xb1ca909e…",
+      "wallet": "0xe9076a87c5ed90ef16e6fe6529c943baeca0cff6",
+      "name": "0xe9076a87…",
       "qualified": false,
       "isWhale": false,
-      "market": "Will Google be the #2 AI lab at the end of September 2026?",
-      "slug": "will-google-be-the-2-ai-lab-at-the-end-of-september-2026-20260722222005325",
+      "market": "Will Jeonbuk Hyundai Motors FC win on 2026-08-25?",
+      "slug": "kor-san-jeo-2026-08-25-jeo",
       "side": "BUY",
       "outcome": "No",
-      "price": 0.7119224646,
-      "sizeUSD": 1004.96,
-      "ts": "2026-08-25T03:36:00+00:00",
+      "price": 0.5799999997,
+      "sizeUSD": 1018.051723,
+      "ts": "2026-08-25T09:57:13+00:00",
       "copyLagPP": null
     },
     {
@@ -938,6 +866,76 @@
       "copyLagPP": null
     },
     {
+      "wallet": "0xb615db2a571fccbe4616da82fb05c47c60c173cf",
+      "name": "0xb615db2a…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "US ceasefire against Iran continues through October 31?",
+      "slug": "us-x-iran-ceasefire-continues-through-october-31",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.2980806,
+      "sizeUSD": 1000.0,
+      "ts": "2026-08-25T10:17:16+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x037c5b3bc5da7fcf6c8de6c5ae43895024e9bd8a",
+      "name": "0x037c5b3b…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will the total domestic gross for The Odyssey be between 510m and 530m by August 31?",
+      "slug": "will-the-total-domestic-gross-for-the-odyssey-be-between-510m-and-530m-by-august-31-20260724150841339",
+      "side": "BUY",
+      "outcome": "Yes",
+      "price": 0.001,
+      "sizeUSD": 1000.0,
+      "ts": "2026-08-25T10:16:18+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x243c4768657cb73f87c864fca8a03269ecb42240",
+      "name": "0x243c4768…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Bitcoin hit $150k by December 31, 2027?",
+      "slug": "when-will-bitcoin-hit-150k",
+      "side": "BUY",
+      "outcome": "Yes",
+      "price": 0.31,
+      "sizeUSD": 1000.0,
+      "ts": "2026-08-25T10:06:07+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0x1e1aed3928a9617e7c7ae674c4fa7aebbd9d7690",
+      "name": "0x1e1aed39…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Will Elon Musk post 500+ tweets from August 21 to August 28, 2026?",
+      "slug": "elon-musk-of-tweets-august-21-august-28-2026-500plus",
+      "side": "BUY",
+      "outcome": "No",
+      "price": 0.999,
+      "sizeUSD": 1000.0,
+      "ts": "2026-08-25T09:57:13+00:00",
+      "copyLagPP": null
+    },
+    {
+      "wallet": "0xcccbeeaa28545d983aefd8f02cd8b2f6be318590",
+      "name": "0xcccbeeaa…",
+      "qualified": false,
+      "isWhale": false,
+      "market": "Bitcoin Up or Down - August 25, 5AM ET",
+      "slug": "bitcoin-up-or-down-august-25-2026-5am-et",
+      "side": "BUY",
+      "outcome": "Up",
+      "price": 0.001,
+      "sizeUSD": 1000.0,
+      "ts": "2026-08-25T09:56:16+00:00",
+      "copyLagPP": null
+    },
+    {
       "wallet": "0xff7ca9cd180d33119e653e3eb50555a3e2ccb233",
       "name": "0xff7ca9cd…",
       "qualified": false,
@@ -952,6 +950,6 @@
       "copyLagPP": null
     }
   ],
-  "generatedAt": "2026-08-25 09:48 UTC",
+  "generatedAt": "2026-08-25 10:45 UTC",
   "note": "Ehrliches Copy-Trading: Bilanz selbst nachgerechnet (nicht dem Leaderboard glauben), Ein-Treffer-Wunder/Inaktive/Verlierer gefiltert, und der Copy-Lag ausgewiesen — die Kosten, die entstehen, weil der Wal mit seiner Order den Preis selbst bewegt."
 }
