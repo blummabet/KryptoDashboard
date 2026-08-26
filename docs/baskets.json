@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-26 07:04 UTC",
+  "generatedAt": "2026-08-26 07:56 UTC",
   "scanned": 600,
-  "count": 15,
+  "count": 13,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -75,10 +75,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.158,
-      "grossPP": 84.2,
-      "feePP": 0.79,
-      "netPP": 83.41,
+      "sumProb": 0.184,
+      "grossPP": 81.6,
+      "feePP": 0.92,
+      "netPP": 80.68,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xedd5dbedc46d59118b869bae03d13ab0880cf02b880555ff20c92d8b5c317b00",
@@ -97,8 +97,8 @@
         },
         {
           "name": "29°C",
-          "bid": 0.006,
-          "ask": 0.022
+          "bid": 0.002,
+          "ask": 0.048
         },
         {
           "name": "28°C",
@@ -109,10 +109,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.17,
-      "grossPP": 83.0,
-      "feePP": 0.85,
-      "netPP": 82.15,
+      "sumProb": 0.191,
+      "grossPP": 80.9,
+      "feePP": 0.96,
+      "netPP": 79.94,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x4c083525d55c8c9ead1e9624264d906b94e845fd3a1f4adc3b3f8b85a6750000",
@@ -130,9 +130,14 @@
           "ask": 0.13
         },
         {
+          "name": "120-139",
+          "bid": 0.013,
+          "ask": 0.018
+        },
+        {
           "name": "340-359",
           "bid": 0.01,
-          "ask": 0.012
+          "ask": 0.015
         },
         {
           "name": "100-119",
@@ -140,35 +145,30 @@
           "ask": 0.008
         },
         {
+          "name": "360-379",
+          "bid": 0.005,
+          "ask": 0.006
+        },
+        {
           "name": "380-399",
           "bid": 0.003,
           "ask": 0.004
-        },
-        {
-          "name": "400-419",
-          "bid": 0.002,
-          "ask": 0.004
-        },
-        {
-          "name": "80-99",
-          "bid": 0.001,
-          "ask": 0.003
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.381,
-      "grossPP": 61.9,
-      "feePP": 2.67,
-      "netPP": 59.23,
+      "sumProb": 0.378,
+      "grossPP": 62.2,
+      "feePP": 2.65,
+      "netPP": 59.55,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x03c9c6d9f7b20aaa1f33f99bd24bd16e4e0e00cfa892dde097b800655490b200",
       "event": "Prime Minister of Israel after the next election?",
       "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
       "endDate": "2026-12-31T00:00:00Z",
-      "n": 4,
+      "n": 3,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -187,11 +187,6 @@
           "name": "Ofer Winter",
           "bid": 0.01,
           "ask": 0.018
-        },
-        {
-          "name": "Gilad Erdan",
-          "bid": 0.002,
-          "ask": 0.003
         }
       ]
     },
@@ -334,51 +329,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.661,
-      "grossPP": 33.9,
-      "feePP": 1.9,
-      "netPP": 31.99,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xca539264729e19f93872c4c6f1fc74997cfa91e8afdd362f317c9bb690de5500",
-      "event": "Highest temperature in Singapore on August 26?",
-      "slug": "highest-temperature-in-singapore-on-august-26-2026",
-      "endDate": "2026-08-26T12:00:00Z",
-      "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "31°C",
-          "bid": 0.47,
-          "ask": 0.64
-        },
-        {
-          "name": "33°C",
-          "bid": null,
-          "ask": 0.02
-        },
-        {
-          "name": "30°C",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.701,
-      "grossPP": 29.9,
-      "feePP": 2.1,
-      "netPP": 27.8,
+      "sumProb": 0.674,
+      "grossPP": 32.6,
+      "feePP": 2.02,
+      "netPP": 30.58,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
       "event": "Pro Football: 2027 Champion",
       "slug": "pro-football-2027-champion-20260729185915366",
       "endDate": "2027-02-14T23:55:00Z",
-      "n": 15,
+      "n": 16,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -387,11 +348,6 @@
           "name": "Los Angeles Rams",
           "bid": 0.14,
           "ask": 0.15
-        },
-        {
-          "name": "Seattle Seahawks",
-          "bid": 0.06,
-          "ask": 0.08
         },
         {
           "name": "Baltimore Ravens",
@@ -412,6 +368,11 @@
           "name": "Denver Broncos",
           "bid": 0.048,
           "ask": 0.049
+        },
+        {
+          "name": "Philadelphia Eagles",
+          "bid": 0.045,
+          "ask": 0.046
         }
       ]
     },
@@ -439,7 +400,7 @@
         },
         {
           "name": "Marco Rubio",
-          "bid": 0.194,
+          "bid": 0.193,
           "ask": 0.195
         },
         {
@@ -539,10 +500,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.853,
-      "grossPP": 14.7,
-      "feePP": 2.53,
-      "netPP": 12.17,
+      "sumProb": 0.856,
+      "grossPP": 14.4,
+      "feePP": 2.55,
+      "netPP": 11.85,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x447f0bc59f46826a48dcf0cc15bf0c68b7ee8bb104d08e2d5a3cfd7ce7427b00",
@@ -562,44 +523,10 @@
         {
           "name": "Pakistan",
           "bid": 0.104,
-          "ask": 0.106
+          "ask": 0.109
         },
         {
           "name": "Russia",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.922,
-      "grossPP": 7.8,
-      "feePP": 0.41,
-      "netPP": 7.39,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x59b53bb5b9d8dce21926b3e8efaa862d9ea9637d575796884656330a3a382f00",
-      "event": "Highest temperature in Wellington on August 26?",
-      "slug": "highest-temperature-in-wellington-on-august-26-2026",
-      "endDate": "2026-08-26T12:00:00Z",
-      "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "16°C",
-          "bid": 0.44,
-          "ask": 0.92
-        },
-        {
-          "name": "15°C",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "14°C",
           "bid": null,
           "ask": 0.001
         }
