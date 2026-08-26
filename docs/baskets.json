@@ -1,44 +1,10 @@
 {
-  "generatedAt": "2026-08-26 03:15 UTC",
+  "generatedAt": "2026-08-26 04:51 UTC",
   "scanned": 600,
   "count": 15,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
-    {
-      "side": "buy",
-      "sumProb": 0.003,
-      "grossPP": 99.7,
-      "feePP": 0.02,
-      "netPP": 99.69,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x8a7670f896643fbaaa60eafe1b0fea8511e97232fcd57060432e324858d7b400",
-      "event": "Independiente del Valle vs. CD Tolima - Exact Score",
-      "slug": "lib-ind1-tol-2026-08-18-exact-score",
-      "endDate": "2026-08-26T00:30:00Z",
-      "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Independiente del Valle 2 - 2 CD Tolima",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "Independiente del Valle 1 - 3 CD Tolima",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "Independiente del Valle 2 - 3 CD Tolima",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
     {
       "side": "buy",
       "sumProb": 0.004,
@@ -109,17 +75,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.023,
-      "grossPP": 97.7,
-      "feePP": 0.11,
-      "netPP": 97.59,
+      "sumProb": 0.025,
+      "grossPP": 97.5,
+      "feePP": 0.12,
+      "netPP": 97.38,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x4c083525d55c8c9ead1e9624264d906b94e845fd3a1f4adc3b3f8b85a6750000",
       "event": "Elon Musk # tweets August 25 - September 1, 2026?",
       "slug": "elon-musk-of-tweets-august-25-september-1-2026",
       "endDate": "2026-09-01T16:00:00Z",
-      "n": 5,
+      "n": 6,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -127,17 +93,17 @@
         {
           "name": "100-119",
           "bid": 0.006,
-          "ask": 0.007
+          "ask": 0.008
         },
         {
           "name": "400-419",
-          "bid": 0.003,
-          "ask": 0.005
+          "bid": 0.002,
+          "ask": 0.004
         },
         {
           "name": "380-399",
-          "bid": 0.004,
-          "ask": 0.005
+          "bid": 0.003,
+          "ask": 0.004
         },
         {
           "name": "80-99",
@@ -147,6 +113,11 @@
         {
           "name": "500+",
           "bid": 0.002,
+          "ask": 0.003
+        },
+        {
+          "name": "480-499",
+          "bid": 0.001,
           "ask": 0.003
         }
       ]
@@ -192,35 +163,35 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.203,
-      "grossPP": 79.7,
-      "feePP": 0.61,
-      "netPP": 79.09,
+      "sumProb": 0.158,
+      "grossPP": 84.2,
+      "feePP": 0.79,
+      "netPP": 83.41,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x697ad5ad79df81b98b58ef5ea0ff713d40397e526b98bd36fbe57d4be4365000",
-      "event": "EPL: 2027 Champion",
-      "slug": "epl-2027-champion-20260701200428749",
-      "endDate": "2027-05-30T23:59:00Z",
+      "negRiskMarketID": "0xedd5dbedc46d59118b869bae03d13ab0880cf02b880555ff20c92d8b5c317b00",
+      "event": "Highest temperature in Kuala Lumpur on August 26?",
+      "slug": "highest-temperature-in-kuala-lumpur-on-august-26-2026",
+      "endDate": "2026-08-26T12:00:00Z",
       "n": 3,
-      "completeBid": true,
+      "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Manchester City",
-          "bid": 0.18,
-          "ask": 0.19
+          "name": "30°C",
+          "bid": 0.111,
+          "ask": 0.135
         },
         {
-          "name": "Brighton",
+          "name": "29°C",
           "bid": 0.006,
-          "ask": 0.007
+          "ask": 0.022
         },
         {
-          "name": "Aston Villa",
-          "bid": 0.005,
-          "ask": 0.006
+          "name": "28°C",
+          "bid": null,
+          "ask": 0.001
         }
       ]
     },
@@ -265,17 +236,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.488,
-      "grossPP": 51.2,
-      "feePP": 1.95,
-      "netPP": 49.25,
+      "sumProb": 0.506,
+      "grossPP": 49.4,
+      "feePP": 2.02,
+      "netPP": 47.38,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
       "event": "Democratic Presidential Nominee 2028",
       "slug": "democratic-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 9,
+      "n": 11,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -306,9 +277,9 @@
           "ask": 0.023
         },
         {
-          "name": "Cory Booker",
-          "bid": 0.005,
-          "ask": 0.006
+          "name": "Wes Moore",
+          "bid": 0.013,
+          "ask": 0.016
         }
       ]
     },
@@ -348,55 +319,6 @@
           "name": "Inner Circle",
           "bid": 0.009,
           "ask": 0.02
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.606,
-      "grossPP": 39.4,
-      "feePP": 1.82,
-      "netPP": 37.58,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
-      "event": "Pro Football: 2027 Champion",
-      "slug": "pro-football-2027-champion-20260729185915366",
-      "endDate": "2027-02-14T23:55:00Z",
-      "n": 12,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Los Angeles Rams",
-          "bid": 0.14,
-          "ask": 0.15
-        },
-        {
-          "name": "Seattle Seahawks",
-          "bid": 0.07,
-          "ask": 0.08
-        },
-        {
-          "name": "Baltimore Ravens",
-          "bid": 0.073,
-          "ask": 0.074
-        },
-        {
-          "name": "Kansas City Chiefs",
-          "bid": 0.061,
-          "ask": 0.062
-        },
-        {
-          "name": "Dallas Cowboys",
-          "bid": 0.056,
-          "ask": 0.057
-        },
-        {
-          "name": "Philadelphia Eagles",
-          "bid": 0.045,
-          "ask": 0.046
         }
       ]
     },
@@ -451,6 +373,55 @@
     },
     {
       "side": "buy",
+      "sumProb": 0.695,
+      "grossPP": 30.5,
+      "feePP": 2.08,
+      "netPP": 28.42,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
+      "event": "Pro Football: 2027 Champion",
+      "slug": "pro-football-2027-champion-20260729185915366",
+      "endDate": "2027-02-14T23:55:00Z",
+      "n": 14,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Los Angeles Rams",
+          "bid": 0.14,
+          "ask": 0.15
+        },
+        {
+          "name": "Seattle Seahawks",
+          "bid": 0.06,
+          "ask": 0.08
+        },
+        {
+          "name": "Baltimore Ravens",
+          "bid": 0.073,
+          "ask": 0.074
+        },
+        {
+          "name": "Kansas City Chiefs",
+          "bid": 0.061,
+          "ask": 0.062
+        },
+        {
+          "name": "Dallas Cowboys",
+          "bid": 0.056,
+          "ask": 0.057
+        },
+        {
+          "name": "Denver Broncos",
+          "bid": 0.048,
+          "ask": 0.049
+        }
+      ]
+    },
+    {
+      "side": "buy",
       "sumProb": 0.694,
       "grossPP": 30.6,
       "feePP": 2.78,
@@ -480,6 +451,40 @@
           "name": "Tucker Carlson",
           "bid": 0.025,
           "ask": 0.026
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.865,
+      "grossPP": 13.5,
+      "feePP": 0.56,
+      "netPP": 12.94,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x45ec1f7704d0ddd047e70443e830028d8801671283883ad1b46a29659488b600",
+      "event": "Venezuela leader end of 2026?",
+      "slug": "venezuela-leader-end-of-2026",
+      "endDate": "2026-12-31T00:00:00Z",
+      "n": 3,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Nicolás Maduro",
+          "bid": 0.862,
+          "ask": 0.863
+        },
+        {
+          "name": "Dan Caine",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "Richard Grenell",
+          "bid": null,
+          "ask": 0.001
         }
       ]
     },
@@ -558,10 +563,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.946,
-      "grossPP": 5.4,
+      "sumProb": 0.945,
+      "grossPP": 5.5,
       "feePP": 2.16,
-      "netPP": 3.24,
+      "netPP": 3.34,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
@@ -581,7 +586,7 @@
         {
           "name": "Lamine Yamal",
           "bid": 0.163,
-          "ask": 0.165
+          "ask": 0.164
         },
         {
           "name": "Rodri",
