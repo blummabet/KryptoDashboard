@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-25 23:35 UTC",
+  "generatedAt": "2026-08-26 01:53 UTC",
   "scanned": 600,
-  "count": 12,
+  "count": 14,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -36,6 +36,40 @@
           "name": "Feyenoord",
           "bid": 0.001,
           "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.01,
+      "grossPP": 99.0,
+      "feePP": 0.05,
+      "netPP": 98.95,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x4c083525d55c8c9ead1e9624264d906b94e845fd3a1f4adc3b3f8b85a6750000",
+      "event": "Elon Musk # tweets August 25 - September 1, 2026?",
+      "slug": "elon-musk-of-tweets-august-25-september-1-2026",
+      "endDate": "2026-09-01T16:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "400-419",
+          "bid": 0.002,
+          "ask": 0.004
+        },
+        {
+          "name": "80-99",
+          "bid": 0.001,
+          "ask": 0.003
+        },
+        {
+          "name": "500+",
+          "bid": 0.002,
+          "ask": 0.003
         }
       ]
     },
@@ -77,12 +111,12 @@
           "ask": 0.011
         },
         {
-          "name": "Elissa Slotkin",
+          "name": "Adam Schiff",
           "bid": 0.001,
           "ask": 0.002
         },
         {
-          "name": "Rick Scott",
+          "name": "Elissa Slotkin",
           "bid": 0.001,
           "ask": 0.002
         }
@@ -168,17 +202,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.468,
-      "grossPP": 53.2,
-      "feePP": 1.87,
-      "netPP": 51.33,
+      "sumProb": 0.486,
+      "grossPP": 51.4,
+      "feePP": 1.94,
+      "netPP": 49.46,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
       "event": "Democratic Presidential Nominee 2028",
       "slug": "democratic-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 10,
+      "n": 8,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -199,6 +233,11 @@
           "ask": 0.075
         },
         {
+          "name": "James Talarico",
+          "bid": 0.023,
+          "ask": 0.024
+        },
+        {
           "name": "Ro Khanna",
           "bid": 0.022,
           "ask": 0.023
@@ -207,54 +246,15 @@
           "name": "Cory Booker",
           "bid": 0.005,
           "ask": 0.006
-        },
-        {
-          "name": "Andrew Yang",
-          "bid": 0.001,
-          "ask": 0.002
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.52,
-      "grossPP": 48.0,
-      "feePP": 2.6,
-      "netPP": 45.4,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xdaac803f0d39f726edf612f3356424346185613e245b42879679073e85c21300",
-      "event": "BLAST Open Porto 2026: Winner",
-      "slug": "blast-open-porto-2026-winner-20260806201117422",
-      "endDate": null,
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Spirit",
-          "bid": 0.26,
-          "ask": 0.27
-        },
-        {
-          "name": "Falcons",
-          "bid": 0.19,
-          "ask": 0.2
-        },
-        {
-          "name": "FUT",
-          "bid": 0.04,
-          "ask": 0.05
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.534,
-      "grossPP": 46.6,
+      "sumProb": 0.532,
+      "grossPP": 46.8,
       "feePP": 1.6,
-      "netPP": 45.0,
+      "netPP": 45.2,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
@@ -287,14 +287,97 @@
           "ask": 0.057
         },
         {
-          "name": "Houston Texans",
-          "bid": 0.047,
-          "ask": 0.048
+          "name": "Philadelphia Eagles",
+          "bid": 0.045,
+          "ask": 0.046
         },
         {
           "name": "Detroit Lions",
           "bid": 0.041,
           "ask": 0.042
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.54,
+      "grossPP": 46.0,
+      "feePP": 2.7,
+      "netPP": 43.3,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xdaac803f0d39f726edf612f3356424346185613e245b42879679073e85c21300",
+      "event": "BLAST Open Porto 2026: Winner",
+      "slug": "blast-open-porto-2026-winner-20260806201117422",
+      "endDate": null,
+      "n": 4,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Spirit",
+          "bid": 0.26,
+          "ask": 0.27
+        },
+        {
+          "name": "Falcons",
+          "bid": 0.19,
+          "ask": 0.2
+        },
+        {
+          "name": "FUT",
+          "bid": 0.04,
+          "ask": 0.05
+        },
+        {
+          "name": "Inner Circle",
+          "bid": 0.009,
+          "ask": 0.02
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.614,
+      "grossPP": 38.6,
+      "feePP": 2.46,
+      "netPP": 36.14,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
+      "event": "Next French Presidential Election",
+      "slug": "next-french-presidential-election",
+      "endDate": "2027-04-30T00:00:00Z",
+      "n": 5,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Marine Le Pen",
+          "bid": 0.332,
+          "ask": 0.333
+        },
+        {
+          "name": "Édouard Philippe",
+          "bid": 0.24,
+          "ask": 0.25
+        },
+        {
+          "name": "Jordan Bardella",
+          "bid": 0.026,
+          "ask": 0.027
+        },
+        {
+          "name": "Jean Castex",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "Xavier Bertrand",
+          "bid": 0.001,
+          "ask": 0.002
         }
       ]
     },
@@ -331,12 +414,12 @@
           "ask": 0.028
         },
         {
-          "name": "Tom Cotton",
+          "name": "Doug Burgum",
           "bid": 0.001,
           "ask": 0.002
         },
         {
-          "name": "Doug Burgum",
+          "name": "Tom Cotton",
           "bid": 0.001,
           "ask": 0.002
         }
@@ -344,66 +427,51 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.76,
-      "grossPP": 24.0,
-      "feePP": 3.04,
-      "netPP": 20.96,
+      "sumProb": 0.856,
+      "grossPP": 14.4,
+      "feePP": 2.55,
+      "netPP": 11.85,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
-      "event": "Next French Presidential Election",
-      "slug": "next-french-presidential-election",
-      "endDate": "2027-04-30T00:00:00Z",
-      "n": 6,
-      "completeBid": true,
+      "negRiskMarketID": "0x447f0bc59f46826a48dcf0cc15bf0c68b7ee8bb104d08e2d5a3cfd7ce7427b00",
+      "event": "Where will the next next round of US-Iran peace talks be...?",
+      "slug": "where-will-the-next-next-round-of-us-iran-peace-talks-beptptpt-20260623023740663",
+      "endDate": "2026-09-30T23:59:00Z",
+      "n": 3,
+      "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Marine Le Pen",
-          "bid": 0.328,
-          "ask": 0.329
+          "name": "No Meeting by September 30",
+          "bid": 0.745,
+          "ask": 0.746
         },
         {
-          "name": "Édouard Philippe",
-          "bid": 0.24,
-          "ask": 0.25
+          "name": "Pakistan",
+          "bid": 0.104,
+          "ask": 0.109
         },
         {
-          "name": "Jean-Luc Mélenchon",
-          "bid": 0.14,
-          "ask": 0.15
-        },
-        {
-          "name": "Jordan Bardella",
-          "bid": 0.026,
-          "ask": 0.027
-        },
-        {
-          "name": "Jean Castex",
-          "bid": 0.001,
-          "ask": 0.002
-        },
-        {
-          "name": "Xavier Bertrand",
-          "bid": 0.001,
-          "ask": 0.002
+          "name": "Russia",
+          "bid": null,
+          "ask": 0.001
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.904,
-      "grossPP": 9.6,
-      "feePP": 0.87,
-      "netPP": 8.73,
+      "sumProb": 0.897,
+      "grossPP": 10.3,
+      "feePP": 0.84,
+      "netPP": 9.46,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xdcd7daabcacdc4ecf4f9a48d0a2708b52f356dd086c8070992136da62eb72b00",
       "event": "How many Fed rate cuts in 2026?",
       "slug": "how-many-fed-rate-cuts-in-2026",
       "endDate": "2026-12-31T00:00:00Z",
-      "n": 4,
+      "n": 3,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -416,12 +484,7 @@
         {
           "name": "2 (50 bps)",
           "bid": 0.027,
-          "ask": 0.029
-        },
-        {
-          "name": "3 (75 bps)",
-          "bid": 0.004,
-          "ask": 0.006
+          "ask": 0.028
         },
         {
           "name": "4 (100 bps)",
@@ -432,10 +495,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.941,
-      "grossPP": 5.9,
-      "feePP": 2.15,
-      "netPP": 3.76,
+      "sumProb": 0.945,
+      "grossPP": 5.5,
+      "feePP": 2.16,
+      "netPP": 3.34,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
@@ -454,8 +517,8 @@
         },
         {
           "name": "Lamine Yamal",
-          "bid": 0.155,
-          "ask": 0.16
+          "bid": 0.162,
+          "ask": 0.164
         },
         {
           "name": "Rodri",
@@ -469,17 +532,17 @@
         },
         {
           "name": "Khvicha Kvaratskhelia",
-          "bid": 0.021,
+          "bid": 0.022,
           "ask": 0.023
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.951,
-      "grossPP": 4.9,
-      "feePP": 2.85,
-      "netPP": 2.05,
+      "sumProb": 0.947,
+      "grossPP": 5.3,
+      "feePP": 2.84,
+      "netPP": 2.46,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x7db74de8403823823d4624b19d2b08fcbe53edc54e46c4765156543179a61100",
@@ -499,12 +562,12 @@
         {
           "name": "Alexander Zverev",
           "bid": 0.205,
-          "ask": 0.206
+          "ask": 0.208
         },
         {
           "name": "Novak Djokovic",
-          "bid": 0.107,
-          "ask": 0.114
+          "bid": 0.102,
+          "ask": 0.107
         },
         {
           "name": "Ben Shelton",
@@ -513,12 +576,12 @@
         },
         {
           "name": "Arthur Fils",
-          "bid": 0.069,
-          "ask": 0.07
+          "bid": 0.07,
+          "ask": 0.071
         },
         {
           "name": "Taylor Fritz",
-          "bid": 0.055,
+          "bid": 0.056,
           "ask": 0.058
         }
       ]
