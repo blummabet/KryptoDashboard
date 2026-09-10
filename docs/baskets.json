@@ -1,16 +1,50 @@
 {
-  "generatedAt": "2026-09-09 21:40 UTC",
+  "generatedAt": "2026-09-10 00:06 UTC",
   "scanned": 600,
-  "count": 8,
+  "count": 9,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
     {
       "side": "buy",
-      "sumProb": 0.016,
-      "grossPP": 98.4,
-      "feePP": 0.05,
-      "netPP": 98.35,
+      "sumProb": 0.008,
+      "grossPP": 99.2,
+      "feePP": 0.03,
+      "netPP": 99.17,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xd1dae9b7a4d2dc2ee926122b07bde454e05943d4ba9c9b4e0ebf4da9da4aa700",
+      "event": "Largest Company end of December 2026?",
+      "slug": "largest-company-end-of-december-2026",
+      "endDate": "2026-12-31T00:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Microsoft",
+          "bid": 0.003,
+          "ask": 0.004
+        },
+        {
+          "name": "Amazon",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "Tesla",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.083,
+      "grossPP": 91.7,
+      "feePP": 0.25,
+      "netPP": 91.45,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x496f860da0559909aec3c666274320407981a99f6236c32db871c57c7d38b100",
@@ -23,78 +57,29 @@
       "tradable": false,
       "top": [
         {
+          "name": "Borussia Dortmund",
+          "bid": 0.05,
+          "ask": 0.06
+        },
+        {
+          "name": "Schalke 04",
+          "bid": 0.002,
+          "ask": 0.01
+        },
+        {
           "name": "TSG Hoffenheim",
           "bid": 0.004,
-          "ask": 0.005
+          "ask": 0.006
+        },
+        {
+          "name": "Hamburger SV",
+          "bid": 0.002,
+          "ask": 0.004
         },
         {
           "name": "Borussia Mönchengladbach",
           "bid": 0.002,
           "ask": 0.003
-        },
-        {
-          "name": "Schalke 04",
-          "bid": 0.002,
-          "ask": 0.003
-        },
-        {
-          "name": "1. FC Köln",
-          "bid": 0.002,
-          "ask": 0.003
-        },
-        {
-          "name": "Werder Bremen",
-          "bid": 0.001,
-          "ask": 0.002
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.035,
-      "grossPP": 96.5,
-      "feePP": 0.14,
-      "netPP": 96.36,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
-      "event": "Republican Presidential Nominee 2028",
-      "slug": "republican-presidential-nominee-2028",
-      "endDate": "2028-11-07T00:00:00Z",
-      "n": 6,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Donald Trump Jr.",
-          "bid": 0.015,
-          "ask": 0.016
-        },
-        {
-          "name": "Pete Hegseth",
-          "bid": 0.004,
-          "ask": 0.006
-        },
-        {
-          "name": "Glenn Youngkin",
-          "bid": 0.004,
-          "ask": 0.005
-        },
-        {
-          "name": "Josh Hawley",
-          "bid": 0.003,
-          "ask": 0.004
-        },
-        {
-          "name": "Mike Pence",
-          "bid": 0.001,
-          "ask": 0.002
-        },
-        {
-          "name": "Tom Cotton",
-          "bid": null,
-          "ask": 0.002
         }
       ]
     },
@@ -117,7 +102,7 @@
       "top": [
         {
           "name": "Philadelphia 76ers",
-          "bid": 0.113,
+          "bid": 0.112,
           "ask": 0.114
         },
         {
@@ -144,69 +129,79 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.191,
-      "grossPP": 80.9,
-      "feePP": 0.76,
-      "netPP": 80.14,
+      "sumProb": 0.224,
+      "grossPP": 77.6,
+      "feePP": 0.9,
+      "netPP": 76.7,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
-      "event": "Presidential Election Winner 2028",
-      "slug": "presidential-election-winner-2028",
+      "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
+      "event": "Republican Presidential Nominee 2028",
+      "slug": "republican-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 3,
-      "completeBid": true,
+      "n": 6,
+      "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "Marco Rubio",
-          "bid": 0.099,
-          "ask": 0.1
+          "bid": 0.193,
+          "ask": 0.195
         },
         {
-          "name": "Gavin Newsom",
-          "bid": 0.073,
-          "ask": 0.074
+          "name": "Donald Trump Jr.",
+          "bid": 0.015,
+          "ask": 0.016
         },
         {
-          "name": "Dwayne 'The Rock' Johnson",
-          "bid": 0.016,
-          "ask": 0.017
+          "name": "Glenn Youngkin",
+          "bid": 0.004,
+          "ask": 0.005
+        },
+        {
+          "name": "Josh Hawley",
+          "bid": 0.003,
+          "ask": 0.004
+        },
+        {
+          "name": "Mike Pence",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "Tom Cotton",
+          "bid": null,
+          "ask": 0.002
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.461,
-      "grossPP": 53.9,
-      "feePP": 1.84,
-      "netPP": 52.06,
+      "sumProb": 0.382,
+      "grossPP": 61.8,
+      "feePP": 1.53,
+      "netPP": 60.27,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
       "event": "Democratic Presidential Nominee 2028",
       "slug": "democratic-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 6,
+      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "Jon Ossoff",
-          "bid": 0.157,
+          "bid": 0.158,
           "ask": 0.159
         },
         {
           "name": "Gavin Newsom",
           "bid": 0.144,
           "ask": 0.145
-        },
-        {
-          "name": "Kamala Harris",
-          "bid": 0.078,
-          "ask": 0.079
         },
         {
           "name": "Josh Shapiro",
@@ -227,50 +222,123 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.902,
-      "grossPP": 9.8,
-      "feePP": 2.71,
-      "netPP": 7.09,
+      "sumProb": 0.429,
+      "grossPP": 57.1,
+      "feePP": 1.72,
+      "netPP": 55.38,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xfb5399f0e1c4ea4d78a40957d48838ab5769fcec80592b8ce2ffd6e27a3cad00",
-      "event": "UEFA Champions League: 2027 Champion",
-      "slug": "uefa-champions-league-2027-champion-20260701202025549",
-      "endDate": "2027-05-30T23:59:00Z",
-      "n": 26,
+      "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
+      "event": "Presidential Election Winner 2028",
+      "slug": "presidential-election-winner-2028",
+      "endDate": "2028-11-07T00:00:00Z",
+      "n": 4,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Barcelona",
-          "bid": 0.18,
-          "ask": 0.2
+          "name": "JD Vance",
+          "bid": 0.243,
+          "ask": 0.244
         },
         {
-          "name": "Bayern Munich",
-          "bid": 0.15,
-          "ask": 0.16
+          "name": "Marco Rubio",
+          "bid": 0.093,
+          "ask": 0.094
         },
         {
-          "name": "Paris Saint-Germain",
+          "name": "Gavin Newsom",
+          "bid": 0.071,
+          "ask": 0.072
+        },
+        {
+          "name": "Dwayne 'The Rock' Johnson",
+          "bid": 0.016,
+          "ask": 0.019
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.653,
+      "grossPP": 34.7,
+      "feePP": 2.53,
+      "netPP": 32.17,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x7b95a46fc059d27ac3404325fd6280974d96949102201de57b8595f802d7fc00",
+      "event": "Balance of Power: 2026 Midterms",
+      "slug": "balance-of-power-2026-midterms",
+      "endDate": "2026-11-03T00:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Democrats Sweep",
+          "bid": 0.5,
+          "ask": 0.51
+        },
+        {
+          "name": "Republicans Sweep",
           "bid": 0.12,
           "ask": 0.13
         },
         {
-          "name": "Real Madrid",
-          "bid": 0.12,
-          "ask": 0.13
+          "name": "D Senate, R House",
+          "bid": 0.01,
+          "ask": 0.013
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.921,
+      "grossPP": 7.9,
+      "feePP": 5.58,
+      "netPP": 2.32,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x03c9c6d9f7b20aaa1f33f99bd24bd16e4e0e00cfa892dde097b800655490b200",
+      "event": "Prime Minister of Israel after the next election?",
+      "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
+      "endDate": "2026-12-31T00:00:00Z",
+      "n": 11,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Gadi Eizenkot",
+          "bid": 0.554,
+          "ask": 0.562
         },
         {
-          "name": "Manchester City",
-          "bid": 0.08,
-          "ask": 0.09
+          "name": "Benjamin Netanyahu",
+          "bid": 0.28,
+          "ask": 0.29
         },
         {
-          "name": "Liverpool",
-          "bid": 0.04,
-          "ask": 0.05
+          "name": "Avigdor Lieberman",
+          "bid": 0.041,
+          "ask": 0.042
+        },
+        {
+          "name": "Itamar Ben Gvir",
+          "bid": 0.007,
+          "ask": 0.012
+        },
+        {
+          "name": "Yoaz Hendel",
+          "bid": 0.003,
+          "ask": 0.005
+        },
+        {
+          "name": "Yossi Cohen",
+          "bid": 0.002,
+          "ask": 0.003
         }
       ]
     },
@@ -320,55 +388,6 @@
           "name": "Philadelphia Eagles",
           "bid": 0.049,
           "ask": 0.05
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.932,
-      "grossPP": 6.8,
-      "feePP": 5.59,
-      "netPP": 1.21,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x03c9c6d9f7b20aaa1f33f99bd24bd16e4e0e00cfa892dde097b800655490b200",
-      "event": "Prime Minister of Israel after the next election?",
-      "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
-      "endDate": "2026-12-31T00:00:00Z",
-      "n": 13,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Gadi Eizenkot",
-          "bid": 0.556,
-          "ask": 0.567
-        },
-        {
-          "name": "Benjamin Netanyahu",
-          "bid": 0.27,
-          "ask": 0.28
-        },
-        {
-          "name": "Avigdor Lieberman",
-          "bid": 0.041,
-          "ask": 0.042
-        },
-        {
-          "name": "Ofer Winter",
-          "bid": 0.012,
-          "ask": 0.013
-        },
-        {
-          "name": "Itamar Ben Gvir",
-          "bid": 0.007,
-          "ask": 0.012
-        },
-        {
-          "name": "Yoaz Hendel",
-          "bid": 0.004,
-          "ask": 0.005
         }
       ]
     }
