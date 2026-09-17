@@ -1,54 +1,44 @@
 {
-  "generatedAt": "2026-09-17 20:13 UTC",
+  "generatedAt": "2026-09-17 23:31 UTC",
   "scanned": 600,
-  "count": 11,
+  "count": 14,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
     {
       "side": "buy",
-      "sumProb": 0.007,
-      "grossPP": 99.3,
-      "feePP": 0.03,
-      "netPP": 99.27,
+      "sumProb": 0.004,
+      "grossPP": 99.6,
+      "feePP": 0.02,
+      "netPP": 99.58,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x4e976b9fb6b542e31a1a67701ef9e07db3542b344329e388f6dea9c90fab1500",
-      "event": "Manchester City FC vs. Norwich City FC - Exact Score",
-      "slug": "efl-mnc-nor-2026-09-17-exact-score",
-      "endDate": "2026-09-17T18:30:00Z",
-      "n": 7,
+      "negRiskMarketID": "0x7b8c2946e2c26a0f4c355030c139308ee0eb24d5de85dd68e94fd5250b76ba00",
+      "event": "Highest temperature in Miami on September 17?",
+      "slug": "highest-temperature-in-miami-on-september-17-2026",
+      "endDate": "2026-09-17T12:00:00Z",
+      "n": 4,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Manchester City FC 1 - 1 Norwich City FC",
+          "name": "80-81°F",
           "bid": null,
           "ask": 0.001
         },
         {
-          "name": "Manchester City FC 2 - 1 Norwich City FC",
+          "name": "86-87°F",
           "bid": null,
           "ask": 0.001
         },
         {
-          "name": "Manchester City FC 1 - 3 Norwich City FC",
+          "name": "82-83°F",
           "bid": null,
           "ask": 0.001
         },
         {
-          "name": "Manchester City FC 1 - 0 Norwich City FC",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "Manchester City FC 3 - 1 Norwich City FC",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "Manchester City FC 2 - 2 Norwich City FC",
+          "name": "88-89°F",
           "bid": null,
           "ask": 0.001
         }
@@ -56,17 +46,85 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.25,
-      "grossPP": 75.0,
-      "feePP": 0.75,
-      "netPP": 74.25,
+      "sumProb": 0.007,
+      "grossPP": 99.3,
+      "feePP": 0.02,
+      "netPP": 99.28,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x91e8fbf577df044df2cd5c39e9d309b0331820115fcb49947eb1f66f83dda900",
+      "event": "LALIGA: 2027 Champion",
+      "slug": "laliga-2027-champion-20260701200737375",
+      "endDate": "2027-05-30T23:59:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Villarreal",
+          "bid": 0.002,
+          "ask": 0.003
+        },
+        {
+          "name": "Celta Vigo",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "Sevilla",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.05,
+      "grossPP": 95.0,
+      "feePP": 0.25,
+      "netPP": 94.75,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x99556b233524858bc00a13324900895e5e9c3a082a47d41a8164aa1b1e475700",
+      "event": "Elon Musk # tweets September 15 - September 22, 2026?",
+      "slug": "elon-musk-of-tweets-september-15-september-22-2026",
+      "endDate": "2026-09-22T16:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "120-139",
+          "bid": 0.019,
+          "ask": 0.023
+        },
+        {
+          "name": "260-279",
+          "bid": 0.022,
+          "ask": 0.023
+        },
+        {
+          "name": "100-119",
+          "bid": 0.002,
+          "ask": 0.004
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.276,
+      "grossPP": 72.4,
+      "feePP": 0.83,
+      "netPP": 71.57,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xfb5399f0e1c4ea4d78a40957d48838ab5769fcec80592b8ce2ffd6e27a3cad00",
       "event": "UEFA Champions League: 2027 Champion",
       "slug": "uefa-champions-league-2027-champion-20260701202025549",
       "endDate": "2027-05-30T23:59:00Z",
-      "n": 5,
+      "n": 7,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -87,38 +145,43 @@
           "ask": 0.017
         },
         {
+          "name": "Borussia Dortmund",
+          "bid": 0.012,
+          "ask": 0.014
+        },
+        {
+          "name": "Como",
+          "bid": 0.011,
+          "ask": 0.012
+        },
+        {
           "name": "Fenerbahçe",
           "bid": 0.002,
           "ask": 0.003
-        },
-        {
-          "name": "Shakhtar Donetsk",
-          "bid": 0.001,
-          "ask": 0.002
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.278,
-      "grossPP": 72.2,
-      "feePP": 1.11,
-      "netPP": 71.09,
+      "sumProb": 0.28,
+      "grossPP": 72.0,
+      "feePP": 1.12,
+      "netPP": 70.88,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
       "event": "Democratic Presidential Nominee 2028",
       "slug": "democratic-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 7,
-      "completeBid": true,
+      "n": 8,
+      "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "Gavin Newsom",
           "bid": 0.159,
-          "ask": 0.16
+          "ask": 0.161
         },
         {
           "name": "Kamala Harris",
@@ -142,55 +205,6 @@
         },
         {
           "name": "Barack Obama",
-          "bid": 0.001,
-          "ask": 0.002
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.35,
-      "grossPP": 65.0,
-      "feePP": 1.4,
-      "netPP": 63.6,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
-      "event": "Next French Presidential Election",
-      "slug": "next-french-presidential-election",
-      "endDate": "2027-04-30T00:00:00Z",
-      "n": 12,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Édouard Philippe",
-          "bid": 0.24,
-          "ask": 0.25
-        },
-        {
-          "name": "François Hollande",
-          "bid": 0.048,
-          "ask": 0.053
-        },
-        {
-          "name": "Éric Zemmour",
-          "bid": 0.012,
-          "ask": 0.013
-        },
-        {
-          "name": "Sarah Knafo",
-          "bid": 0.012,
-          "ask": 0.013
-        },
-        {
-          "name": "Sébastien Lecornu",
-          "bid": 0.006,
-          "ask": 0.007
-        },
-        {
-          "name": "Ségolène Royal",
           "bid": 0.001,
           "ask": 0.002
         }
@@ -232,17 +246,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.378,
-      "grossPP": 62.2,
-      "feePP": 1.51,
-      "netPP": 60.69,
+      "sumProb": 0.412,
+      "grossPP": 58.8,
+      "feePP": 1.65,
+      "netPP": 57.15,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 10,
+      "n": 11,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -258,6 +272,11 @@
           "ask": 0.08
         },
         {
+          "name": "Pete Buttigieg",
+          "bid": 0.026,
+          "ask": 0.027
+        },
+        {
           "name": "Ron DeSantis",
           "bid": 0.023,
           "ask": 0.024
@@ -268,30 +287,74 @@
           "ask": 0.016
         },
         {
-          "name": "Andy Beshear",
-          "bid": 0.01,
-          "ask": 0.011
-        },
-        {
-          "name": "Wes Moore",
-          "bid": 0.008,
-          "ask": 0.009
+          "name": "Thomas Massie",
+          "bid": 0.011,
+          "ask": 0.012
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.503,
-      "grossPP": 49.7,
-      "feePP": 1.51,
-      "netPP": 48.19,
+      "sumProb": 0.47,
+      "grossPP": 53.0,
+      "feePP": 1.88,
+      "netPP": 51.12,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
+      "event": "Next French Presidential Election",
+      "slug": "next-french-presidential-election",
+      "endDate": "2027-04-30T00:00:00Z",
+      "n": 15,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Édouard Philippe",
+          "bid": 0.24,
+          "ask": 0.25
+        },
+        {
+          "name": "David Lisnard",
+          "bid": 0.081,
+          "ask": 0.083
+        },
+        {
+          "name": "François Hollande",
+          "bid": 0.049,
+          "ask": 0.053
+        },
+        {
+          "name": "Raphaël Glucksmann",
+          "bid": 0.018,
+          "ask": 0.019
+        },
+        {
+          "name": "Éric Zemmour",
+          "bid": 0.012,
+          "ask": 0.017
+        },
+        {
+          "name": "Bruno Retailleau",
+          "bid": 0.015,
+          "ask": 0.016
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.535,
+      "grossPP": 46.5,
+      "feePP": 1.6,
+      "netPP": 44.9,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
       "event": "Pro Football: 2027 Champion",
       "slug": "pro-football-2027-champion-20260729185915366",
       "endDate": "2027-02-14T23:55:00Z",
-      "n": 11,
+      "n": 12,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -313,8 +376,8 @@
         },
         {
           "name": "San Francisco 49ers",
-          "bid": 0.064,
-          "ask": 0.065
+          "bid": 0.063,
+          "ask": 0.064
         },
         {
           "name": "Cincinnati Bengals",
@@ -330,17 +393,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.521,
-      "grossPP": 47.9,
-      "feePP": 1.98,
-      "netPP": 45.92,
+      "sumProb": 0.55,
+      "grossPP": 45.0,
+      "feePP": 2.1,
+      "netPP": 42.9,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
       "event": "Republican Presidential Nominee 2028",
       "slug": "republican-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 4,
+      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -349,6 +412,11 @@
           "name": "J.D. Vance",
           "bid": 0.512,
           "ask": 0.513
+        },
+        {
+          "name": "Ron DeSantis",
+          "bid": 0.026,
+          "ask": 0.029
         },
         {
           "name": "Josh Hawley",
@@ -369,79 +437,123 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.555,
-      "grossPP": 44.5,
-      "feePP": 2.77,
-      "netPP": 41.72,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x70e922f29ff3c601a8d17268b641706bfa6af80a1cea76ad50f8fd1edb288c00",
-      "event": "Málaga CF vs. Villarreal CF - Exact Score",
-      "slug": "lal-mala-vil-2026-09-17-exact-score",
-      "endDate": "2026-09-17T19:30:00Z",
-      "n": 5,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Málaga CF 2 - 1 Villarreal CF",
-          "bid": 0.1,
-          "ask": 0.2
-        },
-        {
-          "name": "Málaga CF 1 - 2 Villarreal CF",
-          "bid": 0.08,
-          "ask": 0.18
-        },
-        {
-          "name": "Málaga CF 1 - 1 Villarreal CF",
-          "bid": null,
-          "ask": 0.16
-        },
-        {
-          "name": "Málaga CF 1 - 0 Villarreal CF",
-          "bid": null,
-          "ask": 0.009
-        },
-        {
-          "name": "Málaga CF 0 - 2 Villarreal CF",
-          "bid": 0.001,
-          "ask": 0.006
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.688,
-      "grossPP": 31.2,
-      "feePP": 2.75,
-      "netPP": 28.45,
+      "sumProb": 0.773,
+      "grossPP": 22.7,
+      "feePP": 3.09,
+      "netPP": 19.61,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x39fbd3d0ce494e60dce9704513928bdfcaa29f6fb349277a49daf7efc14ce700",
       "event": "Next Prime Minister of Romania?",
       "slug": "next-prime-minister-of-romania-732",
       "endDate": "2026-12-31T00:00:00Z",
-      "n": 3,
+      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "Siegfried Mureșan",
-          "bid": 0.382,
-          "ask": 0.408
+          "bid": 0.311,
+          "ask": 0.356
         },
         {
           "name": "Sorin Grindeanu",
-          "bid": 0.165,
-          "ask": 0.166
+          "bid": 0.186,
+          "ask": 0.21
         },
         {
           "name": "Alexandru Nazare",
-          "bid": 0.107,
-          "ask": 0.114
+          "bid": 0.108,
+          "ask": 0.126
+        },
+        {
+          "name": "Ilie Bolojan",
+          "bid": 0.035,
+          "ask": 0.043
+        },
+        {
+          "name": "Alexandru Rogobete",
+          "bid": 0.011,
+          "ask": 0.038
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.853,
+      "grossPP": 14.7,
+      "feePP": 4.27,
+      "netPP": 10.44,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xb4153d43b535da66b1099f5267aeb3ef659df46fe38de20a7040887b998cd300",
+      "event": "\"Resident Evil\" Opening Weekend Box Office",
+      "slug": "resident-evil-opening-weekend-box-office",
+      "endDate": "2026-09-20T12:00:00Z",
+      "n": 5,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "70m+",
+          "bid": 0.45,
+          "ask": 0.46
+        },
+        {
+          "name": "60-65m",
+          "bid": 0.133,
+          "ask": 0.155
+        },
+        {
+          "name": "55-60m",
+          "bid": 0.07,
+          "ask": 0.107
+        },
+        {
+          "name": "<50m",
+          "bid": 0.025,
+          "ask": 0.067
+        },
+        {
+          "name": "50-55m",
+          "bid": 0.02,
+          "ask": 0.064
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.919,
+      "grossPP": 8.1,
+      "feePP": 2.16,
+      "netPP": 5.94,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x89d3d94cf1556e3d2270a6b43488ebabadb35bf98b2ba720d4ab31c4ef454b00",
+      "event": "Best Chinese AI Company end of October?",
+      "slug": "best-chinese-ai-company-end-of-october",
+      "endDate": "2026-11-01T03:59:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Alibaba",
+          "bid": 0.68,
+          "ask": 0.69
+        },
+        {
+          "name": "Moonshot",
+          "bid": 0.13,
+          "ask": 0.15
+        },
+        {
+          "name": "Z.ai",
+          "bid": 0.033,
+          "ask": 0.079
         }
       ]
     },
