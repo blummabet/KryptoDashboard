@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-18T04:33:26Z",
+  "generatedAt": "2026-09-18T09:39:28Z",
   "summary": {
     "mode": "PAPER / DRY-RUN — kein echtes Geld",
-    "totalPnl": 3353.2,
-    "realizedPnl": 4641.27,
-    "unrealizedPnl": -1288.07,
-    "openCount": 32,
-    "closedCount": 1086,
-    "winRate": 0.475,
-    "roiPct": 4.3,
-    "stakedOpenUSD": 3200,
+    "totalPnl": 2995.07,
+    "realizedPnl": 4373.01,
+    "unrealizedPnl": -1377.94,
+    "openCount": 39,
+    "closedCount": 1089,
+    "winRate": 0.474,
+    "roiPct": 4.0,
+    "stakedOpenUSD": 3900,
     "stakeUSD": 100.0,
     "edgeFloorPP": 2.5,
-    "newMarketPnl": 1959.48,
-    "establishedPnl": 1393.72,
-    "newMarketCount": 299
+    "newMarketPnl": 1865.5,
+    "establishedPnl": 1129.57,
+    "newMarketCount": 303
   },
   "open": [
     {
@@ -22,11 +22,11 @@
       "family": "touch",
       "side": "NO",
       "entryPoly": 0.745,
-      "markPoly": 0.615,
-      "curEdgePP": -4.53,
+      "markPoly": 0.675,
+      "curEdgePP": -6.38,
       "entryEdgePP": -8.84,
-      "unrealPnl": 49.19,
-      "ageH": 77.4
+      "unrealPnl": 25.66,
+      "ageH": 82.5
     },
     {
       "market": "erreicht $120,000 bis 2027-01-01",
@@ -34,76 +34,164 @@
       "side": "NO",
       "entryPoly": 0.125,
       "markPoly": 0.055,
-      "curEdgePP": -1.38,
+      "curEdgePP": -1.04,
       "entryEdgePP": -4.74,
       "unrealPnl": 7.12,
-      "ageH": 326.3
+      "ageH": 331.4
     },
     {
       "market": "erreicht $90,000 bis 2027-01-01",
       "family": "touch",
       "side": "NO",
       "entryPoly": 0.465,
-      "markPoly": 0.415,
-      "curEdgePP": -3.84,
+      "markPoly": 0.435,
+      "curEdgePP": -3.04,
       "entryEdgePP": -6.61,
-      "unrealPnl": 6.09,
-      "ageH": 68.9
-    },
-    {
-      "market": "dip $65,000 bis 2027-01-01",
-      "family": "touch",
-      "side": "YES",
-      "entryPoly": 0.375,
-      "markPoly": 0.405,
-      "curEdgePP": 2.17,
-      "entryEdgePP": 6.3,
-      "unrealPnl": 5.37,
-      "ageH": 512.2
+      "unrealPnl": 2.35,
+      "ageH": 74.0
     },
     {
       "market": "erreicht $130,000 bis 2027-01-01",
       "family": "touch",
       "side": "NO",
       "entryPoly": 0.052,
-      "markPoly": 0.0475,
-      "curEdgePP": -2.43,
+      "markPoly": 0.0465,
+      "curEdgePP": -2.14,
       "entryEdgePP": -3.17,
-      "unrealPnl": 0.11,
-      "ageH": 30.4
+      "unrealPnl": 0.22,
+      "ageH": 35.5
+    },
+    {
+      "market": "über $80,000 · 2026-09-18",
+      "family": "above",
+      "side": "NO",
+      "entryPoly": 0.0475,
+      "markPoly": 0.0475,
+      "curEdgePP": null,
+      "entryEdgePP": -4.4,
+      "unrealPnl": -0.33,
+      "ageH": 0.0
+    },
+    {
+      "market": "dip $50,000 bis 2027-01-01",
+      "family": "touch",
+      "side": "YES",
+      "entryPoly": 0.095,
+      "markPoly": 0.095,
+      "curEdgePP": null,
+      "entryEdgePP": 3.27,
+      "unrealPnl": -0.67,
+      "ageH": 0.0
+    },
+    {
+      "market": "erreicht $87,500 bis 2026-10-01",
+      "family": "touch",
+      "side": "YES",
+      "entryPoly": 0.095,
+      "markPoly": 0.095,
+      "curEdgePP": null,
+      "entryEdgePP": 2.54,
+      "unrealPnl": -0.67,
+      "ageH": 0.0
+    },
+    {
+      "market": "über $80,000 · 2026-09-21",
+      "family": "above",
+      "side": "NO",
+      "entryPoly": 0.1835,
+      "markPoly": 0.1835,
+      "curEdgePP": null,
+      "entryEdgePP": -6.86,
+      "unrealPnl": -1.28,
+      "ageH": 0.0
+    },
+    {
+      "market": "über $76,000 · 2026-09-23",
+      "family": "above",
+      "side": "NO",
+      "entryPoly": 0.795,
+      "markPoly": 0.795,
+      "curEdgePP": null,
+      "entryEdgePP": -6.34,
+      "unrealPnl": -1.43,
+      "ageH": 0.0
+    },
+    {
+      "market": "über $80,000 · 2026-09-22",
+      "family": "above",
+      "side": "NO",
+      "entryPoly": 0.225,
+      "markPoly": 0.225,
+      "curEdgePP": null,
+      "entryEdgePP": -6.33,
+      "unrealPnl": -1.57,
+      "ageH": 0.0
+    },
+    {
+      "market": "über $80,000 · 2026-09-23",
+      "family": "above",
+      "side": "NO",
+      "entryPoly": 0.265,
+      "markPoly": 0.265,
+      "curEdgePP": null,
+      "entryEdgePP": -8.09,
+      "unrealPnl": -1.86,
+      "ageH": 0.0
+    },
+    {
+      "market": "dip $65,000 bis 2027-01-01",
+      "family": "touch",
+      "side": "YES",
+      "entryPoly": 0.375,
+      "markPoly": 0.375,
+      "curEdgePP": 3.26,
+      "entryEdgePP": 6.3,
+      "unrealPnl": -2.63,
+      "ageH": 517.3
+    },
+    {
+      "market": "über $78,000 · 2026-09-19",
+      "family": "above",
+      "side": "NO",
+      "entryPoly": 0.53,
+      "markPoly": 0.53,
+      "curEdgePP": null,
+      "entryEdgePP": -13.0,
+      "unrealPnl": -3.29,
+      "ageH": 0.0
+    },
+    {
+      "market": "über $78,000 · 2026-09-23",
+      "family": "above",
+      "side": "NO",
+      "entryPoly": 0.515,
+      "markPoly": 0.515,
+      "curEdgePP": null,
+      "entryEdgePP": -9.56,
+      "unrealPnl": -3.4,
+      "ageH": 0.0
+    },
+    {
+      "market": "über $78,000 · 2026-09-24",
+      "family": "above",
+      "side": "NO",
+      "entryPoly": 0.515,
+      "markPoly": 0.515,
+      "curEdgePP": null,
+      "entryEdgePP": -8.22,
+      "unrealPnl": -3.4,
+      "ageH": 0.0
     },
     {
       "market": "dip $70,000 bis 2027-01-01",
       "family": "touch",
       "side": "YES",
       "entryPoly": 0.605,
-      "markPoly": 0.62,
-      "curEdgePP": 1.1,
+      "markPoly": 0.575,
+      "curEdgePP": 2.28,
       "entryEdgePP": 1.01,
-      "unrealPnl": -0.29,
-      "ageH": 86.5
-    },
-    {
-      "market": "über $78,000 · 2026-09-18",
-      "family": "above",
-      "side": "NO",
-      "entryPoly": 0.2245,
-      "markPoly": 0.2245,
-      "curEdgePP": null,
-      "entryEdgePP": -5.54,
-      "unrealPnl": -1.57,
-      "ageH": 0.0
-    },
-    {
-      "market": "über $78,000 · 2026-09-20",
-      "family": "above",
-      "side": "NO",
-      "entryPoly": 0.215,
-      "markPoly": 0.305,
-      "curEdgePP": -4.71,
-      "entryEdgePP": -4.61,
-      "unrealPnl": -12.97,
-      "ageH": 11.7
+      "unrealPnl": -7.73,
+      "ageH": 91.6
     },
     {
       "market": "dip $55,000 bis 2027-01-01",
@@ -111,32 +199,10 @@
       "side": "YES",
       "entryPoly": 0.195,
       "markPoly": 0.165,
-      "curEdgePP": 2.82,
+      "curEdgePP": 1.8,
       "entryEdgePP": 2.61,
       "unrealPnl": -16.75,
-      "ageH": 68.9
-    },
-    {
-      "market": "über $78,000 · 2026-09-21",
-      "family": "above",
-      "side": "NO",
-      "entryPoly": 0.245,
-      "markPoly": 0.365,
-      "curEdgePP": -8.19,
-      "entryEdgePP": -6.23,
-      "unrealPnl": -17.61,
-      "ageH": 8.3
-    },
-    {
-      "market": "über $78,000 · 2026-09-22",
-      "family": "above",
-      "side": "NO",
-      "entryPoly": 0.255,
-      "markPoly": 0.375,
-      "curEdgePP": -7.22,
-      "entryEdgePP": -5.87,
-      "unrealPnl": -17.9,
-      "ageH": 17.0
+      "ageH": 74.0
     },
     {
       "market": "dip $60,000 bis 2027-01-01",
@@ -144,87 +210,87 @@
       "side": "YES",
       "entryPoly": 0.275,
       "markPoly": 0.225,
-      "curEdgePP": 6.33,
+      "curEdgePP": 5.05,
       "entryEdgePP": 1.47,
       "unrealPnl": -20.11,
-      "ageH": 77.4
-    },
-    {
-      "market": "erreicht $80,000 bis 2026-10-01",
-      "family": "touch",
-      "side": "NO",
-      "entryPoly": 0.445,
-      "markPoly": 0.555,
-      "curEdgePP": -3.09,
-      "entryEdgePP": -6.34,
-      "unrealPnl": -22.94,
-      "ageH": 30.4
+      "ageH": 82.5
     },
     {
       "market": "dip $45,000 bis 2027-01-01",
       "family": "touch",
       "side": "YES",
       "entryPoly": 0.08,
-      "markPoly": 0.06,
-      "curEdgePP": 3.53,
+      "markPoly": 0.055,
+      "curEdgePP": 3.86,
       "entryEdgePP": 3.3,
-      "unrealPnl": -25.56,
-      "ageH": 667.6
+      "unrealPnl": -31.81,
+      "ageH": 672.7
     },
     {
-      "market": "über $76,000 · 2026-09-22",
+      "market": "über $78,000 · 2026-09-22",
       "family": "above",
       "side": "NO",
-      "entryPoly": 0.565,
+      "entryPoly": 0.255,
+      "markPoly": 0.52,
+      "curEdgePP": -7.79,
+      "entryEdgePP": -5.87,
+      "unrealPnl": -37.36,
+      "ageH": 22.1
+    },
+    {
+      "market": "über $78,000 · 2026-09-21",
+      "family": "above",
+      "side": "NO",
+      "entryPoly": 0.245,
+      "markPoly": 0.52,
+      "curEdgePP": -10.04,
+      "entryEdgePP": -6.23,
+      "unrealPnl": -38.14,
+      "ageH": 13.4
+    },
+    {
+      "market": "über $78,000 · 2026-09-20",
+      "family": "above",
+      "side": "NO",
+      "entryPoly": 0.215,
+      "markPoly": 0.515,
+      "curEdgePP": -11.54,
+      "entryEdgePP": -4.61,
+      "unrealPnl": -39.72,
+      "ageH": 16.8
+    },
+    {
+      "market": "über $78,000 · 2026-09-18",
+      "family": "above",
+      "side": "NO",
+      "entryPoly": 0.2245,
+      "markPoly": 0.582,
+      "curEdgePP": -11.23,
+      "entryEdgePP": -5.54,
+      "unrealPnl": -47.67,
+      "ageH": 5.1
+    },
+    {
+      "market": "erreicht $80,000 bis 2026-10-01",
+      "family": "touch",
+      "side": "NO",
+      "entryPoly": 0.445,
       "markPoly": 0.715,
-      "curEdgePP": -6.54,
-      "entryEdgePP": -8.39,
-      "unrealPnl": -37.53,
-      "ageH": 17.0
+      "curEdgePP": -6.33,
+      "entryEdgePP": -6.34,
+      "unrealPnl": -51.77,
+      "ageH": 35.5
     },
     {
       "market": "über $74,000 · 2026-09-23",
       "family": "above",
       "side": "NO",
       "entryPoly": 0.845,
-      "markPoly": 0.91,
-      "curEdgePP": -4.1,
+      "markPoly": 0.93,
+      "curEdgePP": -1.77,
       "entryEdgePP": -4.43,
-      "unrealPnl": -43.03,
-      "ageH": 11.7
-    },
-    {
-      "market": "dip $72,500 bis 2026-10-01",
-      "family": "touch",
-      "side": "YES",
-      "entryPoly": 0.475,
-      "markPoly": 0.265,
-      "curEdgePP": 4.43,
-      "entryEdgePP": 3.0,
-      "unrealPnl": -47.54,
-      "ageH": 30.4
-    },
-    {
-      "market": "über $74,000 · 2026-09-22",
-      "family": "above",
-      "side": "NO",
-      "entryPoly": 0.84,
-      "markPoly": 0.92,
-      "curEdgePP": -2.51,
-      "entryEdgePP": -5.03,
-      "unrealPnl": -51.12,
-      "ageH": 17.0
-    },
-    {
-      "market": "über $76,000 · 2026-09-21",
-      "family": "above",
-      "side": "NO",
-      "entryPoly": 0.495,
-      "markPoly": 0.75,
-      "curEdgePP": -2.49,
-      "entryEdgePP": -8.0,
-      "unrealPnl": -53.96,
-      "ageH": 30.4
+      "unrealPnl": -55.93,
+      "ageH": 16.8
     },
     {
       "market": "dip $57,500 bis 2026-10-01",
@@ -232,32 +298,54 @@
       "side": "YES",
       "entryPoly": 0.02,
       "markPoly": 0.0085,
-      "curEdgePP": 1.14,
+      "curEdgePP": 0.76,
       "entryEdgePP": 2.63,
       "unrealPnl": -57.64,
-      "ageH": 180.2
+      "ageH": 185.3
     },
     {
-      "market": "dip $70,000 bis 2026-10-01",
+      "market": "dip $72,500 bis 2026-10-01",
       "family": "touch",
       "side": "YES",
-      "entryPoly": 0.295,
-      "markPoly": 0.125,
-      "curEdgePP": 2.35,
-      "entryEdgePP": 2.42,
-      "unrealPnl": -59.7,
-      "ageH": 180.2
+      "entryPoly": 0.475,
+      "markPoly": 0.205,
+      "curEdgePP": 4.88,
+      "entryEdgePP": 3.0,
+      "unrealPnl": -60.17,
+      "ageH": 35.5
     },
     {
       "market": "dip $25,000 bis 2027-01-01",
       "family": "touch",
       "side": "YES",
       "entryPoly": 0.0435,
-      "markPoly": 0.017,
-      "curEdgePP": 4.06,
+      "markPoly": 0.0165,
+      "curEdgePP": 4.13,
       "entryEdgePP": 10.95,
-      "unrealPnl": -61.22,
-      "ageH": 1234.1
+      "unrealPnl": -62.37,
+      "ageH": 1239.2
+    },
+    {
+      "market": "über $76,000 · 2026-09-22",
+      "family": "above",
+      "side": "NO",
+      "entryPoly": 0.565,
+      "markPoly": 0.83,
+      "curEdgePP": -3.27,
+      "entryEdgePP": -8.39,
+      "unrealPnl": -63.97,
+      "ageH": 22.1
+    },
+    {
+      "market": "erreicht $97,500 bis 2026-10-01",
+      "family": "touch",
+      "side": "YES",
+      "entryPoly": 0.0345,
+      "markPoly": 0.0125,
+      "curEdgePP": 3.86,
+      "entryEdgePP": 3.15,
+      "unrealPnl": -64.01,
+      "ageH": 190.5
     },
     {
       "market": "über $88,000 · 2026-09-19",
@@ -268,84 +356,73 @@
       "curEdgePP": 2.76,
       "entryEdgePP": 3.93,
       "unrealPnl": -65.99,
-      "ageH": 81.3
+      "ageH": 86.4
     },
     {
-      "market": "dip $60,000 bis 2026-10-01",
+      "market": "dip $70,000 bis 2026-10-01",
       "family": "touch",
       "side": "YES",
-      "entryPoly": 0.0355,
-      "markPoly": 0.0115,
-      "curEdgePP": 2.79,
-      "entryEdgePP": 2.61,
-      "unrealPnl": -67.86,
-      "ageH": 185.4
-    },
-    {
-      "market": "erreicht $97,500 bis 2026-10-01",
-      "family": "touch",
-      "side": "YES",
-      "entryPoly": 0.0345,
-      "markPoly": 0.011,
-      "curEdgePP": 2.54,
-      "entryEdgePP": 3.15,
-      "unrealPnl": -68.36,
-      "ageH": 185.4
-    },
-    {
-      "market": "über $76,000 · 2026-09-19",
-      "family": "above",
-      "side": "NO",
-      "entryPoly": 0.49,
-      "markPoly": 0.855,
-      "curEdgePP": -6.16,
-      "entryEdgePP": -7.75,
-      "unrealPnl": -75.0,
-      "ageH": 30.4
+      "entryPoly": 0.295,
+      "markPoly": 0.105,
+      "curEdgePP": 1.66,
+      "entryEdgePP": 2.42,
+      "unrealPnl": -66.48,
+      "ageH": 185.3
     },
     {
       "market": "erreicht $100,000 bis 2026-10-01",
       "family": "touch",
       "side": "YES",
       "entryPoly": 0.024,
-      "markPoly": 0.0055,
-      "curEdgePP": 2.52,
+      "markPoly": 0.0065,
+      "curEdgePP": 3.6,
       "entryEdgePP": 2.59,
-      "unrealPnl": -77.25,
-      "ageH": 185.4
+      "unrealPnl": -73.09,
+      "ageH": 190.5
+    },
+    {
+      "market": "über $76,000 · 2026-09-21",
+      "family": "above",
+      "side": "NO",
+      "entryPoly": 0.495,
+      "markPoly": 0.875,
+      "curEdgePP": -1.25,
+      "entryEdgePP": -8.0,
+      "unrealPnl": -78.71,
+      "ageH": 35.5
+    },
+    {
+      "market": "dip $60,000 bis 2026-10-01",
+      "family": "touch",
+      "side": "YES",
+      "entryPoly": 0.0355,
+      "markPoly": 0.0075,
+      "curEdgePP": 3.18,
+      "entryEdgePP": 2.61,
+      "unrealPnl": -79.12,
+      "ageH": 190.5
     },
     {
       "market": "dip $62,500 bis 2026-10-01",
       "family": "touch",
       "side": "YES",
       "entryPoly": 0.066,
-      "markPoly": 0.014,
-      "curEdgePP": 6.28,
+      "markPoly": 0.0125,
+      "curEdgePP": 6.73,
       "entryEdgePP": 4.64,
-      "unrealPnl": -79.25,
-      "ageH": 397.7
+      "unrealPnl": -81.52,
+      "ageH": 402.9
     },
     {
-      "market": "über $76,000 · 2026-09-18",
+      "market": "über $76,000 · 2026-09-19",
       "family": "above",
       "side": "NO",
-      "entryPoly": 0.615,
-      "markPoly": 0.925,
-      "curEdgePP": -4.35,
-      "entryEdgePP": -7.82,
-      "unrealPnl": -83.22,
-      "ageH": 17.0
-    },
-    {
-      "market": "über $74,000 · 2026-09-19",
-      "family": "above",
-      "side": "NO",
-      "entryPoly": 0.825,
-      "markPoly": 0.9875,
-      "curEdgePP": -1.1,
-      "entryEdgePP": -5.11,
-      "unrealPnl": -94.09,
-      "ageH": 30.4
+      "entryPoly": 0.49,
+      "markPoly": 0.958,
+      "curEdgePP": -2.95,
+      "entryEdgePP": -7.75,
+      "unrealPnl": -95.2,
+      "ageH": 35.5
     },
     {
       "market": "dip $50,000 bis 2026-08-01",
@@ -356,7 +433,7 @@
       "curEdgePP": 1.19,
       "entryEdgePP": 4.59,
       "unrealPnl": -97.86,
-      "ageH": 1813.5
+      "ageH": 1818.6
     },
     {
       "market": "dip $52,500 bis 2026-08-01",
@@ -367,10 +444,85 @@
       "curEdgePP": 3.4,
       "entryEdgePP": 5.08,
       "unrealPnl": -99.64,
-      "ageH": 1813.5
+      "ageH": 1818.6
     }
   ],
   "closed": [
+    {
+      "conditionId": "0xa851de1641adecf1abd07cbd1286bf2ab5e0b97e81c8d879739e0ee6edb1ce5b",
+      "slug": "bitcoin-above-74k-on-september-19-2026",
+      "market": "über $74,000 · 2026-09-19",
+      "family": "above",
+      "side": "NO",
+      "status": "CLOSED",
+      "tokenId": "11006307145152973202780067062640788704140133943772268198703592359190653311848",
+      "entryTs": "2026-09-16T22:06:43Z",
+      "entryPoly": 0.825,
+      "entryFair": 0.7862,
+      "entryEdgePP": -5.11,
+      "shares": 571.43,
+      "stakeUSD": 100.0,
+      "realShares": 28.5714,
+      "feePaid": 1.3,
+      "wasNew": false,
+      "markPoly": 0.9875,
+      "curEdgePP": -1.1,
+      "exitTs": "2026-09-18T09:39:28Z",
+      "exitMark": 0.9895,
+      "exitReason": "converged",
+      "realizedPnl": -95.3,
+      "roiPct": -95.3
+    },
+    {
+      "conditionId": "0x13c056520062a105051482ad4b2aa6c64bdd0d2bf518d0cb81b31ad9599f26c7",
+      "slug": "bitcoin-above-74k-on-september-22-2026",
+      "market": "über $74,000 · 2026-09-22",
+      "family": "above",
+      "side": "NO",
+      "status": "CLOSED",
+      "tokenId": "73303719510283158334768289933899217879758821192593873951309886826089547022684",
+      "entryTs": "2026-09-17T11:35:16Z",
+      "entryPoly": 0.84,
+      "entryFair": 0.8009,
+      "entryEdgePP": -5.03,
+      "shares": 625.0,
+      "stakeUSD": 100.0,
+      "realShares": 31.25,
+      "feePaid": 1.43,
+      "wasNew": true,
+      "markPoly": 0.92,
+      "curEdgePP": -2.51,
+      "exitTs": "2026-09-18T09:39:28Z",
+      "exitMark": 0.956,
+      "exitReason": "converged",
+      "realizedPnl": -73.93,
+      "roiPct": -73.9
+    },
+    {
+      "conditionId": "0x7c512ef012e86108c0da38ddca69593d5bfed55ebeb0232d15db6f53cf93ce86",
+      "slug": "bitcoin-above-76k-on-september-18-2026",
+      "market": "über $76,000 · 2026-09-18",
+      "family": "above",
+      "side": "NO",
+      "status": "CLOSED",
+      "tokenId": "66714336534484144728217500558572180803076791364689476936627714488426063118565",
+      "entryTs": "2026-09-17T11:35:16Z",
+      "entryPoly": 0.615,
+      "entryFair": 0.5638,
+      "entryEdgePP": -7.82,
+      "shares": 259.74,
+      "stakeUSD": 100.0,
+      "realShares": 12.987,
+      "feePaid": 2.8,
+      "wasNew": false,
+      "markPoly": 0.925,
+      "curEdgePP": -4.35,
+      "exitTs": "2026-09-18T09:39:28Z",
+      "exitMark": 0.9855,
+      "exitReason": "converged",
+      "realizedPnl": -99.03,
+      "roiPct": -99.0
+    },
     {
       "conditionId": "0xc3210fbb791fd5a4b847ea1eeb9d131d72c496f627d6ef4138d0e5036103af0c",
       "slug": "bitcoin-above-78k-on-september-18-2026",
@@ -1771,91 +1923,109 @@
       "exitReason": "converged",
       "realizedPnl": 3.54,
       "roiPct": 3.5
-    },
-    {
-      "conditionId": "0x6c8bc8cd9b2d64358ad995ccee8e998cf0f81a89c4be0b8e51eadf09c6be60ba",
-      "slug": "will-bitcoin-dip-to-60k-by-december-31-2026-from-july-21",
-      "market": "dip $60,000 bis 2027-01-01",
-      "family": "touch",
-      "side": "YES",
-      "status": "CLOSED",
-      "tokenId": "104279604547231872129402198190232956636095665469278761891693384128061158683041",
-      "entryTs": "2026-08-21T09:50:17Z",
-      "entryPoly": 0.345,
-      "entryFair": 0.3919,
-      "entryEdgePP": 2.28,
-      "shares": 289.86,
-      "stakeUSD": 100.0,
-      "realShares": 14.4928,
-      "feePaid": 4.49,
-      "wasNew": false,
-      "markPoly": 0.295,
-      "curEdgePP": 2.52,
-      "exitTs": "2026-09-14T06:08:20Z",
-      "exitMark": 0.295,
-      "exitReason": "converged",
-      "realizedPnl": -18.98,
-      "roiPct": -19.0
-    },
-    {
-      "conditionId": "0x6d7203b2161a636a6ad554a986400e29411aecfdb51f91416a0ef9f7b6685e3b",
-      "slug": "will-bitcoin-dip-to-70000-by-december-31-2026-from-august-24",
-      "market": "dip $70,000 bis 2027-01-01",
-      "family": "touch",
-      "side": "YES",
-      "status": "CLOSED",
-      "tokenId": "26181023444847865740144968881453381639052456965503182671034643115973725837732",
-      "entryTs": "2026-08-27T20:21:25Z",
-      "entryPoly": 0.595,
-      "entryFair": 0.6313,
-      "entryEdgePP": 0.79,
-      "shares": 168.07,
-      "stakeUSD": 100.0,
-      "realShares": 8.4034,
-      "feePaid": 5.39,
-      "wasNew": false,
-      "markPoly": 0.645,
-      "curEdgePP": 2.89,
-      "exitTs": "2026-09-14T06:08:20Z",
-      "exitMark": 0.635,
-      "exitReason": "converged",
-      "realizedPnl": 1.33,
-      "roiPct": 1.3
-    },
-    {
-      "conditionId": "0xf600173740752d75be20208ea7e7f5c3ce86a7fc767f536a2a34097a4dadfe54",
-      "slug": "bitcoin-above-74k-on-september-17-2026",
-      "market": "über $74,000 · 2026-09-17",
-      "family": "above",
-      "side": "NO",
-      "status": "CLOSED",
-      "tokenId": "75768902959602692897645684870877577156470200929402715223912936588970469110826",
-      "entryTs": "2026-09-11T16:25:35Z",
-      "entryPoly": 0.8595,
-      "entryFair": 0.8256,
-      "entryEdgePP": -4.37,
-      "shares": 711.74,
-      "stakeUSD": 100.0,
-      "realShares": 35.5872,
-      "feePaid": 2.21,
-      "wasNew": true,
-      "markPoly": 0.835,
-      "curEdgePP": -2.31,
-      "exitTs": "2026-09-14T01:00:39Z",
-      "exitMark": 0.824,
-      "exitReason": "converged",
-      "realizedPnl": 23.06,
-      "roiPct": 23.1
     }
   ],
   "activity": [
     {
-      "ts": "2026-09-18T04:33:26Z",
+      "ts": "2026-09-18T09:39:28Z",
+      "type": "open",
+      "side": "YES",
+      "market": "erreicht $87,500 bis 2026-10-01",
+      "entry": 0.095,
+      "edge": 2.54
+    },
+    {
+      "ts": "2026-09-18T09:39:28Z",
+      "type": "open",
+      "side": "YES",
+      "market": "dip $50,000 bis 2027-01-01",
+      "entry": 0.095,
+      "edge": 3.27
+    },
+    {
+      "ts": "2026-09-18T09:39:28Z",
       "type": "open",
       "side": "NO",
-      "market": "über $78,000 · 2026-09-18",
-      "entry": 0.2245,
-      "edge": -5.54
+      "market": "über $80,000 · 2026-09-18",
+      "entry": 0.0475,
+      "edge": -4.4
+    },
+    {
+      "ts": "2026-09-18T09:39:28Z",
+      "type": "open",
+      "side": "NO",
+      "market": "über $80,000 · 2026-09-22",
+      "entry": 0.225,
+      "edge": -6.33
+    },
+    {
+      "ts": "2026-09-18T09:39:28Z",
+      "type": "open",
+      "side": "NO",
+      "market": "über $80,000 · 2026-09-21",
+      "entry": 0.1835,
+      "edge": -6.86
+    },
+    {
+      "ts": "2026-09-18T09:39:28Z",
+      "type": "open",
+      "side": "NO",
+      "market": "über $78,000 · 2026-09-19",
+      "entry": 0.53,
+      "edge": -13.0
+    },
+    {
+      "ts": "2026-09-18T09:39:28Z",
+      "type": "open",
+      "side": "NO",
+      "market": "über $78,000 · 2026-09-24",
+      "entry": 0.515,
+      "edge": -8.22
+    },
+    {
+      "ts": "2026-09-18T09:39:28Z",
+      "type": "open",
+      "side": "NO",
+      "market": "über $76,000 · 2026-09-23",
+      "entry": 0.795,
+      "edge": -6.34
+    },
+    {
+      "ts": "2026-09-18T09:39:28Z",
+      "type": "open",
+      "side": "NO",
+      "market": "über $78,000 · 2026-09-23",
+      "entry": 0.515,
+      "edge": -9.56
+    },
+    {
+      "ts": "2026-09-18T09:39:28Z",
+      "type": "open",
+      "side": "NO",
+      "market": "über $80,000 · 2026-09-23",
+      "entry": 0.265,
+      "edge": -8.09
+    },
+    {
+      "ts": "2026-09-18T09:39:28Z",
+      "type": "close",
+      "reason": "converged",
+      "market": "über $76,000 · 2026-09-18",
+      "pnl": -99.03
+    },
+    {
+      "ts": "2026-09-18T09:39:28Z",
+      "type": "close",
+      "reason": "converged",
+      "market": "über $74,000 · 2026-09-22",
+      "pnl": -73.93
+    },
+    {
+      "ts": "2026-09-18T09:39:28Z",
+      "type": "close",
+      "reason": "converged",
+      "market": "über $74,000 · 2026-09-19",
+      "pnl": -95.3
     }
   ]
 }
