@@ -1,181 +1,73 @@
 {
-  "generatedAt": "2026-09-19 14:20 UTC",
+  "generatedAt": "2026-09-19 17:58 UTC",
   "scanned": 600,
-  "count": 12,
+  "count": 10,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
     {
       "side": "buy",
-      "sumProb": 0.005,
-      "grossPP": 99.5,
-      "feePP": 0.03,
-      "netPP": 99.47,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x4dd332f4bd14539ca67001c1580a1834d0997fe449e0112f7569fc54d158c100",
-      "event": "Millwall FC vs. West Ham United FC - Exact Score",
-      "slug": "elc-mil-whu-2026-09-19-exact-score",
-      "endDate": "2026-09-19T11:30:00Z",
-      "n": 5,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Millwall FC 2 - 0 West Ham United FC",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "Millwall FC 3 - 0 West Ham United FC",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "Millwall FC 2 - 3 West Ham United FC",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "Millwall FC 3 - 2 West Ham United FC",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "Millwall FC 3 - 1 West Ham United FC",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.02,
-      "grossPP": 98.0,
-      "feePP": 0.06,
-      "netPP": 97.94,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xfb5399f0e1c4ea4d78a40957d48838ab5769fcec80592b8ce2ffd6e27a3cad00",
-      "event": "UEFA Champions League: 2027 Champion",
-      "slug": "uefa-champions-league-2027-champion-20260701202025549",
-      "endDate": "2027-05-30T23:59:00Z",
-      "n": 5,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Aston Villa",
-          "bid": 0.009,
-          "ask": 0.011
-        },
-        {
-          "name": "Galatasaray",
-          "bid": 0.002,
-          "ask": 0.003
-        },
-        {
-          "name": "Shakhtar Donetsk",
-          "bid": 0.001,
-          "ask": 0.002
-        },
-        {
-          "name": "Feyenoord",
-          "bid": 0.001,
-          "ask": 0.002
-        },
-        {
-          "name": "PSV Eindhoven",
-          "bid": 0.001,
-          "ask": 0.002
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.082,
-      "grossPP": 91.8,
-      "feePP": 0.33,
-      "netPP": 91.47,
+      "sumProb": 0.01,
+      "grossPP": 99.0,
+      "feePP": 0.04,
+      "netPP": 98.96,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
       "event": "Democratic Presidential Nominee 2028",
       "slug": "democratic-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 4,
+      "n": 3,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
-        {
-          "name": "Josh Shapiro",
-          "bid": 0.062,
-          "ask": 0.064
-        },
-        {
-          "name": "Chelsea Clinton",
-          "bid": 0.005,
-          "ask": 0.008
-        },
         {
           "name": "Raphael Warnock",
           "bid": 0.005,
           "ask": 0.006
         },
         {
-          "name": "Mark Cuban",
-          "bid": 0.003,
-          "ask": 0.004
+          "name": "Elissa Slotkin",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "Jared Polis",
+          "bid": 0.001,
+          "ask": 0.002
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.129,
-      "grossPP": 87.1,
-      "feePP": 0.39,
-      "netPP": 86.71,
+      "sumProb": 0.013,
+      "grossPP": 98.7,
+      "feePP": 0.04,
+      "netPP": 98.66,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x697ad5ad79df81b98b58ef5ea0ff713d40397e526b98bd36fbe57d4be4365000",
-      "event": "EPL: 2027 Champion",
-      "slug": "epl-2027-champion-20260701200428749",
-      "endDate": "2027-05-30T23:59:00Z",
-      "n": 6,
+      "negRiskMarketID": "0xbb01d92208e308f14eb9917889bb2b449395207a26fe2a7990c3d5def7f74c00",
+      "event": "NBA: 2027 Champion",
+      "slug": "nba-2027-champion",
+      "endDate": "2027-07-01T00:00:00Z",
+      "n": 3,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Hull City",
-          "bid": 0.007,
-          "ask": 0.068
+          "name": "Washington Wizards",
+          "bid": 0.008,
+          "ask": 0.009
         },
         {
-          "name": "Liverpool",
-          "bid": 0.031,
-          "ask": 0.032
-        },
-        {
-          "name": "Chelsea",
-          "bid": 0.019,
-          "ask": 0.02
-        },
-        {
-          "name": "Tottenham",
-          "bid": 0.003,
-          "ask": 0.005
-        },
-        {
-          "name": "Leeds United",
+          "name": "Milwaukee Bucks",
           "bid": 0.001,
           "ask": 0.002
         },
         {
-          "name": "Bournemouth",
+          "name": "New Orleans Pelicans",
           "bid": 0.001,
           "ask": 0.002
         }
@@ -183,30 +75,59 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.257,
-      "grossPP": 74.3,
-      "feePP": 0.77,
-      "netPP": 73.53,
+      "sumProb": 0.108,
+      "grossPP": 89.2,
+      "feePP": 0.43,
+      "netPP": 88.77,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
+      "event": "Presidential Election Winner 2028",
+      "slug": "presidential-election-winner-2028",
+      "endDate": "2028-11-07T00:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Marco Rubio",
+          "bid": 0.085,
+          "ask": 0.086
+        },
+        {
+          "name": "Ro Khanna",
+          "bid": 0.009,
+          "ask": 0.011
+        },
+        {
+          "name": "Donald Trump",
+          "bid": 0.008,
+          "ask": 0.011
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.225,
+      "grossPP": 77.5,
+      "feePP": 0.68,
+      "netPP": 76.83,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
       "event": "Pro Football: 2027 Champion",
       "slug": "pro-football-2027-champion-20260729185915366",
       "endDate": "2027-02-14T23:55:00Z",
-      "n": 11,
+      "n": 9,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Buffalo Bills",
+          "name": "Los Angeles Rams",
           "bid": 0.12,
           "ask": 0.13
-        },
-        {
-          "name": "Denver Broncos",
-          "bid": 0.034,
-          "ask": 0.035
         },
         {
           "name": "Los Angeles Chargers",
@@ -214,9 +135,9 @@
           "ask": 0.029
         },
         {
-          "name": "Minnesota Vikings",
-          "bid": 0.019,
-          "ask": 0.02
+          "name": "Green Bay Packers",
+          "bid": 0.025,
+          "ask": 0.026
         },
         {
           "name": "Tampa Bay Buccaneers",
@@ -227,54 +148,20 @@
           "name": "Indianapolis Colts",
           "bid": 0.007,
           "ask": 0.008
+        },
+        {
+          "name": "Washington Commanders",
+          "bid": 0.005,
+          "ask": 0.007
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.322,
-      "grossPP": 67.8,
-      "feePP": 1.29,
-      "netPP": 66.51,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
-      "event": "Presidential Election Winner 2028",
-      "slug": "presidential-election-winner-2028",
-      "endDate": "2028-11-07T00:00:00Z",
-      "n": 4,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "JD Vance",
-          "bid": 0.209,
-          "ask": 0.21
-        },
-        {
-          "name": "Marco Rubio",
-          "bid": 0.085,
-          "ask": 0.089
-        },
-        {
-          "name": "Donald Trump",
-          "bid": 0.008,
-          "ask": 0.012
-        },
-        {
-          "name": "Ro Khanna",
-          "bid": 0.01,
-          "ask": 0.011
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.37,
-      "grossPP": 63.0,
-      "feePP": 1.85,
-      "netPP": 61.15,
+      "sumProb": 0.311,
+      "grossPP": 68.9,
+      "feePP": 1.55,
+      "netPP": 67.34,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb4153d43b535da66b1099f5267aeb3ef659df46fe38de20a7040887b998cd300",
@@ -282,79 +169,40 @@
       "slug": "resident-evil-opening-weekend-box-office",
       "endDate": "2026-09-20T12:00:00Z",
       "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "55-60m",
-          "bid": 0.254,
-          "ask": 0.352
-        },
-        {
-          "name": "70m+",
-          "bid": 0.006,
-          "ask": 0.017
-        },
-        {
-          "name": "<50m",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.396,
-      "grossPP": 60.4,
-      "feePP": 1.98,
-      "netPP": 58.42,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xbece7bc1501e32b4b4085e6f113212a8a707fcef5f742b9d536b7671e5833800",
-      "event": "Brighton & Hove Albion FC vs. Arsenal FC - Exact Score",
-      "slug": "epl-bri-ars-2026-09-19-exact-score",
-      "endDate": "2026-09-19T14:00:00Z",
-      "n": 4,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Brighton & Hove Albion FC 0 - 1 Arsenal FC",
-          "bid": 0.15,
-          "ask": 0.17
+          "name": "55-60m",
+          "bid": 0.262,
+          "ask": 0.304
         },
         {
-          "name": "Brighton & Hove Albion FC 0 - 2 Arsenal FC",
-          "bid": 0.1,
-          "ask": 0.12
+          "name": "70m+",
+          "bid": 0.002,
+          "ask": 0.004
         },
         {
-          "name": "Brighton & Hove Albion FC 1 - 2 Arsenal FC",
-          "bid": 0.09,
-          "ask": 0.1
-        },
-        {
-          "name": "Brighton & Hove Albion FC 3 - 3 Arsenal FC",
-          "bid": 0.004,
-          "ask": 0.006
+          "name": "<50m",
+          "bid": 0.001,
+          "ask": 0.003
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.478,
-      "grossPP": 52.2,
-      "feePP": 1.91,
-      "netPP": 50.29,
+      "sumProb": 0.411,
+      "grossPP": 58.9,
+      "feePP": 1.64,
+      "netPP": 57.26,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
       "event": "Next French Presidential Election",
       "slug": "next-french-presidential-election",
       "endDate": "2027-04-30T00:00:00Z",
-      "n": 7,
+      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -365,27 +213,22 @@
           "ask": 0.381
         },
         {
-          "name": "François Hollande",
-          "bid": 0.052,
-          "ask": 0.053
-        },
-        {
           "name": "Jordan Bardella",
           "bid": 0.015,
           "ask": 0.016
         },
         {
-          "name": "Raphaël Glucksmann",
-          "bid": 0.015,
-          "ask": 0.016
-        },
-        {
-          "name": "Dominique de Villepin",
-          "bid": 0.006,
-          "ask": 0.008
+          "name": "Sarah Knafo",
+          "bid": 0.008,
+          "ask": 0.01
         },
         {
           "name": "Olivier Faure",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "Ségolène Royal",
           "bid": 0.001,
           "ask": 0.002
         }
@@ -393,44 +236,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.639,
-      "grossPP": 36.1,
-      "feePP": 2.56,
-      "netPP": 33.54,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xf698a33142121991a8eec3cbf822ad041644708a71154f7709f5631619f73d00",
-      "event": "Russia Parliamentary Election: Turnout",
-      "slug": "russia-parliamentary-election-turnout",
-      "endDate": "2026-09-20T00:00:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "62%+",
-          "bid": 0.316,
-          "ask": 0.319
-        },
-        {
-          "name": "56-59%",
-          "bid": 0.312,
-          "ask": 0.315
-        },
-        {
-          "name": "<47%",
-          "bid": 0.004,
-          "ask": 0.005
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.702,
-      "grossPP": 29.8,
-      "feePP": 2.01,
-      "netPP": 27.79,
+      "sumProb": 0.698,
+      "grossPP": 30.2,
+      "feePP": 1.99,
+      "netPP": 28.21,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x7b95a46fc059d27ac3404325fd6280974d96949102201de57b8595f802d7fc00",
@@ -455,23 +264,101 @@
         {
           "name": "D Senate, R House",
           "bid": 0.007,
-          "ask": 0.012
+          "ask": 0.008
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.986,
-      "grossPP": 1.4,
-      "feePP": 0.08,
-      "netPP": 1.32,
+      "sumProb": 0.737,
+      "grossPP": 26.3,
+      "feePP": 1.91,
+      "netPP": 24.39,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
+      "event": "Ballon d'Or Winner 2026",
+      "slug": "ballon-dor-winner-2026",
+      "endDate": "2026-10-31T00:00:00Z",
+      "n": 4,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Harry Kane",
+          "bid": 0.549,
+          "ask": 0.55
+        },
+        {
+          "name": "Kylian Mbappé",
+          "bid": 0.076,
+          "ask": 0.077
+        },
+        {
+          "name": "Lionel Messi",
+          "bid": 0.059,
+          "ask": 0.06
+        },
+        {
+          "name": "Rodri",
+          "bid": 0.04,
+          "ask": 0.05
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.779,
+      "grossPP": 22.1,
+      "feePP": 3.12,
+      "netPP": 18.98,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xf698a33142121991a8eec3cbf822ad041644708a71154f7709f5631619f73d00",
+      "event": "Russia Parliamentary Election: Turnout",
+      "slug": "russia-parliamentary-election-turnout",
+      "endDate": "2026-09-20T00:00:00Z",
+      "n": 4,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "56-59%",
+          "bid": 0.297,
+          "ask": 0.318
+        },
+        {
+          "name": "62%+",
+          "bid": 0.295,
+          "ask": 0.296
+        },
+        {
+          "name": "53-56%",
+          "bid": 0.132,
+          "ask": 0.161
+        },
+        {
+          "name": "<47%",
+          "bid": 0.003,
+          "ask": 0.004
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.993,
+      "grossPP": 0.7,
+      "feePP": 0.13,
+      "netPP": 0.57,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x083d56924e3461c604df5314b0e0cbad5fd9b28532cfac11d1d3ff72e3ca4900",
       "event": "Which company has the best AI model end of September?",
       "slug": "which-company-has-the-best-ai-model-end-of-september-20260717143435868",
       "endDate": "2026-10-01T03:59:00Z",
-      "n": 3,
+      "n": 4,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
@@ -479,12 +366,17 @@
         {
           "name": "Anthropic",
           "bid": 0.978,
-          "ask": 0.983
+          "ask": 0.98
+        },
+        {
+          "name": "Google",
+          "bid": 0.007,
+          "ask": 0.008
         },
         {
           "name": "Meta",
-          "bid": 0.001,
-          "ask": 0.002
+          "bid": 0.002,
+          "ask": 0.004
         },
         {
           "name": "SpaceXAI",
