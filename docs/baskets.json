@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-19 20:33 UTC",
+  "generatedAt": "2026-09-19 22:55 UTC",
   "scanned": 600,
-  "count": 10,
+  "count": 9,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -34,40 +34,6 @@
         },
         {
           "name": "77°F or below",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.011,
-      "grossPP": 98.9,
-      "feePP": 0.06,
-      "netPP": 98.84,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x8fec08582dcbf82c0f72dcc6d54bef4b6f5147270d8aae1368c92d582c584800",
-      "event": "AS Roma vs. FC Internazionale Milano - Exact Score",
-      "slug": "sea-rom-int-2026-09-19-exact-score",
-      "endDate": "2026-09-19T16:00:00Z",
-      "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "AS Roma 2 - 1 FC Internazionale Milano",
-          "bid": null,
-          "ask": 0.009
-        },
-        {
-          "name": "AS Roma 2 - 3 FC Internazionale Milano",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "AS Roma 3 - 1 FC Internazionale Milano",
           "bid": null,
           "ask": 0.001
         }
@@ -109,26 +75,21 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.03,
-      "grossPP": 97.0,
-      "feePP": 0.12,
-      "netPP": 96.88,
+      "sumProb": 0.014,
+      "grossPP": 98.6,
+      "feePP": 0.06,
+      "netPP": 98.54,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
       "event": "Next French Presidential Election",
       "slug": "next-french-presidential-election",
       "endDate": "2027-04-30T00:00:00Z",
-      "n": 4,
+      "n": 3,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
-        {
-          "name": "Raphaël Glucksmann",
-          "bid": 0.015,
-          "ask": 0.016
-        },
         {
           "name": "Sarah Knafo",
           "bid": 0.008,
@@ -148,35 +109,30 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.196,
-      "grossPP": 80.4,
-      "feePP": 0.78,
-      "netPP": 79.62,
+      "sumProb": 0.19,
+      "grossPP": 81.0,
+      "feePP": 0.76,
+      "netPP": 80.24,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
       "event": "Democratic Presidential Nominee 2028",
       "slug": "democratic-presidential-nominee-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 5,
-      "completeBid": true,
+      "n": 6,
+      "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "Gavin Newsom",
-          "bid": 0.152,
-          "ask": 0.161
+          "bid": 0.153,
+          "ask": 0.159
         },
         {
           "name": "James Talarico",
           "bid": 0.024,
           "ask": 0.025
-        },
-        {
-          "name": "Raphael Warnock",
-          "bid": 0.005,
-          "ask": 0.006
         },
         {
           "name": "Elissa Slotkin",
@@ -187,22 +143,71 @@
           "name": "Jared Polis",
           "bid": 0.001,
           "ask": 0.002
+        },
+        {
+          "name": "Phil Murphy",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "Adam Schiff",
+          "bid": null,
+          "ask": 0.001
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.235,
-      "grossPP": 76.5,
-      "feePP": 0.7,
-      "netPP": 75.8,
+      "sumProb": 0.191,
+      "grossPP": 80.9,
+      "feePP": 0.76,
+      "netPP": 80.14,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
+      "event": "Republican Presidential Nominee 2028",
+      "slug": "republican-presidential-nominee-2028",
+      "endDate": "2028-11-07T00:00:00Z",
+      "n": 4,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Marco Rubio",
+          "bid": 0.155,
+          "ask": 0.156
+        },
+        {
+          "name": "Ron DeSantis",
+          "bid": 0.028,
+          "ask": 0.029
+        },
+        {
+          "name": "Tulsi Gabbard",
+          "bid": 0.003,
+          "ask": 0.004
+        },
+        {
+          "name": "Greg Abbott",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.212,
+      "grossPP": 78.8,
+      "feePP": 0.64,
+      "netPP": 78.16,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
       "event": "Pro Football: 2027 Champion",
       "slug": "pro-football-2027-champion-20260729185915366",
       "endDate": "2027-02-14T23:55:00Z",
-      "n": 11,
+      "n": 6,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -241,17 +246,56 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.32,
-      "grossPP": 68.0,
-      "feePP": 1.28,
-      "netPP": 66.72,
+      "sumProb": 0.25,
+      "grossPP": 75.0,
+      "feePP": 0.75,
+      "netPP": 74.25,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xfb5399f0e1c4ea4d78a40957d48838ab5769fcec80592b8ce2ffd6e27a3cad00",
+      "event": "UEFA Champions League: 2027 Champion",
+      "slug": "uefa-champions-league-2027-champion-20260701202025549",
+      "endDate": "2027-05-30T23:59:00Z",
+      "n": 4,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Barcelona",
+          "bid": 0.21,
+          "ask": 0.22
+        },
+        {
+          "name": "Atlético Madrid",
+          "bid": 0.016,
+          "ask": 0.017
+        },
+        {
+          "name": "Aston Villa",
+          "bid": 0.009,
+          "ask": 0.011
+        },
+        {
+          "name": "Shakhtar Donetsk",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.399,
+      "grossPP": 60.1,
+      "feePP": 1.6,
+      "netPP": 58.5,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-07T00:00:00Z",
-      "n": 4,
+      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -267,9 +311,14 @@
           "ask": 0.086
         },
         {
+          "name": "Gavin Newsom",
+          "bid": 0.075,
+          "ask": 0.08
+        },
+        {
           "name": "Donald Trump",
           "bid": 0.01,
-          "ask": 0.013
+          "ask": 0.012
         },
         {
           "name": "Ro Khanna",
@@ -280,44 +329,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.352,
-      "grossPP": 64.8,
-      "feePP": 1.76,
-      "netPP": 63.04,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xd38e533a10197b43b10b24268c73c82d26e2314a1453a5760a0a48c76ae71200",
-      "event": "Sevilla FC vs. FC Barcelona - Exact Score",
-      "slug": "lal-sev-bar-2026-09-19-exact-score",
-      "endDate": "2026-09-19T19:00:00Z",
-      "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Sevilla FC 1 - 2 FC Barcelona",
-          "bid": null,
-          "ask": 0.35
-        },
-        {
-          "name": "Sevilla FC 0 - 2 FC Barcelona",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "Sevilla FC 0 - 1 FC Barcelona",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.737,
-      "grossPP": 26.3,
-      "feePP": 1.91,
-      "netPP": 24.39,
+      "sumProb": 0.743,
+      "grossPP": 25.7,
+      "feePP": 1.93,
+      "netPP": 23.77,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
@@ -341,57 +356,13 @@
         },
         {
           "name": "Lionel Messi",
-          "bid": 0.059,
-          "ask": 0.06
+          "bid": 0.062,
+          "ask": 0.066
         },
         {
           "name": "Rodri",
           "bid": 0.04,
           "ask": 0.05
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.781,
-      "grossPP": 21.9,
-      "feePP": 2.96,
-      "netPP": 18.94,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xf698a33142121991a8eec3cbf822ad041644708a71154f7709f5631619f73d00",
-      "event": "Russia Parliamentary Election: Turnout",
-      "slug": "russia-parliamentary-election-turnout",
-      "endDate": "2026-09-20T00:00:00Z",
-      "n": 5,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "62%+",
-          "bid": 0.497,
-          "ask": 0.52
-        },
-        {
-          "name": "56-59%",
-          "bid": 0.202,
-          "ask": 0.219
-        },
-        {
-          "name": "53-56%",
-          "bid": 0.021,
-          "ask": 0.029
-        },
-        {
-          "name": "50-53%",
-          "bid": 0.003,
-          "ask": 0.01
-        },
-        {
-          "name": "<47%",
-          "bid": 0.001,
-          "ask": 0.003
         }
       ]
     }
