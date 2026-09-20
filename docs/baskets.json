@@ -1,44 +1,10 @@
 {
-  "generatedAt": "2026-09-19 22:55 UTC",
+  "generatedAt": "2026-09-20 01:01 UTC",
   "scanned": 600,
   "count": 9,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
-    {
-      "side": "buy",
-      "sumProb": 0.003,
-      "grossPP": 99.7,
-      "feePP": 0.02,
-      "netPP": 99.69,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x6b4dfc8ee4b24e39a3d2e0b5158ace4cf4fef29e4a1d3ddb0bb5f9695dc35800",
-      "event": "Highest temperature in Miami on September 19?",
-      "slug": "highest-temperature-in-miami-on-september-19-2026",
-      "endDate": "2026-09-19T12:00:00Z",
-      "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "78-79°F",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "84-85°F",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "77°F or below",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
     {
       "side": "buy",
       "sumProb": 0.013,
@@ -68,40 +34,6 @@
         },
         {
           "name": "New Orleans Pelicans",
-          "bid": 0.001,
-          "ask": 0.002
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.014,
-      "grossPP": 98.6,
-      "feePP": 0.06,
-      "netPP": 98.54,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
-      "event": "Next French Presidential Election",
-      "slug": "next-french-presidential-election",
-      "endDate": "2027-04-30T00:00:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Sarah Knafo",
-          "bid": 0.008,
-          "ask": 0.01
-        },
-        {
-          "name": "Olivier Faure",
-          "bid": 0.001,
-          "ask": 0.002
-        },
-        {
-          "name": "Ségolène Royal",
           "bid": 0.001,
           "ask": 0.002
         }
@@ -158,45 +90,6 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.191,
-      "grossPP": 80.9,
-      "feePP": 0.76,
-      "netPP": 80.14,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
-      "event": "Republican Presidential Nominee 2028",
-      "slug": "republican-presidential-nominee-2028",
-      "endDate": "2028-11-07T00:00:00Z",
-      "n": 4,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Marco Rubio",
-          "bid": 0.155,
-          "ask": 0.156
-        },
-        {
-          "name": "Ron DeSantis",
-          "bid": 0.028,
-          "ask": 0.029
-        },
-        {
-          "name": "Tulsi Gabbard",
-          "bid": 0.003,
-          "ask": 0.004
-        },
-        {
-          "name": "Greg Abbott",
-          "bid": 0.001,
-          "ask": 0.002
-        }
-      ]
-    },
-    {
-      "side": "buy",
       "sumProb": 0.212,
       "grossPP": 78.8,
       "feePP": 0.64,
@@ -246,30 +139,69 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.25,
-      "grossPP": 75.0,
-      "feePP": 0.75,
-      "netPP": 74.25,
+      "sumProb": 0.226,
+      "grossPP": 77.4,
+      "feePP": 0.9,
+      "netPP": 76.5,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
+      "event": "Republican Presidential Nominee 2028",
+      "slug": "republican-presidential-nominee-2028",
+      "endDate": "2028-11-07T00:00:00Z",
+      "n": 5,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Marco Rubio",
+          "bid": 0.154,
+          "ask": 0.158
+        },
+        {
+          "name": "Tucker Carlson",
+          "bid": 0.031,
+          "ask": 0.033
+        },
+        {
+          "name": "Ron DeSantis",
+          "bid": 0.028,
+          "ask": 0.029
+        },
+        {
+          "name": "Tulsi Gabbard",
+          "bid": 0.003,
+          "ask": 0.004
+        },
+        {
+          "name": "Greg Abbott",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.233,
+      "grossPP": 76.7,
+      "feePP": 0.7,
+      "netPP": 76.0,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xfb5399f0e1c4ea4d78a40957d48838ab5769fcec80592b8ce2ffd6e27a3cad00",
       "event": "UEFA Champions League: 2027 Champion",
       "slug": "uefa-champions-league-2027-champion-20260701202025549",
       "endDate": "2027-05-30T23:59:00Z",
-      "n": 4,
+      "n": 3,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "Barcelona",
-          "bid": 0.21,
+          "bid": 0.2,
           "ask": 0.22
-        },
-        {
-          "name": "Atlético Madrid",
-          "bid": 0.016,
-          "ask": 0.017
         },
         {
           "name": "Aston Villa",
@@ -278,6 +210,40 @@
         },
         {
           "name": "Shakhtar Donetsk",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.386,
+      "grossPP": 61.4,
+      "feePP": 1.54,
+      "netPP": 59.86,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
+      "event": "Next French Presidential Election",
+      "slug": "next-french-presidential-election",
+      "endDate": "2027-04-30T00:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Marine Le Pen",
+          "bid": 0.372,
+          "ask": 0.374
+        },
+        {
+          "name": "Sarah Knafo",
+          "bid": 0.008,
+          "ask": 0.01
+        },
+        {
+          "name": "François Baroin",
           "bid": 0.001,
           "ask": 0.002
         }
@@ -312,7 +278,7 @@
         },
         {
           "name": "Gavin Newsom",
-          "bid": 0.075,
+          "bid": 0.076,
           "ask": 0.08
         },
         {
@@ -322,17 +288,17 @@
         },
         {
           "name": "Ro Khanna",
-          "bid": 0.009,
+          "bid": 0.01,
           "ask": 0.011
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.743,
-      "grossPP": 25.7,
+      "sumProb": 0.744,
+      "grossPP": 25.6,
       "feePP": 1.93,
-      "netPP": 23.77,
+      "netPP": 23.67,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x178e5d521fe40d169fbd095a16e69d08c294b1f6de6c38dfcdeeee0c66990c00",
@@ -357,12 +323,61 @@
         {
           "name": "Lionel Messi",
           "bid": 0.062,
-          "ask": 0.066
+          "ask": 0.067
         },
         {
           "name": "Rodri",
           "bid": 0.04,
           "ask": 0.05
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.958,
+      "grossPP": 4.2,
+      "feePP": 2.87,
+      "netPP": 1.33,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x697ad5ad79df81b98b58ef5ea0ff713d40397e526b98bd36fbe57d4be4365000",
+      "event": "EPL: 2027 Champion",
+      "slug": "epl-2027-champion-20260701200428749",
+      "endDate": "2027-05-30T23:59:00Z",
+      "n": 12,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Arsenal",
+          "bid": 0.46,
+          "ask": 0.47
+        },
+        {
+          "name": "Manchester City",
+          "bid": 0.38,
+          "ask": 0.39
+        },
+        {
+          "name": "Chelsea",
+          "bid": 0.029,
+          "ask": 0.031
+        },
+        {
+          "name": "Brighton",
+          "bid": 0.019,
+          "ask": 0.025
+        },
+        {
+          "name": "Manchester United",
+          "bid": 0.012,
+          "ask": 0.015
+        },
+        {
+          "name": "Hull City",
+          "bid": 0.006,
+          "ask": 0.008
         }
       ]
     }
