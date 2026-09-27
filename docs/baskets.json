@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-27 18:18 UTC",
+  "generatedAt": "2026-09-27 22:03 UTC",
   "scanned": 600,
-  "count": 6,
+  "count": 7,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -41,44 +41,44 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.203,
-      "grossPP": 79.7,
-      "feePP": 0.81,
-      "netPP": 78.89,
+      "sumProb": 0.023,
+      "grossPP": 97.7,
+      "feePP": 0.09,
+      "netPP": 97.61,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
-      "event": "Democratic Presidential Nominee 2028",
-      "slug": "democratic-presidential-nominee-2028",
-      "endDate": "2028-11-08T04:59:00Z",
+      "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
+      "event": "Presidential Election Winner 2028",
+      "slug": "presidential-election-winner-2028",
+      "endDate": "2029-01-21T04:59:00Z",
       "n": 3,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Gavin Newsom",
-          "bid": 0.159,
-          "ask": 0.164
+          "name": "Thomas Massie",
+          "bid": 0.01,
+          "ask": 0.011
         },
         {
           "name": "James Talarico",
-          "bid": 0.022,
-          "ask": 0.023
+          "bid": 0.008,
+          "ask": 0.01
         },
         {
-          "name": "Jon Stewart",
-          "bid": 0.012,
-          "ask": 0.016
+          "name": "Raphael Warnock",
+          "bid": 0.001,
+          "ask": 0.002
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.31,
-      "grossPP": 69.0,
-      "feePP": 1.24,
-      "netPP": 67.76,
+      "sumProb": 0.226,
+      "grossPP": 77.4,
+      "feePP": 0.9,
+      "netPP": 76.5,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
@@ -91,24 +91,24 @@
       "tradable": false,
       "top": [
         {
-          "name": "Édouard Philippe",
-          "bid": 0.2,
-          "ask": 0.21
+          "name": "Jean-Luc Mélenchon",
+          "bid": 0.12,
+          "ask": 0.13
         },
         {
           "name": "David Lisnard",
           "bid": 0.082,
-          "ask": 0.085
+          "ask": 0.083
         },
         {
           "name": "Dominique de Villepin",
-          "bid": 0.006,
-          "ask": 0.008
+          "bid": 0.005,
+          "ask": 0.007
         },
         {
           "name": "Christine Lagarde",
           "bid": 0.003,
-          "ask": 0.005
+          "ask": 0.004
         },
         {
           "name": "Olivier Faure",
@@ -119,17 +119,105 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.372,
-      "grossPP": 62.8,
-      "feePP": 1.12,
-      "netPP": 61.68,
+      "sumProb": 0.247,
+      "grossPP": 75.3,
+      "feePP": 0.74,
+      "netPP": 74.56,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xbb01d92208e308f14eb9917889bb2b449395207a26fe2a7990c3d5def7f74c00",
+      "event": "NBA: 2027 Champion",
+      "slug": "nba-2027-champion",
+      "endDate": "2027-07-01T03:59:00Z",
+      "n": 5,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Oklahoma City Thunder",
+          "bid": 0.19,
+          "ask": 0.2
+        },
+        {
+          "name": "Los Angeles Lakers",
+          "bid": 0.02,
+          "ask": 0.021
+        },
+        {
+          "name": "Atlanta Hawks",
+          "bid": 0.008,
+          "ask": 0.01
+        },
+        {
+          "name": "Orlando Magic",
+          "bid": 0.007,
+          "ask": 0.008
+        },
+        {
+          "name": "Dallas Mavericks",
+          "bid": 0.005,
+          "ask": 0.008
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.394,
+      "grossPP": 60.6,
+      "feePP": 1.58,
+      "netPP": 59.02,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
+      "event": "Democratic Presidential Nominee 2028",
+      "slug": "democratic-presidential-nominee-2028",
+      "endDate": "2028-11-08T04:59:00Z",
+      "n": 5,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Alexandria Ocasio-Cortez",
+          "bid": 0.185,
+          "ask": 0.188
+        },
+        {
+          "name": "Gavin Newsom",
+          "bid": 0.159,
+          "ask": 0.165
+        },
+        {
+          "name": "James Talarico",
+          "bid": 0.022,
+          "ask": 0.023
+        },
+        {
+          "name": "Jon Stewart",
+          "bid": 0.012,
+          "ask": 0.016
+        },
+        {
+          "name": "Stephen A. Smith",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.484,
+      "grossPP": 51.6,
+      "feePP": 1.45,
+      "netPP": 50.15,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xfb5399f0e1c4ea4d78a40957d48838ab5769fcec80592b8ce2ffd6e27a3cad00",
       "event": "UEFA Champions League: 2027 Champion",
       "slug": "uefa-champions-league-2027-champion-20260701202025549",
       "endDate": "2027-06-20T03:59:00Z",
-      "n": 3,
+      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -145,7 +233,17 @@
           "ask": 0.13
         },
         {
+          "name": "Real Madrid",
+          "bid": 0.1,
+          "ask": 0.11
+        },
+        {
           "name": "Shakhtar Donetsk",
+          "bid": 0.001,
+          "ask": 0.002
+        },
+        {
+          "name": "PSV Eindhoven",
           "bid": 0.001,
           "ask": 0.002
         }
@@ -153,51 +251,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.658,
-      "grossPP": 34.2,
-      "feePP": 1.79,
-      "netPP": 32.41,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x09ac0b2770dbcad3f2e4f5356a68af57cb8ca7502b02645a07b0290d46026a00",
-      "event": "Fed Decision in October?",
-      "slug": "fed-decision-in-october-20260617190323537",
-      "endDate": "2026-10-29T03:59:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "25 bps increase",
-          "bid": 0.64,
-          "ask": 0.65
-        },
-        {
-          "name": "25 bps decrease",
-          "bid": 0.004,
-          "ask": 0.005
-        },
-        {
-          "name": "50+ bps decrease",
-          "bid": 0.002,
-          "ask": 0.003
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.704,
-      "grossPP": 29.6,
+      "sumProb": 0.706,
+      "grossPP": 29.4,
       "feePP": 1.94,
-      "netPP": 27.66,
+      "netPP": 27.46,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x7b95a46fc059d27ac3404325fd6280974d96949102201de57b8595f802d7fc00",
       "event": "Balance of Power: 2026 Midterms",
       "slug": "balance-of-power-2026-midterms",
       "endDate": "2027-01-05T04:59:00Z",
-      "n": 3,
+      "n": 4,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -214,8 +278,13 @@
         },
         {
           "name": "D Senate, R House",
-          "bid": 0.013,
+          "bid": 0.011,
           "ask": 0.014
+        },
+        {
+          "name": "Other",
+          "bid": 0.001,
+          "ask": 0.002
         }
       ]
     }
