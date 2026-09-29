@@ -1,27 +1,81 @@
 {
-  "generatedAt": "2026-09-29 15:43 UTC",
+  "generatedAt": "2026-09-29 20:41 UTC",
   "scanned": 600,
-  "count": 10,
+  "count": 8,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
     {
       "side": "buy",
-      "sumProb": 0.013,
-      "grossPP": 98.7,
-      "feePP": 0.05,
-      "netPP": 98.65,
+      "sumProb": 0.006,
+      "grossPP": 99.4,
+      "feePP": 0.03,
+      "netPP": 99.37,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xbbf508e7b1c6f97f33993aa6847276eb506dad7319e86b4ff2c58d3740c93200",
+      "event": "Spain vs. Croatia - Exact Score",
+      "slug": "unl-esp-hrv-2026-09-29-exact-score",
+      "endDate": "2026-09-29T18:45:00Z",
+      "n": 6,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Spain 2 - 0 Croatia",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "Spain 1 - 0 Croatia",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "Spain 3 - 1 Croatia",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "Spain 3 - 0 Croatia",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "Spain 2 - 1 Croatia",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "Spain 0 - 0 Croatia",
+          "bid": null,
+          "ask": 0.001
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.029,
+      "grossPP": 97.1,
+      "feePP": 0.12,
+      "netPP": 96.98,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-08T04:59:00Z",
-      "n": 4,
+      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
+        {
+          "name": "Andy Beshear",
+          "bid": 0.013,
+          "ask": 0.016
+        },
         {
           "name": "JB Pritzker",
           "bid": 0.005,
@@ -46,54 +100,59 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.014,
-      "grossPP": 98.6,
-      "feePP": 0.1,
-      "netPP": 98.5,
+      "sumProb": 0.051,
+      "grossPP": 94.9,
+      "feePP": 0.15,
+      "netPP": 94.75,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x2bf8204bdff6a3f5056e1e05c851c59ca4ea0b0731a63399f947fad659ccc100",
-      "event": "Bitcoin price on September 29?",
-      "slug": "bitcoin-price-on-september-29-2026",
-      "endDate": "2026-09-29T16:00:00Z",
-      "n": 5,
-      "completeBid": false,
+      "negRiskMarketID": "0xfb5399f0e1c4ea4d78a40957d48838ab5769fcec80592b8ce2ffd6e27a3cad00",
+      "event": "UEFA Champions League: 2027 Champion",
+      "slug": "uefa-champions-league-2027-champion-20260701202025549",
+      "endDate": "2027-06-20T03:59:00Z",
+      "n": 9,
+      "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "84,000-86,000",
+          "name": "Inter Milan",
+          "bid": 0.021,
+          "ask": 0.023
+        },
+        {
+          "name": "Como",
+          "bid": 0.009,
+          "ask": 0.01
+        },
+        {
+          "name": "Sporting CP",
+          "bid": 0.004,
+          "ask": 0.005
+        },
+        {
+          "name": "PSV Eindhoven",
           "bid": 0.002,
-          "ask": 0.007
+          "ask": 0.003
         },
         {
-          "name": "80,000-82,000",
-          "bid": 0.003,
-          "ask": 0.004
+          "name": "Shakhtar Donetsk",
+          "bid": 0.001,
+          "ask": 0.002
         },
         {
-          "name": "78,000-80,000",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "86,000-88,000",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "88,000-90,000",
-          "bid": null,
-          "ask": 0.001
+          "name": "Sabah",
+          "bid": 0.001,
+          "ask": 0.002
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.107,
-      "grossPP": 89.3,
+      "sumProb": 0.108,
+      "grossPP": 89.2,
       "feePP": 0.32,
-      "netPP": 88.98,
+      "netPP": 88.88,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
@@ -122,8 +181,8 @@
         },
         {
           "name": "Washington Commanders",
-          "bid": 0.006,
-          "ask": 0.007
+          "bid": 0.007,
+          "ask": 0.008
         },
         {
           "name": "Arizona Cardinals",
@@ -139,73 +198,58 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.166,
-      "grossPP": 83.4,
-      "feePP": 0.5,
-      "netPP": 82.9,
+      "sumProb": 0.213,
+      "grossPP": 78.7,
+      "feePP": 0.85,
+      "netPP": 77.85,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xfb5399f0e1c4ea4d78a40957d48838ab5769fcec80592b8ce2ffd6e27a3cad00",
-      "event": "UEFA Champions League: 2027 Champion",
-      "slug": "uefa-champions-league-2027-champion-20260701202025549",
-      "endDate": "2027-06-20T03:59:00Z",
-      "n": 11,
-      "completeBid": true,
+      "negRiskMarketID": "0x45ec1f7704d0ddd047e70443e830028d8801671283883ad1b46a29659488b600",
+      "event": "Venezuela leader end of 2026?",
+      "slug": "venezuela-leader-end-of-2026",
+      "endDate": "2027-01-01T04:59:00Z",
+      "n": 3,
+      "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Manchester City",
-          "bid": 0.08,
-          "ask": 0.09
+          "name": "Delcy Rodríguez",
+          "bid": 0.19,
+          "ask": 0.21
         },
         {
-          "name": "Inter Milan",
-          "bid": 0.021,
-          "ask": 0.023
+          "name": "Frank Donovan",
+          "bid": 0.001,
+          "ask": 0.002
         },
         {
-          "name": "Atlético Madrid",
-          "bid": 0.017,
-          "ask": 0.018
-        },
-        {
-          "name": "Borussia Dortmund",
-          "bid": 0.011,
-          "ask": 0.012
-        },
-        {
-          "name": "Como",
-          "bid": 0.009,
-          "ask": 0.01
-        },
-        {
-          "name": "PSV Eindhoven",
-          "bid": 0.002,
-          "ask": 0.003
+          "name": "Dinorah Figuera",
+          "bid": null,
+          "ask": 0.001
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.228,
-      "grossPP": 77.2,
-      "feePP": 0.91,
-      "netPP": 76.29,
+      "sumProb": 0.256,
+      "grossPP": 74.4,
+      "feePP": 1.02,
+      "netPP": 73.38,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
       "event": "Democratic Presidential Nominee 2028",
       "slug": "democratic-presidential-nominee-2028",
       "endDate": "2028-11-08T04:59:00Z",
-      "n": 3,
+      "n": 4,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "Gavin Newsom",
-          "bid": 0.167,
+          "bid": 0.161,
           "ask": 0.169
         },
         {
@@ -214,125 +258,23 @@
           "ask": 0.051
         },
         {
+          "name": "Andy Beshear",
+          "bid": 0.026,
+          "ask": 0.029
+        },
+        {
           "name": "Bernie Sanders",
           "bid": 0.006,
-          "ask": 0.008
+          "ask": 0.007
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.231,
-      "grossPP": 76.9,
-      "feePP": 1.16,
-      "netPP": 75.75,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x0a71f0e80301dc030d0fe12adc329971f9cdee6aba1a56e36d01ec8ca5af9800",
-      "event": "Czechia vs. England - Exact Score",
-      "slug": "unl-cze-eng-2026-09-29-exact-score",
-      "endDate": "2026-09-29T18:45:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Czechia 1 - 2 England",
-          "bid": 0.1,
-          "ask": 0.11
-        },
-        {
-          "name": "Czechia 1 - 1 England",
-          "bid": 0.07,
-          "ask": 0.08
-        },
-        {
-          "name": "Czechia 0 - 0 England",
-          "bid": 0.038,
-          "ask": 0.041
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.248,
-      "grossPP": 75.2,
-      "feePP": 0.74,
-      "netPP": 74.46,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x697ad5ad79df81b98b58ef5ea0ff713d40397e526b98bd36fbe57d4be4365000",
-      "event": "EPL: 2027 Champion",
-      "slug": "epl-2027-champion-20260701200428749",
-      "endDate": "2027-06-15T03:59:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Manchester City",
-          "bid": 0.23,
-          "ask": 0.24
-        },
-        {
-          "name": "Hull City",
-          "bid": 0.005,
-          "ask": 0.006
-        },
-        {
-          "name": "Bournemouth",
-          "bid": 0.001,
-          "ask": 0.002
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.41,
-      "grossPP": 59.0,
-      "feePP": 2.05,
-      "netPP": 56.95,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x8f2b8f39508ff5c50b19cf173fe39a93a64af71e0fd1658ea33e5ee18a7bd100",
-      "event": "Finland vs. Belarus - Exact Score",
-      "slug": "unl-fin-bela-2026-09-29-exact-score",
-      "endDate": "2026-09-29T16:00:00Z",
-      "n": 4,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Finland 1 - 0 Belarus",
-          "bid": 0.15,
-          "ask": 0.16
-        },
-        {
-          "name": "Finland 1 - 1 Belarus",
-          "bid": 0.1,
-          "ask": 0.11
-        },
-        {
-          "name": "Finland 0 - 0 Belarus",
-          "bid": 0.07,
-          "ask": 0.08
-        },
-        {
-          "name": "Finland 0 - 1 Belarus",
-          "bid": 0.05,
-          "ask": 0.06
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.712,
-      "grossPP": 28.8,
-      "feePP": 1.81,
-      "netPP": 26.99,
+      "sumProb": 0.922,
+      "grossPP": 7.8,
+      "feePP": 2.65,
+      "netPP": 5.15,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x7b95a46fc059d27ac3404325fd6280974d96949102201de57b8595f802d7fc00",
@@ -350,9 +292,9 @@
           "ask": 0.63
         },
         {
-          "name": "Republicans Sweep",
-          "bid": 0.07,
-          "ask": 0.08
+          "name": "R Senate, D House",
+          "bid": 0.28,
+          "ask": 0.29
         },
         {
           "name": "Other",
@@ -363,43 +305,48 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.811,
-      "grossPP": 18.9,
-      "feePP": 5.57,
-      "netPP": 13.34,
+      "sumProb": 0.921,
+      "grossPP": 7.9,
+      "feePP": 6.45,
+      "netPP": 1.45,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x03c9c6d9f7b20aaa1f33f99bd24bd16e4e0e00cfa892dde097b800655490b200",
       "event": "Prime Minister of Israel after the next election?",
       "slug": "who-will-be-the-next-prime-minister-of-israel-after-the-next-election",
-      "endDate": "2026-10-27T23:59:00Z",
-      "n": 5,
+      "endDate": "2026-10-28T03:59:00Z",
+      "n": 8,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "Gadi Eizenkot",
-          "bid": 0.501,
-          "ask": 0.508
+          "bid": 0.401,
+          "ask": 0.412
         },
         {
           "name": "Benjamin Netanyahu",
-          "bid": 0.29,
-          "ask": 0.3
+          "bid": 0.3,
+          "ask": 0.31
+        },
+        {
+          "name": "Naftali Bennett",
+          "bid": 0.14,
+          "ask": 0.15
+        },
+        {
+          "name": "Avigdor Lieberman",
+          "bid": 0.031,
+          "ask": 0.034
+        },
+        {
+          "name": "Ofer Winter",
+          "bid": 0.008,
+          "ask": 0.012
         },
         {
           "name": "Ayelet Shaked",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "Gilad Erdan",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "Yariv Levin",
           "bid": null,
           "ask": 0.001
         }
