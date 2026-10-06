@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-06 07:30 UTC",
+  "generatedAt": "2026-10-06 15:04 UTC",
   "attribution": {
-    "nClosed": 1290,
-    "realizedTotal": 7055.64,
-    "feesTotal": 4215.21,
-    "grossBeforeFees": 11270.85,
-    "feeDragPct": 37.4,
-    "winRate": 0.47,
-    "nWin": 606,
-    "nLoss": 684,
-    "avgWin": 50.45,
-    "avgLoss": -34.38,
-    "payoffRatio": 1.47,
-    "avgFeePP": 3.27,
-    "avgEntryEdgePP": 3.48,
+    "nClosed": 1297,
+    "realizedTotal": 6804.22,
+    "feesTotal": 4233.81,
+    "grossBeforeFees": 11038.03,
+    "feeDragPct": 38.36,
+    "winRate": 0.468,
+    "nWin": 607,
+    "nLoss": 690,
+    "avgWin": 50.56,
+    "avgLoss": -34.61,
+    "payoffRatio": 1.46,
+    "avgFeePP": 3.26,
+    "avgEntryEdgePP": 3.49,
     "feeEatsEdge": false,
-    "worstFiveSum": -515.94,
+    "worstFiveSum": -515.98,
     "tailLossShare": 0.022,
     "worst": [
       {
@@ -43,10 +43,10 @@
         "reason": "resolved_loss"
       },
       {
-        "market": "über $78,000 · 2026-08-26",
+        "market": "über $84,000 · 2026-10-06",
         "side": "NO",
-        "pnl": -103.08,
-        "reason": "resolved_loss"
+        "pnl": -103.12,
+        "reason": "converged"
       }
     ],
     "best": [
@@ -83,12 +83,12 @@
     ],
     "byReason": {
       "converged": {
-        "n": 1102,
-        "pnl": -3619.03
+        "n": 1107,
+        "pnl": -3899.04
       },
       "thesis_break": {
-        "n": 90,
-        "pnl": 5657.71
+        "n": 92,
+        "pnl": 5686.3
       },
       "resolved_loss": {
         "n": 23,
@@ -101,15 +101,15 @@
     }
   },
   "btcExposure": {
-    "n": 36,
-    "nLong": 5,
-    "nShort": 31,
-    "longStakeUSD": 500.0,
-    "shortStakeUSD": 3100.0,
-    "netWeighted": -1369.04,
-    "grossWeighted": 1613.76,
-    "netPct": -84.8,
+    "n": 35,
+    "nLong": 9,
+    "nShort": 26,
+    "longStakeUSD": 900.0,
+    "shortStakeUSD": 2600.0,
+    "netWeighted": -416.33,
+    "grossWeighted": 1874.83,
+    "netPct": -22.2,
     "direction": "SHORT (fällt BTC → Buch gewinnt)",
-    "concentrated": true
+    "concentrated": false
   }
 }
