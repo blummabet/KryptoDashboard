@@ -1,16 +1,60 @@
 {
-  "generatedAt": "2026-10-16 20:58 UTC",
+  "generatedAt": "2026-10-16 23:29 UTC",
   "scanned": 600,
-  "count": 8,
+  "count": 9,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
     {
       "side": "buy",
-      "sumProb": 0.05,
-      "grossPP": 95.0,
+      "sumProb": 0.005,
+      "grossPP": 99.5,
+      "feePP": 0.03,
+      "netPP": 99.47,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xdcd7daabcacdc4ecf4f9a48d0a2708b52f356dd086c8070992136da62eb72b00",
+      "event": "How many Fed rate cuts in 2026?",
+      "slug": "how-many-fed-rate-cuts-in-2026",
+      "endDate": "2027-01-01T04:59:00Z",
+      "n": 5,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "12+ (300+ bps)",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "5 (125 bps)",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "11 (275 bps)",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "10 (250 bps)",
+          "bid": null,
+          "ask": 0.001
+        },
+        {
+          "name": "8 (200 bps)",
+          "bid": null,
+          "ask": 0.001
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.049,
+      "grossPP": 95.1,
       "feePP": 0.15,
-      "netPP": 94.85,
+      "netPP": 94.95,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2f0c72cd89139c1a61a0b8655679e50cc7d10e850478394df729c68dc3c63a00",
@@ -25,7 +69,7 @@
         {
           "name": "Bologna",
           "bid": 0.001,
-          "ask": 0.029
+          "ask": 0.028
         },
         {
           "name": "Frosinone",
@@ -41,59 +85,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.116,
-      "grossPP": 88.4,
-      "feePP": 0.35,
-      "netPP": 88.05,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xbb01d92208e308f14eb9917889bb2b449395207a26fe2a7990c3d5def7f74c00",
-      "event": "NBA: 2027 Champion",
-      "slug": "nba-2027-champion",
-      "endDate": "2027-07-01T03:59:00Z",
-      "n": 7,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Miami Heat",
-          "bid": 0.038,
-          "ask": 0.039
-        },
-        {
-          "name": "Detroit Pistons",
-          "bid": 0.031,
-          "ask": 0.032
-        },
-        {
-          "name": "Houston Rockets",
-          "bid": 0.026,
-          "ask": 0.027
-        },
-        {
-          "name": "Washington Wizards",
-          "bid": 0.008,
-          "ask": 0.009
-        },
-        {
-          "name": "Charlotte Hornets",
-          "bid": 0.004,
-          "ask": 0.005
-        },
-        {
-          "name": "Los Angeles Clippers",
-          "bid": 0.002,
-          "ask": 0.003
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.123,
-      "grossPP": 87.7,
+      "sumProb": 0.122,
+      "grossPP": 87.8,
       "feePP": 0.49,
-      "netPP": 87.21,
+      "netPP": 87.31,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
@@ -117,12 +112,12 @@
         },
         {
           "name": "Mark Kelly",
-          "bid": 0.018,
-          "ask": 0.019
+          "bid": 0.016,
+          "ask": 0.018
         },
         {
           "name": "Ruben Gallego",
-          "bid": 0.003,
+          "bid": 0.002,
           "ask": 0.004
         },
         {
@@ -134,17 +129,66 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.255,
-      "grossPP": 74.5,
-      "feePP": 0.77,
-      "netPP": 73.73,
+      "sumProb": 0.17,
+      "grossPP": 83.0,
+      "feePP": 0.51,
+      "netPP": 82.49,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xbb01d92208e308f14eb9917889bb2b449395207a26fe2a7990c3d5def7f74c00",
+      "event": "NBA: 2027 Champion",
+      "slug": "nba-2027-champion",
+      "endDate": "2027-07-01T03:59:00Z",
+      "n": 9,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Minnesota Timberwolves",
+          "bid": 0.065,
+          "ask": 0.066
+        },
+        {
+          "name": "Detroit Pistons",
+          "bid": 0.031,
+          "ask": 0.032
+        },
+        {
+          "name": "Houston Rockets",
+          "bid": 0.026,
+          "ask": 0.027
+        },
+        {
+          "name": "Indiana Pacers",
+          "bid": 0.02,
+          "ask": 0.021
+        },
+        {
+          "name": "Washington Wizards",
+          "bid": 0.008,
+          "ask": 0.009
+        },
+        {
+          "name": "Phoenix Suns",
+          "bid": 0.005,
+          "ask": 0.006
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.261,
+      "grossPP": 73.9,
+      "feePP": 0.78,
+      "netPP": 73.12,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
       "event": "Pro Football: 2027 Champion",
       "slug": "pro-football-2027-champion-20260729185915366",
       "endDate": "2027-04-01T03:59:00Z",
-      "n": 12,
+      "n": 11,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -160,14 +204,9 @@
           "ask": 0.06
         },
         {
-          "name": "Green Bay Packers",
-          "bid": 0.019,
-          "ask": 0.02
-        },
-        {
-          "name": "Houston Texans",
-          "bid": 0.016,
-          "ask": 0.017
+          "name": "Denver Broncos",
+          "bid": 0.037,
+          "ask": 0.038
         },
         {
           "name": "Philadelphia Eagles",
@@ -177,7 +216,12 @@
         {
           "name": "Las Vegas Raiders",
           "bid": 0.006,
-          "ask": 0.007
+          "ask": 0.008
+        },
+        {
+          "name": "New York Giants",
+          "bid": 0.005,
+          "ask": 0.006
         }
       ]
     },
@@ -201,16 +245,16 @@
         {
           "name": "J.D. Vance",
           "bid": 0.465,
-          "ask": 0.475
+          "ask": 0.474
         },
         {
           "name": "Ron DeSantis",
           "bid": 0.024,
-          "ask": 0.025
+          "ask": 0.026
         },
         {
           "name": "Ivanka Trump",
-          "bid": 0.009,
+          "bid": 0.01,
           "ask": 0.011
         },
         {
@@ -232,66 +276,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.624,
-      "grossPP": 37.6,
-      "feePP": 3.12,
-      "netPP": 34.48,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x5c472e5673149e51d0256a2ed0af7fcaa9657bd6434f2037f298ad53f6b71200",
-      "event": "Worlds 2026: Winner",
-      "slug": "worlds-2026-winner",
-      "endDate": "2026-11-29T04:59:00Z",
-      "n": 10,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Gen.G",
-          "bid": 0.31,
-          "ask": 0.32
-        },
-        {
-          "name": "T1",
-          "bid": 0.16,
-          "ask": 0.17
-        },
-        {
-          "name": "Dplus KIA",
-          "bid": 0.059,
-          "ask": 0.061
-        },
-        {
-          "name": "Anyone's Legend",
-          "bid": 0.047,
-          "ask": 0.051
-        },
-        {
-          "name": "Team Liquid",
-          "bid": 0.006,
-          "ask": 0.007
-        },
-        {
-          "name": "Karmine Corp",
-          "bid": 0.005,
-          "ask": 0.006
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.647,
-      "grossPP": 35.3,
-      "feePP": 1.1,
-      "netPP": 34.2,
+      "sumProb": 0.681,
+      "grossPP": 31.9,
+      "feePP": 1.2,
+      "netPP": 30.7,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x697ad5ad79df81b98b58ef5ea0ff713d40397e526b98bd36fbe57d4be4365000",
       "event": "EPL: 2027 Champion",
       "slug": "epl-2027-champion-20260701200428749",
       "endDate": "2027-06-15T03:59:00Z",
-      "n": 3,
+      "n": 4,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -300,6 +295,11 @@
           "name": "Arsenal",
           "bid": 0.63,
           "ask": 0.64
+        },
+        {
+          "name": "Liverpool",
+          "bid": 0.033,
+          "ask": 0.034
         },
         {
           "name": "Brentford",
@@ -315,10 +315,59 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.816,
-      "grossPP": 18.4,
-      "feePP": 3.26,
-      "netPP": 15.14,
+      "sumProb": 0.768,
+      "grossPP": 23.2,
+      "feePP": 3.84,
+      "netPP": 19.36,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x5c472e5673149e51d0256a2ed0af7fcaa9657bd6434f2037f298ad53f6b71200",
+      "event": "Worlds 2026: Winner",
+      "slug": "worlds-2026-winner",
+      "endDate": "2026-11-29T04:59:00Z",
+      "n": 14,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Hanwha Life Esports",
+          "bid": 0.18,
+          "ask": 0.19
+        },
+        {
+          "name": "Bilibili Gaming",
+          "bid": 0.17,
+          "ask": 0.18
+        },
+        {
+          "name": "T1",
+          "bid": 0.16,
+          "ask": 0.17
+        },
+        {
+          "name": "Dplus KIA",
+          "bid": 0.06,
+          "ask": 0.061
+        },
+        {
+          "name": "Anyone's Legend",
+          "bid": 0.052,
+          "ask": 0.053
+        },
+        {
+          "name": "G2 Esports",
+          "bid": 0.039,
+          "ask": 0.052
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.807,
+      "grossPP": 19.3,
+      "feePP": 3.23,
+      "netPP": 16.07,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x4bcf7372694cb3ed70e31369f7602502cf80c6194e348bcba13c20b0a8936400",
@@ -332,13 +381,13 @@
       "top": [
         {
           "name": "$1.75–$2.0T",
-          "bid": 0.26,
-          "ask": 0.27
+          "bid": 0.25,
+          "ask": 0.26
         },
         {
           "name": "$2.0–$2.25T",
           "bid": 0.226,
-          "ask": 0.231
+          "ask": 0.232
         },
         {
           "name": "$1.5–$1.75T",
