@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-17 22:13 UTC",
+  "generatedAt": "2026-10-18 00:53 UTC",
   "scanned": 600,
-  "count": 11,
+  "count": 10,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -24,7 +24,7 @@
       "top": [
         {
           "name": "Liverpool",
-          "bid": 0.037,
+          "bid": 0.038,
           "ask": 0.039
         },
         {
@@ -80,56 +80,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.119,
-      "grossPP": 88.1,
-      "feePP": 0.6,
-      "netPP": 87.5,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x600eb9e2d66c0f92737aa9ac62a20260e163d497a077c4acaef86a3d6ca2d600",
-      "event": "Elon Musk # tweets October 16 - October 23, 2026?",
-      "slug": "elon-musk-of-tweets-october-16-october-23-2026",
-      "endDate": "2026-10-23T16:00:00Z",
-      "n": 4,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "420-439",
-          "bid": 0.032,
-          "ask": 0.057
-        },
-        {
-          "name": "200-219",
-          "bid": 0.033,
-          "ask": 0.039
-        },
-        {
-          "name": "180-199",
-          "bid": 0.015,
-          "ask": 0.02
-        },
-        {
-          "name": "140-159",
-          "bid": 0.001,
-          "ask": 0.003
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.13,
-      "grossPP": 87.0,
-      "feePP": 0.52,
-      "netPP": 86.48,
+      "sumProb": 0.147,
+      "grossPP": 85.3,
+      "feePP": 0.59,
+      "netPP": 84.71,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-08T04:59:00Z",
-      "n": 4,
+      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -145,6 +106,11 @@
           "ask": 0.041
         },
         {
+          "name": "Tucker Carlson",
+          "bid": 0.016,
+          "ask": 0.017
+        },
+        {
           "name": "JB Pritzker",
           "bid": 0.005,
           "ask": 0.007
@@ -158,103 +124,79 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.26,
-      "grossPP": 74.0,
-      "feePP": 1.3,
-      "netPP": 72.7,
+      "sumProb": 0.248,
+      "grossPP": 75.2,
+      "feePP": 1.24,
+      "netPP": 73.96,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xa74f5328517db0e030a5e62edc800e37bd36ca6e455571b14e8bb2b0dd38d700",
-      "event": "Fed Decision in December?",
-      "slug": "fed-decision-in-december-20260729232808632",
-      "endDate": "2026-12-10T04:59:00Z",
-      "n": 4,
+      "negRiskMarketID": "0x600eb9e2d66c0f92737aa9ac62a20260e163d497a077c4acaef86a3d6ca2d600",
+      "event": "Elon Musk # tweets October 16 - October 23, 2026?",
+      "slug": "elon-musk-of-tweets-october-16-october-23-2026",
+      "endDate": "2026-10-23T16:00:00Z",
+      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "No change",
-          "bid": 0.21,
-          "ask": 0.22
+          "name": "220-239",
+          "bid": 0.089,
+          "ask": 0.1
         },
         {
-          "name": "50+ bps increase",
-          "bid": 0.027,
-          "ask": 0.028
+          "name": "200-219",
+          "bid": 0.063,
+          "ask": 0.08
         },
         {
-          "name": "25 bps decrease",
-          "bid": 0.006,
-          "ask": 0.007
+          "name": "180-199",
+          "bid": 0.026,
+          "ask": 0.039
         },
         {
-          "name": "50+ bps decrease",
-          "bid": 0.004,
+          "name": "420-439",
+          "bid": 0.02,
+          "ask": 0.024
+        },
+        {
+          "name": "140-159",
+          "bid": 0.003,
           "ask": 0.005
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.298,
-      "grossPP": 70.2,
-      "feePP": 1.19,
-      "netPP": 69.01,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x7b0529a586bba47cadf8236a989c223e4b4329079f2cbac36f8761932b0fb200",
-      "event": "Largest Company end of October 2026?",
-      "slug": "largest-company-end-of-october-2026",
-      "endDate": "2026-11-01T03:59:00Z",
-      "n": 3,
-      "completeBid": false,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Apple",
-          "bid": 0.26,
-          "ask": 0.294
-        },
-        {
-          "name": "Alphabet",
-          "bid": 0.002,
-          "ask": 0.003
-        },
-        {
-          "name": "Microsoft",
-          "bid": null,
-          "ask": 0.001
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.412,
-      "grossPP": 58.8,
-      "feePP": 2.06,
-      "netPP": 56.74,
+      "sumProb": 0.382,
+      "grossPP": 61.8,
+      "feePP": 1.91,
+      "netPP": 59.89,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x280cec8cd2c605243c0c40fdf8b9b35affcf880ea6e67ae46954fbaadf869100",
       "event": "Elon Musk # tweets October 17 - October 19, 2026?",
       "slug": "elon-musk-of-tweets-october-17-october-19-2026",
       "endDate": "2026-10-19T16:00:00Z",
-      "n": 4,
-      "completeBid": true,
+      "n": 5,
+      "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "40-64",
-          "bid": 0.36,
-          "ask": 0.37
+          "bid": 0.31,
+          "ask": 0.32
         },
         {
           "name": "<40",
-          "bid": 0.021,
+          "bid": 0.022,
           "ask": 0.032
+        },
+        {
+          "name": "140-164",
+          "bid": 0.014,
+          "ask": 0.02
         },
         {
           "name": "165-189",
@@ -263,7 +205,7 @@
         },
         {
           "name": "190-214",
-          "bid": 0.001,
+          "bid": null,
           "ask": 0.003
         }
       ]
@@ -287,7 +229,7 @@
       "top": [
         {
           "name": "J.D. Vance",
-          "bid": 0.468,
+          "bid": 0.467,
           "ask": 0.474
         },
         {
@@ -314,10 +256,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.504,
-      "grossPP": 49.6,
-      "feePP": 2.02,
-      "netPP": 47.58,
+      "sumProb": 0.537,
+      "grossPP": 46.3,
+      "feePP": 2.15,
+      "netPP": 44.15,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x4bcf7372694cb3ed70e31369f7602502cf80c6194e348bcba13c20b0a8936400",
@@ -336,13 +278,13 @@
         },
         {
           "name": "$2.0–$2.25T",
-          "bid": 0.132,
-          "ask": 0.157
+          "bid": 0.163,
+          "ask": 0.189
         },
         {
           "name": "$1.25–$1.5T",
           "bid": 0.076,
-          "ask": 0.087
+          "ask": 0.088
         }
       ]
     },
@@ -397,25 +339,25 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.636,
-      "grossPP": 36.4,
-      "feePP": 2.54,
-      "netPP": 33.86,
+      "sumProb": 0.676,
+      "grossPP": 32.4,
+      "feePP": 2.7,
+      "netPP": 29.7,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
       "event": "Next French Presidential Election",
       "slug": "next-french-presidential-election",
       "endDate": "2027-04-19T03:59:00Z",
-      "n": 7,
+      "n": 9,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "Marine Le Pen",
-          "bid": 0.468,
-          "ask": 0.469
+          "bid": 0.471,
+          "ask": 0.472
         },
         {
           "name": "David Lisnard",
@@ -424,8 +366,13 @@
         },
         {
           "name": "Raphaël Glucksmann",
-          "bid": 0.034,
-          "ask": 0.035
+          "bid": 0.038,
+          "ask": 0.047
+        },
+        {
+          "name": "Gabriel Attal",
+          "bid": 0.017,
+          "ask": 0.018
         },
         {
           "name": "Bruno Retailleau",
@@ -433,14 +380,43 @@
           "ask": 0.008
         },
         {
-          "name": "Sébastien Lecornu",
-          "bid": 0.002,
-          "ask": 0.003
+          "name": "Éric Zemmour",
+          "bid": 0.006,
+          "ask": 0.007
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.961,
+      "grossPP": 3.9,
+      "feePP": 0.5,
+      "netPP": 3.39,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x2ce8ab86af862364e45fa3221fd4149b9578e66b5b98fc342ef8e80377ea7900",
+      "event": "Highest temperature in Wuhan on October 18?",
+      "slug": "highest-temperature-in-wuhan-on-october-18-2026",
+      "endDate": "2026-10-18T12:00:00Z",
+      "n": 3,
+      "completeBid": false,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "21°C",
+          "bid": 0.85,
+          "ask": 0.93
         },
         {
-          "name": "François Ruffin",
-          "bid": 0.001,
-          "ask": 0.002
+          "name": "22°C",
+          "bid": 0.029,
+          "ask": 0.03
+        },
+        {
+          "name": "20°C",
+          "bid": null,
+          "ask": 0.001
         }
       ]
     }
