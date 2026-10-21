@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-21T15:07:50Z",
-  "count": 6,
-  "tradableCount": 2,
+  "generatedAt": "2026-10-21T20:05:20Z",
+  "count": 9,
+  "tradableCount": 4,
   "basketFindings": [],
   "basketCount": 0,
   "basketTradable": 0,
@@ -9,10 +9,10 @@
   "paper": {
     "summary": {
       "mode": "PAPER / DRY-RUN",
-      "totalPnl": 205.51,
+      "totalPnl": 254.41,
       "realizedPnl": 71.71,
-      "lockedOpen": 133.8,
-      "openCount": 2,
+      "lockedOpen": 182.7,
+      "openCount": 3,
       "closedCount": 13,
       "winRate": 0.615,
       "stakeUSD": 100.0
@@ -31,6 +31,13 @@
         "cost": 0.951,
         "lockedMin": 4.8,
         "entryTs": "2026-08-25T04:51:24Z"
+      },
+      {
+        "label": "dip $80,000 bis 2026-11-01 (100%) ↔ dip $82,500 bis 2026-11-01 (64%) verletzt Monotonie",
+        "gapPP": 33.9,
+        "cost": 0.661,
+        "lockedMin": 48.9,
+        "entryTs": "2026-10-21T20:05:20Z"
       }
     ],
     "closed": [
@@ -282,7 +289,14 @@
         "roiPct": 67.1
       }
     ],
-    "activity": []
+    "activity": [
+      {
+        "ts": "2026-10-21T20:05:20Z",
+        "type": "open",
+        "market": "dip $80,000 bis 2026-11-01 (100%) ↔ dip $82,500 bis 2026-11-01 (64%) verletzt Monotonie",
+        "gap": 35.5
+      }
+    ]
   },
   "findings": [
     {
@@ -310,52 +324,88 @@
       "lowStrike": 65000,
       "highStrike": 70000,
       "lowP": 1.0,
-      "highP": 0.315,
+      "highP": 0.275,
       "lowCid": "0xc72ad4bb4de75c1b745c3135c52d6451f910c1161d7be60a37e9db0e96ffc533",
       "highCid": "0x6d7203b2161a636a6ad554a986400e29411aecfdb51f91416a0ef9f7b6685e3b",
       "lowBid": 0.999,
       "lowAsk": 1,
-      "highBid": 0.31,
-      "highAsk": 0.32,
-      "gapPP": 68.5,
+      "highBid": 0.27,
+      "highAsk": 0.28,
+      "gapPP": 72.5,
       "tradable": true,
-      "note": "dip $65,000 bis 2027-01-01 (100%) ↔ dip $70,000 bis 2027-01-01 (32%) verletzt Monotonie"
+      "note": "dip $65,000 bis 2027-01-01 (100%) ↔ dip $70,000 bis 2027-01-01 (28%) verletzt Monotonie"
+    },
+    {
+      "family": "touch",
+      "date": "2026-11-01",
+      "direction": "below",
+      "lowStrike": 80000,
+      "highStrike": 82500,
+      "lowP": 1.0,
+      "highP": 0.645,
+      "lowCid": "0x6cdca3f2bdbb59e8d575c713b598b4d8e40fee6358a074304cb4a6d133dcece9",
+      "highCid": "0x85232aaf16bbca4eb3f4de6247520853618edfab98d7e24f4a809dcc37f77bce",
+      "lowBid": 0.999,
+      "lowAsk": 1,
+      "highBid": 0.63,
+      "highAsk": 0.66,
+      "gapPP": 35.5,
+      "tradable": true,
+      "note": "dip $80,000 bis 2026-11-01 (100%) ↔ dip $82,500 bis 2026-11-01 (64%) verletzt Monotonie"
+    },
+    {
+      "family": "above",
+      "date": "2026-10-28",
+      "direction": "above",
+      "lowStrike": 74000,
+      "highStrike": 76000,
+      "lowP": 0.79,
+      "highP": 0.98,
+      "lowCid": "0x39efa34ebab1c2e56a94b8329709bb29c6649d8cc8eb2186951b1b6f0f6d4a6d",
+      "highCid": "0x8010178762091e553175cc1acefc3274591f7ba13f0a9d92e86f4aca2148b273",
+      "lowBid": 0.58,
+      "lowAsk": 1,
+      "highBid": 0.964,
+      "highAsk": 0.996,
+      "gapPP": 19.0,
+      "tradable": true,
+      "note": "über $74,000 · 2026-10-28 (79%) ↔ über $76,000 · 2026-10-28 (98%) verletzt Monotonie"
     },
     {
       "family": "above",
       "date": "2026-10-25",
       "direction": "above",
-      "lowStrike": 72000,
-      "highStrike": 74000,
-      "lowP": 0.992,
-      "highP": 0.995,
-      "lowCid": "0x5e90faea2aca89ecf9a8700db6b54dfcfb2c780f3a8cb54d13e48ef116d90c70",
-      "highCid": "0x3e05d95962a4217dc636da465041c6ce184f8f4042560cd24622ecedc3142050",
-      "lowBid": 0.99,
-      "lowAsk": 0.994,
+      "lowStrike": 74000,
+      "highStrike": 76000,
+      "lowP": 0.9915,
+      "highP": 0.994,
+      "lowCid": "0x3e05d95962a4217dc636da465041c6ce184f8f4042560cd24622ecedc3142050",
+      "highCid": "0xf56560d536d37053ecb9aa409cfa916af16cc0ac812ac8d9b0e7955f222aa4a2",
+      "lowBid": 0.988,
+      "lowAsk": 0.995,
       "highBid": 0.991,
-      "highAsk": 0.999,
-      "gapPP": 0.3,
+      "highAsk": 0.997,
+      "gapPP": 0.25,
       "tradable": false,
-      "note": "über $72,000 · 2026-10-25 (99%) ↔ über $74,000 · 2026-10-25 (100%) verletzt Monotonie"
+      "note": "über $74,000 · 2026-10-25 (99%) ↔ über $76,000 · 2026-10-25 (99%) verletzt Monotonie"
     },
     {
       "family": "above",
-      "date": "2026-10-23",
+      "date": "2026-10-24",
       "direction": "above",
       "lowStrike": 74000,
       "highStrike": 76000,
-      "lowP": 0.9925,
-      "highP": 0.9945,
-      "lowCid": "0x8c4652baffaaea885d58ad8e45421d82eafb99ad3422e5b746f55ddbf6d0a3d8",
-      "highCid": "0x93ed86ed7dfcc2024899f5c242389863b731301b395a32e407f56d1ff5cd82e4",
-      "lowBid": 0.992,
-      "lowAsk": 0.993,
-      "highBid": 0.994,
-      "highAsk": 0.995,
-      "gapPP": 0.2,
+      "lowP": 0.991,
+      "highP": 0.9925,
+      "lowCid": "0x0695e4325c33437eb50d558e3f9fbc6eabc99725dc73b8de40d86d600ae688b0",
+      "highCid": "0xa4e845a0babdef28142c66a40ae3422d507b2d0d245d1126b7b82a74824ab44b",
+      "lowBid": 0.988,
+      "lowAsk": 0.994,
+      "highBid": 0.989,
+      "highAsk": 0.996,
+      "gapPP": 0.15,
       "tradable": false,
-      "note": "über $74,000 · 2026-10-23 (99%) ↔ über $76,000 · 2026-10-23 (99%) verletzt Monotonie"
+      "note": "über $74,000 · 2026-10-24 (99%) ↔ über $76,000 · 2026-10-24 (99%) verletzt Monotonie"
     },
     {
       "family": "touch",
@@ -392,6 +442,24 @@
       "gapPP": 0.05,
       "tradable": false,
       "note": "dip $5,000 bis 2027-01-01 (0%) ↔ dip $10,000 bis 2027-01-01 (0%) verletzt Monotonie"
+    },
+    {
+      "family": "above",
+      "date": "2026-10-26",
+      "direction": "above",
+      "lowStrike": 72000,
+      "highStrike": 74000,
+      "lowP": 0.9905,
+      "highP": 0.991,
+      "lowCid": "0x93a1a21d8d60fe29b23bcf8d8e48eb2b50d0a6196c52dfccf9ceb1e3403803a3",
+      "highCid": "0xdb8cbf6c0e93aaec0fc2b69cd38179bdfcad6e89217b5bcfc3b0e35f76dd6c8c",
+      "lowBid": 0.987,
+      "lowAsk": 0.994,
+      "highBid": 0.989,
+      "highAsk": 0.993,
+      "gapPP": 0.05,
+      "tradable": false,
+      "note": "über $72,000 · 2026-10-26 (99%) ↔ über $74,000 · 2026-10-26 (99%) verletzt Monotonie"
     }
   ]
 }
