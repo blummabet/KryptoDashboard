@@ -1,137 +1,115 @@
 {
-  "generatedAt": "2026-10-22T10:04:56Z",
+  "generatedAt": "2026-10-22T15:10:09Z",
   "intents": [
     {
-      "id": "SELL:0x2952027eb109a0004cac2f99fcab57c535d12b3c4de65bef138a3d0c7a68d909:2026-10-22T10:04:56Z",
+      "id": "SELL:0xc882ac821a9cba065a4502f7bd6103bc6fc0789d9da5461765ed1e2aaff77c73:2026-10-22T15:10:09Z",
       "side": "SELL",
+      "conditionId": "0xc882ac821a9cba065a4502f7bd6103bc6fc0789d9da5461765ed1e2aaff77c73",
+      "tokenId": "113415918515123601018610184663665728593845211692418328691578054729606748733622",
+      "usdc": null,
+      "size": 6.6225,
+      "label": "über $84,000 · 2026-10-22",
+      "source": "convergence",
+      "priceHint": 0.9965
+    },
+    {
+      "id": "SELL:0xf2905aa617ca70cf75a78b3ece6c2272a0f4bc2fdb2203a320048baa90f6c71a:2026-10-22T15:10:09Z",
+      "side": "SELL",
+      "conditionId": "0xf2905aa617ca70cf75a78b3ece6c2272a0f4bc2fdb2203a320048baa90f6c71a",
+      "tokenId": "101289949813317229864939638592005170091339074364078053835672479928886232368169",
+      "usdc": null,
+      "size": 6.8027,
+      "label": "über $86,000 · 2026-10-24",
+      "source": "convergence",
+      "priceHint": 0.9865
+    },
+    {
+      "id": "SELL:0xd8166426c98d9fe0e5dacc0d97be294ec7e2787d1d443041b2d447f27b31ca35:2026-10-22T15:10:09Z",
+      "side": "SELL",
+      "conditionId": "0xd8166426c98d9fe0e5dacc0d97be294ec7e2787d1d443041b2d447f27b31ca35",
+      "tokenId": "88403475881278215606667380193035718331359831588989684914058265689034411147905",
+      "usdc": null,
+      "size": 5.1948,
+      "label": "über $80,000 · 2026-10-22",
+      "source": "convergence",
+      "priceHint": 0.9975
+    },
+    {
+      "id": "SELL:0x42dc04e485b5d8ec749326fe564820ee37a1c63425f43d7b0755a016afd5c4cb:2026-10-22T15:10:09Z",
+      "side": "SELL",
+      "conditionId": "0x42dc04e485b5d8ec749326fe564820ee37a1c63425f43d7b0755a016afd5c4cb",
+      "tokenId": "60853708478456543766262549859214991255573301006704578370875039498477095018713",
+      "usdc": null,
+      "size": 22.2222,
+      "label": "erreicht $87,500 bis 2026-11-01",
+      "source": "convergence",
+      "priceHint": 0.215
+    },
+    {
+      "id": "BUY:0xdfbc41cd55af88906ac091ce72e01d840f9ae7a70027fe9b1abe1459085aea81:2026-10-22T15:10:09Z",
+      "side": "BUY",
+      "conditionId": "0xdfbc41cd55af88906ac091ce72e01d840f9ae7a70027fe9b1abe1459085aea81",
+      "tokenId": "62132286341819922044843649783276987584596266750411553276031542999598388372637",
+      "usdc": 5.0,
+      "size": null,
+      "label": "über $80,000 · 2026-10-27",
+      "source": "convergence",
+      "priceHint": 0.265
+    },
+    {
+      "id": "BUY:0xedafbe4163ce7097605b2e3448f61f24209fd57e3fa0b7bfb6e253cc8822aab0:2026-10-22T15:10:09Z",
+      "side": "BUY",
+      "conditionId": "0xedafbe4163ce7097605b2e3448f61f24209fd57e3fa0b7bfb6e253cc8822aab0",
+      "tokenId": "60706202631958829535706303661570114099541697578527420815428446948689613668385",
+      "usdc": 5.0,
+      "size": null,
+      "label": "über $78,000 · 2026-10-27",
+      "source": "convergence",
+      "priceHint": 0.0935
+    },
+    {
+      "id": "BUY:0x2e21c080471493e1027ac297d2fc04904729947655e2e5f4dd0eb40de5093236:2026-10-22T15:10:09Z",
+      "side": "BUY",
+      "conditionId": "0x2e21c080471493e1027ac297d2fc04904729947655e2e5f4dd0eb40de5093236",
+      "tokenId": "99982248010154632956983066624530206362689046691117317039328876701512645251853",
+      "usdc": 5.0,
+      "size": null,
+      "label": "über $80,000 · 2026-10-28",
+      "source": "convergence",
+      "priceHint": 0.29
+    },
+    {
+      "id": "BUY:0x89729adb1b0daa1999f741e8e521309554f17266bbe74d22ba2e99ec6a69a8ff:2026-10-22T15:10:09Z",
+      "side": "BUY",
+      "conditionId": "0x89729adb1b0daa1999f741e8e521309554f17266bbe74d22ba2e99ec6a69a8ff",
+      "tokenId": "68256812161919087862068394261311412738963104939667563391237008882725155734468",
+      "usdc": 5.0,
+      "size": null,
+      "label": "über $82,000 · 2026-10-22",
+      "source": "convergence",
+      "priceHint": 0.816
+    },
+    {
+      "id": "BUY:0x2952027eb109a0004cac2f99fcab57c535d12b3c4de65bef138a3d0c7a68d909:2026-10-22T15:10:09Z",
+      "side": "BUY",
       "conditionId": "0x2952027eb109a0004cac2f99fcab57c535d12b3c4de65bef138a3d0c7a68d909",
       "tokenId": "98793384198977107245501497788566556069699850494024484183317102656062471156561",
-      "usdc": null,
-      "size": 9.009,
+      "usdc": 5.0,
+      "size": null,
       "label": "dip $80,000 bis 2026-11-01",
       "source": "convergence",
       "priceHint": 0.655
     },
     {
-      "id": "SELL:0x4e738fa0a2731366d773ca3b5bbfc3b9f48410381c5c617fbeaa8dcaa3eb767f:2026-10-22T10:04:56Z",
-      "side": "SELL",
-      "conditionId": "0x4e738fa0a2731366d773ca3b5bbfc3b9f48410381c5c617fbeaa8dcaa3eb767f",
-      "tokenId": "101712862798829307174500802467820265161753125197992162512209002242991184972100",
-      "usdc": null,
-      "size": 5.4377,
-      "label": "über $86,000 · 2026-10-23",
-      "source": "convergence",
-      "priceHint": 0.99
-    },
-    {
-      "id": "SELL:0xff25b88a9edc85eaf3d4eafef768ffc854eabab1724cdb65bc20035942ec52a1:2026-10-22T10:04:56Z",
-      "side": "SELL",
-      "conditionId": "0xff25b88a9edc85eaf3d4eafef768ffc854eabab1724cdb65bc20035942ec52a1",
-      "tokenId": "18711781406831661271066926703097036116218329018051516096921943610502658520855",
-      "usdc": null,
-      "size": 5.9347,
-      "label": "über $86,000 · 2026-10-22",
-      "source": "convergence",
-      "priceHint": 0.9965
-    },
-    {
-      "id": "SELL:0x85232aaf16bbca4eb3f4de6247520853618edfab98d7e24f4a809dcc37f77bce:2026-10-22T10:04:56Z",
-      "side": "SELL",
-      "conditionId": "0x85232aaf16bbca4eb3f4de6247520853618edfab98d7e24f4a809dcc37f77bce",
-      "tokenId": "57762395223490061507383377336819698080587553961895828137770286422869929372482",
-      "usdc": null,
-      "size": 7.7519,
-      "label": "dip $82,500 bis 2026-11-01",
-      "source": "convergence",
-      "priceHint": 1.0
-    },
-    {
-      "id": "SELL:0xb62c2292b069f6dd1f94c0b642452d168a6e9bdf7f3012865a435d4503e1311f:2026-10-22T10:04:56Z",
-      "side": "SELL",
-      "conditionId": "0xb62c2292b069f6dd1f94c0b642452d168a6e9bdf7f3012865a435d4503e1311f",
-      "tokenId": "75235269184794259013127819692804074045167548792002535411503865311931726043391",
-      "usdc": null,
-      "size": 8.4034,
-      "label": "erreicht $85,000 bis 2026-11-01",
-      "source": "convergence",
-      "priceHint": 0.485
-    },
-    {
-      "id": "BUY:0xb36a48452098f2e93e2750cd002791c55bdeeb10a8a3427b78edc5ea87caf8ef:2026-10-22T10:04:56Z",
+      "id": "BUY:0x3fe7c4cbdc3216acbba07cf0bd4eaeddd02b1fd3b7d0bc02d0b85e6125d96c1c:2026-10-22T15:10:09Z",
       "side": "BUY",
-      "conditionId": "0xb36a48452098f2e93e2750cd002791c55bdeeb10a8a3427b78edc5ea87caf8ef",
-      "tokenId": "30499053036780238741757111563758601641832631508200238774083308214821471834435",
+      "conditionId": "0x3fe7c4cbdc3216acbba07cf0bd4eaeddd02b1fd3b7d0bc02d0b85e6125d96c1c",
+      "tokenId": "62641418797848507914766445782579938743051987925408098294829776497242822097202",
       "usdc": 5.0,
       "size": null,
-      "label": "über $82,000 · 2026-10-27",
+      "label": "über $82,000 · 2026-10-23",
       "source": "convergence",
-      "priceHint": 0.505
-    },
-    {
-      "id": "BUY:0x2eed410bec1af1990ec99b55993bc7c9c0f0d78d71571c99596dad6fa3a3bc8f:2026-10-22T10:04:56Z",
-      "side": "BUY",
-      "conditionId": "0x2eed410bec1af1990ec99b55993bc7c9c0f0d78d71571c99596dad6fa3a3bc8f",
-      "tokenId": "76130537730016948533484208276066585916464439299707480407963147552097631844888",
-      "usdc": 5.0,
-      "size": null,
-      "label": "über $84,000 · 2026-10-28",
-      "source": "convergence",
-      "priceHint": 0.735
-    },
-    {
-      "id": "BUY:0x5160b9678b8d52ea61b38a9db0324846e48e0e20ef4b2898c151f9654235ca84:2026-10-22T10:04:56Z",
-      "side": "BUY",
-      "conditionId": "0x5160b9678b8d52ea61b38a9db0324846e48e0e20ef4b2898c151f9654235ca84",
-      "tokenId": "22799936090278217389157418500545220212382363386076984406865894021976131792205",
-      "usdc": 5.0,
-      "size": null,
-      "label": "über $82,000 · 2026-10-28",
-      "source": "convergence",
-      "priceHint": 0.51
-    },
-    {
-      "id": "BUY:0xacec7e5b90ccb1ac4c950e3aff18156d6ce1bb7b0c87c001a281279412dca784:2026-10-22T10:04:56Z",
-      "side": "BUY",
-      "conditionId": "0xacec7e5b90ccb1ac4c950e3aff18156d6ce1bb7b0c87c001a281279412dca784",
-      "tokenId": "101492056351751833920629364005167338435431925816936377971961169353021340085257",
-      "usdc": 5.0,
-      "size": null,
-      "label": "erreicht $95,000 bis 2027-01-01",
-      "source": "convergence",
-      "priceHint": 0.635
-    },
-    {
-      "id": "BUY:0xd8166426c98d9fe0e5dacc0d97be294ec7e2787d1d443041b2d447f27b31ca35:2026-10-22T10:04:56Z",
-      "side": "BUY",
-      "conditionId": "0xd8166426c98d9fe0e5dacc0d97be294ec7e2787d1d443041b2d447f27b31ca35",
-      "tokenId": "88403475881278215606667380193035718331359831588989684914058265689034411147905",
-      "usdc": 5.0,
-      "size": null,
-      "label": "über $80,000 · 2026-10-22",
-      "source": "convergence",
-      "priceHint": 0.9625
-    },
-    {
-      "id": "BUY:0x42dc04e485b5d8ec749326fe564820ee37a1c63425f43d7b0755a016afd5c4cb:2026-10-22T10:04:56Z",
-      "side": "BUY",
-      "conditionId": "0x42dc04e485b5d8ec749326fe564820ee37a1c63425f43d7b0755a016afd5c4cb",
-      "tokenId": "60853708478456543766262549859214991255573301006704578370875039498477095018713",
-      "usdc": 5.0,
-      "size": null,
-      "label": "erreicht $87,500 bis 2026-11-01",
-      "source": "convergence",
-      "priceHint": 0.225
-    },
-    {
-      "id": "BUY:0xb62c2292b069f6dd1f94c0b642452d168a6e9bdf7f3012865a435d4503e1311f:2026-10-22T10:04:56Z",
-      "side": "BUY",
-      "conditionId": "0xb62c2292b069f6dd1f94c0b642452d168a6e9bdf7f3012865a435d4503e1311f",
-      "tokenId": "15018030201784707078691467027126212392152806531705291849117127040139734478701",
-      "usdc": 5.0,
-      "size": null,
-      "label": "erreicht $85,000 bis 2026-11-01",
-      "source": "convergence",
-      "priceHint": 0.515
+      "priceHint": 0.585
     }
   ]
 }
