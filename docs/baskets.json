@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-24 20:42 UTC",
+  "generatedAt": "2026-10-24 23:07 UTC",
   "scanned": 600,
-  "count": 7,
+  "count": 8,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -85,17 +85,51 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.342,
-      "grossPP": 65.8,
+      "sumProb": 0.196,
+      "grossPP": 80.4,
+      "feePP": 0.59,
+      "netPP": 79.81,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xfb5399f0e1c4ea4d78a40957d48838ab5769fcec80592b8ce2ffd6e27a3cad00",
+      "event": "UEFA Champions League: 2027 Champion",
+      "slug": "uefa-champions-league-2027-champion-20260701202025549",
+      "endDate": "2027-06-20T03:59:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "Paris Saint-Germain",
+          "bid": 0.17,
+          "ask": 0.18
+        },
+        {
+          "name": "Aston Villa",
+          "bid": 0.013,
+          "ask": 0.014
+        },
+        {
+          "name": "Shakhtar Donetsk",
+          "bid": 0.001,
+          "ask": 0.002
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.249,
+      "grossPP": 75.1,
       "feePP": 0.0,
-      "netPP": 65.8,
+      "netPP": 75.1,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-08T04:59:00Z",
-      "n": 7,
+      "n": 6,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -106,14 +140,9 @@
           "ask": 0.104
         },
         {
-          "name": "Jon Ossoff",
-          "bid": 0.094,
-          "ask": 0.095
-        },
-        {
           "name": "Marco Rubio",
-          "bid": 0.084,
-          "ask": 0.094
+          "bid": 0.085,
+          "ask": 0.097
         },
         {
           "name": "Ron DeSantis",
@@ -127,17 +156,22 @@
         },
         {
           "name": "Ted Cruz",
-          "bid": 0.006,
-          "ask": 0.007
+          "bid": 0.005,
+          "ask": 0.006
+        },
+        {
+          "name": "Rahm Emanuel",
+          "bid": 0.005,
+          "ask": 0.006
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.361,
-      "grossPP": 63.9,
+      "sumProb": 0.366,
+      "grossPP": 63.4,
       "feePP": 0.0,
-      "netPP": 63.9,
+      "netPP": 63.4,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
@@ -150,14 +184,14 @@
       "tradable": false,
       "top": [
         {
-          "name": "Gavin Newsom",
-          "bid": 0.161,
-          "ask": 0.164
+          "name": "Alexandria Ocasio-Cortez",
+          "bid": 0.166,
+          "ask": 0.168
         },
         {
-          "name": "Alexandria Ocasio-Cortez",
-          "bid": 0.162,
-          "ask": 0.164
+          "name": "Gavin Newsom",
+          "bid": 0.163,
+          "ask": 0.165
         },
         {
           "name": "Raphael Warnock",
@@ -170,12 +204,12 @@
           "ask": 0.008
         },
         {
-          "name": "Chris Van Hollen",
+          "name": "Mitch Landrieu",
           "bid": 0.001,
           "ask": 0.002
         },
         {
-          "name": "Mitch Landrieu",
+          "name": "Chris Van Hollen",
           "bid": 0.001,
           "ask": 0.002
         }
@@ -183,17 +217,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.553,
-      "grossPP": 44.7,
+      "sumProb": 0.462,
+      "grossPP": 53.8,
       "feePP": 0.0,
-      "netPP": 44.7,
+      "netPP": 53.8,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xbb01d92208e308f14eb9917889bb2b449395207a26fe2a7990c3d5def7f74c00",
       "event": "NBA: 2027 Champion",
       "slug": "nba-2027-champion",
       "endDate": "2027-07-01T03:59:00Z",
-      "n": 22,
+      "n": 19,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -232,10 +266,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.689,
-      "grossPP": 31.1,
+      "sumProb": 0.67,
+      "grossPP": 33.0,
       "feePP": 0.0,
-      "netPP": 31.1,
+      "netPP": 33.0,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x325981fe43d5f10628e5da32a09d09a18494c503b0ab0841a2e6ba7796fc0f00",
@@ -249,49 +283,49 @@
       "top": [
         {
           "name": "280-299",
-          "bid": 0.22,
-          "ask": 0.24
+          "bid": 0.23,
+          "ask": 0.26
         },
         {
           "name": "320-339",
-          "bid": 0.2,
+          "bid": 0.19,
           "ask": 0.21
         },
         {
           "name": "340-359",
           "bid": 0.107,
-          "ask": 0.11
+          "ask": 0.115
         },
         {
           "name": "260-279",
-          "bid": 0.08,
-          "ask": 0.1
+          "bid": 0.06,
+          "ask": 0.07
         },
         {
           "name": "240-259",
-          "bid": 0.02,
-          "ask": 0.024
+          "bid": 0.004,
+          "ask": 0.01
         },
         {
           "name": "220-239",
-          "bid": 0.001,
+          "bid": null,
           "ask": 0.002
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.74,
-      "grossPP": 26.0,
+      "sumProb": 0.73,
+      "grossPP": 27.0,
       "feePP": 0.0,
-      "netPP": 26.0,
+      "netPP": 27.0,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
       "event": "Next French Presidential Election",
       "slug": "next-french-presidential-election",
       "endDate": "2027-04-19T03:59:00Z",
-      "n": 10,
+      "n": 9,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
@@ -317,14 +351,14 @@
           "ask": 0.015
         },
         {
-          "name": "Éric Zemmour",
-          "bid": 0.007,
-          "ask": 0.01
+          "name": "Dominique de Villepin",
+          "bid": 0.005,
+          "ask": 0.007
         },
         {
-          "name": "Dominique de Villepin",
-          "bid": 0.006,
-          "ask": 0.007
+          "name": "Christine Lagarde",
+          "bid": 0.004,
+          "ask": 0.005
         }
       ]
     }
