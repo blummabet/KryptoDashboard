@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-10-24 05:43 UTC",
+  "generatedAt": "2026-10-24 10:49 UTC",
   "scanned": 600,
-  "count": 9,
+  "count": 7,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
     {
       "side": "buy",
-      "sumProb": 0.057,
-      "grossPP": 94.3,
+      "sumProb": 0.046,
+      "grossPP": 95.4,
       "feePP": 0.0,
-      "netPP": 94.3,
+      "netPP": 95.4,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
       "event": "Republican Presidential Nominee 2028",
       "slug": "republican-presidential-nominee-2028",
       "endDate": "2028-11-08T04:59:00Z",
-      "n": 5,
+      "n": 4,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
@@ -25,20 +25,15 @@
         {
           "name": "Ron DeSantis",
           "bid": 0.032,
-          "ask": 0.035
+          "ask": 0.034
         },
         {
-          "name": "Ivanka Trump",
-          "bid": 0.012,
-          "ask": 0.015
+          "name": "Thomas Massie",
+          "bid": 0.006,
+          "ask": 0.008
         },
         {
           "name": "Glenn Youngkin",
-          "bid": 0.002,
-          "ask": 0.003
-        },
-        {
-          "name": "Eric Trump",
           "bid": 0.002,
           "ask": 0.003
         },
@@ -51,74 +46,35 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.167,
-      "grossPP": 83.3,
-      "feePP": 0.5,
-      "netPP": 82.8,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
-      "event": "Pro Football: 2027 Champion",
-      "slug": "pro-football-2027-champion-20260729185915366",
-      "endDate": "2027-04-01T03:59:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "San Francisco 49ers",
-          "bid": 0.155,
-          "ask": 0.156
-        },
-        {
-          "name": "Cleveland Browns",
-          "bid": 0.005,
-          "ask": 0.006
-        },
-        {
-          "name": "Philadelphia Eagles",
-          "bid": 0.004,
-          "ask": 0.005
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.28,
-      "grossPP": 72.0,
+      "sumProb": 0.243,
+      "grossPP": 75.7,
       "feePP": 0.0,
-      "netPP": 72.0,
+      "netPP": 75.7,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
       "event": "Presidential Election Winner 2028",
       "slug": "presidential-election-winner-2028",
       "endDate": "2028-11-08T04:59:00Z",
-      "n": 5,
+      "n": 4,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "Gavin Newsom",
-          "bid": 0.093,
+          "bid": 0.098,
           "ask": 0.099
         },
         {
           "name": "Jon Ossoff",
-          "bid": 0.094,
+          "bid": 0.095,
           "ask": 0.096
         },
         {
-          "name": "Kamala Harris",
-          "bid": 0.04,
-          "ask": 0.043
-        },
-        {
           "name": "Ron DeSantis",
-          "bid": 0.023,
-          "ask": 0.035
+          "bid": 0.026,
+          "ask": 0.041
         },
         {
           "name": "Rahm Emanuel",
@@ -129,10 +85,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.336,
-      "grossPP": 66.4,
+      "sumProb": 0.337,
+      "grossPP": 66.3,
       "feePP": 0.0,
-      "netPP": 66.4,
+      "netPP": 66.3,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xa63ce806b53bafe141f08590be9fea0156e9db112a1deb1ee51a99c234886800",
@@ -146,8 +102,8 @@
       "top": [
         {
           "name": "Oil ≥ $80; R Senate",
-          "bid": 0.287,
-          "ask": 0.299
+          "bid": 0.288,
+          "ask": 0.3
         },
         {
           "name": "Oil < $80; D Senate",
@@ -156,56 +112,17 @@
         },
         {
           "name": "Oil < $80; R Senate",
-          "bid": 0.014,
+          "bid": 0.015,
           "ask": 0.018
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.446,
-      "grossPP": 55.4,
-      "feePP": 1.34,
-      "netPP": 54.06,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xfb5399f0e1c4ea4d78a40957d48838ab5769fcec80592b8ce2ffd6e27a3cad00",
-      "event": "UEFA Champions League: 2027 Champion",
-      "slug": "uefa-champions-league-2027-champion-20260701202025549",
-      "endDate": "2027-06-20T03:59:00Z",
-      "n": 4,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Barcelona",
-          "bid": 0.23,
-          "ask": 0.24
-        },
-        {
-          "name": "Paris Saint-Germain",
-          "bid": 0.17,
-          "ask": 0.18
-        },
-        {
-          "name": "Atlético Madrid",
-          "bid": 0.023,
-          "ask": 0.024
-        },
-        {
-          "name": "Shakhtar Donetsk",
-          "bid": 0.001,
-          "ask": 0.002
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.481,
-      "grossPP": 51.9,
+      "sumProb": 0.448,
+      "grossPP": 55.2,
       "feePP": 0.0,
-      "netPP": 51.9,
+      "netPP": 55.2,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x325981fe43d5f10628e5da32a09d09a18494c503b0ab0841a2e6ba7796fc0f00",
@@ -219,28 +136,28 @@
       "top": [
         {
           "name": "280-299",
-          "bid": 0.22,
-          "ask": 0.23
+          "bid": 0.23,
+          "ask": 0.25
         },
         {
           "name": "260-279",
-          "bid": 0.14,
-          "ask": 0.16
+          "bid": 0.12,
+          "ask": 0.13
         },
         {
           "name": "240-259",
-          "bid": 0.06,
-          "ask": 0.07
+          "bid": 0.05,
+          "ask": 0.059
         },
         {
           "name": "220-239",
-          "bid": 0.006,
-          "ask": 0.015
+          "bid": 0.004,
+          "ask": 0.006
         },
         {
           "name": "200-219",
-          "bid": 0.002,
-          "ask": 0.004
+          "bid": null,
+          "ask": 0.001
         },
         {
           "name": "180-199",
@@ -251,17 +168,17 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.545,
-      "grossPP": 45.5,
+      "sumProb": 0.535,
+      "grossPP": 46.5,
       "feePP": 0.0,
-      "netPP": 45.5,
+      "netPP": 46.5,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
       "event": "Democratic Presidential Nominee 2028",
       "slug": "democratic-presidential-nominee-2028",
       "endDate": "2028-11-08T04:59:00Z",
-      "n": 9,
+      "n": 7,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -269,21 +186,21 @@
         {
           "name": "Gavin Newsom",
           "bid": 0.167,
-          "ask": 0.17
+          "ask": 0.168
         },
         {
           "name": "Alexandria Ocasio-Cortez",
-          "bid": 0.161,
-          "ask": 0.165
+          "bid": 0.162,
+          "ask": 0.163
         },
         {
           "name": "Jon Ossoff",
-          "bid": 0.155,
+          "bid": 0.156,
           "ask": 0.157
         },
         {
           "name": "Mark Kelly",
-          "bid": 0.02,
+          "bid": 0.021,
           "ask": 0.022
         },
         {
@@ -300,10 +217,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.552,
-      "grossPP": 44.8,
+      "sumProb": 0.579,
+      "grossPP": 42.1,
       "feePP": 0.0,
-      "netPP": 44.8,
+      "netPP": 42.1,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x4bcf7372694cb3ed70e31369f7602502cf80c6194e348bcba13c20b0a8936400",
@@ -317,34 +234,34 @@
       "top": [
         {
           "name": "$1.75–$2.0T",
-          "bid": 0.27,
-          "ask": 0.28
+          "bid": 0.28,
+          "ask": 0.29
         },
         {
           "name": "$2.0–$2.25T",
-          "bid": 0.22,
-          "ask": 0.224
+          "bid": 0.197,
+          "ask": 0.209
         },
         {
           "name": "$1.25–$1.5T",
-          "bid": 0.047,
-          "ask": 0.048
+          "bid": 0.079,
+          "ask": 0.08
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.906,
-      "grossPP": 9.4,
+      "sumProb": 0.914,
+      "grossPP": 8.6,
       "feePP": 0.0,
-      "netPP": 9.4,
+      "netPP": 8.6,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xdb7fd06931d5f8cec574bc6423d97f0c3a77e814e9b45119084f90e5a1632200",
       "event": "Next French Presidential Election",
       "slug": "next-french-presidential-election",
       "endDate": "2027-04-19T03:59:00Z",
-      "n": 7,
+      "n": 9,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -371,8 +288,8 @@
         },
         {
           "name": "Bruno Retailleau",
-          "bid": 0.009,
-          "ask": 0.014
+          "bid": 0.008,
+          "ask": 0.011
         },
         {
           "name": "Éric Zemmour",
