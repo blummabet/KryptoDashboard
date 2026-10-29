@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-28 20:59 UTC",
+  "generatedAt": "2026-10-29 00:48 UTC",
   "scanned": 600,
-  "count": 9,
+  "count": 7,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
@@ -17,15 +17,15 @@
       "event": "Democratic Presidential Nominee 2028",
       "slug": "democratic-presidential-nominee-2028",
       "endDate": "2028-11-08T04:59:00Z",
-      "n": 5,
-      "completeBid": true,
+      "n": 6,
+      "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "Kamala Harris",
-          "bid": 0.062,
-          "ask": 0.063
+          "bid": 0.058,
+          "ask": 0.062
         },
         {
           "name": "Ro Khanna",
@@ -46,6 +46,11 @@
           "name": "Mitch Landrieu",
           "bid": 0.001,
           "ask": 0.002
+        },
+        {
+          "name": "Andrew Yang",
+          "bid": null,
+          "ask": 0.001
         }
       ]
     },
@@ -68,7 +73,7 @@
       "top": [
         {
           "name": "San Francisco 49ers",
-          "bid": 0.144,
+          "bid": 0.148,
           "ask": 0.149
         },
         {
@@ -85,10 +90,10 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.25,
-      "grossPP": 75.0,
+      "sumProb": 0.244,
+      "grossPP": 75.6,
       "feePP": 0.0,
-      "netPP": 75.0,
+      "netPP": 75.6,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
@@ -107,8 +112,8 @@
         },
         {
           "name": "Marco Rubio",
-          "bid": 0.087,
-          "ask": 0.096
+          "bid": 0.084,
+          "ask": 0.091
         },
         {
           "name": "Kamala Harris",
@@ -117,24 +122,24 @@
         },
         {
           "name": "Elon Musk",
-          "bid": 0.004,
-          "ask": 0.005
+          "bid": 0.003,
+          "ask": 0.004
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.39,
-      "grossPP": 61.0,
+      "sumProb": 0.44,
+      "grossPP": 56.0,
       "feePP": 0.0,
-      "netPP": 61.0,
+      "netPP": 56.0,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xbb01d92208e308f14eb9917889bb2b449395207a26fe2a7990c3d5def7f74c00",
       "event": "NBA: 2027 Champion",
       "slug": "nba-2027-champion",
       "endDate": "2027-07-01T03:59:00Z",
-      "n": 5,
+      "n": 9,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -155,6 +160,11 @@
           "ask": 0.052
         },
         {
+          "name": "Miami Heat",
+          "bid": 0.02,
+          "ask": 0.023
+        },
+        {
           "name": "Indiana Pacers",
           "bid": 0.02,
           "ask": 0.021
@@ -162,36 +172,41 @@
         {
           "name": "Portland Trail Blazers",
           "bid": 0.016,
-          "ask": 0.017
+          "ask": 0.02
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.586,
-      "grossPP": 41.4,
+      "sumProb": 0.61,
+      "grossPP": 39.0,
       "feePP": 0.0,
-      "netPP": 41.4,
+      "netPP": 39.0,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
       "event": "Republican Presidential Nominee 2028",
       "slug": "republican-presidential-nominee-2028",
       "endDate": "2028-11-08T04:59:00Z",
-      "n": 11,
+      "n": 14,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "J.D. Vance",
-          "bid": 0.39,
-          "ask": 0.391
+          "bid": 0.381,
+          "ask": 0.39
         },
         {
           "name": "Marco Rubio",
-          "bid": 0.173,
-          "ask": 0.174
+          "bid": 0.172,
+          "ask": 0.173
+        },
+        {
+          "name": "Donald Trump",
+          "bid": 0.019,
+          "ask": 0.021
         },
         {
           "name": "Josh Hawley",
@@ -204,57 +219,62 @@
           "ask": 0.003
         },
         {
-          "name": "Byron Donalds",
-          "bid": 0.001,
-          "ask": 0.002
-        },
-        {
-          "name": "Kristi Noem",
-          "bid": 0.001,
-          "ask": 0.002
+          "name": "Steve Bannon",
+          "bid": 0.002,
+          "ask": 0.003
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.63,
-      "grossPP": 37.0,
+      "sumProb": 0.754,
+      "grossPP": 24.6,
       "feePP": 0.0,
-      "netPP": 37.0,
+      "netPP": 24.6,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x055ece9b72fb3c49abe9de60cb0b06050e55b70d5f5c74d03facd7288f817000",
       "event": "Republican Senate seats after the 2026 midterm elections?",
       "slug": "republican-senate-seats-after-the-2026-midterm-elections-927",
       "endDate": "2026-11-03T17:00:00Z",
-      "n": 3,
+      "n": 5,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "≤47",
-          "bid": 0.39,
-          "ask": 0.41
+          "bid": 0.38,
+          "ask": 0.4
+        },
+        {
+          "name": "50",
+          "bid": 0.12,
+          "ask": 0.13
         },
         {
           "name": "49",
-          "bid": 0.11,
+          "bid": 0.1,
           "ask": 0.12
         },
         {
           "name": "51",
-          "bid": 0.09,
-          "ask": 0.1
+          "bid": 0.08,
+          "ask": 0.09
+        },
+        {
+          "name": "57+",
+          "bid": 0.005,
+          "ask": 0.014
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.857,
-      "grossPP": 14.3,
-      "feePP": 5.86,
-      "netPP": 8.44,
+      "sumProb": 0.824,
+      "grossPP": 17.6,
+      "feePP": 5.77,
+      "netPP": 11.83,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x03c9c6d9f7b20aaa1f33f99bd24bd16e4e0e00cfa892dde097b800655490b200",
@@ -268,23 +288,23 @@
       "top": [
         {
           "name": "Benjamin Netanyahu",
-          "bid": 0.5,
-          "ask": 0.51
+          "bid": 0.45,
+          "ask": 0.46
         },
         {
           "name": "Gadi Eizenkot",
-          "bid": 0.253,
-          "ask": 0.254
+          "bid": 0.237,
+          "ask": 0.249
         },
         {
           "name": "Naftali Bennett",
-          "bid": 0.038,
-          "ask": 0.04
+          "bid": 0.041,
+          "ask": 0.052
         },
         {
           "name": "Avigdor Lieberman",
-          "bid": 0.02,
-          "ask": 0.022
+          "bid": 0.022,
+          "ask": 0.026
         },
         {
           "name": "Yossi Cohen",
@@ -295,84 +315,6 @@
           "name": "Israel Katz",
           "bid": 0.003,
           "ask": 0.005
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.988,
-      "grossPP": 1.2,
-      "feePP": 0.0,
-      "netPP": 1.2,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xf96e02cd74328e8092efe7220551ab62f8a013ba05c9fc37e2e09f3e5d563300",
-      "event": "Who will receive the first mandate to form Israel's next government?",
-      "slug": "who-will-receive-the-first-mandate-to-form-israels-next-government-20261019144924877",
-      "endDate": "2026-10-28T03:59:00Z",
-      "n": 3,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "Benjamin Netanyahu",
-          "bid": 0.59,
-          "ask": 0.6
-        },
-        {
-          "name": "Gadi Eizenkot",
-          "bid": 0.36,
-          "ask": 0.38
-        },
-        {
-          "name": "Naftali Bennett",
-          "bid": 0.002,
-          "ask": 0.008
-        }
-      ]
-    },
-    {
-      "side": "buy",
-      "sumProb": 0.993,
-      "grossPP": 0.7,
-      "feePP": 0.0,
-      "netPP": 0.7,
-      "exhaustiveNeeded": true,
-      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xa74f5328517db0e030a5e62edc800e37bd36ca6e455571b14e8bb2b0dd38d700",
-      "event": "Fed Decision in December?",
-      "slug": "fed-decision-in-december-20260729232808632",
-      "endDate": "2026-12-10T04:59:00Z",
-      "n": 5,
-      "completeBid": true,
-      "completeAsk": true,
-      "tradable": false,
-      "top": [
-        {
-          "name": "25 bps increase",
-          "bid": 0.78,
-          "ask": 0.79
-        },
-        {
-          "name": "No change",
-          "bid": 0.16,
-          "ask": 0.17
-        },
-        {
-          "name": "50+ bps increase",
-          "bid": 0.023,
-          "ask": 0.024
-        },
-        {
-          "name": "25 bps decrease",
-          "bid": 0.005,
-          "ask": 0.006
-        },
-        {
-          "name": "50+ bps decrease",
-          "bid": 0.002,
-          "ask": 0.003
         }
       ]
     }
