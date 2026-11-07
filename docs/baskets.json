@@ -1,72 +1,62 @@
 {
-  "generatedAt": "2026-11-07 02:42 UTC",
+  "generatedAt": "2026-11-07 09:56 UTC",
   "scanned": 600,
-  "count": 7,
+  "count": 9,
   "tradableCount": 0,
   "note": "Modellfreier Multi-Outcome-Basket-Arb (Σ Yes ≠ 1) über alle Kategorien. SELL-Seite robust risikofrei; BUY-Seite nur bei erschöpfenden Kandidaten. read-only · 'einsteigen & bei Profit raus' ist KEINE Kante — nur die Σ≠1-Arb ist eine.",
   "findings": [
     {
       "side": "buy",
-      "sumProb": 0.152,
-      "grossPP": 84.8,
-      "feePP": 0.76,
-      "netPP": 84.04,
+      "sumProb": 0.058,
+      "grossPP": 94.2,
+      "feePP": 0.17,
+      "netPP": 94.03,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x410ddc7cd1dd6f3064bbc12588bbc2ac7a7b76007dbde296400860cfc820fc00",
-      "event": "Elon Musk # tweets November 3 - November 10, 2026?",
-      "slug": "elon-musk-of-tweets-november-3-november-10-2026",
-      "endDate": "2026-11-10T17:00:00Z",
-      "n": 6,
-      "completeBid": false,
+      "negRiskMarketID": "0xb1a47cd91daefb91311575bf564742cd675018af7430786314e475d854411000",
+      "event": "Pro Football: 2027 Champion",
+      "slug": "pro-football-2027-champion-20260729185915366",
+      "endDate": "2027-04-01T03:59:00Z",
+      "n": 4,
+      "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "240-259",
-          "bid": 0.117,
-          "ask": 0.123
+          "name": "Minnesota Vikings",
+          "bid": 0.029,
+          "ask": 0.031
         },
         {
-          "name": "200-219",
-          "bid": 0.015,
-          "ask": 0.017
+          "name": "New York Giants",
+          "bid": 0.013,
+          "ask": 0.014
         },
         {
-          "name": "180-199",
-          "bid": 0.005,
-          "ask": 0.008
+          "name": "Tampa Bay Buccaneers",
+          "bid": 0.007,
+          "ask": 0.009
         },
         {
-          "name": "160-179",
-          "bid": 0.001,
-          "ask": 0.002
-        },
-        {
-          "name": "140-159",
-          "bid": null,
-          "ask": 0.001
-        },
-        {
-          "name": "120-139",
-          "bid": null,
-          "ask": 0.001
+          "name": "New Orleans Saints",
+          "bid": 0.003,
+          "ask": 0.004
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.36,
-      "grossPP": 64.0,
-      "feePP": 1.08,
-      "netPP": 62.92,
+      "sumProb": 0.349,
+      "grossPP": 65.1,
+      "feePP": 1.05,
+      "netPP": 64.05,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xfb5399f0e1c4ea4d78a40957d48838ab5769fcec80592b8ce2ffd6e27a3cad00",
       "event": "UEFA Champions League: 2027 Champion",
       "slug": "uefa-champions-league-2027-champion-20260701202025549",
       "endDate": "2027-06-20T03:59:00Z",
-      "n": 8,
+      "n": 9,
       "completeBid": true,
       "completeAsk": true,
       "tradable": false,
@@ -87,11 +77,6 @@
           "ask": 0.036
         },
         {
-          "name": "Como",
-          "bid": 0.022,
-          "ask": 0.024
-        },
-        {
           "name": "Inter Milan",
           "bid": 0.014,
           "ask": 0.015
@@ -100,23 +85,28 @@
           "name": "Aston Villa",
           "bid": 0.011,
           "ask": 0.012
+        },
+        {
+          "name": "Manchester United",
+          "bid": 0.01,
+          "ask": 0.011
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.388,
-      "grossPP": 61.2,
-      "feePP": 1.16,
-      "netPP": 60.04,
+      "sumProb": 0.372,
+      "grossPP": 62.8,
+      "feePP": 1.12,
+      "netPP": 61.68,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xbb01d92208e308f14eb9917889bb2b449395207a26fe2a7990c3d5def7f74c00",
       "event": "NBA: 2027 Champion",
       "slug": "nba-2027-champion",
       "endDate": "2027-07-01T03:59:00Z",
-      "n": 5,
-      "completeBid": true,
+      "n": 6,
+      "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
@@ -127,55 +117,89 @@
         },
         {
           "name": "Philadelphia 76ers",
-          "bid": 0.14,
-          "ask": 0.141
+          "bid": 0.131,
+          "ask": 0.132
         },
         {
-          "name": "Houston Rockets",
-          "bid": 0.059,
-          "ask": 0.06
+          "name": "Toronto Raptors",
+          "bid": 0.036,
+          "ask": 0.037
         },
         {
-          "name": "Golden State Warriors",
-          "bid": 0.021,
-          "ask": 0.022
+          "name": "Los Angeles Lakers",
+          "bid": 0.033,
+          "ask": 0.035
         },
         {
-          "name": "Washington Wizards",
-          "bid": 0.004,
-          "ask": 0.005
+          "name": "Orlando Magic",
+          "bid": 0.006,
+          "ask": 0.007
+        },
+        {
+          "name": "Los Angeles Clippers",
+          "bid": null,
+          "ask": 0.001
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.574,
-      "grossPP": 42.6,
-      "feePP": 2.3,
-      "netPP": 40.3,
+      "sumProb": 0.403,
+      "grossPP": 59.7,
+      "feePP": 2.02,
+      "netPP": 57.68,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0xd690430d7c94ea4e48c4acbacc77e3d0c15df39e666ce7bf197c7eca45cf5b00",
+      "event": "\"Godzilla Minus Zero\" Opening Weekend Box Office",
+      "slug": "godzilla-minus-zero-opening-weekend-box-office",
+      "endDate": "2026-11-08T12:00:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "31m-34m",
+          "bid": 0.29,
+          "ask": 0.32
+        },
+        {
+          "name": "<28m",
+          "bid": 0.022,
+          "ask": 0.063
+        },
+        {
+          "name": "34m-37m",
+          "bid": 0.011,
+          "ask": 0.02
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.539,
+      "grossPP": 46.1,
+      "feePP": 2.16,
+      "netPP": 43.94,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0x2c3d7e0eee6f058be3006baabf0d54a07da254ba47fe6e3e095e7990c7814700",
       "event": "Democratic Presidential Nominee 2028",
       "slug": "democratic-presidential-nominee-2028",
       "endDate": "2028-11-08T04:59:00Z",
-      "n": 24,
+      "n": 28,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "Jon Ossoff",
-          "bid": 0.272,
-          "ask": 0.273
+          "bid": 0.264,
+          "ask": 0.265
         },
         {
           "name": "Pete Buttigieg",
-          "bid": 0.049,
-          "ask": 0.05
-        },
-        {
-          "name": "Kamala Harris",
           "bid": 0.049,
           "ask": 0.05
         },
@@ -193,99 +217,104 @@
           "name": "Raphael Warnock",
           "bid": 0.03,
           "ask": 0.031
+        },
+        {
+          "name": "Wes Moore",
+          "bid": 0.023,
+          "ask": 0.024
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.72,
-      "grossPP": 28.0,
-      "feePP": 2.88,
-      "netPP": 25.12,
+      "sumProb": 0.58,
+      "grossPP": 42.0,
+      "feePP": 2.9,
+      "netPP": 39.1,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
-      "event": "Presidential Election Winner 2028",
-      "slug": "presidential-election-winner-2028",
-      "endDate": "2028-11-08T04:59:00Z",
-      "n": 27,
+      "negRiskMarketID": "0x410ddc7cd1dd6f3064bbc12588bbc2ac7a7b76007dbde296400860cfc820fc00",
+      "event": "Elon Musk # tweets November 3 - November 10, 2026?",
+      "slug": "elon-musk-of-tweets-november-3-november-10-2026",
+      "endDate": "2026-11-10T17:00:00Z",
+      "n": 8,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "JD Vance",
-          "bid": 0.2,
-          "ask": 0.201
+          "name": "260-279",
+          "bid": 0.231,
+          "ask": 0.239
         },
         {
-          "name": "Jon Ossoff",
-          "bid": 0.182,
-          "ask": 0.183
+          "name": "300-319",
+          "bid": 0.153,
+          "ask": 0.163
         },
         {
-          "name": "Marco Rubio",
-          "bid": 0.093,
-          "ask": 0.094
+          "name": "240-259",
+          "bid": 0.107,
+          "ask": 0.119
         },
         {
-          "name": "Gavin Newsom",
-          "bid": 0.068,
-          "ask": 0.07
+          "name": "220-239",
+          "bid": 0.029,
+          "ask": 0.042
         },
         {
-          "name": "Kamala Harris",
-          "bid": 0.035,
-          "ask": 0.036
+          "name": "200-219",
+          "bid": 0.009,
+          "ask": 0.012
         },
         {
-          "name": "James Talarico",
-          "bid": 0.017,
-          "ask": 0.018
+          "name": "180-199",
+          "bid": 0.001,
+          "ask": 0.003
         }
       ]
     },
     {
       "side": "buy",
-      "sumProb": 0.906,
-      "grossPP": 9.4,
-      "feePP": 3.62,
-      "netPP": 5.78,
+      "sumProb": 0.767,
+      "grossPP": 23.3,
+      "feePP": 3.07,
+      "netPP": 20.23,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
       "negRiskMarketID": "0xc7d902c4f18f9cc2c6e959c7a6b3556c53ebdb60820836ba9e2890374cfea600",
       "event": "Republican Presidential Nominee 2028",
       "slug": "republican-presidential-nominee-2028",
       "endDate": "2028-11-08T04:59:00Z",
-      "n": 27,
-      "completeBid": false,
+      "n": 29,
+      "completeBid": true,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
           "name": "J.D. Vance",
-          "bid": 0.375,
-          "ask": 0.376
-        },
-        {
-          "name": "Marco Rubio",
-          "bid": 0.19,
-          "ask": 0.191
+          "bid": 0.365,
+          "ask": 0.366
         },
         {
           "name": "Ron DeSantis",
-          "bid": 0.141,
-          "ask": 0.142
+          "bid": 0.139,
+          "ask": 0.14
         },
         {
           "name": "John McEntee",
           "bid": 0.027,
-          "ask": 0.041
+          "ask": 0.045
         },
         {
           "name": "Thomas Massie",
-          "bid": 0.029,
-          "ask": 0.031
+          "bid": 0.032,
+          "ask": 0.036
+        },
+        {
+          "name": "Tucker Carlson",
+          "bid": 0.035,
+          "ask": 0.036
         },
         {
           "name": "Ted Cruz",
@@ -296,40 +325,84 @@
     },
     {
       "side": "buy",
-      "sumProb": 0.943,
-      "grossPP": 5.7,
-      "feePP": 3.77,
-      "netPP": 1.93,
+      "sumProb": 0.789,
+      "grossPP": 21.1,
+      "feePP": 3.16,
+      "netPP": 17.94,
       "exhaustiveNeeded": true,
       "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
-      "negRiskMarketID": "0x5357c4b324a57aa0bceb1af50b350eed5578830ac76d083135980edfe880ed00",
-      "event": "Next Prime Minister of Sweden",
-      "slug": "next-prime-minister-of-sweden",
-      "endDate": "2027-07-01T03:59:00Z",
-      "n": 4,
+      "negRiskMarketID": "0xb9aa4595bbe8ca1ecceeb16d24fb5df6d27d4e2116787ad874ff31f682bdb400",
+      "event": "Presidential Election Winner 2028",
+      "slug": "presidential-election-winner-2028",
+      "endDate": "2028-11-08T04:59:00Z",
+      "n": 31,
       "completeBid": false,
       "completeAsk": true,
       "tradable": false,
       "top": [
         {
-          "name": "Magdalena Andersson",
-          "bid": 0.46,
-          "ask": 0.49
+          "name": "JD Vance",
+          "bid": 0.19,
+          "ask": 0.191
         },
         {
-          "name": "Ulf Kristersson",
-          "bid": 0.393,
-          "ask": 0.441
+          "name": "Jon Ossoff",
+          "bid": 0.18,
+          "ask": 0.181
         },
         {
-          "name": "Ebba Busch",
-          "bid": 0.008,
-          "ask": 0.011
+          "name": "Marco Rubio",
+          "bid": 0.093,
+          "ask": 0.094
         },
         {
-          "name": "Elisabeth Thand Ringqvist",
-          "bid": null,
-          "ask": 0.001
+          "name": "Gavin Newsom",
+          "bid": 0.068,
+          "ask": 0.069
+        },
+        {
+          "name": "Ron DeSantis",
+          "bid": 0.053,
+          "ask": 0.054
+        },
+        {
+          "name": "Kamala Harris",
+          "bid": 0.035,
+          "ask": 0.036
+        }
+      ]
+    },
+    {
+      "side": "buy",
+      "sumProb": 0.954,
+      "grossPP": 4.6,
+      "feePP": 2.46,
+      "netPP": 2.14,
+      "exhaustiveNeeded": true,
+      "note": "alle Yes kaufen — nur risikofrei wenn Kandidaten erschöpfend (kein 'Other')",
+      "negRiskMarketID": "0x4c4f18e92d1622961adfa45b9fc048346c8f16ec913abfd593a2f7e553f6b600",
+      "event": "Which coalition will form the next New Zealand government?",
+      "slug": "which-coalition-will-form-the-next-new-zealand-government",
+      "endDate": "2026-11-08T04:59:00Z",
+      "n": 3,
+      "completeBid": true,
+      "completeAsk": true,
+      "tradable": false,
+      "top": [
+        {
+          "name": "National + ACT + NZF",
+          "bid": 0.59,
+          "ask": 0.67
+        },
+        {
+          "name": "Labour + Green",
+          "bid": 0.21,
+          "ask": 0.244
+        },
+        {
+          "name": "Other",
+          "bid": 0.014,
+          "ask": 0.04
         }
       ]
     }
